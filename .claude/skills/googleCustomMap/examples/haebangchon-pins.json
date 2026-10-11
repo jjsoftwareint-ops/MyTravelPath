@@ -1,0 +1,70 @@
+{
+  "name": "Haebangchon – 7 places from 'Play Yoni' (Sinheung Market food tour)",
+  "desc": "Seven restaurants and cafés in and around Sinheung Market, Haebangchon (Yongsan-gu, Seoul), from the YouTube video '이태원 신흥시장 7곳 털고 왔습니다' (youtu.be/9hhh9yxNeAE). Coordinates from Naver Map. Tip from the video: most market shops take Onnuri mobile gift cards, which give 5–10% off.",
+  "link": "https://www.youtube.com/watch?v=9hhh9yxNeAE",
+  "waypoints": [
+    {
+      "lat": 37.545185,
+      "lon": 126.984911,
+      "name": "1. Pad Ka Pao (팟카파우) – Thai, 2F inside Sinheung Market",
+      "desc": "Sinheung-ro 97-6, 2nd floor inside the market. Run by a Thai owner. Ordered: pad kaprao moo (minced pork with holy basil, jasmine rice) and pad kee mao talay (spicy 'drunken' wide rice noodles with shrimp and squid). Layered spice rather than plain heat. Accepts Onnuri mobile gift cards (5–10% off).",
+      "label": "Pad Ka Pao",
+      "icon": "restaurant",
+      "naver_id": "1518165166"
+    },
+    {
+      "lat": 37.545217,
+      "lon": 126.984932,
+      "name": "2. Haebangchon Dak (해방촌닭) – herbal roast chicken",
+      "desc": "Sinheung-ro 97-5, market ground floor. Herbal whole roast chicken stuffed with glutinous rice, served as a set with perilla-oil buckwheat noodles and two beers. Add the green-onion kimchi; wrap the rice stuffing in the seaweed that comes with it.",
+      "label": "Haebangchon Dak",
+      "icon": "restaurant",
+      "naver_id": "1112420992"
+    },
+    {
+      "lat": 37.545127,
+      "lon": 126.984953,
+      "name": "3. H5NG Haebangchon – American-Chinese, hip-hop mood",
+      "desc": "Sinheung-ro 95-17. Neon-lit, Hong Kong diner feel. Ordered: Mongolian beef (thin crisp batter, sweet-spicy-salty sauce, eat with the spring onion) and wok-fried rice, fluffy not greasy. Good date spot.",
+      "label": "H5NG",
+      "icon": "restaurant",
+      "naver_id": "1127977354"
+    },
+    {
+      "lat": 37.545378,
+      "lon": 126.985115,
+      "name": "4. Haebang Park (해방공원) – rooftop sunset café",
+      "desc": "Sinheung-ro 95-7, floors 1–3 plus rooftop. Steep stairs to the roof, then a full sunset view over central Seoul. Good place to wait while queuing for the restaurants; desserts recommended.",
+      "label": "Haebang Park rooftop",
+      "icon": "cafe",
+      "naver_id": "1249885510"
+    },
+    {
+      "lat": 37.545572,
+      "lon": 126.985988,
+      "name": "5. Mersin Kebab (메르신케밥) – Turkish tantuni",
+      "desc": "Sinheung-ro 84, 1st floor, one minute from the market. Turkish owner. Ordered: yogurt tantuni (creamy, slightly sour yogurt sauce over the meat) and the Chef's Special wrap (crispy wrap with grilled chicken, fries and a creamy mildly spicy sauce). Seen on 2TV 생생정보.",
+      "label": "Mersin Kebab",
+      "icon": "restaurant",
+      "naver_id": "1861325777"
+    },
+    {
+      "lat": 37.544818,
+      "lon": 126.985,
+      "name": "6. Midnight Forest (미드나잇포레스트) – pizza in a basement",
+      "desc": "Sowol-ro 20-gil 42, basement. Pick your drinks from the fridge, then order and pay at the counter. Ordered: bulgogi rucola pizza and ragù margherita (9,900 won). Aged dough, crisp outside and chewy inside. Great pizza-and-beer spot.",
+      "label": "Midnight Forest",
+      "icon": "restaurant",
+      "naver_id": "1159837999"
+    },
+    {
+      "lat": 37.546051,
+      "lon": 126.985151,
+      "name": "7. Haebang Wang Gopchang (해방왕곱창) – grilled intestines",
+      "desc": "Sowol-ro 20-gil 10, 1st floor, just above the five-way junction. Ordered: salted makchang and al-gopchang with added cheese on a stone plate. Light and nutty rather than heavy; good with soju. No Onnuri cards, but Yongsan Love gift certificates work (5% off).",
+      "label": "Haebang Wang Gopchang",
+      "icon": "restaurant",
+      "naver_id": "1582545627"
+    }
+  ]
+}

@@ -54,6 +54,9 @@ Photos are from Wikimedia Commons under the Korea Open Government License
   City (부산광역시).
   https://commons.wikimedia.org/wiki/File:Busan_City_Haeundae_Beach_KOGL_(01).jpg
 
+The round Korean flag in the header is `kr.svg` from HatScripts
+[circle-flags](https://github.com/HatScripts/circle-flags) (MIT).
+
 The app icon and favicon are the project's own artwork.
 Tag icons are from FontAwesome (CC BY 4.0) and Game Icons (CC BY 3.0) via the
 react-icons package.

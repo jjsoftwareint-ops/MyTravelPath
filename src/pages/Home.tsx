@@ -9,7 +9,11 @@ export default function Home() {
   const { cityId } = useParams()
 
   return (
-    <Layout title="My Travel Path" subtitle="Pick a city, then a path">
+    <Layout
+      title="My Travel Path"
+      subtitle="Pick a city, then a path"
+      icon={{ src: `${import.meta.env.BASE_URL}flag-kr.svg`, alt: "South Korea" }}
+    >
       <ul className="list">
         {cities.map((city) => {
           const open = city.id === cityId
