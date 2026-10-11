@@ -4,12 +4,17 @@
 //   https://www.google.com/maps/d/viewer?mid=XXXXXXXX
 // ─────────────────────────────────────────────────────────────
 
+// Tags are shown as pills under the path title. A plain string can start
+// with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
+export type TagIconName = 'hiker'
+export type Tag = string | { icon: TagIconName; label: string }
+
 export type TravelPath = {
   id: string
   name: string
   description?: string
   duration?: string // e.g. "2h", "Half day"
-  tags?: string[] // e.g. ["🌙 Night walk"], shown as pills under the title
+  tags?: Tag[] // e.g. ["🌙 Night walk"] or [{ icon: 'hiker', label: 'Trekking' }]
   mapUrl: string
 }
 
@@ -56,7 +61,7 @@ export const countries: Country[] = [
             name: 'Inwang Mountain Trail',
             description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
             duration: '2.5h',
-            tags: ['🥾 Trekking'],
+            tags: [{ icon: 'hiker', label: 'Trekking' }],
             mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
           },
         ],

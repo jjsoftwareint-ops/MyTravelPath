@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
+import TagIcon from '../components/TagIcon'
 import { findCity, findCountry, mapEmbedUrl, type TravelPath } from '../data/travel'
 
 // A path whose map link has not been filled in yet is shown but not tappable,
@@ -20,11 +21,18 @@ function PathCard({ path }: { path: TravelPath }) {
         <h2 className="card-title">{path.name}</h2>
         {Boolean(path.tags?.length || path.duration) && (
           <span className="card-meta">
-            {path.tags?.map((tag) => (
-              <span key={tag} className="pill tag">
-                {tag}
-              </span>
-            ))}
+            {path.tags?.map((tag) =>
+              typeof tag === 'string' ? (
+                <span key={tag} className="pill tag">
+                  {tag}
+                </span>
+              ) : (
+                <span key={tag.label} className="pill tag">
+                  <TagIcon name={tag.icon} />
+                  {tag.label}
+                </span>
+              ),
+            )}
             {path.duration && <span className="pill">{path.duration}</span>}
           </span>
         )}
