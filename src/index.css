@@ -187,3 +187,41 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
 @media (hover: hover) {
   .child:hover { background: var(--press); }
 }
+
+/* ── Embedded map inside a path card ─────────────────────── */
+.path-card:active { transform: none; background: var(--card); }
+.path-card .card-title, .path-card .card-desc { margin: 0; }
+
+.map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--press);
+}
+.map iframe { display: block; width: 100%; height: 100%; border: 0; }
+
+.map-cover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  color: var(--text);
+}
+.map-cover span {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}

@@ -1,38 +1,50 @@
+import { useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
-import { findCity, findCountry, type TravelPath } from '../data/travel'
+import { findCity, findCountry, mapEmbedUrl, type TravelPath } from '../data/travel'
 
 // A path whose map link has not been filled in yet is shown but not tappable,
 // so nobody lands on a broken Google Maps page.
 const hasMap = (path: TravelPath) => Boolean(path.mapUrl) && !path.mapUrl.includes('REPLACE_ME')
 
 function PathCard({ path }: { path: TravelPath }) {
-  const body = (
-    <>
-      <span className="card-body">
-        <span className="card-title">{path.name}</span>
-        {path.description && <span className="card-desc">{path.description}</span>}
+  const ready = hasMap(path)
+  const embed = ready ? mapEmbedUrl(path) : undefined
+  // The embedded map starts behind a cover so that scrolling the page over it
+  // does not pan the map instead. One tap hands control to the map.
+  const [mapActive, setMapActive] = useState(false)
+
+  return (
+    <article className={ready ? 'card path-card' : 'card path-card disabled'}>
+      <div className="card-body">
+        <h2 className="card-title">{path.name}</h2>
+        {path.description && <p className="card-desc">{path.description}</p>}
         {path.duration && (
           <span className="card-meta">
             <span className="pill">{path.duration}</span>
           </span>
         )}
-      </span>
-      <span className="cta">{hasMap(path) ? 'Open in Google Maps ↗' : 'Map link coming soon'}</span>
-    </>
-  )
-
-  if (!hasMap(path)) {
-    return (
-      <div className="card path-card disabled" aria-disabled="true">
-        {body}
       </div>
-    )
-  }
-  return (
-    <a href={path.mapUrl} target="_blank" rel="noopener noreferrer" className="card path-card">
-      {body}
-    </a>
+
+      {embed && (
+        <div className="map">
+          <iframe src={embed} title={`${path.name} map`} loading="lazy" allowFullScreen />
+          {!mapActive && (
+            <button type="button" className="map-cover" onClick={() => setMapActive(true)}>
+              <span>Tap to explore the map</span>
+            </button>
+          )}
+        </div>
+      )}
+
+      {ready ? (
+        <a href={path.mapUrl} target="_blank" rel="noopener noreferrer" className="cta">
+          Open in Google Maps ↗
+        </a>
+      ) : (
+        <span className="cta">Map link coming soon</span>
+      )}
+    </article>
   )
 }
 

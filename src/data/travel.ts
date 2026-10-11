@@ -101,3 +101,11 @@ export const findCountry = (countryId?: string) =>
 
 export const findCity = (countryId?: string, cityId?: string) =>
   findCountry(countryId)?.cities.find((c) => c.id === cityId)
+
+// Google My Maps share links and embed links share the same `mid` id, so the
+// embed URL can be derived instead of stored twice.
+export const mapEmbedUrl = (path: TravelPath) => {
+  const mid = /[?&]mid=([^&#]+)/.exec(path.mapUrl)?.[1]
+  if (!mid || mid === 'REPLACE_ME') return undefined
+  return `https://www.google.com/maps/d/embed?mid=${mid}&ehbc=2E312F`
+}
