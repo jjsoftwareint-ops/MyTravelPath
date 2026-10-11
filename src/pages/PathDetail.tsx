@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { ImInfo } from "react-icons/im";
 import { Navigate, useParams } from "react-router-dom";
+import CopyLink from "../components/CopyLink";
 import Layout from "../components/Layout";
+import OpenMapDialog from "../components/OpenMapDialog";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
-import { browserUrl, isIOS, isPhone } from "../platform";
+import { browserUrl, isIOS } from "../platform";
 
 export default function PathDetail() {
   const { cityId, pathId } = useParams();
@@ -13,6 +15,8 @@ export default function PathDetail() {
   // The embedded map starts behind a cover so that scrolling the page over it
   // does not pan the map instead. One tap hands control to the map.
   const [mapActive, setMapActive] = useState(false);
+  // iPhone/iPad: ask "Google Maps or browser?" before leaving (see OpenMapDialog).
+  const [askWhere, setAskWhere] = useState(false);
 
   if (!city || !path)
     return <Navigate to={city ? `/${city.id}` : "/"} replace />;
@@ -32,13 +36,6 @@ export default function PathDetail() {
             <b className="naver">Naver Map</b> is more accurate for navigation
             in Korea. Each location has the link.
           </li>
-          {isIOS() && (
-            <li>
-              Use “Open with a browser” below to open the{" "}
-              <b className="naver">Naver Map</b> links. Click location name to
-              see the details with the map link.
-            </li>
-          )}
         </ul>
       </div>
 
@@ -75,14 +72,21 @@ export default function PathDetail() {
               target="_blank"
               rel="noopener noreferrer"
               className="cta"
+              onClick={(e) => {
+                if (!isIOS()) return;
+                e.preventDefault();
+                setAskWhere(true);
+              }}
             >
               Open in Google Maps ↗
             </a>
-            {isPhone() && (
-              <a href={browserUrl(path.mapUrl)} className="cta secondary">
-                Open with a browser ↗
-              </a>
-            )}
+            <CopyLink url={path.mapUrl} />
+            <OpenMapDialog
+              open={askWhere}
+              onClose={() => setAskWhere(false)}
+              mapsUrl={path.mapUrl}
+              browserUrl={browserUrl(path.mapUrl)}
+            />
           </>
         ) : (
           <span className="cta">Map link coming soon</span>

@@ -489,6 +489,85 @@ a:focus-visible {
   background: var(--press);
 }
 
+/* ── Map link as text, with a copy button ─────────────────── */
+.copy-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 8px 8px 12px;
+  border-radius: 12px;
+  background: var(--press);
+  border: 1px solid var(--border);
+}
+.copy-link-url {
+  flex: 1;
+  min-width: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+  word-break: break-all;
+  user-select: all;
+  -webkit-user-select: all;
+}
+.copy-link-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--accent);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.copy-link-btn:active {
+  background: var(--press);
+}
+.copy-link-btn svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ── Modal: Google Maps or browser? (iPhone/iPad) ─────────── */
+.dialog {
+  width: min(92vw, 400px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  color: var(--text);
+}
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+.dialog-body {
+  padding: 20px;
+}
+.dialog-body h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.dialog-body p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.dialog-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.dialog-actions .cta {
+  margin: 0;
+}
+
 /* ── Notice under the header ─────────────────────────────── */
 .notice {
   display: flex;
