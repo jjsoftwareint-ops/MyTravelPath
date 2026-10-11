@@ -77,14 +77,11 @@ export default function PathDetail() {
             >
               Open in Google Maps ↗
             </a>
-            <a
-              href={browserUrl(path.mapUrl)}
-              className="cta secondary"
-              target={isPhone() ? undefined : "_blank"}
-              rel="noopener noreferrer"
-            >
-              Open with a browser ↗
-            </a>
+            {isPhone() && (
+              <a href={browserUrl(path.mapUrl)} className="cta secondary">
+                Open with a browser ↗
+              </a>
+            )}
           </>
         ) : (
           <span className="cta">Map link coming soon</span>
