@@ -72,5 +72,6 @@ HatScripts [circle-flags](https://github.com/HatScripts/circle-flags) (MIT).
 
 The app icon and favicon are the project's own artwork.
 Tag icons are from FontAwesome (CC BY 4.0) and Game Icons (CC BY 3.0), and the
-notice icon from IcoMoon Free (CC BY 4.0) and the light/dark toggle from
-Ionicons (MIT), all via the react-icons package.
+notice icon from IcoMoon Free (CC BY 4.0), the dialog hint icon from Typicons
+(CC BY-SA 3.0) and the light/dark toggle from Ionicons (MIT), all via the
+react-icons package.

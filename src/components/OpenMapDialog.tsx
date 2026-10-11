@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { TiInfo } from "react-icons/ti";
 
 type Props = {
   open: boolean;
@@ -38,12 +39,15 @@ export default function OpenMapDialog({
       <div className="dialog-body">
         <h2>Open the map</h2>
         <p>
-          Use <b className="accent">Browser</b> to open the{" "}
+          Use <b className="accent">Browser</b> to use the{" "}
           <b className="naver">Naver Map</b> links.
         </p>
-        <p>
-          Please Click Google Maps button<b> Again</b> in case the path or the
-          location's description is <u>not visible</u>
+        <p className="dialog-hint">
+          <TiInfo className="dialog-hint-icon" aria-hidden="true" />
+          <span>
+            Problem? Click Google Maps button<b> Again</b> in case the path or
+            the location's description is <u>not visible</u>
+          </span>
         </p>
 
         <div className="dialog-actions">

@@ -55,7 +55,7 @@ export default function PathDetail() {
         <div className="notice">
           <ImInfo className="notice-icon" aria-hidden="true" />
           <ul className="notice-list">
-            <li>
+            <li className="warn">
               <b className="naver">Naver Map</b> is more accurate for navigation
               in Korea. Each location has the link.
             </li>
