@@ -42,6 +42,15 @@ export const cities: City[] = [
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
       },
       {
+        id: 'haebangchon-evening',
+        name: 'Haebangchon late evening walk',
+        description:
+          'Huam-dong 108 Stairs, Sinheung Market, Sowol-ro rooftops and the City Wall to Baekbeom Square. 2.4 km.',
+        duration: '2h',
+        tags: [{ icon: 'moon', label: 'Night walk' }],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1kOFoicmAJJvQvsioIIOu1ng9dDQ4Exk',
+      },
+      {
         id: 'hanok-villages',
         name: 'Hanok Villages',
         description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km.',
