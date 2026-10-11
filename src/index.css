@@ -9,7 +9,9 @@
   --pill: #eff6ff;
   --press: #e9ebef;
   color-scheme: light;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
@@ -17,7 +19,7 @@
 /* Dark tokens apply when the system is dark and the user has not chosen
    light, or whenever the user has chosen dark (header toggle). */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
+  :root:not([data-theme="light"]) {
     --bg: #0f1115;
     --card: #1a1d24;
     --text: #f3f4f6;
@@ -30,7 +32,7 @@
     color-scheme: dark;
   }
 }
-:root[data-theme='dark'] {
+:root[data-theme="dark"] {
   --bg: #0f1115;
   --card: #1a1d24;
   --text: #f3f4f6;
@@ -43,12 +45,27 @@
   color-scheme: dark;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
 
-a { color: inherit; text-decoration: none; }
-a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 12px; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
 
 .screen {
   max-width: 520px;
@@ -82,8 +99,12 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   color: var(--accent);
   border-radius: 12px;
 }
-.back:active { background: var(--press); }
-.back.placeholder { visibility: hidden; }
+.back:active {
+  background: var(--press);
+}
+.back.placeholder {
+  visibility: hidden;
+}
 
 /* Suitcase with a flag sticker (see BrandMark.tsx) */
 .brand-mark {
@@ -94,7 +115,11 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   margin: 0 6px 0 4px;
   color: light-dark(#a8622a, #c47a3a);
 }
-.brand-mark svg { display: block; width: 100%; height: 100%; }
+.brand-mark svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .brand-mark img {
   position: absolute;
   top: -2px;
@@ -103,10 +128,15 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   height: 16px;
   border-radius: 50%;
   transform: rotate(-14deg);
-  box-shadow: 0 0 0 2px #fff, 0 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 0 0 2px #fff,
+    0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.header-text { flex: 1; min-width: 0; }
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
 .header-text h1 {
   margin: 0;
   font-size: 22px;
@@ -115,7 +145,11 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.header-text p { margin: 2px 0 0; font-size: 13px; color: var(--muted); }
+.header-text p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
 
 .theme-toggle {
   flex: 0 0 40px;
@@ -132,14 +166,27 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-size: 20px;
   cursor: pointer;
 }
-.theme-toggle:active { background: var(--press); }
-.theme-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-
+.theme-toggle:active {
+  background: var(--press);
+}
+.theme-toggle:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
 
 /* ── Content ─────────────────────────────────────────────── */
-.content { padding: 16px 16px calc(32px + env(safe-area-inset-bottom)); }
+.content {
+  padding: 16px 16px calc(32px + env(safe-area-inset-bottom));
+}
 
-.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .card {
   display: flex;
@@ -150,19 +197,50 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  transition: transform 0.08s ease, background 0.08s ease, border-color 0.08s ease;
+  transition:
+    transform 0.08s ease,
+    background 0.08s ease,
+    border-color 0.08s ease;
 }
-.card:active { transform: scale(0.985); background: var(--press); }
+.card:active {
+  transform: scale(0.985);
+  background: var(--press);
+}
 @media (hover: hover) {
-  .card:hover { border-color: var(--accent); }
+  .card:hover {
+    border-color: var(--accent);
+  }
 }
 
-.emoji { font-size: 30px; flex: 0 0 auto; }
+.emoji {
+  font-size: 30px;
+  flex: 0 0 auto;
+}
 
-.card-body { display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 0; }
-.card-title { font-size: 17px; font-weight: 600; }
-.card-desc { font-size: 14px; color: var(--muted); line-height: 1.45; }
-.card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 13px; color: var(--muted); }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+.card-desc {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
 
 .pill {
   display: inline-flex;
@@ -175,18 +253,46 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-weight: 600;
   font-size: 12px;
 }
-.pill.tag { background: var(--press); color: var(--text); }
+.pill.tag {
+  background: var(--press);
+  color: var(--text);
+}
 /* One hue per tag, picked for its meaning; light-dark() follows color-scheme. */
-.pill.tag-hiker   { background: light-dark(#dcfce7, #14532d); color: light-dark(#166534, #bbf7d0); }
-.pill.tag-moon    { background: light-dark(#e0e7ff, #312e81); color: light-dark(#3730a3, #c7d2fe); }
-.pill.tag-village { background: light-dark(#fef3c7, #78350f); color: light-dark(#92400e, #fde68a); }
-.pill.tag-sunset  { background: light-dark(#ffedd5, #7c2d12); color: light-dark(#c2410c, #fed7aa); }
-.tag-icon { width: 13px; height: 13px; flex: 0 0 auto; }
+.pill.tag-hiker {
+  background: light-dark(#dcfce7, #14532d);
+  color: light-dark(#166534, #bbf7d0);
+}
+.pill.tag-moon {
+  background: light-dark(#e0e7ff, #312e81);
+  color: light-dark(#3730a3, #c7d2fe);
+}
+.pill.tag-village {
+  background: light-dark(#fef3c7, #78350f);
+  color: light-dark(#92400e, #fde68a);
+}
+.pill.tag-sunset {
+  background: light-dark(#ffedd5, #7c2d12);
+  color: light-dark(#c2410c, #fed7aa);
+}
+.tag-icon {
+  width: 13px;
+  height: 13px;
+  flex: 0 0 auto;
+}
 
-.chevron { font-size: 26px; color: var(--muted); flex: 0 0 auto; }
+.chevron {
+  font-size: 26px;
+  color: var(--muted);
+  flex: 0 0 auto;
+}
 
 /* ── Path cards: one obvious action ──────────────────────── */
-.path-card { flex-direction: column; align-items: stretch; gap: 10px; padding: 16px; }
+.path-card {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  padding: 16px;
+}
 .cta {
   display: flex;
   align-items: center;
@@ -200,14 +306,32 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-size: 16px;
   font-weight: 600;
 }
-.path-card.disabled { opacity: 0.6; }
-.path-card.disabled .cta { background: var(--border); color: var(--muted); }
+.path-card.disabled {
+  opacity: 0.6;
+}
+.path-card.disabled .cta {
+  background: var(--border);
+  color: var(--muted);
+}
 
-.empty { text-align: center; color: var(--muted); font-size: 14px; line-height: 1.5; }
-.empty { padding: 40px 16px; }
+.empty {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.empty {
+  padding: 40px 16px;
+}
 
 /* ── City card header photo ──────────────────────────────── */
-.group-head { flex-direction: column; align-items: stretch; gap: 0; padding: 0; overflow: hidden; }
+.group-head {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
 .group-head .row {
   display: flex;
   align-items: center;
@@ -215,8 +339,17 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   min-height: 68px;
   padding: 14px 16px;
 }
-.card-image { position: relative; display: block; background: var(--press); }
-.card-image img { display: block; width: 100%; height: 120px; object-fit: cover; }
+.card-image {
+  position: relative;
+  display: block;
+  background: var(--press);
+}
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
 .credit {
   position: absolute;
   right: 8px;
@@ -235,8 +368,13 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
 }
 
 /* ── Accordion: city → paths ───────────────────────────────────────────────────────── */
-.caret { transition: transform 0.15s ease; }
-.group.open .caret { transform: rotate(90deg); color: var(--accent); }
+.caret {
+  transition: transform 0.15s ease;
+}
+.group.open .caret {
+  transform: rotate(90deg);
+  color: var(--accent);
+}
 .group.open .group-head {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -253,7 +391,9 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   border-radius: 0 0 16px 16px;
   overflow: hidden;
 }
-.sublist li + li { border-top: 1px solid var(--border); }
+.sublist li + li {
+  border-top: 1px solid var(--border);
+}
 
 .child {
   display: flex;
@@ -262,22 +402,34 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   min-height: 60px;
   padding: 12px 16px 12px 22px;
 }
-.child .card-title { font-size: 16px; }
+.child .card-title {
+  font-size: 16px;
+}
 .child::before {
-  content: '';
+  content: "";
   flex: 0 0 8px;
   height: 8px;
   border-radius: 50%;
   background: var(--accent);
 }
-.child:active { background: var(--press); }
+.child:active {
+  background: var(--press);
+}
 @media (hover: hover) {
-  .child:hover { background: var(--press); }
+  .child:hover {
+    background: var(--press);
+  }
 }
 
 /* ── Embedded map inside a path card ─────────────────────── */
-.path-card:active { transform: none; background: var(--card); }
-.path-card .card-title, .path-card .card-desc { margin: 0; }
+.path-card:active {
+  transform: none;
+  background: var(--card);
+}
+.path-card .card-title,
+.path-card .card-desc {
+  margin: 0;
+}
 
 .map {
   position: relative;
@@ -292,7 +444,10 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
    and an attribution strip at the bottom, with no option to remove either.
    The iframe is made taller by both amounts and shifted up, so they sit just
    outside the box. Adjust the two numbers if Google changes the heights. */
-.map { --trim-top: 64px; --trim-bottom: 24px; }
+.map {
+  --trim-top: 68px;
+  --trim-bottom: 20px;
+}
 .map iframe {
   display: block;
   width: 100%;
@@ -361,8 +516,13 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-weight: 600;
   cursor: pointer;
 }
-.copy-link-btn:active { background: var(--press); }
-.copy-link-btn svg { width: 15px; height: 15px; }
+.copy-link-btn:active {
+  background: var(--press);
+}
+.copy-link-btn svg {
+  width: 15px;
+  height: 15px;
+}
 
 /* ── Notice under the header ─────────────────────────────── */
 .notice {
@@ -377,7 +537,13 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-size: 14px;
   line-height: 1.45;
 }
-.notice-icon { flex: 0 0 16px; width: 16px; height: 16px; margin-top: 2px; color: var(--accent); }
+.notice-icon {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  color: var(--accent);
+}
 
 /* ── Footer and text pages ───────────────────────────────── */
 .footer {
@@ -389,9 +555,25 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-size: 13px;
   color: var(--muted);
 }
-.footer a { padding: 6px 4px; text-decoration: underline; text-underline-offset: 3px; }
+.footer a {
+  padding: 6px 4px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
-.prose { font-size: 15px; line-height: 1.55; }
-.prose h2 { margin: 18px 0 6px; font-size: 15px; font-weight: 700; }
-.prose h2:first-child { margin-top: 0; }
-.prose p { margin: 0 0 10px; color: var(--muted); }
+.prose {
+  font-size: 15px;
+  line-height: 1.55;
+}
+.prose h2 {
+  margin: 18px 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.prose h2:first-child {
+  margin-top: 0;
+}
+.prose p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
