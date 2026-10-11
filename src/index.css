@@ -544,6 +544,18 @@ a:focus-visible {
   margin-top: 2px;
   color: var(--accent);
 }
+.notice-list {
+  margin: 0;
+  padding: 0 0 0 2px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.notice-list li + li {
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
 
 /* ── Footer and text pages ───────────────────────────────── */
 .footer {

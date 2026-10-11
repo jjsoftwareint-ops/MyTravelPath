@@ -5,6 +5,7 @@ import CopyLink from '../components/CopyLink'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
 import { findCity, findPath, hasMap, mapEmbedUrl } from '../data/travel'
+import { isIOS } from '../platform'
 
 export default function PathDetail() {
   const { cityId, pathId } = useParams()
@@ -21,10 +22,20 @@ export default function PathDetail() {
 
   return (
     <Layout title={path.name} subtitle={city.name} backTo={`/${city.id}`}>
-      <p className="notice">
-        <ImInfo className="notice-icon" aria-hidden="true" /> Please open Google Maps first in case the path is not
-        visible.
-      </p>
+      <div className="notice">
+        <ImInfo className="notice-icon" aria-hidden="true" />
+        <ul className="notice-list">
+          <li>Please open Google Maps first in case the path is not visible.</li>
+          <li>Naver Map is more accurate in Korea. Each location has a Naver Map link.</li>
+          {isIOS() && (
+            <li>
+              On iPhone, open the map in a browser to tap the Naver Map links. The Google Maps app
+              shows them as plain text. Tip: long-press “Open in Google Maps” and choose “Open in
+              New Tab”.
+            </li>
+          )}
+        </ul>
+      </div>
 
       <article className={ready ? 'card path-card' : 'card path-card disabled'}>
         <div className="card-body">
