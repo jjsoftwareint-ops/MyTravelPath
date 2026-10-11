@@ -7,7 +7,7 @@ import type { TagIconName } from '../data/travel'
 export default function TagIcon({ name }: { name: TagIconName }) {
   switch (name) {
     case 'hiker':
-      return <GiHiking className="tag-icon" aria-hidden="true" style={{ color: '#22c55e' }} />
+      return <GiHiking className="tag-icon" aria-hidden="true" style={{ color: '#15803d' }} />
     case 'moon':
       return <FaMoon className="tag-icon" aria-hidden="true" style={{ color: '#fbbf24' }} />
   }
