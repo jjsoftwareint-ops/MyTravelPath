@@ -42,6 +42,19 @@ and publishes `dist/` to GitHub Pages. One-time setup in the repo:
 
 Site URL: https://jjsoftwareint-ops.github.io/MyTravelPath/
 
+## Analytics
+
+Page views and visitor countries are counted with
+[GoatCounter](https://www.goatcounter.com), which is free for personal sites
+and sets no cookies, so no consent banner is needed. To turn it on:
+
+1. Sign up at https://www.goatcounter.com/signup and choose a site code,
+   e.g. `mytravelpath`. Your dashboard is then `https://mytravelpath.goatcounter.com`.
+2. Put that code in `GOATCOUNTER_SITE` in `src/components/Analytics.tsx` and push.
+
+Each route is reported as its own path (`/`, `/seoul`, `/seoul/bukchon-hanok`).
+Nothing is sent while running locally or while the site code is empty.
+
 ## Credits
 
 Photos are from Wikimedia Commons under the Korea Open Government License
