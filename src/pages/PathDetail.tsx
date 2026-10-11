@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ImInfo } from 'react-icons/im'
 import { Navigate, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
@@ -20,7 +21,7 @@ export default function PathDetail() {
   return (
     <Layout title={path.name} subtitle={city.name} backTo={`/${city.id}`}>
       <p className="notice">
-        <span aria-hidden="true">ℹ️</span> Please open Google Maps first in case the path is not
+        <ImInfo className="notice-icon" aria-hidden="true" /> Please open Google Maps first in case the path is not
         visible.
       </p>
 
