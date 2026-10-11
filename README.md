@@ -40,4 +40,4 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site
 and publishes `dist/` to GitHub Pages. One-time setup in the repo:
 **Settings → Pages → Source → "GitHub Actions"**.
 
-Site URL: `https://<github-user>.github.io/MyTravelPath/`
+Site URL: https://jjsoftwareint-ops.github.io/MyTravelPath/
