@@ -9,6 +9,7 @@ export type TravelPath = {
   name: string
   description?: string
   duration?: string // e.g. "2h", "Half day"
+  tags?: string[] // e.g. ["🌙 Night walk"], shown as pills under the title
   mapUrl: string
 }
 
@@ -36,11 +37,12 @@ export const countries: Country[] = [
         name: 'Seoul',
         paths: [
           {
-            id: 'seoul-night-walk',
-            name: 'Seoul Night Walk',
-            description: 'Cheonggyecheon stream → Gwangjang Market → Dongdaemun DDP lights.',
+            id: 'naksan-cheonggyecheon',
+            name: 'Naksan Park and Cheonggyecheon',
+            description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
             duration: '3h',
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
+            tags: ['🌙 Night walk'],
+            mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
           },
           {
             id: 'bukchon-hanok',

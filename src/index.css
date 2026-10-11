@@ -118,6 +118,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-weight: 600;
   font-size: 12px;
 }
+.pill.tag { background: var(--text); color: var(--bg); }
 
 .chevron { font-size: 26px; color: var(--muted); flex: 0 0 auto; }
 

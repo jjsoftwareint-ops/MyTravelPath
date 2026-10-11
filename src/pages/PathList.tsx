@@ -18,12 +18,17 @@ function PathCard({ path }: { path: TravelPath }) {
     <article className={ready ? 'card path-card' : 'card path-card disabled'}>
       <div className="card-body">
         <h2 className="card-title">{path.name}</h2>
-        {path.description && <p className="card-desc">{path.description}</p>}
-        {path.duration && (
+        {Boolean(path.tags?.length || path.duration) && (
           <span className="card-meta">
-            <span className="pill">{path.duration}</span>
+            {path.tags?.map((tag) => (
+              <span key={tag} className="pill tag">
+                {tag}
+              </span>
+            ))}
+            {path.duration && <span className="pill">{path.duration}</span>}
           </span>
         )}
+        {path.description && <p className="card-desc">{path.description}</p>}
       </div>
 
       {embed && (
