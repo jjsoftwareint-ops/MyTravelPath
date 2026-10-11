@@ -42,11 +42,11 @@ export const cities: City[] = [
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
       },
       {
-        id: 'bukchon-hanok',
-        name: 'Bukchon Hanok Village Walk',
-        description: 'Traditional houses, Samcheong-dong cafés, Gyeongbokgung views.',
+        id: 'hanok-villages',
+        name: 'Hanok Villages',
+        description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km.',
         duration: '2h',
-        mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=14TBNrDcRMm9lNuEBH3QZbcEAg_mnuNU',
       },
       {
         id: 'inwang-mountain-trail',

@@ -42,7 +42,7 @@ function loadScript(): Promise<void> {
   return loader
 }
 
-// Renders nothing; sends one page view per route change (e.g. /seoul/bukchon-hanok).
+// Renders nothing; sends one page view per route change (e.g. /seoul/hanok-villages).
 export default function Analytics() {
   const { pathname } = useLocation()
 
