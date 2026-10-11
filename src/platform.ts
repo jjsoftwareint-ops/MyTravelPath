@@ -13,7 +13,7 @@ export function isAndroid(): boolean {
   return typeof navigator !== 'undefined' && /Android/.test(navigator.userAgent)
 }
 
-/** True where an installed maps app may intercept the link, so a browser button helps. */
+/** True where an installed maps app may intercept the link and a browser scheme is used instead. */
 export const isPhone = () => isIOS() || isAndroid()
 
 /**

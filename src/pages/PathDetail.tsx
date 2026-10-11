@@ -34,8 +34,8 @@ export default function PathDetail() {
           </li>
           {isIOS() && (
             <li>
-              Use “Open with a browser” below to tap the <b>Naver Map</b> links.
-              The Google Maps app shows them as plain text.
+              Use “Open with a browser” below to open the <b>Naver Map</b>{" "}
+              links.
             </li>
           )}
         </ul>
@@ -77,11 +77,14 @@ export default function PathDetail() {
             >
               Open in Google Maps ↗
             </a>
-            {isPhone() && (
-              <a href={browserUrl(path.mapUrl)} className="cta secondary">
-                Open with a browser ↗
-              </a>
-            )}
+            <a
+              href={browserUrl(path.mapUrl)}
+              className="cta secondary"
+              target={isPhone() ? undefined : "_blank"}
+              rel="noopener noreferrer"
+            >
+              Open with a browser ↗
+            </a>
           </>
         ) : (
           <span className="cta">Map link coming soon</span>
