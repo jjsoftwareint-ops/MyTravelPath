@@ -30,9 +30,6 @@ export default function PathDetail() {
         <ImInfo className="notice-icon" aria-hidden="true" />
         <ul className="notice-list">
           <li>
-            Please open Google Maps first in case the path is not visible.
-          </li>
-          <li>
             <b className="naver">Naver Map</b> is more accurate for navigation
             in Korea. Each location has the link.
           </li>
