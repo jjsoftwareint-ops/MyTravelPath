@@ -54,7 +54,7 @@ export const countries: Country[] = [
             name: 'Inwang Mountain Trail',
             description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
             duration: '2.5h',
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
+            mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
           },
         ],
       },
