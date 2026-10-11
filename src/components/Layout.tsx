@@ -6,8 +6,8 @@ type Props = {
   title: string
   subtitle?: string
   backTo?: string
-  /** Image shown in place of the back button, e.g. a flag on the home screen. */
-  icon?: { src: string; alt: string }
+  /** Element shown in place of the back button, e.g. the brand mark on the home screen. */
+  icon?: ReactNode
   children: ReactNode
 }
 
@@ -20,7 +20,7 @@ export default function Layout({ title, subtitle, backTo, icon, children }: Prop
             ‹
           </Link>
         ) : icon ? (
-          <img className="header-icon" src={icon.src} alt={icon.alt} width={36} height={36} />
+          icon
         ) : (
           <span className="back placeholder" />
         )}

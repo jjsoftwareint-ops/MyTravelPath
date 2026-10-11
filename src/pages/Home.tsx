@@ -1,6 +1,7 @@
 import { ImInfo } from 'react-icons/im'
 import { Link, useParams } from 'react-router-dom'
 import { dashboardUrl } from '../components/Analytics'
+import BrandMark from '../components/BrandMark'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
 import { cities } from '../data/travel'
@@ -14,7 +15,7 @@ export default function Home() {
     <Layout
       title="My Travel Path"
       subtitle="Pick a city, then a path"
-      icon={{ src: `${import.meta.env.BASE_URL}icon-192.png`, alt: "" }}
+      icon={<BrandMark />}
     >
       <p className="notice">
         <ImInfo className="notice-icon" aria-hidden="true" /> Restaurant, café and event information
