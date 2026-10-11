@@ -1,4 +1,6 @@
+import { ImInfo } from 'react-icons/im'
 import { Link, useParams } from 'react-router-dom'
+import { dashboardUrl } from '../components/Analytics'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
 import { cities } from '../data/travel'
@@ -14,6 +16,11 @@ export default function Home() {
       subtitle="Pick a city, then a path"
       icon={{ src: `${import.meta.env.BASE_URL}flag-kr.svg`, alt: "South Korea" }}
     >
+      <p className="notice">
+        <ImInfo className="notice-icon" aria-hidden="true" /> Restaurant, café and event information
+        is regularly updated.
+      </p>
+
       <ul className="list">
         {cities.map((city) => {
           const open = city.id === cityId
@@ -64,6 +71,14 @@ export default function Home() {
           )
         })}
       </ul>
+
+      <footer className="footer">
+        <Link to="/imprint">Imprint</Link>
+        <span aria-hidden="true">·</span>
+        <a href={dashboardUrl} target="_blank" rel="noreferrer">
+          Analytics
+        </a>
+      </footer>
     </Layout>
   )
 }

@@ -7,6 +7,12 @@ import { useLocation } from 'react-router-dom'
 // is needed; the dashboard shows views per path and visitor countries.
 export const GOATCOUNTER_SITE = ''
 
+// Public dashboard, linked from the home footer. Enable "Allow public access"
+// in the GoatCounter site settings so visitors can open it.
+export const dashboardUrl = GOATCOUNTER_SITE
+  ? `https://${GOATCOUNTER_SITE}.goatcounter.com`
+  : 'https://www.goatcounter.com'
+
 declare global {
   interface Window {
     goatcounter?: {
