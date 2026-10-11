@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ImInfo } from 'react-icons/im'
 import { Navigate, useParams } from 'react-router-dom'
+import CopyLink from '../components/CopyLink'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
 import { findCity, findPath, hasMap, mapEmbedUrl } from '../data/travel'
@@ -43,9 +44,12 @@ export default function PathDetail() {
         )}
 
         {ready ? (
-          <a href={path.mapUrl} target="_blank" rel="noopener noreferrer" className="cta">
-            Open in Google Maps ↗
-          </a>
+          <>
+            <a href={path.mapUrl} target="_blank" rel="noopener noreferrer" className="cta">
+              Open in Google Maps ↗
+            </a>
+            <CopyLink url={path.mapUrl} />
+          </>
         ) : (
           <span className="cta">Map link coming soon</span>
         )}
