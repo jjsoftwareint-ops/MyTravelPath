@@ -588,6 +588,10 @@ a:focus-visible {
   margin-top: 2px;
   color: var(--accent);
 }
+.accent {
+  color: var(--accent);
+  font-weight: 700;
+}
 .naver {
   color: #03a94d; /* Naver brand green */
   font-weight: 700;

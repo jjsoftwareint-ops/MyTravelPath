@@ -38,12 +38,12 @@ export default function OpenMapDialog({
       <div className="dialog-body">
         <h2>Open the map</h2>
         <p>
-          Use “Browser” to open the <b className="naver">Naver Map</b> links.
-          The Google Maps app shows them as plain text.
+          Use <b className="accent">Browser</b> to open the{" "}
+          <b className="naver">Naver Map</b> links.
         </p>
         <p>
-          Please Click Google Maps button<b> Again</b> in case the path is{" "}
-          <u>not visible</u>
+          Please Click Google Maps button<b> Again</b> in case the path or the
+          location's description is <u>not visible</u>
         </p>
 
         <div className="dialog-actions">

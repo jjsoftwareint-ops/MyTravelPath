@@ -28,6 +28,13 @@ Lessons from Inwangsan (2026-10): the trail from the Tiger Statue to the wall is
 wall path has 5–20 m node gaps that make Valhalla detour 2.5 km, so chain the `한양도성 순성길` nodes by hand
 for summit → junction legs; the B-course stairs are boardwalk way 1314758863 ending opposite Choso Bookshop.
 
+## Hard rules
+
+- **Never add Kakao Map links** — not in GPX, KML, CSV, pins or route descriptions (user preference,
+  2026-10-11; all existing kmz files were scrubbed that day). Every pin carries exactly one map link,
+  "Open Naver Map", because Naver is the accurate map in Korea. The scripts no longer generate Kakao URLs;
+  do not add them back by hand either.
+
 ## Pins workflow (place collections)
 
 1. `yt_transcript.py <video>` — food-tour videos usually list every venue with its road address in the
@@ -39,7 +46,7 @@ for summit → junction legs; the B-course stairs are boardwalk way 1314758863 e
    and `naver_id` from step 2), then `pins_kml.py spec.json "<name>-pins.kml"`. Each description ends with a
    single "Open Naver Map" link that opens the place's own Naver page
    (`https://map.naver.com/p/entry/place/<naver_id>?lng=…&lat=…&placePath=%2Fhome&entry=plt&searchType=place&c=15.00,0,0,0,dh`).
-   No Kakao link on pins files (user preference). Copy the finished KML into examples/ next to its spec.
+   Naver Map is the only map link, ever (see Hard rules). Copy the finished KML into examples/ next to its spec.
 
 ## Route workflow (GPX)
 
@@ -132,8 +139,8 @@ differences, in case the user asks why something looks odd in My Maps:
 - A GPX track import auto-adds two extra markers named "Start of <track name>" and "End of <track name>";
   nothing in the GPX can suppress them. A KML `LineString` gets no such markers.
 - GPX/CSV descriptions are imported as plain text: `<br>`/`<a>` show up literally. Plain text does keep line
-  breaks and auto-links bare URLs, hence `--maplinks plain` ("Open Kakao Map: <url>" per line). KML
-  descriptions may contain HTML (`--kml` always writes the `<br><a href>Open Kakao Map</a>` form).
+  breaks and auto-links bare URLs, hence `--maplinks plain` ("Open Naver Map: <url>" on its own line). KML
+  descriptions may contain HTML (`--kml` always writes the `<br><a href>Open Naver Map</a>` form).
 - **Every pin gets an icon, chosen by the build, no user prompting.** Per-pin icons only work through KML
   `styleUrl="#icon-<id>-<RRGGBB>"` (My Maps' own id scheme). `build_gpx.py` holds the table (`ICONS`:
   start/end flags, funicular, elevator, stairs, camera, viewpoint, entrance, plaque, market, convenience,

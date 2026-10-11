@@ -4,9 +4,9 @@
 usage: build_gpx.py spec.json out.gpx [--spacing 8] [--max-points 1800] [--no-elevation] [--maplinks html|plain] [--kml out.kml]
   --max-points: Google My Maps only lets you edit a line with fewer than ~2000 vertices. Tracks above the cap are
                 thinned (Douglas-Peucker on straight stretches; corners and the point nearest each pin are kept).
-  --maplinks html : append '<br><a href=..>Open Kakao Map</a>...' to each description. Rendered by Google My Maps only
+  --maplinks html : append '<br><a href=..>Open Naver Map</a>' to each description. Rendered by Google My Maps only
                     when imported as KML; a GPX import shows the tags as text.
-  --maplinks plain: append real line breaks + 'Open Kakao Map: <url>' (My Maps auto-links bare URLs). Use for GPX/CSV.
+  --maplinks plain: append a real line break + 'Open Naver Map: <url>' (My Maps auto-links bare URLs). Use for GPX/CSV.
   Both add GPX <link> elements. The KML written by --kml always uses the html form.
   --kml      also writes a KML (line + pins, HTML descriptions in CDATA), the format Google My Maps imports most faithfully.
 
@@ -41,22 +41,18 @@ def naver_url(lat, lon, naver_id=None):
     return f"https://map.naver.com/p/search/{lat:.6f}%2C{lon:.6f}"
 
 
-def map_links(lat, lon, label, naver_id=None, kakao=True):
-    """Pin URLs that open in Kakao Map (routes only) and Naver Map."""
-    links = {}
-    if kakao:
-        links['Kakao Map'] = f"https://map.kakao.com/link/map/{urllib.parse.quote(label)},{lat:.6f},{lon:.6f}"
-    links['Naver Map'] = naver_url(lat, lon, naver_id)
-    return links
+def map_links(lat, lon, label, naver_id=None):
+    """Pin URL(s) to append to a description: Naver Map only.
+    Kakao Map links are never generated (user preference, 2026-10-11); `label` is kept for call compatibility."""
+    return {'Naver Map': naver_url(lat, lon, naver_id)}
 
 
-def html_desc(w, maplinks, kakao=True):
-    """Description text plus one 'Open … Map' line per map.
-    maplinks: None | 'html' (<br><a href>, for KML) | 'plain' (newline + 'Open X: url', for GPX/CSV).
-    kakao=False (pins KML) keeps only the Naver link."""
+def html_desc(w, maplinks):
+    """Description text plus the 'Open Naver Map' line.
+    maplinks: None | 'html' (<br><a href>, for KML) | 'plain' (newline + 'Open Naver Map: url', for GPX/CSV)."""
     desc = w.get('desc', '')
     if maplinks:
-        links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'), kakao)
+        links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'))
         if maplinks == 'html':
             desc += ''.join(f'<br><a href="{u}">Open {k}</a>' for k, u in links.items())
         else:

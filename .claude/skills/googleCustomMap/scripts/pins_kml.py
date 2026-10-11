@@ -35,7 +35,7 @@ def main():
     K.append(f"<Folder><name>{esc(spec.get('name', 'places'))}</name>")
     for w, icon in zip(wpts, chosen):
         iid, color, _, _ = ICONS[icon]
-        K.append(f"<Placemark><name>{esc(w['name'])}</name><description><![CDATA[{html_desc(w, maplinks, kakao=False)}]]></description>"
+        K.append(f"<Placemark><name>{esc(w['name'])}</name><description><![CDATA[{html_desc(w, maplinks)}]]></description>"
                  f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
     K.append('</Folder></Document></kml>')
     kml = '\n'.join(K) + '\n'
