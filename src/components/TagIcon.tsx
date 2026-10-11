@@ -3,16 +3,16 @@ import { GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
 import type { TagIconName } from '../data/travel'
 
 // Icons for path tags, from the FontAwesome and Game Icons sets in react-icons.
-// Each icon can carry its own colour; the rest of the pill follows the theme.
+// Colours come from the pill (.tag-<name> in index.css), so icon and text match.
 export default function TagIcon({ name }: { name: TagIconName }) {
   switch (name) {
     case 'hiker':
-      return <GiHiking className="tag-icon" aria-hidden="true" style={{ color: '#15803d' }} />
+      return <GiHiking className="tag-icon" aria-hidden="true" />
     case 'moon':
-      return <FaMoon className="tag-icon" aria-hidden="true" style={{ color: '#fbbf24' }} />
+      return <FaMoon className="tag-icon" aria-hidden="true" />
     case 'village':
-      return <GiVillage className="tag-icon" aria-hidden="true" style={{ color: '#b45309' }} />
+      return <GiVillage className="tag-icon" aria-hidden="true" />
     case 'sunset':
-      return <GiSunset className="tag-icon" aria-hidden="true" style={{ color: '#f97316' }} />
+      return <GiSunset className="tag-icon" aria-hidden="true" />
   }
 }

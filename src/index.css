@@ -163,7 +163,12 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   font-weight: 600;
   font-size: 12px;
 }
-.pill.tag { background: var(--text); color: var(--bg); }
+.pill.tag { background: var(--press); color: var(--text); }
+/* One hue per tag, picked for its meaning; light-dark() follows color-scheme. */
+.pill.tag-hiker   { background: light-dark(#dcfce7, #14532d); color: light-dark(#166534, #bbf7d0); }
+.pill.tag-moon    { background: light-dark(#e0e7ff, #312e81); color: light-dark(#3730a3, #c7d2fe); }
+.pill.tag-village { background: light-dark(#fef3c7, #78350f); color: light-dark(#92400e, #fde68a); }
+.pill.tag-sunset  { background: light-dark(#ffedd5, #7c2d12); color: light-dark(#c2410c, #fed7aa); }
 .tag-icon { width: 13px; height: 13px; flex: 0 0 auto; }
 
 .chevron { font-size: 26px; color: var(--muted); flex: 0 0 auto; }

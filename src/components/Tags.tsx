@@ -12,7 +12,7 @@ export default function Tags({ tags, duration }: { tags?: Tag[]; duration?: stri
             {tag}
           </span>
         ) : (
-          <span key={tag.label} className="pill tag">
+          <span key={tag.label} className={`pill tag tag-${tag.icon}`}>
             <TagIcon name={tag.icon} />
             {tag.label}
           </span>

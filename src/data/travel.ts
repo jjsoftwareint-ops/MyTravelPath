@@ -55,7 +55,7 @@ export const cities: City[] = [
         name: 'Hanok Villages',
         description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km.',
         duration: '2h',
-        tags: [{ icon: 'village', label: 'Traditional houses' }],
+        tags: [{ icon: 'village', label: 'Traditional' }],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=14TBNrDcRMm9lNuEBH3QZbcEAg_mnuNU',
       },
       {
