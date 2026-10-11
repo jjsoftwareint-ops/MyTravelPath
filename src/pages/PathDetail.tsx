@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { ImInfo } from "react-icons/im";
 import { Navigate, useParams } from "react-router-dom";
-import CopyLink from "../components/CopyLink";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
-import { isIOS } from "../platform";
+import { browserUrl, isIOS, isPhone } from "../platform";
 
 export default function PathDetail() {
   const { cityId, pathId } = useParams();
@@ -35,8 +34,8 @@ export default function PathDetail() {
           </li>
           {isIOS() && (
             <li>
-              Open the map in a browser to tap the <b>Naver Map</b> links.{" "}
-              Long-press “Open in Google Maps” and choose “Open in New Tab”.
+              Use “Open with a browser” below to tap the <b>Naver Map</b> links.
+              The Google Maps app shows them as plain text.
             </li>
           )}
         </ul>
@@ -78,7 +77,11 @@ export default function PathDetail() {
             >
               Open in Google Maps ↗
             </a>
-            <CopyLink url={path.mapUrl} />
+            {isPhone() && (
+              <a href={browserUrl(path.mapUrl)} className="cta secondary">
+                Open with a browser ↗
+              </a>
+            )}
           </>
         ) : (
           <span className="cta">Map link coming soon</span>
