@@ -61,6 +61,10 @@ export default function PathList() {
 
   return (
     <Layout title={city.name} subtitle={`${country.flag} ${country.name}`} backTo={`/${country.id}`}>
+      <p className="notice">
+        <span aria-hidden="true">ℹ️</span> Please open Google Maps first in case the path is not
+        visible.
+      </p>
       {city.paths.length === 0 ? (
         <p className="empty">No paths yet. Add some in src/data/travel.ts</p>
       ) : (
