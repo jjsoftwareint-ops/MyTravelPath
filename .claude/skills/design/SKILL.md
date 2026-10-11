@@ -24,7 +24,8 @@ its set prefix. The prefix tells you the import path:
 | `Lu…` | `react-icons/lu` | Lucide (ISC) |
 | `Pi…` | `react-icons/pi` | Phosphor (MIT) |
 
-Icons in use: `GiHiking` → tag `hiker` (Trekking), `FaMoon` in amber `#fbbf24` → tag `moon` (Night walk).
+Icons in use: `GiHiking` → `hiker` (Trekking, green), `FaMoon` → `moon` (Night walk, indigo),
+`GiVillage` → `village` (Traditional, amber), `GiSunset` → `sunset` (Evening walk, orange).
 
 Adding one:
 
@@ -33,11 +34,15 @@ Adding one:
    grep -c 'GiHiking\b' node_modules/react-icons/gi/index.d.ts    # 1 = present
    ```
 2. In `src/data/travel.ts` extend `TagIconName` (`'hiker' | 'moon' | 'beach'`).
-3. In `src/components/TagIcon.tsx` import it and add a `case`. Colour, if the icon should carry one, goes
-   on the icon only via `style={{ color: '…' }}` (the pill keeps the theme colours):
+3. In `src/components/TagIcon.tsx` import it and add a `case` (no inline colour; the icon inherits):
    ```tsx
    case 'beach':
-     return <FaUmbrellaBeach className="tag-icon" aria-hidden="true" style={{ color: '#38bdf8' }} />
+     return <FaUmbrellaBeach className="tag-icon" aria-hidden="true" />
+   ```
+   Then give the pill one meaningful hue in `src/index.css`, light and dark via `light-dark()`
+   (the pill gets class `tag-<name>`; keep the `.pill.` prefix or `.pill.tag` wins on specificity):
+   ```css
+   .pill.tag-beach { background: light-dark(#e0f2fe, #0c4a6e); color: light-dark(#075985, #bae6fd); }
    ```
 4. Use it in data: `tags: [{ icon: 'beach', label: 'Seaside' }]`. A plain string tag (`'🌙 Night walk'`)
    still works but is the fallback, not the norm.
