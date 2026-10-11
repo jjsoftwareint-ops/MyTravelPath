@@ -86,11 +86,11 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
 .back.placeholder { visibility: hidden; }
 
 .header-icon {
-  flex: 0 0 32px;
-  width: 32px;
-  height: 32px;
-  margin: 0 6px;
-  border-radius: 50%;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  margin: 0 4px;
+  border-radius: 9px;
   box-shadow: 0 0 0 1px var(--border);
 }
 

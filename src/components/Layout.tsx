@@ -20,7 +20,7 @@ export default function Layout({ title, subtitle, backTo, icon, children }: Prop
             ‹
           </Link>
         ) : icon ? (
-          <img className="header-icon" src={icon.src} alt={icon.alt} width={32} height={32} />
+          <img className="header-icon" src={icon.src} alt={icon.alt} width={36} height={36} />
         ) : (
           <span className="back placeholder" />
         )}

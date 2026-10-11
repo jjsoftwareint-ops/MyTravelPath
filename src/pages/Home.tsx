@@ -14,7 +14,7 @@ export default function Home() {
     <Layout
       title="My Travel Path"
       subtitle="Pick a city, then a path"
-      icon={{ src: `${import.meta.env.BASE_URL}flag-kr.svg`, alt: "South Korea" }}
+      icon={{ src: `${import.meta.env.BASE_URL}icon-192.png`, alt: "" }}
     >
       <p className="notice">
         <ImInfo className="notice-icon" aria-hidden="true" /> Restaurant, café and event information
