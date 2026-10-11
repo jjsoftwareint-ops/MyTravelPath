@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
-import RouteArt from '../components/RouteArt'
+import Banner from '../components/Banner'
 import { countries } from '../data/travel'
 
 // The expanded country lives in the URL (/:countryId) so that coming back from
@@ -10,10 +10,7 @@ export default function Home() {
 
   return (
     <Layout title="My Travel Path" subtitle="Pick a country, then a city">
-      <div className="hero">
-        <RouteArt />
-        <p className="hint">Tap a country to see its cities, then a city to see its paths.</p>
-      </div>
+      <Banner />
       <ul className="list">
         {countries.map((country) => {
           const open = country.id === countryId
