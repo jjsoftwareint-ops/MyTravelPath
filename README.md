@@ -41,3 +41,9 @@ and publishes `dist/` to GitHub Pages. One-time setup in the repo:
 **Settings → Pages → Source → "GitHub Actions"**.
 
 Site URL: https://jjsoftwareint-ops.github.io/MyTravelPath/
+
+## Credits
+
+Home banner photo: *Downtown Seoul from Inwangsan in 2023* by the Seoul
+Tourism Organization, via Wikimedia Commons, Korea Open Government License
+(KOGL) Type 1. https://commons.wikimedia.org/wiki/File:Downtown_Seoul_from_Inwangsan_in_2023.jpg
