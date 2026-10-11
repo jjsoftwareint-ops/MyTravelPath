@@ -54,4 +54,5 @@ Photos are from Wikimedia Commons under the Korea Open Government License
   City (부산광역시).
   https://commons.wikimedia.org/wiki/File:Busan_City_Haeundae_Beach_KOGL_(01).jpg
 
-Tag icons are from FontAwesome via the react-icons package (CC BY 4.0).
+Tag icons are from FontAwesome (CC BY 4.0) and Game Icons (CC BY 3.0) via the
+react-icons package.
