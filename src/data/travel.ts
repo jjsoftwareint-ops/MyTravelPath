@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// Edit this file to add your own countries, cities and paths.
+// Edit this file to add your own cities and paths.
 // Each path's `mapUrl` is a Google My Maps share link, e.g.
 //   https://www.google.com/maps/d/viewer?mid=XXXXXXXX
 // ─────────────────────────────────────────────────────────────
@@ -21,94 +21,67 @@ export type TravelPath = {
 export type City = {
   id: string
   name: string
+  image?: string // file in ./assets, shown as the city card's header photo
+  imageCredit?: string // shown as a small label on the photo
   paths: TravelPath[]
 }
 
-export type Country = {
-  id: string
-  name: string
-  flag: string
-  cities: City[]
-}
-
-export const countries: Country[] = [
+export const cities: City[] = [
   {
-    id: 'korea',
-    name: 'South Korea',
-    flag: '🇰🇷',
-    cities: [
+    id: 'seoul',
+    name: 'Seoul',
+    image: 'seoul.jpg',
+    imageCredit: 'Photo: Seoul Tourism Organization · KOGL 1',
+    paths: [
       {
-        id: 'seoul',
-        name: 'Seoul',
-        paths: [
-          {
-            id: 'naksan-cheonggyecheon',
-            name: 'Naksan Park and Cheonggyecheon',
-            description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
-            duration: '3h',
-            tags: ['🌙 Night walk'],
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
-          },
-          {
-            id: 'bukchon-hanok',
-            name: 'Bukchon Hanok Village Walk',
-            description: 'Traditional houses, Samcheong-dong cafés, Gyeongbokgung views.',
-            duration: '2h',
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
-          },
-          {
-            id: 'inwang-mountain-trail',
-            name: 'Inwang Mountain Trail',
-            description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
-            duration: '2.5h',
-            tags: [{ icon: 'hiker', label: 'Trekking' }],
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
-          },
-        ],
+        id: 'naksan-cheonggyecheon',
+        name: 'Naksan Park and Cheonggyecheon',
+        description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
+        duration: '3h',
+        tags: ['🌙 Night walk'],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
       },
       {
-        id: 'busan',
-        name: 'Busan',
-        paths: [
-          {
-            id: 'haeundae-coast',
-            name: 'Haeundae Coastal Path',
-            description: 'Beach → Dongbaek Island → Blueline Park sky capsule.',
-            duration: 'Half day',
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
-          },
-        ],
+        id: 'bukchon-hanok',
+        name: 'Bukchon Hanok Village Walk',
+        description: 'Traditional houses, Samcheong-dong cafés, Gyeongbokgung views.',
+        duration: '2h',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
+      },
+      {
+        id: 'inwang-mountain-trail',
+        name: 'Inwang Mountain Trail',
+        description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
+        duration: '2.5h',
+        tags: [{ icon: 'hiker', label: 'Trekking' }],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
       },
     ],
   },
   {
-    id: 'germany',
-    name: 'Germany',
-    flag: '🇩🇪',
-    cities: [
+    id: 'busan',
+    name: 'Busan',
+    paths: [
       {
-        id: 'berlin',
-        name: 'Berlin',
-        paths: [
-          {
-            id: 'berlin-wall-trail',
-            name: 'Berlin Wall Memorial Trail',
-            description: 'Bernauer Straße memorial → Mauerpark → Prenzlauer Berg.',
-            duration: '2.5h',
-            mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
-          },
-        ],
+        id: 'haeundae-coast',
+        name: 'Haeundae Coastal Path',
+        description: 'Beach → Dongbaek Island → Blueline Park sky capsule.',
+        duration: 'Half day',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
       },
     ],
   },
 ]
 
 // ── Lookup helpers ───────────────────────────────────────────
-export const findCountry = (countryId?: string) =>
-  countries.find((c) => c.id === countryId)
+export const findCity = (cityId?: string) => cities.find((c) => c.id === cityId)
 
-export const findCity = (countryId?: string, cityId?: string) =>
-  findCountry(countryId)?.cities.find((c) => c.id === cityId)
+export const findPath = (cityId?: string, pathId?: string) =>
+  findCity(cityId)?.paths.find((p) => p.id === pathId)
+
+// A path whose map link has not been filled in yet is shown but not openable.
+export const hasMap = (path: TravelPath) =>
+  Boolean(path.mapUrl) && !path.mapUrl.includes('REPLACE_ME')
 
 // Google My Maps share links and embed links share the same `mid` id, so the
 // embed URL can be derived instead of stored twice.

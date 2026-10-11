@@ -1,48 +1,54 @@
 import { Link, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
-import Banner from '../components/Banner'
-import { countries } from '../data/travel'
+import Tags from '../components/Tags'
+import { cities } from '../data/travel'
 
-// The expanded country lives in the URL (/:countryId) so that coming back from
-// a city's path list lands on the home list with that country still open.
+// The expanded city lives in the URL (/:cityId) so that coming back from a
+// path's detail page lands on the list with that city still open.
 export default function Home() {
-  const { countryId } = useParams()
+  const { cityId } = useParams()
 
   return (
-    <Layout title="My Travel Path" subtitle="Pick a country, then a city">
-      <Banner />
+    <Layout title="My Travel Path" subtitle="Pick a city, then a path">
       <ul className="list">
-        {countries.map((country) => {
-          const open = country.id === countryId
-          const pathCount = country.cities.reduce((n, c) => n + c.paths.length, 0)
+        {cities.map((city) => {
+          const open = city.id === cityId
           return (
-            <li key={country.id} className={open ? 'group open' : 'group'}>
+            <li key={city.id} className={open ? 'group open' : 'group'}>
               <Link
-                to={open ? '/' : `/${country.id}`}
+                to={open ? '/' : `/${city.id}`}
                 replace
                 className="card group-head"
                 aria-expanded={open}
               >
-                <span className="emoji">{country.flag}</span>
-                <span className="card-body">
-                  <span className="card-title">{country.name}</span>
-                  <span className="card-meta">
-                    {country.cities.length} {country.cities.length === 1 ? 'city' : 'cities'} ·{' '}
-                    {pathCount} {pathCount === 1 ? 'path' : 'paths'}
+                {city.image && (
+                  <span className="card-image">
+                    <img
+                      src={`${import.meta.env.BASE_URL}${city.image}`}
+                      alt=""
+                      decoding="async"
+                    />
+                    {city.imageCredit && <span className="credit">{city.imageCredit}</span>}
                   </span>
+                )}
+                <span className="row">
+                  <span className="card-body">
+                    <span className="card-title">{city.name}</span>
+                    <span className="card-meta">
+                      {city.paths.length} {city.paths.length === 1 ? 'path' : 'paths'}
+                    </span>
+                  </span>
+                  <span className="chevron caret">›</span>
                 </span>
-                <span className="chevron caret">›</span>
               </Link>
               {open && (
                 <ul className="sublist">
-                  {country.cities.map((city) => (
-                    <li key={city.id}>
-                      <Link to={`/${country.id}/${city.id}`} className="child">
+                  {city.paths.map((path) => (
+                    <li key={path.id}>
+                      <Link to={`/${city.id}/${path.id}`} className="child">
                         <span className="card-body">
-                          <span className="card-title">{city.name}</span>
-                          <span className="card-meta">
-                            {city.paths.length} {city.paths.length === 1 ? 'path' : 'paths'}
-                          </span>
+                          <span className="card-title">{path.name}</span>
+                          <Tags tags={path.tags} duration={path.duration} />
                         </span>
                         <span className="chevron">›</span>
                       </Link>

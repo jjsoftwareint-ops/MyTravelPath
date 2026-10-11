@@ -1,6 +1,6 @@
 # My Travel Path
 
-A tiny mobile-first website listing travel countries → cities → walking paths,
+A tiny mobile-first website listing cities → walking paths,
 each linking to a Google My Maps route. No backend; all data lives in one file.
 
 ## Run locally
@@ -10,7 +10,7 @@ npm install
 npm run dev
 ```
 
-## Add a country, city or path
+## Add a city or path
 
 Edit `src/data/travel.ts`. Every entry needs a unique `id` (used in the URL).
 Paste your Google My Maps share link into `mapUrl`.
@@ -44,6 +44,6 @@ Site URL: https://jjsoftwareint-ops.github.io/MyTravelPath/
 
 ## Credits
 
-Home banner photo: *Downtown Seoul from Inwangsan in 2023* by the Seoul
+Seoul card photo and app icon: *Downtown Seoul from Inwangsan in 2023* by the Seoul
 Tourism Organization, via Wikimedia Commons, Korea Open Government License
 (KOGL) Type 1. https://commons.wikimedia.org/wiki/File:Downtown_Seoul_from_Inwangsan_in_2023.jpg
