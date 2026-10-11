@@ -35,7 +35,8 @@ export default function PathDetail() {
           {isIOS() && (
             <li>
               Use “Open with a browser” below to open the{" "}
-              <b className="naver">Naver Map</b> links.
+              <b className="naver">Naver Map</b> links. Click location name to
+              see the details with the map link.
             </li>
           )}
         </ul>
