@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker'
+export type TagIconName = 'hiker' | 'moon'
 export type Tag = string | { icon: TagIconName; label: string }
 
 export type TravelPath = {
@@ -14,7 +14,7 @@ export type TravelPath = {
   name: string
   description?: string
   duration?: string // e.g. "2h", "Half day"
-  tags?: Tag[] // e.g. ["🌙 Night walk"] or [{ icon: 'hiker', label: 'Trekking' }]
+  tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
   mapUrl: string
 }
 
@@ -38,7 +38,7 @@ export const cities: City[] = [
         name: 'Naksan Park and Cheonggyecheon',
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
-        tags: ['🌙 Night walk'],
+        tags: [{ icon: 'moon', label: 'Night walk' }],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
       },
       {
@@ -61,6 +61,8 @@ export const cities: City[] = [
   {
     id: 'busan',
     name: 'Busan',
+    image: 'busan.jpg',
+    imageCredit: 'Photo: Busan Metropolitan City · KOGL 1',
     paths: [
       {
         id: 'haeundae-coast',

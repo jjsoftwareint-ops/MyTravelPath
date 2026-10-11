@@ -44,6 +44,14 @@ Site URL: https://jjsoftwareint-ops.github.io/MyTravelPath/
 
 ## Credits
 
-Seoul card photo and app icon: *Downtown Seoul from Inwangsan in 2023* by the Seoul
-Tourism Organization, via Wikimedia Commons, Korea Open Government License
-(KOGL) Type 1. https://commons.wikimedia.org/wiki/File:Downtown_Seoul_from_Inwangsan_in_2023.jpg
+Photos are from Wikimedia Commons under the Korea Open Government License
+(KOGL) Type 1, which allows free use with a source credit.
+
+- Seoul card photo and app icon: *Downtown Seoul from Inwangsan in 2023*,
+  Seoul Tourism Organization.
+  https://commons.wikimedia.org/wiki/File:Downtown_Seoul_from_Inwangsan_in_2023.jpg
+- Busan card photo: *Busan City Haeundae Beach KOGL (01)*, Busan Metropolitan
+  City (부산광역시).
+  https://commons.wikimedia.org/wiki/File:Busan_City_Haeundae_Beach_KOGL_(01).jpg
+
+Tag icons are from FontAwesome via the react-icons package (CC BY 4.0).
