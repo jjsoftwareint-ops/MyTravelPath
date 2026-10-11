@@ -509,6 +509,10 @@ a:focus-visible {
   margin-top: 2px;
   color: var(--accent);
 }
+.naver {
+  color: #03a94d; /* Naver brand green */
+  font-weight: 700;
+}
 .notice-list {
   margin: 0;
   padding: 0 0 0 2px;

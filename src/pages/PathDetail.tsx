@@ -29,12 +29,12 @@ export default function PathDetail() {
             Please open Google Maps first in case the path is not visible.
           </li>
           <li>
-            <b>Naver Map</b> is more accurate in Korea. Each location has a
-            Naver Map link.
+            <b><span className="naver">Naver</span> Map</b> is more accurate in Korea. Each location has a
+            <span className="naver">Naver</span> Map link.
           </li>
           {isIOS() && (
             <li>
-              Use “Open with a browser” below to open the <b>Naver Map</b>{" "}
+              Use “Open with a browser” below to open the <b><span className="naver">Naver</span> Map</b>{" "}
               links.
             </li>
           )}
