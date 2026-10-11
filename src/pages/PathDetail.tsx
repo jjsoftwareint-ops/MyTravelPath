@@ -26,16 +26,6 @@ export default function PathDetail() {
 
   return (
     <Layout title={path.name} subtitle={city.name} backTo={`/${city.id}`}>
-      <div className="notice">
-        <ImInfo className="notice-icon" aria-hidden="true" />
-        <ul className="notice-list">
-          <li>
-            <b className="naver">Naver Map</b> is more accurate for navigation
-            in Korea. Each location has the link.
-          </li>
-        </ul>
-      </div>
-
       <article className={ready ? "card path-card" : "card path-card disabled"}>
         <div className="card-body">
           <Tags tags={path.tags} duration={path.duration} />
@@ -61,6 +51,16 @@ export default function PathDetail() {
             )}
           </div>
         )}
+
+        <div className="notice">
+          <ImInfo className="notice-icon" aria-hidden="true" />
+          <ul className="notice-list">
+            <li>
+              <b className="naver">Naver Map</b> is more accurate for navigation
+              in Korea. Each location has the link.
+            </li>
+          </ul>
+        </div>
 
         {ready ? (
           <>
