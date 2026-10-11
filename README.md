@@ -72,4 +72,5 @@ The round Korean flag in the header is `kr.svg` from HatScripts
 
 The app icon and favicon are the project's own artwork.
 Tag icons are from FontAwesome (CC BY 4.0) and Game Icons (CC BY 3.0), and the
-notice icon from IcoMoon Free (CC BY 4.0), all via the react-icons package.
+notice icon from IcoMoon Free (CC BY 4.0) and the light/dark toggle from
+Ionicons (MIT), all via the react-icons package.

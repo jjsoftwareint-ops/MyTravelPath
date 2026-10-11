@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 
 type Props = {
   title: string
@@ -27,6 +28,7 @@ export default function Layout({ title, subtitle, backTo, icon, children }: Prop
           <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
         </div>
+        <ThemeToggle />
       </header>
       <main className="content">{children}</main>
     </div>
