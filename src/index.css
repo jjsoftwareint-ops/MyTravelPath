@@ -288,7 +288,16 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-
   border: 1px solid var(--border);
   background: var(--press);
 }
-.map iframe { display: block; width: 100%; height: 100%; border: 0; }
+/* Google draws a 56px toolbar at the top of the embed (title, share, full
+   screen) and offers no option to remove it. The iframe is made that much
+   taller and shifted up so the toolbar sits behind the box's top edge. */
+.map iframe {
+  display: block;
+  width: 100%;
+  height: calc(100% + 56px);
+  margin-top: -56px;
+  border: 0;
+}
 
 .map-cover {
   position: absolute;
