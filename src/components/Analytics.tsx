@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 // at https://www.goatcounter.com/signup. Leave empty to disable tracking.
 // GoatCounter stores nothing on the visitor's device, so no consent banner
 // is needed; the dashboard shows views per path and visitor countries.
-export const GOATCOUNTER_SITE = ''
+export const GOATCOUNTER_SITE = 'jjsoftware-my-travel-path'
 
 // Public dashboard, linked from the home footer. Enable "Allow public access"
 // in the GoatCounter site settings so visitors can open it.
