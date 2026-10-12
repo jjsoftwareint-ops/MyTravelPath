@@ -295,6 +295,11 @@ a:focus-visible {
   align-items: stretch;
   gap: 10px;
   padding: 16px;
+  overflow: hidden; /* clips the banner's corners */
+}
+/* Banner photo across the top of a path card, bleeding to the card edge */
+.path-image {
+  margin: -16px -16px 6px;
 }
 .cta {
   display: flex;

@@ -57,8 +57,9 @@ Nothing is sent while running locally or while the site code is empty.
 
 ## Credits
 
-Photos are from Wikimedia Commons under the Korea Open Government License
-(KOGL) Type 1, which allows free use with a source credit.
+Photos are from Wikimedia Commons: the city cards under the Korea Open
+Government License (KOGL) Type 1, the path banners under CC BY-SA 4.0 or CC0.
+All allow free use; the credit is given in every case.
 
 - Seoul card photo: *Downtown Seoul from Inwangsan in 2023*,
   Seoul Tourism Organization.
@@ -66,6 +67,17 @@ Photos are from Wikimedia Commons under the Korea Open Government License
 - Busan card photo: *Busan City Haeundae Beach KOGL (01)*, Busan Metropolitan
   City (부산광역시).
   https://commons.wikimedia.org/wiki/File:Busan_City_Haeundae_Beach_KOGL_(01).jpg
+- Haebangchon path banner (Sinheung Market): *Haebangchon (55192248983)*, Lee Jeong
+  Woo (이정우) / Ministry of Culture, Sports and Tourism, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Haebangchon_(55192248983).jpg
+- Hanok Villages path banner: *Bukchon Hanok Village 01*, Bgag, CC0.
+  https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village_01.jpg
+- Inwang Mountain Trail path banner: *Seoul Fortress Wall, Inwangsan.3*, Rtflakfizer,
+  CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Seoul_Fortress_Wall,_Inwangsan.3.jpg
+- Naksan Park path banner: *서울 한양도성 … 낙산야경1-1*, Seoul Metropolitan Fire &
+  Disaster Headquarters (서울특별시 소방재난본부), CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8_%ED%95%9C%EC%96%91%EB%8F%84%EC%84%B1(%EC%84%9C%EC%9A%B8_%E6%BC%A2%E9%99%BD%E9%83%BD%E5%9F%8E,_Fortress_Wall_of_Seoul)_2011%EB%85%84_11%EC%9B%94_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C_%EB%AA%85%EC%86%8C_(Seoul_best_attractions)_%EC%82%AC%EB%B3%B8_-%EB%82%99%EC%82%B0%EC%95%BC%EA%B2%BD1-1.jpg
 
 The home-header mark is the FontAwesome rolling suitcase with `kr.svg` from
 HatScripts [circle-flags](https://github.com/HatScripts/circle-flags) (MIT).

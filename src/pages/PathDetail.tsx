@@ -24,6 +24,16 @@ export default function PathDetail() {
   return (
     <Layout title={path.name} subtitle={city.name} backTo={`/${city.id}`}>
       <article className={ready ? "card path-card" : "card path-card disabled"}>
+        {path.image && (
+          <span className="card-image path-image">
+            <img
+              src={`${import.meta.env.BASE_URL}${path.image}`}
+              alt=""
+              decoding="async"
+            />
+            {path.imageCredit && <span className="credit">{path.imageCredit}</span>}
+          </span>
+        )}
         <div className="card-body">
           <Tags tags={path.tags} duration={path.duration} />
           {path.description && <p className="card-desc">{path.description}</p>}

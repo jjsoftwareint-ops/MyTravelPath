@@ -15,6 +15,8 @@ export type TravelPath = {
   description?: string
   duration?: string // e.g. "2h", "Half day"
   tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
+  image?: string // file in ./assets, shown as a banner above the description on the detail page
+  imageCredit?: string // shown as a small label on the banner
   mapUrl: string
 }
 
@@ -35,10 +37,12 @@ export const cities: City[] = [
     paths: [
       {
         id: 'naksan-cheonggyecheon',
-        name: 'Naksan Park and Cheonggyecheon',
+        name: 'Fortress wall and stream',
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
         tags: [{ icon: 'moon', label: 'Night walk' }],
+        image: 'naksan.jpg',
+        imageCredit: 'Photo: Seoul Metropolitan Fire & Disaster HQ · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
       },
       {
@@ -48,6 +52,8 @@ export const cities: City[] = [
           'Huam-dong 108 Stairs, Sinheung Market, Sowol-ro rooftops and the City Wall to Baekbeom Square. 2.4 km.',
         duration: '2h',
         tags: [{ icon: 'sunset', label: 'Evening walk' }],
+        image: 'haebangchon.jpg',
+        imageCredit: 'Photo: Lee Jeong Woo / Korea MCST · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1kOFoicmAJJvQvsioIIOu1ng9dDQ4Exk',
       },
       {
@@ -56,6 +62,8 @@ export const cities: City[] = [
         description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km.',
         duration: '2h',
         tags: [{ icon: 'village', label: 'Traditional' }],
+        image: 'bukchon.jpg',
+        imageCredit: 'Photo: Bgag · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=14TBNrDcRMm9lNuEBH3QZbcEAg_mnuNU',
       },
       {
@@ -64,6 +72,8 @@ export const cities: City[] = [
         description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
         duration: '2.5h',
         tags: [{ icon: 'hiker', label: 'Trekking' }],
+        image: 'inwangsan.jpg',
+        imageCredit: 'Photo: Rtflakfizer · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
       },
     ],
