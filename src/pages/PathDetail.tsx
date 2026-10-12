@@ -3,7 +3,6 @@ import { ImInfo } from "react-icons/im";
 import { Navigate, useParams } from "react-router-dom";
 import CopyLink from "../components/CopyLink";
 import Layout from "../components/Layout";
-import OpenMapDialog from "../components/OpenMapDialog";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { browserUrl, isIOS } from "../platform";
@@ -15,8 +14,6 @@ export default function PathDetail() {
   // The embedded map starts behind a cover so that scrolling the page over it
   // does not pan the map instead. One tap hands control to the map.
   const [mapActive, setMapActive] = useState(false);
-  // iPhone/iPad: ask "Google Maps or browser?" before leaving (see OpenMapDialog).
-  const [askWhere, setAskWhere] = useState(false);
 
   if (!city || !path)
     return <Navigate to={city ? `/${city.id}` : "/"} replace />;
@@ -64,26 +61,18 @@ export default function PathDetail() {
 
         {ready ? (
           <>
+            {/* iPhone/iPad: the Safari-only scheme (see platform.ts) opens the map in a
+                new Safari tab instead of the Google Maps app, which shows the
+                Naver Map links in descriptions as plain text. */}
             <a
-              href={path.mapUrl}
+              href={isIOS() ? browserUrl(path.mapUrl) : path.mapUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="cta"
-              onClick={(e) => {
-                if (!isIOS()) return;
-                e.preventDefault();
-                setAskWhere(true);
-              }}
             >
               Open in Google Maps ↗
             </a>
             <CopyLink url={path.mapUrl} />
-            <OpenMapDialog
-              open={askWhere}
-              onClose={() => setAskWhere(false)}
-              mapsUrl={path.mapUrl}
-              browserUrl={browserUrl(path.mapUrl)}
-            />
           </>
         ) : (
           <span className="cta">Map link coming soon</span>

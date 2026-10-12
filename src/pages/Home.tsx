@@ -1,10 +1,17 @@
-import { ImInfo } from "react-icons/im";
+import { GrAnnounce } from "react-icons/gr";
+import { isIOS, isPhone } from "../platform";
 import { Link, useParams } from "react-router-dom";
 import { dashboardUrl } from "../components/Analytics";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import { cities } from "../data/travel";
+
+// Naver Map in the two app stores; the home notice links the one for the visitor's phone.
+const NAVER_MAP_STORE = {
+  ios: "https://apps.apple.com/app/id311867728",
+  android: "https://play.google.com/store/apps/details?id=com.nhn.android.nmap",
+};
 
 // The expanded city lives in the URL (/:cityId) so that coming back from a
 // path's detail page lands on the list with that city still open.
@@ -17,10 +24,21 @@ export default function Home() {
       subtitle="Pick a city, then a path"
       icon={<BrandMark />}
     >
-      <p className="notice">
-        <ImInfo className="notice-icon" aria-hidden="true" /> Restaurant, café
-        and event information is regularly updated.
-      </p>
+      <div className="notice">
+        <GrAnnounce className="notice-icon announce" aria-hidden="true" />
+        <ul className="notice-list">
+          <li>Restaurant, café and event information is regularly updated.</li>
+          {isPhone() && (
+            <li className="warn">
+              Downloading the <b className="naver">Naver Map</b> app is highly
+              recommended.{" "}
+              <a className="link" href={NAVER_MAP_STORE[isIOS() ? "ios" : "android"]}>
+                {isIOS() ? "Get it on the App Store ↗" : "Get it on Google Play ↗"}
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
 
       <ul className="list">
         {cities.map((city) => {
