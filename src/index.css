@@ -487,6 +487,23 @@ a:focus-visible {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
+.cta-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+/* "bold" icon: a same-colour outline thickens the glyph's strokes */
+.cta-icon.bold {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 14;
+  stroke-linejoin: round;
+}
+.cta-icon + .cta-icon {
+  margin-left: -2px;
+}
+
 /* Secondary action under the main button */
 .cta.secondary {
   background: var(--card);

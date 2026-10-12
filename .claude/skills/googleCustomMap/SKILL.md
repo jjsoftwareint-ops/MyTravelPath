@@ -30,6 +30,13 @@ for summit → junction legs; the B-course stairs are boardwalk way 1314758863 e
 
 ## Hard rules
 
+- **Every pin's Naver link is a place page or an address search, never a coordinate search.** The Naver
+  Map app cannot resolve `map.naver.com/p/search/<lat>,<lon>` (user hit this 2026-10-12: "cannot find the
+  location"), so such links are dead on phones. Venues get `naver_id` from `naver_place.py`; everything
+  else (start points, junctions, viewpoints) gets an `"address"` in the spec, filled by
+  `scripts/reverse_address.py spec.json` (OSM house numbers + Nominatim, each candidate verified against
+  Naver's own search within 60 m) and checked by eye. `build_gpx.py` refuses a pin with neither.
+
 - **Never add Kakao Map links** — not in GPX, KML, CSV, pins or route descriptions (user preference,
   2026-10-11; all existing kmz files were scrubbed that day). Every pin carries exactly one map link,
   "Open Naver Map", because Naver is the accurate map in Korea. The scripts no longer generate Kakao URLs;

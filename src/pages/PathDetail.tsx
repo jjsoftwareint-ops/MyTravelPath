@@ -1,5 +1,8 @@
 import { useState } from "react";
+import { FaBus } from "react-icons/fa6";
+import { GiPathDistance } from "react-icons/gi";
 import { ImInfo } from "react-icons/im";
+import { MdOutlinePinDrop } from "react-icons/md";
 import { Navigate, useParams } from "react-router-dom";
 import CopyLink from "../components/CopyLink";
 import Layout from "../components/Layout";
@@ -31,7 +34,9 @@ export default function PathDetail() {
               alt=""
               decoding="async"
             />
-            {path.imageCredit && <span className="credit">{path.imageCredit}</span>}
+            {path.imageCredit && (
+              <span className="credit">{path.imageCredit}</span>
+            )}
           </span>
         )}
         <div className="card-body">
@@ -71,17 +76,46 @@ export default function PathDetail() {
 
         {ready ? (
           <>
-            {/* iPhone/iPad: the Safari-only scheme (see platform.ts) opens the map in a
-                new Safari tab instead of the Google Maps app, which shows the
-                Naver Map links in descriptions as plain text. */}
-            <a
-              href={isIOS() ? browserUrl(path.mapUrl) : path.mapUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta"
-            >
-              Open in Google Maps ↗
-            </a>
+            {isIOS() ? (
+              <>
+                {/* iPhone/iPad: the Google Maps app follows the route well but shows the
+                    Naver Map links in pin descriptions as plain text, so a second button
+                    opens the same map in a new Safari tab (see platform.ts). */}
+                <a
+                  href={path.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta"
+                >
+                  To follow the path
+                  <GiPathDistance
+                    className="cta-icon bold"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a
+                  href={browserUrl(path.mapUrl)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta secondary"
+                >
+                  To the point
+                  <MdOutlinePinDrop className="cta-icon" aria-hidden="true" />
+                  <FaBus className="cta-icon" aria-hidden="true" />
+                  &amp; Location
+                  <ImInfo className="cta-icon" aria-hidden="true" />
+                </a>
+              </>
+            ) : (
+              <a
+                href={path.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta"
+              >
+                Open in Google Maps ↗
+              </a>
+            )}
             <CopyLink url={path.mapUrl} />
           </>
         ) : (

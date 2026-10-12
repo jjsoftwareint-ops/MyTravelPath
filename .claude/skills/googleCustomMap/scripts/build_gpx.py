@@ -14,7 +14,10 @@ spec.json:
 {
   "name": "track name", "desc": "metadata description", "link": "https://youtu.be/...",
   "segments": [ {"label": "...", "approx": false, "coords": "lat,lon lat,lon ..."}, ... ],
-  "waypoints": [ {"lat": 0, "lon": 0, "name": "1. ...", "desc": "...", "label": "Start", "icon": "start", "naver_id": "1127977354"}, ... ]
+  "waypoints": [ {"lat": 0, "lon": 0, "name": "1. ...", "desc": "...", "label": "Start", "icon": "start",
+                  "naver_id": "1127977354" | "address": "서울 용산구 후암동 418-32"}, ... ]
+Every waypoint needs "naver_id" (a venue, from naver_place.py) or "address" (a street/lot address, from
+reverse_address.py); the build refuses a pin with neither, because coordinate searches don't work in the Naver app.
 }
 waypoint "icon" (optional): one of ICONS below. When omitted, the first pin is "start", the last "end", and the rest
 are chosen from keywords in label/name/desc (AUTO_ICON). The build prints the chosen icon per pin: review that list.
@@ -33,18 +36,23 @@ def hav(a, b):
     return 2 * R * math.asin(math.sqrt(h))
 
 
-def naver_url(lat, lon, naver_id=None):
-    """Naver Map link: the place's own entry page when its id is known (from naver_place.py), else a coordinate pin."""
+def naver_url(lat, lon, naver_id=None, address=None):
+    """Naver Map link: the place's own entry page when its id is known (from naver_place.py), else a search for
+    the pin's street/lot address (from reverse_address.py or the user). Never a coordinate search: the Naver Map
+    app cannot resolve "lat,lon" queries (found 2026-10-12), so such a link lands nowhere on phones."""
     if naver_id:
         return (f"https://map.naver.com/p/entry/place/{naver_id}?lng={lon:.7f}&lat={lat:.7f}"
                 f"&placePath=%2Fhome&entry=plt&searchType=place&c=15.00,0,0,0,dh")
-    return f"https://map.naver.com/p/search/{lat:.6f}%2C{lon:.6f}"
+    if address:
+        return 'https://map.naver.com/p/search/' + urllib.parse.quote(address)
+    raise SystemExit(f"pin at {lat:.6f},{lon:.6f} has neither naver_id nor address: run scripts/reverse_address.py "
+                     f"on the spec (or add \"address\") before building")
 
 
-def map_links(lat, lon, label, naver_id=None):
+def map_links(lat, lon, label, naver_id=None, address=None):
     """Pin URL(s) to append to a description: Naver Map only.
     Kakao Map links are never generated (user preference, 2026-10-11); `label` is kept for call compatibility."""
-    return {'Naver Map': naver_url(lat, lon, naver_id)}
+    return {'Naver Map': naver_url(lat, lon, naver_id, address)}
 
 
 def html_desc(w, maplinks):
@@ -52,7 +60,7 @@ def html_desc(w, maplinks):
     maplinks: None | 'html' (<br><a href>, for KML) | 'plain' (newline + 'Open Naver Map: url', for GPX/CSV)."""
     desc = w.get('desc', '')
     if maplinks:
-        links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'))
+        links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'), w.get('address'))
         if maplinks == 'html':
             desc += ''.join(f'<br><a href="{u}">Open {k}</a>' for k, u in links.items())
         else:
@@ -337,7 +345,7 @@ def main():
         if z is not None: L.append(f'    <ele>{z:.1f}</ele>')
         L.append(f"    <name>{esc(w['name'])}</name>")
         desc = html_desc(w, a.maplinks)
-        links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id')) if a.maplinks else {}
+        links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'), w.get('address')) if a.maplinks else {}
         if desc: L.append(f"    <desc>{esc(desc)}</desc>")
         for k, u in links.items():
             L.append(f'    <link href="{esc(u)}"><text>{k}</text></link>')

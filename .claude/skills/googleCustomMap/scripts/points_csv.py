@@ -21,7 +21,7 @@ def main():
             label = p.get('label') or re.sub(r'^\d+\.\s*', '', p['name'])
             row = [i, label, p['name'], f"{p['lat']:.6f}", f"{p['lon']:.6f}", html_desc(p, 'plain' if ml else None)]
             if ml:
-                row += list(map_links(p['lat'], p['lon'], label).values())
+                row += list(map_links(p['lat'], p['lon'], label, p.get('naver_id'), p.get('address')).values())
             w.writerow(row)
     print(f"{sys.argv[2]}: {len(spec['waypoints'])} rows")
 
