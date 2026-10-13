@@ -100,6 +100,9 @@ ICONS = {  # key: (id, colour, image name, GPX <sym>)
     'hotel':       ('1602', '4186F0', 'hotel-bed',           'Lodging'),
     'tent':        ('1765', 'DB4437', 'camping-tent',        'Shopping Center'),
     'flower':      ('1582', 'E91E63', 'garden-flower',       'Park'),   # cherry-blossom routes (pink)
+    'toilet':      ('1733', '4186F0', 'wc-unisex',           'Restroom'),
+    'dot':         ('1499', 'DB4437', 'shape_circle',        'Waypoint'),   # red dot: passing-by waypoint
+    'medical':     ('1558', 'DB4437', 'doctor-bag',          'Medical Facility'),   # hospital, clinic, pharmacy
     'pin':         ('1899', '0288D1', 'blank-shape_pin',     'Waypoint'),
 }
 GPX_SYM = {k: v[3] for k, v in ICONS.items()}

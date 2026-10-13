@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking'
 export type Tag = string | { icon: TagIconName; label: string }
 
 export type TravelPath = {
@@ -112,6 +112,23 @@ export const cities: City[] = [
         description: 'Beach → Dongbaek Island → Blueline Park sky capsule.',
         duration: 'Half day',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
+      },
+    ],
+  },
+  {
+    id: 'jeju',
+    name: 'Jeju',
+    image: 'jeju.jpg',
+    imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
+    paths: [
+      {
+        id: 'jeju-olle-trail',
+        name: 'Jeju Olle Trail',
+        description:
+          'Routes 5, 6 and 7 of the 437 km island trail: Namwon → Soesokkak → Seogwipo → Seogwipo Bus Terminal along the south coast, one colour per route, with every toilet and first-aid kit from the official maps.',
+        duration: '1 day per route',
+        tags: [{ icon: 'hiking', label: 'Hiking' }],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1KEy42fnL8YeGcNgyhB_9PVreKLgwiTM',
       },
     ],
   },

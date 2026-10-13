@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><pre id="out">loading</pre><script>
+const Q = `query getShapeGeoJSON($mtIdx: String, $mid: String, $mids: [String], $businessIds: [String], $rcode: String, $jibunCoords: String) { shapes(mtIdx: $mtIdx, mid: $mid, mids: $mids, businessIds: $businessIds, rcode: $rcode, jibunCoords: $jibunCoords) { type name key startName endName geometry { type coordinates } } }`;
+(async () => {
+  const out = {};
+  for (const [r, mid] of [['olle5','2345203'],['olle6','2345205'],['olle7','2345223']]) {
+    try {
+      const res = await fetch('https://api.place.naver.com/graphql', {method:'POST', headers:{'content-type':'application/json','accept':'*/*'}, body: JSON.stringify([{operationName:'getShapeGeoJSON', variables:{mid}, query:Q}])});
+      const t = await res.text(); out[r] = t.slice(0, 200000);
+    } catch (e) { out[r] = 'ERR ' + e; }
+  }
+  document.getElementById('out').textContent = JSON.stringify(out);
+})();
+</script>

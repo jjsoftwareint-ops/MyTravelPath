@@ -57,8 +57,8 @@ Nothing is sent while running locally or while the site code is empty.
 
 ## Credits
 
-Photos are from Wikimedia Commons: the city cards under the Korea Open
-Government License (KOGL) Type 1, the path banners under CC BY 3.0, CC BY-SA 4.0 or CC0.
+Photos are from Wikimedia Commons: the Seoul and Busan cards under the Korea Open
+Government License (KOGL) Type 1, the Jeju card under CC BY-SA 4.0, the path banners under CC BY 3.0, CC BY-SA 4.0 or CC0.
 All allow free use; the credit is given in every case.
 
 - Seoul card photo: *Downtown Seoul from Inwangsan in 2023*,
@@ -75,6 +75,9 @@ All allow free use; the credit is given in every case.
 - Inwang Mountain Trail path banner: *Seoul Fortress Wall, Inwangsan.3*, Rtflakfizer,
   CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Seoul_Fortress_Wall,_Inwangsan.3.jpg
+- Jeju card photo: *Jeju Olle Route 8* (Jusangjeolli basalt columns), Jeju Olle
+  Foundation, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_8.jpg
 - Cherry Blossom walk banners (Seoul and Busan): *Cherry Blossom in Yeouido Park - panoramio (1)*, Alexey
   Komarov, CC BY 3.0.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg

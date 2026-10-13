@@ -14,6 +14,7 @@ Two products, chosen by what the user wants (their standing preference, 2026-09-
 
 | **Layered KML** (hike with a separate up/down line colour + a restaurants layer) | `<Name>.kml` | `layers_kml.py` | examples/inwangsan-en.json |
 | **Multi-route KMZ** (several walks as pink lines + flower pins; user asked for .kmz) | `<Name>.kmz` = zipped `doc.kml` | `layers_kml.py`, then `zipfile` | examples/cherry-blossom.json |
+| **Long trail routes** (Jeju Olle, one colour per route + toilets/medical layer) | `<Name>.kmz` | OSM relation → `relation_chain.py` → `route.py` gaps → `layers_kml.py` | examples/jeju-olle-5-7.json |
 
 Route KML and CSV overlays exist but are only produced on request.
 
@@ -29,6 +30,34 @@ Cherry-blossom map (2026-10-13): riverside/park walks are chained from OSM way g
 (`도림천 자전거길`, `안양천 자전거도로` east bank, `여의서로`, `남산공원길`/`남산북측순환로`); the Seokchon Lake
 loop came from `route.py` via points on the promenade (approx). Bank check for a river path: compare the
 longitude of candidate ways at one latitude. The user wants a `.kmz`: zip the KML as `doc.kml` (no images).
+**Naver Map has the official line for named courses** (Olle, dulle-gil, hiking courses): the course is a
+place of category 도보코스 (e.g. 제주올레길7코스 = place 19932849; find it with `naver_place.py "제주올레길 7코스"`).
+Its mobile page `https://m.place.naver.com/place/<id>/home` (redirects to `/trail/<id>/home`) embeds
+`"mid":"<courseId>"` and the polyline's start/end; the line itself comes from the GraphQL
+`getShapeGeoJSON` query (`api.place.naver.com/graphql`, variables `{mid}`) which answers curl with a captcha
+but works from Chrome: `scripts/naver_course_shape.html` does the fetches in-page — run it with
+`chrome --headless=new --disable-web-security --user-data-dir=/tmp/x --dump-dom file://…/naver_course_shape.html`
+(edit the `[route, mid]` list first) and parse the `<pre>` JSON; MultiLineString parts are contiguous. Use
+this line as-is (`approx: false`); OSM relations and routing are only for courses Naver lacks. The user
+pointed at these Naver entries after two wrong rebuilds (2026-10-13): ask for / look for them first.
+Jeju Olle 5–7 (2026-10-13): **read the official map images first** —
+`https://contents.ollepass.org/static/homepage/trail/img/road/road_<NN>_map_pc_<year>.jpg` (year from
+`grep road_<NN>_map_pc assets/Road-*.js`; the Korean page's image is the same). They show the *current*
+route with every waypoint and its km, plus 화장실 (toilet) and 구급함 (first-aid kit) icons at named places:
+pin those by Naver place, don't substitute OSM amenities. Routes change (07 now ends at 서귀포버스터미널,
+not 월평; the OSM relation still had the old line), so verify each line against the image's waypoints
+(Naver coords, each ≤ ~130 m from the line, in order) and route any stretch that disagrees via the named
+waypoints. The user noticed the mismatch the first time; the images were there all along.
+jejuolle.org is a Vue SPA whose Road module holds only each course's official start/end lat/lng (`const p={"01":{start:…,end:…}}` in `assets/Road-*.js`) and map *images*; no line data, no
+facility coordinates (toilets are mentioned in prose only). Geometry comes from the OSM relations
+(`route=hiking`, names like `올레길5 (Ollegil 5)` / `Jeju Olle trail 7`); fetch them via
+`api.openstreetmap.org/api/0.6/relation/<id>/full` when Overpass 504s. Member order is jumbled and some
+relations include neighbour-route ways (7 had 8코스 ways and a 7(A) variant: exclude by name/length), so chain
+with `scripts/relation_chain.py` (shortest path through the way graph) and route only its gaps. The site's
+start/end coordinates are current; trust them over the OSM relation (course 07's relation was the old route).
+Toilets/medical: Overpass `amenity=toilets|hospital|clinic|doctors|pharmacy` within 150 m of the final line,
+each matched to a Naver place within 80 m (query "화장실"/"공중화장실" or the OSM name at the coords); icons
+`toilet` (My Maps wc-unisex 1733, blue) and `medical` (doctor-bag 1558, red); unmatched toilets are dropped.
 Busan cherry map (2026-10-13): `route.py` leaves a stream for parallel streets (Oncheoncheon north of
 Dongnae), so chain the named cycleway (`온천천 자전거길`) instead; and check where the stream actually goes
 before naming the end pin (Oncheoncheon bends east, Yeonsan Stn is not on it: end at the Citizens Park).
@@ -160,7 +189,9 @@ differences, in case the user asks why something looks odd in My Maps:
   `styleUrl="#icon-<id>-<RRGGBB>"` (My Maps' own id scheme). `build_gpx.py` holds the table (`ICONS`:
   start/end flags, funicular, elevator, stairs, camera, viewpoint, entrance, plaque, market, convenience,
   cafe, bar, restaurant, bus, subway, church, monument, historic, museum, library, trail, park, walking,
-  flower = My Maps "garden-flower" id 1582 in pink, for cherry-blossom routes, pin)
+  flower = My Maps "garden-flower" id 1582 in pink, for cherry-blossom routes, toilet (wc-unisex 1733),
+  medical (doctor-bag 1558, red), dot = red circle 1499 for every passing-by waypoint of a long trail (user
+  preference 2026-10-13: each dot links to its Naver place, or an address search when Naver has no place), pin)
   and a keyword matcher (`AUTO_ICON`, Korean + English) applied to label/name/desc. First pin = start, last =
   end. The build prints `[icon]` next to each waypoint: read that list and override any miss with an explicit
   `"icon": "..."` in the spec before delivering. More ids: grep `{id:"…",name:"…",title:"…"}` in the mapspro JS

@@ -72,7 +72,7 @@ def main():
             report.append(f"  line '{layer['line']['name']}': {len(pts)} vertices, {length:.0f} m" + (f", approx legs: {approx}" if approx else ''))
         for w in layer.get('pins', []):
             iid, color, _, _ = ICONS[w['icon']]
-            desc = w.get('desc', '') + f'<br><a href="{naver_url(w["lat"], w["lon"], w.get("naver_id"))}">Open Naver Map</a>'
+            desc = w.get('desc', '') + f'<br><a href="{naver_url(w["lat"], w["lon"], w.get("naver_id"), w.get("address"))}">Open Naver Map</a>'
             K.append(f"<Placemark><name>{esc(w['name'])}</name><description><![CDATA[{desc}]]></description>"
                      f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
             report.append(f"    [{w['icon']:>11}] {w['name']}")
