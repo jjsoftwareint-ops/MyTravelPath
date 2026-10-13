@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Google My Maps source files: kept locally only, never published
+assets/maps/
