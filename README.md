@@ -78,6 +78,9 @@ All allow free use; the credit is given in every case.
 - Jeju card photo: *Jeju Olle Route 8* (Jusangjeolli basalt columns), Jeju Olle
   Foundation, CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_8.jpg
+- Jeju Olle Trail path banner: *Jeju Olle Route 1-1 03*, Jeju Olle Foundation,
+  CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_1-1_03.jpg
 - Cherry Blossom walk banners (Seoul and Busan): *Cherry Blossom in Yeouido Park - panoramio (1)*, Alexey
   Komarov, CC BY 3.0.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg

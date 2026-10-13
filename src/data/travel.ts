@@ -128,6 +128,8 @@ export const cities: City[] = [
           'Routes 5, 6 and 7 of the 437 km island trail: Namwon → Soesokkak → Seogwipo → Seogwipo Bus Terminal along the south coast, one colour per route, with every toilet and first-aid kit from the official maps.',
         duration: '1 day per route',
         tags: [{ icon: 'hiking', label: 'Hiking' }],
+        image: 'olle.jpg',
+        imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1KEy42fnL8YeGcNgyhB_9PVreKLgwiTM',
       },
     ],
