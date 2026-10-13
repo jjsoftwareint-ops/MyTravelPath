@@ -25,7 +25,8 @@ its set prefix. The prefix tells you the import path:
 | `Pi…` | `react-icons/pi` | Phosphor (MIT) |
 
 Icons in use: `GiHiking` → `hiker` (Trekking, green), `FaMoon` → `moon` (Night walk, indigo),
-`GiVillage` → `village` (Traditional, amber), `GiSunset` → `sunset` (Evening walk, orange).
+`GiVillage` → `village` (Traditional, amber), `GiSunset` → `sunset` (Evening walk, orange),
+`LuFlower` → `blossom` (Cherry blossom, pink).
 
 Adding one:
 

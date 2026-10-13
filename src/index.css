@@ -273,6 +273,10 @@ a:focus-visible {
   background: light-dark(#fef3c7, #78350f);
   color: light-dark(#92400e, #fde68a);
 }
+.pill.tag-blossom {
+  background: light-dark(#fce7f3, #831843);
+  color: light-dark(#be185d, #fbcfe8);
+}
 .pill.tag-sunset {
   background: light-dark(#ffedd5, #7c2d12);
   color: light-dark(#c2410c, #fed7aa);

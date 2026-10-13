@@ -1,5 +1,6 @@
 import { FaMoon } from 'react-icons/fa6'
 import { GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
+import { LuFlower } from 'react-icons/lu'
 import type { TagIconName } from '../data/travel'
 
 // Icons for path tags, from the FontAwesome and Game Icons sets in react-icons.
@@ -14,5 +15,7 @@ export default function TagIcon({ name }: { name: TagIconName }) {
       return <GiVillage className="tag-icon" aria-hidden="true" />
     case 'sunset':
       return <GiSunset className="tag-icon" aria-hidden="true" />
+    case 'blossom':
+      return <LuFlower className="tag-icon" aria-hidden="true" />
   }
 }

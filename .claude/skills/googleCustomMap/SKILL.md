@@ -13,6 +13,7 @@ Two products, chosen by what the user wants (their standing preference, 2026-09-
 | **Pins** (restaurants, cafés, shops, "7 places" videos) | `<name>-pins.kml` | `pins_kml.py` | examples/haebangchon-pins.json |
 
 | **Layered KML** (hike with a separate up/down line colour + a restaurants layer) | `<Name>.kml` | `layers_kml.py` | examples/inwangsan-en.json |
+| **Multi-route KMZ** (several walks as pink lines + flower pins; user asked for .kmz) | `<Name>.kmz` = zipped `doc.kml` | `layers_kml.py`, then `zipfile` | examples/cherry-blossom.json |
 
 Route KML and CSV overlays exist but are only produced on request.
 
@@ -24,6 +25,13 @@ Same research as the route workflow (transcript → Naver pins → `overpass.py`
 `<Folder>` per layer (ascent line + its pins, descent line + its pins, restaurants), My Maps icon styles, HTML
 descriptions with a Naver link. Lines are not densified and get no elevation. The builder prints vertex count,
 length and the approx legs per line, plus the icon per pin; a jump > 60 m between segments is a WARNING.
+Cherry-blossom map (2026-10-13): riverside/park walks are chained from OSM way geometry by name
+(`도림천 자전거길`, `안양천 자전거도로` east bank, `여의서로`, `남산공원길`/`남산북측순환로`); the Seokchon Lake
+loop came from `route.py` via points on the promenade (approx). Bank check for a river path: compare the
+longitude of candidate ways at one latitude. The user wants a `.kmz`: zip the KML as `doc.kml` (no images).
+Busan cherry map (2026-10-13): `route.py` leaves a stream for parallel streets (Oncheoncheon north of
+Dongnae), so chain the named cycleway (`온천천 자전거길`) instead; and check where the stream actually goes
+before naming the end pin (Oncheoncheon bends east, Yeonsan Stn is not on it: end at the Citizens Park).
 Lessons from Inwangsan (2026-10): the trail from the Tiger Statue to the wall is not in OSM (approx leg); the
 wall path has 5–20 m node gaps that make Valhalla detour 2.5 km, so chain the `한양도성 순성길` nodes by hand
 for summit → junction legs; the B-course stairs are boardwalk way 1314758863 ending opposite Choso Bookshop.
@@ -151,7 +159,8 @@ differences, in case the user asks why something looks odd in My Maps:
 - **Every pin gets an icon, chosen by the build, no user prompting.** Per-pin icons only work through KML
   `styleUrl="#icon-<id>-<RRGGBB>"` (My Maps' own id scheme). `build_gpx.py` holds the table (`ICONS`:
   start/end flags, funicular, elevator, stairs, camera, viewpoint, entrance, plaque, market, convenience,
-  cafe, bar, restaurant, bus, subway, church, monument, historic, museum, library, trail, park, walking, pin)
+  cafe, bar, restaurant, bus, subway, church, monument, historic, museum, library, trail, park, walking,
+  flower = My Maps "garden-flower" id 1582 in pink, for cherry-blossom routes, pin)
   and a keyword matcher (`AUTO_ICON`, Korean + English) applied to label/name/desc. First pin = start, last =
   end. The build prints `[icon]` next to each waypoint: read that list and override any miss with an explicit
   `"icon": "..."` in the spec before delivering. More ids: grep `{id:"…",name:"…",title:"…"}` in the mapspro JS

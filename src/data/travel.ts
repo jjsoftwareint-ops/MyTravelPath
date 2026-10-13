@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom'
 export type Tag = string | { icon: TagIconName; label: string }
 
 export type TravelPath = {
@@ -76,6 +76,17 @@ export const cities: City[] = [
         imageCredit: 'Photo: Rtflakfizer · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
       },
+      {
+        id: 'cherry-blossom-walk',
+        name: 'Cherry Blossom walk',
+        description:
+          'Four blossom walks for early April: Dorimcheon and the Anyangcheon embankment, Yeouido Yunjung-ro, the Seokchon Lake loop and the Namsan North Loop.',
+        duration: '2–3h each',
+        tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
+        image: 'cherry.jpg',
+        imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1PeaxeqCRk2SBgINAteHz4-fODippOZc',
+      },
     ],
   },
   {
@@ -84,6 +95,17 @@ export const cities: City[] = [
     image: 'busan.jpg',
     imageCredit: 'Photo: Busan Metropolitan City · KOGL 1',
     paths: [
+      {
+        id: 'cherry-blossom-walk',
+        name: 'Cherry Blossom walk',
+        description:
+          'Four blossom walks for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil over the pass to Songjeong, and the Nakdong embankment at Samnak.',
+        duration: '1.5–3h each',
+        tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
+        image: 'cherry.jpg',
+        imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1_cT5HhnFhhBcEl_BPKPGmZRP33I163c',
+      },
       {
         id: 'haeundae-coast',
         name: 'Haeundae Coastal Path',

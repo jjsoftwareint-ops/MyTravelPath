@@ -99,6 +99,7 @@ ICONS = {  # key: (id, colour, image name, GPX <sym>)
     'mountain':    ('1634', '4186F0', 'mountain',            'Summit'),
     'hotel':       ('1602', '4186F0', 'hotel-bed',           'Lodging'),
     'tent':        ('1765', 'DB4437', 'camping-tent',        'Shopping Center'),
+    'flower':      ('1582', 'E91E63', 'garden-flower',       'Park'),   # cherry-blossom routes (pink)
     'pin':         ('1899', '0288D1', 'blank-shape_pin',     'Waypoint'),
 }
 GPX_SYM = {k: v[3] for k, v in ICONS.items()}
