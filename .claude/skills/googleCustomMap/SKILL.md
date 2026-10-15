@@ -71,6 +71,14 @@ for summit → junction legs; the B-course stairs are boardwalk way 1314758863 e
 
 ## Hard rules
 
+- **Verify every restaurant/café is still in business before adding it, and re-verify all of them on every
+  update** (user rule 2026-10-15). `scripts/naver_status.py <id> …` reads Naver's place page for opening
+  hours, closure markers (폐업/영업종료) and the newest review date, and checks the place is still returned by
+  search: OPEN / CHECK / CLOSED. Add only OPEN (CHECK → look at the page by hand first). When the user asks to
+  update a restaurants/cafés layer, run it on every existing pin too and **remove the CLOSED ones** from the
+  map; say which were removed. Note the check date in the layer name, e.g. `(checked 2026-10-15)`. Venues
+  that Naver has no entry for (street stalls: tanghulu, Turkish ice cream) are not pinned; tell the user.
+
 - **Pin titles are English only; the Korean goes into the description.** Write spec names as
   `Keun-ung cliff path entrance (큰엉 입구)`: `build_gpx.name_parts()` makes the pin title
   `*CLICK* Keun-ung cliff path entrance` and `with_korean_line()` puts `<b>Keun-ung cliff path entrance (큰엉 입구)</b>`
@@ -218,6 +226,8 @@ differences, in case the user asks why something looks odd in My Maps:
   waterfall (the user prefers it to the tap icon, 2026-10-14), rocky shore → tidepool, kiosks → info, car parks → parking, welfare/community halls → hall, rest
   areas/gazebos → picnic, named streets → street, peaks/oreum → mountain, lookouts → viewpoint/camera.
   Plain red dots are the fallback for a point with no better match, not the default.
+  **Restaurants, cafés and bars are pink** (`restaurant` 1577, `cafe` 1534, `bar` 1517, all E91E63; user rule
+  2026-10-15, applied to every existing kmz with `restyle_kmz.py icon-1577=restaurant icon-1534=cafe`).
   **Viewpoints are always the pink camera** (`viewpoint` = `camera` = My Maps camera-photo 1535 in E91E63;
   user rule 2026-10-14, binoculars 1523 is banned). **Walking/path points use `walking`** (1731), not the
   older-set 1469 figure that My Maps exports. To re-icon an existing kmz without rebuilding it (My Maps

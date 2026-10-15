@@ -111,9 +111,9 @@ ICONS = {  # key: (id, colour, image name, GPX <sym>)
     'plaque':      ('1600', '4186F0', 'historic-plaque',     'Information'),
     'market':      ('1686', '4186F0', 'shop',                'Shopping Center'),
     'convenience': ('1631', '4186F0', 'moon',                'Convenience Store'),
-    'cafe':        ('1534', '4186F0', 'cafe-cup',            'Restaurant'),
-    'bar':         ('1517', '4186F0', 'bar-cocktail',        'Bar'),
-    'restaurant':  ('1577', '4186F0', 'food-fork-knife',     'Restaurant'),
+    'cafe':        ('1534', 'E91E63', 'cafe-cup',            'Restaurant'),   # pink: food & drink (user rule 2026-10-15)
+    'bar':         ('1517', 'E91E63', 'bar-cocktail',        'Bar'),   # pink: food & drink (user rule 2026-10-15)
+    'restaurant':  ('1577', 'E91E63', 'food-fork-knife',     'Restaurant'),   # pink: food & drink (user rule 2026-10-15)
     'bus':         ('1532', '4186F0', 'bus',                 'Ground Transportation'),
     'subway':      ('1719', '4186F0', 'tram',                'Ground Transportation'),
     'church':      ('1706', '4186F0', 'temple',              'Church'),

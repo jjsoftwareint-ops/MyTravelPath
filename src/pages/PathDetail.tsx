@@ -6,6 +6,7 @@ import { MdOutlinePinDrop } from "react-icons/md";
 import { Navigate, useParams } from "react-router-dom";
 import CopyLink from "../components/CopyLink";
 import Layout from "../components/Layout";
+import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { browserUrl, isIOS } from "../platform";
@@ -120,6 +121,7 @@ export default function PathDetail() {
               </a>
             )}
             <CopyLink url={path.mapUrl} />
+            <ShareLink title={`${path.name} (${city.name})`} />
             <a
               className="donate"
               href={DONATE_URL}

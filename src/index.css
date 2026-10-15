@@ -512,6 +512,32 @@ a:focus-visible {
   margin-left: -2px;
 }
 
+/* Share button: system share sheet on phones, copied link elsewhere */
+.share {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  align-self: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--accent);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.share:active {
+  background: var(--press);
+}
+.share svg {
+  width: 17px;
+  height: 17px;
+}
+
 /* Small voluntary-donation link under the path card actions */
 .donate {
   display: inline-flex;

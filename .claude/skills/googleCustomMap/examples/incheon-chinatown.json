@@ -207,6 +207,75 @@
      "desc": "Former mayor's residence (1966) on the site of a Japanese merchant's villa, now a free cultural space with a garden view over the port. Below Jayu Park, 5 min from the Japanese street."
     }
    ]
+  },
+  {
+   "name": "Restaurants & cafés (카페에 반하다 video, checked 2026-10-15)",
+   "pins": [
+    {
+     "lat": 37.47515,
+     "lon": 126.618808,
+     "name": "1. Simnihyang – wood-fired baked dumplings (십리향 화덕만두)",
+     "icon": "restaurant",
+     "naver_id": "13502736",
+     "desc": "Always a queue. Hwadeok (clay-oven) buns stuffed with pork, sweet potato or red bean, baked on the oven wall. Take-away, eat warm on the street. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.475214,
+     "lon": 126.619003,
+     "name": "3. Wonbo – xiaolongbao dumplings (원보만두)",
+     "icon": "restaurant",
+     "naver_id": "11708034",
+     "desc": "Xiaolongbao specialist with a wide dumpling menu; on the main street. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.475076,
+     "lon": 126.619077,
+     "name": "4. Beijing China – jajangmyeon (북경차이나)",
+     "icon": "restaurant",
+     "naver_id": "2068034312",
+     "desc": "Clean, deep-flavoured jajangmyeon; a quieter choice than the big houses. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.475676,
+     "lon": 126.618233,
+     "name": "6. Gung bakery – hollow gonggalppang (수제 공갈빵 · 궁)",
+     "icon": "cafe",
+     "naver_id": "1266534021",
+     "desc": "Hand-made gonggalppang: a big, hollow, crisp bread with a sweet glaze inside. Just off the main street on Chinatown-ro 44beon-gil. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.475357,
+     "lon": 126.619204,
+     "name": "7. Gabae Chagwan – Hong Kong-style milk tea café (가배차관)",
+     "icon": "cafe",
+     "naver_id": "1239446665",
+     "desc": "Hong Kong-styled interior. Signature Earl Grey milk tea, brown-sugar bubble tea, bubble ice cream and egg tarts; take-away available. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.475638,
+     "lon": 126.619844,
+     "name": "8. Yeongyeong main house – white jajangmyeon (연경 본관)",
+     "icon": "restaurant",
+     "naver_id": "13508698",
+     "desc": "The red-and-gold landmark restaurant, home of the original white jajangmyeon. Expect 15–30 min queues; big hall and private rooms over three floors. Try the white jjamppong and yunijang. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.4728,
+     "lon": 126.622063,
+     "name": "9. Sinaru café – ferry-themed photo café (시나루)",
+     "icon": "cafe",
+     "naver_id": "2020170298",
+     "desc": "10 min from China Town, on the Japanese-style street. Brick-and-wood two-floor café with a hidden door to the upstairs ferry-deck photo zone; coffee, bakery and cheese buns. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    },
+    {
+     "lat": 37.477703,
+     "lon": 126.619413,
+     "name": "10. Tart King – Macau egg tarts (타르트킹)",
+     "icon": "cafe",
+     "naver_id": "38491485",
+     "desc": "Palm-sized Macau-style egg tarts, crisp pastry and soft custard; the host's must-stop. Near the Fairy Tale Village end of the main street. From the video “인천 차이나타운 맛집&카페 BEST 10” by 카페에 반하다 (youtu.be/uVcgP6AJ_Gs). Still in business on Naver as of 2026-10-15."
+    }
+   ]
   }
  ]
 }

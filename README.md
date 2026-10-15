@@ -1,5 +1,9 @@
 # My Travel Path
 
+**Live site: https://jjsoftwareint-ops.github.io/MyTravelPath/** — free, curated walking routes for
+travellers in Korea (Seoul, Busan, Jeju, Incheon). Each path opens in Google My Maps, with a Naver Map link
+for every stop so navigation works on the ground. No sign-up, no app to install.
+
 A tiny mobile-first website listing cities → walking paths,
 each linking to a Google My Maps route. No backend; all data lives in one file.
 
