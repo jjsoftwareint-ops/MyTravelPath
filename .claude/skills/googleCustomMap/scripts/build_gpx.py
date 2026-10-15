@@ -5,7 +5,7 @@ usage: build_gpx.py spec.json out.gpx [--spacing 8] [--max-points 1800] [--no-el
   --max-points: Google My Maps only lets you edit a line with fewer than ~2000 vertices. Tracks above the cap are
                 thinned (Douglas-Peucker on straight stretches; corners and the point nearest each pin are kept).
   --maplinks html : append '<br><a href=..>Open Naver Map</a>' to each description. Rendered by Google My Maps only
-                    when imported as KML; a GPX import shows the tags as text.
+                    when imported as KML; a GPX import re, shows the tags as text.
   --maplinks plain: append a real line break + 'Open Naver Map: <url>' (My Maps auto-links bare URLs). Use for GPX/CSV.
   Both add GPX <link> elements. The KML written by --kml always uses the html form.
   --kml      also writes a KML (line + pins, HTML descriptions in CDATA), the format Google My Maps imports most faithfully.
@@ -26,7 +26,7 @@ are chosen from keywords in label/name/desc (AUTO_ICON). The build prints the ch
 Segments are chained in order (each starts where the previous ended). Points farther apart than --spacing are
 linearly interpolated. Elevation comes from open-meteo (30 m DEM). Output is validated as XML.
 """
-import argparse, json, math, subprocess, sys, urllib.parse, xml.dom.minidom
+import argparse, json, math, re, subprocess, sys, urllib.parse, xml.dom.minidom
 from datetime import datetime, timezone
 
 
@@ -34,6 +34,35 @@ def hav(a, b):
     R = 6371000; p1, p2 = math.radians(a[0]), math.radians(b[0])
     h = math.sin((p2 - p1) / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(math.radians(b[1] - a[1]) / 2) ** 2
     return 2 * R * math.asin(math.sqrt(h))
+
+
+PIN_PREFIX = '*CLICK* '   # user preference 2026-10-14: every pin name starts with this so visitors know to tap it
+
+
+KOREAN_BRACKET = re.compile(r'\s*\(([^()]*[\uac00-\ud7a3][^()]*)\)')
+
+
+def name_parts(name):
+    """Split 'English (한국어)' → ('English', 'English (한국어)'). Names without a Korean bracket give (name, None).
+    The pin title shows only the English; the full form goes on the first line of the description (user rule
+    2026-10-14) so the Korean is there for matching signs when the pin is opened."""
+    name = name.replace(PIN_PREFIX, '')
+    if KOREAN_BRACKET.search(name):
+        return KOREAN_BRACKET.sub('', name).strip(), name
+    return name, None
+
+
+def pin_name(name):
+    """Pin title for GPX/KML: English only, prefixed with PIN_PREFIX."""
+    return PIN_PREFIX + name_parts(name)[0]
+
+
+def with_korean_line(desc, name, html=True):
+    """Prepend the 'English (한국어)' line to a description when the name carries a Korean bracket."""
+    full = name_parts(name)[1]
+    if not full:
+        return desc
+    return (f'<b>{esc(full)}</b><br>' if html else full + '\n') + desc
 
 
 def naver_url(lat, lon, naver_id=None, address=None):
@@ -58,7 +87,7 @@ def map_links(lat, lon, label, naver_id=None, address=None):
 def html_desc(w, maplinks):
     """Description text plus the 'Open Naver Map' line.
     maplinks: None | 'html' (<br><a href>, for KML) | 'plain' (newline + 'Open Naver Map: url', for GPX/CSV)."""
-    desc = w.get('desc', '')
+    desc = with_korean_line(w.get('desc', ''), w['name'], html=(maplinks != 'plain'))
     if maplinks:
         links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'), w.get('address'))
         if maplinks == 'html':
@@ -76,8 +105,8 @@ ICONS = {  # key: (id, colour, image name, GPX <sym>)
     'funicular':   ('1533', '4186F0', 'cablecar-funicular',  'Car'),
     'elevator':    ('1782', '4186F0', 'elevator',            'Building'),
     'stairs':      ('1877', '4186F0', 'stairs',              'Trail Head'),
-    'camera':      ('1535', '4186F0', 'camera-photo',        'Scenic Area'),
-    'viewpoint':   ('1523', '4186F0', 'binoculars',          'Scenic Area'),
+    'camera':      ('1535', 'E91E63', 'camera-photo',        'Scenic Area'),   # same as viewpoint
+    'viewpoint':   ('1535', 'E91E63', 'camera-photo',        'Scenic Area'),   # pink camera; never binoculars (user rule 2026-10-14)
     'entrance':    ('1783', '4186F0', 'entrance',            'Waypoint'),
     'plaque':      ('1600', '4186F0', 'historic-plaque',     'Information'),
     'market':      ('1686', '4186F0', 'shop',                'Shopping Center'),
@@ -102,6 +131,20 @@ ICONS = {  # key: (id, colour, image name, GPX <sym>)
     'flower':      ('1582', 'E91E63', 'garden-flower',       'Park'),   # cherry-blossom routes (pink)
     'toilet':      ('1733', '4186F0', 'wc-unisex',           'Restroom'),
     'dot':         ('1499', 'DB4437', 'shape_circle',        'Waypoint'),   # red dot: passing-by waypoint
+    'stamp':       ('1862', '7B1FA2', 'seal',                'Waypoint'),   # Olle stamp station (purple seal)
+    'harbor':      ('1623', '4186F0', 'marine-anchor',       'Marina'),
+    'bridge':      ('1528', '4186F0', 'bridge',              'Bridge'),
+    'waterfall':   ('1892', '4186F0', 'waterfall',           'Waterfall'),
+    'spring':      ('1703', '4186F0', 'tap-flowing',         'Water Source'),
+    'tidepool':    ('1882', '4186F0', 'tidepool-starfish',   'Scenic Area'),
+    'beach':       ('1521', '4186F0', 'beach',               'Beach'),
+    'info':        ('1608', '4186F0', 'info',                'Information'),
+    'parking':     ('1644', '4186F0', 'parking',             'Parking Area'),
+    'school':      ('1682', '4186F0', 'school-crossing',     'School'),
+    'stadium':     ('1698', '4186F0', 'stadium-arena',       'Stadium'),
+    'hall':        ('1591', '4186F0', 'headquarters',        'Building'),
+    'picnic':      ('1650', '4186F0', 'picnic-table',        'Picnic Area'),
+    'street':      ('1611', '4186F0', 'japanese-poi',        'Waypoint'),
     'medical':     ('1558', 'DB4437', 'doctor-bag',          'Medical Facility'),   # hospital, clinic, pharmacy
     'pin':         ('1899', '0288D1', 'blank-shape_pin',     'Waypoint'),
 }
@@ -179,7 +222,7 @@ def write_kml(path, spec, pts, wpts, maplinks):
     K.append('<Folder><name>Pins</name>')
     for w, icon in zip(wpts, chosen):
         iid, color, _, _ = ICONS[icon]
-        K.append(f"<Placemark><name>{esc(w['name'])}</name><description><![CDATA[{html_desc(w, maplinks)}]]></description>"
+        K.append(f"<Placemark><name>{esc(pin_name(w['name']))}</name><description><![CDATA[{html_desc(w, maplinks)}]]></description>"
                  f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
     K.append('</Folder><Folder><name>Route</name>')
     K.append(f"<Placemark><name>{esc(spec.get('line_name') or 'Walking route')}</name><styleUrl>#line</styleUrl><LineString><tessellate>1</tessellate><coordinates>"
@@ -347,7 +390,7 @@ def main():
         z = ele.get((w['lat'], w['lon']))
         L.append(f"  <wpt lat=\"{w['lat']:.6f}\" lon=\"{w['lon']:.6f}\">")
         if z is not None: L.append(f'    <ele>{z:.1f}</ele>')
-        L.append(f"    <name>{esc(w['name'])}</name>")
+        L.append(f"    <name>{esc(pin_name(w['name']))}</name>")
         desc = html_desc(w, a.maplinks)
         links = map_links(w['lat'], w['lon'], w.get('label') or w['name'], w.get('naver_id'), w.get('address')) if a.maplinks else {}
         if desc: L.append(f"    <desc>{esc(desc)}</desc>")

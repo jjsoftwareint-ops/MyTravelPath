@@ -9,6 +9,7 @@ spec.json:
   "layers": [
     { "name": "Ascent",  "line": {"name": "...", "color": "D93025"},        # RRGGBB; optional "width" (default 4)
       "segments": [ {"label": "...", "approx": false, "coords": "lat,lon lat,lon ..."}, ... ],
+      "more_lines": [ {"name": "...", "coords": "lat,lon ..."} ],   # optional: extra separate lines, same colour
       "pins": [ {"lat": 0, "lon": 0, "name": "1. ...", "desc": "...", "icon": "start", "naver_id": "..."}, ... ] },
     { "name": "Restaurants", "pins": [ ... ] }
   ]
@@ -19,7 +20,7 @@ from build_gpx.ICONS; descriptions are HTML in CDATA with one "Open Naver Map" l
 """
 import json, os, sys, xml.dom.minidom
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_gpx import ICONS, icon_href, esc, hav, naver_url, auto_icon
+from build_gpx import ICONS, icon_href, esc, hav, naver_url, auto_icon, pin_name, with_korean_line
 
 
 def parse(coords):
@@ -70,10 +71,17 @@ def main():
                      f"<styleUrl>#line-{li}</styleUrl><LineString><tessellate>1</tessellate><coordinates>"
                      + ' '.join(f'{p[1]:.6f},{p[0]:.6f},0' for p in pts) + '</coordinates></LineString></Placemark>')
             report.append(f"  line '{layer['line']['name']}': {len(pts)} vertices, {length:.0f} m" + (f", approx legs: {approx}" if approx else ''))
+            # optional extra, disconnected lines in the same colour (e.g. side lanes of a street)
+            for extra in layer.get('more_lines', []):
+                ep = parse(extra['coords']); el = sum(hav(ep[i], ep[i + 1]) for i in range(len(ep) - 1))
+                K.append(f"<Placemark><name>{esc(extra['name'])}</name><description><![CDATA[{el:.0f} m]]></description>"
+                         f"<styleUrl>#line-{li}</styleUrl><LineString><tessellate>1</tessellate><coordinates>"
+                         + ' '.join(f'{p[1]:.6f},{p[0]:.6f},0' for p in ep) + '</coordinates></LineString></Placemark>')
+                report.append(f"    + line '{extra['name']}': {len(ep)} vertices, {el:.0f} m")
         for w in layer.get('pins', []):
             iid, color, _, _ = ICONS[w['icon']]
-            desc = w.get('desc', '') + f'<br><a href="{naver_url(w["lat"], w["lon"], w.get("naver_id"), w.get("address"))}">Open Naver Map</a>'
-            K.append(f"<Placemark><name>{esc(w['name'])}</name><description><![CDATA[{desc}]]></description>"
+            desc = with_korean_line(w.get('desc', ''), w['name']) + f'<br><a href="{naver_url(w["lat"], w["lon"], w.get("naver_id"), w.get("address"))}">Open Naver Map</a>'
+            K.append(f"<Placemark><name>{esc(pin_name(w['name']))}</name><description><![CDATA[{desc}]]></description>"
                      f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
             report.append(f"    [{w['icon']:>11}] {w['name']}")
         K.append('</Folder>')

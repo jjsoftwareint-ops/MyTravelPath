@@ -1,0 +1,212 @@
+{
+ "name": "Incheon China Town",
+ "desc": "Three short walks in Incheon's open-port quarter, 2 minutes from Incheon Station (line 1): the China Town main street, the Songwol-dong Fairy Tale Village loop and the Japanese-style street, plus the two mural streets and the Incheon Citizens' House.",
+ "layers": [
+  {
+   "name": "China Town streets (차이나타운)",
+   "line": {
+    "name": "China Town main street: 1st Paeru → Chinatown-ro → 3rd Paeru, 0.3 km",
+    "color": "D93025",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Chinatown-ro via the 1st gate, Uiseondang and Gonghwachun (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.475606,126.617510 37.475589,126.617937 37.475535,126.618643 37.475506,126.619517 37.475486,126.619495 37.475486,126.619495 37.475506,126.619517 37.475609,126.619601 37.475750,126.619614 37.475752,126.619778 37.475756,126.620437"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.476377,
+     "lon": 126.616958,
+     "name": "Start – Incheon Station (인천역)",
+     "icon": "subway",
+     "naver_id": "11655615",
+     "desc": "Line 1 terminus and Suin-Bundang line. The red Chinese gate is straight across the plaza."
+    },
+    {
+     "lat": 37.475594,
+     "lon": 126.617557,
+     "name": "1st Paeru gate – Junghwaga (제1패루 중화가)",
+     "icon": "entrance",
+     "naver_id": "1603461210",
+     "desc": "The main gate of Korea's oldest China Town (1883). Walk uphill along Chinatown-ro between the red lanterns."
+    },
+    {
+     "lat": 37.474861,
+     "lon": 126.618219,
+     "name": "Jajangmyeon Museum (짜장면박물관)",
+     "icon": "museum",
+     "naver_id": "19399436",
+     "desc": "In the former Gonghwachun restaurant where jajangmyeon was born. Small fee, 20 min."
+    },
+    {
+     "lat": 37.47632,
+     "lon": 126.619219,
+     "name": "Uiseondang temple (의선당)",
+     "icon": "historic",
+     "naver_id": "36643300",
+     "desc": "A small Chinese temple of 1893, just off the main street on the left."
+    },
+    {
+     "lat": 37.475434,
+     "lon": 126.619569,
+     "name": "Gonghwachun restaurant (공화춘)",
+     "icon": "restaurant",
+     "naver_id": "13508612",
+     "desc": "The best-known jajangmyeon house on the street; expect a queue at lunch."
+    },
+    {
+     "lat": 37.475766,
+     "lon": 126.620437,
+     "name": "End – 3rd Paeru gate, Seollinmun (제3패루 선린문)",
+     "icon": "end",
+     "naver_id": "1945744862",
+     "desc": "Top of the main street. The Chu-Han mural street starts here, and Jayu Park is up the steps to the right."
+    }
+   ],
+   "more_lines": [
+    {
+     "name": "China Town street: Chinatown-ro (차이나타운로)",
+     "coords": "37.474387,126.618263 37.474596,126.618430 37.474923,126.618724 37.475425,126.619426 37.475506,126.619517 37.475506,126.619517 37.475609,126.619601 37.475750,126.619614 37.475876,126.619602 37.475991,126.619560 37.476542,126.619302 37.476798,126.619182 37.476934,126.619148 37.477039,126.619129 37.477176,126.619166 37.477582,126.619266 37.477917,126.619378 37.477961,126.619392 37.478334,126.619565 37.479048,126.619760"
+    },
+    {
+     "name": "China Town street: Chinatown-ro (차이나타운로) part 2",
+     "coords": "37.476542,126.619302 37.476499,126.619150 37.476462,126.618203"
+    },
+    {
+     "name": "China Town street: Chinatown-ro (차이나타운로) part 3",
+     "coords": "37.475991,126.619560 37.476268,126.619849 37.476268,126.619849 37.476484,126.620152"
+    },
+    {
+     "name": "China Town street: Chinatown-ro (차이나타운로) part 4",
+     "coords": "37.474832,126.617977 37.474796,126.617983 37.474779,126.618021 37.474596,126.618430"
+    },
+    {
+     "name": "China Town lane: Chinatown-ro 51beon-gil (차이나타운로51번길)",
+     "coords": "37.474923,126.618724 37.474826,126.619273 37.474731,126.619756 37.474609,126.620375 37.474601,126.620506 37.474586,126.620655 37.474573,126.620834 37.474563,126.621005 37.474576,126.621141 37.474631,126.621586 37.474625,126.621640"
+    },
+    {
+     "name": "China Town lane: Chinatown-ro 55beon-gil (차이나타운로55번길)",
+     "coords": "37.474596,126.618430 37.474519,126.618738 37.474385,126.619155 37.474266,126.619474 37.474060,126.620016"
+    },
+    {
+     "name": "China Town lane: Chinatown-ro 59beon-gil (차이나타운로59번길)",
+     "coords": "37.474387,126.618263 37.474133,126.618819 37.473715,126.619738"
+    }
+   ]
+  },
+  {
+   "name": "Songwol-dong Fairy Tale Village (송월동 동화마을)",
+   "line": {
+    "name": "Fairy Tale Village loop: entrance → Donghwamaeul-gil → Donghwamaeul-angil → entrance, 0.6 km",
+    "color": "F9AB00",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Loop through the village streets (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.478787,126.618842 37.478675,126.618947 37.478487,126.619250 37.478366,126.619464 37.478334,126.619565 37.478308,126.619653 37.478253,126.619792 37.478089,126.620142 37.477943,126.620481 37.477915,126.620550 37.477915,126.620550 37.477813,126.620799 37.478432,126.621236 37.478545,126.621319 37.478545,126.621319 37.478432,126.621236 37.478664,126.620561 37.478833,126.620101 37.478979,126.620147 37.479118,126.620130 37.479077,126.619961 37.479077,126.619961 37.479071,126.619875 37.479099,126.619794 37.479156,126.619847 37.479314,126.619969 37.479341,126.619930 37.479270,126.619664 37.479163,126.619462 37.479044,126.619266 37.478938,126.619090 37.478787,126.618842"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.478774,
+     "lon": 126.618882,
+     "name": "Start / End – Fairy Tale Village entrance (동화마을 입구)",
+     "icon": "start",
+     "naver_id": "4252295742",
+     "desc": "Three-way junction at the top of China Town, 5 min from Incheon Station. Walk the loop clockwise."
+    },
+    {
+     "lat": 37.477937,
+     "lon": 126.620564,
+     "name": "Fairy Tale Village centre (송월동 동화마을)",
+     "icon": "camera",
+     "naver_id": "34590409",
+     "desc": "Houses painted with fairy-tale scenes: Pinocchio, Snow White, the Little Prince. Best photos in the side alleys; free, open all day."
+    }
+   ]
+  },
+  {
+   "name": "Japanese-style street (일본풍거리)",
+   "line": {
+    "name": "Japanese-style street: boundary stairs → Sinpo-ro 23beon-gil → Open Port museums, 0.2 km",
+    "color": "1A73E8",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Sinpo-ro 23beon-gil past the museums (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.474140,126.620068 37.474093,126.620032 37.474060,126.620016 37.473823,126.619825 37.473381,126.620647 37.473381,126.620647 37.473138,126.621098 37.473037,126.621282"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.474144,
+     "lon": 126.620059,
+     "name": "Start – Qing–Japan concession boundary stairs (청일조계지 경계계단)",
+     "icon": "stairs",
+     "naver_id": "37749889",
+     "desc": "The 1880s stone stairway that divided the Chinese and Japanese settlements: Chinese lanterns on the left, Japanese wooden façades on the right."
+    },
+    {
+     "lat": 37.473572,
+     "lon": 126.621016,
+     "name": "Japanese-style street (일본풍거리)",
+     "icon": "street",
+     "naver_id": "1043334896",
+     "desc": "Former Japanese bank and trading-house façades restored along Sinpo-ro 23beon-gil."
+    },
+    {
+     "lat": 37.473279,
+     "lon": 126.62056,
+     "name": "Incheon Open Port Museum (인천개항박물관)",
+     "icon": "museum",
+     "naver_id": "16571650",
+     "desc": "In the old Japanese 1st Bank (1899). Korea's first customs, railway and post exhibits."
+    },
+    {
+     "lat": 37.472949,
+     "lon": 126.621206,
+     "name": "End – Modern Architecture Exhibition Hall (개항장 근대건축전시관)",
+     "icon": "end",
+     "naver_id": "19737156",
+     "desc": "In the old Japanese 18th Bank (1890). Incheon Art Platform and Sinpo Market are a few minutes further on."
+    }
+   ]
+  },
+  {
+   "name": "Mural streets & Incheon Citizens' House",
+   "pins": [
+    {
+     "lat": 37.475759,
+     "lon": 126.620511,
+     "name": "Chu-Han mural street (초한지 벽화거리)",
+     "icon": "plaque",
+     "naver_id": "2144985119",
+     "desc": "Murals of the Chu–Han war, from the 3rd Paeru up along Jayugongwon-seo-ro towards Jayu Park."
+    },
+    {
+     "lat": 37.474652,
+     "lon": 126.62014,
+     "name": "Three Kingdoms mural street (삼국지 벽화거리)",
+     "icon": "plaque",
+     "naver_id": "16579009",
+     "desc": "77 panels telling the Romance of the Three Kingdoms, along the lane between China Town and the boundary stairs."
+    },
+    {
+     "lat": 37.474304,
+     "lon": 126.622773,
+     "name": "Incheon Citizens' House (인천시민애집)",
+     "icon": "historic",
+     "naver_id": "1090327649",
+     "desc": "Former mayor's residence (1966) on the site of a Japanese merchant's villa, now a free cultural space with a garden view over the port. Below Jayu Park, 5 min from the Japanese street."
+    }
+   ]
+  }
+ ]
+}

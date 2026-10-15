@@ -1,11 +1,11 @@
 {
  "name": "Jeju Olle Trail routes 5–7",
- "desc": "Three consecutive Olle routes on the south coast, lines taken from Naver Map's official course entries (제주올레길 5·6·7코스), one colour each, with every waypoint, toilet and first-aid kit shown on the official Jeju Olle maps.",
+ "desc": "Three consecutive Olle routes on the south coast, lines from Naver Map's official course entries, one colour each, with every waypoint, restroom and first-aid kit shown on the official Jeju Olle maps.",
  "layers": [
   {
-   "name": "Olle Route 5 (05코스): 남원포구 → 쇠소깍다리, 13.4 km",
+   "name": "Olle Route 5: Namwon Port → Soesokkak Bridge, 13.4 km (05코스)",
    "line": {
-    "name": "Olle Route 5 (05코스): 남원포구 → 쇠소깍다리, 13.4 km",
+    "name": "Olle Route 5: Namwon Port → Soesokkak Bridge, 13.4 km (05코스)",
     "color": "D93025",
     "width": 5
    },
@@ -18,123 +18,123 @@
    ],
    "pins": [
     {
-     "name": "Start – 남원포구 · 남원용암해수풀장 (stamp)",
+     "name": "Start – Namwon Port stamp box (남원포구 · 남원용암해수풀장)",
      "lat": 33.2780233,
      "lon": 126.7196414,
      "desc": "Official start, 0 km. Official info centre and toilets.",
      "naver_id": "17070530",
-     "icon": "start"
+     "icon": "stamp"
     },
     {
-     "name": "남원어촌체험마을 방문자센터 입구",
+     "name": "Namwon Fishing Village visitor centre entrance (남원어촌체험마을)",
      "lat": 33.277677,
      "lon": 126.715621,
      "desc": "Fishing-village visitor centre entrance.",
      "naver_id": "21759972",
-     "icon": "dot"
+     "icon": "info"
     },
     {
-     "name": "큰엉 입구",
+     "name": "Keun-ung cliff path entrance (큰엉 입구)",
      "lat": 33.276199,
      "lon": 126.71703,
      "desc": "Entrance to the Keun-ung cliff path, 1.2 km.",
      "naver_id": "763012394",
-     "icon": "dot"
+     "icon": "trail"
     },
     {
-     "name": "큰엉 출구",
+     "name": "Keun-ung cliff path exit (큰엉 출구)",
      "lat": 33.271278,
      "lon": 126.698993,
      "desc": "Exit of the Keun-ung cliff path; toilets here.",
      "address": "서귀포시 태위로510번길",
-     "icon": "dot"
+     "icon": "trail"
     },
     {
-     "name": "신그물",
+     "name": "Singeumul spring (신그물)",
      "lat": 33.271055,
      "lon": 126.696027,
      "desc": "Singeumul spring on the shore.",
      "address": "서귀포시 태위로510번길",
-     "icon": "dot"
+     "icon": "waterfall"
     },
     {
-     "name": "태웃개",
+     "name": "Taeutgae (태웃개)",
      "lat": 33.270678,
      "lon": 126.690905,
      "desc": "Taeutgae, 3.0 km. Start of the 2.4 km wheelchair-accessible section.",
      "naver_id": "1539110334",
-     "icon": "dot"
+     "icon": "tidepool"
     },
     {
-     "name": "위미 동백나무 군락지 (stamp)",
+     "name": "Wimi camellia habitat – stamp box (위미 동백나무 군락지)",
      "lat": 33.272996,
      "lon": 126.67462,
      "desc": "Wimi camellia habitat, 4.9 km, mid-route stamp.",
      "naver_id": "1024647594",
-     "icon": "dot"
+     "icon": "stamp"
     },
     {
-     "name": "세천포구",
+     "name": "Secheon Port (세천포구)",
      "lat": 33.269933,
      "lon": 126.673513,
      "desc": "Secheon port, 5.4 km. End of the wheelchair section.",
      "address": "서귀포시 위미중앙로",
-     "icon": "dot"
+     "icon": "harbor"
     },
     {
-     "name": "위미1리 복지회관",
+     "name": "Wimi 1-ri welfare centre (위미1리 복지회관)",
      "lat": 33.273783,
      "lon": 126.657212,
      "desc": "Wimi 1-ri welfare centre; toilets.",
      "naver_id": "17073107",
-     "icon": "dot"
+     "icon": "hall"
     },
     {
-     "name": "넙빌레",
+     "name": "Neopbille (넙빌레)",
      "lat": 33.268071,
      "lon": 126.648512,
      "desc": "Neopbille, 9.5 km, basalt shore.",
      "naver_id": "38155147",
-     "icon": "dot"
+     "icon": "tidepool"
     },
     {
-     "name": "신례2리 복지회관",
+     "name": "Sinrye 2-ri welfare centre (신례2리 복지회관)",
      "lat": 33.265053,
      "lon": 126.640775,
      "desc": "Sinrye 2-ri welfare centre; toilets and first-aid kit.",
      "naver_id": "17075282",
-     "icon": "dot"
+     "icon": "hall"
     },
     {
-     "name": "신례천",
+     "name": "Sinrye stream (신례천)",
      "lat": 33.26303,
      "lon": 126.640122,
      "desc": "Sinrye stream mouth.",
      "address": "서귀포시 공천포로11번길",
-     "icon": "dot"
+     "icon": "waterfall"
     },
     {
-     "name": "망장포",
+     "name": "Mangjang Port (망장포)",
      "lat": 33.261444,
      "lon": 126.636577,
      "desc": "Mangjang port, 11.5 km.",
      "naver_id": "17074584",
-     "icon": "dot"
+     "icon": "harbor"
     },
     {
-     "name": "End – 쇠소깍다리 (stamp)",
+     "name": "End – Soesokkak Bridge stamp box (쇠소깍다리)",
      "lat": 33.2583619,
      "lon": 126.6235535,
      "desc": "Official finish, 13.4 km. Toilets and first-aid kit at Soesokkak below. Route 6 starts here.",
      "naver_id": "17055402",
-     "icon": "end"
+     "icon": "stamp"
     }
    ]
   },
   {
-   "name": "Olle Route 6 (06코스): 쇠소깍다리 → 제주올레여행자센터, 10.1 km",
+   "name": "Olle Route 6: Soesokkak Bridge → Jeju Olle Tourist Center, 10.1 km (06코스)",
    "line": {
-    "name": "Olle Route 6 (06코스): 쇠소깍다리 → 제주올레여행자센터, 10.1 km",
+    "name": "Olle Route 6: Soesokkak Bridge → Jeju Olle Tourist Center, 10.1 km (06코스)",
     "color": "F9AB00",
     "width": 5
    },
@@ -147,163 +147,163 @@
    ],
    "pins": [
     {
-     "name": "Start – 쇠소깍다리 (stamp)",
+     "name": "Start – Soesokkak Bridge stamp box (쇠소깍다리)",
      "lat": 33.2583619,
      "lon": 126.6235535,
      "desc": "Official start, 0 km.",
      "naver_id": "17055402",
-     "icon": "start"
+     "icon": "stamp"
     },
     {
-     "name": "쇠소깍",
+     "name": "Soesokkak gorge (쇠소깍)",
      "lat": 33.252172,
      "lon": 126.623555,
      "desc": "Soesokkak gorge; toilets and first-aid kit.",
      "naver_id": "11707633",
-     "icon": "dot"
+     "icon": "viewpoint"
     },
     {
-     "name": "쇠소깍 관광안내소 (족은안내소)",
+     "name": "Soesokkak information kiosk (쇠소깍 관광안내소)",
      "lat": 33.254126,
      "lon": 126.622314,
      "desc": "Information kiosk, 0.8 km; toilets. Start of the 2.3 km wheelchair section.",
      "naver_id": "354439442",
-     "icon": "dot"
+     "icon": "info"
     },
     {
-     "name": "소금막위 나무정자",
+     "name": "Wooden gazebo above Sogeummak (소금막 나무정자)",
      "lat": 33.250173,
      "lon": 126.61956,
      "desc": "Wooden gazebo above Sogeummak; first-aid kit.",
      "address": "서귀포시 쇠소깍로",
-     "icon": "dot"
+     "icon": "picnic"
     },
     {
-     "name": "게우지코지",
+     "name": "Gaewooji Cape (게우지코지)",
      "lat": 33.243991,
      "lon": 126.618589,
      "desc": "Gaewooji cape.",
      "naver_id": "536844320",
-     "icon": "dot"
+     "icon": "beach"
     },
     {
-     "name": "제지기오름",
+     "name": "Jejigi Oreum (제지기오름)",
      "lat": 33.241628,
      "lon": 126.609474,
      "desc": "Jejigi Oreum, small volcanic cone beside the path.",
      "naver_id": "17056198",
-     "icon": "dot"
+     "icon": "mountain"
     },
     {
-     "name": "허그인 제주 (족은안내소)",
+     "name": "Hugin Jeju information kiosk (허그인 제주)",
      "lat": 33.240409,
      "lon": 126.609621,
      "desc": "Information kiosk at the café.",
      "naver_id": "1560593434",
-     "icon": "dot"
+     "icon": "info"
     },
     {
-     "name": "보목포구 버스정류장",
+     "name": "Bomok Port bus stop (보목포구 버스정류장)",
      "lat": 33.239218,
      "lon": 126.606762,
      "desc": "Bomok port bus stop, 3.1 km; end of the wheelchair section; toilets.",
      "naver_id": "1888767391",
-     "icon": "dot"
+     "icon": "bus"
     },
     {
-     "name": "구두미포구",
+     "name": "Gudumi Port (구두미포구)",
      "lat": 33.236613,
      "lon": 126.596612,
      "desc": "Gudumi port, 4.5 km; first-aid kit between here and Bomok.",
      "naver_id": "1150127074",
-     "icon": "dot"
+     "icon": "harbor"
     },
     {
-     "name": "소천지",
+     "name": "Socheonji tidal pool (소천지)",
      "lat": 33.239571,
      "lon": 126.592095,
      "desc": "Socheonji tidal pool.",
      "naver_id": "1196006105",
-     "icon": "dot"
+     "icon": "tidepool"
     },
     {
-     "name": "보목하수처리장",
+     "name": "Bomok sewage treatment plant (보목하수처리장)",
      "lat": 33.243313,
      "lon": 126.591409,
      "desc": "Bomok treatment plant; toilets.",
      "naver_id": "16922634",
-     "icon": "dot"
+     "icon": "hall"
     },
     {
-     "name": "국궁장",
+     "name": "Archery range (국궁장)",
      "lat": 33.244593,
      "lon": 126.585851,
      "desc": "Archery range; toilets.",
      "address": "제주특별자치도 서귀포시 검은여로 4 검은여 회센타",
-     "icon": "dot"
+     "icon": "park"
     },
     {
-     "name": "검은여 쉼터",
+     "name": "Geomeunyeo rest area (검은여 쉼터)",
      "lat": 33.24387,
      "lon": 126.581983,
      "desc": "Geomeunyeo rest area, 6.6 km.",
      "naver_id": "1274967422",
-     "icon": "dot"
+     "icon": "picnic"
     },
     {
-     "name": "소라의 성 (stamp)",
+     "name": "Castle of Shell – stamp box (소라의 성)",
      "lat": 33.2452,
      "lon": 126.577032,
      "desc": "Sora Castle, 7.4 km, mid-route stamp; toilets.",
      "naver_id": "1407390582",
-     "icon": "dot"
+     "icon": "stamp"
     },
     {
-     "name": "정방폭포 안내소",
+     "name": "Jeongbang Falls information centre (정방폭포 안내소)",
      "lat": 33.244682,
      "lon": 126.573233,
      "desc": "Jeongbang Falls kiosk; toilets and first-aid kit.",
      "naver_id": "17050144",
-     "icon": "dot"
+     "icon": "waterfall"
     },
     {
-     "name": "서귀진성",
+     "name": "Seogwijinseong fortress walls (서귀진성)",
      "lat": 33.242545,
      "lon": 126.563814,
      "desc": "Seogwijinseong fortress walls.",
      "naver_id": "1591251996",
-     "icon": "dot"
+     "icon": "historic"
     },
     {
-     "name": "이중섭거리",
+     "name": "Lee Jung-seop Street (이중섭거리)",
      "lat": 33.245468,
      "lon": 126.564287,
      "desc": "Lee Jung-seop Street.",
      "naver_id": "17046195",
-     "icon": "dot"
+     "icon": "street"
     },
     {
-     "name": "서귀포 매일올레시장 입구",
+     "name": "Seogwipo Maeil Olle Market entrance (서귀포매일올레시장)",
      "lat": 33.247947,
      "lon": 126.563755,
      "desc": "Seogwipo Olle Market entrance, 9.6 km.",
      "naver_id": "13571992",
-     "icon": "dot"
+     "icon": "market"
     },
     {
-     "name": "End – 제주올레여행자센터 (stamp)",
+     "name": "End – Jeju Olle Tourist Center stamp box (제주올레여행자센터)",
      "lat": 33.24752,
      "lon": 126.5586372,
      "desc": "Official finish, 10.1 km. Official info centre, toilets, first-aid kit, luggage storage. Route 7 starts here.",
      "naver_id": "680114244",
-     "icon": "end"
+     "icon": "stamp"
     }
    ]
   },
   {
-   "name": "Olle Route 7 (07코스): 제주올레여행자센터 → 서귀포버스터미널 앞, 12.9 km",
+   "name": "Olle Route 7: Jeju Olle Tourist Center → Seogwipo Bus Terminal, 12.9 km (07코스)",
    "line": {
-    "name": "Olle Route 7 (07코스): 제주올레여행자센터 → 서귀포버스터미널 앞, 12.9 km",
+    "name": "Olle Route 7: Jeju Olle Tourist Center → Seogwipo Bus Terminal, 12.9 km (07코스)",
     "color": "1A73E8",
     "width": 5
    },
@@ -316,165 +316,165 @@
    ],
    "pins": [
     {
-     "name": "Start – 제주올레여행자센터 (stamp)",
+     "name": "Start – Jeju Olle Tourist Center stamp box (제주올레여행자센터)",
      "lat": 33.24752,
      "lon": 126.5586372,
      "desc": "Official start, 0 km. Official info centre, toilets, first-aid kit, luggage storage.",
      "naver_id": "680114244",
-     "icon": "start"
+     "icon": "stamp"
     },
     {
-     "name": "칠십리시공원",
+     "name": "Seogwipo Chilsimni Poetry Park (칠십리시공원)",
      "lat": 33.246032,
      "lon": 126.554758,
      "desc": "Chilsimni Poetry Park, 0.6 km; toilets and first-aid kit.",
      "naver_id": "17054113",
-     "icon": "dot"
+     "icon": "park"
     },
     {
-     "name": "삼매봉 오르는 길",
+     "name": "Path up Sammae-bong (삼매봉 오르는 길)",
      "lat": 33.24483,
      "lon": 126.557294,
      "desc": "Path climbing Sammaebong.",
      "address": "제주특별자치도 서귀포시 남성로 136",
-     "icon": "dot"
+     "icon": "trail"
     },
     {
-     "name": "삼매봉 팔각정",
+     "name": "Sammae-bong octagonal pavilion (삼매봉 팔각정)",
      "lat": 33.243193,
      "lon": 126.554459,
      "desc": "Octagonal pavilion on the Sammaebong summit; toilets.",
      "naver_id": "21251671",
-     "icon": "dot"
+     "icon": "viewpoint"
     },
     {
-     "name": "솔빛바다 (족은안내소)",
+     "name": "Solbit Bada Café information kiosk (솔빛바다)",
      "lat": 33.240741,
      "lon": 126.54775,
      "desc": "Solbit Bada café with an information kiosk, 3.0 km.",
      "naver_id": "32426959",
-     "icon": "dot"
+     "icon": "info"
     },
     {
-     "name": "외돌개 주차장",
+     "name": "Oedolgae car park (외돌개 주차장)",
      "lat": 33.241015,
      "lon": 126.546869,
      "desc": "Oedolgae car park; toilets.",
      "naver_id": "1930203775",
-     "icon": "dot"
+     "icon": "parking"
     },
     {
-     "name": "폭풍의 언덕",
+     "name": "Hill of Storm (폭풍의 언덕)",
      "lat": 33.241864,
      "lon": 126.548194,
      "desc": "Hill of Storm, the grassy headland above Oedolgae.",
      "naver_id": "13491873",
-     "icon": "dot"
+     "icon": "viewpoint"
     },
     {
-     "name": "외돌개 전망대",
+     "name": "Oedolgae observatory (외돌개 전망대)",
      "lat": 33.23905,
      "lon": 126.544854,
      "desc": "Oedolgae lone-rock viewpoint.",
      "naver_id": "13491873",
-     "icon": "dot"
+     "icon": "camera"
     },
     {
-     "name": "돔베낭길 주차장",
+     "name": "Dombenang-gil car park (돔베낭길 주차장)",
      "lat": 33.239488,
      "lon": 126.531715,
      "desc": "Dombenang-gil car park; toilets and first-aid kit. The route turns inland here, up Taepyeong-ro 92beon-gil to Taepyeong-ro and back down Sokgol-ro.",
      "naver_id": "17048958",
-     "icon": "dot"
+     "icon": "parking"
     },
     {
-     "name": "속골",
+     "name": "Sokgol (속골)",
      "lat": 33.241357,
      "lon": 126.526683,
      "desc": "Sokgol stream mouth; first-aid kit.",
      "naver_id": "38448226",
-     "icon": "dot"
+     "icon": "waterfall"
     },
     {
-     "name": "수봉로",
+     "name": "Subong-ro pathway (수봉로)",
      "lat": 33.24428,
      "lon": 126.532193,
      "desc": "Subong-ro pathway along the shore.",
      "address": "서귀포시 속골로",
-     "icon": "dot"
+     "icon": "walking"
     },
     {
-     "name": "일냉이",
+     "name": "Ilnaeng-i (일냉이)",
      "lat": 33.241207,
      "lon": 126.528819,
      "desc": "Ilnaeng-i shore.",
      "address": "서귀포시 속골로",
-     "icon": "dot"
+     "icon": "tidepool"
     },
     {
-     "name": "공물",
+     "name": "Gongmul (공물)",
      "lat": 33.241413,
      "lon": 126.521413,
      "desc": "Gongmul spring (bus stop of the same name).",
      "address": "서귀포시 이어도로",
-     "icon": "dot"
+     "icon": "waterfall"
     },
     {
-     "name": "법환포구",
+     "name": "Beophwan Port (법환포구)",
      "lat": 33.237176,
      "lon": 126.5154,
      "desc": "Beophwan port, 8.5 km; toilets.",
      "naver_id": "17047413",
-     "icon": "dot"
+     "icon": "harbor"
     },
     {
-     "name": "배염줄이",
+     "name": "Baeyeomjuli (배염줄이)",
      "lat": 33.234321,
      "lon": 126.513702,
      "desc": "Baeyeomjuli point.",
      "address": "서귀포시 막숙포로",
-     "icon": "dot"
+     "icon": "tidepool"
     },
     {
-     "name": "두머니물공원 (stamp)",
+     "name": "Dumeonimul Park – stamp box (두머니물공원)",
      "lat": 33.231036,
      "lon": 126.506874,
      "desc": "Dumeonimul Park, 9.8 km, mid-route stamp. The route turns inland.",
      "naver_id": "1827114309",
-     "icon": "dot"
+     "icon": "stamp"
     },
     {
-     "name": "법환초등학교",
+     "name": "Beophwan Elementary School (법환초등학교)",
      "lat": 33.237502,
      "lon": 126.50867,
      "desc": "Beophwan Elementary School, 10.5 km.",
      "naver_id": "12283922",
-     "icon": "dot"
+     "icon": "school"
     },
     {
-     "name": "제주월드컵경기장 광장",
+     "name": "Jeju World Cup Stadium plaza (제주월드컵경기장 광장)",
      "lat": 33.24626,
      "lon": 126.50919,
      "desc": "World Cup Stadium plaza; toilets.",
      "naver_id": "11607840",
-     "icon": "dot"
+     "icon": "stadium"
     },
     {
-     "name": "End – 서귀포버스터미널 앞 (stamp)",
+     "name": "End – in front of Seogwipo Bus Terminal stamp box (서귀포버스터미널 앞)",
      "lat": 33.2496523,
      "lon": 126.5079038,
      "desc": "Official finish, 12.9 km, official info centre. Intercity buses to Jeju City and the airport.",
      "naver_id": "37604336",
-     "icon": "end"
+     "icon": "stamp"
     }
    ]
   },
   {
-   "name": "Toilets (화장실) & first-aid kits (구급함) – from the official maps",
+   "name": "Restrooms & first-aid kits – from the official maps",
    "pins": [
     {
      "icon": "toilet",
-     "name": "화장실 – 남원포구 (공식안내소)",
+     "name": "Restroom – Namwon Port (official info centre) (남원포구)",
      "lat": 33.27787,
      "lon": 126.718938,
      "naver_id": "17070530",
@@ -482,7 +482,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 큰엉 출구",
+     "name": "Restroom – Keun-ung exit (큰엉 출구)",
      "lat": 33.273237,
      "lon": 126.703386,
      "naver_id": "13542738",
@@ -490,7 +490,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 위미1리 복지회관",
+     "name": "Restroom – Wimi 1-ri welfare centre (위미1리 복지회관)",
      "lat": 33.273783,
      "lon": 126.657212,
      "naver_id": "17073107",
@@ -498,7 +498,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 신례2리 복지회관",
+     "name": "Restroom – Sinrye 2-ri welfare centre (신례2리 복지회관)",
      "lat": 33.265053,
      "lon": 126.640775,
      "naver_id": "17075282",
@@ -506,7 +506,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 신례2리 복지회관",
+     "name": "First-aid kit – Sinrye 2-ri welfare centre (신례2리 복지회관)",
      "lat": 33.265053,
      "lon": 126.640775,
      "naver_id": "17075282",
@@ -514,7 +514,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 쇠소깍",
+     "name": "Restroom – Soesokkak (쇠소깍)",
      "lat": 33.252172,
      "lon": 126.623555,
      "naver_id": "11707633",
@@ -522,7 +522,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 쇠소깍",
+     "name": "First-aid kit – Soesokkak (쇠소깍)",
      "lat": 33.252172,
      "lon": 126.623555,
      "naver_id": "11707633",
@@ -530,7 +530,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 쇠소깍 관광안내소 (족은안내소)",
+     "name": "Restroom – Soesokkak information kiosk (쇠소깍 관광안내소)",
      "lat": 33.254126,
      "lon": 126.622314,
      "naver_id": "354439442",
@@ -538,7 +538,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 소금막위 나무정자",
+     "name": "First-aid kit – wooden gazebo above Sogeummak (소금막위 나무정자)",
      "lat": 33.251067,
      "lon": 126.619968,
      "naver_id": "38164084",
@@ -546,7 +546,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 보목포구 버스정류장 (허그인 제주 족은안내소)",
+     "name": "Restroom – Bomok Port bus stop (Hugin Jeju kiosk) (보목포구 버스정류장)",
      "lat": 33.240409,
      "lon": 126.609621,
      "naver_id": "1560593434",
@@ -554,7 +554,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 구두미포구와 보목포구 사이",
+     "name": "First-aid kit – between Gudumi and Bomok ports (구두미포구와 보목포구 사이)",
      "lat": 33.236613,
      "lon": 126.596612,
      "naver_id": "1150127074",
@@ -562,7 +562,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 보목하수처리장",
+     "name": "Restroom – Bomok sewage treatment plant (보목하수처리장)",
      "lat": 33.243313,
      "lon": 126.591409,
      "naver_id": "16922634",
@@ -570,7 +570,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 국궁장 (검은여쉼터 서쪽)",
+     "name": "Restroom – archery range (west of Geomeunyeo rest area) (국궁장)",
      "lat": 33.24387,
      "lon": 126.581983,
      "naver_id": "1274967422",
@@ -578,7 +578,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 소라의 성",
+     "name": "Restroom – Castle of Shell (소라의 성)",
      "lat": 33.2452,
      "lon": 126.577032,
      "naver_id": "1407390582",
@@ -586,7 +586,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 정방폭포 안내소",
+     "name": "Restroom – Jeongbang Falls information centre (정방폭포 안내소)",
      "lat": 33.244682,
      "lon": 126.573233,
      "naver_id": "17050144",
@@ -594,7 +594,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 정방폭포 안내소",
+     "name": "First-aid kit – Jeongbang Falls information centre (정방폭포 안내소)",
      "lat": 33.244682,
      "lon": 126.573233,
      "naver_id": "17050144",
@@ -602,7 +602,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 제주올레여행자센터 (공식안내소)",
+     "name": "Restroom – Jeju Olle Tourist Center (제주올레여행자센터)",
      "lat": 33.247416,
      "lon": 126.558691,
      "naver_id": "680114244",
@@ -610,7 +610,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 제주올레여행자센터",
+     "name": "First-aid kit – Jeju Olle Tourist Center (제주올레여행자센터)",
      "lat": 33.247416,
      "lon": 126.558691,
      "naver_id": "680114244",
@@ -618,7 +618,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 칠십리시공원",
+     "name": "Restroom – Chilsimni Poetry Park (칠십리시공원)",
      "lat": 33.246032,
      "lon": 126.554758,
      "naver_id": "17054113",
@@ -626,7 +626,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 칠십리시공원",
+     "name": "First-aid kit – Chilsimni Poetry Park (칠십리시공원)",
      "lat": 33.246032,
      "lon": 126.554758,
      "naver_id": "17054113",
@@ -634,7 +634,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 삼매봉 팔각정",
+     "name": "Restroom – Sammae-bong pavilion (삼매봉 팔각정)",
      "lat": 33.2428,
      "lon": 126.5512,
      "naver_id": "21251671",
@@ -642,7 +642,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 외돌개 주차장 (솔빛바다 족은안내소 옆)",
+     "name": "Restroom – Oedolgae car park (by Solbit Bada kiosk) (외돌개 주차장)",
      "lat": 33.241015,
      "lon": 126.546869,
      "naver_id": "1930203775",
@@ -650,7 +650,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 돔베낭길 주차장",
+     "name": "Restroom – Dombenang-gil car park (돔베낭길 주차장)",
      "lat": 33.239488,
      "lon": 126.531715,
      "naver_id": "17048958",
@@ -658,7 +658,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 돔베낭길 주차장",
+     "name": "First-aid kit – Dombenang-gil car park (돔베낭길 주차장)",
      "lat": 33.239488,
      "lon": 126.531715,
      "naver_id": "17048958",
@@ -666,7 +666,7 @@
     },
     {
      "icon": "medical",
-     "name": "구급함 – 속골",
+     "name": "First-aid kit – Sokgol (속골)",
      "lat": 33.241357,
      "lon": 126.526683,
      "naver_id": "38448226",
@@ -674,7 +674,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 법환포구",
+     "name": "Restroom – Beophwan Port (법환포구)",
      "lat": 33.235172,
      "lon": 126.514414,
      "naver_id": "1298824664",
@@ -682,7 +682,7 @@
     },
     {
      "icon": "toilet",
-     "name": "화장실 – 제주월드컵경기장 광장",
+     "name": "Restroom – World Cup Stadium plaza (제주월드컵경기장 광장)",
      "lat": 33.24626,
      "lon": 126.50919,
      "naver_id": "11607840",

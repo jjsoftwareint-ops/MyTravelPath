@@ -10,7 +10,7 @@ Icons come from build_gpx.py (explicit "icon" or the keyword matcher).
 """
 import json, os, sys, xml.dom.minidom
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_gpx import ICONS, icon_href, html_desc, auto_icon, esc
+from build_gpx import ICONS, icon_href, html_desc, auto_icon, esc, pin_name
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
     K.append(f"<Folder><name>{esc(spec.get('name', 'places'))}</name>")
     for w, icon in zip(wpts, chosen):
         iid, color, _, _ = ICONS[icon]
-        K.append(f"<Placemark><name>{esc(w['name'])}</name><description><![CDATA[{html_desc(w, maplinks)}]]></description>"
+        K.append(f"<Placemark><name>{esc(pin_name(w['name']))}</name><description><![CDATA[{html_desc(w, maplinks)}]]></description>"
                  f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
     K.append('</Folder></Document></kml>')
     kml = '\n'.join(K) + '\n'

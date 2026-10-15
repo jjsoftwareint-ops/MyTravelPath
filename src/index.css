@@ -512,6 +512,24 @@ a:focus-visible {
   margin-left: -2px;
 }
 
+/* Small voluntary-donation link under the path card actions */
+.donate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  align-self: center;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.donate svg {
+  width: 15px;
+  height: 15px;
+  color: #0070ba; /* PayPal blue */
+}
+
 /* Secondary action under the main button */
 .cta.secondary {
   background: var(--card);

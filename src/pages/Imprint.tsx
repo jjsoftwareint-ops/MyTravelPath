@@ -32,6 +32,12 @@ export default function Imprint() {
           own terms and privacy policy apply there.
         </p>
 
+        <h2>Donations</h2>
+        <p>
+          The “Would you like to buy me a coffee?” link on each path page opens PayPal. Donations are entirely
+          voluntary, go to the site owner named above, and are used to keep this site running.
+        </p>
+
         <h2>Analytics</h2>
         <p>
           Page views are counted with GoatCounter, which stores no cookies and

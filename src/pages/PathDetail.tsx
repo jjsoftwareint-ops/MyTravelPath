@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBus } from "react-icons/fa6";
+import { FaBus, FaPaypal } from "react-icons/fa6";
 import { GiPathDistance } from "react-icons/gi";
 import { ImInfo } from "react-icons/im";
 import { MdOutlinePinDrop } from "react-icons/md";
@@ -9,6 +9,9 @@ import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { browserUrl, isIOS } from "../platform";
+
+// The site owner's PayPal.Me link.
+const DONATE_URL = "https://paypal.me/berlinersejin";
 
 export default function PathDetail() {
   const { cityId, pathId } = useParams();
@@ -117,6 +120,14 @@ export default function PathDetail() {
               </a>
             )}
             <CopyLink url={path.mapUrl} />
+            <a
+              className="donate"
+              href={DONATE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaPaypal aria-hidden="true" /> Would you like to buy me a ☕️?
+            </a>
           </>
         ) : (
           <span className="cta">Map link coming soon</span>

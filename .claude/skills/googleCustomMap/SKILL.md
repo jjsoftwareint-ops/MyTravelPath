@@ -20,6 +20,10 @@ Route KML and CSV overlays exist but are only produced on request.
 
 ## Layered KML workflow (hiking videos: ascent + descent + restaurants)
 
+A layer may also carry `more_lines`: extra *disconnected* lines in the layer's colour, each its own
+LineString (Incheon China Town, 2026-10-15: the main street plus the parallel lanes 차이나타운로51·55·59번길,
+all red; the user asked for the lanes after seeing only the main street). Use it whenever an area has several
+streets of one kind; one joined line would draw false connecting strokes between them.
 Same research as the route workflow (transcript → Naver pins → `overpass.py` → `route.py`), but the spec has
 `layers`, each with an optional `line` (`name`, `color` RRGGBB) + `segments` and its own `pins`
 (see [examples/inwangsan-en.json](examples/inwangsan-en.json)). `layers_kml.py spec.json out.kml` writes one
@@ -66,6 +70,21 @@ wall path has 5–20 m node gaps that make Valhalla detour 2.5 km, so chain the 
 for summit → junction legs; the B-course stairs are boardwalk way 1314758863 ending opposite Choso Bookshop.
 
 ## Hard rules
+
+- **Pin titles are English only; the Korean goes into the description.** Write spec names as
+  `Keun-ung cliff path entrance (큰엉 입구)`: `build_gpx.name_parts()` makes the pin title
+  `*CLICK* Keun-ung cliff path entrance` and `with_korean_line()` puts `<b>Keun-ung cliff path entrance (큰엉 입구)</b>`
+  as the first line of the description, so the Korean is there for matching signs once the pin is opened
+  (user rule 2026-10-14, after first rejecting Korean titles and then brackets in titles). All three builders
+  do this; for an existing kmz run `scripts/korean_to_desc.py file.kmz`. Layer names may keep `(05코스)`.
+  For pins whose title never had Korean, `scripts/korean_from_naver.py [--names map.json] file.kmz` fills the
+  line from the Naver place name (via the pin's entry link), else the Korean address in an address-search
+  link, else a hand map of title → 한국어 (see examples/korean_names.json; auto "Start of …/End of …" GPX
+  markers stay without). Every delivered kmz should have the Korean line on every real pin (2026-10-14).
+
+- **Every pin name starts with `*CLICK* `** (user preference 2026-10-14) so visitors know the marker opens a
+  description with the Naver link. `build_gpx.pin_name()` adds it in all three builders (GPX waypoints, pins
+  KML, layered KML); line names and folder names are not prefixed. Existing kmz files were updated in place.
 
 - **Every pin's Naver link is a place page or an address search, never a coordinate search.** The Naver
   Map app cannot resolve `map.naver.com/p/search/<lat>,<lon>` (user hit this 2026-10-12: "cannot find the
@@ -191,7 +210,19 @@ differences, in case the user asks why something looks odd in My Maps:
   cafe, bar, restaurant, bus, subway, church, monument, historic, museum, library, trail, park, walking,
   flower = My Maps "garden-flower" id 1582 in pink, for cherry-blossom routes, toilet (wc-unisex 1733),
   medical (doctor-bag 1558, red), dot = red circle 1499 for every passing-by waypoint of a long trail (user
-  preference 2026-10-13: each dot links to its Naver place, or an address search when Naver has no place), pin)
+  preference 2026-10-13: each dot links to its Naver place, or an address search when Naver has no place),
+  stamp = My Maps "seal" 1862 in purple for Olle stamp stations incl. start/end (user asked for a stamp icon
+  2026-10-14; the app's own pill uses `LuStamp`, but KML can only use My Maps ids), harbor, bridge,
+  waterfall, spring, tidepool, beach, info, parking, school, stadium, hall, picnic, street, pin).
+  **Give every waypoint a meaningful icon** (user request 2026-10-14): ports → harbor, streams/springs →
+  waterfall (the user prefers it to the tap icon, 2026-10-14), rocky shore → tidepool, kiosks → info, car parks → parking, welfare/community halls → hall, rest
+  areas/gazebos → picnic, named streets → street, peaks/oreum → mountain, lookouts → viewpoint/camera.
+  Plain red dots are the fallback for a point with no better match, not the default.
+  **Viewpoints are always the pink camera** (`viewpoint` = `camera` = My Maps camera-photo 1535 in E91E63;
+  user rule 2026-10-14, binoculars 1523 is banned). **Walking/path points use `walking`** (1731), not the
+  older-set 1469 figure that My Maps exports. To re-icon an existing kmz without rebuilding it (My Maps
+  exports included), use `scripts/restyle_kmz.py file.kmz icon-1523=viewpoint icon-1469=walking …`; it
+  clones the style blocks under the new id with the CDN href and rewrites the styleUrl references.
   and a keyword matcher (`AUTO_ICON`, Korean + English) applied to label/name/desc. First pin = start, last =
   end. The build prints `[icon]` next to each waypoint: read that list and override any miss with an explicit
   `"icon": "..."` in the spec before delivering. More ids: grep `{id:"…",name:"…",title:"…"}` in the mapspro JS
@@ -206,6 +237,24 @@ Keep waypoint names short and numbered so the legend stays in order.
 
 ## Pitfalls learned (2026-09)
 
+- **A My Maps export with "Keep data up to date with network link" is an empty shell**: the kmz holds one
+  `<NetworkLink>` to `google.com/maps/d/kml?mid=…` and no placemarks, so any patch script "finds 0 pins"
+  (Haebangchon, 2026-10-14). Rebuild a full local copy from the live map with
+  `curl "https://www.google.com/maps/d/kml?mid=<id>&forcekml=1"` zipped as `doc.kml`, and check every file
+  before patching: `grep -c "<Point>" doc.kml`.
+- **Name check before delivery**: list every point name and flag any that start with Hangul —
+  `python3 -c` over `<Placemark>…<Point>` with `re.match(r'[\uac00-\ud7a3]', name)`; all seven files were
+  swept on 2026-10-14 (Jeju rebuilt in English, Inwangsan's 무무대 전망대 renamed).
+- **Icon hrefs must be XML-escaped**: the My Maps CDN URL contains `&`; writing it raw makes My Maps reject the
+  file as "invalid or unsupported data" (hit 2026-10-14 after `restyle_kmz.py` patched four files). The builders
+  go through `esc()`; `restyle_kmz.py` now escapes and parses the KML before saving. Always validate a kmz with
+  `xml.dom.minidom.parseString` before handing it over.
+- **Overpass can fail the TLS handshake from macOS system Python** (`SSLV3_ALERT_HANDSHAKE_FAILURE`, all
+  three attempts, 2026-10-15). Fallbacks, in order: Nominatim `polygon_geojson=1` for a named street (gives
+  the way geometry, but simplified and in pieces: fine for a straight street, poor for a loop), then
+  `route.py` through the landmark pins (Incheon China Town was built this way: short town-centre streets,
+  router on OSM streets, `approx: false` as the streets are real). Drop a via that sits on a side street
+  (의선당, 일본풍거리) or the router detours through it; keep it as a pin only.
 - **Overpass returns HTTP 406 to curl** from this machine; use `urllib` in Python (the scripts do). The public
   server also 504s on busy days: retry 2–3 times with 10 s sleep, keep bboxes ≤ 2 km.
 - **Valhalla (valhalla1.openstreetmap.de) fails the TLS handshake from macOS system Python** (LibreSSL);

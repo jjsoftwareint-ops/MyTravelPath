@@ -134,6 +134,25 @@ export const cities: City[] = [
       },
     ],
   },
+  {
+    id: 'incheon',
+    name: 'Incheon',
+    image: 'incheon.jpg',
+    imageCredit: 'Photo: Cameron Henderson · Public domain',
+    paths: [
+      {
+        id: 'china-town',
+        name: 'Incheon China Town',
+        description:
+          'Korea\'s oldest China Town, 2 minutes from Incheon Station: the lantern street and its lanes, the Songwol-dong Fairy Tale Village loop, the Japanese-style street of the old port, plus the two mural streets and the Incheon Citizens\' House.',
+        duration: '2–3h',
+        tags: [{ icon: 'village', label: 'Old town' }],
+        image: 'chinatown.jpg',
+        imageCredit: 'Photo: Mobius6 · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1RoZet4u2GSJ8N6XbSHqcuN0xW6vYEXA',
+      },
+    ],
+  },
 ]
 
 // ── Lookup helpers ───────────────────────────────────────────
