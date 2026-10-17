@@ -1,13 +1,14 @@
-import { FaSuitcaseRolling } from 'react-icons/fa6'
-
-// Home-header mark: FontAwesome rolling suitcase with the round Korean flag
-// (circle-flags) laid over its top corner like a sticker. Composed from icon
-// sets, nothing hand-drawn; sized and coloured in index.css (.brand-mark).
+// Home-header mark: the site's own artwork (a suitcase with a Korean flag tag
+// among cherry blossoms), supplied by the owner and used whole, never cropped.
 export default function BrandMark() {
   return (
-    <span className="brand-mark" aria-hidden="true">
-      <FaSuitcaseRolling />
-      <img src={`${import.meta.env.BASE_URL}flag-kr.svg`} alt="" width={16} height={16} />
-    </span>
+    <img
+      className="brand-mark"
+      src={`${import.meta.env.BASE_URL}brand.png?v=5`}
+      alt=""
+      width={36}
+      height={36}
+      aria-hidden="true"
+    />
   )
 }

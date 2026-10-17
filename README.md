@@ -98,10 +98,8 @@ All allow free use; the credit is given in every case.
   Disaster Headquarters (서울특별시 소방재난본부), CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8_%ED%95%9C%EC%96%91%EB%8F%84%EC%84%B1(%EC%84%9C%EC%9A%B8_%E6%BC%A2%E9%99%BD%E9%83%BD%E5%9F%8E,_Fortress_Wall_of_Seoul)_2011%EB%85%84_11%EC%9B%94_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C_%EB%AA%85%EC%86%8C_(Seoul_best_attractions)_%EC%82%AC%EB%B3%B8_-%EB%82%99%EC%82%B0%EC%95%BC%EA%B2%BD1-1.jpg
 
-The home-header mark is the FontAwesome rolling suitcase with `kr.svg` from
-HatScripts [circle-flags](https://github.com/HatScripts/circle-flags) (MIT).
-
-The app icon and favicon are the project's own artwork.
+The app icon, favicon and home-header mark are the project's own artwork (a suitcase with a
+Korean flag tag among cherry blossoms).
 Tag icons are from FontAwesome (CC BY 4.0), Game Icons (CC BY 3.0) and Lucide (ISC),
 the path notice icon from IcoMoon Free (CC BY 4.0), the home announcement icon from
 Grommet Icons (Apache 2.0) and the light/dark toggle from Ionicons (MIT), all via the
