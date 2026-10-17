@@ -26,7 +26,7 @@ its set prefix. The prefix tells you the import path:
 
 Icons in use: `GiHiking` → `hiker` (Trekking, green), `FaMoon` → `moon` (Night walk, indigo),
 `GiVillage` → `village` (Traditional, amber), `GiSunset` → `sunset` (Evening walk, orange),
-`LuFlower` → `blossom` (Cherry blossom, pink), `FaPersonHiking` → `hiking` (Hiking, teal).
+`LuFlower` → `blossom` (Cherry blossom, pink), `FaPersonHiking` → `hiking` (Hiking, teal), `FaFire` → `hot` (Hot place, red).
 
 Adding one:
 

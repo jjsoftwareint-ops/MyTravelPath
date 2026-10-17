@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot'
 export type Tag = string | { icon: TagIconName; label: string }
 
 export type TravelPath = {
@@ -71,7 +71,10 @@ export const cities: City[] = [
         name: 'Inwang Mountain Trail',
         description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
         duration: '2.5h',
-        tags: [{ icon: 'hiker', label: 'Trekking' }],
+        tags: [
+          { icon: 'hiker', label: 'Trekking' },
+          { icon: 'sunset', label: 'Evening walk' },
+        ],
         image: 'inwangsan.jpg',
         imageCredit: 'Photo: Rtflakfizer · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
@@ -86,6 +89,17 @@ export const cities: City[] = [
         image: 'cherry.jpg',
         imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1PeaxeqCRk2SBgINAteHz4-fODippOZc',
+      },
+      {
+        id: 'hongdae-hot-places',
+        name: 'Hongdae Hot Places',
+        description:
+          'Two walks through the student quarter: the Gyeongui Line Forest Park from Yeontral Park past the Book Street to Seogang, and the Red Road busking street from Hongik University Station down to the Han River.',
+        duration: '1–2h each',
+        tags: [{ icon: 'hot', label: 'Hot place' }],
+        image: 'hongdae-hot.jpg',
+        imageCredit: 'Photo: Ken Eckert · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1MacGBkR5Qdw577FGrG4yztVioZYpBy0',
       },
     ],
   },

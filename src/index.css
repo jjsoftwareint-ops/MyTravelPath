@@ -281,6 +281,10 @@ a:focus-visible {
   background: light-dark(#ccfbf1, #134e4a);
   color: light-dark(#0f766e, #99f6e4);
 }
+.pill.tag-hot {
+  background: light-dark(#fee2e2, #7f1d1d);
+  color: light-dark(#b91c1c, #fecaca);
+}
 .pill.tag-sunset {
   background: light-dark(#ffedd5, #7c2d12);
   color: light-dark(#c2410c, #fed7aa);

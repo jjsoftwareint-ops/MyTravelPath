@@ -1,4 +1,4 @@
-import { FaMoon, FaPersonHiking } from 'react-icons/fa6'
+import { FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
 import { GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
 import { LuFlower } from 'react-icons/lu'
 import type { TagIconName } from '../data/travel'
@@ -19,5 +19,7 @@ export default function TagIcon({ name }: { name: TagIconName }) {
       return <LuFlower className="tag-icon" aria-hidden="true" />
     case 'hiking':
       return <FaPersonHiking className="tag-icon" aria-hidden="true" />
+    case 'hot':
+      return <FaFire className="tag-icon" aria-hidden="true" />
   }
 }

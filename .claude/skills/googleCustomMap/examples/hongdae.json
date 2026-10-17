@@ -1,0 +1,136 @@
+{
+ "name": "Hong Dae",
+ "desc": "Two Hongdae walks: the Gyeongui Line Forest Park (Yeontral Park → Book Street → Seogang sky bridge, green) and the Red Road busking street from Hongik Univ. Station down to the Han River (red). Lines from Naver Map's official courses.",
+ "layers": [
+  {
+   "name": "Gyeongui Line Forest Park walk (경의선숲길)",
+   "line": {
+    "name": "Yeontral Park → Hongik Univ. Stn → Book Street → Seogang sky bridge, 2.7 km",
+    "color": "0F9D58",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Official course line from Naver Map (마포걷고싶은길 1코스 · 경의선숲길), Gajwa → Seogang section",
+     "approx": false,
+     "coords": "37.568333,126.914653 37.568113,126.915215 37.567889,126.915771 37.567746,126.916084 37.567467,126.916625 37.567358,126.916825 37.567233,126.917025 37.567167,126.917150 37.567142,126.917212 37.567066,126.917475 37.567030,126.917622 37.567308,126.917801 37.567139,126.918182 37.566989,126.918476 37.566854,126.918728 37.566641,126.919084 37.566536,126.919201 37.566293,126.919455 37.566234,126.919502 37.565867,126.919652 37.565668,126.919798 37.565572,126.919890 37.565514,126.919988 37.565424,126.920158 37.565364,126.920249 37.565213,126.920374 37.565106,126.920454 37.564942,126.920542 37.564645,126.920658 37.564496,126.920760 37.564060,126.921101 37.563944,126.921233 37.563772,126.921458 37.563270,126.921869 37.563026,126.922044 37.562809,126.922116 37.562304,126.922515 37.561795,126.923118 37.561627,126.923229 37.561118,126.923460 37.560834,126.923689 37.560777,126.923744 37.560569,126.924110 37.560523,126.924151 37.560475,126.924189 37.560360,126.924244 37.560221,126.924339 37.559866,126.924473 37.559672,126.924617 37.559439,126.924960 37.558373,126.925782 37.558283,126.925662 37.558132,126.925798 37.557670,126.926324 37.557411,126.926494 37.557314,126.926661 37.557204,126.926832 37.557346,126.926973 37.557024,126.927541 37.556761,126.928093 37.556338,126.929073 37.556250,126.929447 37.556072,126.929723 37.555942,126.930115 37.555868,126.930295 37.555642,126.930595 37.555506,126.930840 37.554996,126.931595 37.554837,126.931705 37.554722,126.931868 37.554424,126.932400 37.554287,126.932614 37.554126,126.932823 37.553998,126.932902 37.553920,126.932978 37.553832,126.933081 37.553755,126.933300 37.553713,126.933465 37.553623,126.933653 37.553313,126.934076 37.553031,126.934176 37.552925,126.934315 37.552862,126.934383 37.552820,126.934422 37.552775,126.934447 37.552698,126.934476 37.552630,126.934523 37.552202,126.935131 37.552375,126.935412"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.5683333,
+     "lon": 126.9146534,
+     "name": "Start – Gajwa Station, north end of Yeontral Park (가좌역)",
+     "icon": "start",
+     "naver_id": "11636479",
+     "desc": "Gyeongui–Jungang line. Exit 1 and walk south-east into the park; the first stretch runs beside the stream to Yeonnam-dong. If you prefer a shorter walk, start at Hongik Univ. Station exit 3 instead (1.3 km in)."
+    },
+    {
+     "lat": 37.561957,
+     "lon": 126.922982,
+     "name": "Yeontral Park – Yeonnam-dong section (연트럴파크 · 경의선숲길)",
+     "icon": "park",
+     "naver_id": "37992172",
+     "desc": "The lawn-and-stream stretch everyone picnics on; cafés and bakeries on both sides. Busiest at weekends and in the evening."
+    },
+    {
+     "lat": 37.558571,
+     "lon": 126.92525,
+     "name": "Hongik University Station exit 3 (홍대입구역 3번출구)",
+     "icon": "subway",
+     "naver_id": "21405143",
+     "desc": "Lines 2, Gyeongui–Jungang and AREX. The park passes under the big road here; cross with the lights and continue on the other side."
+    },
+    {
+     "lat": 37.55636,
+     "lon": 126.92899,
+     "name": "Gyeongui Line Book Street (경의선책거리)",
+     "icon": "library",
+     "naver_id": "1216738398",
+     "desc": "250 m of book kiosks shaped like train carriages, benches and small publishers' stalls; most open from about 11:00, closed Mondays."
+    },
+    {
+     "lat": 37.55469,
+     "lon": 126.931407,
+     "name": "Ddaengddaeng-geori crossing (홍대 땡땡거리)",
+     "icon": "street",
+     "naver_id": "1643536604",
+     "desc": "Named after the old railway crossing bell; a short lane of bars and restaurants where the line used to cross Wausan-ro."
+    },
+    {
+     "lat": 37.552167,
+     "lon": 126.935445,
+     "name": "Seogang Station (서강대역)",
+     "icon": "subway",
+     "naver_id": "31375707",
+     "desc": "Gyeongui–Jungang line, right beside the park."
+    },
+    {
+     "lat": 37.5523752,
+     "lon": 126.9354122,
+     "name": "End – Seogang sky bridge, start of the bridge (서강하늘다리 시작점)",
+     "icon": "end",
+     "address": "서울특별시 마포구 서강로 118",
+     "desc": "The footbridge that carries the park over Seogang-ro next to Seogang Station. The park continues south-east to Gongdeok if you want another 1.5 km."
+    }
+   ]
+  },
+  {
+   "name": "Red Road – busking street (홍대 레드로드)",
+   "line": {
+    "name": "Red Road busking street: Hongik Univ. Stn exit 9 → Eoulmadang-ro → Red Road stage → Han River, 1.9 km",
+    "color": "D93025",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Official course line from Naver Map (홍대 레드로드, main spine R1–R7)",
+     "approx": false,
+     "coords": "37.556253,126.925021 37.556170,126.924729 37.556061,126.924525 37.555844,126.924297 37.555676,126.923970 37.555590,126.923793 37.555417,126.923562 37.555218,126.923351 37.555164,126.923311 37.554916,126.923146 37.554790,126.923050 37.554701,126.922969 37.554614,126.922876 37.554531,126.922754 37.554445,126.922550 37.554400,126.922462 37.554289,126.922600 37.554216,126.922536 37.553433,126.922012 37.553250,126.921925 37.552908,126.921787 37.552389,126.921630 37.551958,126.921561 37.551901,126.921415 37.551748,126.921389 37.551329,126.921301 37.550852,126.921189 37.550201,126.921048 37.550010,126.920986 37.549321,126.920687 37.548817,126.920450 37.548340,126.920196 37.547848,126.919958 37.547757,126.919918 37.547039,126.919558 37.546400,126.919248 37.545814,126.918924 37.545486,126.918759 37.545364,126.918728 37.545420,126.917884 37.545428,126.917519 37.545454,126.917367 37.545012,126.917223 37.545034,126.917427 37.545030,126.917590 37.544747,126.917619 37.544664,126.917644 37.544609,126.917682 37.544283,126.917994 37.543790,126.918417 37.542947,126.919091 37.542619,126.919173"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.556025,
+     "lon": 126.922963,
+     "name": "Start – Hongik University Station exit 9 (홍대입구역 9번출구)",
+     "icon": "start",
+     "naver_id": "1392358598",
+     "desc": "Lines 2, Gyeongui–Jungang and AREX. Exit 9 opens straight onto the busking street; the crowds start here from late afternoon."
+    },
+    {
+     "lat": 37.555058,
+     "lon": 126.923192,
+     "name": "Busking zone – Hongdae Walking Street (홍대 걷고싶은거리 · 레드로드 R1)",
+     "icon": "camera",
+     "naver_id": "18785281",
+     "desc": "The main busking stretch along Eoulmadang-ro: dance crews and singers most evenings, biggest on Friday and Saturday nights. Street food and the Hongdae Playground on the right."
+    },
+    {
+     "lat": 37.550717,
+     "lon": 126.921311,
+     "name": "Red Road stage & art centre (레드로드)",
+     "icon": "street",
+     "naver_id": "1285117041",
+     "desc": "Mid-point of the Red Road, a 2023 pedestrian-first redesign of Hongdae's streets in red paving. Performance stages and the Red Road art lab are around here; Sangsu Station is 200 m east."
+    },
+    {
+     "lat": 37.547766,
+     "lon": 126.922305,
+     "name": "Sangsu Station (상수역)",
+     "icon": "subway",
+     "naver_id": "13479524",
+     "desc": "Line 6, a short detour east of the route. Cafés of Sangsu-dong are between here and the river."
+    },
+    {
+     "lat": 37.544036,
+     "lon": 126.918124,
+     "name": "End – Mapo Saebit Culture Forest and the Han River (마포새빛문화숲)",
+     "icon": "end",
+     "naver_id": "1349999930",
+     "desc": "The Red Road ends at the riverside park by the old Danginri power station, now a cultural park, with the Han River cycle path beyond. Hapjeong Station (lines 2 and 6) is 10 min north-west."
+    }
+   ]
+  }
+ ]
+}

@@ -44,6 +44,14 @@ but works from Chrome: `scripts/naver_course_shape.html` does the fetches in-pag
 (edit the `[route, mid]` list first) and parse the `<pre>` JSON; MultiLineString parts are contiguous. Use
 this line as-is (`approx: false`); OSM relations and routing are only for courses Naver lacks. The user
 pointed at these Naver entries after two wrong rebuilds (2026-10-13): ask for / look for them first.
+Hongdae (2026-10-17): city walking courses are on Naver too (`마포걷고싶은길1코스(경의선숲길)`, `레드로드`,
+`홍대땡땡거리`, all category 도보코스). Their pages carry **no `mid`**: query `getShapeGeoJSON` with
+`{businessIds: ["<placeId>"]}` instead (edit the vars in `naver_course_shape.html`); the shape `key` equals
+the page's `PoiInfoShapeKey … LINK` id. A `MultiLineString` here means *branches*, not contiguous pieces
+(Red Road = 16 parts: a spine plus side streets), so list the parts with their endpoints, chain the spine by
+hand and leave the rest out (or add them via `more_lines`). Cut a long course at the user's end point
+(forest park: nearest vertex to 서강대역). Coordinates may come nested one level deeper than expected: flatten
+until `[x, y]` pairs.
 Jeju Olle 5–7 (2026-10-13): **read the official map images first** —
 `https://contents.ollepass.org/static/homepage/trail/img/road/road_<NN>_map_pc_<year>.jpg` (year from
 `grep road_<NN>_map_pc assets/Road-*.js`; the Korean page's image is the same). They show the *current*
