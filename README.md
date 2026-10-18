@@ -91,6 +91,8 @@ All allow free use; the credit is given in every case.
   Mobius6, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Chinatown,_incheon_20230430_002.jpg
 - Hongdae Hot Places path banner: *Hongdae Party District at Night, Seoul*, Ken Eckert,
   CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Hongdae_Party_District_at_Night,_Seoul.jpg
+- Gangnam Night Streets path banner: *20150209-20150214강남대로C300* (Gangnam-daero at night, by Gangnam
+  Station), 최광모, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:20150209-20150214강남대로C300.jpg
 - Cherry Blossom walk banners (Seoul and Busan): *Cherry Blossom in Yeouido Park - panoramio (1)*, Alexey
   Komarov, CC BY 3.0.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg

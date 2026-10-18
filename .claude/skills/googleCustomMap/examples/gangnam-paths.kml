@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>Gangnam</name>
+<Style id="line-0"><LineStyle><color>ff631EE9</color><width>5</width></LineStyle></Style>
+<Style id="line-1"><LineStyle><color>ff00D6FF</color><width>5</width></LineStyle></Style>
+<Style id="line-2"><LineStyle><color>ffD27619</color><width>5</width></LineStyle></Style>
+<Folder><name>Seocho-daero 75-gil &amp; 77-gil (서초대로75길·77길)</name>
+<Placemark><name>Seocho-daero 77-gil (서초대로77길)</name><description><![CDATA[0.6 km<br>1. Seocho-daero 77-gil, south end to Gangnam-daero 102-gil junction (OSM street geometry)]]></description><styleUrl>#line-0</styleUrl><LineString><tessellate>1</tessellate><coordinates>127.026722,37.498074,0 127.026297,37.498963,0 127.026279,37.498999,0 127.026257,37.499032,0 127.026230,37.499068,0 127.026201,37.499104,0 127.026172,37.499139,0 127.026145,37.499158,0 127.026113,37.499178,0 127.026078,37.499246,0 127.026048,37.499306,0 127.026041,37.499337,0 127.026045,37.499355,0 127.026055,37.499379,0 127.026063,37.499407,0 127.026074,37.499454,0 127.026067,37.499478,0 127.026042,37.499523,0 127.025553,37.500522,0 127.024929,37.501775,0 127.024954,37.501889,0 127.024776,37.502218,0 127.024704,37.502368,0 127.024643,37.502406,0 127.024552,37.502434,0 127.024370,37.502426,0 127.024169,37.502425,0 127.024086,37.502433,0 127.023985,37.502459,0 127.023926,37.502480,0 127.023866,37.502513,0 127.023796,37.502555,0 127.023708,37.502616,0 127.023609,37.502675,0 127.023519,37.502741,0 127.023422,37.502706,0</coordinates></LineString></Placemark>
+<Placemark><name>Seocho-daero 75-gil (서초대로75길)</name><description><![CDATA[475 m]]></description><styleUrl>#line-0</styleUrl><LineString><tessellate>1</tessellate><coordinates>127.026405,37.497657,0 127.025707,37.499129,0 127.025690,37.499165,0 127.025121,37.500388,0 127.024527,37.501661,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Teheran-ro 1-gil (테헤란로1길)</name>
+<Placemark><name>Teheran-ro 1-gil (테헤란로1길)</name><description><![CDATA[0.4 km<br>1. Teheran-ro 1-gil, Gangnam-daero 102-gil to Teheran-ro (OSM street geometry)]]></description><styleUrl>#line-1</styleUrl><LineString><tessellate>1</tessellate><coordinates>127.026733,37.501721,0 127.027094,37.500965,0 127.027263,37.500615,0 127.027471,37.500171,0 127.027670,37.499760,0 127.027765,37.499537,0 127.027893,37.499282,0 127.027942,37.499183,0 127.028128,37.498772,0 127.028295,37.498434,0 127.028315,37.498391,0</coordinates></LineString></Placemark>
+<Placemark><name>Teheran-ro 1-gil, east branch (테헤란로1길)</name><description><![CDATA[141 m]]></description><styleUrl>#line-1</styleUrl><LineString><tessellate>1</tessellate><coordinates>127.027471,37.500171,0 127.027872,37.500298,0 127.027956,37.500323,0 127.028953,37.500639,0</coordinates></LineString></Placemark>
+</Folder>
+<Folder><name>Walks from Gangnam Station (강남역)</name>
+<Placemark><name>Gangnam Stn exit 10 → Kakao Friends Gangnam (강남역 10번 출구 → 카카오프렌즈 강남), 0.3 km</name><description><![CDATA[0.3 km<br>1. North along the west sidewalk of Gangnam-daero to 강남대로 429]]></description><styleUrl>#line-2</styleUrl><LineString><tessellate>1</tessellate><coordinates>127.027028,37.498666,0 127.026682,37.499298,0 127.026651,37.499473,0 127.026490,37.499788,0 127.026352,37.500056,0 127.026035,37.500674,0 127.025943,37.500867,0 127.025791,37.500821,0</coordinates></LineString></Placemark>
+<Placemark><name>Gangnam Stn exit 11 → Dong-A Theatre site, now CGV Gangnam (강남역 11번 출구 → 동아극장 자리, CGV 강남)</name><description><![CDATA[378 m]]></description><styleUrl>#line-2</styleUrl><LineString><tessellate>1</tessellate><coordinates>127.027471,37.498777,0 127.027332,37.499110,0 127.027109,37.499586,0 127.026993,37.499549,0 127.026838,37.499876,0 127.026582,37.500409,0 127.026297,37.501057,0 127.026088,37.501735,0 127.026245,37.501783,0</coordinates></LineString></Placemark>
+</Folder>
+</Document></kml>

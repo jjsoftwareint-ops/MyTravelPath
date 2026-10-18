@@ -273,6 +273,11 @@ Keep waypoint names short and numbered so the legend stays in order.
   `route.py` through the landmark pins (Incheon China Town was built this way: short town-centre streets,
   router on OSM streets, `approx: false` as the streets are real). Drop a via that sits on a side street
   (의선당, 일본풍거리) or the router detours through it; keep it as a pin only.
+- **Overpass mirror that works with curl: `https://overpass.kumi.systems/api/interpreter`** (2026-10-18, Gangnam):
+  `curl -A Mozilla/5.0 --data-urlencode "data=<ql>" <mirror>` with `out geom;` returns way geometry directly when
+  overpass-api.de answers 406 and system Python fails the TLS handshake. Gangnam streets (서초대로75·77길,
+  테헤란로1길) were chained from it; a My Maps export kmz was patched by splicing `layers_kml.py` Style/Folder
+  blocks into its doc.kml so the user's photo pins survived (examples/gangnam-paths.json).
 - **Overpass returns HTTP 406 to curl** from this machine; use `urllib` in Python (the scripts do). The public
   server also 504s on busy days: retry 2–3 times with 10 s sleep, keep bboxes ≤ 2 km.
 - **Valhalla (valhalla1.openstreetmap.de) fails the TLS handshake from macOS system Python** (LibreSSL);

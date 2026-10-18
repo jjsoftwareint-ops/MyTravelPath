@@ -101,6 +101,17 @@ export const cities: City[] = [
         imageCredit: 'Photo: Ken Eckert · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1MacGBkR5Qdw577FGrG4yztVioZYpBy0',
       },
+      {
+        id: 'gangnam-night-streets',
+        name: 'Gangnam Night Streets',
+        description:
+          'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
+        duration: '2h',
+        tags: [{ icon: 'moon', label: 'Night walk' }],
+        image: 'gangnam.jpg',
+        imageCredit: 'Photo: 최광모 · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1VIazL8nrcXwzKDjTxKyxrbKGaNR9NYg',
+      },
     ],
   },
   {
