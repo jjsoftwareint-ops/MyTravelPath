@@ -32,6 +32,35 @@ read **like a friendly blog**, emoji and coloured words are welcome, and every p
 - `keywords` also feed `usePageMeta` ([src/seo.ts](../../../src/seo.ts)), which sets the per-route
   `<title>`, description and `meta keywords`.
 
+## 1b. Important information above the map (`notices`)
+
+Standing rule (2026-10-20): **anything the visitor must know before setting off, such as opening or visiting
+hours, goes in a `notices` box above the Google Maps iframe**, not in the guide text. They render as
+amber boxes between the description and the map:
+
+```ts
+notices: [
+  {
+    icon: '⏰',                       // one emoji: ⏰ hours · 🎟️ tickets/fees · 🚫 closure · 📅 booking · 🚧 works
+    title: 'Bukchon Hanok Village visiting hours',
+    body: 'The busiest lane, **Bukchon-ro 11-gil** …, is open to visitors **10:00–17:00** only. …',
+    since: 'Jongno-gu special management area, enforced since March 2025. Checked October 2026.',
+  },
+],
+```
+
+Rules: one fact per box, two or three sentences, the number in `**bold**`. Verify against an official or
+news source (Seoul city, the district office, a national paper) before adding; a single travel blog is not
+enough — the unconfirmed "Bukchon closed on Sundays" claim (2026-10-20) was left out for that reason. Put
+the verification date in `since` so it can be re-checked. Typical candidates: palace closing days, hiking
+trail closures, festival road closures, museum fees, Cheong Wa Dae booking.
+
+## 1c. The `updated` date
+
+Every path has `updated: 'YYYY-MM-DD'`, shown as "Updated 20 Oct 2026" to the right of the pills under the
+banner. Standing rule (2026-10-20): **bump it to today on every edit to that page**: guide text, a notice,
+keywords, pins or the map link. Never leave it stale; never bump a page you did not touch.
+
 ## 2. Voice
 
 Write as the person who walked it and is telling a friend. First person is fine ("my favourite corner of
@@ -93,6 +122,8 @@ same tag appears on related walks (`SeoulCityWall` on Naksan, Inwangsan and Haeb
 - [ ] Intro has one leading emoji and 2–4 `**highlights**`; every tip has an emoji key.
 - [ ] 8–9 keywords, city first, `KoreaTravel` last.
 - [ ] Nothing is stated that the kmz, the spec JSON or common knowledge cannot back.
+- [ ] Facts with a deadline (hours, closures, fees) are in `notices` above the map, verified, with a date in `since`.
+- [ ] `updated` set to today on every path you touched.
 - [ ] Not committed; the user pushes.
 
 ## 7. Known limitation: hash routes and Google

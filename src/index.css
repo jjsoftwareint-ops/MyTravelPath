@@ -599,6 +599,62 @@ a:focus-visible {
   height: 15px;
 }
 
+/* Pills on the left, "Updated <date>" on the right, under the banner */
+.meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  flex-wrap: wrap;
+}
+.updated {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ── Important information above the map (hours, closures, fees) ── */
+.notices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.notice-card {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid light-dark(#fcd34d, #92400e);
+  background: light-dark(#fffbeb, #3b2a0a);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.45;
+}
+.notice-card-icon {
+  flex: 0 0 auto;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.notice-card-title {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.notice-card p {
+  margin: 0;
+}
+.notice-card small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
 /* ── Notice under the header ─────────────────────────────── */
 .notice {
   display: flex;

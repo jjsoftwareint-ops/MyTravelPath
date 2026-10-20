@@ -17,12 +17,23 @@ export type PathGuide = {
   tips?: string[] // getting there, food, best time, nearby
 }
 
+// A fact the visitor must know before setting off, shown in its own box above the
+// map: visiting hours, a closure day, a fee, a booking rule. Keep each to two lines.
+export type PathNotice = {
+  icon?: string // one emoji, e.g. '⏰' hours, '🎟️' tickets, '🚫' closure, '📅' booking
+  title: string // e.g. 'Bukchon Hanok Village visiting hours'
+  body: string // RichText markup allowed (**bold**)
+  since?: string // when the rule came in or was last checked, e.g. 'Checked October 2026'
+}
+
 export type TravelPath = {
   id: string
   name: string
   description?: string
   guide?: PathGuide // shown under the map on the detail page
   keywords?: string[] // hashtags under the guide; also the page's meta keywords
+  notices?: PathNotice[] // important facts shown above the map (hours, closures, fees)
+  updated: string // ISO date of the last edit to this page (text, notices or map). Bump it on every change.
   duration?: string // e.g. "2h", "Half day"
   tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
   image?: string // file in ./assets, shown as a banner above the description on the detail page
@@ -50,6 +61,7 @@ export const cities: City[] = [
         name: 'Fortress wall and stream',
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
+        updated: '2026-10-20',
         tags: [{ icon: 'moon', label: 'Night walk' }],
         image: 'naksan.jpg',
         imageCredit: 'Photo: Seoul Metropolitan Fire & Disaster HQ · CC BY-SA 4.0',
@@ -82,6 +94,7 @@ export const cities: City[] = [
         description:
           'Huam-dong 108 Stairs, Sinheung Market, Sowol-ro rooftops and the City Wall to Baekbeom Square. 2.4 km.',
         duration: '2h',
+        updated: '2026-10-20',
         tags: [{ icon: 'sunset', label: 'Evening walk' }],
         image: 'haebangchon.jpg',
         imageCredit: 'Photo: Lee Jeong Woo / Korea MCST · CC BY-SA 4.0',
@@ -113,7 +126,16 @@ export const cities: City[] = [
         name: 'Hanok Villages',
         description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km.',
         duration: '2h',
+        updated: '2026-10-20',
         tags: [{ icon: 'village', label: 'Traditional' }],
+        notices: [
+          {
+            icon: '⏰',
+            title: 'Bukchon Hanok Village visiting hours',
+            body: "The busiest lane, **Bukchon-ro 11-gil** (the Gahoe-dong 31 alley on this route), is open to visitors **10:00–17:00** only. Outside those hours it is residents only and a ₩100,000 fine applies. The rest of Bukchon, its main streets and cafés, stays open.",
+            since: 'Jongno-gu special management area, enforced since March 2025. Checked October 2026.',
+          },
+        ],
         image: 'bukchon.jpg',
         imageCredit: 'Photo: Bgag · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=14TBNrDcRMm9lNuEBH3QZbcEAg_mnuNU',
@@ -145,6 +167,7 @@ export const cities: City[] = [
         name: 'Inwang Mountain Trail',
         description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
         duration: '2.5h',
+        updated: '2026-10-20',
         tags: [
           { icon: 'hiker', label: 'Trekking' },
           { icon: 'sunset', label: 'Evening walk' },
@@ -181,6 +204,7 @@ export const cities: City[] = [
         description:
           'Four blossom walks for early April: Dorimcheon and the Anyangcheon embankment, Yeouido Yunjung-ro, the Seokchon Lake loop and the Namsan North Loop.',
         duration: '2–3h each',
+        updated: '2026-10-20',
         tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
         image: 'cherry.jpg',
         imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
@@ -211,6 +235,7 @@ export const cities: City[] = [
         description:
           'Two walks through the student quarter: the Gyeongui Line Forest Park from Yeontral Park past the Book Street to Seogang, and the Red Road busking street from Hongik University Station down to the Han River.',
         duration: '1–2h each',
+        updated: '2026-10-20',
         tags: [{ icon: 'hot', label: 'Hot place' }],
         image: 'hongdae-hot.jpg',
         imageCredit: 'Photo: Ken Eckert · CC BY-SA 4.0',
@@ -243,6 +268,7 @@ export const cities: City[] = [
         description:
           'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
         duration: '2h',
+        updated: '2026-10-20',
         tags: [{ icon: 'moon', label: 'Night walk' }],
         image: 'gangnam.jpg',
         imageCredit: 'Photo: 최광모 · CC BY-SA 4.0',
@@ -282,6 +308,7 @@ export const cities: City[] = [
         description:
           'Four blossom walks for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil over the pass to Songjeong, and the Nakdong embankment at Samnak.',
         duration: '1.5–3h each',
+        updated: '2026-10-20',
         tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
         image: 'cherry.jpg',
         imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
@@ -311,6 +338,7 @@ export const cities: City[] = [
         name: 'Haeundae Coastal Path',
         description: 'Beach → Dongbaek Island → Blueline Park sky capsule.',
         duration: 'Half day',
+        updated: '2026-10-20',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
         keywords: ['Busan', 'Haeundae', 'DongbaekIsland', 'BluelinePark', 'SkyCapsule', 'Cheongsapo', 'Songjeong', 'CoastalWalk', 'KoreaTravel'],
         guide: {
@@ -346,6 +374,7 @@ export const cities: City[] = [
         description:
           'Routes 5, 6 and 7 of the 437 km island trail: Namwon → Soesokkak → Seogwipo → Seogwipo Bus Terminal along the south coast, one colour per route, with every toilet and first-aid kit from the official maps.',
         duration: '1 day per route',
+        updated: '2026-10-20',
         tags: [{ icon: 'hiking', label: 'Hiking' }],
         image: 'olle.jpg',
         imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
@@ -384,6 +413,7 @@ export const cities: City[] = [
         description:
           'Korea\'s oldest China Town, 2 minutes from Incheon Station: the lantern street and its lanes, the Songwol-dong Fairy Tale Village loop, the Japanese-style street of the old port, plus the two mural streets and the Incheon Citizens\' House.',
         duration: '2–3h',
+        updated: '2026-10-20',
         tags: [{ icon: 'village', label: 'Old town' }],
         image: 'chinatown.jpg',
         imageCredit: 'Photo: Mobius6 · CC BY-SA 4.0',

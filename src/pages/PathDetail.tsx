@@ -13,6 +13,13 @@ import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { browserUrl, isIOS } from "../platform";
 import { usePageMeta } from "../seo";
 
+// '2026-10-20' → '20 Oct 2026', without timezone surprises.
+function formatDate(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m - 1];
+  return `${d} ${month} ${y}`;
+}
+
 // The site owner's PayPal.Me link.
 const DONATE_URL = "https://paypal.me/berlinersejin";
 
@@ -52,9 +59,33 @@ export default function PathDetail() {
           </span>
         )}
         <div className="card-body">
-          <Tags tags={path.tags} duration={path.duration} />
+          <div className="meta-row">
+            <Tags tags={path.tags} duration={path.duration} />
+            <time className="updated" dateTime={path.updated}>
+              Updated {formatDate(path.updated)}
+            </time>
+          </div>
           {path.description && <p className="card-desc">{path.description}</p>}
         </div>
+
+        {path.notices && (
+          <ul className="notices" aria-label="Important information">
+            {path.notices.map((n) => (
+              <li key={n.title} className="notice-card">
+                <span className="notice-card-icon" aria-hidden="true">
+                  {n.icon ?? "ℹ️"}
+                </span>
+                <div>
+                  <strong className="notice-card-title">{n.title}</strong>
+                  <p>
+                    <RichText text={n.body} />
+                  </p>
+                  {n.since && <small>{n.since}</small>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        )}
 
         {embed && (
           <div className="map">

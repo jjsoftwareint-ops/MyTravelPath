@@ -88,8 +88,13 @@ tricks or transparency work unless asked.
 
 - Home: **no banner above the list**. Cities are accordion rows (`/:cityId` keeps one open), each may carry
   a header photo; paths are the children with their pills; a path opens `/:cityId/:pathId`.
-- Path detail: notice band → tags/duration → description → embedded My Maps (behind "Tap to explore") →
-  "Open in Google Maps" button. Placeholder `REPLACE_ME` links render disabled.
+- Path detail, top to bottom: banner photo → pills row (tags/duration left, **"Updated <date>" right**) →
+  description → **important-information boxes** (`notices`: opening hours, closure days, fees, booking
+  rules; amber, one fact each) → embedded My Maps (behind "Tap to explore") → Naver notice → "Open in
+  Google Maps" button → guide card. Anything the visitor must know *before* setting off goes in a notice
+  **above the map**, never buried in the guide text. Placeholder `REPLACE_ME` links render disabled.
+- `updated` (ISO date on every path in `travel.ts`) is bumped on **every** edit to that page: text, notice,
+  pins or map. Standing rule from the user (2026-10-20).
 - Credits on photos: tiny translucent pill, bottom-right, clipped by the card (`overflow: hidden`).
 - Dark and light mode both come from the tokens in `src/index.css`; photos and icon colours are fixed.
 
