@@ -7,7 +7,7 @@ export const CONTACT_EMAIL = "jjsoftwareint@gmail.com";
 // The site has no backend, so the form composes an e-mail in the visitor's
 // own mail app. Nothing typed here is sent to or stored by this site.
 export default function Contact() {
-  usePageMeta({ title: "Contact", description: "Send a correction, a question or a new walk idea to My Travel Path." });
+  usePageMeta();
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");

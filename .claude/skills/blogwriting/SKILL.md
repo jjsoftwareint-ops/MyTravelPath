@@ -137,10 +137,16 @@ moderator post, on the day. List the rules that apply and how the outline meets 
 self-promotion, say so and do not draft. Only then hand over a fact outline drawn from the kmz pins
 and the guide text, not prose to paste. Full rules and outlines: [docs/reddit-posts.md](../../../docs/reddit-posts.md).
 
-## 7. Known limitation: hash routes and Google
+## 7. URLs, pre-rendering and the sitemap
 
-The site uses `HashRouter` (`/#/seoul/...`). Search engines index only the part before `#`, so today the
-whole site is one URL to Google and per-path titles, descriptions and hashtags are seen by people and
-link previews, not by the crawler. Making each path a real indexed page needs either pre-rendered HTML
-per route at build time or a switch to path URLs with a redirect for old `#/` links. Raise this with the
-user when SEO comes up; do not change the routing without being asked.
+Every page has a real URL with a trailing slash: `https://koreatravelpath.com/<city>/<path>/`. `npm run build`
+pre-renders each route into `dist/<route>/index.html` (full guide text, notices, per-page title, description,
+keywords, canonical, Open Graph, JSON-LD) via `src/entry-server.tsx` and `scripts/prerender.mjs`, so Google and
+link previews see the content without JavaScript. Consequences for writing:
+
+- Titles, descriptions and JSON-LD come from **`pageMeta()` in `src/seo.ts`** only; do not add meta logic to pages.
+- `updated` on a path becomes the sitemap `lastmod` and the Article `dateModified`: bump it on every edit.
+- `sitemap.xml` is **generated at build time**; never hand-edit one into `assets/`.
+- Old `/#/seoul/...` links redirect to the real page (script in `index.html`); use the slash form in new posts.
+- Anything that reads `navigator`/`window` during render must be gated with `useHydrated()` (`src/hooks.ts`),
+  or the pre-rendered HTML and the first client render disagree.

@@ -3,9 +3,11 @@
 export type Theme = 'light' | 'dark'
 
 const KEY = 'theme'
+const QUERY = '(prefers-color-scheme: dark)'
 
 export function systemTheme(): Theme {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  if (typeof window === 'undefined' || !window.matchMedia) return 'light'
+  return window.matchMedia(QUERY).matches ? 'dark' : 'light'
 }
 
 export function storedTheme(): Theme | null {
@@ -19,6 +21,19 @@ export function storedTheme(): Theme | null {
 
 export function currentTheme(): Theme {
   return storedTheme() ?? systemTheme()
+}
+
+// Tiny store so React can subscribe (useSyncExternalStore) without a mismatch
+// between the pre-rendered HTML (always "light") and the first client render.
+const listeners = new Set<() => void>()
+export function subscribeTheme(fn: () => void) {
+  listeners.add(fn)
+  const mq = typeof window !== 'undefined' && window.matchMedia ? window.matchMedia(QUERY) : null
+  mq?.addEventListener('change', fn)
+  return () => {
+    listeners.delete(fn)
+    mq?.removeEventListener('change', fn)
+  }
 }
 
 const BACKGROUND: Record<Theme, string> = { light: '#f4f5f7', dark: '#0f1115' }
@@ -35,4 +50,5 @@ export function applyTheme(theme: Theme) {
   } catch {
     /* private mode: the choice simply lasts for this page view */
   }
+  listeners.forEach((fn) => fn())
 }

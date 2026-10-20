@@ -24,8 +24,8 @@ declare global {
 
 let loader: Promise<void> | undefined
 
-// Inject count.js once. Page views are sent by hand below because the app
-// uses hash routes, which the script's automatic page view would not see.
+// Inject count.js once. Page views are sent by hand below so that client-side
+// navigations between routes are counted too.
 function loadScript(): Promise<void> {
   if (!loader) {
     loader = new Promise((resolve) => {
@@ -43,13 +43,15 @@ function loadScript(): Promise<void> {
 }
 
 // Renders nothing; sends one page view per route change (e.g. /seoul/hanok-villages).
+// Trailing slashes are dropped so /seoul/ and /seoul count as the same page.
 export default function Analytics() {
   const { pathname } = useLocation()
 
   useEffect(() => {
     if (!GOATCOUNTER_SITE || import.meta.env.DEV) return
     void loadScript().then(() => {
-      window.goatcounter?.count?.({ path: pathname, title: document.title })
+      const path = pathname.replace(/\/+$/, '') || '/'
+      window.goatcounter?.count?.({ path, title: document.title })
     })
   }, [pathname])
 

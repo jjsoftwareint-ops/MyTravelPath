@@ -11,6 +11,7 @@ import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { browserUrl, isIOS } from "../platform";
+import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
 // '2026-10-20' → '20 Oct 2026', without timezone surprises.
@@ -30,11 +31,9 @@ export default function PathDetail() {
   // The embedded map starts behind a cover so that scrolling the page over it
   // does not pan the map instead. One tap hands control to the map.
   const [mapActive, setMapActive] = useState(false);
-  usePageMeta({
-    title: path && city ? `${path.name} – ${city.name}` : undefined,
-    description: path?.description,
-    keywords: path?.keywords,
-  });
+  usePageMeta();
+  // The iOS two-button variant only after hydration (see hooks.ts).
+  const hydrated = useHydrated();
 
   if (!city || !path)
     return <Navigate to={city ? `/${city.id}` : "/"} replace />;
@@ -124,7 +123,7 @@ export default function PathDetail() {
 
         {ready ? (
           <>
-            {isIOS() ? (
+            {hydrated && isIOS() ? (
               <>
                 {/* iPhone/iPad: the Google Maps app follows the route well but shows the
                     Naver Map links in pin descriptions as plain text, so a second button

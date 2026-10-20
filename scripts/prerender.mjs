@@ -1,0 +1,41 @@
+// Pre-render every route into dist/<route>/index.html, plus sitemap.xml and 404.html.
+// Runs after `vite build` (client, dist/) and `vite build --ssr` (server, dist-ssr/).
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { dirname, join } from 'node:path'
+import { fileURLToPath, pathToFileURL } from 'node:url'
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..')
+const dist = join(root, 'dist')
+const ssr = join(root, 'dist-ssr')
+const SITE = 'https://koreatravelpath.com'
+
+const { render, routes } = await import(pathToFileURL(join(ssr, 'entry-server.js')).href)
+const template = readFileSync(join(dist, 'index.html'), 'utf8')
+if (!template.includes('<!--app-head-->') || !template.includes('<div id="root"><!--app-html--></div>')) {
+  throw new Error('dist/index.html lost its <!--app-head--> / <!--app-html--> placeholders')
+}
+
+function page(url) {
+  const { html, head, path } = render(url)
+  return template
+    .replace('<!--app-head-->', head)
+    .replace('<div id="root"><!--app-html--></div>', `<div id="root" data-path="${path}">${html}</div>`)
+}
+
+const list = routes()
+for (const { path } of list) {
+  const dir = join(dist, path)
+  mkdirSync(dir, { recursive: true })
+  writeFileSync(join(dir, 'index.html'), page(path))
+}
+// Unknown URLs: GitHub Pages serves this with status 404; the client then navigates home.
+writeFileSync(join(dist, '404.html'), page('/'))
+
+const sitemap =
+  '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  list.map(({ path, lastmod }) => `  <url><loc>${SITE}${path}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n') +
+  '\n</urlset>\n'
+writeFileSync(join(dist, 'sitemap.xml'), sitemap)
+
+rmSync(ssr, { recursive: true, force: true })
+console.log(`prerendered ${list.length} routes + 404.html + sitemap.xml`)

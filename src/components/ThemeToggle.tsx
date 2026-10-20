@@ -1,22 +1,19 @@
-import { useState } from 'react'
+import { useSyncExternalStore } from 'react'
 import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
-import { applyTheme, currentTheme, type Theme } from '../theme'
+import { applyTheme, currentTheme, subscribeTheme, type Theme } from '../theme'
+
+const serverTheme = (): Theme => 'light'
 
 // Sun/moon button in the header. Shows the mode you would switch to.
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>(() => currentTheme())
+  const theme = useSyncExternalStore(subscribeTheme, currentTheme, serverTheme)
   const next: Theme = theme === 'dark' ? 'light' : 'dark'
-
-  const toggle = () => {
-    applyTheme(next)
-    setTheme(next)
-  }
 
   return (
     <button
       type="button"
       className="theme-toggle"
-      onClick={toggle}
+      onClick={() => applyTheme(next)}
       aria-label={`Switch to ${next} mode`}
       title={`Switch to ${next} mode`}
     >

@@ -5,6 +5,7 @@ import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import { cities } from "../data/travel";
+import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
 // Naver Map in the two app stores; the home notice links the one for the visitor's phone.
@@ -17,13 +18,9 @@ const NAVER_MAP_STORE = {
 // path's detail page lands on the list with that city still open.
 export default function Home() {
   const { cityId } = useParams();
-  const city = cities.find((c) => c.id === cityId);
-  usePageMeta({
-    title: city ? `Walking routes in ${city.name}` : undefined,
-    description: city
-      ? `${city.paths.length} free walking routes in ${city.name}, Korea: ${city.paths.map((p) => p.name).join(", ")}. Open in Google Maps and Naver Map.`
-      : undefined,
-  });
+  usePageMeta();
+  // Device checks only after hydration, so the first render matches the pre-rendered HTML.
+  const hydrated = useHydrated();
 
   return (
     <Layout
@@ -35,7 +32,7 @@ export default function Home() {
         <GrAnnounce className="notice-icon announce" aria-hidden="true" />
         <ul className="notice-list">
           <li>Restaurant, café and event information is regularly updated.</li>
-          {isPhone() && (
+          {hydrated && isPhone() && (
             <li className="warn">
               Downloading the <b className="naver">Naver Map</b> app is highly
               recommended.{" "}

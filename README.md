@@ -35,8 +35,14 @@ Paste your Google My Maps share link into `mapUrl`.
 npm run build   # output in dist/
 ```
 
-The build uses a relative base path and hash routing, so `dist/` can be hosted
-on any static host (GitHub Pages, Netlify, etc.) without extra configuration.
+The build runs three steps: the normal Vite client build, a Vite SSR build of
+`src/entry-server.tsx` into the temporary `dist-ssr/`, and `scripts/prerender.mjs`,
+which renders every route (home, About/Contact/Privacy/Imprint, each city, each
+path) into its own `dist/<route>/index.html` with the full page HTML, per-page
+`<title>`, description, canonical, Open Graph tags and JSON-LD. It also writes
+`dist/sitemap.xml` from the data (`updated` becomes `lastmod`) and `dist/404.html`.
+Pages use real URLs (`/seoul/hanok-villages/`); old `/#/…` links are redirected
+by a small script in `index.html`. All head data lives in `src/seo.ts`.
 
 ## Deploy (GitHub Pages)
 
@@ -56,7 +62,7 @@ and sets no cookies, so no consent banner is needed. To turn it on:
    e.g. `mytravelpath`. Your dashboard is then `https://mytravelpath.goatcounter.com`.
 2. Put that code in `GOATCOUNTER_SITE` in `src/components/Analytics.tsx` and push.
 
-Each route is reported as its own path (`/`, `/seoul`, `/seoul/hanok-villages`).
+Each route is reported as its own path (`/`, `/seoul`, `/seoul/hanok-villages`), without a trailing slash.
 Nothing is sent while running locally or while the site code is empty.
 
 ## Credits

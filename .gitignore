@@ -25,3 +25,6 @@ dist-ssr
 
 # Google My Maps source files: kept locally only, never published
 assets/maps/
+
+# Drafts for Reddit, Threads and other posts: kept locally only
+docs/

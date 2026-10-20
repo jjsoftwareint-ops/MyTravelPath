@@ -3,7 +3,7 @@ import { usePageMeta } from "../seo";
 
 // Legal notice (Impressum) with the site owner's contact details.
 export default function Imprint() {
-  usePageMeta({ title: "Imprint", description: "Legal notice and business registration of JJ SOFTWARE, publisher of My Travel Path." });
+  usePageMeta();
   return (
     <Layout title="Imprint" subtitle="Legal notice" backTo="/">
       <section className="prose">
