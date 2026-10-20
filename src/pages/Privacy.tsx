@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import { usePageMeta } from "../seo";
 import { CONTACT_EMAIL } from "./Contact";
 
 const UPDATED = "20 October 2026";
@@ -7,6 +8,7 @@ const UPDATED = "20 October 2026";
 // Privacy policy covering hosting, analytics, embedded maps, donations and
 // advertising (Google AdSense). Update UPDATED when the text changes.
 export default function Privacy() {
+  usePageMeta({ title: "Privacy Policy", description: "How My Travel Path handles data: hosting, GoatCounter statistics, embedded Google maps, PayPal donations and Google AdSense advertising." });
   return (
     <Layout title="Privacy Policy" subtitle={`Last updated ${UPDATED}`} backTo="/">
       <section className="prose">

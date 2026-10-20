@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import { usePageMeta } from "../seo";
 
 // Who runs the site and what it does (also required by ad networks).
 export default function About() {
+  usePageMeta({ title: "About", description: "Who makes My Travel Path, how the walking routes in Korea are built and checked, and how the site is funded." });
   return (
     <Layout title="About" subtitle="Who makes My Travel Path" backTo="/">
       <section className="prose">

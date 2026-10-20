@@ -5,11 +5,13 @@ import { ImInfo } from "react-icons/im";
 import { MdOutlinePinDrop } from "react-icons/md";
 import { Navigate, useParams } from "react-router-dom";
 import CopyLink from "../components/CopyLink";
+import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { browserUrl, isIOS } from "../platform";
+import { usePageMeta } from "../seo";
 
 // The site owner's PayPal.Me link.
 const DONATE_URL = "https://paypal.me/berlinersejin";
@@ -21,6 +23,11 @@ export default function PathDetail() {
   // The embedded map starts behind a cover so that scrolling the page over it
   // does not pan the map instead. One tap hands control to the map.
   const [mapActive, setMapActive] = useState(false);
+  usePageMeta({
+    title: path && city ? `${path.name} – ${city.name}` : undefined,
+    description: path?.description,
+    keywords: path?.keywords,
+  });
 
   if (!city || !path)
     return <Navigate to={city ? `/${city.id}` : "/"} replace />;
@@ -139,29 +146,42 @@ export default function PathDetail() {
 
       {path.guide && (
         <section className="guide" aria-labelledby="guide-title">
-          <h2 id="guide-title">About this walk</h2>
+          <h2 id="guide-title">✨ About this walk</h2>
           {path.guide.intro.map((text) => (
-            <p key={text}>{text}</p>
+            <p key={text}>
+              <RichText text={text} />
+            </p>
           ))}
           {path.guide.route && (
             <>
-              <h3>The route</h3>
+              <h3>🚶 The route</h3>
               <ol>
                 {path.guide.route.map((step) => (
-                  <li key={step}>{step}</li>
+                  <li key={step}>
+                    <RichText text={step} />
+                  </li>
                 ))}
               </ol>
             </>
           )}
           {path.guide.tips && (
             <>
-              <h3>Good to know</h3>
+              <h3>💡 Good to know</h3>
               <ul>
                 {path.guide.tips.map((tip) => (
-                  <li key={tip}>{tip}</li>
+                  <li key={tip}>
+                    <RichText text={tip} />
+                  </li>
                 ))}
               </ul>
             </>
+          )}
+          {path.keywords && (
+            <ul className="hashtags" aria-label="Tags">
+              {path.keywords.map((k) => (
+                <li key={k}>#{k}</li>
+              ))}
+            </ul>
           )}
         </section>
       )}

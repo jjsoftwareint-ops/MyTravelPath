@@ -773,6 +773,28 @@ button.cta {
   font-weight: 700;
 }
 
+/* Highlighted words and hashtags inside guide text (see RichText.tsx) */
+.hl {
+  color: var(--accent);
+  font-weight: 700;
+}
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.hashtags li {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
 /* ── Desktop: the column widens to 1024px, lists go two-up, map beside text ── */
 @media (min-width: 760px) {
   .screen {
