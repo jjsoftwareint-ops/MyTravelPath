@@ -280,14 +280,22 @@ export const cities: City[] = [
         id: 'gangnam-night-streets',
         name: 'Gangnam Night Streets',
         description:
-          'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
+          'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Plus Garosu-gil in Sinsa-dong and the Banpo Bridge fountain with Sevit Island on the Han River. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
         duration: '2h',
         updated: '2026-10-20',
+        notices: [
+          {
+            icon: '⛲',
+            title: 'Banpo Bridge Moonlight Rainbow Fountain: 2026 show times',
+            body: "Runs **15 March to the end of October**, 20 minutes per show. March to May and October: **12:00, 19:30, 20:00, 20:30, 21:00**. June to September: the same plus **21:30**. No show in wind over 7 m/s, when rain is forecast during show hours, or when the river is muddy; extra shows are added for events.",
+            since: 'Seoul Hangang Park official timetable for 2026. Checked October 2026; the 2027 table is published each March.',
+          },
+        ],
         tags: [{ icon: 'moon', label: 'Night walk' }],
         image: 'gangnam.jpg',
         imageCredit: 'Photo: 최광모 · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1VIazL8nrcXwzKDjTxKyxrbKGaNR9NYg',
-        keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'Teheranro', 'StarfieldLibrary', 'Bongeunsa', 'KoreanBBQ', 'KoreaTravel'],
+        keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'Garosugil', 'BanpoBridge', 'MoonlightRainbowFountain', 'SevitIsland', 'StarfieldLibrary', 'Bongeunsa', 'KoreaTravel'],
         guide: {
           intro: [
             "🌃 **Gangnam Station** is where office Seoul lets its hair down. The main road is all towers and screens, but behind it is a dense grid of restaurants, bars, karaoke rooms and late shops that fills up the moment work ends. I have picked out the **three back streets** worth walking after dark and two short strolls from the station exits.",
@@ -299,9 +307,12 @@ export const cities: City[] = [
             "Gangnam Station exit 10, north along Gangnam-daero to the Kakao Friends flagship store, 0.3 km with the whole street lit by screens.",
             "Exit 11 to CGV Gangnam, the site of the old Dong-A Theatre, 0.4 km the other way.",
             "Pinned for daytime: Starfield Library in COEX mall and Bongeunsa temple opposite it, both at Samseong Station, two stops east on line 2.",
+            "Garosu-gil, 1 km from Sinsa Station exit 8: 250 m along Dosan-daero, then the 700 m avenue of ginkgo trees north to Apgujeong-ro, flagship stores on the street and the quieter boutiques in the side lanes. Best in the late afternoon, yellow in early November.",
+            "Banpo Bridge Moonlight Rainbow Fountain and Sevit Island: 15 min from Express Bus Terminal Station exit 8-1 through the underpass to Banpo Hangang Park. Watch the 19:30 or 20:00 show from the lawn, then walk over to the lit floating islands for the close-up view.",
           ],
           tips: [
             "🚇 Getting there: Gangnam Station, line 2 and the Sinbundang line. Exits 10 and 11 are on the west side; the station passage crosses under the road.",
+            "🌉 Make an evening of it: Garosu-gil at 17:00, the Sinbundang line one stop from Sinsa to Gangnam for dinner in the back streets, then line 9 or a taxi to Banpo Hangang Park for the 20:30 or 21:00 fountain show.",
             "⏰ Restaurants serve until late and many bars go on past midnight. Line 2 runs until about midnight; the taxi ranks get long after that.",
             "⏰ Weeknights are busy from 7 pm with office workers; weekend crowds are younger and later.",
             "⏰ Starfield Library and Bongeunsa are free and best in the morning, before the evening walk.",

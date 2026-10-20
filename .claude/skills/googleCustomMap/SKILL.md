@@ -278,6 +278,20 @@ Keep waypoint names short and numbered so the legend stays in order.
   overpass-api.de answers 406 and system Python fails the TLS handshake. Gangnam streets (서초대로75·77길,
   테헤란로1길) were chained from it; a My Maps export kmz was patched by splicing `layers_kml.py` Style/Folder
   blocks into its doc.kml so the user's photo pins survived (examples/gangnam-paths.json).
+- **When every Overpass mirror times out, the plain OSM API still works** (2026-10-20, Garosu-gil):
+  `https://api.openstreetmap.org/api/0.6/map.json?bbox=<w>,<s>,<e>,<n>` returns every node and way in a small
+  bbox (keep it under ~1 km²), so a street can be found by `name` and its node chain rebuilt locally; a single
+  way is `…/api/0.6/way/<id>/full.json`. Nominatim's `polygon_geojson` for a road name may return only tiny
+  side pieces (압구정로12길 gave two 2-node stubs), so check the length before trusting it.
+- **`reverse_address.py` reads the GPX spec shape (`waypoints`), not a layered spec.** For a layered-KML pin
+  without a venue, put that one pin into a throwaway `{"segments":[],"waypoints":[pin]}` spec, run the script,
+  and copy the `address` back; when it says UNRESOLVED, pick the nearest real Naver place (e.g. a school gate
+  across the road) and say so in the pin description.
+- **Patching a My Maps export kmz** (Gangnam, 2026-10-18 and 2026-10-20): build the new layers with
+  `layers_kml.py`, then splice its `<Style>`/`<StyleMap>` blocks after the Document `<description/>` and its
+  `<Folder>`s before `</Document>`; remove any plain pin the user added for the same place so it does not
+  duplicate the new `*CLICK*` pin; re-zip with the original `images/` folder; validate; run the Hangul-title and
+  `*CLICK*` checks. Spec: examples/gangnam-additions.json.
 - **Overpass returns HTTP 406 to curl** from this machine; use `urllib` in Python (the scripts do). The public
   server also 504s on busy days: retry 2–3 times with 10 s sleep, keep bboxes ≤ 2 km.
 - **Valhalla (valhalla1.openstreetmap.de) fails the TLS handshake from macOS system Python** (LibreSSL);

@@ -1,0 +1,72 @@
+{
+ "name": "Gangnam additions 2026-10-20",
+ "layers": [
+  {
+   "name": "Garosu-gil (가로수길)",
+   "line": {
+    "name": "Garosu-gil: Sinsa Stn exit 8 → Dosan-daero → Garosu-gil to Apgujeong-ro (신사역 8번 출구 → 가로수길), 1.0 km",
+    "color": "43A047",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Sinsa Station exit 8 east along Dosan-daero to the foot of Garosu-gil (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.516872,127.020792 37.516939,127.020963 37.516944,127.021010 37.516964,127.021054 37.516858,127.021122 37.516890,127.021195 37.517191,127.021929 37.517317,127.022210 37.517505,127.022657 37.517552,127.022767 37.517680,127.023067 37.517819,127.023401"
+    },
+    {
+     "label": "Garosu-gil, the whole tree-lined street north to Apgujeong-ro (OSM way 529594105)",
+     "approx": false,
+     "coords": "37.517819,127.023401 37.517963,127.023379 37.518397,127.023308 37.518912,127.023223 37.519331,127.023154 37.519515,127.023124 37.519946,127.023053 37.520109,127.023026 37.520601,127.022945 37.520950,127.022887 37.521471,127.022805 37.521511,127.022801 37.521619,127.022777 37.521825,127.022743 37.522108,127.022696 37.522211,127.022685 37.522585,127.022618 37.523450,127.022499 37.523486,127.022469 37.523531,127.022486 37.523989,127.022382"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.516845,
+     "lon": 127.020777,
+     "name": "Start – Sinsa Station exit 8 (신사역 8번 출구)",
+     "desc": "Line 3 and the Sinbundang line. Walk east along Dosan-daero for 250 m; Garosu-gil is the first big tree-lined street on the left.",
+     "icon": "start",
+     "naver_id": "21405846"
+    },
+    {
+     "lat": 37.519704,
+     "lon": 127.023114,
+     "name": "Garosu-gil (가로수길)",
+     "desc": "The 700 m avenue of ginkgo trees from Dosan-daero to Apgujeong-ro: flagship fashion stores, brunch cafés and the Apple Store on the street itself; the quieter boutiques and bakeries are in the side lanes, Serosu-gil, one block west and east. Busiest on weekend afternoons; the ginkgo turns yellow in early November.",
+     "icon": "street",
+     "naver_id": "13491811"
+    },
+    {
+     "lat": 37.523989,
+     "lon": 127.022382,
+     "name": "End – north end of Garosu-gil at Apgujeong-ro (가로수길 북쪽 끝, 압구정로)",
+     "desc": "Garosu-gil meets Apgujeong-ro here; the Naver link opens the Hyundai High School main gate just across the road. Apgujeong Station (line 3) is 10 min east along Apgujeong-ro; Dosan Park is 15 min south-east.",
+     "icon": "end",
+     "naver_id": "18847693"
+    }
+   ]
+  },
+  {
+   "name": "Han River: Banpo Bridge fountain & Sevit Island (반포대교 · 세빛섬)",
+   "pins": [
+    {
+     "lat": 37.512659,
+     "lon": 126.998433,
+     "name": "Banpo Bridge Moonlight Rainbow Fountain (반포대교 달빛무지개분수)",
+     "desc": "1,140 m of water jets along both sides of Banpo Bridge, lit in colour to music: the longest bridge fountain in the world. Watch from the lawn of Banpo Hangang Park below the bridge or from Sevit Island. Shows run 15 March to October, 20 minutes each: 12:00, 19:30, 20:00, 20:30, 21:00, plus 21:30 from June to September. Cancelled in wind over 7 m/s, rain or muddy river water. From Express Bus Terminal Station (lines 3, 7, 9) exit 8-1 it is a 15 min walk through the underpass to the park.",
+     "icon": "waterfall",
+     "naver_id": "13543876"
+    },
+    {
+     "lat": 37.512434,
+     "lon": 126.99597,
+     "name": "Sevit Island (세빛섬)",
+     "desc": "Three floating islands moored at the south bank just west of Banpo Bridge, with cafés, restaurants and a convention hall, all lit up after dark. The best close-up view of the fountain is from the walkway between the islands. Free to walk around; open all day.",
+     "icon": "viewpoint",
+     "naver_id": "35719873"
+    }
+   ]
+  }
+ ]
+}

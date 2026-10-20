@@ -126,6 +126,17 @@ same tag appears on related walks (`SeoulCityWall` on Naksan, Inwangsan and Haeb
 - [ ] `updated` set to today on every path you touched.
 - [ ] Not committed; the user pushes.
 
+## 6b. Reddit and other forums: outlines, never paste-ready posts
+
+Standing rule (2026-10-20, after the user's Reddit account was blocked): a forum post about a path must
+carry the **whole content itself** (route, stops, times, food, pitfalls), with **at most one link at the
+end** labelled as the user's own, and it must be **written by the user in their own words**: Reddit bans
+fully AI-generated content. Before drafting anything, **fetch and read all the rules first**: Reddit's Content Policy, its spam and
+self-promotion guidance, its AI-content rule, and the target sub's `/about/rules` page plus any pinned
+moderator post, on the day. List the rules that apply and how the outline meets each; if the sub bans
+self-promotion, say so and do not draft. Only then hand over a fact outline drawn from the kmz pins
+and the guide text, not prose to paste. Full rules and outlines: [docs/reddit-posts.md](../../../docs/reddit-posts.md).
+
 ## 7. Known limitation: hash routes and Google
 
 The site uses `HashRouter` (`/#/seoul/...`). Search engines index only the part before `#`, so today the
