@@ -135,6 +135,12 @@ export const cities: City[] = [
             body: "The busiest lane, **Bukchon-ro 11-gil** (the Gahoe-dong 31 alley on this route), is open to visitors **10:00–17:00** only. Outside those hours it is residents only and a ₩100,000 fine applies. The rest of Bukchon, its main streets and cafés, stays open.",
             since: 'Jongno-gu special management area, enforced since March 2025. Checked October 2026.',
           },
+          {
+            icon: '💂',
+            title: 'Gyeongbokgung Royal Guard Changing Ceremony, 2027 timetable',
+            body: "At the start of this walk, in the courtyard just inside **Gwanghwamun Gate**: the Royal Guard Changing Ceremony runs daily at **10:00 and 14:00** (about 20 minutes), and the shorter Gwanghwamun gate-guard duty at **11:00 and 13:00**. **No ceremonies on Tuesdays**, when the palace is closed, and they are cancelled in heavy rain or snow. The courtyard is free; no palace ticket needed.",
+            since: 'Times unchanged for several years and expected to carry into 2027; confirm on the Korea Heritage Service royal palaces site before you go. Checked October 2026.',
+          },
         ],
         image: 'bukchon.jpg',
         imageCredit: 'Photo: Bgag · CC0',
@@ -205,6 +211,14 @@ export const cities: City[] = [
           'Four blossom walks for early April: Dorimcheon and the Anyangcheon embankment, Yeouido Yunjung-ro, the Seokchon Lake loop and the Namsan North Loop.',
         duration: '2–3h each',
         updated: '2026-10-20',
+        notices: [
+          {
+            icon: '🌸',
+            title: 'Expected cherry blossom dates in Seoul, spring 2027',
+            body: "Seoul usually opens in the **first week of April** and is in full bloom four to seven days later. Recent first-bloom dates: 1 April 2024, 4 April 2025 and about 3 April 2026, against a 30-year normal of 8 April. For 2027 expect first bloom around **1–6 April** and full bloom **5–12 April**. The official forecast comes out in early March; check it before you book.",
+            since: 'Based on Korea Meteorological Administration observations 2024–2026. Written October 2026; the 2027 forecast is not out yet.',
+          },
+        ],
         tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
         image: 'cherry.jpg',
         imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
@@ -309,6 +323,14 @@ export const cities: City[] = [
           'Four blossom walks for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil over the pass to Songjeong, and the Nakdong embankment at Samnak.',
         duration: '1.5–3h each',
         updated: '2026-10-20',
+        notices: [
+          {
+            icon: '🌸',
+            title: 'Expected cherry blossom dates in Busan, spring 2027',
+            body: "Busan opens about **a week before Seoul**. Forecasts put first bloom at 22–25 March in 2024–2026, against a normal of 28 March, with full bloom about a week later. For 2027 expect first bloom around **22–28 March** and full bloom **28 March – 4 April**. The official forecast comes out in early March; check it before you book.",
+            since: 'Based on Korea Meteorological Administration data 2024–2026. Written October 2026; the 2027 forecast is not out yet.',
+          },
+        ],
         tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
         image: 'cherry.jpg',
         imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
