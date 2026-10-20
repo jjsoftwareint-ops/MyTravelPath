@@ -3,7 +3,8 @@ import { IoCheckmark, IoShareOutline } from "react-icons/io5";
 
 // "Share this path": the system share sheet on phones (Web Share API), a copied
 // link elsewhere. Each path has its own hash URL, so the link lands on the path.
-export default function ShareLink({ title }: { title: string }) {
+// `compact` renders the round icon-only version used in the page header.
+export default function ShareLink({ title, compact = false }: { title: string; compact?: boolean }) {
   const [copied, setCopied] = useState(false);
   useEffect(() => {
     if (!copied) return;
@@ -29,6 +30,22 @@ export default function ShareLink({ title }: { title: string }) {
       /* clipboard blocked: nothing else to do */
     }
   };
+
+  if (compact) {
+    const label = copied ? "Link copied" : "Share this page";
+    return (
+      <button
+        type="button"
+        className="icon-button share-icon"
+        onClick={share}
+        aria-label={label}
+        title={label}
+        aria-live="polite"
+      >
+        {copied ? <IoCheckmark aria-hidden="true" /> : <IoShareOutline aria-hidden="true" />}
+      </button>
+    );
+  }
 
   return (
     <button type="button" className="share" onClick={share} aria-live="polite">

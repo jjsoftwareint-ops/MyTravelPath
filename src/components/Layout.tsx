@@ -9,10 +9,12 @@ type Props = {
   backTo?: string
   /** Element shown in place of the back button, e.g. the brand mark on the home screen. */
   icon?: ReactNode
+  /** Extra header buttons shown right of the theme toggle, e.g. the share button on a path page. */
+  actions?: ReactNode
   children: ReactNode
 }
 
-export default function Layout({ title, subtitle, backTo, icon, children }: Props) {
+export default function Layout({ title, subtitle, backTo, icon, actions, children }: Props) {
   return (
     <div className="screen">
       <header className="header">
@@ -30,6 +32,7 @@ export default function Layout({ title, subtitle, backTo, icon, children }: Prop
           {subtitle && <p>{subtitle}</p>}
         </div>
         <ThemeToggle />
+        {actions}
       </header>
       <main className="content">{children}</main>
       {/* Same footer on every page so the policy pages are one tap away anywhere. */}

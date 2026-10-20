@@ -43,7 +43,12 @@ export default function PathDetail() {
   const embed = ready ? mapEmbedUrl(path) : undefined;
 
   return (
-    <Layout title={path.name} subtitle={city.name} backTo={`/${city.id}`}>
+    <Layout
+      title={path.name}
+      subtitle={city.name}
+      backTo={`/${city.id}`}
+      actions={<ShareLink compact title={`${path.name} (${city.name})`} />}
+    >
       <div className={path.guide ? "path-layout" : "path-layout solo"}>
       <article className={ready ? "card path-card" : "card path-card disabled"}>
         {path.image && (
@@ -160,7 +165,6 @@ export default function PathDetail() {
               </a>
             )}
             <CopyLink url={path.mapUrl} />
-            <ShareLink title={`${path.name} (${city.name})`} />
             <a
               className="donate"
               href={DONATE_URL}
