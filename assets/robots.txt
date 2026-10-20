@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://jjsoftwareint-ops.github.io/MyTravelPath/sitemap.xml
+Sitemap: https://koreatravelpath.com/sitemap.xml

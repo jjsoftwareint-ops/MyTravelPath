@@ -5,7 +5,7 @@ Before each post, read the sub's sidebar rules on self-promotion once; they chan
 the first two hours, that is what keeps a post visible. Best time to post: 18:00–21:00 US Eastern, which is
 07:00–10:00 in Korea, when both US planners and in-Korea travellers are online.
 
-Site: https://jjsoftwareint-ops.github.io/MyTravelPath/
+Site: https://koreatravelpath.com/
 
 ---
 
@@ -16,7 +16,7 @@ I made a free site with curated walking routes in Korea (Seoul, Busan, Jeju, Inc
 
 **Body**
 Hi all. I'm Korean, living in Germany, and every time friends visited Korea they asked me the same thing:
-"where should we just *walk*?" So I put my answers on a small site: https://jjsoftwareint-ops.github.io/MyTravelPath/
+"where should we just *walk*?" So I put my answers on a small site: https://koreatravelpath.com/
 
 What it is:
 - Curated walks, not a list of sights: the Naksan fortress wall down to Cheonggyecheon at night, Haebangchon's
@@ -43,7 +43,7 @@ Five Seoul walks I give to visiting friends (night walks included), as free Goog
 **Body**
 Posting this because the "what should we do besides the palaces" question comes up a lot here.
 
-https://jjsoftwareint-ops.github.io/MyTravelPath/#/seoul
+https://koreatravelpath.com/#/seoul
 
 - Fortress wall and stream: Naksan Park wall at dusk → Ihwa murals → Dongdaemun → Cheonggyecheon lights
 - Haebangchon late evening walk: 108 stairs, Sinheung Market, Sowol-ro rooftops, city wall to Baekbeom Square
@@ -63,7 +63,7 @@ Made a small open-source site for friends visiting Korea: walking routes that op
 
 **Body**
 Not a business, just a side project that got good enough to share. Friends kept asking for walking routes
-rather than sight lists, so I built https://jjsoftwareint-ops.github.io/MyTravelPath/ — nine walks across
+rather than sight lists, so I built https://koreatravelpath.com/ — nine walks across
 Seoul, Busan, Jeju and Incheon, each a Google My Maps route with a Naver Map link on every stop.
 
 Two things that might interest this sub: the Jeju Olle routes use Naver's own official course lines rather
@@ -78,7 +78,7 @@ Answering questions people already asked gets found by search for years; a launc
 Search each sub for "walk", "walking route", "olle", "cherry blossom" and reply where it genuinely fits:
 
 > If you want an actual route rather than a list: [name of the matching path] on
-> https://jjsoftwareint-ops.github.io/MyTravelPath/ — opens in Google My Maps with numbered stops, and every
+> https://koreatravelpath.com/ — opens in Google My Maps with numbered stops, and every
 > stop has a Naver Map link so navigation works on the ground. (Mine; free, no sign-up.)
 
 Keep it to one link, say it's yours, and only post where it answers the question.

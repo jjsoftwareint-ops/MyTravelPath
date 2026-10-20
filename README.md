@@ -1,6 +1,6 @@
 # My Travel Path
 
-**Live site: https://jjsoftwareint-ops.github.io/MyTravelPath/** — free, curated walking routes for
+**Live site: https://koreatravelpath.com/** — free, curated walking routes for
 travellers in Korea (Seoul, Busan, Jeju, Incheon). Each path opens in Google My Maps, with a Naver Map link
 for every stop so navigation works on the ground. No sign-up, no app to install.
 
@@ -44,7 +44,7 @@ Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site
 and publishes `dist/` to GitHub Pages. One-time setup in the repo:
 **Settings → Pages → Source → "GitHub Actions"**.
 
-Site URL: https://jjsoftwareint-ops.github.io/MyTravelPath/
+Site URL: https://koreatravelpath.com/
 
 ## Analytics
 
