@@ -7,11 +7,19 @@ export default function Imprint() {
       <section className="prose">
         <h2>Responsible for this site</h2>
         <p>
-          JJSoftware
+          JJ SOFTWARE (제이제이 소프트웨어)
           <br />
-          South Korea
+          Representative: Uijin Lee (이의진)
           <br />
-          Gurogu-gu, Seoul
+          Business registration number: 862-07-02045
+          <br />
+          Registered with the Guro District Tax Office, Seoul, as an individual
+          business (simplified VAT taxpayer) since 6 October 2021
+        </p>
+        <p>
+          101-2108, 134 Gurojungang-ro, Guro-gu, Seoul, Republic of Korea
+          <br />
+          (서울특별시 구로구 구로중앙로 134, 2108호)
           <br />
           E-mail: jjsoftwareint@gmail.com
         </p>

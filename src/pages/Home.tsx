@@ -1,7 +1,6 @@
 import { GrAnnounce } from "react-icons/gr";
 import { isIOS, isPhone } from "../platform";
 import { Link, useParams } from "react-router-dom";
-import { dashboardUrl } from "../components/Analytics";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
@@ -94,13 +93,6 @@ export default function Home() {
         })}
       </ul>
 
-      <footer className="footer">
-        <Link to="/imprint">Imprint</Link>
-        <span aria-hidden="true">·</span>
-        <a href={dashboardUrl} target="_blank" rel="noreferrer">
-          Visitors
-        </a>
-      </footer>
     </Layout>
   );
 }

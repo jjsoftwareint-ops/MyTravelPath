@@ -9,10 +9,19 @@
 export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot'
 export type Tag = string | { icon: TagIconName; label: string }
 
+// Longer text for the detail page: what the walk is, the stages in order and
+// practical tips. Short sentences; the map carries the details per stop.
+export type PathGuide = {
+  intro: string[] // one or two short paragraphs
+  route?: string[] // the stages in walking order, one line each
+  tips?: string[] // getting there, food, best time, nearby
+}
+
 export type TravelPath = {
   id: string
   name: string
   description?: string
+  guide?: PathGuide // shown under the map on the detail page
   duration?: string // e.g. "2h", "Half day"
   tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
   image?: string // file in ./assets, shown as a banner above the description on the detail page
@@ -175,6 +184,27 @@ export const cities: City[] = [
         image: 'chinatown.jpg',
         imageCredit: 'Photo: Mobius6 · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1RoZet4u2GSJ8N6XbSHqcuN0xW6vYEXA',
+        guide: {
+          intro: [
+            "Korea's oldest China Town grew up on the slope above the port after Incheon opened to foreign trade in 1883, when merchants from Qing China settled here. Today it is a compact hill of red gates, lantern-strung streets and the restaurants that invented jajangmyeon, Korea's black-bean noodles.",
+            'The old Japanese quarter and a village painted with fairy-tale scenes are a few minutes away on foot. Everything lies within one kilometre of Incheon Station, so it makes an easy half-day trip from Seoul.',
+          ],
+          route: [
+            'Incheon Station to the 1st Paeru gate: cross the plaza to the red gate and walk uphill along Chinatown-ro under the lanterns.',
+            'Main street: the Jajangmyeon Museum in the old Gonghwachun building, the small Uiseondang temple on the left and the big restaurants. Lanes 51, 55 and 59 run parallel and are quieter.',
+            '3rd Paeru gate at the top of the hill. The Chu-Han mural street climbs from here towards Jayu Park.',
+            'Songwol-dong Fairy Tale Village: a 600 m loop of houses painted with Pinocchio, Snow White and the Little Prince, five minutes from the top gate. Free, best photos in the side alleys.',
+            'Three Kingdoms mural street, 77 panels along the lane, down to the 1880s boundary stairs: Chinese lanterns on one side, Japanese wooden façades on the other.',
+            'Japanese-style street: restored bank buildings along Sinpo-ro 23beon-gil with the Open Port Museum and the Modern Architecture Exhibition Hall. Incheon Citizens\' House, a former mayor\'s residence with a garden over the port, is five minutes further below Jayu Park.',
+          ],
+          tips: [
+            'Getting there: Line 1 or the Suin-Bundang line to Incheon Station, about one hour from Seoul Station. The gate is straight across the plaza.',
+            'Food: Gonghwachun and Yeongyeong (home of white jajangmyeon) draw queues at lunch, so eat early or late. For snacks on the move try the clay-oven buns at Simnihyang, hollow gonggalppang bread and the Macau egg tarts at Tart King. The pink pins on the map were checked in October 2026.',
+            'The main street and the mural streets are steep; the Fairy Tale Village and the Japanese street are flat. Allow two to three hours including a meal.',
+            'Weekends are crowded. A weekday late morning is calmer, and the lanterns look best after dark.',
+            'With time left, the Wolmi Sea Train next to Incheon Station runs out to Wolmido island, and Sinpo Market is ten minutes past the Japanese street.',
+          ],
+        },
       },
     ],
   },

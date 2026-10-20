@@ -30,6 +30,7 @@ export default function PathDetail() {
 
   return (
     <Layout title={path.name} subtitle={city.name} backTo={`/${city.id}`}>
+      <div className={path.guide ? "path-layout" : "path-layout solo"}>
       <article className={ready ? "card path-card" : "card path-card disabled"}>
         {path.image && (
           <span className="card-image path-image">
@@ -135,6 +136,36 @@ export default function PathDetail() {
           <span className="cta">Map link coming soon</span>
         )}
       </article>
+
+      {path.guide && (
+        <section className="guide" aria-labelledby="guide-title">
+          <h2 id="guide-title">About this walk</h2>
+          {path.guide.intro.map((text) => (
+            <p key={text}>{text}</p>
+          ))}
+          {path.guide.route && (
+            <>
+              <h3>The route</h3>
+              <ol>
+                {path.guide.route.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ol>
+            </>
+          )}
+          {path.guide.tips && (
+            <>
+              <h3>Good to know</h3>
+              <ul>
+                {path.guide.tips.map((tip) => (
+                  <li key={tip}>{tip}</li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      )}
+      </div>
     </Layout>
   );
 }

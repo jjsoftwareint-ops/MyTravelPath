@@ -163,7 +163,7 @@ a:focus-visible {
 
 /* ── Content ─────────────────────────────────────────────── */
 .content {
-  padding: 16px 16px calc(32px + env(safe-area-inset-bottom));
+  padding: 16px 16px 16px;
 }
 
 .list {
@@ -649,10 +649,12 @@ a:focus-visible {
 /* ── Footer and text pages ───────────────────────────────── */
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-top: 28px;
+  gap: 4px 10px;
+  margin-top: auto; /* sticks to the bottom of short pages */
+  padding: 12px 16px calc(24px + env(safe-area-inset-bottom));
   font-size: 13px;
   color: var(--muted);
 }
@@ -682,4 +684,143 @@ a:focus-visible {
 .prose p {
   margin: 0 0 10px;
   color: var(--muted);
+}
+
+/* ── Contact form ────────────────────────────────────────── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 18px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 16px; /* 16px stops iOS zooming into the field */
+}
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 1px;
+}
+button.cta {
+  width: 100%;
+  border: 0;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ── Guide text under a path card ────────────────────────── */
+.path-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.guide {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.guide h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.guide h3 {
+  margin: 16px 0 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.guide p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+.guide ol,
+.guide ul {
+  margin: 0;
+  padding-left: 22px;
+  color: var(--muted);
+}
+.guide li {
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+.guide li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ── Desktop: the column widens to 1024px, lists go two-up, map beside text ── */
+@media (min-width: 760px) {
+  .screen {
+    max-width: 1024px;
+  }
+  .header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header-text h1 {
+    font-size: 26px;
+  }
+  .header-text p {
+    font-size: 14px;
+  }
+  .content {
+    padding: 24px 24px 20px;
+  }
+  .content > .notice {
+    margin-bottom: 18px;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+  .card-image img {
+    height: 170px;
+  }
+  .path-image img {
+    height: 220px;
+  }
+  .prose {
+    max-width: 720px;
+    font-size: 16px;
+  }
+  .path-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+  }
+  .path-layout.solo {
+    grid-template-columns: minmax(0, 620px);
+    justify-content: center;
+  }
+  .footer {
+    padding-bottom: 28px;
+  }
 }

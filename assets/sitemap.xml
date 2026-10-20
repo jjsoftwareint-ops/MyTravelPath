@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/about</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/contact</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/privacy</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/imprint</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/seoul</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/seoul/naksan-cheonggyecheon</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/seoul/haebangchon-evening</loc><lastmod>2026-10-18</lastmod></url>
@@ -15,5 +19,5 @@
   <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/jeju</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/jeju/jeju-olle-trail</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/incheon</loc><lastmod>2026-10-18</lastmod></url>
-  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/incheon/china-town</loc><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://jjsoftwareint-ops.github.io/MyTravelPath/#/incheon/china-town</loc><lastmod>2026-10-20</lastmod></url>
 </urlset>
