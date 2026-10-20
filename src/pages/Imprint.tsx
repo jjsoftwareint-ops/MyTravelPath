@@ -37,9 +37,11 @@ export default function Imprint() {
 
         <h2>About this site</h2>
         <p>
-          My Travel Path is a private, non-commercial collection of walking
-          routes. Routes open in Google My Maps, a service of Google LLC; its
-          own terms and privacy policy apply there.
+          My Travel Path is a free collection of walking routes published by
+          JJ SOFTWARE. It is funded by voluntary donations and by advertising
+          served by Google AdSense; see the privacy policy for details. Routes
+          open in Google My Maps, a service of Google LLC; its own terms and
+          privacy policy apply there.
         </p>
 
         <h2>Donations</h2>
