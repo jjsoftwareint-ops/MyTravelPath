@@ -292,6 +292,19 @@ Keep waypoint names short and numbered so the legend stays in order.
   `<Folder>`s before `</Document>`; remove any plain pin the user added for the same place so it does not
   duplicate the new `*CLICK*` pin; re-zip with the original `images/` folder; validate; run the Hangul-title and
   `*CLICK*` checks. Spec: examples/gangnam-additions.json.
+- **Naver blocks after a burst (2026-10-21, five Olle routes in one afternoon):** `instant-search` and the
+  `place/summary` API both answer 400 for hours, even from headless Chrome (403). What keeps working is the
+  **mobile place list** `https://m.place.naver.com/place/list?query=<q>&x=<lon>&y=<lat>` (Apollo entries
+  `"PlaceSummary:<id>":{"name":…,"category":…}`) for names and ids, and the **place page**
+  `https://m.place.naver.com/place/<id>/home` for `"coordinate":{"x","y"}`, `roadAddress`, hours and review
+  dates, which is also what `naver_status.py` reads for its OPEN verdict. Pace at ≥1.5 s per request, never
+  retry a 400 in a loop (user: "if it keeps returning error you should not keep repeating it"). Script:
+  `scratchpad/udo/lookup2.py` pattern, worth folding into `naver_place.py` as a fallback.
+- **zsh does not word-split `$VAR`:** `python3 naver_status.py $IDS` passes one argument. Use `${=IDS}` or
+  list the ids literally; a bogus id makes every verdict CLOSED with all fields None.
+- **Olle official maps come at two sizes:** `road_<NN>_map_pc_<year>.jpg` is 2000×1000 for most routes but
+  998×498 for 01 and 01-1 (read whole, do not quarter). Stamp boxes are the stamp icon; most have a Naver
+  place named `<place> 스탬프찍는곳`; otherwise pin the stamp on the landmark and say so.
 - **Overpass returns HTTP 406 to curl** from this machine; use `urllib` in Python (the scripts do). The public
   server also 504s on busy days: retry 2–3 times with 10 s sleep, keep bboxes ≤ 2 km.
 - **Valhalla (valhalla1.openstreetmap.de) fails the TLS handshake from macOS system Python** (LibreSSL);

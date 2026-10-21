@@ -1,10 +1,10 @@
-// Home-header mark: the site's own artwork (a suitcase with a Korean flag tag
-// among cherry blossoms), supplied by the owner and used whole, never cropped.
+// Home-header mark: the round Korean flag from the circle-flags set (MIT),
+// served from /assets/kr.svg. Decorative only; the title carries the name.
 export default function BrandMark() {
   return (
     <img
       className="brand-mark"
-      src={`${import.meta.env.BASE_URL}brand.png?v=5`}
+      src={`${import.meta.env.BASE_URL}kr.svg`}
       alt=""
       width={36}
       height={36}

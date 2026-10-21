@@ -277,6 +277,39 @@ export const cities: City[] = [
         },
       },
       {
+        id: 'bukhansan-dulle-gil-1-3',
+        name: 'Bukhansan Dulle-gil 1-2-3',
+        description:
+          'Three sections of the trail that circles Bukhansan, from the Uiryeong-gil entrance in Ui-dong over the Pine Forest Path, the Pilgrimage Path past the April 19 cemetery and the White Cloud Path to the Bukhansan Eco Forest. 9.3 km, one colour per section, with public toilets, restaurants and view cafés pinned.',
+        duration: '4h',
+        updated: '2026-10-21',
+        tags: [{ icon: 'hiker', label: 'Trekking' }],
+        image: 'bukhansan.jpg',
+        imageCredit: 'Photo: Korea.net / KOCIS · CC BY-SA 2.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1hKTShjnYqc2Vq4R1aCOynVVpxKte1Is',
+        keywords: ['Seoul', 'Bukhansan', 'BukhansanDullegil', 'SeoulHiking', 'Uidong', 'April19Cemetery', 'Hwagyesa', 'ForestWalk', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌲 **Bukhansan Dulle-gil** is the easy way to have the mountain without the climb: a 71 km path that circles the whole national park at the height where the city stops and the forest starts. These first three sections on the Seoul side are the ones I send people to, because you can start them from a subway station and finish at another.",
+            "**9.3 km in three parts**, each with its own colour on the map: the Pine Forest Path from Ui-dong, the Pilgrimage Path past the independence fighters' graves and the April 19 cemetery, and the White Cloud Path up to its cloud viewpoint and down to the Eco Forest. Four hours at a wander, with a tofu lunch and a café stop built in.",
+          ],
+          route: [
+            "Section 1, Pine Forest Path, 2.9 km, about 1 hour: from the Uiryeong-gil entrance in Ui-dong, five minutes from Bukhansan Ui Station, through red pines past the Ui-dong picnic ground and the grave of independence leader Son Byong-hi to the top of Sol-bat (Pine Field) Park.",
+            "Section 2, Pilgrimage Path, 2.4 km, about 1 hour: from Sol-bat Park along the hillside above the April 19 National Cemetery, with the graves of patriots in the woods, to the entrance of Yi Jun's tomb. Mostly flat.",
+            "Section 3, White Cloud Path, 4.0 km, about 1.6 hours: the hilliest part, from Yi Jun's tomb up and over the ridge behind Hwagyesa temple to the Cloud Observatory, a 12 m tower above the trees, and down to the Bukhansan Eco Forest. Hwagye Station is 15 minutes further.",
+            "Toilets are pinned in their own layer: Ui-dong transport plaza and picnic ground, Sol-bat Park, Baengnyeonsa entrance, the sports park and the forest playground near the end.",
+            "Food and cafés are the pink pins, all checked on Naver: soft tofu in Ui-dong, the café street north of the start, the restaurants and cafés of the April 19 café road, and a book café in the woods below the Cloud Observatory.",
+          ],
+          tips: [
+            "🚇 Getting there: Ui-Sinseol light rail to Bukhansan Ui Station, the last stop; the trail entrance is 5 minutes up the road. From the end, Hwagye Station on the same line is 15 minutes downhill.",
+            "🍜 Eat before section 1 or after section 2: Ui-dong does soft tofu and mountain-vegetable rice, the April 19 café road does grilled mackerel sets and good coffee. Section 3 has only the book café.",
+            "👟 Sections 1 and 2 are easy forest paths; section 3 climbs about 150 m with stairs. Trail shoes are enough, poles are not needed.",
+            "⏰ Weekday mornings are quiet; autumn weekends are busy with Seoul's hiking clubs. The pines of section 1 are shade all summer.",
+            "✂️ Shorter: do sections 1 and 2 only (5.3 km, 2 hours) and finish at the April 19 café road, or walk section 3 alone from Hwagye Station as a 2-hour forest loop.",
+          ],
+        },
+      },
+      {
         id: 'gangnam-night-streets',
         name: 'Gangnam Night Streets',
         description:
@@ -406,11 +439,11 @@ export const cities: City[] = [
     paths: [
       {
         id: 'jeju-olle-trail',
-        name: 'Jeju Olle Trail',
+        name: 'Jeju Olle Trail 5-6-7',
         description:
           'Routes 5, 6 and 7 of the 437 km island trail: Namwon → Soesokkak → Seogwipo → Seogwipo Bus Terminal along the south coast, one colour per route, with every toilet and first-aid kit from the official maps.',
         duration: '1 day per route',
-        updated: '2026-10-20',
+        updated: '2026-10-21',
         tags: [{ icon: 'hiking', label: 'Hiking' }],
         image: 'olle.jpg',
         imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
@@ -432,6 +465,123 @@ export const cities: City[] = [
             "💧 Sun, wind and few shops between villages: a hat, water and a packed lunch. Check the Olle Foundation's site for route diversions before you set out.",
             "🍜 Seogwipo market at the end of route 6 is the food stop: black pork, hallabong tangerines and the famous market gimbap.",
             "🌺 The camellias on route 5 flower from December to February; spring and late autumn are the most comfortable walking weather.",
+          ],
+        },
+      },
+      {
+        id: 'jeju-olle-trail-18-1',
+        name: 'Jeju Olle Trail 18.1 (Chuja Island)',
+        description:
+          'Route 18-1 on Chuja Island, the Olle trail\'s outlier an hour north of Jeju by ferry: 11.4 km from the township office over Bonggeulle-san, across Chuja Bridge, up Dondae-san and round the Yecho-ri cliffs to Sinyang Port, with the three stamp boxes, every toilet and first-aid kit, and the island\'s restaurants and harbour cafés pinned.',
+        duration: '1 day',
+        updated: '2026-10-21',
+        tags: [{ icon: 'hiking', label: 'Hiking' }],
+        image: 'chuja.jpg',
+        imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=18nFqcdb_XV4pLVvRxrVMiNVNSC3nYmM',
+        keywords: ['Jeju', 'ChujaIsland', 'Chujado', 'JejuOlle', 'OlleTrail18', 'IslandHiking', 'Dondaesan', 'JejuFerry', 'KoreaTravel'],
+        notices: [
+          {
+            icon: '⛴️',
+            title: 'Getting to Chuja: ferries and the island day',
+            body: 'Chuja is **about one hour by ferry from Jeju Port** and is also served from Wando and Haenam on the mainland. Ferries are cancelled in high wind, so **check the sailing the evening before** and carry a day\'s margin if you have a flight. The route starts at the township office, 5 min from the pier, and ends at Sinyang Port on Lower Chuja, where the return ferry calls.',
+            since: 'General ferry pattern; timetables change by season and operator. Checked October 2026.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🏝️ **Chuja** is the Olle trail's one outlier: 42 islands halfway between Jeju and the mainland, two of them joined by a bridge, with 1,700 people, a famous salted anchovy and almost no cars. Route 18-1 is the only way most visitors ever see it, and it is one of the best days on the whole trail.",
+            "**11.4 km** from the township office on Upper Chuja over the hill with General Choe Yeong's shrine, across the bridge to Lower Chuja, up **Dondae-san** for the view of the whole archipelago, round the wild east coast at Yecho-ri and down to Sinyang Port. Five to six hours with stops, more if you take the Navarone ridge.",
+          ],
+          route: [
+            "Chuja-myeon Office: start stamp, toilets and the Olle information desk, 5 minutes from the ferry pier. The path climbs behind the village past the shrine of General Choe Yeong to Bonggeulle-san at the island's north-west tip.",
+            "Back down through Sunhyogak and Chuja Cheosagak to the lighthouse road, then across Chuja Bridge to Lower Chuja and the rest area at its far end.",
+            "Up the Eundal-san path to the lookout and on to Dondae-san, 164 m, the highest point of the islands and the mid-route stamp. Hallasan shows on a clear day.",
+            "Down the school lane past the tiny Sinyang branch school and east around the headland: Yecho-ri Port, the cliff path and the grave of Hwang Gyeong-han, the martyr's infant son raised by islanders in 1801.",
+            "South along the coast to Sinyang Port: end stamp, toilets in the ferry waiting room, and the harbour café for the wait.",
+            "Toilets and first-aid kits are pinned in their own layer from the official Olle map; the stamp boxes in theirs; restaurants and cafés in pink, all checked on Naver.",
+          ],
+          tips: [
+            "⛴️ Ferries from Jeju Port take about an hour; the day boat gives roughly six hours on the island, which is enough for the route at a steady pace. Staying a night in Sinyang or Daeseo-ri makes it a holiday.",
+            "🍜 Eat by the pier before you start or at Sinyang at the end: grilled croaker and anchovy tables near the terminal, raw fish and a café on the hill above Sinyang Port.",
+            "👟 Two proper climbs, Bonggeulle-san and Dondae-san, and exposed cliff paths on the east side. Trail shoes, sun cover and a wind layer; the island is windier than Jeju.",
+            "🔗 Routes 5, 6 and 7 on this site cover the south coast of the main island if you want more Olle.",
+          ],
+        },
+      },
+      {
+        id: 'jeju-olle-trail-17',
+        name: 'Jeju Olle Trail 17',
+        description:
+          'Route 17 into Jeju City: 19 km from Gwangnyeong down the Musucheon gorge to the sea at Oedo Woldae, along Iho Tewoo Beach, over Dodu-bong with the planes landing beside you, past the airport coast to Yongduam and the old town, ending at the Kim Man-deok Memorial by Dongmun Market. Stamps, every toilet and first-aid kit, and 14 checked restaurants and sea-view cafés pinned.',
+        duration: '1 day',
+        updated: '2026-10-21',
+        tags: [{ icon: 'hiking', label: 'Hiking' }],
+        image: 'olle17.jpg',
+        imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1cMhDeaaSQ67KAfCaduH2pO01t-d9Rt0',
+        keywords: ['Jeju', 'JejuOlle', 'OlleTrail17', 'Yongduam', 'IhoBeach', 'Dodubong', 'JejuCity', 'DongmunMarket', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌊 **Route 17** is the Olle trail's arrival in Jeju City, and the one to walk on your last day: it ends ten minutes from Dongmun Market and the airport bus, and for its final hour you are walking the city's seafront with the planes coming in over your head. I like it for the contrast: a quiet river gorge in the morning, the beach at lunch, the lava rocks of Yongduam at sunset.",
+            "**19 km** from Gwangnyeong village down the Musucheon stream to the sea at Oedo Woldae, then east along the whole north coast. Six to seven hours with stops, almost all flat; the only climb is 65 m Dodu-bong, and that is the best viewpoint of the day.",
+          ],
+          route: [
+            "Gwangnyeong Elementary: start stamp and information desk at the kids' book café opposite. Down into the Musucheon gorge and north along the stream path past Chang-o Bridge.",
+            "Oedo Woldae, where the stream meets the sea under old pines: first toilets and first-aid kit, and the first bakery café. The coast path then runs through Hyeonsa Port to Iho Tewoo Beach and its horse-shaped lighthouses.",
+            "Dodu: the painted Memory Lane, the harbour with its noodle houses and the big milk-tea café, then up Dodu-bong for Hallasan behind and the airport runway at your feet.",
+            "The airport coast to Eoyeong Park, mid-route stamp, toilets and first-aid kit, then the Yongdam seafront: Leports Park, Sunset Hill and the long line of coast-road cafés.",
+            "Yongduam, the Dragon Head Rock, and the Yongyeon Cloud Bridge over the gorge, then inland to Gwandeokjeong, Jeju's oldest building, and the restored Mokgwana.",
+            "End stamp at the Kim Man-deok Memorial Hall; Dongmun Market, pork noodles and the airport bus are five minutes away. Toilets and first-aid kits are pinned in their own layer, stamps in theirs, food and cafés in pink.",
+          ],
+          tips: [
+            "🚌 Getting there: bus from Jeju City to the Gwangnyeong 1-ri stop, about 30 minutes; the start is a short walk. The finish is in the old town with buses and taxis everywhere.",
+            "🍜 The gorge section has nothing, so eat at the start or carry a snack. After Oedo there is food every few kilometres: noodles at Dodu, mackerel on the Yongdam coast, bracken hangover soup near Gwandeokjeong, pork noodles in Dongmun Market.",
+            "⏰ Time Dodu-bong for mid-afternoon and Yongduam for sunset; the rocks and the cloud bridge are lit after dark.",
+            "✂️ Shorter: start at Iho Tewoo Beach (bus from the city) and walk the 10 km coast to the finish, which keeps every viewpoint and all the cafés.",
+            "🔗 Routes 5, 6 and 7 cover the south coast, and 18.1 is the ferry day out to Chuja Island.",
+          ],
+        },
+      },
+      {
+        id: 'jeju-olle-trail-1-udo',
+        name: 'Jeju Olle Trail 1-1.1 (Udo Island)',
+        description:
+          'The first two routes of the Olle trail in one map, one colour each: Route 1 from Siheung-ri over the Malmi and Al oreums along the Jongdal and Seongsan coast to Gwangchigi Beach, 14.9 km, and Route 1-1, the 11.3 km loop of Udo island from Cheonjin Port past the coral-sand beach, the lighthouse and Hagosudong Beach. Stamps, every toilet and first-aid kit, and checked restaurants and sea-view cafés pinned.',
+        duration: '1 day each',
+        updated: '2026-10-21',
+        tags: [{ icon: 'hiking', label: 'Hiking' }],
+        image: 'udo.jpg',
+        imageCredit: 'Photo: Jeju Film Commission · KOGL 1',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1RGT7_JFASnnB4euajgRTSGrM7CVMjC0',
+        keywords: ['Jeju', 'JejuOlle', 'OlleTrail1', 'UdoIsland', 'Udo', 'Seongsan', 'Gwangchigi', 'SeobinBaeksa', 'KoreaTravel'],
+        notices: [
+          {
+            icon: '⛴️',
+            title: 'Udo ferry from Seongsan Port: times and tickets',
+            body: 'Ferries run **every 30 minutes** from Seongsan Port to Cheonjin or Hau-mokdong Port, 15 minutes across. First boat out about **08:00**, first boat back from Udo about 07:00. **Last boat back 18:30 in summer, about 17:00 from November to February.** Adult return fare about ₩11,000 including the park fee; fill in two boarding forms, one each way, with your ID. Boats stop in high wind, so check on the day: Seongsan office 064-782-5671.',
+            since: 'Seongsan–Udo ferry pattern for 2026 from operator and traveller reports; confirm the last boat on the day. Checked October 2026.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🐄 **Route 1** is where the whole Olle trail began in 2007, and **Route 1-1** is its island twin: the loop of **Udo**, the cow-shaped islet a 15-minute ferry from Seongsan. Together they are the classic first two days of the trail, and the view from the first oreum, with Seongsan Ilchulbong rising out of the sea and Udo floating behind it, is the image most people carry home from Jeju.",
+            "Route 1 is **14.9 km** from the Siheung-ri bus stop over two small volcanic cones and along the Jongdal and Seongsan shore to the black sand of Gwangchigi Beach. Route 1-1 is **11.3 km** around Udo from Cheonjin Port: coral-sand beaches, the lighthouse on Udobong, lava cliffs and a peanut ice cream at the end. One colour each on the map.",
+          ],
+          route: [
+            "Route 1: Siheung-ri bus stop, start stamp and the Olle information desk at the foot of Malmi Oreum; up Malmi and Al oreums for the Seongsan and Udo panorama, down to Jongdal-ri and its old salt fields, then east along the shore.",
+            "The Jongdal coast: Mokhwa rest stop with the mid-route stamp, the Siheung and Ojo haenyeo diving-women's houses, the Osopo beacon mound and Seongsan floodgate. A 2.4 km stretch from the old salt fields to the floodgate is wheelchair accessible.",
+            "Seongsan: Yongcheon Park at the harbour, around the bay below Ilchulbong to the April 3rd memorial at Teojinmok, and the end stamp at Gwangchigi Beach, where the sunrise peak stands straight across the water.",
+            "Route 1-1: ferry from Seongsan Port to Cheonjin Port on Udo, start stamp at the pier. South past the Hundertwasser Park to the lighthouse on Udobong, the island's one hill, then the east coast past the reservoir and the Ttitti-ppangppang viewpoint.",
+            "Hagosudong Beach on the north-east coast, mid-route stamp in front of the noodle house, then the north shore to the Papyeong Yun family park and Hau-mokdong Port, the alternative start and end.",
+            "West coast back to Cheonjin: Dokseng-i Koji and the white coral-sand beach of Seobin Baeksa. Toilets, first-aid kits and stamps each have their own layer; restaurants and cafés are the pink pins.",
+          ],
+          tips: [
+            "🚌 Getting there: bus 201 from Jeju City or Seogwipo to the Siheung-ri stop, about 1.5 hours. Ferries to Udo leave Seongsan Port every 30 minutes from early morning; the last boat back is around 17:00 to 18:00 depending on season, so start the loop by noon.",
+            "🍜 Udo is famous for peanuts: peanut ice cream and peanut makgeolli at the ports, grilled seafood and abalone porridge at Hagosudong. On Route 1, the haenyeo houses on the coast sell the divers' own catch.",
+            "👟 Both routes are easy; the two oreums on Route 1 and Udobong on 1-1 are short climbs. Wind is the thing: carry a layer, and in summer a hat, the island loop has little shade.",
+            "✂️ Shorter: many people walk only the Udo loop, or do Route 1 as far as the Mokhwa rest stop and bus back. The two routes together make a comfortable two-day start with a night in Seongsan.",
+            "🔗 Routes 5, 6 and 7, 17 and 18.1 are also on this site for the rest of the island.",
           ],
         },
       },

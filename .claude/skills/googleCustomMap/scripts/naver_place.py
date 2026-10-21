@@ -14,8 +14,11 @@ UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/
 def search(q, near):
     url = ('https://map.naver.com/p/api/search/instant-search?query=' + urllib.parse.quote(q)
            + f'&coords={near}&lang=ko&caller=pcweb')
-    out = subprocess.run(['curl', '-s', '-m', '25', '-A', UA, '-H', 'Referer: https://map.naver.com/',
-                          '-H', 'Accept: application/json', url], capture_output=True, text=True).stdout
+    # Since 2026-10-21 the endpoint answers 400 unless the request looks like the map page itself:
+    # Referer on /p, a browser Accept and an Accept-Language header are all required.
+    out = subprocess.run(['curl', '-s', '-m', '25', '-A', UA, '-H', 'Referer: https://map.naver.com/p',
+                          '-H', 'Accept: application/json, text/plain, */*', '-H', 'Accept-Language: ko-KR,ko;q=0.9',
+                          url], capture_output=True, text=True).stdout
     try:
         d = json.loads(out)
     except Exception:
