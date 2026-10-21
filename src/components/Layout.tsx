@@ -28,7 +28,7 @@ export default function Layout({ title, subtitle, backTo, icon, actions, childre
   }, [])
   return (
     <div className="screen">
-      <header className="header" ref={headerRef}>
+      <header className={backTo !== undefined ? "header detail" : "header"} ref={headerRef}>
         {backTo !== undefined ? (
           <Link to={backTo} className="back" aria-label="Back">
             ‹

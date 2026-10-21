@@ -437,6 +437,49 @@ export const cities: City[] = [
           ],
         },
       },
+      {
+        id: 'villages-and-hotspots',
+        name: 'Villages and Hotspots',
+        description:
+          'The Gwangalli night walk, 2.9 km from Gwangan Station along the beach to the raw-fish town and the waterfront park under the lit bridge, plus the places every visitor asks about pinned on the same map: Jagalchi Market, BIFF Square and Gukje Market, Huinnyeoul and Gamcheon culture villages, and Haedong Yonggungsa temple on the rocks. Toilets and checked restaurants and view cafés at each.',
+        duration: '2h walk',
+        updated: '2026-10-22',
+        tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
+        image: 'gamcheon.jpg',
+        imageCredit: 'Photo: Basile Morin · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=11Nm3BTkYHgR9W5t2oMYbhGo-tN8Tg0k',
+        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'KoreaTravel'],
+        notices: [
+          {
+            icon: '🚁',
+            title: 'Gwangalli drone show: every Saturday, twice',
+            body: 'The **Gwangalli M Drone Light Show** flies over the beach **every Saturday**, about 12 minutes, free. **March to September at 20:00 and 22:00; October to February at 19:00 and 21:00.** Best seen from the middle of the beach or Millak Waterfront Park. Cancelled in rain or strong wind, usually announced the day before.',
+            since: 'Busan city schedule for the permanent show, July 2026 to June 2027. Checked October 2026.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🌉 **Gwangalli after dark** is the Busan evening I send everyone to: a long beach with the Diamond Bridge lit in colour across the bay, chicken and beer on the sand, and at the far end a fish market where you buy your dinner downstairs and eat it on the steps under the bridge. On Saturdays a thousand drones draw pictures over the water.",
+            "The walk itself is short, **2.9 km and flat**, which is why this map also carries the other places people ask me about in Busan: the Nampo-dong markets, the two hillside villages and the temple on the rocks. They are not on a walking line from each other, so each hot spot has its own pins, toilets and food, and the guide tells you how to get there.",
+          ],
+          route: [
+            "Gwangan Station exit 3, ten minutes down Gwangan-ro, and the bridge fills the end of the street. Turn left along the beach promenade with the bridge ahead; the café street is one block behind you.",
+            "Millak raw-fish town at the east end: skip the restaurants and go into the fishermen's market. Pick a fish downstairs, pay by weight, then either eat upstairs for a per-person table fee or carry it out to the park.",
+            "Millak Waterfront Park, right under the bridge: steps, lawns and families on mats. The drone show and the bridge lights are best from here. Walk back along the beach for the bars, or on to Millak Port and the coast road.",
+            "Nampo-dong, line 1 to Jagalchi: the fish market hall and quay stalls, BIFF Square's hotteok carts, the arcades of Gukje and Kkangtong markets, and the escalators up Yongdusan to Busan Tower for the view. Two hours on foot, all within a few hundred metres.",
+            "Huinnyeoul Culture Village, bus 7, 71 or 508 from Nampo-dong over Yeongdo Bridge: white houses on the cliff lane above the sea, the short coastal tunnel and the Jeoryeong coast walk. Quieter than Gamcheon, with the same kind of photos.",
+            "Gamcheon Culture Village, the 'Machu Picchu of Busan': hundreds of pastel houses stacked down a steep valley, built in the 1950s by refugees of the Taegeukdo faith and painted and filled with art from 2009. Bus 1-1, 2 or 2-2 from Toseong Station exit 6 to the top. Buy the stamp map at the information centre and follow the fish signs through the alleys: murals, small galleries in old houses, rooftop cafés, the lighthouse viewpoint and the Little Prince and the fox on the railing, the most queued photo in Busan. Allow two hours; it is all stairs and people still live here, so keep to the marked lanes.",
+            "Haedong Yonggungsa, bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks above the sea. Toilets, restaurants and view cafés are pinned at every spot, all checked on Naver.",
+          ],
+          tips: [
+            "🚇 Gwangan Station (line 2) for the walk; Jagalchi and Nampo stations (line 1) for the markets; Toseong Station (line 1) for the Gamcheon bus; Haeundae Station (line 2) for the Yonggungsa bus.",
+            "⏰ Saturday is the night: the drone show at 20:00 or 19:00 by season, then the bridge lights on the hour. Weeknights are calmer and the fish market cheaper.",
+            "🍜 The fish-market system: buy downstairs, then a table fee upstairs covers side dishes and soup; take-away to the park is free. At BIFF Square the seed hotteok queue moves fast.",
+            "👟 Gwangalli and Nampo-dong are flat. Gamcheon and Huinnyeoul are stairs and slopes; Yonggungsa is 108 steps each way.",
+            "🔗 The Haeundae Coastal Path on this site is two stops away from Gwangalli and makes the next morning.",
+          ],
+        },
+      },
     ],
   },
   {

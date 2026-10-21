@@ -133,6 +133,10 @@ a:focus-visible {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* Sub-pages: smaller title, still one line with an ellipsis */
+.header.detail .header-text h1 {
+  font-size: 19px;
+}
 .header-text p {
   margin: 2px 0 0;
   font-size: 13px;
@@ -904,6 +908,9 @@ button.cta {
   }
   .header-text h1 {
     font-size: 26px;
+  }
+  .header.detail .header-text h1 {
+    font-size: 22px;
   }
   .header-text p {
     font-size: 14px;
