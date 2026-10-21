@@ -79,6 +79,18 @@ for summit → junction legs; the B-course stairs are boardwalk way 1314758863 e
 
 ## Hard rules
 
+- **Every path map gets a public-toilet layer** (user rule 2026-10-21: "when you draw path always put public
+  toilets location together"). For every new or rebuilt route, sweep for toilets within ~150 m of the line
+  (Naver `공중화장실` / `화장실` at points every 500–700 m along the line; the official map's toilet icons for Olle
+  routes; OSM `amenity=toilets` as a cross-check) and put them in their own folder, `Public toilets (공중화장실)`
+  or `Toilets & first-aid kits (화장실 · 구급함)` when the official map also shows first-aid kits. Icon `toilet`
+  (blue wc 1733), `medical` for kits; each pin linked to its Naver place, or to the landmark it stands at when
+  Naver has no entry. Note it in the path's guide ("toilets are pinned in their own layer"). Bukhansan, Haeundae,
+  Olle 17, 18-1 and 1/1-1 were built this way; older maps get the layer when they are next touched.
+- **Olle routes also get a `Stamp boxes (스탬프)` layer** (start, middle, end, plus any alternative start): the
+  official map shows where, Naver usually has a `<place> 스탬프찍는곳` entry; otherwise pin the landmark and say
+  so in the description. Icon `stamp`.
+
 - **Verify every restaurant/café is still in business before adding it, and re-verify all of them on every
   update** (user rule 2026-10-15). `scripts/naver_status.py <id> …` reads Naver's place page for opening
   hours, closure markers (폐업/영업종료) and the newest review date, and checks the place is still returned by

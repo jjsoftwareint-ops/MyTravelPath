@@ -1,5 +1,6 @@
-import type { ReactNode } from 'react'
+import { useEffect, useRef, type CSSProperties, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import TransitionLink from './TransitionLink'
 import { dashboardUrl } from './Analytics'
 import ThemeToggle from './ThemeToggle'
 
@@ -11,24 +12,40 @@ type Props = {
   icon?: ReactNode
   /** Extra header buttons shown right of the theme toggle, e.g. the share button on a path page. */
   actions?: ReactNode
+  /** view-transition-name shared with the list row's title, so the title morphs into the header. */
+  transitionName?: string
   children: ReactNode
 }
 
-export default function Layout({ title, subtitle, backTo, icon, actions, children }: Props) {
+export default function Layout({ title, subtitle, backTo, icon, actions, transitionName, children }: Props) {
+  // Publish the header's height as --header-h so sticky rows in the list sit right under it.
+  const headerRef = useRef<HTMLElement>(null)
+  useEffect(() => {
+    const el = headerRef.current
+    if (!el) return
+    const set = () => document.documentElement.style.setProperty('--header-h', `${el.offsetHeight}px`)
+    set()
+    const ro = new ResizeObserver(set)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+  const titleStyle = transitionName
+    ? ({ viewTransitionName: transitionName, viewTransitionClass: 'hero-title' } as CSSProperties)
+    : undefined
   return (
     <div className="screen">
-      <header className="header">
+      <header className="header" ref={headerRef}>
         {backTo !== undefined ? (
-          <Link to={backTo} className="back" aria-label="Back">
+          <TransitionLink to={backTo} className="back" aria-label="Back">
             ‹
-          </Link>
+          </TransitionLink>
         ) : icon ? (
           icon
         ) : (
           <span className="back placeholder" />
         )}
         <div className="header-text">
-          <h1>{title}</h1>
+          <h1 style={titleStyle}>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
         </div>
         <ThemeToggle />

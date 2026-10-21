@@ -47,6 +47,7 @@ export default function PathDetail() {
       subtitle={city.name}
       backTo={`/${city.id}`}
       actions={<ShareLink compact title={`${path.name} (${city.name})`} />}
+      transitionName={`path-${city.id}-${path.id}`}
     >
       <div className={path.guide ? "path-layout" : "path-layout solo"}>
       <article className={ready ? "card path-card" : "card path-card disabled"}>

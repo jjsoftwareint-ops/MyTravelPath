@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Analytics from './components/Analytics'
+import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
@@ -13,6 +14,7 @@ export default function App() {
   return (
     <>
       <Analytics />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

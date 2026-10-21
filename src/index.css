@@ -9,6 +9,7 @@
   --pill: #eff6ff;
   --press: #e9ebef;
   --danger: #dc2626;
+  --header-h: 64px; /* measured at runtime by Layout.tsx */
   color-scheme: light;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
@@ -78,11 +79,39 @@ a:focus-visible {
   flex-direction: column;
 }
 
+/* ── Page transitions (View Transitions API; browsers without it just navigate) ── */
+::view-transition-group(*) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+}
+/* The path title flies from the list row to the header as one crisp element, no cross-fade. */
+::view-transition-old(.hero-title) {
+  animation: none;
+  opacity: 0;
+}
+::view-transition-new(.hero-title) {
+  animation: none;
+}
+::view-transition-group(.hero-title) {
+  z-index: 2;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none;
+  }
+}
+
 /* ── Header ──────────────────────────────────────────────── */
 .header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -202,7 +231,7 @@ a:focus-visible {
 }
 @media (hover: hover) {
   .card:hover {
-    border-color: var(--accent);
+    border-color: var(--muted);
   }
 }
 
@@ -335,20 +364,42 @@ a:focus-visible {
   padding: 40px 16px;
 }
 
-/* ── City card header photo ──────────────────────────────── */
+/* ── City card: photo on top, sticky name row, then the paths ─────── */
 .group-head {
   flex-direction: column;
   align-items: stretch;
   gap: 0;
+  min-height: 0;
   padding: 0;
   overflow: hidden;
+  border-bottom: 0;
+  border-radius: 16px 16px 0 0;
 }
-.group-head .row {
+.group-row {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 12px;
   min-height: 68px;
   padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: background 0.08s ease, border-color 0.08s ease;
+}
+.group.has-image .group-row {
+  border-top: 0;
+  border-radius: 0 0 16px 16px;
+}
+.group-row:active {
+  background: var(--press);
+}
+@media (hover: hover) {
+  .group-row:hover {
+    border-color: var(--muted);
+  }
 }
 .card-image {
   position: relative;
@@ -386,10 +437,13 @@ a:focus-visible {
   transform: rotate(90deg);
   color: var(--accent);
 }
-.group.open .group-head {
+.group.open .group-head,
+.group.open .group-row {
+  border-color: var(--border);
+}
+.group.open .group-row {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-color: var(--accent);
 }
 
 .sublist {
@@ -397,7 +451,7 @@ a:focus-visible {
   margin: 0;
   padding: 0;
   background: var(--card);
-  border: 1px solid var(--accent);
+  border: 1px solid var(--border);
   border-top: none;
   border-radius: 0 0 16px 16px;
   overflow: hidden;

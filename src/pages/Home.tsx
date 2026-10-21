@@ -1,9 +1,11 @@
+import type { CSSProperties } from "react";
 import { GrAnnounce } from "react-icons/gr";
 import { isIOS, isPhone } from "../platform";
 import { Link, useParams } from "react-router-dom";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
+import TransitionLink from "../components/TransitionLink";
 import { cities } from "../data/travel";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
@@ -48,14 +50,18 @@ export default function Home() {
         {cities.map((city) => {
           const open = city.id === cityId;
           return (
-            <li key={city.id} className={open ? "group open" : "group"}>
-              <Link
-                to={open ? "/" : `/${city.id}`}
-                replace
-                className="card group-head"
-                aria-expanded={open}
-              >
-                {city.image && (
+            <li
+              key={city.id}
+              className={`group${open ? " open" : ""}${city.image ? " has-image" : ""}`}
+            >
+              {city.image && (
+                <Link
+                  to={open ? "/" : `/${city.id}`}
+                  replace
+                  className="card group-head"
+                  tabIndex={-1}
+                  aria-hidden="true"
+                >
                   <span className="card-image">
                     <img
                       src={`${import.meta.env.BASE_URL}${city.image}`}
@@ -66,29 +72,40 @@ export default function Home() {
                       <span className="credit">{city.imageCredit}</span>
                     )}
                   </span>
-                )}
-                <span className="row">
-                  <span className="card-body">
-                    <span className="card-title">{city.name}</span>
-                    <span className="card-meta">
-                      {city.paths.length}{" "}
-                      {city.paths.length === 1 ? "path" : "paths"}
-                    </span>
+                </Link>
+              )}
+              {/* The name row sticks under the page header while this city's paths scroll past. */}
+              <Link
+                to={open ? "/" : `/${city.id}`}
+                replace
+                className="group-row"
+                aria-expanded={open}
+              >
+                <span className="card-body">
+                  <span className="card-title">{city.name}</span>
+                  <span className="card-meta">
+                    {city.paths.length}{" "}
+                    {city.paths.length === 1 ? "path" : "paths"}
                   </span>
-                  <span className="chevron caret">›</span>
                 </span>
+                <span className="chevron caret">›</span>
               </Link>
               {open && (
                 <ul className="sublist">
                   {city.paths.map((path) => (
                     <li key={path.id}>
-                      <Link to={`/${city.id}/${path.id}`} className="child">
+                      <TransitionLink to={`/${city.id}/${path.id}`} className="child">
                         <span className="card-body">
-                          <span className="card-title">{path.name}</span>
+                          <span
+                            className="card-title"
+                            style={{ viewTransitionName: `path-${city.id}-${path.id}`, viewTransitionClass: 'hero-title' } as CSSProperties}
+                          >
+                            {path.name}
+                          </span>
                           <Tags tags={path.tags} duration={path.duration} />
                         </span>
                         <span className="chevron">›</span>
-                      </Link>
+                      </TransitionLink>
                     </li>
                   ))}
                 </ul>
