@@ -1,6 +1,5 @@
-import { useEffect, useRef, type CSSProperties, type ReactNode } from 'react'
+import { useEffect, useRef, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import TransitionLink from './TransitionLink'
 import { dashboardUrl } from './Analytics'
 import ThemeToggle from './ThemeToggle'
 
@@ -12,12 +11,10 @@ type Props = {
   icon?: ReactNode
   /** Extra header buttons shown right of the theme toggle, e.g. the share button on a path page. */
   actions?: ReactNode
-  /** view-transition-name shared with the list row's title, so the title morphs into the header. */
-  transitionName?: string
   children: ReactNode
 }
 
-export default function Layout({ title, subtitle, backTo, icon, actions, transitionName, children }: Props) {
+export default function Layout({ title, subtitle, backTo, icon, actions, children }: Props) {
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -29,23 +26,20 @@ export default function Layout({ title, subtitle, backTo, icon, actions, transit
     ro.observe(el)
     return () => ro.disconnect()
   }, [])
-  const titleStyle = transitionName
-    ? ({ viewTransitionName: transitionName, viewTransitionClass: 'hero-title' } as CSSProperties)
-    : undefined
   return (
     <div className="screen">
       <header className="header" ref={headerRef}>
         {backTo !== undefined ? (
-          <TransitionLink to={backTo} className="back" aria-label="Back">
+          <Link to={backTo} className="back" aria-label="Back">
             ‹
-          </TransitionLink>
+          </Link>
         ) : icon ? (
           icon
         ) : (
           <span className="back placeholder" />
         )}
         <div className="header-text">
-          <h1 style={titleStyle}>{title}</h1>
+          <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
         </div>
         <ThemeToggle />

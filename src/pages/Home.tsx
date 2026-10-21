@@ -1,11 +1,9 @@
-import type { CSSProperties } from "react";
 import { GrAnnounce } from "react-icons/gr";
 import { isIOS, isPhone } from "../platform";
 import { Link, useParams } from "react-router-dom";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
-import TransitionLink from "../components/TransitionLink";
 import { cities } from "../data/travel";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
@@ -94,18 +92,13 @@ export default function Home() {
                 <ul className="sublist">
                   {city.paths.map((path) => (
                     <li key={path.id}>
-                      <TransitionLink to={`/${city.id}/${path.id}`} className="child">
+                      <Link to={`/${city.id}/${path.id}`} className="child">
                         <span className="card-body">
-                          <span
-                            className="card-title"
-                            style={{ viewTransitionName: `path-${city.id}-${path.id}`, viewTransitionClass: 'hero-title' } as CSSProperties}
-                          >
-                            {path.name}
-                          </span>
+                          <span className="card-title">{path.name}</span>
                           <Tags tags={path.tags} duration={path.duration} />
                         </span>
                         <span className="chevron">›</span>
-                      </TransitionLink>
+                      </Link>
                     </li>
                   ))}
                 </ul>

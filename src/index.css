@@ -79,34 +79,6 @@ a:focus-visible {
   flex-direction: column;
 }
 
-/* ── Page transitions (View Transitions API; browsers without it just navigate) ── */
-::view-transition-group(*) {
-  animation-duration: 380ms;
-  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
-}
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 200ms;
-}
-/* The path title flies from the list row to the header as one crisp element, no cross-fade. */
-::view-transition-old(.hero-title) {
-  animation: none;
-  opacity: 0;
-}
-::view-transition-new(.hero-title) {
-  animation: none;
-}
-::view-transition-group(.hero-title) {
-  z-index: 2;
-}
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    animation: none;
-  }
-}
-
 /* ── Header ──────────────────────────────────────────────── */
 .header {
   position: sticky;
