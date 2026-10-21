@@ -311,11 +311,11 @@ export const cities: City[] = [
       },
       {
         id: 'gangnam-night-streets',
-        name: 'Gangnam Night Streets',
+        name: 'Gangnam Night and Rainbow Bridge',
         description:
           'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Plus Garosu-gil in Sinsa-dong and the Banpo Bridge fountain with Sevit Island on the Han River. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
         duration: '2h',
-        updated: '2026-10-20',
+        updated: '2026-10-21',
         notices: [
           {
             icon: '⛲',
