@@ -98,8 +98,8 @@ The guide must agree with the map. Sources, in order:
    Busan blossom ≈ a week before Seoul). Keep these few and say them plainly.
 
 Do **not** invent opening hours, prices, queue times or "best" claims that the pins do not support. If a
-path has no kmz yet (Haeundae, 2026-10-20), say in the intro that the map is still being drawn and keep
-the route to well-known landmarks. Restaurants: name only the ones pinned, and point to "the pink pins on
+path has no kmz yet, say in the intro that the map is still being drawn and keep the route to well-known
+landmarks (Haeundae was in that state on 2026-10-20 and got its map on 2026-10-21). Restaurants: name only the ones pinned, and point to "the pink pins on
 the map" instead of listing everything.
 
 ## 5. Hashtags / keywords

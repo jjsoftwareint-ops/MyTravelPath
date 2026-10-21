@@ -369,15 +369,18 @@ export const cities: City[] = [
       {
         id: 'haeundae-coast',
         name: 'Haeundae Coastal Path',
-        description: 'Beach → Dongbaek Island → Blueline Park sky capsule.',
+        description:
+          'Haeundae Station to the beach, the Dongbaek Island boardwalk past Nurimaru, east along the sand to Mipo, the Blueline Park walkway along the cliffs to Cheongsapo and the Daritdol skywalk, and on to Songjeong Beach. 9.5 km in three parts.',
         duration: 'Half day',
-        updated: '2026-10-20',
-        mapUrl: 'https://www.google.com/maps/d/viewer?mid=REPLACE_ME',
+        updated: '2026-10-21',
+        image: 'haeundae.jpg',
+        imageCredit: 'Photo: VN.NguyenDucDuy · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1gKDREXR2sVQ1HEIZyf-iAgOvJPGFgHY',
         keywords: ['Busan', 'Haeundae', 'DongbaekIsland', 'BluelinePark', 'SkyCapsule', 'Cheongsapo', 'Songjeong', 'CoastalWalk', 'KoreaTravel'],
         guide: {
           intro: [
             "🌊 Haeundae is Korea's most famous beach, but the best part is what comes after it. Walk east and you get the camellia-covered **Dongbaek Island** with the APEC House and the Gwangan Bridge view, then the old railway line along the cliffs to Cheongsapo and Songjeong. It is the **easiest coastal walk** in the country.",
-            "The map for this path is **still being drawn**. The outline below is enough to follow it with Naver Map, and the map link will appear here as soon as it is ready.",
+            "It is 9.5 km end to end, but it splits naturally into **three parts**: the island loop, the cliff walkway to Cheongsapo, and the stretch on to Songjeong. Do all three in half a day, or ride the Beach Train back from wherever your legs give out.",
           ],
           route: [
             "Dongbaek Island, the camellia-covered headland at the west end of the beach: a boardwalk loop around it past the Nurimaru APEC House, the mermaid statue and the view of Gwangan Bridge.",
