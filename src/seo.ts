@@ -34,8 +34,8 @@ const STATIC: Record<string, { title: string; description: string; updated: stri
   },
   contact: {
     title: "Contact",
-    description: "Send a correction, a question or a new walk idea to My Travel Path.",
-    updated: "2026-10-20",
+    description: "Send a correction, a question or a new walk idea to My Travel Path by e-mail or on Threads.",
+    updated: "2026-10-21",
   },
   privacy: {
     title: "Privacy Policy",

@@ -1,8 +1,11 @@
 import { useState, type FormEvent } from "react";
+import { FaThreads } from "react-icons/fa6";
 import Layout from "../components/Layout";
 import { usePageMeta } from "../seo";
 
 export const CONTACT_EMAIL = "jjsoftwareint@gmail.com";
+export const THREADS_HANDLE = "_mytravelpath";
+export const THREADS_URL = `https://www.threads.com/@${THREADS_HANDLE}`;
 
 // The site has no backend, so the form composes an e-mail in the visitor's
 // own mail app. Nothing typed here is sent to or stored by this site.
@@ -31,6 +34,15 @@ export default function Contact() {
             {CONTACT_EMAIL}
           </a>
           . Replies usually take a few days. English and Korean are both fine.
+        </p>
+
+        <h2>Threads</h2>
+        <p>
+          New walks, photos and quick answers are posted on Threads at{" "}
+          <a className="link social" href={THREADS_URL} target="_blank" rel="noreferrer">
+            <FaThreads aria-hidden="true" /> @{THREADS_HANDLE}
+          </a>
+          . A message there works just as well as an e-mail.
         </p>
 
         <h2>Or use the form</h2>

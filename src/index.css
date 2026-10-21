@@ -736,6 +736,15 @@ a:focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+.link.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.link.social svg {
+  width: 16px;
+  height: 16px;
+}
 .prose h2 {
   margin: 18px 0 6px;
   font-size: 15px;
