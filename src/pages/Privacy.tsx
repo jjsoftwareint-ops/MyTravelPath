@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { usePageMeta } from "../seo";
 import { CONTACT_EMAIL } from "./Contact";
 
-const UPDATED = "20 October 2026";
+const UPDATED = "22 October 2026";
 
 // Privacy policy covering hosting, analytics, embedded maps, donations and
 // advertising (Google AdSense). Update UPDATED when the text changes.
@@ -142,10 +142,12 @@ export default function Privacy() {
         </p>
         <p>
           If you visit from the European Economic Area, the United Kingdom or
-          Switzerland, no advertising cookies are set until you have given your
-          consent in the consent dialog, and you can change that choice at any
-          time through the link in the footer.
-        </p>
+          Switzerland, a consent message from Google appears on your first
+          visit. Advertising cookies and personalised ads are used only if you
+          agree; you can decline or choose individual purposes under “Manage
+          options”, and you can reopen your choices at any time through the
+          small privacy settings button that Google's message leaves on the
+          page.</p>
 
         <h2>Donations</h2>
         <p>

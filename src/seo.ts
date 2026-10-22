@@ -41,7 +41,7 @@ const STATIC: Record<string, { title: string; description: string; updated: stri
     title: "Privacy Policy",
     description:
       "How My Travel Path handles data: hosting, GoatCounter statistics, embedded Google maps, PayPal donations and Google AdSense advertising.",
-    updated: "2026-10-20",
+    updated: "2026-10-22",
   },
   imprint: {
     title: "Imprint",
