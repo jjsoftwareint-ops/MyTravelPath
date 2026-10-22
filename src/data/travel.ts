@@ -314,7 +314,7 @@ export const cities: City[] = [
       },
       {
         id: 'seongsu-dong',
-        name: 'Seongsu-dong Hot Streets',
+        name: 'Seongsu Popup Street + Forest',
         description:
           'The warehouse district young Seoul goes to: from Seongsu Station along Yeonmujang-gil and its pop-up lanes to the Seoul Forest café street, 2.8 km. Walk it in either direction, and start or finish in Seoul Forest. Pop-up spaces, stationery and concept stores, bakeries and brunch, with toilets and checked cafés pinned.',
         duration: '3h',
