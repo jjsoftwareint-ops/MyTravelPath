@@ -1,6 +1,7 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { dashboardUrl } from './Analytics'
+import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
 
 type Props = {
@@ -42,6 +43,7 @@ export default function Layout({ title, subtitle, backTo, icon, actions, childre
           <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
         </div>
+        <BookmarkLink />
         <ThemeToggle />
         {actions}
       </header>

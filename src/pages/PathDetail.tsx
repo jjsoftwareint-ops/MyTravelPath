@@ -4,6 +4,7 @@ import { GiPathDistance } from "react-icons/gi";
 import { ImInfo } from "react-icons/im";
 import { MdOutlinePinDrop } from "react-icons/md";
 import { Navigate, useParams } from "react-router-dom";
+import { BookmarkToggle } from "../components/BookmarkButton";
 import CopyLink from "../components/CopyLink";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
@@ -65,6 +66,7 @@ export default function PathDetail() {
         <article
           className={ready ? "card path-card" : "card path-card disabled"}
         >
+          <BookmarkToggle cityId={city.id} pathId={path.id} />
           {path.image && (
             <span
               className={

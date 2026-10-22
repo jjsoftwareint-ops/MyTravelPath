@@ -299,6 +299,7 @@ a:focus-visible {
 
 /* ── Path cards: one obvious action ──────────────────────── */
 .path-card {
+  position: relative;
   flex-direction: column;
   align-items: stretch;
   gap: 10px;
@@ -970,4 +971,70 @@ button.cta {
 /* A supplied banner photo is shown whole, at its own ratio, never cropped */
 .path-image.whole img {
   height: auto;
+}
+
+/* Bookmark button in the header: a link on list pages (with a count), a toggle on path pages */
+.bookmark-button {
+  position: relative;
+  text-decoration: none;
+}
+.bookmark-button svg {
+  width: 20px;
+  height: 20px;
+}
+.bookmark-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+}
+.saved-empty {
+  margin: 8px 4px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.saved-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Save toggle over the top right corner of a path page's header image */
+.bookmark-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+.bookmark-toggle svg {
+  width: 22px;
+  height: 22px;
+}
+.bookmark-toggle[aria-pressed='true'] {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+.bookmark-toggle:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
 }
