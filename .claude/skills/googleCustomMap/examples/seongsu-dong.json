@@ -1,0 +1,332 @@
+{
+ "name": "Seongsu-dong",
+ "layers": [
+  {
+   "name": "Seongsu hot streets: Station → Yeonmujang-gil → Yeonmujang 5-gil → Atelier-gil → Seoulsup-gil, 2.8 km (성수 핫플 골목)",
+   "line": {
+    "name": "Seongsu Station → Yeonmujang-gil → Yeonmujang 5-gil → Atelier-gil lanes → Seoulsup-gil (성수역 → 연무장길 → 연무장5길 → 아틀리에길 → 서울숲길), 2.8 km",
+    "color": "FF7043",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Seongsu Station to the east end of Yeonmujang-gil (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.544661,127.056029 37.544332,127.057134 37.544282,127.057300 37.544158,127.057247 37.544077,127.057212 37.544069,127.057178 37.544105,127.057056 37.543745,127.056909 37.543669,127.056878 37.543606,127.056851 37.542162,127.056249"
+    },
+    {
+     "label": "Yeonmujang-gil, the main street of the warehouse district (OSM street geometry)",
+     "approx": false,
+     "coords": "37.542162,127.056249 37.542333,127.055634 37.542749,127.054240 37.542853,127.053932 37.542900,127.053790 37.542985,127.053537 37.543091,127.053220 37.543205,127.052830 37.543470,127.051914"
+    },
+    {
+     "label": "Yeonmujang 5-gil, the lane of pop-up shops (OSM street geometry)",
+     "approx": false,
+     "coords": "37.543470,127.051914 37.543584,127.052073 37.543947,127.052683 37.543973,127.052729 37.544045,127.052816 37.544793,127.053166 37.545265,127.053386 37.545290,127.053398"
+    },
+    {
+     "label": "Atelier-gil lanes of workshops and showrooms, then west to the Seoul Forest street (pedestrian router; OpenStreetMap has no street named Atelier-gil, so this leg follows the nearest streets)",
+     "approx": true,
+     "coords": "37.545290,127.053398 37.545692,127.052100 37.546242,127.050328 37.546355,127.050373 37.546432,127.050406 37.546871,127.050591 37.547024,127.050107 37.547024,127.050107 37.547212,127.049515 37.547530,127.048506 37.546965,127.048696 37.547276,127.047732 37.547621,127.046667 37.547797,127.046125 37.547823,127.046069 37.547707,127.046025 37.547793,127.045744 37.548119,127.044692 37.548168,127.044532 37.548173,127.044518 37.548202,127.044403 37.548448,127.044368 37.548451,127.044343 37.548551,127.043660 37.548100,127.043844"
+    },
+    {
+     "label": "Seoulsup-gil, the café street at Seoul Forest (OSM street geometry)",
+     "approx": false,
+     "coords": "37.548100,127.043844 37.548070,127.043420 37.548046,127.042907 37.548031,127.042593 37.547992,127.041767 37.547978,127.041474 37.547970,127.041300 37.547935,127.040573 37.547933,127.040465 37.547926,127.040205 37.548020,127.039886 37.548096,127.039624 37.548143,127.039462 37.548167,127.039379 37.548201,127.039261 37.548567,127.038067"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.5446,
+     "lon": 127.056,
+     "name": "Start – Seongsu Station, line 2 (성수역 2호선)",
+     "desc": "Exit 3 for the warehouse streets; the Musinsa and Daelim Changgo corner is two minutes south-east. Open toilets at the station.",
+     "icon": "start",
+     "naver_id": "13479412"
+    },
+    {
+     "lat": 37.541704,
+     "lon": 127.056395,
+     "name": "Daelim Changgo Gallery (성수동대림창고갤러리)",
+     "desc": "The 1970s factory warehouse turned gallery café that started Seongsu's café boom; the red brick and tin ceilings are the classic photo.",
+     "icon": "museum",
+     "naver_id": "37910590"
+    },
+    {
+     "lat": 37.541595,
+     "lon": 127.056411,
+     "name": "Musinsa Store Seongsu (무신사 스토어 성수)",
+     "desc": "Korea's biggest streetwear shop in a converted brick warehouse, with pop-up floors and a café.",
+     "icon": "market",
+     "naver_id": "1107729911"
+    },
+    {
+     "lat": 37.542265,
+     "lon": 127.056452,
+     "name": "Ader Error Seongsu Space (아더에러 성수 스페이스)",
+     "desc": "The design brand's concept store in an old factory: art installations as much as clothes.",
+     "icon": "hall",
+     "naver_id": "1965484876"
+    },
+    {
+     "lat": 37.543512,
+     "lon": 127.051382,
+     "name": "Point of View Seoul – stationery on Yeonmujang-gil 18 (POINT of VIEW SEOUL)",
+     "desc": "Three floors of notebooks, pens, objects and a café; the best-known stationery shop in the district.",
+     "icon": "market",
+     "naver_id": "1160844669"
+    },
+    {
+     "lat": 37.5417,
+     "lon": 127.0616,
+     "name": "Letter Room Seongsu – stationery (글월 Letter Room 성수점)",
+     "desc": "Stationery and letter-writing shop on Yeonmujang 17-gil, a few minutes east.",
+     "icon": "market",
+     "naver_id": "1014980781"
+    },
+    {
+     "lat": 37.543883,
+     "lon": 127.052263,
+     "name": "Dior Seongsu – pop-up space (디올 성수)",
+     "desc": "The house's Seongsu space on Yeonmujang 5-gil, with changing themed events. Pop-up spaces change every few weeks: check the brand's Instagram for the current event before you queue.",
+     "icon": "hall",
+     "naver_id": "1289759192"
+    },
+    {
+     "lat": 37.542224,
+     "lon": 127.055751,
+     "name": "Lush Seongsu Pop-up Theatre (러쉬 성수 팝업씨어터)",
+     "desc": "Immersive bath-product pop-up with its own theatre rooms. Pop-up spaces change every few weeks: check the brand's Instagram for the current event before you queue.",
+     "icon": "hall",
+     "naver_id": "2080469590"
+    },
+    {
+     "lat": 37.541861,
+     "lon": 127.058298,
+     "name": "Frika Seongsu pop-up (프리카 성수 팝업)",
+     "desc": "One of the long-running pop-up spaces near Daelim Changgo. Pop-up spaces change every few weeks: check the brand's Instagram for the current event before you queue.",
+     "icon": "hall",
+     "naver_id": "2040937553"
+    },
+    {
+     "lat": 37.542523,
+     "lon": 127.054271,
+     "name": "Shin Ramyun Bunsik – The Factory pop-up (신라면분식 더 팩토리)",
+     "desc": "Brand food pop-up themed on a Korean snack bar; queues at weekends. Pop-up spaces change every few weeks: check the brand's Instagram for the current event before you queue.",
+     "icon": "hall",
+     "naver_id": "2082644987"
+    },
+    {
+     "lat": 37.5425,
+     "lon": 127.0532,
+     "name": "Human Made Seoul, café by Blue Bottle Coffee (휴먼 메이드 서울 카페 바이 블루보틀 커피)",
+     "desc": "Japanese streetwear shop with a Blue Bottle café upstairs, on Seongsu-i-ro 7-gil.",
+     "icon": "cafe",
+     "naver_id": "1266227029"
+    },
+    {
+     "lat": 37.5481,
+     "lon": 127.0457,
+     "name": "Blue Bottle Seongsu – the first Korean shop (블루보틀 성수 카페)",
+     "desc": "The first Blue Bottle in Korea, in an old auto-repair garage near the Seoul Forest end; very busy at weekends.",
+     "icon": "cafe",
+     "naver_id": "1725895520"
+    },
+    {
+     "lat": 37.541964,
+     "lon": 127.038566,
+     "name": "Seoul Forest (서울숲)",
+     "desc": "The big park a few minutes west: deer paddock, lawns, a flower garden and the river path; the quiet end of the walk.",
+     "icon": "park",
+     "naver_id": "11636039"
+    }
+   ]
+  },
+  {
+   "name": "Public toilets, Seongsu (공중화장실)",
+   "pins": [
+    {
+     "lat": 37.5446,
+     "lon": 127.056,
+     "name": "Toilet – Seongsu Station (성수역 화장실)",
+     "desc": "Public toilet in the line 2 station, at the start of the walk.",
+     "icon": "toilet",
+     "address": "서울 성동구 아차산로 100"
+    },
+    {
+     "lat": 37.543489,
+     "lon": 127.044658,
+     "name": "Toilet – Seoul Forest Station (서울숲역 개방화장실)",
+     "desc": "Open toilet at the station at the west end of Seoulsup-gil.",
+     "icon": "toilet",
+     "naver_id": "1504947258"
+    },
+    {
+     "lat": 37.541542,
+     "lon": 127.043472,
+     "name": "Toilet – Seoul Forest park (서울숲공원화장실)",
+     "desc": "Public toilet in the park by the Seoul Forest Station entrance.",
+     "icon": "toilet",
+     "naver_id": "36252724"
+    },
+    {
+     "lat": 37.543142,
+     "lon": 127.040075,
+     "name": "Toilet – Seoul Forest playground (숲속놀이터 개방화장실)",
+     "desc": "Open toilet at the children's forest playground.",
+     "icon": "toilet",
+     "naver_id": "38752432"
+    },
+    {
+     "lat": 37.546083,
+     "lon": 127.041411,
+     "name": "Toilet – Seoul Forest north (서울숲화장실)",
+     "desc": "Public toilet at the north side of the park.",
+     "icon": "toilet",
+     "naver_id": "36252700"
+    }
+   ]
+  },
+  {
+   "name": "Bakeries, cafés & restaurants (checked 2026-10-22)",
+   "pins": [
+    {
+     "lat": 37.544691,
+     "lon": 127.058105,
+     "name": "Onion Seongsu – bakery café in a factory (어니언 성수)",
+     "desc": "The famous bakery café in an old factory building on Achasan-ro 9-gil: pandoro and sweet bread, high ceilings, queues at weekends. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "38561949"
+    },
+    {
+     "lat": 37.542326,
+     "lon": 127.055509,
+     "name": "Jayeondo Salt Bread Seongsu (자연도소금빵in 성수)",
+     "desc": "The salt-bread bakery that draws the queues near Yeonmujang-gil. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1022429915"
+    },
+    {
+     "lat": 37.543256,
+     "lon": 127.054207,
+     "name": "Seongsu Ciabatta (성수르치아바타)",
+     "desc": "Ciabatta sandwiches and bread, popular for takeaway on the lane. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "2019126383"
+    },
+    {
+     "lat": 37.543291,
+     "lon": 127.05376,
+     "name": "Hearts Bakery Seongsu (하츠베이커리 성수점)",
+     "desc": "Bakery café on the Yeonmujang lanes. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "2054988145"
+    },
+    {
+     "lat": 37.543272,
+     "lon": 127.053451,
+     "name": "Etre Bake House (에트레베이크하우스)",
+     "desc": "Bakery with a busy counter near the pop-up lane. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1671364152"
+    },
+    {
+     "lat": 37.543082,
+     "lon": 127.055838,
+     "name": "Bekerin Seongsu – bakery (베커린 성수점)",
+     "desc": "Bakery café near Daelim Changgo. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1381574817"
+    },
+    {
+     "lat": 37.542865,
+     "lon": 127.054196,
+     "name": "Hanjeongseon – café (한정선)",
+     "desc": "A well-reviewed Seongsu café on the Yeonmujang lanes. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1353954221"
+    },
+    {
+     "lat": 37.547179,
+     "lon": 127.046652,
+     "name": "Low Coffee Stand – Seoulsup-gil (로우커피스탠드)",
+     "desc": "The small takeaway coffee stand on the Seoul Forest street, the café you suggested. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1168698330"
+    },
+    {
+     "lat": 37.5478,
+     "lon": 127.0413,
+     "name": "Poset Seongsu – Seoulsup-gil (포셋 성수)",
+     "desc": "Neighbourhood shop-café on Seoulsup-gil 36. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1623266441"
+    },
+    {
+     "lat": 37.542491,
+     "lon": 127.059773,
+     "name": "Friends & Yard – brunch (프렌즈앤야드)",
+     "desc": "Popular brunch house at the east end of Seongsu. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1363401039"
+    },
+    {
+     "lat": 37.544237,
+     "lon": 127.051382,
+     "name": "And Mill Seongsu – brunch (앤드밀 성수점)",
+     "desc": "Brunch and bread café near Yeonmujang 5-gil. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1943210266"
+    },
+    {
+     "lat": 37.542701,
+     "lon": 127.055972,
+     "name": "Rivoli Seongsu – café (리볼리 성수)",
+     "desc": "Sit-down café and bakery by Daelim Changgo. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1189859226"
+    },
+    {
+     "lat": 37.539896,
+     "lon": 127.056259,
+     "name": "Seongsu Darak – Korean restaurant (성수다락)",
+     "desc": "Seongsu's most reviewed Korean restaurant, in a renovated house. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1241532707"
+    },
+    {
+     "lat": 37.544077,
+     "lon": 127.056203,
+     "name": "Seongsu Noru – Korean (성수노루)",
+     "desc": "Long-running restaurant in the warehouse district. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1561895045"
+    },
+    {
+     "lat": 37.543415,
+     "lon": 127.054789,
+     "name": "Seongsu Kkamang – Korean (성수까망)",
+     "desc": "Korean restaurant with long queues on weekends. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1392050056"
+    },
+    {
+     "lat": 37.544445,
+     "lon": 127.055451,
+     "name": "Schedule Seongsu – brunch and dinner (스케줄 성수)",
+     "desc": "Western-style restaurant on the main lane. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1481829719"
+    },
+    {
+     "lat": 37.5411,
+     "lon": 127.0565,
+     "name": "BD Burger Seongsu Station (bd버거 성수역연무장길 점심저녁)",
+     "desc": "Burger restaurant by the station, one of Seongsu's most reviewed places. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1026594418"
+    }
+   ]
+  }
+ ]
+}

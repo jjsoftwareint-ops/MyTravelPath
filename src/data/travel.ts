@@ -313,6 +313,48 @@ export const cities: City[] = [
         },
       },
       {
+        id: 'seongsu-dong',
+        name: 'Seongsu-dong Hot Streets',
+        description:
+          'The warehouse district young Seoul goes to: from Seongsu Station along Yeonmujang-gil and its pop-up lanes to the Seoul Forest café street, 2.8 km. Walk it in either direction, and start or finish in Seoul Forest. Pop-up spaces, stationery and concept stores, bakeries and brunch, with toilets and checked cafés pinned.',
+        duration: '3h',
+        updated: '2026-10-22',
+        tags: [{ icon: 'hot', label: 'Hot place' }],
+        image: 'seongsu.jpg',
+        imageCredit: 'Photo: CartoonChess · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1Xs1Bkx0p_e4CAlyFgUrz6PFnX9L8DGo',
+        keywords: ['Seoul', 'Seongsu', 'SeongsuDong', 'PopUpStore', 'Bakery', 'CafeHopping', 'DaelimChanggo', 'SeoulForest', 'KoreaTravel'],
+        notices: [
+          {
+            icon: '🛍️',
+            title: 'Pop-up stores change every few weeks',
+            body: 'The brand spaces along **Yeonmujang-gil and Yeonmujang 5-gil** swap their themed events about **every two to four weeks**, and some need a **reservation or a queue ticket on the day**. Check the brand\'s Instagram or Naver Map page for the current event before you go. Most shops open around **11:00** and close between **20:00 and 22:00**; Mondays vary.',
+            since: 'General pattern for Seongsu pop-ups; exact dates change. Checked October 2026.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🧱 **Seongsu-dong** used to be Seoul's shoe-making and print-shop district, and the old brick factories are now the city's busiest streets for young people: pop-up stores, concept shops, stationery, bakeries and cafés in warehouses with the machinery left on show. People call it the Brooklyn of Seoul, which is a fair summary.",
+            "The walk is **2.8 km and flat**: from Seongsu Station down the main street, through the pop-up lanes, and west to the quiet café street by **Seoul Forest**. Three hours with browsing and a bakery stop, and it works best late morning to evening, with weekends the busiest.",
+            "🌳 **You can walk it either way.** Start at Seoul Forest and finish at Seongsu Station if you would rather begin with the park and end among the shops and a late dinner, or make the park the finale after a day of browsing. **Seoul Forest** is the city's big riverside park, opened in 2005 on a former racecourse: wide lawns, a deer paddock, a butterfly garden, a pond with a boardwalk and a path to the Han River. It is free, open all day, and it is where Seongsu goes to sit down. A picnic mat and a takeaway coffee from the café street is the classic way to end the walk.",
+          ],
+          route: [
+            "Seongsu Station (line 2), exit 3: a few minutes to Daelim Changgo Gallery, the 1970s factory warehouse that started the café boom, and the Musinsa store in the brick building next to it.",
+            "Yeonmujang-gil, the main street: Point of View on number 18, three floors of stationery and objects; Ader Error's concept space; and the queues for the salt-bread and ciabatta bakeries.",
+            "Yeonmujang 5-gil, the pop-up lane: Dior, Lush's pop-up theatre, Frika and the changing food and brand events. Atelier-gil's small workshops and showrooms sit in the lanes beside it.",
+            "Then west along the Seoulsup-gil café street, with Low Coffee Stand and Poset, the first Blue Bottle store in Korea in its old garage, and Seoul Forest at the end: lawns, deer, the pond boardwalk and the river path. Reverse the whole list if you start here.",
+            "Toilets are pinned in their own layer, at the station and around Seoul Forest; bakeries, cafés and restaurants are pinned and checked on Naver.",
+          ],
+          tips: [
+            "🚇 Getting there: Seongsu Station on line 2, exit 3, or Seoul Forest Station on the Bundang line at the park end. Both stations have toilets.",
+            "⏰ Weekday late morning is the calm time. Weekend afternoons mean queues of an hour or more at the famous bakeries and pop-ups; ask for the day's wait on the Naver Map page.",
+            "🍞 Salt bread and ciabatta sell out by late afternoon at the most popular shops.",
+            "👟 Flat and fully on pavement. The lanes are one-way for cars, so watch for scooters and delivery vans.",
+            "📍 Atelier-gil is marked approximately on the map: it is a local name for the workshop lanes between Yeonmujang 5-gil and Seoul Forest.",
+          ],
+        },
+      },
+      {
         id: 'gangnam-night-streets',
         name: 'Gangnam Night and Rainbow Bridge',
         description:

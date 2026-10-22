@@ -161,6 +161,29 @@ size, so none of this is guaranteed):
   replying to other Seoul/Korea travel accounts without links; tell the user to check Threads insights after
   each post and keep what works. The user posts everything.
 
+## 6c. Threads diary chains: what worked (hypotheses from 2026-10-22, refine with real numbers)
+
+The Haebangchon chain (posted 2026-10-20) is the user's most popular. It is the pattern to copy until data says
+otherwise. What it does that the weaker chains do less:
+
+1. **Opens on the reader's feeling, not the place:** "Every time friends visit Seoul I drag them up… and they
+   always thank me later." A promise plus a person, in the first line. Avoid openings that start with the
+   walk's name or distance.
+2. **Concrete senses and one insider detail in post 1:** bus squeezing past, glass roof, strings of lights,
+   "side stairs opposite the church". A reader should be able to picture the hidden entrance. Generic mood
+   lines ("the city sits quietly below") carry less.
+3. **A small contrast or surprise:** "looks like a market time forgot… go in and it opens up".
+4. **Ordinary words, short sentences, no poetry stacking.** "Loud, warm, chaotic. We always stay an hour."
+5. **Practical close in post 3** (distance, time, bus, torch) **then the link**, and a question to the reader.
+6. **A photo that shows the thing described** on post 1 (the market alley, not a generic skyline).
+7. **Topic choice matters most:** Haebangchon is a trending foreigner-and-local neighbourhood with a food
+   scene, which a hill walk is not. Prefer topics with food, a hidden entrance or a "locals only" angle for the
+   first post of a week; use the quieter views as second posts.
+
+Before writing the next one, ask the user for the numbers on the last three chains (views, likes, replies,
+reposts per post, and which post got them) and say what the data does to these rules. Never claim these rules
+are proven.
+
 ## 7. URLs, pre-rendering and the sitemap
 
 Every page has a real URL with a trailing slash: `https://koreatravelpath.com/<city>/<path>/`. `npm run build`
