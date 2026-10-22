@@ -1,0 +1,242 @@
+{
+ "name": "K-Star Road additions",
+ "layers": [
+  {
+   "name": "K-Star Road, Apgujeong–Cheongdam (케이스타로드)",
+   "line": {
+    "name": "K-Star Road: Galleria West (Gangnam-dol house) → Apgujeong Rodeo Station → Seolleung-ro lanes → Cheongdam crossing (갤러리아 명품관 WEST → 압구정로데오역 → 청담사거리), 1.0 km",
+    "color": "AB47BC",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "K-Star Road main line, Galleria West to Cheongdam crossing (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.528242,127.039618 37.528051,127.040472 37.527950,127.040439 37.527884,127.040729 37.527824,127.040708 37.527768,127.040691 37.527550,127.040614 37.527356,127.040545 37.527356,127.040545 37.527144,127.040480 37.526937,127.041261 37.526832,127.041628 37.526719,127.042084 37.526353,127.043516 37.526164,127.044312 37.526523,127.044441 37.526523,127.044441 37.526797,127.044539 37.526574,127.045398 37.526538,127.045475 37.526410,127.045751 37.526263,127.045970 37.526109,127.046174 37.525935,127.046361 37.525789,127.046451 37.525719,127.046494 37.525511,127.046617 37.524961,127.046917 37.524481,127.047170 37.524421,127.047201 37.524258,127.047288 37.524272,127.047404 37.524239,127.047420"
+    }
+   ],
+   "more_lines": [
+    {
+     "name": "Branch to Dosan Park: Rodeo Station → Seolleung-ro 157/155-gil → Apgujeong-ro 46-gil → Dosan Park (도산공원 방향), 1.0 km",
+     "coords": "37.527356,127.040545 37.527144,127.040480 37.526939,127.040405 37.526424,127.040222 37.525761,127.039990 37.525861,127.039550 37.525954,127.039118 37.526051,127.038683 37.526134,127.038316 37.526148,127.038247 37.526236,127.037864 37.526294,127.037615 37.526320,127.037485 37.526212,127.037447 37.526212,127.037447 37.525764,127.037288 37.525828,127.037010 37.525910,127.036636 37.525977,127.036336 37.526057,127.035971 37.525560,127.035822 37.524881,127.036120 37.524682,127.036210 37.524667,127.036112 37.524618,127.035781 37.524208,127.035744 37.524140,127.035776 37.524080,127.035611 37.524457,127.035430 37.524446,127.035392 37.524446,127.035352 37.524455,127.035314 37.524472,127.035280 37.524497,127.035255 37.524527,127.035240 37.524429,127.034891 37.524494,127.034860 37.524608,127.034806"
+    },
+    {
+     "name": "Cheongdam lanes: Figure Museum W → Seolleung-ro 158-gil → Cheongdam-gol (선릉로158길 · 청담골)",
+     "coords": "37.525682,127.040360 37.525595,127.040773 37.525505,127.041161 37.525490,127.041226 37.525393,127.041645 37.525277,127.041605 37.525277,127.041605 37.524557,127.041359 37.524267,127.041259 37.524379,127.042053 37.524455,127.042726 37.524455,127.042726 37.524470,127.042858 37.524531,127.043386 37.524541,127.043468 37.524547,127.043507 37.524680,127.044510 37.524072,127.044614 37.523929,127.044639 37.523806,127.044659 37.523663,127.044688 37.523469,127.044708 37.523417,127.044744 37.523093,127.044804 37.523040,127.044411 37.522991,127.043991 37.522960,127.043752 37.522937,127.043581 37.522910,127.043377"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.528467,
+     "lon": 127.040167,
+     "name": "Start – Galleria West and the Gangnam-dol house (갤러리아백화점 명품관 WEST · 강남돌하우스)",
+     "desc": "The K-Star Road starts here: the Gangnam-dol house in front of Galleria West, where the giant K-pop character toys stand for photos. Gangnam-gu runs the project to show visitors the stars' favourite shops and spots.",
+     "icon": "start",
+     "naver_id": "12134055"
+    },
+    {
+     "lat": 37.527394,
+     "lon": 127.040572,
+     "name": "Apgujeong Rodeo Station, Bundang line (압구정로데오역)",
+     "desc": "Suin-Bundang line. Exit 5 or 6 for Galleria and the Rodeo street; open toilets inside the station.",
+     "icon": "subway",
+     "naver_id": "31077958"
+    },
+    {
+     "lat": 37.5268,
+     "lon": 127.0361,
+     "name": "Apgujeong Rodeo Street (압구정로데오거리)",
+     "desc": "The fashion and café street west of the station: boutiques, brunch places and late-night bars, busiest after 17:00.",
+     "icon": "street",
+     "naver_id": "13491361"
+    },
+    {
+     "lat": 37.525764,
+     "lon": 127.040405,
+     "name": "Zone B – Figure Museum W (피규어뮤지엄 W)",
+     "desc": "Figure and art-toy museum on Seolleung-ro 158-gil, with a shop. Tue to Sun 11:00 to 19:00, closed Mondays; adult ticket about ₩15,000 per the Gangnam-gu K-Star Road page.",
+     "icon": "museum",
+     "naver_id": "36368850"
+    },
+    {
+     "lat": 37.522837,
+     "lon": 127.043437,
+     "name": "Zone B – Cheongdam-gol, the 18-year Korean set-meal house (청담골)",
+     "desc": "The Gangnam-gu K-Star Road list names this home-style restaurant on Seolleung-ro 148-gil: Mon to Fri 10:30 to 22:30, weekends to 22:00. Set meals around ₩8,000 to ₩12,000 on the official page. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "11477316"
+    },
+    {
+     "lat": 37.522618,
+     "lon": 127.036035,
+     "name": "Zone A – Horim Museum Sinsa branch (호림박물관 신사분관)",
+     "desc": "Museum of Korean art on Dosan-daero, one of the official Zone A spots.",
+     "icon": "museum",
+     "naver_id": "37392356"
+    },
+    {
+     "lat": 37.522861,
+     "lon": 127.037062,
+     "name": "Zone A – CGV Cheongdam Cine City (CGV 청담씨네시티)",
+     "desc": "Cinema complex on Dosan-daero, a Zone A landmark; open toilets in the building.",
+     "icon": "hall",
+     "naver_id": "20574013"
+    },
+    {
+     "lat": 37.524675,
+     "lon": 127.03503,
+     "name": "Zone A – Dosan Park (도산공원)",
+     "desc": "Neighbourhood park in memory of the independence leader Ahn Chang-ho, with an exhibition hall and a shaded lawn; the quiet end of the walk.",
+     "icon": "park",
+     "naver_id": "11622407"
+    },
+    {
+     "lat": 37.524225,
+     "lon": 127.047375,
+     "name": "End – Cheongdam crossing (청담사거리)",
+     "desc": "Official end of the K-Star Road main line. K-pop agency buildings stand around the crossing. They are working offices: photograph from the pavement and keep voices down.",
+     "icon": "end",
+     "naver_id": "18808558"
+    },
+    {
+     "lat": 37.525058,
+     "lon": 127.054398,
+     "name": "Yeongdong Bridge south junction (영동대교 남단 교차로)",
+     "desc": "Optional extension: walk on to Yeongdong Bridge and the Han River park for the sunset view.",
+     "icon": "viewpoint",
+     "naver_id": "18807188"
+    }
+   ]
+  },
+  {
+   "name": "Public toilets, K-Star Road (공중화장실)",
+   "pins": [
+    {
+     "lat": 37.5271,
+     "lon": 127.0405,
+     "name": "Toilet – Apgujeong Rodeo Station (압구정로데오역 개방화장실)",
+     "desc": "Open toilet in the Bundang-line station, next to the start.",
+     "icon": "toilet",
+     "naver_id": "1056883223"
+    },
+    {
+     "lat": 37.5273,
+     "lon": 127.0357,
+     "name": "Toilet – Apgujeong lifelong learning centre (압구정평생학습관 개방화장실)",
+     "desc": "Open toilet at the community centre, 400 m west of the station towards Dosan Park.",
+     "icon": "toilet",
+     "naver_id": "38739656"
+    },
+    {
+     "lat": 37.524149,
+     "lon": 127.036203,
+     "name": "Toilet – Dosan Park, accessible (도산공원 장애인용화장실)",
+     "desc": "Accessible public toilet at the park.",
+     "icon": "toilet",
+     "naver_id": "36502624"
+    },
+    {
+     "lat": 37.5229,
+     "lon": 127.037,
+     "name": "Toilet – CGV Cheongdam Cine City (씨네시티 개방화장실)",
+     "desc": "Open toilet in the cinema building on Dosan-daero.",
+     "icon": "toilet",
+     "naver_id": "38742546"
+    },
+    {
+     "lat": 37.5251,
+     "lon": 127.0493,
+     "name": "Toilet – Cheongdam Culture Centre (청담문화센터 개방화장실)",
+     "desc": "Open toilet at the community centre, 200 m east of Cheongdam crossing.",
+     "icon": "toilet",
+     "naver_id": "38739817"
+    }
+   ]
+  },
+  {
+   "name": "Restaurants & view cafés, K-Star Road (checked 2026-10-22)",
+   "pins": [
+    {
+     "lat": 37.52435,
+     "lon": 127.040947,
+     "name": "Guillaume Cheongdam – dessert café (기욤 청담점)",
+     "desc": "Patisserie café on Seolleung-ro 152-gil, a queue-worthy stop between the Rodeo station and Cheongdam. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "13093133"
+    },
+    {
+     "lat": 37.526582,
+     "lon": 127.044098,
+     "name": "Bashe Coffee Cheongdam flagship (바샤커피 청담 플래그십 스토어)",
+     "desc": "Flagship of the Scandinavian-German coffee house on Apgujeong-ro, on the K-Star Road line. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1206714553"
+    },
+    {
+     "lat": 37.524058,
+     "lon": 127.038282,
+     "name": "Standard Bread Dosan – bakery café (스탠다드브레드 도산)",
+     "desc": "Popular bakery café near Dosan Park. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1207231213"
+    },
+    {
+     "lat": 37.524493,
+     "lon": 127.038002,
+     "name": "Iyaiya & Friends Dosan – brunch (이야이야앤프렌즈 도산)",
+     "desc": "Two-floor brunch café near Dosan Park. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1571415075"
+    },
+    {
+     "lat": 37.5246,
+     "lon": 127.0398,
+     "name": "Tartine Bakery Cheongdam (타르틴베이커리 청담점)",
+     "desc": "Bakery café on the lane behind the Rodeo street. Still in business on Naver as of 2026-10-22.",
+     "icon": "cafe",
+     "naver_id": "1568338879"
+    },
+    {
+     "lat": 37.525518,
+     "lon": 127.038802,
+     "name": "Shabu in Seoul – shabu-shabu (샤브인서울 압구정로데오점)",
+     "desc": "Shabu-shabu restaurant in the Rodeo lanes, one of the most reviewed places on the walk. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1798086565"
+    },
+    {
+     "lat": 37.527439,
+     "lon": 127.038429,
+     "name": "Hippo Apgujeong Rodeo – Vietnamese (힙포 압구정로데오 본점)",
+     "desc": "Vietnamese restaurant a few minutes west of the station. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "2024847766"
+    },
+    {
+     "lat": 37.524431,
+     "lon": 127.04361,
+     "name": "Cheongdam Makoto – Japanese (청담 마코토)",
+     "desc": "Japanese restaurant on Apgujeong-ro 80-gil near the Cheongdam end. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "20451517"
+    },
+    {
+     "lat": 37.52464,
+     "lon": 127.042681,
+     "name": "Osteria Eden – Italian brunch (오스테리아 에덴)",
+     "desc": "Italian restaurant and brunch place on Seolleung-ro 152-gil. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1073371702"
+    },
+    {
+     "lat": 37.5251,
+     "lon": 127.0488,
+     "name": "Cheongdam Haejeong – Korean (청담해정)",
+     "desc": "Korean restaurant next to the Cheongdam crossing. Still in business on Naver as of 2026-10-22.",
+     "icon": "restaurant",
+     "naver_id": "1006524862"
+    }
+   ]
+  }
+ ]
+}

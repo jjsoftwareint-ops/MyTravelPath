@@ -318,7 +318,7 @@ export const cities: City[] = [
         description:
           'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Plus Garosu-gil in Sinsa-dong and the Banpo Bridge fountain with Sevit Island on the Han River. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
         duration: '2h',
-        updated: '2026-10-21',
+        updated: '2026-10-22',
         notices: [
           {
             icon: '⛲',
@@ -331,7 +331,7 @@ export const cities: City[] = [
         image: 'gangnam.jpg',
         imageCredit: 'Photo: 최광모 · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1VIazL8nrcXwzKDjTxKyxrbKGaNR9NYg',
-        keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'Garosugil', 'BanpoBridge', 'MoonlightRainbowFountain', 'SevitIsland', 'StarfieldLibrary', 'Bongeunsa', 'KoreaTravel'],
+        keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'Garosugil', 'KStarRoad', 'Apgujeong', 'BanpoBridge', 'MoonlightRainbowFountain', 'SevitIsland', 'StarfieldLibrary', 'Bongeunsa', 'KoreaTravel'],
         guide: {
           intro: [
             "🌃 **Gangnam Station** is where office Seoul lets its hair down. The main road is all towers and screens, but behind it is a dense grid of restaurants, bars, karaoke rooms and late shops that fills up the moment work ends. I have picked out the **three back streets** worth walking after dark and two short strolls from the station exits.",
@@ -343,6 +343,7 @@ export const cities: City[] = [
             "Gangnam Station exit 10, north along Gangnam-daero to the Kakao Friends flagship store, 0.3 km with the whole street lit by screens.",
             "Exit 11 to CGV Gangnam, the site of the old Dong-A Theatre, 0.4 km the other way.",
             "Pinned for daytime: Starfield Library in COEX mall and Bongeunsa temple opposite it, both at Samseong Station, two stops east on line 2.",
+            "K-Star Road, about 1 km from Galleria West to Cheongdam crossing: Gangnam-gu's walking route past the Gangnam-dol photo house, the Rodeo street, a figure museum and the Dosan Park end, with the K-pop agency streets at Cheongdam. A good daytime walk before the night streets; toilets, brunch cafés and restaurants are pinned on the map. Gangnam-gu's own [K-Star Road guidebook (English PDF, large file)](https://www.gangnam.go.kr/etc/k_star_road_en/Gangnam_KSTARROAD_Guidebook%28EN%29.pdf) has the full zone-by-zone list.",
             "Garosu-gil, 1 km from Sinsa Station exit 8: 250 m along Dosan-daero, then the 700 m avenue of ginkgo trees north to Apgujeong-ro, flagship stores on the street and the quieter boutiques in the side lanes. Best in the late afternoon, yellow in early November.",
             "Banpo Bridge Moonlight Rainbow Fountain and Sevit Island: 15 min from Express Bus Terminal Station exit 8-1 through the underpass to Banpo Hangang Park. Watch the 19:30 or 20:00 show from the lawn, then walk over to the lit floating islands for the close-up view.",
           ],
