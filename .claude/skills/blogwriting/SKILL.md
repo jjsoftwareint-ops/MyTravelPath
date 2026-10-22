@@ -139,16 +139,27 @@ and the guide text, not prose to paste. Full rules and outlines: [docs/reddit-po
 
 ## 6c. Threads posts (docs/threads/<path>.md)
 
-Standing rule (2026-10-22, after the Naksan post got no reach): **post 1 must carry the topic in its own
-text**. Threads allows one topic per post, typed with `#` in the composer, and it is the main discovery lever.
-The composer suggests topics as the user types, so give 4–5 candidates (most specific first, e.g.
-`#NaksanPark`, `#SeoulCityWall`, `#SeoulTravel`) and put the first in the draft; the user picks from
-Threads' own suggestions (Threads calls it a **topic**, not a hashtag). A "Topic tag: …" note in the doc is not
-enough; write the tag as the last line of the post 1 code block. Threads **cannot edit a post after a short
-window**, so the topic, photos and a clear opening must be right *before* the user posts; say so when handing
-over. Also: name the place and the hook in the first sentence (search and the algorithm read it), include
-one or two photos (Commons, with credit, like docs/threads/inwangsan/), and keep the map link in the last
-post. Posts stay under 500 characters each; the user posts them.
+Standing rules (2026-10-22, after the Naksan chain got almost no views; reach is also limited by account
+size, so none of this is guaranteed):
+
+- **Topic, not hashtag.** Threads calls it a *topic*: one per post, typed with `#` in the composer, and the
+  composer suggests topics as the user types. **Post 1 must carry it in its own text** (a "Topic: …" note in
+  the doc is not enough): put the first candidate as the last line of the post 1 block and list 4–5
+  candidates, most specific first (`#NaksanPark`, `#SeoulCityWall`, `#SeoulTravel`); the user picks from
+  Threads' suggestions. Threads **cannot edit a post after a short window**, so the topic, photo and opening
+  must be right *before* posting; say so when handing over.
+- **Post 1 stands alone.** Give the finished plan in it (place, distance, time, when to start), not a story
+  that needs the replies. Name the place and the hook in the first sentence. Chains of long story text get
+  skipped, so keep post 1 short and put detail in the replies.
+- **Photo first.** One photo on post 1, ideally the user's own (ask for one); Commons with credit is the
+  fallback (docs/threads/inwangsan/ for the format).
+- **End post 1 with an easy question** ("Sunset or night: which do you prefer in Seoul?"): replies are what
+  make Threads show a post to more people.
+- **The map link goes in the last reply** (links in a main post get less reach) **and in the profile bio**:
+  few readers reach the last reply, so post 1 can end with "map link in my bio".
+- Each post stays under 500 characters. Suggest small follow-up posts (one view, one tip, one food stop) and
+  replying to other Seoul/Korea travel accounts without links; tell the user to check Threads insights after
+  each post and keep what works. The user posts everything.
 
 ## 7. URLs, pre-rendering and the sitemap
 

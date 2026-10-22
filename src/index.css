@@ -966,3 +966,8 @@ button.cta {
     padding-bottom: 28px;
   }
 }
+
+/* A supplied banner photo is shown whole, at its own ratio, never cropped */
+.path-image.whole img {
+  height: auto;
+}

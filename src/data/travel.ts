@@ -38,6 +38,7 @@ export type TravelPath = {
   tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
   image?: string // file in ./assets, shown as a banner above the description on the detail page
   imageCredit?: string // shown as a small label on the banner
+  imageWhole?: boolean // show the banner uncropped at its own ratio (a supplied photo), not as the slim band
   screenshot?: string // file in ./assets: a map screenshot shown under the map, for where Google Maps is inaccurate
   screenshotCaption?: string // one line under the screenshot, naming the source
   mapUrl: string
@@ -682,12 +683,14 @@ export const cities: City[] = [
       },
       {
         id: 'gyeyangsan',
-        name: 'Gyeyangsan hiking',
+        name: 'Gyeyangsan Hiking',
         description:
           'Three ways up Incheon\'s highest peak (395 m): the deck-stair trail from the Gyeyang Park office, the gentler museum and open-air stage route, and the forest climb from Yeonmujeong pavilion, plus the walk from Gyesan Station.',
         duration: '2–3h',
         updated: '2026-10-22',
         tags: [{ icon: 'hiking', label: 'Hiking' }, { icon: 'moon', label: 'Night hiking' }],
+        image: 'gyeyangsan.png',
+        imageWhole: true,
         screenshot: 'gyeyangsan-naver-map.png',
         screenshotCaption: 'Naver Map: the Gyeyangsan courses and trailheads. Google Maps does not show these trails accurately.',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1XTAYMo1N6LQjXbxIkmdwxT_JUpNReGY',

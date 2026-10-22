@@ -66,7 +66,13 @@ export default function PathDetail() {
           className={ready ? "card path-card" : "card path-card disabled"}
         >
           {path.image && (
-            <span className="card-image path-image">
+            <span
+              className={
+                path.imageWhole
+                  ? "card-image path-image whole"
+                  : "card-image path-image"
+              }
+            >
               <img
                 src={`${import.meta.env.BASE_URL}${path.image}`}
                 alt=""
