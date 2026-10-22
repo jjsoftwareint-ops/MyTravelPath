@@ -38,6 +38,8 @@ export type TravelPath = {
   tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
   image?: string // file in ./assets, shown as a banner above the description on the detail page
   imageCredit?: string // shown as a small label on the banner
+  screenshot?: string // file in ./assets: a map screenshot shown under the map, for where Google Maps is inaccurate
+  screenshotCaption?: string // one line under the screenshot, naming the source
   mapUrl: string
 }
 
@@ -675,6 +677,39 @@ export const cities: City[] = [
             "👟 The main street and the mural streets are steep; the Fairy Tale Village and the Japanese street are flat. Allow two to three hours including a meal.",
             "⏰ Weekends are crowded. A weekday late morning is calmer, and the lanterns look best after dark.",
             "🍜 With time left, the Wolmi Sea Train next to Incheon Station runs out to Wolmido island, and Sinpo Market is ten minutes past the Japanese street.",
+          ],
+        },
+      },
+      {
+        id: 'gyeyangsan',
+        name: 'Gyeyangsan hiking',
+        description:
+          'Three ways up Incheon\'s highest peak (395 m): the deck-stair trail from the Gyeyang Park office, the gentler museum and open-air stage route, and the forest climb from Yeonmujeong pavilion, plus the walk from Gyesan Station.',
+        duration: '2–3h',
+        updated: '2026-10-22',
+        tags: [{ icon: 'hiking', label: 'Hiking' }, { icon: 'moon', label: 'Night hiking' }],
+        screenshot: 'gyeyangsan-naver-map.png',
+        screenshotCaption: 'Naver Map: the Gyeyangsan courses and trailheads. Google Maps does not show these trails accurately.',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1XTAYMo1N6LQjXbxIkmdwxT_JUpNReGY',
+        keywords: ['Incheon', 'Gyeyangsan', 'NightHiking', 'IncheonHiking', 'DayTripFromSeoul', 'GyesanStation', 'HikingKorea', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "⛰️ **Gyeyangsan** is Incheon's highest mountain at **395 m**, and the nearest proper hike from Gyesan Station on Incheon Line 1. Three trails climb it from the south-east, all ending at the octagonal pavilion on the summit.",
+            "The routes share the ridge trail for the upper part, so pick by the **start**: steep and quick, gentle and slower, or a forest climb. Each is 1.2 to 1.6 km and takes 40 minutes to about an hour and a quarter one way.",
+          ],
+          route: [
+            "Route 1, Gyeyang Park Management Office (next to Kyungin Women's University): deck stairs the whole way, about 40 to 50 minutes. The fastest way up.",
+            "Route 2, Gyeyangsanseong Museum and the open-air stage: the gentler start, about 1 h 15 min, joining the park-office trail after 350 m.",
+            "Route 3, Yeonmujeong pavilion: a forest climb that meets the ridge trail after about 500 m, about 1 h to 1 h 10 min.",
+            "Summit: Gyeyangsan summit and octagonal pavilion, open on all sides.",
+            "From Gyesan Station exit 5 the museum is 0.7 km on streets and Imhak Park 0.9 km. A short connector links Yeonmujeong with Imhak Park past the forest bathing area.",
+          ],
+          tips: [
+            "🚇 Getting there: Incheon Line 1 to Gyesan Station, exit 5, then 10 minutes on foot to the museum trailhead.",
+            "🚻 There is one public toilet, just above the park-office trailhead. None higher up, so go before you climb.",
+            "🔦 This is a night hike, so bring a torch or headlamp and keep your phone battery for the way down.",
+            "👟 The deck stairs are steep but safe; sturdy shoes and water are enough.",
+            "📍 Google Maps does not draw these trails correctly, so use the Naver Map screenshot under the map.",
           ],
         },
       },

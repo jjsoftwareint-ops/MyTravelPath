@@ -309,6 +309,21 @@ a:focus-visible {
 .path-image {
   margin: -16px -16px 6px;
 }
+.map-shot {
+  margin: 0;
+}
+.map-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.map-shot figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
 .cta {
   display: flex;
   align-items: center;

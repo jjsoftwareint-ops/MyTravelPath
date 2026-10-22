@@ -137,6 +137,19 @@ moderator post, on the day. List the rules that apply and how the outline meets 
 self-promotion, say so and do not draft. Only then hand over a fact outline drawn from the kmz pins
 and the guide text, not prose to paste. Full rules and outlines: [docs/reddit-posts.md](../../../docs/reddit-posts.md).
 
+## 6c. Threads posts (docs/threads/<path>.md)
+
+Standing rule (2026-10-22, after the Naksan post got no reach): **post 1 must carry the topic in its own
+text**. Threads allows one topic per post, typed with `#` in the composer, and it is the main discovery lever.
+The composer suggests topics as the user types, so give 4–5 candidates (most specific first, e.g.
+`#NaksanPark`, `#SeoulCityWall`, `#SeoulTravel`) and put the first in the draft; the user picks from
+Threads' own suggestions (Threads calls it a **topic**, not a hashtag). A "Topic tag: …" note in the doc is not
+enough; write the tag as the last line of the post 1 code block. Threads **cannot edit a post after a short
+window**, so the topic, photos and a clear opening must be right *before* the user posts; say so when handing
+over. Also: name the place and the hook in the first sentence (search and the algorithm read it), include
+one or two photos (Commons, with credit, like docs/threads/inwangsan/), and keep the map link in the last
+post. Posts stay under 500 characters each; the user posts them.
+
 ## 7. URLs, pre-rendering and the sitemap
 
 Every page has a real URL with a trailing slash: `https://koreatravelpath.com/<city>/<path>/`. `npm run build`

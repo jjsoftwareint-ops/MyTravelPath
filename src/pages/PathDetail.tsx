@@ -128,6 +128,20 @@ export default function PathDetail() {
             </div>
           )}
 
+          {path.screenshot && (
+            <figure className="map-shot">
+              <img
+                src={`${import.meta.env.BASE_URL}${path.screenshot}`}
+                alt={`${path.name} trail map`}
+                loading="lazy"
+                decoding="async"
+              />
+              {path.screenshotCaption && (
+                <figcaption>{path.screenshotCaption}</figcaption>
+              )}
+            </figure>
+          )}
+
           <div className="notice">
             <ImInfo className="notice-icon" aria-hidden="true" />
             <ul className="notice-list">
