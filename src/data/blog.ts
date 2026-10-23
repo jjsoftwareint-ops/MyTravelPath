@@ -36,6 +36,122 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'why-young-koreans-love-pansori',
+    title: 'The Korean concert where yelling at the singer is polite',
+    description:
+      'Pansori is old Korean storytelling in song, and the crowd is meant to shout. Why young people love it now, the tiger song everyone hummed, and where to see it live.',
+    teaser: 'Plus the tiger song everyone hummed.',
+    icon: 'drum',
+    date: '2026-10-23',
+    updated: '2026-10-23',
+    keywords: ['KoreaTravel', 'Pansori', 'Gugak', 'Leenalchi', 'KoreanMusic', 'KoreaTrends'],
+    body: [
+      {
+        type: 'p',
+        text: 'A man hits a drum. A woman sings for hours, playing every character in the story. And the audience keeps yelling at her. On purpose.',
+      },
+      {
+        type: 'p',
+        text: 'That is [판소리](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC) (pansori), and the yelling is part of the deal. When the singer nails a line, you shout **얼쑤!** (eolssu!), which means roughly "yes, go on!". The shouts have a name, [추임새](https://www.google.com/search?tbm=isch&q=%EC%B6%94%EC%9E%84%EC%83%88) (chuimsae).',
+      },
+      {
+        type: 'p',
+        text: 'A concert where heckling is encouraged. We love it already.',
+      },
+      {
+        type: 'img',
+        src: 'pansori-unhyeongung.jpg',
+        alt: 'A pansori performance on an outdoor stage: a singer in a pink and yellow hanbok stands, while a drummer in white sits cross-legged with a barrel drum',
+        caption: 'One singer, one drummer: a pansori show at Unhyeongung, Seoul, 2013.',
+        href: 'https://commons.wikimedia.org/wiki/File:Pansori_performance_in_Unhyeon_Palace_1.jpg',
+        credit: { author: 'Wikimedia Commons contributor', license: 'Public domain', licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/' },
+      },
+      {
+        type: 'p',
+        text: 'The singer is the [소리꾼](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC%20%EC%86%8C%EB%A6%AC%EA%BE%BC) (sorikkun) and the drummer is the [고수](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC%20%EA%B3%A0%EC%88%98) (gosu). The drummer is no sidekick. He shouts back too.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'p',
+        text: 'Honestly, for a long time we thought of it as school-trip stuff.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'tiger_face', text: 'Then a tiger showed up' },
+      {
+        type: 'p',
+        text: 'A band called [이날치](https://www.google.com/search?tbm=isch&q=%EC%9D%B4%EB%82%A0%EC%B9%98%20%EB%B0%B4%EB%93%9C) (Leenalchi) took a scene from the epic [수궁가](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC%20%EC%88%98%EA%B6%81%EA%B0%80) (Sugungga), the one about a tiger, and put a dance beat under it. The song is [범 내려온다](https://www.google.com/search?tbm=isch&q=%EC%9D%B4%EB%82%A0%EC%B9%98%20%EB%B2%94%20%EB%82%B4%EB%A0%A4%EC%98%A8%EB%8B%A4) (beom naeryeoonda), "the tiger comes down".',
+      },
+      {
+        type: 'p',
+        text: 'Suddenly everyone was quoting it. There was even a meme, **1일 1범** (il-il beom), "one tiger a day", like a daily vitamin.',
+      },
+      {
+        type: 'p',
+        text: 'Reports say the tourism board videos using it were watched hundreds of millions of times across platforms. For a song about a tiger, from a very old epic. Fine by us.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'microphone', text: 'Song So-hee, the plot twist' },
+      {
+        type: 'p',
+        text: 'One small detail first. [송소희](https://www.google.com/search?tbm=isch&q=%EC%86%A1%EC%86%8C%ED%9D%AC) (Song So-hee) is a folk singer, [경기민요](https://www.google.com/search?tbm=isch&q=%EA%B2%BD%EA%B8%B0%EB%AF%BC%EC%9A%94) (Gyeonggi minyo), not a pansori singer. They are two kinds of traditional Korean singing, like cousins.',
+      },
+      {
+        type: 'p',
+        text: 'She was the child star everyone called [국악소녀](https://www.google.com/search?tbm=isch&q=%EA%B5%AD%EC%95%85%EC%86%8C%EB%85%80%20%EC%86%A1%EC%86%8C%ED%9D%AC) (gugak-sonyeo), "the traditional music girl". She grew up. Reports say she now plays big festival stages and writes rock songs that keep her folk voice.',
+      },
+      { type: 'h', icon: 'musical_note', text: 'Hear her' },
+      {
+        type: 'list',
+        items: [
+          '[Not a Dream](https://www.youtube.com/results?search_query=%EC%86%A1%EC%86%8C%ED%9D%AC+Not+a+Dream): a live clip of this song, before it was even released, reportedly passed 13 million views. It came out properly in March 2025.',
+          '[함바칼레](https://www.youtube.com/results?search_query=%EC%86%A1%EC%86%8C%ED%9D%AC+%ED%95%A8%EB%B0%94%EC%B9%BC%EB%A0%88) (Hamba Kahle): the title song of her EP Re:5, which she performed at a big indoor festival this year.',
+          '[설화](https://www.youtube.com/results?search_query=%EC%86%A1%EC%86%8C%ED%9D%AC+%EC%84%A4%ED%99%94+%EB%B0%80%EC%96%91%EC%95%84%EB%A6%AC%EB%9E%91) (seolhwa): her fresh take on the folk song Miryang Arirang, from 2019.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The links open a YouTube search, so you pick the version you like.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'thinking_face', text: 'Why does it work?' },
+      {
+        type: 'p',
+        text: 'Our guesses, no science:',
+      },
+      {
+        type: 'list',
+        items: [
+          '**It sounds like nothing on your playlist.** The voice bends, cracks and growls. Autotune cannot do that.',
+          '**Pop is crowded.** A real pansori in a sea of idol songs stands out like a hanbok in a nightclub.',
+          '**The memes made it safe.** Someone called it **조선의 힙스터** (Joseon-ui hipseuteo), the "Joseon hipster". Once it is a joke, it is allowed to be cool.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Some fans of the old style roll their eyes at three-minute remixes. Fair. But think of the remix as the trailer, and the live show as the movie.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'compass', text: 'Catch it live' },
+      {
+        type: 'list',
+        items: [
+          'The [국립국악원](https://www.google.com/search?tbm=isch&q=%EA%B5%AD%EB%A6%BD%EA%B5%AD%EC%95%85%EC%9B%90) (Gungnip Gugagwon, National Gugak Center) in Seoul puts on traditional shows. A news report says foreigners were about a third of the audience at its Saturday shows in July, so you will not be the only one.',
+          'One travel guide says state-run theatres close online booking at 6 pm the day before. We could not confirm it, so check the official site.',
+          'Bring your **얼쑤** (eolssu). If the show invites you to shout, shout.',
+        ],
+      },
+      { type: 'space' },
+      {
+        type: 'verdict',
+        text: '**Our verdict:** start with the tiger, stay for the drum.',
+      },
+      {
+        type: 'p',
+        text: 'Be honest: did you hum **범 내려온다** (beom naeryeoonda) while reading this? Tell us on the Contact page.',
+      },
+    ],
+  },
+  {
     id: 'palace-dates-and-museum-shops',
     title: 'The hottest date spot in Seoul is 600 years old',
     description:

@@ -20,7 +20,7 @@ export default function VisitorCount() {
   return (
     <p className="visitors">
       <FaPersonWalkingLuggage aria-hidden="true" />
-      <b>{count}</b> travelers visited my travel path
+      <b>{count}</b> visited my travel path
     </p>
   );
 }
