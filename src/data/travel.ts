@@ -726,7 +726,7 @@ export const cities: City[] = [
       },
       {
         id: 'gyeyangsan',
-        name: 'Gyeyangsan Hiking',
+        name: 'Gyeyangsan Night Hiking',
         description:
           'Three ways up Incheon\'s highest peak (395 m): the deck-stair trail from the Gyeyang Park office, the gentler museum and open-air stage route, and the forest climb from Yeonmujeong pavilion, plus the walk from Gyesan Station.',
         duration: '2–3h',
