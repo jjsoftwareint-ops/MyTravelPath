@@ -70,7 +70,7 @@ export const posts: Post[] = [
       {
         type: 'list',
         items: [
-          '**Quiet.** After a month of queueing for 버터떡, a palace courtyard feels like a deep breath.',
+          '**Quiet.** After a month of queueing for 버터떡 (beoteo-tteok), a palace courtyard feels like a deep breath.',
           '**Cheap.** A palace ticket costs a few thousand won, and visitors in hanbok get in free.',
           '**Pretty without trying.** Stone, tiled roofs, a mountain behind them. The photos take themselves.',
           '**It is having a moment.** Reports say Korea\'s national museums passed 10 million visitors in a year for the first time, and Gyeongbokgung drew a record of about 6.9 million in 2025.',
@@ -91,22 +91,22 @@ export const posts: Post[] = [
         text: 'Museums too. The shop in a European museum sells postcards. Here, it sells a tiny Buddha that keeps selling out.',
       },
       { type: 'ad', slot: 'inArticle' },
-      { type: 'h', icon: 'teddy_bear', text: '뮷즈: souvenirs with a story' },
+      { type: 'h', icon: 'teddy_bear', text: '뮷즈 (myut-jeu): souvenirs with a story' },
       {
         type: 'p',
-        text: '**뮷즈** is the National Museum of Korea\'s goods line, a mash-up of museum and goods: things shaped like the museum\'s treasures.',
+        text: '**뮷즈** (myut-jeu) is the National Museum of Korea\'s goods line, a mash-up of museum and goods: things shaped like the museum\'s treasures.',
       },
       {
         type: 'img',
         src: 'pensive-bodhisattva.jpg',
         alt: 'The gilt-bronze Pensive Bodhisattva, a slim seated figure with one leg crossed and a hand raised to the cheek',
-        caption: 'A 반가사유상 (Pensive Bodhisattva) from the museum, the kind of treasure the miniatures copy.',
+        caption: 'A 반가사유상 (banga-sayusang, the Pensive Bodhisattva) from the museum, the kind of treasure the miniatures copy.',
         href: 'https://commons.wikimedia.org/wiki/File:Pensive_Bodhisattva_01.jpg',
         credit: { author: '국립중앙박물관 (National Museum of Korea)', license: 'KOGL Type 1', licenseUrl: 'https://www.kogl.or.kr/info/licenseType1.do' },
       },
       {
         type: 'p',
-        text: 'The star is a tiny **반가사유상** figure. More than 60,000 have sold in total, and it kept selling out after BTS\'s RM was reported to own one.',
+        text: 'The star is a tiny **반가사유상** (banga-sayusang) figure. More than 60,000 have sold in total, and it kept selling out after BTS\'s RM was reported to own one.',
       },
       {
         type: 'p',
@@ -140,7 +140,7 @@ export const posts: Post[] = [
         items: [
           'Gyeongbokgung is closed on **Tuesdays**. Plan around it.',
           'Rent a hanbok around Anguk. Wearers get into the royal palaces free.',
-          'Check the 생과방 dates on Ticketlink before you fly, and enter the lottery early.',
+          'Check the 생과방 (saenggwabang) dates on Ticketlink before you fly, and enter the lottery early.',
         ],
       },
       { type: 'space' },
@@ -185,21 +185,21 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'Is it a little funny that people then photograph their notebooks for Instagram? There is even a hashtag, #필사스타그램. Yes, it is funny. We love it anyway.',
+        text: 'Is it a little funny that people then photograph their notebooks for Instagram? There is even a hashtag, #필사스타그램 (pilsa-stagram). Yes, it is funny. We love it anyway.',
       },
       { type: 'space' },
-      { type: 'h', icon: 'ribbon', text: '다꾸 and 신꾸: decorate everything' },
+      { type: 'h', icon: 'ribbon', text: '다꾸 (dakku) and 신꾸 (sinkku): decorate everything' },
       {
         type: 'p',
-        text: '**다꾸** (dakku) is short for 다이어리 꾸미기, decorating your diary. Stickers, washi tape, tiny clippings, a page that ends up looking like a collage.',
+        text: '**다꾸** (dakku) is short for 다이어리 꾸미기 (daieori kkumigi), decorating your diary. Stickers, washi tape, tiny clippings, a page that ends up looking like a collage.',
       },
       {
         type: 'p',
-        text: 'Then the habit escaped the notebook. Korean news calls it **별다꾸**, "decorating everything": phones, tumblers, bags, and shoes.',
+        text: 'Then the habit escaped the notebook. Korean news calls it **별다꾸** (byeol-dakku), "decorating everything": phones, tumblers, bags, and shoes.',
       },
       {
         type: 'p',
-        text: 'Shoes even have their own word, **신꾸** (sinkku), from 신발 꾸미기. Earlier this year jelly shoes brought it roaring back, with charms and pins in every hole. One fashion app reported jelly-shoe sales up more than forty times over a year, and Dongdaemun market became the place to decorate them on the spot.',
+        text: 'Shoes even have their own word, **신꾸** (sinkku), from 신발 꾸미기 (sinbal kkumigi). Earlier this year jelly shoes brought it roaring back, with charms and pins in every hole. One fashion app reported jelly-shoe sales up more than forty times over a year, and Dongdaemun market became the place to decorate them on the spot.',
       },
       {
         type: 'p',
@@ -214,7 +214,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'Korea has "slow mailboxes", **느린 우체통**. You write a letter to yourself or someone you love, and it arrives up to a year later. A Seoul news report from January says the experience at the letter museum in Dobong (편지문학관) is popular.',
+        text: 'Korea has "slow mailboxes", **느린 우체통** (neurin ucheton). You write a letter to yourself or someone you love, and it arrives up to a year later. A Seoul news report from January says the experience at the letter museum in Dobong (편지문학관, pyeonji-munhakgwan) is popular.',
       },
       {
         type: 'p',
@@ -264,7 +264,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'Koreans even have a word for the sprint before opening time: **open-run** (오픈런). People show up before the doors do.',
+        text: 'Koreans even have a word for the sprint before opening time: **open-run** (오픈런, opeun-reon). People show up before the doors do.',
       },
       { type: 'p', text: 'So the question every visitor ends up asking: is it actually worth it?' },
       { type: 'space' },
@@ -297,7 +297,7 @@ export const posts: Post[] = [
         type: 'img',
         src: 'mango-pomelo-sago.jpg',
         alt: 'A square bowl of mango pomelo sago: yellow mango pieces, pomelo and tiny sago pearls in a creamy mango base',
-        caption: 'Mango pomelo sago, the Hong Kong dessert behind 양쯔깐루.',
+        caption: 'Mango pomelo sago, the Hong Kong dessert behind 양쯔깐루 (Yangzhi Ganlu).',
         href: 'https://commons.wikimedia.org/wiki/File:MangoPomeloSago_1.jpg',
         credit: { author: 'Thomas.Lu', license: 'CC BY 3.0', licenseUrl: 'https://creativecommons.org/licenses/by/3.0/' },
       },
@@ -307,7 +307,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'And the cycle is fast. Yakgwa, tanghulu, Dubai chocolate, 두쫀쿠, now butter rice cake: Korean news keeps pointing out that a dessert craze can be over in a few months. Earlier this year, reports from Seongsu even mentioned weekend waits of several hours for the hottest ones. By the time you read this, the line may have moved on to something else.',
+        text: 'And the cycle is fast. Yakgwa, tanghulu, Dubai chocolate, 두쫀쿠 (dujjonku), now butter rice cake: Korean news keeps pointing out that a dessert craze can be over in a few months. Earlier this year, reports from Seongsu even mentioned weekend waits of several hours for the hottest ones. By the time you read this, the line may have moved on to something else.',
       },
       { type: 'space' },
       { type: 'h', icon: 'round_pushpin', text: 'Where the lines gather' },

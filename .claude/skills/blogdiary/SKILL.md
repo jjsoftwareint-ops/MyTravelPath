@@ -38,8 +38,15 @@ Blocks (`type`): `p` (one short paragraph, RichText markup: `**highlight**`, `[l
 - Friendly, free, first-person plural ("we", "our verdict") like the rest of the site, sometimes
   critical, with opinions and small asides. Trendy or interesting Korea topics, not only paths.
 - Short sentences, contractions, plain words. Vary the shape and length of posts.
-- Korean names for foods, trends and places are welcome next to the English, e.g.
-  `**버터떡** (beoteo-tteok)`. The post itself is in English.
+- Korean names for foods, trends and places are welcome, e.g. `**버터떡** (beoteo-tteok)`. The post
+  itself is in English.
+- **Every Hangul word gets its English pronunciation in parentheses, every time it appears**, not only
+  the first (standing rule, 2026-10-23: the user caught missing ones). That includes headings, captions,
+  list items and hashtags: `뮷즈 (myut-jeu)`, `#필사스타그램 (pilsa-stagram)`. Add a meaning when it helps
+  (`다이어리 꾸미기 (daieori kkumigi), decorating a diary`). Use the Revised Romanization. Exceptions:
+  `teaser` lines and `credit` names, which stay compact, and a word whose English form is the gloss
+  (`Hongdae (홍대)` is fine in either order).
+- Before finishing a post, run `grep -n "[가-힣]" src/data/blog.ts` and check each hit has its pronunciation.
 - Avoid the AI tells: "dive in", "delve", "in conclusion", "whether you're X or Y", "a testament to",
   "bustling", "hidden gem", "vibrant tapestry", "game-changer", rhetorical "But here's the thing",
   stacked triples in every paragraph, em dashes (use a comma or a full stop), a recap paragraph.
@@ -127,7 +134,7 @@ Noto Sans KR, Roboto.
 
 1. User gives a topic (or Claude proposes one) → research → draft the entry → `npm run build` → screenshot at phone
    width (390px) → user reviews. **No commit or push until told** (CLAUDE.md).
-2. Per post: every Korean term has an English gloss · a visual for any dish or object nobody could picture
+2. Per post: every Hangul word has its pronunciation in parentheses (grep check in section 2) and an English gloss · a visual for any dish or object nobody could picture
    (free photo, or tell the user none exists; never a look-alike passed off as the thing) · `teaser` is a few
    keywords · `id` unique and URL-safe · `date`/`updated` set · `keywords` · description under ~160
    characters · newest first in the array · no invented experiences · facts sourced and dated ·
