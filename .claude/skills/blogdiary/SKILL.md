@@ -106,6 +106,15 @@ The user wants posts written from Claude's own knowledge and research (standing 
   (path names are the CLDR name, e.g. `Round pushpin`/`round_pushpin_3d.png`), shrink with
   `sips -Z 144`. Pick cute or funny ones, and don't use an emoji that misstates the topic (🏯 is a
   *Japanese* castle, so palace posts use a lantern or teacup instead).
+- **No free photo? Link the dish name to Google Images** (the user's idea, 2026-10-23: images are
+  copyright-limited, so don't embed unlicensed ones; and no "See photos" label, the name itself is the link).
+  In the text write `[두쫀쿠](https://www.google.com/search?tbm=isch&q=<URL-encoded keyword>) (dujjonku)`,
+  with the pronunciation after the link. Use the Korean name (best results), keep it specific
+  (`상하이 버터떡`, not `버터떡`), and never hotlink or copy the images themselves.
+  Link **every Korean-named food, trend, place or object the first time it appears** (not repeats, not headings,
+  not things that already have a photo in the post), so readers can see what it is. RichText links open
+  in a new tab. Inside a post they look exactly like `**highlighted**` words (bold, marker underline) plus
+  an always-visible underline in the accent colour (orange, never black) so they read as links (user's rule, 2026-10-23: keep the font style).
 - Free photos, shown whole, wrapped in a link to the source page with a credit line (author, licence,
   "via Wikimedia Commons"). The user's rule: only images that carry no copyright worry, so prefer CC0 /
   public domain / KOGL Type 1, then CC BY, and check each file's licence on its Commons page.

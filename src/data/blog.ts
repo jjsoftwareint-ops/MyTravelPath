@@ -6,7 +6,7 @@ export type Block =
   | { type: 'emoji'; name: string } // big 3D emoji (assets/emoji/<name>.png) as a visual rest
   | { type: 'space' } // extra breathing room
   | { type: 'list'; items: string[] }
-  | { type: 'dishes'; items: { icon: string; text: string }[] } // list with a 3D emoji per item (file name in assets/emoji/), a stand-in picture when no free photo exists
+  | { type: 'dishes'; items: { icon: string; text: string }[] } // list with a 3D emoji per item (file name in assets/emoji/); when no free photo exists, the dish name in `text` is a Google Images link
   | { type: 'table'; head: string[]; rows: string[][] }
   | { type: 'quote'; text: string }
   | { type: 'verdict'; text: string }
@@ -52,7 +52,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'More and more Koreans in their 20s and 30s pick the palace. The word going around is **궁캉스** (gungkangseu): 궁 (palace) plus 바캉스 (vacance, as in holiday). A staycation, but royal.',
+        text: 'More and more Koreans in their 20s and 30s pick the palace. The word going around is [궁캉스](https://www.google.com/search?tbm=isch&q=%EA%B6%81%EC%BA%89%EC%8A%A4) (gungkangseu): 궁 (palace) plus 바캉스 (vacance, as in holiday). A staycation, but royal.',
       },
       {
         type: 'img',
@@ -95,7 +95,7 @@ export const posts: Post[] = [
       { type: 'h', icon: 'teddy_bear', text: '뮷즈 (myut-jeu): souvenirs with a story' },
       {
         type: 'p',
-        text: '**뮷즈** (myut-jeu) is the National Museum of Korea\'s goods line, a mash-up of museum and goods: things shaped like the museum\'s treasures.',
+        text: '[뮷즈](https://www.google.com/search?tbm=isch&q=%EB%AE%B7%EC%A6%88) (myut-jeu) is the National Museum of Korea\'s goods line, a mash-up of museum and goods: things shaped like the museum\'s treasures.',
       },
       {
         type: 'img',
@@ -107,7 +107,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'The star is a tiny **반가사유상** (banga-sayusang) figure. More than 60,000 have sold in total, and it kept selling out after **BTS\'s RM** was reported to own one.',
+        text: 'The star is a tiny [반가사유상](https://www.google.com/search?tbm=isch&q=%EB%B0%98%EA%B0%80%EC%82%AC%EC%9C%A0%EC%83%81%20%EB%AF%B8%EB%8B%88%EC%96%B4%EC%B2%98) (banga-sayusang) figure. More than 60,000 have sold in total, and it kept selling out after **BTS\'s RM** was reported to own one.',
       },
       {
         type: 'p',
@@ -121,7 +121,7 @@ export const posts: Post[] = [
       { type: 'h', icon: 'teacup_without_handle', text: 'The palace tea room' },
       {
         type: 'p',
-        text: 'The hardest ticket might be **경복궁 생과방** (Gyeongbokgung Saenggwabang), a seasonal royal tea room where you eat the kind of sweets served at court.',
+        text: 'The hardest ticket might be [경복궁 생과방](https://www.google.com/search?tbm=isch&q=%EA%B2%BD%EB%B3%B5%EA%B6%81%20%EC%83%9D%EA%B3%BC%EB%B0%A9) (Gyeongbokgung Saenggwabang), a seasonal royal tea room where you eat the kind of sweets served at court.',
       },
       {
         type: 'p',
@@ -172,7 +172,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'Welcome to **필사** (pilsa), which simply means "copying by hand". And no, it is not homework.',
+        text: 'Welcome to [필사](https://www.google.com/search?tbm=isch&q=%ED%95%84%EC%82%AC) (pilsa), which simply means "copying by hand". And no, it is not homework.',
       },
       { type: 'space' },
       { type: 'h', icon: 'books', text: 'Pilsa: slow reading, on purpose' },
@@ -192,15 +192,15 @@ export const posts: Post[] = [
       { type: 'h', icon: 'ribbon', text: '다꾸 (dakku) and 신꾸 (sinkku): decorate everything' },
       {
         type: 'p',
-        text: '**다꾸** (dakku) is short for 다이어리 꾸미기 (daieori kkumigi), decorating your diary. Stickers, washi tape, tiny clippings, a page that ends up looking like a collage.',
+        text: '[다꾸](https://www.google.com/search?tbm=isch&q=%EB%8B%A4%EA%BE%B8) (dakku) is short for 다이어리 꾸미기 (daieori kkumigi), decorating your diary. Stickers, washi tape, tiny clippings, a page that ends up looking like a collage.',
       },
       {
         type: 'p',
-        text: 'Then the habit escaped the notebook. Korean news calls it **별다꾸** (byeol-dakku), "decorating everything": phones, tumblers, bags, and shoes.',
+        text: 'Then the habit escaped the notebook. Korean news calls it [별다꾸](https://www.google.com/search?tbm=isch&q=%EB%B3%84%EB%8B%A4%EA%BE%B8) (byeol-dakku), "decorating everything": phones, tumblers, bags, and shoes.',
       },
       {
         type: 'p',
-        text: 'Shoes even have their own word, **신꾸** (sinkku), from 신발 꾸미기 (sinbal kkumigi). Earlier this year jelly shoes brought it roaring back, with charms and pins in every hole. One fashion app reported jelly-shoe sales up more than forty times over a year, and Dongdaemun market became the place to decorate them on the spot.',
+        text: 'Shoes even have their own word, [신꾸](https://www.google.com/search?tbm=isch&q=%EC%8B%A0%EA%BE%B8) (sinkku), from 신발 꾸미기 (sinbal kkumigi). Earlier this year jelly shoes brought it roaring back, with charms and pins in every hole. One fashion app reported jelly-shoe sales up more than forty times over a year, and Dongdaemun market became the place to decorate them on the spot.',
       },
       {
         type: 'p',
@@ -211,11 +211,11 @@ export const posts: Post[] = [
       { type: 'h', icon: 'love_letter', text: 'The handwritten letter is back' },
       {
         type: 'p',
-        text: 'This is our favourite part. The **손편지** (sonpyeonji), the handwritten letter, is having a quiet comeback.',
+        text: 'This is our favourite part. The [손편지](https://www.google.com/search?tbm=isch&q=%EC%86%90%ED%8E%B8%EC%A7%80) (sonpyeonji), the handwritten letter, is having a quiet comeback.',
       },
       {
         type: 'p',
-        text: 'Korea has "slow mailboxes", **느린 우체통** (neurin ucheton). You write a letter to yourself or someone you love, and it arrives up to a year later. A Seoul news report from January says the experience at the letter museum in Dobong (편지문학관, pyeonji-munhakgwan) is popular.',
+        text: 'Korea has "slow mailboxes", [느린 우체통](https://www.google.com/search?tbm=isch&q=%EB%8A%90%EB%A6%B0%20%EC%9A%B0%EC%B2%B4%ED%86%B5) (neurin ucheton). You write a letter to yourself or someone you love, and it arrives up to a year later. A Seoul news report from January says the experience at the letter museum in Dobong (편지문학관, pyeonji-munhakgwan) is popular.',
       },
       {
         type: 'p',
@@ -288,9 +288,9 @@ export const posts: Post[] = [
       {
         type: 'dishes',
         items: [
-          { icon: 'cookie', text: '**두쫀쿠** (dujjonku), the Dubai chewy cookie that started the run.' },
-          { icon: 'butter', text: '**버터떡** (beoteo-tteok), the "Shanghai butter rice cake": chewy inside, crisp at the edges.' },
-          { icon: 'baguette_bread', text: '**초코바게트** (choco baguette), a baguette with a deep, dark chocolate flavour.' },
+          { icon: 'cookie', text: '[두쫀쿠](https://www.google.com/search?tbm=isch&q=%EB%91%90%EC%AB%80%EC%BF%A0) (dujjonku), the Dubai chewy cookie that started the run.' },
+          { icon: 'butter', text: '[버터떡](https://www.google.com/search?tbm=isch&q=%EC%83%81%ED%95%98%EC%9D%B4%20%EB%B2%84%ED%84%B0%EB%96%A1) (beoteo-tteok), the "Shanghai butter rice cake": chewy inside, crisp at the edges.' },
+          { icon: 'baguette_bread', text: '[초코바게트](https://www.google.com/search?tbm=isch&q=%EC%B4%88%EC%BD%94%EB%B0%94%EA%B2%8C%ED%8A%B8) (choco baguette), a baguette with a deep, dark chocolate flavour.' },
           { icon: 'mango', text: '**양쯔깐루** (Yangzhi Ganlu), the Hong Kong style mango dessert with sago.' },
         ],
       },
@@ -319,8 +319,8 @@ export const posts: Post[] = [
       {
         type: 'list',
         items: [
-          '**연무장길** (Yeonmujang-gil) in Seongsu. The main street of the old warehouse district, lined with pop-up spaces, bakeries and brunch spots. Weekends are the busiest, and some pop-ups hand out queue tickets or want a reservation on the day.',
-          '**Hongdae** (홍대). Cafés, snack stalls and dessert shops all around the station. Lines tend to be longest on weekends, afternoon into evening.',
+          '[연무장길](https://www.google.com/search?tbm=isch&q=%EC%84%B1%EC%88%98%20%EC%97%B0%EB%AC%B4%EC%9E%A5%EA%B8%B8) (Yeonmujang-gil) in Seongsu. The main street of the old warehouse district, lined with pop-up spaces, bakeries and brunch spots. Weekends are the busiest, and some pop-ups hand out queue tickets or want a reservation on the day.',
+          '[Hongdae](https://www.google.com/search?tbm=isch&q=%ED%99%8D%EB%8C%80) (홍대). Cafés, snack stalls and dessert shops all around the station. Lines tend to be longest on weekends, afternoon into evening.',
         ],
       },
       {

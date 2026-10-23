@@ -1434,3 +1434,14 @@ button.cta {
   transition: none;
   cursor: auto;
 }
+
+/* Links inside a post keep the look of **highlighted** words, plus an always-visible underline */
+.post-body a.link {
+  font-weight: 700;
+  background: linear-gradient(transparent 62%, var(--pill) 62%);
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
