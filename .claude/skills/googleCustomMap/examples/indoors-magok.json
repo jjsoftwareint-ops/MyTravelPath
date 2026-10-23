@@ -1,0 +1,140 @@
+{
+ "name": "Indoors Trip – Magok, Gangseo-gu (마곡 실내 데이트)",
+ "desc": "Warm, roof-covered spots around Magok (Gangseo-gu, Seoul): a greenhouse botanic park, malls, an arts centre, cafés and lunch, then the Han River Bus to Yeouido for the night view. Locations and information only, no route line. Coordinates from Naver Map. Timestamps are from the video '겨울에 춥지 않게, 실내 위주로 즐긴 마곡 데이트' (가희드 gahiiide); hours and prices are as given in the video description, so check Naver before you go.",
+ "link": "https://www.youtube.com/watch?v=8wDR6_VVPkQ",
+ "layers": [
+  {
+   "name": "Indoor spots (실내 명소)",
+   "pins": [
+    {
+     "lat": 37.569419,
+     "lon": 126.835031,
+     "name": "Seoul Botanic Park (서울식물원)",
+     "icon": "park",
+     "naver_id": "1932878505",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221107_278%2F16678003154765lmfT_JPEG%2F%25C0%25FC%25BD%25C3%25BF%25C2%25BD%25C7_%25BE%25DF%25B0%25A3.jpg",
+     "desc": "Maguk-dong-ro 161. A botanic park in the middle of the city with a big greenhouse, so you get nature in all four seasons even in winter (video 01:04). Getting there: Magoknaru Stn exits 3 or 4, walk towards the Open Forest (열린숲); or Yangcheon Hyanggyo Stn exit 8, towards the Theme Garden (주제원). Theme Garden hours: Mar–Oct 09:30–18:00 (last ticket 17:00), Nov–Feb 09:30–17:00 (last ticket 16:00). Closed Mondays. Tickets: adult 5,000 won, teen 3,000, child 2,000; free for under 5, over 65 and national merit holders; group discount from 30 people."
+    },
+    {
+     "lat": 37.561025,
+     "lon": 126.824834,
+     "name": "One Grove Magok (원그로브 마곡)",
+     "icon": "market",
+     "naver_id": "1156806624",
+     "desc": "Gonghang-daero 165. A big indoor mall complex with restaurants and shops under one roof (video 06:25). The video also shows how much Magok has changed (05:41)."
+    },
+    {
+     "lat": 37.566189,
+     "lon": 126.826097,
+     "name": "COEX Magok (코엑스 마곡)",
+     "icon": "market",
+     "naver_id": "1864658626",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241127_48%2F1732701181498eYYmx_JPEG%2F%25C4%25DA%25BF%25A2%25BD%25BA_%25B8%25B6%25B0%25EE%25C4%25C1%25BA%25A5%25BC%25C7%25BC%25BE%25C5%25CD_%25C0%25FC%25B0%25E6-5_%25281%2529.jpg",
+     "desc": "Magokjungang-ro 143. An indoor complex with many restaurants on the lower floors (video 09:37)."
+    },
+    {
+     "lat": 37.564899,
+     "lon": 126.829219,
+     "name": "LG Arts Center Seoul (LG아트센터 서울)",
+     "icon": "hall",
+     "naver_id": "11576168",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220621_125%2F1655784935828QYSV6_JPEG%2F20220621510467.jpg",
+     "desc": "Magokjungang-ro 136. Performing arts venue designed by Tadao Ando (video 10:21). Hours 10:00–23:00; closed Mondays. Café La Copella is on the 2nd floor."
+    }
+   ]
+  },
+  {
+   "name": "Restaurants & cafés (checked 2026-10-23)",
+   "pins": [
+    {
+     "lat": 37.569248,
+     "lon": 126.826691,
+     "name": "Bogyeong Sujebi (보경손수제비)",
+     "icon": "restaurant",
+     "naver_id": "1209394004",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20171113_199%2F1510557529817pvKE7_JPEG%2FshfkJNZOisIZyRyqlox9z0A8.jpg",
+     "desc": "Magokjungang-ro 161-8, Doosan The Land Park A-dong, room 209. A favourite of Magok office workers for good value (video 11:14). Hand-pulled dough soup (sujebi) 8,500 won, kimchi fried rice 8,500. The broth is spicy and refreshing even without kimchi. Weekday lunch can have a wait."
+    },
+    {
+     "lat": 37.562277,
+     "lon": 126.825899,
+     "name": "Cafe Gongmyeong Magok Chaekppang (카페 공명 마곡책빵)",
+     "icon": "cafe",
+     "naver_id": "2009835554",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260430_91%2F1777544138872O2PCf_JPEG%2F1.jpg",
+     "desc": "Magokjungang-ro 105-7, K Square Tower 3, ground floor. A café with a book lounge feel (video 08:30). Open daily 07:00–22:00."
+    },
+    {
+     "lat": 37.568715,
+     "lon": 126.826551,
+     "name": "Tardema Bakery Magoknaru (타르데마 베이커리 마곡나루)",
+     "icon": "cafe",
+     "naver_id": "1421001231",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260930_224%2F1790700102956kGvHn_JPEG%2F%25C7%25C7%25B5%25E500001.jpg",
+     "desc": "Magokjungang 5-ro 1-gil 20, Botanic Biz Tower, ground floor. Loved for its salt bread (video 12:03): a set of 7 salt breads 14,000 won, churros 1,800. Open daily 09:00–19:30 (Mon–Tue until 19:00). This branch is mostly takeaway; the Seoul Botanic Park and Banghwa branches are bigger."
+    },
+    {
+     "lat": 37.565807,
+     "lon": 126.829371,
+     "name": "Café La Copella (카페 라코펠라)",
+     "icon": "cafe",
+     "naver_id": "1920920142",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240416_72%2F1713275241950rfTBz_JPEG%2F20240411_143934.jpg",
+     "desc": "2nd floor of LG Arts Center Seoul, Magokjungang-ro 136 (video 10:21). A café where you feel the space of Tadao Ando's architecture, with a terrace view of Seoul Botanic Park. Open 11:00–20:00; closed Mondays."
+    }
+   ]
+  },
+  {
+   "name": "Han River Bus (한강버스)",
+   "pins": [
+    {
+     "lat": 37.57503,
+     "lon": 126.843943,
+     "name": "Han River Bus – Magok pier (한강버스 마곡선착장)",
+     "icon": "harbor",
+     "naver_id": "2141488615",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260814_55%2F1786696309340VfeUk_JPEG%2F%25C7%25D1%25B0%25AD%25B9%25F6%25BD%25BA_%25BF%25EE%25C7%25D7_%25BD%25C3%25B0%25A3%25C7%25A5_%25B8%25AE%25B4%25BA%25BE%25F3.jpg",
+     "desc": "Gangseo Hangang Park-gil 545. Take the boat from Magok to Yeouido and see Seoul's night view from the river (video 12:49). As of the video: only Magok ↔ Yeouido ran (Jamsil, Ttukseom, Oksu and Apgujeong piers were closed for safety checks). First departure 09:00, last arrival 21:37; every 90 minutes, 8 trips a day; 3,000 won one way, no transfer discount. Timetable and routes may have changed since, so check before you go."
+    },
+    {
+     "lat": 37.52889,
+     "lon": 126.934467,
+     "name": "Han River Bus – Yeouido pier (한강버스 여의도선착장)",
+     "icon": "harbor",
+     "naver_id": "2142548670",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260814_293%2F1786695830390cdamj_JPEG%2F%25C7%25D1%25B0%25AD%25B9%25F6%25BD%25BA_%25BF%25EE%25C7%25D7_%25BD%25C3%25B0%25A3%25C7%25A5_%25B8%25AE%25B4%25BA%25BE%25F3.jpg",
+     "desc": "Yeodong-ro 338. The other end of the Han River Bus line from Magok. See the Magok pier for fares and times, and check the current timetable."
+    }
+   ]
+  },
+  {
+   "name": "Public toilets (공중화장실)",
+   "pins": [
+    {
+     "lat": 37.566178,
+     "lon": 126.829686,
+     "name": "Seoul Botanic Park toilet, near LG Arts Center (서울식물원 화장실)",
+     "icon": "toilet",
+     "naver_id": "4418834994",
+     "desc": "Magokjungang-ro 136, by the park's east gate and LG Arts Center."
+    },
+    {
+     "lat": 37.565402,
+     "lon": 126.833059,
+     "name": "Seoul Botanic Park toilet, south (서울식물원 화장실)",
+     "icon": "toilet",
+     "naver_id": "4371527586",
+     "desc": "Inside Seoul Botanic Park, south side."
+    },
+    {
+     "lat": 37.570428,
+     "lon": 126.834252,
+     "name": "Seoul Botanic Park toilet, north (서울식물원 화장실)",
+     "icon": "toilet",
+     "naver_id": "4221120686",
+     "desc": "Inside Seoul Botanic Park, north side."
+    }
+   ]
+  }
+ ]
+}

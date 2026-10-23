@@ -10,7 +10,7 @@ spec.json:
     { "name": "Ascent",  "line": {"name": "...", "color": "D93025"},        # RRGGBB; optional "width" (default 4)
       "segments": [ {"label": "...", "approx": false, "coords": "lat,lon lat,lon ..."}, ... ],
       "more_lines": [ {"name": "...", "coords": "lat,lon ..."} ],   # optional: extra separate lines, same colour
-      "pins": [ {"lat": 0, "lon": 0, "name": "1. ...", "desc": "...", "icon": "start", "naver_id": "..."}, ... ] },
+      "pins": [ {"lat": 0, "lon": 0, "name": "1. ...", "desc": "...", "icon": "start", "naver_id": "...", "image": "https://… (optional)"}, ... ] },
     { "name": "Restaurants", "pins": [ ... ] }
   ]
 }
@@ -81,6 +81,8 @@ def main():
         for w in layer.get('pins', []):
             iid, color, _, _ = ICONS[w['icon']]
             desc = with_korean_line(w.get('desc', ''), w['name']) + f'<br><a href="{naver_url(w["lat"], w["lon"], w.get("naver_id"), w.get("address"))}">Open Naver Map</a>'
+            if w.get('image'):  # hotlinked Naver/Google place photo (no copyright issue as a link), only for important pins
+                desc = f'<img src="{w["image"]}" width="300"><br>' + desc
             K.append(f"<Placemark><name>{esc(pin_name(w['name']))}</name><description><![CDATA[{desc}]]></description>"
                      f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
             report.append(f"    [{w['icon']:>11}] {w['name']}")

@@ -14,6 +14,7 @@ Two products, chosen by what the user wants (their standing preference, 2026-09-
 
 | **Layered KML** (hike with a separate up/down line colour + a restaurants layer) | `<Name>.kml` | `layers_kml.py` | examples/inwangsan-en.json |
 | **Multi-route KMZ** (several walks as pink lines + flower pins; user asked for .kmz) | `<Name>.kmz` = zipped `doc.kml` | `layers_kml.py`, then `zipfile` | examples/cherry-blossom.json |
+| **Locations only, no line** (indoor/"where to go" videos, e.g. Indoors Trip) | `<Name>.kmz` | transcript/description → Naver pins → `layers_kml.py` (layers with `pins` only, no `line`) → zip as `doc.kml` | examples/indoors-magok.json |
 | **Long trail routes** (Jeju Olle, one colour per route + toilets/medical layer) | `<Name>.kmz` | OSM relation → `relation_chain.py` → `route.py` gaps → `layers_kml.py` | examples/jeju-olle-5-7.json |
 
 Route KML and CSV overlays exist but are only produced on request.
@@ -78,6 +79,37 @@ wall path has 5–20 m node gaps that make Valhalla detour 2.5 km, so chain the 
 for summit → junction legs; the B-course stairs are boardwalk way 1314758863 ending opposite Choso Bookshop.
 
 ## Hard rules
+
+- **Place photos on important pins** (user rule 2026-10-23: "add image from now on in .kmz"; hotlinked, so no
+  copyright issue). Pin spec field `"image": "<url>"` → `layers_kml.py` puts `<img src=… width="300">` at the top
+  of the description. Source: the `og:image` meta tag of the pin's Naver place page,
+  `https://m.place.naver.com/place/<id>/home` with an iPhone User-Agent (`re.search(r'og:image" content="([^"]*)"')`,
+  then `html.unescape`). It is Naver's own main photo for the place, served from `search.pstatic.net/common/?…`, loads
+  without a Referer (HTTP 200, checked), and some places have none (a building entry like 원그로브: leave it
+  out and say so). Pace 2 s between pages. **No image on unimportant pins**: toilets, first-aid kits, stamp
+  boxes, junction/waypoint dots, car parks. Attractions, parks, malls, venues, restaurants, cafés, piers get one.
+- **Blue is for toilets only** (user rule 2026-10-23: "don't put blue color for the locations except toilet, it's
+  mixed with already existing location in Google Map"). Every other icon in `build_gpx.ICONS` is green `0F9D58`,
+  pink `E91E63` (food, drink, viewpoints), red `DB4437` (end flag, medical, dots, tents) or purple `7B1FA2` (stamps).
+  Never add a new place icon with `4186F0`. **Whenever you create or modify a kmz (the user's standing
+  instruction, 2026-10-23), apply this and the photo rule to the whole file**, existing pins included: recolour every blue
+  non-toilet style with `restyle_kmz.py file.kmz icon-<id>-4186F0=<key> …` (id → key from `build_gpx.ICONS`) and add
+  `<img>` photos to important pins that lack one. Files you do not touch stay as they are.
+- **Adding to an existing kmz: save a copy under a new name** (e.g. `Jeju Olle Trail 5-7 (with attractions).kmz`),
+  never overwrite the original unasked; build the new layer with `layers_kml.py`, splice its `<Style>`/`<StyleMap>`
+  blocks (skip ids already present) after the last existing style and its `<Folder>` before `</Document>`, check
+  first whether the place is already pinned (distance to existing pins, `<20 m` = skip and just add the photo to the
+  existing pin's description), validate with `minidom`, run the `*CLICK*` and Hangul-title checks. Example:
+  examples/olle-5-7-attractions.json.
+- **Video descriptions are often the best source**: Korean YouTubers (가희드, etc.) list every place with road
+  address, hours, prices and a chapter timeline in the description. Use it when the transcript fetch fails
+  (`youtube_transcript_api` installed into `./pylib` may be an old version without `.fetch`/with empty responses,
+  2026-10-23). Put the video timestamps into the pin descriptions, tell the user which hours/prices come from the
+  video (may be out of date), and re-verify openness with `naver_status.py`.
+- **Toilet search when the area has no line:** `naver_place.py "<place> 화장실"` per major stop (e.g. 서울식물원 화장실
+  returned three real park toilets); generic `공중화장실 --near` lists the nearest in the district, often > 500 m
+  away. Pin only toilets that are really in the stop's area; state that building toilets (malls, arts centres) are
+  not pinned.
 
 - **Every path map gets a public-toilet layer** (user rule 2026-10-21: "when you draw path always put public
   toilets location together"). For every new or rebuilt route, sweep for toilets within ~150 m of the line
