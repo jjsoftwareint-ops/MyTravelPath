@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
+import VisitorCount from "../components/VisitorCount";
 import { cities } from "../data/travel";
 import { usePageMeta } from "../seo";
 
@@ -24,6 +25,8 @@ export default function Home() {
           <li>Restaurant, café and event information is regularly updated.</li>
         </ul>
       </div>
+
+      <VisitorCount />
 
       <ul className="list">
         {cities.map((city) => {

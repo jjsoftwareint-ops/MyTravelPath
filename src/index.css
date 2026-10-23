@@ -724,6 +724,18 @@ a:focus-visible {
 .notice-icon.announce {
   color: light-dark(#f37a24, #fb923c); /* mandarin */
 }
+.visitors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+  color: var(--muted, inherit);
+}
+.visitors b {
+  font-weight: 700;
+}
 .content > .notice {
   margin-bottom: 14px; /* home page: notice above the list */
 }
