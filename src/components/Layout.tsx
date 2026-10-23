@@ -12,10 +12,12 @@ type Props = {
   icon?: ReactNode
   /** Extra header buttons shown right of the theme toggle, e.g. the share button on a path page. */
   actions?: ReactNode
+  /** Hide the Saved paths link on phones, where the header is short of space (a path page has its own save button). */
+  hideSaved?: boolean
   children: ReactNode
 }
 
-export default function Layout({ title, subtitle, backTo, icon, actions, children }: Props) {
+export default function Layout({ title, subtitle, backTo, icon, actions, hideSaved, children }: Props) {
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -29,7 +31,10 @@ export default function Layout({ title, subtitle, backTo, icon, actions, childre
   }, [])
   return (
     <div className="screen">
-      <header className={backTo !== undefined ? "header detail" : "header"} ref={headerRef}>
+      <header
+        className={`${backTo !== undefined ? "header detail" : "header"}${hideSaved ? " hide-saved" : ""}`}
+        ref={headerRef}
+      >
         {backTo !== undefined ? (
           <Link to={backTo} className="back" aria-label="Back">
             ‹

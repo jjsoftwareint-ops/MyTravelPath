@@ -60,6 +60,7 @@ export default function PathDetail() {
       title={path.name}
       subtitle={city.name}
       backTo={`/${city.id}`}
+      hideSaved
       actions={<ShareLink compact title={`${path.name} (${city.name})`} />}
     >
       <div className={path.guide ? "path-layout" : "path-layout solo"}>

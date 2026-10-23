@@ -1014,6 +1014,11 @@ button.cta {
   width: 20px;
   height: 20px;
 }
+@media (max-width: 759px) {
+  .header.hide-saved .bookmark-button {
+    display: none;
+  }
+}
 .bookmark-count {
   position: absolute;
   top: -4px;
