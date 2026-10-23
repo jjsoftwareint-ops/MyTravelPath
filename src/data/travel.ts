@@ -775,6 +775,14 @@ export const cities: City[] = [
           ],
         },
       },
+      {
+        id: 'wolmido-sunset',
+        name: 'Wolmido Sunset',
+        description: 'An evening on Wolmido island by the Incheon waterfront. Map coming soon.',
+        updated: '2026-10-23',
+        tags: [{ icon: 'sunset', label: 'Evening walk' }],
+        mapUrl: 'REPLACE_ME',
+      },
     ],
   },
   {
@@ -789,6 +797,42 @@ export const cities: City[] = [
         description: 'A walk along the 18th-century fortress wall of Suwon. Map coming soon.',
         updated: '2026-10-23',
         mapUrl: 'REPLACE_ME',
+      },
+    ],
+  },
+  {
+    id: 'gyeonggi-do',
+    name: 'Gyeonggi-do',
+    image: 'gyeonggi.jpg',
+    imageCredit: 'Photo: Korea Tourism Organization · KOGL 1',
+    paths: [
+      {
+        id: 'gapyeong',
+        name: 'Gapyeong',
+        description: 'A day trip east of Seoul to the lakes, islands and gardens of Gapyeong: Petite France, Morning Calm Arboretum, Jara Island, Gapyeong Rail Park, Italian Village, Homyeong Lake and Nami Island. Map coming soon.',
+        duration: 'Day trip',
+        updated: '2026-10-23',
+        keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'PetiteFrance', 'MorningCalmArboretum', 'JaraIsland', 'RailPark', 'HomyeongLake', 'KoreaTravel'],
+        mapUrl: 'REPLACE_ME',
+        guide: {
+          intro: [
+            "🌿 **Gapyeong** is the green day trip east of Seoul: a lake and river valley with islands, gardens and themed villages, all in one county. The map is on its way; here is what will be on it.",
+            "The seven stops are spread over a wide area, so this is a **pick two or three** kind of day, not a single walk.",
+          ],
+          route: [
+            "Petite France: a French-themed village on the hillside.",
+            "Morning Calm Arboretum: the garden of the morning calm, for a slow walk among the plantings.",
+            "Jara Island: a long island in the river, flat and open.",
+            "Gapyeong Rail Park: rides on the old railway line.",
+            "Italian Village: an Italian-style village to stroll through.",
+            "Homyeong Lake: a mountain lake with a view over the valley.",
+            "Nami Island: the famous tree-lined island, reached by boat.",
+          ],
+          tips: [
+            "🗺️ Map coming soon, with every stop pinned and a toilet layer.",
+            "🚌 The stops are far apart, so plan a car, taxi or bus between them rather than walking.",
+          ],
+        },
       },
     ],
   },

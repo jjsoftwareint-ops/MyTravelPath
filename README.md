@@ -92,9 +92,11 @@ All allow free use; the credit is given in every case.
   CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_1-1_03.jpg
 - Incheon card photo: *Incheon Grand Bridge*, Cameron Henderson, public domain.
+  https://commons.wikimedia.org/wiki/File:Incheon_Grand_Bridge.jpg
 - Suwon card photo: *방화수류정 Banghwa Suryu Pavilion, Hwaseong Fortress*, 김병모, CC0,
   [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%EB%B0%A9%ED%99%94%EC%88%98%EB%A5%98%EC%A0%95_Banghwa_Suryu_Pavilion,_Hwaseong_Fortress.jpg).
-  https://commons.wikimedia.org/wiki/File:Incheon_Grand_Bridge.jpg
+- Gyeonggi-do card photo: *Gapyeong-eup, Gapyeong-gun, Gyeonggi-do*, Korea Tourism Organization,
+  KOGL Type 1. https://commons.wikimedia.org/wiki/File:Gapyeong-eup,_Gapyeong-gun,_Gyeonggi-do.jpg
 - Incheon China Town path banner: *Chinatown, incheon 20230430 002* (the 1st Paeru gate),
   Mobius6, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Chinatown,_incheon_20230430_002.jpg
 - Hongdae Hot Places path banner: *Hongdae Party District at Night, Seoul*, Ken Eckert,
