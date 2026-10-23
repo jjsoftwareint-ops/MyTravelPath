@@ -130,15 +130,10 @@ Pretendard (now used for Korean text only) is shipped as 92 small `unicode-range
 measured) instead of one 2 MB+ Hangul font. Do not delete slices by hand. Fallbacks: Apple SD Gothic Neo,
 Noto Sans KR, Roboto.
 
-## 6c. Share images (link previews)
+## 6c. Share images
 
-Every post and the blog list have their own 1200x630 share image, `assets/og/<post id>.jpg` (`blog.jpg`
-for the list), wired as `og:image` / `twitter:image` / JSON-LD in `src/seo.ts` (width, height and alt
-are added automatically). Make them with `python3 scripts/blog-og.py` (macOS, Chrome headless): add the
-post to `CARDS`, drop its photo in `scripts/og-src/` (1600px wide if possible), or use a 3D emoji tile
-when there is no free photo. **A new post needs its share image before it is pushed**, otherwise the
-link falls back to a missing file. Facebook/Threads cache previews for days: after fixing one, refresh
-it in Meta's Sharing Debugger.
+Blog pages use the site's default `og.jpg` as the link preview. Custom per-post share cards were built
+and rejected by the user on 2026-10-23 ("we don't need this weird images"), so do not make them unless asked.
 
 ## 7. Routine and checklist
 
@@ -148,5 +143,5 @@ it in Meta's Sharing Debugger.
    (free photo, or tell the user none exists; never a look-alike passed off as the thing) · `teaser` is a few
    keywords · `id` unique and URL-safe · `date`/`updated` set · `keywords` · description under ~160
    characters · newest first in the array · no invented experiences · facts sourced and dated ·
-   images credited or captioned · share image in `assets/og/` · at most two in-article `ad` blocks · build passes and
+   images credited or captioned · at most two in-article `ad` blocks · build passes and
    `dist/blog/<id>/index.html` exists.

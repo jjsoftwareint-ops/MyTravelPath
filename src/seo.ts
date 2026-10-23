@@ -12,6 +12,7 @@ const HOME_TITLE = "My Travel Path – free walking routes in Korea";
 const HOME_DESCRIPTION =
   "Free walking routes for travellers in Korea: Seoul, Busan, Jeju and Incheon. Each path opens in Google My Maps, with Naver Map links for every stop. No sign-up.";
 const DEFAULT_IMAGE = `${SITE_URL}/og.jpg`;
+const ICON_IMAGE = `${SITE_URL}/icon-512.png`; // small square preview card, used by the blog list
 const PUBLISHER = { "@type": "Organization", name: "JJ SOFTWARE", url: SITE_URL };
 
 export type PageMeta = {
@@ -112,7 +113,7 @@ export function pageMeta(pathname: string): PageMeta {
       title: `${s.title} | ${SITE_NAME}`,
       description: s.description,
       keywords: [],
-      image: a === "blog" ? `${SITE_URL}/og/blog.jpg` : DEFAULT_IMAGE,
+      image: a === "blog" ? `${SITE_URL}/icon-512.png` : DEFAULT_IMAGE,
       type: "website",
       updated: s.updated,
       jsonLd: {
@@ -129,7 +130,7 @@ export function pageMeta(pathname: string): PageMeta {
   if (a === "blog" && b) {
     const post = findPost(b);
     if (post) {
-      const image = `${SITE_URL}/og/${post.id}.jpg`;
+      const image = DEFAULT_IMAGE;
       return {
         path,
         title: `${post.title} | ${SITE_NAME} Blog`,
@@ -257,12 +258,12 @@ export function renderHeadTags(m: PageMeta): string {
     `<meta property="og:description" content="${esc(m.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
     `<meta property="og:image" content="${m.image}" />`,
-    m.image === DEFAULT_IMAGE
+    m.image === ICON_IMAGE
+      ? `<meta property="og:image:width" content="512" />\n    <meta property="og:image:height" content="512" />\n    <meta property="og:image:alt" content="The My Travel Path icon" />`
+      : m.image === DEFAULT_IMAGE
       ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="Bukchon hanok rooftops with the Seoul skyline, and the My Travel Path icon" />`
-      : m.image.includes("/og/")
-        ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${esc(m.title)}" />`
-        : "",
-    `<meta name="twitter:card" content="summary_large_image" />`,
+      : "",
+    `<meta name="twitter:card" content="${m.image === ICON_IMAGE ? "summary" : "summary_large_image"}" />`,
     `<meta name="twitter:title" content="${esc(m.title)}" />`,
     `<meta name="twitter:description" content="${esc(m.description)}" />`,
     `<meta name="twitter:image" content="${m.image}" />`,
