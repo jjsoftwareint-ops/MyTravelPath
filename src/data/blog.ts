@@ -37,7 +37,7 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: 'why-young-koreans-love-pansori',
-    title: 'The Korean concert where yelling at the singer is polite',
+    title: 'Why is a centuries-old song style suddenly cool?',
     description:
       'Pansori is old Korean storytelling in song, and the crowd is meant to shout. Why young people love it now, the tiger song everyone hummed, and where to see it live.',
     teaser: 'Plus the tiger song everyone hummed.',
