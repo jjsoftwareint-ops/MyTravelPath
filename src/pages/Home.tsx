@@ -4,7 +4,7 @@ import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import VisitorCount from "../components/VisitorCount";
-import { cities } from "../data/travel";
+import { cities, hasMap } from "../data/travel";
 import { usePageMeta } from "../seo";
 
 // The expanded city lives in the URL (/:cityId) so that coming back from a
@@ -79,7 +79,7 @@ export default function Home() {
                       <Link to={`/${city.id}/${path.id}`} className="child">
                         <span className="card-body">
                           <span className="card-title">{path.name}</span>
-                          <Tags tags={path.tags} duration={path.duration} />
+                          <Tags tags={path.tags} duration={path.duration} soon={!hasMap(path)} />
                         </span>
                         <span className="chevron">›</span>
                       </Link>

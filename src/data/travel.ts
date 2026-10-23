@@ -403,6 +403,13 @@ export const cities: City[] = [
           ],
         },
       },
+      {
+        id: 'indoors',
+        name: 'Indoors',
+        description: 'Rainy-day and winter-day spots under a roof: museums, markets, malls and cafés. Map coming soon.',
+        updated: '2026-10-23',
+        mapUrl: 'REPLACE_ME',
+      },
     ],
   },
   {
@@ -767,6 +774,21 @@ export const cities: City[] = [
             "📍 Google Maps does not draw these trails correctly, so use the Naver Map screenshot under the map.",
           ],
         },
+      },
+    ],
+  },
+  {
+    id: 'suwon',
+    name: 'Suwon',
+    image: 'suwon.jpg',
+    imageCredit: 'Photo: 김병모 · CC0',
+    paths: [
+      {
+        id: 'hwaseong',
+        name: 'Hwaseong Fortress',
+        description: 'A walk along the 18th-century fortress wall of Suwon. Map coming soon.',
+        updated: '2026-10-23',
+        mapUrl: 'REPLACE_ME',
       },
     ],
   },

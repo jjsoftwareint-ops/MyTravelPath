@@ -257,6 +257,10 @@ a:focus-visible {
   color: var(--text);
 }
 /* One hue per tag, picked for its meaning; light-dark() follows color-scheme. */
+.pill.soon {
+  background: light-dark(#f3f4f6, #374151);
+  color: light-dark(#4b5563, #d1d5db);
+}
 .pill.tag-hiker {
   background: light-dark(#dcfce7, #14532d);
   color: light-dark(#166534, #bbf7d0);
