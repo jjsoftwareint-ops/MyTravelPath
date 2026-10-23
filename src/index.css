@@ -1423,3 +1423,14 @@ button.cta {
   height: 1em;
   vertical-align: -0.12em;
 }
+
+/* A post is text to read and select, not a button: no press or hover effects from .card */
+.post,
+.post:hover,
+.post:active {
+  transform: none;
+  background: var(--paper);
+  border-color: var(--paper-line);
+  transition: none;
+  cursor: auto;
+}

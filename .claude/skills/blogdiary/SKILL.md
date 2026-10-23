@@ -82,6 +82,9 @@ The user wants posts written from Claude's own knowledge and research (standing 
 ## 4. Layout: easy on the eyes, not a book
 
 - Paragraphs of 1–3 lines, one idea per block, space between thoughts (`space` blocks).
+- **The post card is not clickable**: no press (scale/colour) or hover effects, so readers can drag-select and
+  copy text comfortably (user's rule, 2026-10-23). It reuses `.card` for its box, and `.post` overrides the
+  `:active`/`:hover` states. Don't wrap blog text in links or buttons beyond real inline links.
 - **Title**: the post `icon` sits right after the last letter of the title, at the same size as the title text
   (user's rule, 2026-10-23). Do **not** put a big emoji block under the title, and do not put icons in the
   blog list rows (tried and rejected as "strange").
