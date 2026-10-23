@@ -5,7 +5,8 @@ description: How to write and add a diary post to the MyTravelPath blog (src/dat
 
 # Diary posts for the blog
 
-The blog is a Korea travel diary, opened from the Blog button in the main page header (next to the
+The blog is a diary of stories about Korea (trends, culture, food; **not** a travel diary: the user
+corrected that label on 2026-10-23, so never call it one in copy or meta text), opened from the Blog button in the main page header (next to the
 Saved icon, main page only). `/blog/` is a title list grouped by month, `/blog/:postId/` is a post.
 Each visitor's last-read post is remembered in localStorage and marked with a "Continue reading" pill.
 The list stays minimal: a title and a short `teaser` of keywords (e.g. `Queues · 두쫀쿠 · 버터떡`), no summaries.
@@ -132,8 +133,10 @@ Noto Sans KR, Roboto.
 
 ## 6c. Share images
 
-Blog pages use the site's default `og.jpg` as the link preview. Custom per-post share cards were built
-and rejected by the user on 2026-10-23 ("we don't need this weird images"), so do not make them unless asked.
+`/blog/` has **no** preview image (`og:image` and `twitter:image` are omitted, card type `summary`);
+the user rejected custom share cards and the icon card on 2026-10-23. Posts use the site's default
+`og.jpg`. Do not add per-post cards unless asked. Meta/Threads cache previews: refresh in Meta's
+Sharing Debugger after a change.
 
 ## 7. Routine and checklist
 

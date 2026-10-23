@@ -11,9 +11,9 @@ export default function Blog() {
   return (
     <Layout
       title="Blog"
-      subtitle="A Korea travel diary"
+      subtitle="Stories about Korea"
       backTo="/"
-      actions={<ShareLink compact title="My Travel Path Blog" text="A Korea travel diary on My Travel Path" />}
+      actions={<ShareLink compact title="My Travel Path Blog" text="Stories about Korea, on My Travel Path" />}
     >
       <div className="blog-wrap">
         <time className="updated blog-updated" dateTime={blogUpdated}>

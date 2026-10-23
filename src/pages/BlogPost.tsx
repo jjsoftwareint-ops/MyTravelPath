@@ -135,7 +135,7 @@ export default function BlogPost() {
   return (
     <Layout
       title="Blog"
-      subtitle="A Korea travel diary"
+      subtitle="Stories about Korea"
       backTo="/blog/"
       actions={<ShareLink compact title={post.title} text={`${post.title} – on the My Travel Path blog`} />}
     >

@@ -1,4 +1,4 @@
-// The travel diary. One entry per post, newest first. Voice, layout and AdSense rules: .claude/skills/blogdiary/SKILL.md
+// The blog diary. One entry per post, newest first. Voice, layout and AdSense rules: .claude/skills/blogdiary/SKILL.md
 
 export type Block =
   | { type: 'p'; text: string } // one short paragraph, RichText markup

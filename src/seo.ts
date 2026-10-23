@@ -12,7 +12,6 @@ const HOME_TITLE = "My Travel Path – free walking routes in Korea";
 const HOME_DESCRIPTION =
   "Free walking routes for travellers in Korea: Seoul, Busan, Jeju and Incheon. Each path opens in Google My Maps, with Naver Map links for every stop. No sign-up.";
 const DEFAULT_IMAGE = `${SITE_URL}/og.jpg`;
-const ICON_IMAGE = `${SITE_URL}/icon-512.png`; // small square preview card, used by the blog list
 const PUBLISHER = { "@type": "Organization", name: "JJ SOFTWARE", url: SITE_URL };
 
 export type PageMeta = {
@@ -20,7 +19,7 @@ export type PageMeta = {
   title: string; // full <title>
   description: string;
   keywords: string[];
-  image: string; // absolute URL
+  image: string; // absolute URL, or "" for none
   type: "website" | "article";
   updated: string; // ISO date → sitemap lastmod / dateModified
   jsonLd: object;
@@ -31,7 +30,7 @@ const STATIC: Record<string, { title: string; description: string; updated: stri
   blog: {
     title: "Blog",
     description:
-      "A Korea travel diary: dessert queues, palace dates, hand-written letters and a few strong opinions.",
+      "Short, honest stories about Korea: dessert queues, palace dates, hand-written letters and a few strong opinions.",
     updated: blogUpdated,
   },
   about: {
@@ -113,7 +112,7 @@ export function pageMeta(pathname: string): PageMeta {
       title: `${s.title} | ${SITE_NAME}`,
       description: s.description,
       keywords: [],
-      image: a === "blog" ? `${SITE_URL}/icon-512.png` : DEFAULT_IMAGE,
+      image: a === "blog" ? "" : DEFAULT_IMAGE, // the blog list has no preview image
       type: "website",
       updated: s.updated,
       jsonLd: {
@@ -257,16 +256,14 @@ export function renderHeadTags(m: PageMeta): string {
     `<meta property="og:title" content="${esc(m.title)}" />`,
     `<meta property="og:description" content="${esc(m.description)}" />`,
     `<meta property="og:url" content="${url}" />`,
-    `<meta property="og:image" content="${m.image}" />`,
-    m.image === ICON_IMAGE
-      ? `<meta property="og:image:width" content="512" />\n    <meta property="og:image:height" content="512" />\n    <meta property="og:image:alt" content="The My Travel Path icon" />`
-      : m.image === DEFAULT_IMAGE
+    m.image ? `<meta property="og:image" content="${m.image}" />` : "",
+    m.image === DEFAULT_IMAGE
       ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="Bukchon hanok rooftops with the Seoul skyline, and the My Travel Path icon" />`
       : "",
-    `<meta name="twitter:card" content="${m.image === ICON_IMAGE ? "summary" : "summary_large_image"}" />`,
+    `<meta name="twitter:card" content="${m.image ? "summary_large_image" : "summary"}" />`,
     `<meta name="twitter:title" content="${esc(m.title)}" />`,
     `<meta name="twitter:description" content="${esc(m.description)}" />`,
-    `<meta name="twitter:image" content="${m.image}" />`,
+    m.image ? `<meta name="twitter:image" content="${m.image}" />` : "",
     `<script type="application/ld+json">${JSON.stringify(m.jsonLd).replace(/</g, "\\u003c")}</script>`,
   ];
   return tags.filter(Boolean).join("\n    ");
@@ -307,10 +304,13 @@ export function usePageMeta() {
     setMeta('meta[property="og:title"]', { property: "og:title" }, m.title);
     setMeta('meta[property="og:description"]', { property: "og:description" }, m.description);
     setMeta('meta[property="og:url"]', { property: "og:url" }, url);
-    setMeta('meta[property="og:image"]', { property: "og:image" }, m.image);
+    if (m.image) setMeta('meta[property="og:image"]', { property: "og:image" }, m.image);
+    else document.head.querySelector('meta[property="og:image"]')?.remove();
     setMeta('meta[name="twitter:title"]', { name: "twitter:title" }, m.title);
     setMeta('meta[name="twitter:description"]', { name: "twitter:description" }, m.description);
-    setMeta('meta[name="twitter:image"]', { name: "twitter:image" }, m.image);
+    if (m.image) setMeta('meta[name="twitter:image"]', { name: "twitter:image" }, m.image);
+    else document.head.querySelector('meta[name="twitter:image"]')?.remove();
+    setMeta('meta[name="twitter:card"]', { name: "twitter:card" }, m.image ? "summary_large_image" : "summary");
     let ld = document.head.querySelector<HTMLScriptElement>('script[type="application/ld+json"]');
     if (!ld) {
       ld = document.createElement("script");
