@@ -144,7 +144,10 @@ export default function BlogPost() {
           <time className="updated post-updated" dateTime={post.updated}>
             Updated {formatDate(post.updated)}
           </time>
-          <h1>{post.title}</h1>
+          <h1>
+            {post.title}{' '}
+            <img className="title-emoji" src={`${import.meta.env.BASE_URL}emoji/${post.icon}.png`} alt="" width="32" height="32" />
+          </h1>
         </header>
         <div className="post-body">{post.body.map(renderBlock)}</div>
         <AdSlot slot="below" />

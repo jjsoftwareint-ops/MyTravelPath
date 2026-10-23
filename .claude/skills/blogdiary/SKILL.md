@@ -24,6 +24,7 @@ One entry in `posts` in [src/data/blog.ts](../../../src/data/blog.ts), **newest 
   title: 'Is the long line really worth it?',
   description: 'One or two sentences: meta description and social preview.',
   teaser: 'One short sentence.',          // shown under the title in the list
+  icon: 'hourglass_not_done',             // 3D emoji right after the title on the post page, same size as the text
   date: '2026-10-23',                    // first published
   updated: '2026-10-23',                 // bump on every edit; shown as "Updated 23 Oct 2026"
   keywords: ['KoreaTravel', 'Waiting'],  // hashtags + meta keywords
@@ -32,7 +33,7 @@ One entry in `posts` in [src/data/blog.ts](../../../src/data/blog.ts), **newest 
 ```
 
 Blocks (`type`): `p` (one short paragraph, RichText markup: `**highlight**`, `[label](https://…)`),
-`h` (a few words, optional `icon` = file name in `assets/emoji/`), `emoji` (`name` = a big 3D emoji as a rest), `space`, `list`, `table`, `quote`,
+`h` (a few words, optional `icon` = file name in `assets/emoji/`), `emoji` (`name` = a big 3D emoji as a rest; not used under the title, the post `icon` goes after the title instead, user's choice 2026-10-23), `space`, `list`, `table`, `quote`,
 `verdict` (boxed conclusion), `dishes` (list with a small 3D emoji per item, `icon` = file in `assets/emoji/`: a stand-in picture for trends with no free photo, never presented as the dish itself), `route` (link box to one of our walking routes: `cityId`, `pathId`, `text`), `img` (file in `assets/blog/`, wrapped in a link to its source page, with `credit`), `ad`. The sitemap, JSON-LD
 (`BlogPosting`), prev/next buttons and title list all follow from the array; nothing else to register.
 
@@ -81,6 +82,9 @@ The user wants posts written from Claude's own knowledge and research (standing 
 ## 4. Layout: easy on the eyes, not a book
 
 - Paragraphs of 1–3 lines, one idea per block, space between thoughts (`space` blocks).
+- **Title**: the post `icon` sits right after the last letter of the title, at the same size as the title text
+  (user's rule, 2026-10-23). Do **not** put a big emoji block under the title, and do not put icons in the
+  blog list rows (tried and rejected as "strange").
 - A big `emoji` or an image every few paragraphs, headings of an emoji and three words.
 - Prefer a small `table`, `list` or `verdict` box to a long paragraph. Target 400–700 words.
 - CSS is in the "Blog (diary)" section of [src/index.css](../../../src/index.css): narrow column,
@@ -93,8 +97,8 @@ The user wants posts written from Claude's own knowledge and research (standing 
 - **react-icons is for the app UI only, not blog content.** Blog visuals come from free illustration/emoji libraries fetched the same way as Fluent Emoji (download the files, host them in `assets/`).
 - **Emoji are 3D images, not text emoji**: Microsoft Fluent Emoji 3D (MIT), files in
   `assets/emoji/<name>.png` at 144px (`assets/emoji/LICENSE.txt` holds the notice; the blog pages carry a
-  one-line credit). Native emoji looked boring to the user. Use them in `h` icons and the opening `emoji`
-  block; inline emoji inside sentences stay native, sparingly. To add one: download
+  one-line credit). Native emoji looked boring to the user. Use them in `h` icons and as the post's
+  title `icon`; inline emoji inside sentences stay native, sparingly. To add one: download
   `https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/<Name With Spaces>/3D/<snake_name>_3d.png`
   (path names are the CLDR name, e.g. `Round pushpin`/`round_pushpin_3d.png`), shrink with
   `sips -Z 144`. Pick cute or funny ones, and don't use an emoji that misstates the topic (🏯 is a

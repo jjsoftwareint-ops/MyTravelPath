@@ -27,6 +27,7 @@ export type Post = {
   title: string
   description: string // meta description and social preview
   teaser: string // one short sentence for the title list
+  icon: string // 3D emoji after the title on the post page (file name in assets/emoji/)
   date: string // first published, YYYY-MM-DD
   updated: string // last changed, YYYY-MM-DD
   keywords: string[]
@@ -40,11 +41,11 @@ export const posts: Post[] = [
     description:
       'Koreans in their 20s and 30s are swapping trendy cafés for palaces and museums: palace staycations, cute museum goods and a royal tea room you win by lottery. Why, and how to join in.',
     teaser: 'Why Koreans now go on dates in palaces.',
+    icon: 'red_paper_lantern',
     date: '2026-10-23',
     updated: '2026-10-23',
     keywords: ['KoreaTravel', 'Gyeongbokgung', 'Museum', 'Souvenirs', 'SeoulPalaces', 'KoreaTrends'],
     body: [
-      { type: 'emoji', name: 'red_paper_lantern' },
       {
         type: 'p',
         text: 'Quick quiz. Which is the better date spot in Seoul right now: a trendy café in Seongsu, or a palace finished in 1395?',
@@ -160,11 +161,11 @@ export const posts: Post[] = [
     description:
       'Copying books by hand, decorating diaries and shoes, writing real letters: the analog hobbies that Korea cannot stop talking about, and how to try them on your trip.',
     teaser: 'What is bringing people back to the pen?',
+    icon: 'pen',
     date: '2026-10-23',
     updated: '2026-10-23',
     keywords: ['KoreaTravel', 'Pilsa', 'Dakku', 'Stationery', 'Seongsu', 'KoreaTrends', 'Analog'],
     body: [
-      { type: 'emoji', name: 'pen' },
       {
         type: 'p',
         text: 'Picture a café in Seoul. One table, four people. Nobody is scrolling. All four are bent over notebooks, copying sentences out of books with pens that cost more than their coffee.',
@@ -253,11 +254,11 @@ export const posts: Post[] = [
     description:
       'Korea loves a queue: the dessert café, the bakery, the noodle shop with 90 people outside. When is the wait worth it, and how many minutes is too many?',
     teaser: 'How long would you wait for a dessert?',
+    icon: 'hourglass_not_done',
     date: '2026-10-23',
     updated: '2026-10-23',
     keywords: ['KoreaTravel', 'Waiting', 'OpenRun', 'Cafe', 'Bakery', 'SeoulFood', 'Dessert', 'KoreaTrends', 'Seongsu'],
     body: [
-      { type: 'emoji', name: 'hourglass_not_done' },
       {
         type: 'p',
         text: 'Walk through Seongsu or Hongdae on a Saturday and you will see it. A line curling around the corner, everybody on their phone, all waiting for one bakery.',

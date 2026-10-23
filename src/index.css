@@ -1418,3 +1418,8 @@ button.cta {
   width: 40px;
   height: 40px;
 }
+.post-head h1 .title-emoji {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.12em;
+}
