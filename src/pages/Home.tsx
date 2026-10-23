@@ -1,26 +1,16 @@
 import { GrAnnounce } from "react-icons/gr";
-import { isIOS, isPhone } from "../platform";
 import { Link, useParams } from "react-router-dom";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";
 import { cities } from "../data/travel";
-import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
-
-// Naver Map in the two app stores; the home notice links the one for the visitor's phone.
-const NAVER_MAP_STORE = {
-  ios: "https://apps.apple.com/app/id311867728",
-  android: "https://play.google.com/store/apps/details?id=com.nhn.android.nmap",
-};
 
 // The expanded city lives in the URL (/:cityId) so that coming back from a
 // path's detail page lands on the list with that city still open.
 export default function Home() {
   const { cityId } = useParams();
   usePageMeta();
-  // Device checks only after hydration, so the first render matches the pre-rendered HTML.
-  const hydrated = useHydrated();
 
   return (
     <Layout
@@ -32,15 +22,6 @@ export default function Home() {
         <GrAnnounce className="notice-icon announce" aria-hidden="true" />
         <ul className="notice-list">
           <li>Restaurant, café and event information is regularly updated.</li>
-          {hydrated && isPhone() && (
-            <li className="warn">
-              Downloading the <b className="naver">Naver Map</b> app is highly
-              recommended.{" "}
-              <a className="link" href={NAVER_MAP_STORE[isIOS() ? "ios" : "android"]}>
-                {isIOS() ? "Get it on the App Store ↗" : "Get it on Google Play ↗"}
-              </a>
-            </li>
-          )}
         </ul>
       </div>
 

@@ -13,6 +13,12 @@ export function isAndroid(): boolean {
   return typeof navigator !== 'undefined' && /Android/.test(navigator.userAgent)
 }
 
+// Naver Map in the two app stores.
+export const NAVER_MAP_STORE = {
+  ios: 'https://apps.apple.com/app/id311867728',
+  android: 'https://play.google.com/store/apps/details?id=com.nhn.android.nmap',
+}
+
 /** True where an installed maps app may intercept the link and a browser scheme is used instead. */
 export const isPhone = () => isIOS() || isAndroid()
 

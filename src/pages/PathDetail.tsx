@@ -11,7 +11,7 @@ import Layout from "../components/Layout";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
-import { browserUrl, isIOS } from "../platform";
+import { browserUrl, isIOS, isPhone, NAVER_MAP_STORE } from "../platform";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
@@ -156,6 +156,20 @@ export default function PathDetail() {
               <li className="warn">
                 <b className="naver">Naver Map</b> is more accurate to get to
                 destinations. Each location has the link.
+                {hydrated && isPhone() && (
+                  <>
+                    {" "}
+                    Downloading the app is highly recommended.{" "}
+                    <a
+                      className="link"
+                      href={NAVER_MAP_STORE[isIOS() ? "ios" : "android"]}
+                    >
+                      {isIOS()
+                        ? "Get it on the App Store ↗"
+                        : "Get it on Google Play ↗"}
+                    </a>
+                  </>
+                )}
               </li>
             </ul>
           </div>
