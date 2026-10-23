@@ -325,6 +325,22 @@ a:focus-visible {
   color: var(--muted);
   font-size: 13px;
 }
+.live-cam {
+  margin: 0;
+}
+.live-cam iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--press);
+}
+.live-cam figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
 .cta {
   display: flex;
   align-items: center;

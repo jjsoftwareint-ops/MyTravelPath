@@ -41,6 +41,7 @@ export type TravelPath = {
   imageWhole?: boolean // show the banner uncropped at its own ratio (a supplied photo), not as the slim band
   screenshot?: string // file in ./assets: a map screenshot shown under the map, for where Google Maps is inaccurate
   screenshotCaption?: string // one line under the screenshot, naming the source
+  liveCam?: { videoId: string; caption: string } // YouTube live stream, embedded under the map
   mapUrl: string
 }
 
@@ -225,6 +226,10 @@ export const cities: City[] = [
         tags: [{ icon: 'blossom', label: 'Cherry blossom' }],
         image: 'cherry.jpg',
         imageCredit: 'Photo: Alexey Komarov · CC BY 3.0',
+        liveCam: {
+          videoId: 'AKcsJqkcRP0',
+          caption: 'Live now at Seokchon Lake, one of the four walks. Stream: GiGAeyes Live TV on YouTube.',
+        },
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1PeaxeqCRk2SBgINAteHz4-fODippOZc',
         keywords: ['Seoul', 'CherryBlossom', 'Yeouido', 'Yunjungro', 'SeokchonLake', 'Namsan', 'Anyangcheon', 'SpringInKorea', 'KoreaTravel'],
         guide: {
@@ -454,6 +459,10 @@ export const cities: City[] = [
         updated: '2026-10-21',
         image: 'haeundae.jpg',
         imageCredit: 'Photo: VN.NguyenDucDuy · CC BY-SA 4.0',
+        liveCam: {
+          videoId: 'NBZdNZYF1gI',
+          caption: 'Live now at Songjeong Beach, where the walk ends. Stream: Ola Hotel Songjeong on YouTube.',
+        },
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1gKDREXR2sVQ1HEIZyf-iAgOvJPGFgHY',
         notices: [
           {
@@ -485,7 +494,7 @@ export const cities: City[] = [
       },
       {
         id: 'villages-and-hotspots',
-        name: 'Villages and Hotspots',
+        name: 'Culture Villages and Hotspots',
         description:
           'The Gwangalli night walk, 2.9 km from Gwangan Station along the beach to the raw-fish town and the waterfront park under the lit bridge, plus the places every visitor asks about pinned on the same map: Jagalchi Market, BIFF Square and Gukje Market, Huinnyeoul and Gamcheon culture villages, and Haedong Yonggungsa temple on the rocks. Toilets and checked restaurants and view cafés at each.',
         duration: '2h walk',

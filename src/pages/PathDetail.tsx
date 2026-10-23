@@ -150,6 +150,20 @@ export default function PathDetail() {
             </figure>
           )}
 
+          {path.liveCam && (
+            <figure className="live-cam">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${path.liveCam.videoId}`}
+                title={`${path.name} live cam`}
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allow="picture-in-picture; fullscreen"
+                allowFullScreen
+              />
+              <figcaption>{path.liveCam.caption}</figcaption>
+            </figure>
+          )}
+
           <div className="notice">
             <ImInfo className="notice-icon" aria-hidden="true" />
             <ul className="notice-list">
