@@ -96,18 +96,18 @@ export const cities: City[] = [
         id: 'haebangchon-evening',
         name: 'Haebangchon late evening walk',
         description:
-          'Huam-dong 108 Stairs, Sinheung Market, Sowol-ro rooftops and the City Wall to Baekbeom Square. 2.4 km.',
+          'Haebangchon evening walk, 2.4 km: the 108 Stairs, the Sinheung Market food alleys, Sowol-ro rooftop views and the Seoul City Wall to Baekbeom Square.',
         duration: '2h',
-        updated: '2026-10-20',
+        updated: '2026-10-23',
         tags: [{ icon: 'sunset', label: 'Evening walk' }],
         image: 'haebangchon.jpg',
         imageCredit: 'Photo: Lee Jeong Woo / Korea MCST · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1kOFoicmAJJvQvsioIIOu1ng9dDQ4Exk',
-        keywords: ['Seoul', 'Haebangchon', 'HBC', 'SinheungMarket', 'Namsan', 'RooftopBar', 'EveningWalk', 'Itaewon', 'KoreaTravel'],
+        keywords: ['Seoul', 'Haebangchon', 'HBC', 'SinheungMarket', 'Namsan', 'RooftopBar', 'SeoulCityWall', 'Itaewon', 'KoreaTravel'],
         guide: {
           intro: [
-            "🌆 **Haebangchon**, 'Liberation Village', is my favourite corner of Seoul after dark. Refugees from the north built it on the hillside between Namsan and Yongsan after 1945, and today its steep lanes hide a tiny roofed market full of Thai, Turkish and Korean kitchens, with **rooftop bars** looking out over the whole city.",
-            "This 2.4 km walk climbs 100 m from Huam-dong through **Sinheung Market** and the Sowol-ro viewpoints to the old city wall below Namsan. Set off **an hour before sunset**: dinner in the market, dusk on the rooftops, the lit wall to finish. Trust me on the order.",
+            "🌆 **Haebangchon**, 'Liberation Village', is my favourite corner of Seoul after dark. Refugees from the north built it on the hillside between Namsan and Yongsan after 1945, and today its steep lanes hide a tiny roofed market full of Thai, American-Chinese and Korean kitchens, with **rooftop bars** looking out over the whole city.",
+            "This 2.4 km walk climbs about 160 m in total from Huam-dong through **Sinheung Market** and the Sowol-ro viewpoints to the old city wall below Namsan. Set off **an hour before sunset**: dinner in the market, dusk on the rooftops, the lit wall to finish. Trust me on the order.",
           ],
           route: [
             "Huam-dong bus terminus (village bus Yongsan 02): a short alley to the 108 Stairs, built in 1943 as the approach to a Japanese war shrine. Climb them or ride the inclined elevator beside them.",
@@ -118,10 +118,11 @@ export const cities: City[] = [
             "Cross Sowol-ro at Namsan Library and follow the Seoul City Wall, Namsan Tower on your right, to Baekbeom Square and the statue of Kim Koo. The lit wall path continues up Namsan from here.",
           ],
           tips: [
-            "🚇 Getting there: village bus Yongsan 02 from Seoul Station or Noksapyeong Station to the Huam-dong terminus, or a 15 min walk uphill from Seoul Station.",
+            "🚇 Getting there: village bus Yongsan 02 to its last stop, the Huam-dong terminus, where the walk starts.",
             "🍜 Dinner in the market: Pad Ka Pao for Thai on the second floor, Haebangchon Dak for herbal roast chicken, H5NG for neon American-Chinese. Mersin Kebab's tantuni and Haebang Wang Gopchang are a minute away. Haebang Park's rooftop café is where to wait out a queue and catch the sunset.",
             "👟 The lanes are steep and some stairs are unlit; wear proper shoes. The village bus shares the narrow road, so step aside when it comes.",
-            "📍 From Baekbeom Square, Myeongdong Station is 15 min downhill, or keep climbing the wall path to N Seoul Tower, about 45 minutes.",
+            "🚻 Public toilets are pinned in their own layer: by Sinheung Market, on the Sowol-ro climb, by Namsan Library and the City Wall, and near Baekbeom Square.",
+            "📍 The lit wall path continues up Namsan from Baekbeom Square.",
           ],
         },
       },
@@ -404,8 +405,8 @@ export const cities: City[] = [
         },
       },
       {
-        id: 'indoors',
-        name: 'Indoors',
+        id: 'Indoors Trip',
+        name: 'Indoors Trip',
         description: 'Rainy-day and winter-day spots under a roof: museums, markets, malls and cafés. Map coming soon.',
         updated: '2026-10-23',
         mapUrl: 'REPLACE_ME',
