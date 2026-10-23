@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import AdSlot from '../components/AdSlot'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
@@ -10,7 +10,7 @@ import { formatDate } from '../dates'
 import { setLastRead } from '../lastRead'
 import { usePageMeta } from '../seo'
 
-function renderBlock(b: Block, i: number) {
+function renderBlock(b: Block, i: number, from: string) {
   switch (b.type) {
     case 'p':
       return (
@@ -115,7 +115,9 @@ function renderBlock(b: Block, i: number) {
     case 'route':
       return (
         <p key={i} className="post-route">
-          <Link to={`/${b.cityId}/${b.pathId}/`}>{b.text} ›</Link>
+          <Link to={`/${b.cityId}/${b.pathId}/`} state={{ from }}>
+            {b.text} ›
+          </Link>
         </p>
       )
     case 'ad':
@@ -125,6 +127,7 @@ function renderBlock(b: Block, i: number) {
 
 export default function BlogPost() {
   const { postId } = useParams()
+  const { pathname } = useLocation()
   const post = findPost(postId)
   usePageMeta()
   useEffect(() => {
@@ -149,7 +152,7 @@ export default function BlogPost() {
             <img className="title-emoji" src={`${import.meta.env.BASE_URL}emoji/${post.icon}.png`} alt="" width="32" height="32" />
           </h1>
         </header>
-        <div className="post-body">{post.body.map(renderBlock)}</div>
+        <div className="post-body">{post.body.map((b, i) => renderBlock(b, i, pathname))}</div>
         <AdSlot slot="below" />
         <ul className="hashtags" aria-label="Tags">
           {post.keywords.map((k) => (

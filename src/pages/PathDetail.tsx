@@ -3,7 +3,7 @@ import { FaBus, FaPaypal } from "react-icons/fa6";
 import { GiPathDistance } from "react-icons/gi";
 import { ImInfo } from "react-icons/im";
 import { MdOutlinePinDrop } from "react-icons/md";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import CopyLink from "../components/CopyLink";
 import RichText from "../components/RichText";
@@ -21,6 +21,9 @@ const DONATE_URL = "https://paypal.me/berlinersejin";
 
 export default function PathDetail() {
   const { cityId, pathId } = useParams();
+  // Opened from a blog post? The back button returns there (the post passes its own URL in the link state).
+  const from = (useLocation().state as { from?: string } | null)?.from;
+  const backTo = from?.startsWith("/blog/") ? from : undefined;
   const city = findCity(cityId);
   const path = findPath(cityId, pathId);
   // The embedded map starts behind a cover so that scrolling the page over it
@@ -40,7 +43,7 @@ export default function PathDetail() {
     <Layout
       title={path.name}
       subtitle={city.name}
-      backTo={`/${city.id}`}
+      backTo={backTo ?? `/${city.id}`}
       hideSaved
       actions={<ShareLink compact title={`${path.name} (${city.name})`} />}
     >

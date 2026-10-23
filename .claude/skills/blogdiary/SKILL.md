@@ -34,7 +34,7 @@ One entry in `posts` in [src/data/blog.ts](../../../src/data/blog.ts), **newest 
 
 Blocks (`type`): `p` (one short paragraph, RichText markup: `**highlight**`, `[label](https://…)`),
 `h` (a few words, optional `icon` = file name in `assets/emoji/`), `emoji` (`name` = a big 3D emoji as a rest; not used under the title, the post `icon` goes after the title instead, user's choice 2026-10-23), `space`, `list`, `table`, `quote`,
-`verdict` (boxed conclusion), `dishes` (list with a small 3D emoji per item, `icon` = file in `assets/emoji/`: a stand-in picture for trends with no free photo, never presented as the dish itself), `route` (link box to one of our walking routes: `cityId`, `pathId`, `text`), `img` (file in `assets/blog/`, wrapped in a link to its source page, with `credit`), `ad`. The sitemap, JSON-LD
+`verdict` (boxed conclusion), `dishes` (list with a small 3D emoji per item, `icon` = file in `assets/emoji/`: a stand-in picture for trends with no free photo, never presented as the dish itself), `route` (link box to one of our walking routes: `cityId`, `pathId`, `text`); the link passes `state.from` so the path page's back button returns to the post, `img` (file in `assets/blog/`, wrapped in a link to its source page, with `credit`), `ad`. The sitemap, JSON-LD
 (`BlogPosting`), prev/next buttons and title list all follow from the array; nothing else to register.
 
 ## 2. Voice: it must read like a person wrote it
