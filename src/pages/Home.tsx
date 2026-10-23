@@ -18,6 +18,7 @@ export default function Home() {
       title="My Travel Path"
       subtitle="Pick a city, then a path"
       icon={<BrandMark />}
+      showBlog
     >
       <div className="notice">
         <GrAnnounce className="notice-icon announce" aria-hidden="true" />

@@ -11,29 +11,10 @@ import Layout from "../components/Layout";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
+import { formatDate } from "../dates";
 import { browserUrl, isIOS, isPhone, NAVER_MAP_STORE } from "../platform";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
-
-// '2026-10-20' → '20 Oct 2026', without timezone surprises.
-function formatDate(iso: string) {
-  const [y, m, d] = iso.split("-").map(Number);
-  const month = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ][m - 1];
-  return `${d} ${month} ${y}`;
-}
 
 // The site owner's PayPal.Me link.
 const DONATE_URL = "https://paypal.me/berlinersejin";

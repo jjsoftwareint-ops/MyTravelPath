@@ -1,6 +1,7 @@
 import { useEffect, useRef, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { dashboardUrl } from './Analytics'
+import BlogLink from './BlogLink'
 import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
 
@@ -14,10 +15,12 @@ type Props = {
   actions?: ReactNode
   /** Hide the Saved paths link on phones, where the header is short of space (a path page has its own save button). */
   hideSaved?: boolean
+  /** Blog button left of the Saved paths icon; the main page only. */
+  showBlog?: boolean
   children: ReactNode
 }
 
-export default function Layout({ title, subtitle, backTo, icon, actions, hideSaved, children }: Props) {
+export default function Layout({ title, subtitle, backTo, icon, actions, hideSaved, showBlog, children }: Props) {
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -48,6 +51,7 @@ export default function Layout({ title, subtitle, backTo, icon, actions, hideSav
           <h1>{title}</h1>
           {subtitle && <p>{subtitle}</p>}
         </div>
+        {showBlog && <BlogLink />}
         <BookmarkLink />
         <ThemeToggle />
         {actions}

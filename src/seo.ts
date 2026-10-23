@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { blogUpdated, findPost, posts } from "./data/blog";
 import { cities, findCity, findPath } from "./data/travel";
 
 // One source of truth for every page's <head>: used by the pre-render script at
@@ -26,6 +27,12 @@ export type PageMeta = {
 
 // Static pages: title, description and the date their text last changed.
 const STATIC: Record<string, { title: string; description: string; updated: string }> = {
+  blog: {
+    title: "Blog",
+    description:
+      "A friendly Korea travel diary: trends, food queues, neighbourhood stories and honest opinions from a Korean who still walks these streets.",
+    updated: blogUpdated,
+  },
   about: {
     title: "About",
     description:
@@ -119,6 +126,45 @@ export function pageMeta(pathname: string): PageMeta {
     };
   }
 
+  if (a === "blog" && b) {
+    const post = findPost(b);
+    if (post) {
+      const image = DEFAULT_IMAGE;
+      return {
+        path,
+        title: `${post.title} | ${SITE_NAME} Blog`,
+        description: post.description,
+        keywords: post.keywords,
+        image,
+        type: "article",
+        updated: post.updated,
+        jsonLd: {
+          "@context": "https://schema.org",
+          "@graph": [
+            crumbs([
+              { name: SITE_NAME, path: "/" },
+              { name: "Blog", path: "/blog/" },
+              { name: post.title, path },
+            ]),
+            {
+              "@type": "BlogPosting",
+              headline: post.title,
+              description: post.description,
+              image,
+              datePublished: post.date,
+              dateModified: post.updated,
+              mainEntityOfPage: SITE_URL + path,
+              author: PUBLISHER,
+              publisher: PUBLISHER,
+              keywords: post.keywords.join(", "),
+            },
+          ],
+        },
+      };
+    }
+    return homeMeta();
+  }
+
   const city = findCity(a);
   if (city && !b) {
     const description = `${city.paths.length} free walking routes in ${city.name}, Korea: ${city.paths
@@ -186,7 +232,7 @@ export function pageMeta(pathname: string): PageMeta {
 
 /** Every page the build pre-renders: home, static pages, cities, paths. */
 export function allRoutes(): PageMeta[] {
-  const paths = ["/", ...Object.keys(STATIC).map((s) => `/${s}/`)];
+  const paths = ["/", ...Object.keys(STATIC).map((s) => `/${s}/`), ...posts.map((p) => `/blog/${p.id}/`)];
   for (const c of cities) {
     paths.push(`/${c.id}/`);
     for (const p of c.paths) paths.push(`/${c.id}/${p.id}/`);

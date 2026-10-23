@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Analytics from './components/Analytics'
 import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Imprint from './pages/Imprint'
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/imprint" element={<Imprint />} />
         <Route path="/saved" element={<Saved />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:postId" element={<BlogPost />} />
         <Route path="/:cityId" element={<Home />} />
         <Route path="/:cityId/:pathId" element={<PathDetail />} />
         <Route path="*" element={<Navigate to="/" replace />} />
