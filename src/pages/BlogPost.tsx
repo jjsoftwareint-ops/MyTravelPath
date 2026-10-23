@@ -4,6 +4,7 @@ import AdSlot from '../components/AdSlot'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import RichText from '../components/RichText'
+import ShareLink from '../components/ShareLink'
 import { findPost, neighbours, type Block } from '../data/blog'
 import { formatDate } from '../dates'
 import { setLastRead } from '../lastRead'
@@ -132,7 +133,12 @@ export default function BlogPost() {
   if (!post) return <Navigate to="/blog/" replace />
   const { newer, older } = neighbours(post.id)
   return (
-    <Layout title="Blog" subtitle="A Korea travel diary" backTo="/blog/">
+    <Layout
+      title="Blog"
+      subtitle="A Korea travel diary"
+      backTo="/blog/"
+      actions={<ShareLink compact title={post.title} text={`${post.title} – on the My Travel Path blog`} />}
+    >
       <article className="card post">
         <header className="post-head">
           <time className="updated post-updated" dateTime={post.updated}>

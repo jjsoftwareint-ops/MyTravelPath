@@ -4,7 +4,7 @@ import { IoCheckmark, IoShareOutline } from "react-icons/io5";
 // "Share this path": the system share sheet on phones (Web Share API), a copied
 // link elsewhere. Each path has its own hash URL, so the link lands on the path.
 // `compact` renders the round icon-only version used in the page header.
-export default function ShareLink({ title, compact = false }: { title: string; compact?: boolean }) {
+export default function ShareLink({ title, text, compact = false }: { title: string; text?: string; compact?: boolean }) {
   const [copied, setCopied] = useState(false);
   useEffect(() => {
     if (!copied) return;
@@ -14,10 +14,10 @@ export default function ShareLink({ title, compact = false }: { title: string; c
 
   const share = async () => {
     const url = window.location.href;
-    const text = `${title} – a free walking route on My Travel Path`;
+    const message = text ?? `${title} – a free walking route on My Travel Path`;
     if (navigator.share) {
       try {
-        await navigator.share({ title, text, url });
+        await navigator.share({ title, text: message, url });
         return;
       } catch {
         /* user cancelled the sheet */

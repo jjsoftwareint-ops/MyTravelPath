@@ -30,7 +30,7 @@ const STATIC: Record<string, { title: string; description: string; updated: stri
   blog: {
     title: "Blog",
     description:
-      "A friendly Korea travel diary: trends, food queues, neighbourhood stories and honest opinions from a Korean who still walks these streets.",
+      "A Korea travel diary: dessert queues, palace dates, hand-written letters and a few strong opinions.",
     updated: blogUpdated,
   },
   about: {
@@ -112,7 +112,7 @@ export function pageMeta(pathname: string): PageMeta {
       title: `${s.title} | ${SITE_NAME}`,
       description: s.description,
       keywords: [],
-      image: DEFAULT_IMAGE,
+      image: a === "blog" ? `${SITE_URL}/og/blog.jpg` : DEFAULT_IMAGE,
       type: "website",
       updated: s.updated,
       jsonLd: {
@@ -129,7 +129,7 @@ export function pageMeta(pathname: string): PageMeta {
   if (a === "blog" && b) {
     const post = findPost(b);
     if (post) {
-      const image = DEFAULT_IMAGE;
+      const image = `${SITE_URL}/og/${post.id}.jpg`;
       return {
         path,
         title: `${post.title} | ${SITE_NAME} Blog`,
@@ -259,7 +259,9 @@ export function renderHeadTags(m: PageMeta): string {
     `<meta property="og:image" content="${m.image}" />`,
     m.image === DEFAULT_IMAGE
       ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="Bukchon hanok rooftops with the Seoul skyline, and the My Travel Path icon" />`
-      : "",
+      : m.image.includes("/og/")
+        ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${esc(m.title)}" />`
+        : "",
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${esc(m.title)}" />`,
     `<meta name="twitter:description" content="${esc(m.description)}" />`,
