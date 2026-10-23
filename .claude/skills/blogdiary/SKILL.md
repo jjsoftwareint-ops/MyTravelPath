@@ -9,7 +9,9 @@ The blog is a diary of stories about Korea (trends, culture, food; **not** a tra
 corrected that label on 2026-10-23, so never call it one in copy or meta text), opened from the Blog button in the main page header (next to the
 Saved icon, main page only). `/blog/` is a title list grouped by month, `/blog/:postId/` is a post.
 Each visitor's last-read post is remembered in localStorage and marked with a "Continue reading" pill.
-The list stays minimal: a title and a short `teaser` of keywords (e.g. `Queues · 두쫀쿠 · 버터떡`), no summaries.
+The list stays minimal: a title and a `teaser`, **one short sentence** (e.g. `How long would you wait for a dessert?`),
+not a string of keywords (the user said a keyword series made no sense, 2026-10-23), and not a summary. It must add something the title
+doesn't already say.
 Path guide text is a different job: that is the `blogwriting` skill.
 
 ## 1. Where a post lives
@@ -21,7 +23,7 @@ One entry in `posts` in [src/data/blog.ts](../../../src/data/blog.ts), **newest 
   id: 'is-the-long-line-worth-it',       // URL slug
   title: 'Is the long line really worth it?',
   description: 'One or two sentences: meta description and social preview.',
-  teaser: 'Three · or four · keywords',    // shown under the title in the list
+  teaser: 'One short sentence.',          // shown under the title in the list
   date: '2026-10-23',                    // first published
   updated: '2026-10-23',                 // bump on every edit; shown as "Updated 23 Oct 2026"
   keywords: ['KoreaTravel', 'Waiting'],  // hashtags + meta keywords
@@ -45,7 +47,7 @@ Blocks (`type`): `p` (one short paragraph, RichText markup: `**highlight**`, `[l
   the first (standing rule, 2026-10-23: the user caught missing ones). That includes headings, captions,
   list items and hashtags: `뮷즈 (myut-jeu)`, `#필사스타그램 (pilsa-stagram)`. Add a meaning when it helps
   (`다이어리 꾸미기 (daieori kkumigi), decorating a diary`). Use the Revised Romanization. Exceptions:
-  `teaser` lines and `credit` names, which stay compact, and a word whose English form is the gloss
+  `credit` names, which stay compact, and a word whose English form is the gloss
   (`Hongdae (홍대)` is fine in either order).
 - Before finishing a post, run `grep -n "[가-힣]" src/data/blog.ts` and check each hit has its pronunciation.
 - Avoid the AI tells: "dive in", "delve", "in conclusion", "whether you're X or Y", "a testament to",
@@ -143,8 +145,7 @@ Sharing Debugger after a change.
 1. User gives a topic (or Claude proposes one) → research → draft the entry → `npm run build` → screenshot at phone
    width (390px) → user reviews. **No commit or push until told** (CLAUDE.md).
 2. Per post: every Hangul word has its pronunciation in parentheses (grep check in section 2) and an English gloss · a visual for any dish or object nobody could picture
-   (free photo, or tell the user none exists; never a look-alike passed off as the thing) · `teaser` is a few
-   keywords · `id` unique and URL-safe · `date`/`updated` set · `keywords` · description under ~160
+   (free photo, or tell the user none exists; never a look-alike passed off as the thing) · `teaser` is one short sentence · `id` unique and URL-safe · `date`/`updated` set · `keywords` · description under ~160
    characters · newest first in the array · no invented experiences · facts sourced and dated ·
    images credited or captioned · at most two in-article `ad` blocks · build passes and
    `dist/blog/<id>/index.html` exists.

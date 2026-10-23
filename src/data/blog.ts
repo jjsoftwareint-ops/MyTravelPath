@@ -26,7 +26,7 @@ export type Post = {
   id: string
   title: string
   description: string // meta description and social preview
-  teaser: string // a few keywords for the title list, not a sentence
+  teaser: string // one short sentence for the title list
   date: string // first published, YYYY-MM-DD
   updated: string // last changed, YYYY-MM-DD
   keywords: string[]
@@ -39,7 +39,7 @@ export const posts: Post[] = [
     title: 'The hottest date spot in Seoul is 600 years old',
     description:
       'Koreans in their 20s and 30s are swapping trendy cafés for palaces and museums: palace staycations, cute museum goods and a royal tea room you win by lottery. Why, and how to join in.',
-    teaser: '궁캉스 · 뮷즈 · 생과방 · not like Europe',
+    teaser: 'Why Koreans now go on dates in palaces.',
     date: '2026-10-23',
     updated: '2026-10-23',
     keywords: ['KoreaTravel', 'Gyeongbokgung', 'Museum', 'Souvenirs', 'SeoulPalaces', 'KoreaTrends'],
@@ -106,7 +106,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'The star is a tiny **반가사유상** (banga-sayusang) figure. More than 60,000 have sold in total, and it kept selling out after BTS\'s RM was reported to own one.',
+        text: 'The star is a tiny **반가사유상** (banga-sayusang) figure. More than 60,000 have sold in total, and it kept selling out after **BTS\'s RM** was reported to own one.',
       },
       {
         type: 'p',
@@ -114,7 +114,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'Some reports tie part of the boom to the K-Pop Demon Hunters craze, which sent fans looking for the real museum pieces.',
+        text: 'Some reports tie part of the boom to the **K-Pop Demon Hunters** craze, which sent fans looking for the real museum pieces.',
       },
       { type: 'space' },
       { type: 'h', icon: 'teacup_without_handle', text: 'The palace tea room' },
@@ -159,7 +159,7 @@ export const posts: Post[] = [
     title: 'Why Korea is falling back in love with pens',
     description:
       'Copying books by hand, decorating diaries and shoes, writing real letters: the analog hobbies that Korea cannot stop talking about, and how to try them on your trip.',
-    teaser: '필사 · 다꾸 · 신꾸 · handwritten letters',
+    teaser: 'What is bringing people back to the pen?',
     date: '2026-10-23',
     updated: '2026-10-23',
     keywords: ['KoreaTravel', 'Pilsa', 'Dakku', 'Stationery', 'Seongsu', 'KoreaTrends', 'Analog'],
@@ -252,7 +252,7 @@ export const posts: Post[] = [
     title: 'Is the long line really worth it?',
     description:
       'Korea loves a queue: the dessert café, the bakery, the noodle shop with 90 people outside. When is the wait worth it, and how many minutes is too many?',
-    teaser: 'Queues · 두쫀쿠 · 버터떡 · when to walk away',
+    teaser: 'How long would you wait for a dessert?',
     date: '2026-10-23',
     updated: '2026-10-23',
     keywords: ['KoreaTravel', 'Waiting', 'OpenRun', 'Cafe', 'Bakery', 'SeoulFood', 'Dessert', 'KoreaTrends', 'Seongsu'],
