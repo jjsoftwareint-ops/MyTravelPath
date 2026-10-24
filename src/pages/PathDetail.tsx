@@ -38,6 +38,20 @@ export default function PathDetail() {
 
   const ready = hasMap(path);
   const embed = ready ? mapEmbedUrl(path) : undefined;
+  // YouTube live stream: under the map by default, above it when the path asks for it.
+  const liveCam = path.liveCam && (
+    <figure className="live-cam">
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${path.liveCam.videoId}`}
+        title={`${path.name} live cam`}
+        loading="lazy"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allow="picture-in-picture; fullscreen"
+        allowFullScreen
+      />
+      <figcaption>{path.liveCam.caption}</figcaption>
+    </figure>
+  );
 
   return (
     <Layout
@@ -101,6 +115,8 @@ export default function PathDetail() {
             </ul>
           )}
 
+          {path.liveCam?.above && liveCam}
+
           {embed && (
             <div className="map">
               <iframe
@@ -135,19 +151,7 @@ export default function PathDetail() {
             </figure>
           )}
 
-          {path.liveCam && (
-            <figure className="live-cam">
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${path.liveCam.videoId}`}
-                title={`${path.name} live cam`}
-                loading="lazy"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allow="picture-in-picture; fullscreen"
-                allowFullScreen
-              />
-              <figcaption>{path.liveCam.caption}</figcaption>
-            </figure>
-          )}
+          {!path.liveCam?.above && liveCam}
 
           <div className="notice">
             <ImInfo className="notice-icon" aria-hidden="true" />

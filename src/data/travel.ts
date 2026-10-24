@@ -41,7 +41,7 @@ export type TravelPath = {
   imageWhole?: boolean // show the banner uncropped at its own ratio (a supplied photo), not as the slim band
   screenshot?: string // file in ./assets: a map screenshot shown under the map, for where Google Maps is inaccurate
   screenshotCaption?: string // one line under the screenshot, naming the source
-  liveCam?: { videoId: string; caption: string } // YouTube live stream, embedded under the map
+  liveCam?: { videoId: string; caption: string; above?: boolean } // YouTube live stream, embedded under the map (above it with above: true)
   mapUrl: string
 }
 
@@ -153,8 +153,8 @@ export const cities: City[] = [
         keywords: ['Seoul', 'Bukchon', 'HanokVillage', 'Ikseondong', 'Insadong', 'Namsangol', 'Pildong', 'Jongno', 'Hanbok', 'SeoulPalaces', 'KoreaTravel'],
         guide: {
           intro: [
-            "🏯 This is the walk I give friends on their first day in Seoul. Jongno is the old heart of the city, laid out in 1394 between the palaces and the city wall, and in 5.1 km you get all three of its hanok quarters: **Bukchon**, where tiled roofs step down the hill between two palaces; **Ikseon-dong**, a 1920s block of tiny hanok that are now cafés; and **Insadong**, the street of galleries, tea houses and craft shops.",
-            "It is a daytime walk and mostly flat, apart from the climb into **Bukchon**. Two hours of walking, but **take the whole day**: there are palaces, markets and far too much good food along the way.",
+            "🏯 This is the walk I give friends on their first day in Seoul. Jongno is the old heart of the city, laid out in 1394 between the palaces and the city wall, and in 5.1 km you get all three of its hanok quarters: **Bukchon**, where tiled roofs step down the hill between two palaces; **Ikseon-dong**, a 1920s block of tiny hanok that are now cafés; and **Insadong**, the street of galleries, tea houses and craft shops. Want a fourth? **Namsangol Hanok Village**, a short ride away at Chungmuro Station, is a free garden of old hanok moved there from around Seoul, and it is far calmer than Bukchon.",
+            "It is a daytime walk and mostly flat, apart from the climb into **Bukchon**. Two hours of walking, but **take the whole day**: there are palaces, markets and far too much good food along the way. Namsangol and the Pil-dong food streets next to it are pinned on the map as an extra, not part of the walking line.",
           ],
           route: [
             "Cheong Wa Dae, the former presidential Blue House, if you have booked a visit; otherwise start at Gyeongbokgung's east gate. Walk east along Cheongwadae-ro to Samcheong-dong.",
@@ -219,7 +219,7 @@ export const cities: City[] = [
         description:
           'Four blossom walks for early April: Dorimcheon and the Anyangcheon embankment, Yeouido Yunjung-ro, the Seokchon Lake loop and the Namsan North Loop.',
         duration: '2–3h each',
-        updated: '2026-10-20',
+        updated: '2026-10-24',
         notices: [
           {
             icon: '🌸',
@@ -234,6 +234,7 @@ export const cities: City[] = [
         liveCam: {
           videoId: 'AKcsJqkcRP0',
           caption: 'Live now at Seokchon Lake, one of the four walks. Stream: GiGAeyes Live TV on YouTube.',
+          above: true,
         },
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1PeaxeqCRk2SBgINAteHz4-fODippOZc',
         keywords: ['Seoul', 'CherryBlossom', 'Yeouido', 'Yunjungro', 'SeokchonLake', 'Namsan', 'Anyangcheon', 'SpringInKorea', 'KoreaTravel'],
@@ -370,7 +371,7 @@ export const cities: City[] = [
         description:
           'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Plus Garosu-gil in Sinsa-dong and the Banpo Bridge fountain with Sevit Island on the Han River. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
         duration: '2h',
-        updated: '2026-10-22',
+        updated: '2026-10-24',
         notices: [
           {
             icon: '⛲',
@@ -382,6 +383,11 @@ export const cities: City[] = [
         tags: [{ icon: 'moon', label: 'Night walk' }],
         image: 'gangnam.jpg',
         imageCredit: 'Photo: 최광모 · CC BY-SA 4.0',
+        liveCam: {
+          videoId: 'ZL1SUWuFxKQ',
+          caption: 'Live now at Banpo Hangang Park, with the Banpo Bridge fountain and Sevit Island on the Han River. Stream: 247 Seoul Live Cam on YouTube.',
+          above: true,
+        },
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1VIazL8nrcXwzKDjTxKyxrbKGaNR9NYg',
         keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'Garosugil', 'KStarRoad', 'Apgujeong', 'BanpoBridge', 'MoonlightRainbowFountain', 'SevitIsland', 'StarfieldLibrary', 'Bongeunsa', 'KoreaTravel'],
         guide: {
