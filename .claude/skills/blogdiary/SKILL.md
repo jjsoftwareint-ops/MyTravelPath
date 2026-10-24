@@ -111,8 +111,10 @@ The user wants posts written from Claude's own knowledge and research (standing 
   In the text write `[두쫀쿠](https://www.google.com/search?tbm=isch&q=<URL-encoded keyword>) (dujjonku)`,
   with the pronunciation after the link. Use the Korean name (best results), keep it specific
   (`상하이 버터떡`, not `버터떡`), and never hotlink or copy the images themselves.
-  Link **every Korean-named food, trend, place or object the first time it appears** (not repeats, not headings,
-  not things that already have a photo in the post), so readers can see what it is. RichText links open
+  Link **a Korean-named food, place, object or person the first time it appears, when seeing a picture helps**
+  (not repeats, not headings, not things that already have a photo in the post). **Do not link abstract words or
+  concepts** (user, 2026-10-24: links on 판소리, 추임새, 국악소녀, 경기민요 were "unnecessary"): a genre, a shout, a
+  nickname, a style. Those stay plain `**bold**` highlights with the pronunciation. RichText links open
   in a new tab. Inside a post they look exactly like `**highlighted**` words (bold, marker underline) plus
   an always-visible underline in the accent colour (orange, never black) so they read as links (user's rule, 2026-10-23: keep the font style).
 - Free photos, shown whole, wrapped in a link to the source page with a credit line (author, licence,
@@ -129,6 +131,16 @@ The user wants posts written from Claude's own knowledge and research (standing 
 - Portrait photos are capped at 520px high (CSS), landscape ones fill the column.
 - Claude cannot generate images here. The explicit exception to CLAUDE.md's "no drawn illustrations"
   rule: generated art supplied by the user is allowed in blog posts.
+
+## 5b. Video links
+
+When the user gives a direct YouTube link, use it (`https://youtu.be/<id>`) instead of a YouTube search link,
+and strip the tracking part (`?si=…`). **Find the video yourself when the user does not give one** (user, 2026-10-24:
+"you cannot do it by yourself?"): fetch `https://www.youtube.com/results?search_query=<q>` with a browser User-Agent
+and `Accept-Language`, collect the `"videoId":"…"` values, and read each one's title and channel from
+`https://www.youtube.com/oembed?format=json&url=https://www.youtube.com/watch?v=<id>`. Take the artist's official
+channel or the label's upload; never guess an id. Only if nothing official turns up, link a YouTube search
+(`https://www.youtube.com/results?search_query=…`).
 
 ## 6. AdSense slots
 

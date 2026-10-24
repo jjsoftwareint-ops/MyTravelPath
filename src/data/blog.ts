@@ -36,6 +36,127 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'which-hanok-village-are-you',
+    title: 'Seoul has four hanok neighbourhoods. Which one are you?',
+    description:
+      'Bukchon, Ikseon-dong, Insadong and Namsangol all show off traditional hanok houses, but each has its own personality. A tiny personality test with photos, to help you pick.',
+    teaser: 'A tiny personality test, with photos.',
+    icon: 'house_with_garden',
+    date: '2026-10-24',
+    updated: '2026-10-24',
+    keywords: ['KoreaTravel', 'Hanok', 'Bukchon', 'Ikseondong', 'Insadong', 'Seoul'],
+    body: [
+      {
+        type: 'p',
+        text: 'Ask five people for a hanok neighbourhood in Seoul and you will get five answers. The traditional house, hanok, shows up in more than one place, and each place has a different mood.',
+      },
+      {
+        type: 'p',
+        text: 'So here is a quick test. Pick the one that sounds like you.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'camera', text: '1. Bukchon: the famous one' },
+      {
+        type: 'img',
+        src: 'bukchon-alley.jpg',
+        alt: 'A quiet sloping alley in Bukchon, with a brick wall covered in red roses on the left and traditional tiled-roof hanok houses on the right',
+        caption: 'Bukchon: tiled roofs, steep lanes, and the photo everyone wants.',
+        href: 'https://commons.wikimedia.org/wiki/File:Flowery_alley_lined_with_hanok_houses_and_red_rosebush_in_Bukchon_Hanok_Village_Seoul.jpg',
+        credit: { author: 'Basile Morin', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'p',
+        text: '북촌 (Bukchon, "the north village") is the one on every postcard. Tiled roofs step down a hill between two palaces. It is beautiful, and it is also where people actually live.',
+      },
+      {
+        type: 'p',
+        text: 'That is why the busiest lane is open to visitors only from **10:00 to 17:00**, with a ₩100,000 fine outside those hours. Go early, keep your voice down, and do not block the lane for photos.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'sparkles', text: '2. Ikseon-dong: the cute one' },
+      {
+        type: 'img',
+        src: 'ikseon-dong-alley.jpg',
+        alt: 'A narrow alley in Ikseon-dong lined with small shops and cafés in old low buildings',
+        caption: 'Ikseon-dong: tiny alleys, tiny cafés.',
+        href: 'https://commons.wikimedia.org/wiki/File:Ikseon-dong_%EC%9D%B5%EC%84%A0%EB%8F%99_October_1_2020_1.jpg',
+        credit: { author: 'S h y numis', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'p',
+        text: '익선동 (Ikseon-dong) is a block of small hanok from the 1920s. The same developer, 정세권 (Jeong Se-gwon), is credited with Bukchon\'s hanok as well, according to Korean reports.',
+      },
+      {
+        type: 'p',
+        text: 'A redevelopment plan fell through, so owners rented the old houses to cafés and small restaurants. A few years later it was one of Seoul\'s trendiest lanes. It is probably the most popular hanok spot right now, so expect a crowd.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'thinking_face', text: '3. Insadong: the artsy one' },
+      {
+        type: 'img',
+        src: 'insadong-street.jpg',
+        alt: 'A paved street in Insadong with tiled-roof restaurant fronts, vertical signs and people walking',
+        caption: 'Insadong: signs, tea and souvenirs. Not all hanok, all charm.',
+        href: 'https://commons.wikimedia.org/wiki/File:Seoul-Insadong-Street-01.jpg',
+        credit: { author: 'travelmate2021', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/' },
+      },
+      {
+        type: 'p',
+        text: '인사동 (Insadong) is a street of galleries, tea houses and craft shops. Honestly, it is not mostly hanok houses. But it feels old Seoul, and it is the easiest place to buy a gift.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'compass', text: '4. Namsangol: the calm one' },
+      {
+        type: 'img',
+        src: 'namsangol-stage.jpg',
+        alt: 'A tiled-roof open-air pavilion stage at Namsangol Hanok Village, with modern city buildings behind it',
+        caption: 'Namsangol: hanok in a garden, with the city right behind.',
+        href: 'https://commons.wikimedia.org/wiki/File:Namsangol_Hanok_Village_20240409_088.jpg',
+        credit: { author: 'Mobius6', license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/' },
+      },
+      {
+        type: 'p',
+        text: 'The [남산골한옥마을](https://www.google.com/search?tbm=isch&q=%EB%82%A8%EC%82%B0%EA%B3%A8%ED%95%9C%EC%98%A5%EB%A7%88%EC%9D%84) (Namsangol Hanok Village) is a garden with five old hanok. Reports say they were moved here from around Seoul, and the village opened in 1998. Nobody lives here, and entry is free.',
+      },
+      {
+        type: 'p',
+        text: 'There is even a time capsule, buried in 1994. It is meant to be opened in the year 2394. We will not be there.',
+      },
+      {
+        type: 'p',
+        text: 'Opening days can change, so check the official site (hanokmaeul.or.kr) before you go.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'thinking_face', text: 'So, which one are you?' },
+      {
+        type: 'table',
+        head: ['If you like…', 'Go to'],
+        rows: [
+          ['The famous photo', 'Bukchon'],
+          ['Cute cafés and alleys', 'Ikseon-dong'],
+          ['Tea, art and gifts', 'Insadong'],
+          ['Quiet and free', 'Namsangol'],
+        ],
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'hanok-villages',
+        text: '🗺️ Our Hanok Villages walk connects Bukchon, Ikseon-dong and Insadong in one day.',
+      },
+      { type: 'space' },
+      {
+        type: 'verdict',
+        text: '**Our verdict:** Bukchon in the morning, Ikseon-dong for a coffee, and Namsangol when you need a seat and some quiet.',
+      },
+      {
+        type: 'p',
+        text: 'Which one are you? Tell us on the Contact page.',
+      },
+    ],
+  },
+  {
     id: 'why-young-koreans-love-pansori',
     title: 'Why is a centuries-old song style suddenly cool?',
     description:
@@ -52,7 +173,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'That is [판소리](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC) (pansori), and the yelling is part of the deal. When the singer nails a line, you shout **얼쑤!** (eolssu!), which means roughly "yes, go on!". The shouts have a name, [추임새](https://www.google.com/search?tbm=isch&q=%EC%B6%94%EC%9E%84%EC%83%88) (chuimsae).',
+        text: 'That is **판소리** (pansori), and the yelling is part of the deal. When the singer nails a line, you shout **얼쑤!** (eolssu!), which means roughly "yes, go on!". The shouts have a name, **추임새** (chuimsae).',
       },
       {
         type: 'p',
@@ -79,7 +200,7 @@ export const posts: Post[] = [
       { type: 'h', icon: 'tiger_face', text: 'Then a tiger showed up' },
       {
         type: 'p',
-        text: 'A band called [이날치](https://www.google.com/search?tbm=isch&q=%EC%9D%B4%EB%82%A0%EC%B9%98%20%EB%B0%B4%EB%93%9C) (Leenalchi) took a scene from the epic [수궁가](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC%20%EC%88%98%EA%B6%81%EA%B0%80) (Sugungga), the one about a tiger, and put a dance beat under it. The song is [범 내려온다](https://www.google.com/search?tbm=isch&q=%EC%9D%B4%EB%82%A0%EC%B9%98%20%EB%B2%94%20%EB%82%B4%EB%A0%A4%EC%98%A8%EB%8B%A4) (beom naeryeoonda), "the tiger comes down".',
+        text: 'A band called [이날치](https://www.google.com/search?tbm=isch&q=%EC%9D%B4%EB%82%A0%EC%B9%98%20%EB%B0%B4%EB%93%9C) (Leenalchi) took a scene from the epic [수궁가](https://www.google.com/search?tbm=isch&q=%ED%8C%90%EC%86%8C%EB%A6%AC%20%EC%88%98%EA%B6%81%EA%B0%80) (Sugungga), the one about a tiger, and put a dance beat under it. The song is [범 내려온다](https://youtu.be/SmTRaSg2fTQ) (beom naeryeoonda), "the tiger comes down". The link is the stage video with a dance company that took off.',
       },
       {
         type: 'p',
@@ -93,24 +214,20 @@ export const posts: Post[] = [
       { type: 'h', icon: 'microphone', text: 'Song So-hee, the plot twist' },
       {
         type: 'p',
-        text: 'One small detail first. [송소희](https://www.google.com/search?tbm=isch&q=%EC%86%A1%EC%86%8C%ED%9D%AC) (Song So-hee) is a folk singer, [경기민요](https://www.google.com/search?tbm=isch&q=%EA%B2%BD%EA%B8%B0%EB%AF%BC%EC%9A%94) (Gyeonggi minyo), not a pansori singer. They are two kinds of traditional Korean singing, like cousins.',
+        text: 'One small detail first. [송소희](https://www.google.com/search?tbm=isch&q=%EC%86%A1%EC%86%8C%ED%9D%AC) (Song So-hee) is a folk singer, **경기민요** (Gyeonggi minyo), not a pansori singer. They are two kinds of traditional Korean singing, like cousins.',
       },
       {
         type: 'p',
-        text: 'She was the child star everyone called [국악소녀](https://www.google.com/search?tbm=isch&q=%EA%B5%AD%EC%95%85%EC%86%8C%EB%85%80%20%EC%86%A1%EC%86%8C%ED%9D%AC) (gugak-sonyeo), "the traditional music girl". She grew up. Reports say she now plays big festival stages and writes rock songs that keep her folk voice.',
+        text: 'She was the child star everyone called **국악소녀** (gugak-sonyeo), "the traditional music girl". She grew up. Reports say she now plays big festival stages and writes rock songs that keep her folk voice.',
       },
       { type: 'h', icon: 'musical_note', text: 'Hear her' },
       {
         type: 'list',
         items: [
-          '[Not a Dream](https://www.youtube.com/results?search_query=%EC%86%A1%EC%86%8C%ED%9D%AC+Not+a+Dream): a live clip of this song, before it was even released, reportedly passed 13 million views. It came out properly in March 2025.',
-          '[함바칼레](https://www.youtube.com/results?search_query=%EC%86%A1%EC%86%8C%ED%9D%AC+%ED%95%A8%EB%B0%94%EC%B9%BC%EB%A0%88) (Hamba Kahle): the title song of her EP Re:5, which she performed at a big indoor festival this year.',
-          '[설화](https://www.youtube.com/results?search_query=%EC%86%A1%EC%86%8C%ED%9D%AC+%EC%84%A4%ED%99%94+%EB%B0%80%EC%96%91%EC%95%84%EB%A6%AC%EB%9E%91) (seolhwa): her fresh take on the folk song Miryang Arirang, from 2019.',
+          '[Not a Dream](https://youtu.be/Zbo7UY8dxh8): a live clip of this song, before it was even released, reportedly passed 13 million views. It came out properly in March 2025.',
+          '[함바칼레](https://youtu.be/YENUe7tTa9k) (Hamba Kahle): the title song of her EP Re:5, which she performed at a big indoor festival this year.',
+          '[설화](https://youtu.be/2Cvdk4DzjI0) (seolhwa): her fresh take on the folk song Miryang Arirang, from 2019.',
         ],
-      },
-      {
-        type: 'p',
-        text: 'The links open a YouTube search, so you pick the version you like.',
       },
       { type: 'space' },
       { type: 'h', icon: 'thinking_face', text: 'Why does it work?' },
