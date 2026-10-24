@@ -23,6 +23,12 @@ function page(url) {
 }
 
 const list = routes()
+// Every address must be lowercase letters, digits and hyphens (ids in src/data). A space or capital in an id
+// once reached the sitemap as "/seoul/Indoors Trip/", which Google cannot use: fail the build instead.
+const unsafe = list.filter(({ path }) => !/^\/[a-z0-9/-]*$/.test(path))
+if (unsafe.length) {
+  throw new Error(`Route(s) not URL-safe, rename the id to lowercase-with-hyphens: ${unsafe.map((r) => JSON.stringify(r.path)).join(', ')}`)
+}
 for (const { path } of list) {
   const dir = join(dist, path)
   mkdirSync(dir, { recursive: true })
@@ -33,7 +39,8 @@ writeFileSync(join(dist, '404.html'), page('/'))
 
 const sitemap =
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  list.map(({ path, lastmod }) => `  <url><loc>${SITE}${path}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n') +
+  // Pages still showing "Map link coming soon" are pre-rendered but left out of the sitemap.
+  list.filter((r) => r.inSitemap).map(({ path, lastmod }) => `  <url><loc>${SITE}${path}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n') +
   '\n</urlset>\n'
 writeFileSync(join(dist, 'sitemap.xml'), sitemap)
 

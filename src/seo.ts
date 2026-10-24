@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { blogUpdated, findPost, posts } from "./data/blog";
-import { cities, findCity, findPath } from "./data/travel";
+import { cities, findCity, findPath, hasMap } from "./data/travel";
 
 // One source of truth for every page's <head>: used by the pre-render script at
 // build time (renderHeadTags) and by the client on navigation (usePageMeta).
@@ -238,6 +238,13 @@ export function allRoutes(): PageMeta[] {
     for (const p of c.paths) paths.push(`/${c.id}/${p.id}/`);
   }
   return paths.map(pageMeta);
+}
+
+/** Paths still waiting for their map ("Map link coming soon"): thin pages, kept out of the sitemap. */
+export function placeholderPaths(): Set<string> {
+  const out = new Set<string>();
+  for (const c of cities) for (const p of c.paths) if (!hasMap(p)) out.add(`/${c.id}/${p.id}/`);
+  return out;
 }
 
 const esc = (s: string) =>

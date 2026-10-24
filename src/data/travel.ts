@@ -415,7 +415,7 @@ export const cities: City[] = [
         },
       },
       {
-        id: 'Indoors Trip',
+        id: 'indoors-trip',
         name: 'Indoors Trip',
         description: 'Rainy-day and winter-day spots under a roof: museums, markets, malls and cafés. Map coming soon.',
         updated: '2026-10-23',

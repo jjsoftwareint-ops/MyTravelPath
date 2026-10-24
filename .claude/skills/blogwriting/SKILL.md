@@ -180,6 +180,12 @@ otherwise. What it does that the weaker chains do less:
    scene, which a hill walk is not. Prefer topics with food, a hidden entrance or a "locals only" angle for the
    first post of a week; use the quieter views as second posts.
 
+8. **Emoji belong in Threads posts** (user, 2026-10-23: posts without any felt too stiff). Use 4 to 8 per
+   post, at the ends of sentences and as bullets, not stacked: 🥐🧈☕🌳🗺️✨. Count them in the 500-character
+   limit. The site's guide text keeps its own rule (one lead emoji, tip keys).
+9. **Write the chain in the language the user will post in** (they switch between English and Korean); in Korean
+   use a warm spoken ending (…요, …거든요) rather than formal prose.
+
 Before writing the next one, ask the user for the numbers on the last three chains (views, likes, replies,
 reposts per post, and which post got them) and say what the data does to these rules. Never claim these rules
 are proven.
@@ -194,6 +200,12 @@ link previews see the content without JavaScript. Consequences for writing:
 - Titles, descriptions and JSON-LD come from **`pageMeta()` in `src/seo.ts`** only; do not add meta logic to pages.
 - `updated` on a path becomes the sitemap `lastmod` and the Article `dateModified`: bump it on every edit.
 - `sitemap.xml` is **generated at build time**; never hand-edit one into `assets/`.
+- **Every city, path and post `id` is lowercase letters, digits and hyphens** (`indoors-trip`, never `Indoors Trip`):
+  the id is the URL. `scripts/prerender.mjs` now fails `npm run build` on any other route (2026-10-24: a path id with a
+  space and capitals reached the sitemap as `/seoul/Indoors Trip/`, which Google cannot use). After adding a path or
+  post, open `dist/sitemap.xml` and read the new line before pushing.
+- Paths still showing "Map link coming soon" (`mapUrl: 'REPLACE_ME'`) are pre-rendered but **left out of the sitemap**
+  (`placeholderPaths()` in `src/seo.ts`); they join it automatically once a real `mapUrl` is set.
 - Old `/#/seoul/...` links redirect to the real page (script in `index.html`); use the slash form in new posts.
 - Anything that reads `navigator`/`window` during render must be gated with `useHydrated()` (`src/hooks.ts`),
   or the pre-rendered HTML and the first client render disagree.
