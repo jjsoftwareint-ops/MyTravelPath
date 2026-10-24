@@ -129,9 +129,9 @@ export const cities: City[] = [
       {
         id: 'hanok-villages',
         name: 'Hanok Villages',
-        description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km.',
+        description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km, with Namsangol Hanok Village and Pil-dong food as an extra.',
         duration: '2h',
-        updated: '2026-10-20',
+        updated: '2026-10-24',
         tags: [{ icon: 'village', label: 'Traditional' }],
         notices: [
           {
@@ -150,7 +150,7 @@ export const cities: City[] = [
         image: 'bukchon.jpg',
         imageCredit: 'Photo: Bgag · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=14TBNrDcRMm9lNuEBH3QZbcEAg_mnuNU',
-        keywords: ['Seoul', 'Bukchon', 'HanokVillage', 'Ikseondong', 'Insadong', 'Jongno', 'Hanbok', 'SeoulPalaces', 'KoreaTravel'],
+        keywords: ['Seoul', 'Bukchon', 'HanokVillage', 'Ikseondong', 'Insadong', 'Namsangol', 'Pildong', 'Jongno', 'Hanbok', 'SeoulPalaces', 'KoreaTravel'],
         guide: {
           intro: [
             "🏯 This is the walk I give friends on their first day in Seoul. Jongno is the old heart of the city, laid out in 1394 between the palaces and the city wall, and in 5.1 km you get all three of its hanok quarters: **Bukchon**, where tiled roofs step down the hill between two palaces; **Ikseon-dong**, a 1920s block of tiny hanok that are now cafés; and **Insadong**, the street of galleries, tea houses and craft shops.",
@@ -163,6 +163,7 @@ export const cities: City[] = [
             "East along Yulgok-ro and down Samil-daero to the Hyundai Trevian apartments; the lane beside them leads into Ikseon-dong's hanok street. Meals are in the grill alley, Donhwamun-ro 11ga-gil.",
             "Past Jongno 3-ga, where one lane fills with pojangmacha street-food tents after dark, and Tapgol Park.",
             "Insadong-gil from its south end to the top, ending at Ssamziegil, the spiral-ramp craft mall. Anguk Station is 250 m north.",
+            "Extension, not on the walking line: **Namsangol Hanok Village** at Chungmuro Station exit 4, a garden of old hanok moved here from around Seoul, then lunch or coffee in Pil-dong next door.",
           ],
           tips: [
             "🚇 Getting there: Anguk Station (line 3) sits in the middle of the walk. Cheong Wa Dae visits need a free online reservation in advance.",
@@ -170,6 +171,9 @@ export const cities: City[] = [
             "🍜 Eat little and often: rice-cake skewers in Samcheong-dong, Ikseon-dong grills, Insadong tea houses. Gwangjang Market is a short hop from the end.",
             "📍 Extras pinned on the map: Gwanghwamun Square and the gate, Changdeokgung and Changgyeonggung palaces, and Seosulla-gil, the café lane along the Jongmyo Shrine wall.",
             "📍 Hanbok rental shops cluster around Anguk; wearers enter the royal palaces free.",
+            "🏡 Namsangol Hanok Village is free to enter. Unlike Bukchon, where most hanok were altered and are small, it shows a variety of old elite homes, with a garden, Cheonugak Pavilion and a time capsule buried in 1994. Seoul Namsan Gugakdang, a performance hall, is up the road. Check opening days and the show schedule on the official site (hanokmaeul.or.kr) before you go.",
+            "🍜 Pil-dong, beside Namsangol, is the food district: Pildong Myeonok for Pyongyang naengmyeon, Pildong Hambak for hamburger steak, Dongdae Dakhanmari for chicken stew, and cafés like Sector Coffee and Hebe Coffee. Korea House near Chungmuro Station serves royal-style meals and tea. All pinned in their own layers; restaurants and cafés were checked on Naver on 24 October 2026.",
+            "🚻 Public toilets are pinned in their own layer: Tapgol Park, Anguk Station, Insadong-gil, near Ssamziegil, by the Bukchon Village Info Centre and at Namsangol.",
           ],
         },
       },

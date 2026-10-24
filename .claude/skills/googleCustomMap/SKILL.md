@@ -106,6 +106,20 @@ for summit → junction legs; the B-course stairs are boardwalk way 1314758863 e
   (`youtube_transcript_api` installed into `./pylib` may be an old version without `.fetch`/with empty responses,
   2026-10-23). Put the video timestamps into the pin descriptions, tell the user which hours/prices come from the
   video (may be out of date), and re-verify openness with `naver_status.py`.
+- **Transcripts: use `yt-dlp` when the python API fails** (2026-10-24): `yt-dlp --skip-download --write-subs
+  --write-auto-subs --sub-langs "ko,en" --sub-format vtt -o subs/v <url>` (installed at `/opt/homebrew/bin/yt-dlp`),
+  then clean the `.vtt` into `mm:ss text` lines. Manual English subtitles give a readable translation of Korean videos.
+- **Updating a My Maps export kmz** (Jongro Hanok Village, 2026-10-24): placemark names may be wrapped in
+  `<![CDATA[…]]>` and descriptions use `&amp;`; pin photos are `<img src=… height="200" width="auto" />` right after the bold
+  title line plus an `ExtendedData` `gx_media_links` value (copy that format for Naver photos); plain `Open Naver Map:
+  https://map.naver.com/p/search/<lat>%2C<lon>` links must be replaced by place links (find the id with `naver_place.py`);
+  old default blue icons (`icon-1469` walking, `icon-1261` historic building) are recoloured with
+  `restyle_kmz.py file.kmz icon-1469=walking icon-1261=historic`. Pins with no Naver place (Cheong Wa Dae gate,
+  police box, junction pins) keep their coordinate links and get no photo; say so.
+- **Toilet sweep that works** (Jongno, 2026-10-24): the generic `공중화장실 --near` query returns far-away toilets. Query
+  by stop instead (`탑골공원 화장실`, `안국역 화장실`, `북촌 개방화장실`, `인사동 개방화장실`, `<place> 화장실`), keep
+  category 화장실 (skip 장애인편의시설), and keep those within ~150 m of the line. Many are "개방화장실" (open toilets in
+  public buildings).
 - **Toilet search when the area has no line:** `naver_place.py "<place> 화장실"` per major stop (e.g. 서울식물원 화장실
   returned three real park toilets); generic `공중화장실 --near` lists the nearest in the district, often > 500 m
   away. Pin only toilets that are really in the stop's area; state that building toilets (malls, arts centres) are
