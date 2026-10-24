@@ -37,10 +37,10 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: 'which-hanok-village-are-you',
-    title: 'Seoul has four hanok neighbourhoods. Which one are you?',
+    title: 'Seoul has 4 hanok villages',
     description:
-      'Bukchon, Ikseon-dong, Insadong and Namsangol all show off traditional hanok houses, but each has its own personality. A tiny personality test with photos, to help you pick.',
-    teaser: 'A tiny personality test, with photos.',
+      'Bukchon, Ikseon-dong, Insadong and Namsangol all show off traditional hanok houses, but each has its own personality. Here is how to pick, and which one lets you step inside.',
+    teaser: 'Which one is your best pick?',
     icon: 'house_with_garden',
     date: '2026-10-24',
     updated: '2026-10-24',
