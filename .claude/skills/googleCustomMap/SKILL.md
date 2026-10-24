@@ -89,14 +89,26 @@ for summit → junction legs; the B-course stairs are boardwalk way 1314758863 e
   out and say so). Pace 2 s between pages. **No image on unimportant pins**: toilets, first-aid kits, stamp
   boxes, junction/waypoint dots, car parks. Attractions, parks, malls, venues, restaurants, cafés, piers get one.
 - **Blue is for toilets only** (user rule 2026-10-23: "don't put blue color for the locations except toilet, it's
-  mixed with already existing location in Google Map"). Every other icon in `build_gpx.ICONS` is green `0F9D58`,
-  pink `E91E63` (food, drink, viewpoints), red `DB4437` (end flag, medical, dots, tents) or purple `7B1FA2` (stamps).
-  Never add a new place icon with `4186F0`. **Whenever you create or modify a kmz (the user's standing
+  mixed with already existing location in Google Map"). **Green is banned too** (user, 2026-10-24: "you used green
+  color again, it's not visible": green pins vanish on green route lines and on the parks of the base map).
+  Every other icon in `build_gpx.ICONS` is purple `7B1FA2` (the default for places, stamps too),
+  pink `E91E63` (food, drink, viewpoints) or red `DB4437` (end flag, medical, dots, tents, **spas and saunas**: keys
+  `spa` = My Maps Spa 1697 and `sauna` = Hot Spring 1811, user rule 2026-10-24; jjimjilbang, bathhouses and hot springs use `sauna`).
+  Never add a new place icon with `4186F0` or `0F9D58`. A kmz made before 2026-10-24 may still carry green
+  `0F9D58` pins: when you touch it, recolour them with `restyle_kmz.py file.kmz icon-<id>-0F9D58=<key> …`. **Whenever you create or modify a kmz (the user's standing
   instruction, 2026-10-23), apply this and the photo rule to the whole file**, existing pins included: recolour every blue
   non-toilet style with `restyle_kmz.py file.kmz icon-<id>-4186F0=<key> …` (id → key from `build_gpx.ICONS`) and add
   `<img>` photos to important pins that lack one. Files you do not touch stay as they are.
-- **Adding to an existing kmz: save a copy under a new name** (e.g. `Jeju Olle Trail 5-7 (with attractions).kmz`),
-  never overwrite the original unasked; build the new layer with `layers_kml.py`, splice its `<Style>`/`<StyleMap>`
+- **ONE kmz per path, edited in place** (user rule 2026-10-24: "don't separate .kmz files... make all as one"). Never
+  leave a `(with …)`, `(updated)` or `(copy)` variant in `assets/maps/`: the result keeps the path's own filename
+  (`Jongro Hanok Village.kmz`). Put a backup of the original in the scratchpad before overwriting, not next to it.
+  **Rebase on the live map first:** the user edits and re-imports maps in Google My Maps, so the local kmz can be
+  stale. Before touching a path's kmz, re-export the live map (`mapUrl` in `src/data/travel.ts`,
+  `curl -sL "https://www.google.com/maps/d/kml?mid=<mid>&forcekml=1"`), list its pins and folders, and diff them
+  against the local file; build on whichever has more. 2026-10-24: I built Jongro from the Oct 15 local export, the
+  user imported it over the live map and lost the Namsangol and Pil-dong layers (recovered from an earlier
+  session's `additions.json`). After building, confirm every layer and pin of the live map is still present, and say
+  which pins were removed on purpose. Build the new layer with `layers_kml.py`, splice its `<Style>`/`<StyleMap>`
   blocks (skip ids already present) after the last existing style and its `<Folder>` before `</Document>`, check
   first whether the place is already pinned (distance to existing pins, `<20 m` = skip and just add the photo to the
   existing pin's description), validate with `minidom`, run the `*CLICK*` and Hangul-title checks. Example:
@@ -325,6 +337,12 @@ Keep waypoint names short and numbered so the legend stays in order.
   file as "invalid or unsupported data" (hit 2026-10-14 after `restyle_kmz.py` patched four files). The builders
   go through `esc()`; `restyle_kmz.py` now escapes and parses the KML before saving. Always validate a kmz with
   `xml.dom.minidom.parseString` before handing it over.
+- **Styles must come before the first `<Folder>`** (My Maps import error on `Indoors Trip (with museums).kmz`,
+  2026-10-24, XML was valid and every style reference resolved): `restyle_kmz.py` used to append its cloned
+  `<Style>`/`<StyleMap>` blocks just before `</Document>`, i.e. after the folders. It now inserts them before the
+  first `<Folder>`/`<Placemark>`. Splices from `layers_kml.py` already go after the last existing style. After any
+  edit check `max(style positions) < first '<Folder>'` before delivering. Not verified against My Maps itself (no
+  import possible from here); if it still errors, ask the user for the exact message and bisect by layers.
 - **Overpass can fail the TLS handshake from macOS system Python** (`SSLV3_ALERT_HANDSHAKE_FAILURE`, all
   three attempts, 2026-10-15). Fallbacks, in order: Nominatim `polygon_geojson=1` for a named street (gives
   the way geometry, but simplified and in pieces: fine for a straight street, poor for a loop), then

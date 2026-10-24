@@ -1,0 +1,283 @@
+{
+ "name": "Jongro merged additions",
+ "desc": "",
+ "layers": [
+  {
+   "name": "Namsangol & Pil-dong sights (남산골·필동, not on the walking line)",
+   "pins": [
+    {
+     "lat": 37.559119,
+     "lon": 126.994478,
+     "name": "Namsangol Hanok Village (남산골한옥마을)",
+     "icon": "historic",
+     "naver_id": "13198659",
+     "desc": "Exit 4 of Chungmuro Station, at the foot of Namsan (video 03:40). Old hanok from around Seoul were moved here and restored (a restoration project began in the late 1980s; it opened in 1998), most of them late-Joseon elite homes, with a recreated garden, Cheonghakji Pond and Cheonugak Pavilion. Unlike Bukchon, where most hanok were altered and are small, you can see furniture and kitchen tools of the Joseon era. Free entry; check opening days and the performance schedule on the official site (hanokmaeul.or.kr). A time capsule buried in 1994 is meant to be opened in 2394.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240323_70%2F1711179782593z0giS_JPEG%2F%25B3%25B2%25BB%25EA%25B0%25F1%25C7%25D1%25BF%25C1%25B8%25B6%25C0%25BB_%25B9%25CE%25BE%25BE%25B0%25A1%25BF%25C1_%25282%2529.jpg"
+    },
+    {
+     "lat": 37.560226,
+     "lon": 126.994512,
+     "name": "Korea House (한국의집)",
+     "icon": "historic",
+     "naver_id": "11715055",
+     "desc": "Exit 3 of Chungmuro Station (video 01:15). Royal-style Korean course meals, and tea and desserts at Kohojae (고호재), which the video booked on Catch Table; a five-minute court dance welcomes you, and the tea set changes with the season. The video says the site was once the home of Park Paeng-nyeon. A souvenir shop at the entrance sells Korean crafts and there is a café, so it is also a nice short stop without a booking.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20260430_144%2F1777518216877HButj_PNG%2Fimage.png"
+    },
+    {
+     "lat": 37.558455,
+     "lon": 126.993561,
+     "name": "Seoul Namsan Gugakdang (서울남산국악당)",
+     "icon": "hall",
+     "naver_id": "37046393",
+     "desc": "Up the main road from Namsangol Hanok Village (video 05:45). The performance hall is in the basement. The video says you can watch folk dance shows for free, and that the paid shows are popular and sell out fast; check the schedule first. Café Dalkang is on the first floor, in a hanok.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230614_103%2F16867378847742D4Mj_JPEG%2F_AH_0562.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Pil-dong restaurants & cafés (checked 2026-10-24)",
+   "pins": [
+    {
+     "lat": 37.560964,
+     "lon": 126.993911,
+     "name": "Sector Coffee Chungmuro (섹터커피 충무로점)",
+     "icon": "cafe",
+     "naver_id": "1228171198",
+     "desc": "2nd floor near Chungmuro Station (video 02:25). In-house roasted coffee at reasonable prices; the mocha affogato (chocolate bits in vanilla ice cream) and the rich banana pudding are the favourites. The main branch is near Korea House.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260102_36%2F1767319154159mda5B_JPEG%2FKakaoTalk_20260102_105833829_01.jpg"
+    },
+    {
+     "lat": 37.558718,
+     "lon": 126.996013,
+     "name": "Hebe Coffee (헤베커피)",
+     "icon": "cafe",
+     "naver_id": "1375527801",
+     "desc": "1st floor of Nakwon Building (video 03:06). A roastery café run by a former national barista, with many beans and unusual tea drinks. The chestnut cheesecake is the popular dessert.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200125_13%2F1579940626521A9CRw_JPEG%2FcY_ghm8BNXcGiCMAemAMuata.JPG.jpg"
+    },
+    {
+     "lat": 37.558455,
+     "lon": 126.993561,
+     "name": "Cafe Dalkang (달강)",
+     "icon": "cafe",
+     "naver_id": "1273486355",
+     "desc": "Ground floor of Seoul Namsan Gugakdang, in a hanok (video 05:51). Drinks and desserts.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260408_269%2F1775636864857X1Tgg_JPEG%2F%25C0%25DA%25BB%25EA_184x-100.jpg"
+    },
+    {
+     "lat": 37.556756,
+     "lon": 126.993835,
+     "name": "Mont (몽트)",
+     "icon": "cafe",
+     "naver_id": "1137376302",
+     "desc": "A bakery café behind Namsangol Hanok Village, with a modern, calm interior and views of Namsangol (video 06:33).",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240102_188%2F1704171843390RX8sU_JPEG%2FIMG_1924.jpeg"
+    },
+    {
+     "lat": 37.560373,
+     "lon": 126.996923,
+     "name": "Pildong Myeonok (필동면옥)",
+     "icon": "restaurant",
+     "naver_id": "11678838",
+     "desc": "Pyongyang naengmyeon (cold noodles), the most famous spot in Pil-dong (video 07:01). The clean, mild broth is full of umami and is said to be good for beginners; the spicy-sweet bibim naengmyeon is also good. The pork is tender, so order it separately if the price is no concern.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220815_107%2F1660543682523qkdYr_JPEG%2FScreenshot_20220813-201908_Instagram.jpg"
+    },
+    {
+     "lat": 37.560918,
+     "lon": 126.996268,
+     "name": "Pildong Hambak (필동함박)",
+     "icon": "restaurant",
+     "naver_id": "38425640",
+     "desc": "Hamburger steak, featured on a TV show (video 07:31). Add toppings such as pasta or a sous-vide egg to the basic steak, and choose from several cream sauces. Affordable Western-style dining.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260930_264%2F1790772847321awD3p_JPEG%2Fhf_20260904_020419_9b2192f5-3073-45eb-bcca-54e083db4474.jpg"
+    },
+    {
+     "lat": 37.559017,
+     "lon": 126.996036,
+     "name": "Pildong Haemul (필동해물)",
+     "icon": "restaurant",
+     "naver_id": "1487081318",
+     "desc": "A seafood place on upper Pildong-ro, a favourite of filmmakers according to the video (08:01).",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240124_108%2F1706089422868DFpnx_JPEG%2F1706089411147.jpg"
+    },
+    {
+     "lat": 37.55898,
+     "lon": 126.996044,
+     "name": "Kimchi Man Seonsaeng (김치만선생 동대필동점)",
+     "icon": "restaurant",
+     "naver_id": "37676634",
+     "desc": "Next door to Pildong Haemul (video 08:04). Kimchi stew for two with ramen noodles added, and a soft, slightly sweet rolled omelette. Rice is included, so it is good value.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250127_121%2F17379129876099M8YU_JPEG%2F1000019711.jpg"
+    },
+    {
+     "lat": 37.558757,
+     "lon": 126.996249,
+     "name": "Seonmi-ne Mart (선미네마트)",
+     "icon": "bar",
+     "naver_id": "1463038714",
+     "desc": "A retro Korean pub vibe across the street from Kimchi Man Seonsaeng (video 08:25). Naver shows the latest review in July 2026, so check that it is open before you go."
+    },
+    {
+     "lat": 37.561343,
+     "lon": 126.998598,
+     "name": "Manna Son Kalguksu (만나손칼국수)",
+     "icon": "restaurant",
+     "naver_id": "1084309992",
+     "desc": "On 'Everyone's Street' (모두의 거리) along Seoae-ro (video 08:39). Once counted among Seoul's top three kalguksu places, now in an apartment complex. Noodles, dumplings and kimchi are all made in-house; the video recommends kalmandu, noodle soup with kimchi dumplings, in a clean anchovy broth.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241122_295%2F1732238371089Xblbt_PNG%2FKakaoTalk_20241122_094550043.png"
+    },
+    {
+     "lat": 37.560994,
+     "lon": 126.997423,
+     "name": "Dongdae Dakhanmari (동대닭한마리 본점)",
+     "icon": "restaurant",
+     "naver_id": "18051039",
+     "desc": "Soul food of Dongguk University students (video 09:06): a rich broth simmered for 24 hours and generous portions.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20151223_273%2F1450840284572fyCkD_JPEG%2F18051039_01.jpg"
+    },
+    {
+     "lat": 37.562348,
+     "lon": 126.999759,
+     "name": "Brown Hof (브라운호프)",
+     "icon": "bar",
+     "naver_id": "20892798",
+     "desc": "An old beer hall where office workers have unwound for years (video 09:28). The video ordered half fried chicken and mixed cutlets; the fish cutlet stood out.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTExMTJfNDUg%2FMDAxNzYyOTM2NjU5MjIw.FjJVs7wUl38eaFkY96CAQkwTp8VcqGxAEgSRMhDsqNgg.14pvwMCiH5ewp3gZVrSKidnwdcEBdwoHLOFaStvRXsQg.JPEG%2F20251110_185039.jpg.jpg"
+    },
+    {
+     "lat": 37.561639,
+     "lon": 126.997508,
+     "name": "Sookhee (숙희)",
+     "icon": "bar",
+     "naver_id": "1903221041",
+     "desc": "A hidden hanok cocktail bar in the alley, for a more refined, unusual mood (video 09:55).",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190314_188%2F1552557866520hWny6_JPEG%2FjtF9u4mYYVqKhjpC_cqdLoWb.jpeg.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Cafés & restaurants (checked 2026-10-24)",
+   "pins": [
+    {
+     "lat": 37.566577,
+     "lon": 126.988617,
+     "name": "Coffee Hanyakbang (커피한약방)",
+     "icon": "cafe",
+     "naver_id": "1614417324",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fnaverbooking-phinf.pstatic.net%2F20241130_38%2F1732934967722yVz9Y_JPEG%2F20211113_0062.jpg",
+     "desc": "Samil-daero 12-gil 16-6, Euljiro, in an alley off Samil-daero. An old-Euljiro style café known for hand-drip coffee, with a small balcony over the alley rooftops (from a 2023 Seoul date video). Not on the walking line: it is a short detour from Ikseon-dong towards Euljiro. Hours (per Naver, 2026-10-24): Mon–Fri 10:00–22:00, Sat 11:00–22:00, Sun 11:00–20:00."
+    },
+    {
+     "lat": 37.578427,
+     "lon": 127.010948,
+     "name": "Chang Chan, Hong Kong-style restaurant (창창)",
+     "icon": "restaurant",
+     "naver_id": "1903257210",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231221_21%2F1703133427369pflH9_JPEG%2F%25C3%25A2%25C3%25A2%25B4%25EB%25C7%25A5%25BB%25E7%25C1%25F8.jpeg",
+     "desc": "Changsin 12-gil 37, Changsin-dong. A Hong Kong-style rooftop restaurant at the top of the Changsin-dong hill, popular for sunset and the city view (from a 2023 Seoul date video, where a spicy noodle dish cost 14,000 won; prices may have changed). Reports say you order from a payphone booth and the food arrives in a metal delivery box, and that booking ahead is wise. Not on the walking line: it is east of Ikseon-dong, towards Naksan Park, and hard to reach by public transport. Hours (per Naver, 2026-10-24): daily 11:30–21:00."
+    }
+   ]
+  },
+  {
+   "name": "Public toilets (공중화장실)",
+   "pins": [
+    {
+     "lat": 37.576782,
+     "lon": 126.985904,
+     "name": "Anguk Station toilet (안국역 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "38752014",
+     "desc": "Open toilet (개방화장실) at Anguk Station, the middle of the walk. About 25 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.579544,
+     "lon": 126.983163,
+     "name": "Bukchon Village Information Centre toilet (북촌마을안내소 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1810754464",
+     "desc": "Open toilet (개방화장실) at the Bukchon information centre, just below the Jeongdok Library corner. About 82 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.579082,
+     "lon": 126.986434,
+     "name": "Bukchon Cultural Center toilet (북촌문화센터 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1757698123",
+     "desc": "Open toilet (개방화장실) in the Bukchon Cultural Center. It is a building toilet, so hours follow the building. About 107 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.582326,
+     "lon": 126.985477,
+     "name": "Bukchon fermentation workshop toilet (북촌발효공방빛담 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1987512942",
+     "desc": "Open toilet (개방화장실) in a workshop on Bukchon-ro 12-gil, near the Bukchon viewpoint. A building toilet, so hours follow the building. About 25 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.570613,
+     "lon": 126.988084,
+     "name": "Tapgol Park toilet (탑골공원1층 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "38741998",
+     "desc": "Open toilet (개방화장실) in Tapgol Park. About 5 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.571828,
+     "lon": 126.991788,
+     "name": "Jongno 3-ga Station toilet (종로3가역 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "38752015",
+     "desc": "Open toilet (개방화장실) at Jongno 3-ga Station. About 28 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.57166,
+     "lon": 126.987297,
+     "name": "Insadong-gil culture street toilet (인사동길전통문화의거리화장실)",
+     "icon": "toilet",
+     "naver_id": "36257180",
+     "desc": "Public toilet (화장실) on the Insadong-gil culture street. About 21 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.573344,
+     "lon": 126.985039,
+     "name": "Insadong Maru main building toilet (인사동마루 본관 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1238401885",
+     "desc": "Open toilet (개방화장실) in the Insadong Maru main building. It is a building toilet, so hours follow the building. About 47 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.573576,
+     "lon": 126.984935,
+     "name": "Insadong Maru annex toilet (인사동마루 신관 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1521682122",
+     "desc": "Open toilet (개방화장실) in the Insadong Maru annex. It is a building toilet, so hours follow the building. About 33 m from the walking line. Hours not listed; check Naver."
+    },
+    {
+     "lat": 37.572465,
+     "lon": 126.988992,
+     "name": "Jongno 3-ga public toilet (종로3가 공중화장실)",
+     "icon": "toilet",
+     "naver_id": "4573294323",
+     "desc": "Near Jongno 3-ga, about 150 m from the line."
+    },
+    {
+     "lat": 37.559059,
+     "lon": 126.99368,
+     "name": "Namsangol Hanok Village main gate toilet (남산골한옥마을 정문 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1062934994",
+     "desc": "At the main gate of Namsangol Hanok Village."
+    },
+    {
+     "lat": 37.559098,
+     "lon": 126.993728,
+     "name": "Namsangol Hanok Village central toilet (남산골한옥마을 중앙 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1255120487",
+     "desc": "In the middle of Namsangol Hanok Village."
+    }
+   ]
+  }
+ ]
+}

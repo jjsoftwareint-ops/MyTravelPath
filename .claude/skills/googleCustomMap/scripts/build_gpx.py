@@ -99,52 +99,54 @@ def html_desc(w, maplinks):
 
 # Google My Maps icon ids (its own "newer" icon set; ids/names extracted from the mapspro JS). On import, My Maps
 # resolves styleUrl "#icon-<id>-<RRGGBB>"; the href below is the same image My Maps serves, so other apps show it too.
-ICONS = {  # key: (id, colour, image name, GPX <sym>). Blue 4186F0 is for toilets ONLY: every other place icon is green/pink/red/purple so it does not blend with Google's own blue places (user rule 2026-10-23)
-    'start':       ('1574', '0F9D58', 'flag',                'Flag, Green'),
+ICONS = {  # key: (id, colour, image name, GPX <sym>). Blue 4186F0 is for toilets ONLY: every other place icon is purple/pink/red; never green, which disappears on green lines and parks (user rules 2026-10-23 and 2026-10-24)
+    'start':       ('1574', '7B1FA2', 'flag',                'Flag, Green'),
     'end':         ('1661', 'DB4437', 'racetrack-flag',      'Flag, Red'),
-    'funicular':   ('1533', '0F9D58', 'cablecar-funicular',  'Car'),
-    'elevator':    ('1782', '0F9D58', 'elevator',            'Building'),
-    'stairs':      ('1877', '0F9D58', 'stairs',              'Trail Head'),
+    'funicular':   ('1533', '7B1FA2', 'cablecar-funicular',  'Car'),
+    'elevator':    ('1782', '7B1FA2', 'elevator',            'Building'),
+    'stairs':      ('1877', '7B1FA2', 'stairs',              'Trail Head'),
     'camera':      ('1535', 'E91E63', 'camera-photo',        'Scenic Area'),   # same as viewpoint
     'viewpoint':   ('1535', 'E91E63', 'camera-photo',        'Scenic Area'),   # pink camera; never binoculars (user rule 2026-10-14)
-    'entrance':    ('1783', '0F9D58', 'entrance',            'Waypoint'),
-    'plaque':      ('1600', '0F9D58', 'historic-plaque',     'Information'),
-    'market':      ('1686', '0F9D58', 'shop',                'Shopping Center'),
-    'convenience': ('1631', '0F9D58', 'moon',                'Convenience Store'),
+    'entrance':    ('1783', '7B1FA2', 'entrance',            'Waypoint'),
+    'plaque':      ('1600', '7B1FA2', 'historic-plaque',     'Information'),
+    'market':      ('1686', '7B1FA2', 'shop',                'Shopping Center'),
+    'convenience': ('1631', '7B1FA2', 'moon',                'Convenience Store'),
     'cafe':        ('1534', 'E91E63', 'cafe-cup',            'Restaurant'),   # pink: food & drink (user rule 2026-10-15)
     'bar':         ('1517', 'E91E63', 'bar-cocktail',        'Bar'),   # pink: food & drink (user rule 2026-10-15)
     'restaurant':  ('1577', 'E91E63', 'food-fork-knife',     'Restaurant'),   # pink: food & drink (user rule 2026-10-15)
-    'bus':         ('1532', '0F9D58', 'bus',                 'Ground Transportation'),
-    'subway':      ('1719', '0F9D58', 'tram',                'Ground Transportation'),
-    'church':      ('1706', '0F9D58', 'temple',              'Church'),
-    'monument':    ('1599', '0F9D58', 'historic-monument',   'Museum'),
-    'historic':    ('1598', '0F9D58', 'historic-building',   'Museum'),
-    'museum':      ('1636', '0F9D58', 'museum',              'Museum'),
-    'library':     ('1664', '0F9D58', 'reading-library',     'Building'),
-    'trail':       ('1597', '0F9D58', 'hiking-trailhead',    'Trail Head'),
-    'park':        ('1720', '0F9D58', 'tree',                'Park'),
-    'walking':     ('1731', '0F9D58', 'walking-pedestrian',  'Waypoint'),
-    'police':      ('1655', '0F9D58', 'police-badge',        'Police Station'),
-    'mountain':    ('1634', '0F9D58', 'mountain',            'Summit'),
-    'hotel':       ('1602', '0F9D58', 'hotel-bed',           'Lodging'),
+    'bus':         ('1532', '7B1FA2', 'bus',                 'Ground Transportation'),
+    'subway':      ('1719', '7B1FA2', 'tram',                'Ground Transportation'),
+    'church':      ('1706', '7B1FA2', 'temple',              'Church'),
+    'monument':    ('1599', '7B1FA2', 'historic-monument',   'Museum'),
+    'historic':    ('1598', '7B1FA2', 'historic-building',   'Museum'),
+    'museum':      ('1636', '7B1FA2', 'museum',              'Museum'),
+    'library':     ('1664', '7B1FA2', 'reading-library',     'Building'),
+    'trail':       ('1597', '7B1FA2', 'hiking-trailhead',    'Trail Head'),
+    'park':        ('1720', '7B1FA2', 'tree',                'Park'),
+    'walking':     ('1731', '7B1FA2', 'walking-pedestrian',  'Waypoint'),
+    'police':      ('1655', '7B1FA2', 'police-badge',        'Police Station'),
+    'mountain':    ('1634', '7B1FA2', 'mountain',            'Summit'),
+    'hotel':       ('1602', '7B1FA2', 'hotel-bed',           'Lodging'),
+    'spa':         ('1697', 'DB4437', 'spa',                 'Building'),   # red: spas (user rule 2026-10-24)
+    'sauna':       ('1811', 'DB4437', 'hotspring-onsen',     'Building'),   # red: sauna, jjimjilbang, hot spring, bathhouse (user rule 2026-10-24)
     'tent':        ('1765', 'DB4437', 'camping-tent',        'Shopping Center'),
     'flower':      ('1582', 'E91E63', 'garden-flower',       'Park'),   # cherry-blossom routes (pink)
     'toilet':      ('1733', '4186F0', 'wc-unisex',           'Restroom'),
     'dot':         ('1499', 'DB4437', 'shape_circle',        'Waypoint'),   # red dot: passing-by waypoint
     'stamp':       ('1862', '7B1FA2', 'seal',                'Waypoint'),   # Olle stamp station (purple seal)
-    'harbor':      ('1623', '0F9D58', 'marine-anchor',       'Marina'),
-    'bridge':      ('1528', '0F9D58', 'bridge',              'Bridge'),
-    'waterfall':   ('1892', '0F9D58', 'waterfall',           'Waterfall'),
-    'spring':      ('1703', '0F9D58', 'tap-flowing',         'Water Source'),
-    'tidepool':    ('1882', '0F9D58', 'tidepool-starfish',   'Scenic Area'),
-    'beach':       ('1521', '0F9D58', 'beach',               'Beach'),
-    'info':        ('1608', '0F9D58', 'info',                'Information'),
-    'parking':     ('1644', '0F9D58', 'parking',             'Parking Area'),
-    'school':      ('1682', '0F9D58', 'school-crossing',     'School'),
-    'stadium':     ('1698', '0F9D58', 'stadium-arena',       'Stadium'),
-    'hall':        ('1591', '0F9D58', 'headquarters',        'Building'),
-    'picnic':      ('1650', '0F9D58', 'picnic-table',        'Picnic Area'),
-    'street':      ('1611', '0F9D58', 'japanese-poi',        'Waypoint'),
+    'harbor':      ('1623', '7B1FA2', 'marine-anchor',       'Marina'),
+    'bridge':      ('1528', '7B1FA2', 'bridge',              'Bridge'),
+    'waterfall':   ('1892', '7B1FA2', 'waterfall',           'Waterfall'),
+    'spring':      ('1703', '7B1FA2', 'tap-flowing',         'Water Source'),
+    'tidepool':    ('1882', '7B1FA2', 'tidepool-starfish',   'Scenic Area'),
+    'beach':       ('1521', '7B1FA2', 'beach',               'Beach'),
+    'info':        ('1608', '7B1FA2', 'info',                'Information'),
+    'parking':     ('1644', '7B1FA2', 'parking',             'Parking Area'),
+    'school':      ('1682', '7B1FA2', 'school-crossing',     'School'),
+    'stadium':     ('1698', '7B1FA2', 'stadium-arena',       'Stadium'),
+    'hall':        ('1591', '7B1FA2', 'headquarters',        'Building'),
+    'picnic':      ('1650', '7B1FA2', 'picnic-table',        'Picnic Area'),
+    'street':      ('1611', '7B1FA2', 'japanese-poi',        'Waypoint'),
     'medical':     ('1558', 'DB4437', 'doctor-bag',          'Medical Facility'),   # hospital, clinic, pharmacy
     'pin':         ('1899', '0288D1', 'blank-shape_pin',     'Waypoint'),
 }
@@ -161,6 +163,8 @@ AUTO_ICON = [
     ('stairs',      ['stairs', 'steps', '계단']),
     ('market',      ['market', 'mall', 'arcade', '시장', '상가']),
     ('police',      ['police', '파출소', '경찰']),
+    ('sauna',       ['sauna', 'jjimjilbang', 'hot spring', 'onsen', 'bathhouse', '찜질', '사우나', '온천', '목욕탕']),
+    ('spa',         ['day spa', ' spa ', ' spa,', 'spa)', 'massage', '스파', '마사지', '한방']),
     ('hotel',       ['hotel', 'guesthouse', 'hostel', '호텔', '숙소']),
     ('tent',        ['night market', 'tent', '야시장', '천막', '포장마차']),
     ('convenience', ['7-eleven', 'cu ', 'gs25', 'convenience', 'lottery', '편의점', '복권']),

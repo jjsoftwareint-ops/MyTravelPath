@@ -31,7 +31,8 @@ def main():
                     for m in re.finditer(r'<' + kind + r' id="' + re.escape(base) + r'(-normal|-highlight)?">.*?</' + kind + '>', kml, re.S):
                         block = m.group(0).replace(base, target)
                         block = re.sub(r'<href>[^<]*</href>', f'<href>{href}</href>', block)
-                        kml = kml.replace('</Document>', block + '\n</Document>', 1)
+                        cut = min(i for i in (kml.find('<Folder>'), kml.find('<Placemark>')) if i >= 0)   # styles must precede the content or My Maps may refuse the import (2026-10-24)
+                        kml = kml[:cut] + block + '\n' + kml[cut:]
             # rewrite references, then drop the old blocks
             kml, n = re.subn(r'<styleUrl>#' + re.escape(base) + r'</styleUrl>', f'<styleUrl>#{target}</styleUrl>', kml)
             changed += n

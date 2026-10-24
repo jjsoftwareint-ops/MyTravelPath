@@ -1,0 +1,97 @@
+{
+ "name": "Indoors Trip museums",
+ "desc": "",
+ "layers": [
+  {
+   "name": "Seoul museums (박물관 · 미술관)",
+   "pins": [
+    {
+     "lat": 37.524087,
+     "lon": 126.980388,
+     "name": "National Museum of Korea (국립중앙박물관)",
+     "icon": "museum",
+     "naver_id": "11620570",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=http%3A%2F%2Fldb.phinf.naver.net%2F20140407_137%2F1396854285598o47tJ_JPEG%2F%25BC%25AD%25BF%25EF_%25B1%25B9%25B8%25B3%25C1%25DF%25BE%25D3%25B9%25DA%25B9%25B0%25B0%25FC_12.jpg%3Ftype%3Dm500_500",
+     "desc": "Seobinggo-ro 137, Yongsan. Korea's biggest museum, and a good rainy-day base: you can spend a whole day inside. Reports say it had about 6.5 million visitors in 2025, third in the world. Ichon Station is right next to it. Hours (per Naver, 2026-10-24): Wed and Sat 09:30–21:00, other days 09:30–17:30. Entry to the permanent exhibitions is free; special exhibitions can have a ticket."
+    },
+    {
+     "lat": 37.536464,
+     "lon": 126.977148,
+     "name": "War Memorial of Korea (전쟁기념관)",
+     "icon": "museum",
+     "naver_id": "11620311",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20160921_125%2F1474442065795aF4tH_JPEG%2F176871564444565_1.jpeg",
+     "desc": "Itaewon-ro 29, Yongsan. The museum of Korea's wars, with a large outdoor display of real aircraft and tanks, so it is best in dry weather, with the indoor halls as the rainy-day part. Hours (per Naver, 2026-10-24): 09:30–17:40, closed every Monday. Entry is free."
+    },
+    {
+     "lat": 37.538014,
+     "lon": 126.99941,
+     "name": "Leeum Museum of Art (리움미술관)",
+     "icon": "museum",
+     "naver_id": "11582919",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250217_49%2F1739761296902KPv9A_JPEG%2F%25B0%25ED%25B9%25CC%25BC%25FA_%25C0%25FC%25BD%25C3_%25284%2529_re.jpg",
+     "desc": "Itaewon-ro 55-gil 60-16, Hannam-dong. Traditional Korean art and modern and contemporary art side by side, in buildings by three famous architects. Hours (per Naver, 2026-10-24): 10:00–18:00, closed every Monday. Ticket prices change by exhibition, so check Naver before you go."
+    },
+    {
+     "lat": 37.578782,
+     "lon": 126.980049,
+     "name": "MMCA Seoul, National Museum of Modern and Contemporary Art (국립현대미술관 서울)",
+     "icon": "museum",
+     "naver_id": "19691123",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240517_152%2F1715921190072PUr2C_JPEG%2FS0001%252B.jpg",
+     "desc": "Samcheong-ro 30, Samcheong-dong. Korea's national modern and contemporary art museum, a short walk from the Samcheong-dong part of our Hanok Villages walk. Reports say it had about 2.1 million visitors in 2025. Hours (per Naver, 2026-10-24): 10:00–18:00, open until 21:00 on Wed and Sat. Ticket prices change by exhibition, so check Naver."
+    },
+    {
+     "lat": 37.581564,
+     "lon": 126.978931,
+     "name": "National Folk Museum of Korea (국립민속박물관)",
+     "icon": "museum",
+     "naver_id": "11620599",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240422_234%2F1713751058837YfBB3_JPEG%2FDE1A0604.jpg",
+     "desc": "Samcheong-ro 37, next to Gyeongbokgung. Everyday life in Korea through history: clothes, food, festivals and houses. An easy first museum for visitors. Hours (per Naver, 2026-10-24): 09:00–18:00, open until 20:00 on Wed. Entry is free."
+    },
+    {
+     "lat": 37.570143,
+     "lon": 126.970438,
+     "name": "Seoul Museum of History (서울역사박물관)",
+     "icon": "museum",
+     "naver_id": "11784657",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260818_141%2F1787042337701Vj8bl_JPEG%2F01_%25BC%25AD%25BF%25EF%25B5%25B5%25BD%25C3%25B0%25E8%25C8%25B9%25B4%25EB%25B0%25FC%25B6%25F7.jpg",
+     "desc": "Saemunan-ro 55, Jongno-gu, near Gwanghwamun and Gyeonghuigung Palace. The story of Seoul from its early days to today, with a big model of the city. A good one if you want to understand the city you are walking through. Hours (per Naver, 2026-10-24): 09:00–21:00, Thursday 09:00–18:00, closed every Monday. Entry to the permanent exhibition is free."
+    },
+    {
+     "lat": 37.576526,
+     "lon": 126.975049,
+     "name": "National Palace Museum of Korea (국립고궁박물관)",
+     "icon": "museum",
+     "naver_id": "11784606",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221128_286%2F1669618176504jKySC_JPEG%2F%25B9%25DA%25B9%25B0%25B0%25FC_%25C1%25A4%25B8%25E9%25BB%25E7%25C1%25F8_210118.jpg",
+     "desc": "Hyoja-ro 12, Jongno-gu, right beside Gyeongbokgung. Treasures of the Joseon royal court: royal seals, clothing, furniture and ceremonial objects. A good pair with a palace visit. Hours (per Naver, 2026-10-24): Wed and Sat 09:30–21:00, other days 09:30–17:30. Naver shows it closed on Monday 26 Oct, so check the regular closed days before you go. Entry is free. Tip: Free locker room."
+    },
+    {
+     "lat": 37.573923,
+     "lon": 126.977813,
+     "name": "National Museum of Korean Contemporary History (대한민국역사박물관)",
+     "icon": "museum",
+     "naver_id": "18664755",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20250611_104%2F1749631965906eOlmW_JPEG%2F%25C1%25A6%25B8%25F1%25C0%25BB-%25C0%25D4%25B7%25C2%25C7%25D8%25C1%25D6%25BC%25BC%25BF%25E4_-001.jpg",
+     "desc": "Sejong-daero 198, by Gwanghwamun Square. Korea's modern and contemporary history, from the late 1800s to today, told with objects and photos. Hours (per Naver, 2026-10-24): 10:00–18:00, open until 21:00 on Wed and Sat. Reports say entry to the permanent exhibition is free; check Naver for special shows."
+    }
+   ]
+  },
+  {
+   "name": "Spa (찜질방)",
+   "pins": [
+    {
+     "lat": 37.570226,
+     "lon": 126.945587,
+     "name": "Forest Herbal Land, charcoal-kiln spa (숲속한방랜드)",
+     "icon": "spa",
+     "naver_id": "11718253",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201007_172%2F1602078864738u5bWY_JPEG%2Febay_banner_hanbang.jpg",
+     "desc": "Bongwonsa-gil 75-7, Seodaemun-gu, near Sinchon. A jjimjilbang (Korean bathhouse) in the woods, and one of the best ways to warm up on a cold day. Reports say it has charcoal kilns outdoors, which is unusual for a city spa. Hours (per Naver, 2026-10-24): daily 06:30–22:00. Check Naver for prices and what to bring."
+    }
+   ]
+  }
+ ]
+}
