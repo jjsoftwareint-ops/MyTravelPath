@@ -106,14 +106,14 @@ export const posts: Post[] = [
         text: '인사동 (Insadong) is a street of galleries, tea houses and craft shops. Honestly, it is not mostly hanok houses. But it feels old Seoul, and it is the easiest place to buy a gift.',
       },
       { type: 'space' },
-      { type: 'h', icon: 'compass', text: '4. Namsangol: the calm one' },
+      { type: 'h', icon: 'door', text: '4. Namsangol: the one you can walk into' },
       {
         type: 'img',
-        src: 'namsangol-stage.jpg',
-        alt: 'A tiled-roof open-air pavilion stage at Namsangol Hanok Village, with modern city buildings behind it',
-        caption: 'Namsangol: hanok in a garden, with the city right behind.',
-        href: 'https://commons.wikimedia.org/wiki/File:Namsangol_Hanok_Village_20240409_088.jpg',
-        credit: { author: 'Mobius6', license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/' },
+        src: 'namsangol-inside.jpg',
+        alt: 'Inside a hanok at Namsangol Hanok Village: wooden cabinets and a lantern along a white wall, a folding screen on the right and a paper-covered floor',
+        caption: 'Inside a Namsangol hanok: a furnished room, open to visitors.',
+        href: 'https://commons.wikimedia.org/wiki/File:%EC%98%A5%EC%9D%B8%EB%8F%99%EC%9C%A4%EC%94%A8%EA%B0%80%EC%98%A5_%EC%82%AC%EC%A7%84_(2).jpg',
+        credit: { author: '록콜롤룸', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
       },
       {
         type: 'p',
@@ -121,11 +121,23 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
+        text: 'And this is the one place on our list where you can go **deep inside a hanok**. In Bukchon you only see the outside, because people live there. Here you can step into the houses and look around the rooms, which are shown furnished the way their owners lived.',
+      },
+      {
+        type: 'p',
+        text: 'Each house has its own story. Reports say one belonged to a military officer, one to a master carpenter, and one was a family shrine house.',
+      },
+      {
+        type: 'p',
+        text: 'A small warning: some houses have steps at the entrance, so it is not easy with a wheelchair or a pushchair.',
+      },
+      {
+        type: 'p',
         text: 'There is even a time capsule, buried in 1994. It is meant to be opened in the year 2394. We will not be there.',
       },
       {
         type: 'p',
-        text: 'Opening days can change, so check the official site (hanokmaeul.or.kr) before you go.',
+        text: 'Reports say the village is closed on Mondays, but opening days and hours can change, so check the official site (hanokmaeul.co.kr) before you go.',
       },
       { type: 'space' },
       { type: 'h', icon: 'thinking_face', text: 'So, which one are you?' },
@@ -136,7 +148,7 @@ export const posts: Post[] = [
           ['The famous photo', 'Bukchon'],
           ['Cute cafés and alleys', 'Ikseon-dong'],
           ['Tea, art and gifts', 'Insadong'],
-          ['Quiet and free', 'Namsangol'],
+          ['Going inside a hanok, for free', 'Namsangol'],
         ],
       },
       {
@@ -148,7 +160,7 @@ export const posts: Post[] = [
       { type: 'space' },
       {
         type: 'verdict',
-        text: '**Our verdict:** Bukchon in the morning, Ikseon-dong for a coffee, and Namsangol when you need a seat and some quiet.',
+        text: '**Our verdict:** Bukchon in the morning, Ikseon-dong for a coffee, and Namsangol when you want to step inside a hanok for real.',
       },
       {
         type: 'p',
