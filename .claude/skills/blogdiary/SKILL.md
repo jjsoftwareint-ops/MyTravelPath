@@ -93,7 +93,7 @@ The user wants posts written from Claude's own knowledge and research (standing 
 - CSS is in the "Blog (diary)" section of [src/index.css](../../../src/index.css): narrow column,
   17.5px text, line-height 1.85. Font: **Roboto** for Latin (the user's choice, 2026-10-23, after trying Literata/Fraunces and
   Pretendard; Montserrat/Lato were floated and dropped), self-hosted as `assets/fonts/roboto-latin.woff2`,
-  with **Pretendard** supplying Hangul (family `Roboto Blog` in `src/fonts.css`, Latin only). Warm paper card with an orange accent.
+  with **Pretendard** supplying Hangul (family `Roboto Blog` in `src/fonts.css`, Latin only). The same font is now **site-wide** (user, 2026-10-24); the blog no longer sets its own `font-family`. Warm paper card with an orange accent.
 
 ## 5. Images and emoji
 

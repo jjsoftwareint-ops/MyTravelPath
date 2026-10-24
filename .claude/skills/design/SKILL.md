@@ -98,6 +98,19 @@ tricks or transparency work unless asked.
 - Credits on photos: tiny translucent pill, bottom-right, clipped by the card (`overflow: hidden`).
 - Dark and light mode both come from the tokens in `src/index.css`; photos and icon colours are fixed.
 
+## 3b. Typography and text colour (user rule, 2026-10-24)
+
+The user found the detail page text grey, small and tiring, and asked for Roboto on every page.
+- **Font:** the whole site uses `"Roboto Blog"` (Roboto, Latin, self-hosted `assets/fonts/roboto-latin.woff2`)
+  with **Pretendard** for Hangul, declared in `src/fonts.css` and set once on `:root` in `src/index.css`.
+  Never add another `font-family` on a component (only the monospace copy-link box differs); buttons and
+  form fields inherit it (`font: inherit`).
+- **Body copy uses `var(--text-soft)`** (`#374151` light, `#d1d5db` dark, about 10:1 contrast). `var(--muted)`
+  grey is only for secondary things: dates, captions, list-row meta, chevrons, small print. Never set reading
+  text (guide, descriptions, About/Privacy paragraphs) in `--muted`.
+- **Reading sizes:** guide text 16px / line-height 1.7, path description 15px / 1.55, About-type paragraphs 15px /
+  1.55 with 12px gaps; do not go below 15px for sentences a visitor must read (13px is for captions only).
+
 ## 4. Verifying visually
 
 ```bash

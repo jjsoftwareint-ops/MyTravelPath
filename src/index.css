@@ -4,6 +4,7 @@
   --bg: #f4f5f7;
   --card: #ffffff;
   --text: #111827;
+  --text-soft: #374151; /* body copy: softer than --text, much stronger than --muted */
   --muted: #6b7280;
   --accent: #2563eb;
   --accent-text: #ffffff;
@@ -13,9 +14,10 @@
   --danger: #dc2626;
   --header-h: 64px; /* measured at runtime by Layout.tsx */
   color-scheme: light;
+  /* Roboto for Latin, Pretendard for Hangul (both self-hosted, see fonts.css) */
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+    "Roboto Blog", "Pretendard Variable", Pretendard, "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
@@ -27,6 +29,7 @@
     --bg: #0f1115;
     --card: #1a1d24;
     --text: #f3f4f6;
+    --text-soft: #d1d5db;
     --muted: #9ca3af;
     --accent: #60a5fa;
     --accent-text: #0b1220;
@@ -41,6 +44,7 @@
   --bg: #0f1115;
   --card: #1a1d24;
   --text: #f3f4f6;
+  --text-soft: #d1d5db;
   --muted: #9ca3af;
   --accent: #60a5fa;
   --accent-text: #0b1220;
@@ -53,6 +57,13 @@
 
 * {
   box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 html,
@@ -230,9 +241,9 @@ a:focus-visible {
   font-weight: 600;
 }
 .card-desc {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.45;
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.55;
 }
 .card-meta {
   display: flex;
@@ -834,8 +845,8 @@ a:focus-visible {
   margin-top: 0;
 }
 .prose p {
-  margin: 0 0 10px;
-  color: var(--muted);
+  margin: 0 0 12px;
+  color: var(--text-soft);
 }
 
 /* ── Contact form ────────────────────────────────────────── */
@@ -893,8 +904,8 @@ button.cta {
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--card);
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.7;
 }
 .guide h2 {
   margin: 0 0 8px;
@@ -907,17 +918,17 @@ button.cta {
   font-weight: 700;
 }
 .guide p {
-  margin: 0 0 10px;
-  color: var(--muted);
+  margin: 0 0 12px;
+  color: var(--text-soft);
 }
 .guide ol,
 .guide ul {
   margin: 0;
   padding-left: 22px;
-  color: var(--muted);
+  color: var(--text-soft);
 }
 .guide li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   padding-left: 2px;
 }
 .guide li::marker {
@@ -1134,7 +1145,6 @@ button.cta {
   padding: 14px 4px;
   color: var(--text);
   text-decoration: none;
-  font-family: "Roboto Blog", "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   letter-spacing: 0;
 }
 .post-list a:active {
@@ -1170,7 +1180,6 @@ button.cta {
   background: var(--paper);
   border-color: var(--paper-line);
   color: #2b2118;
-  font-family: "Roboto Blog", "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   letter-spacing: 0;
 }
 @media (prefers-color-scheme: dark) {
