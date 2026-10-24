@@ -158,7 +158,7 @@ export const cities: City[] = [
           ],
           route: [
             "Cheong Wa Dae, the former presidential Blue House, if you have booked a visit; otherwise start at Gyeongbokgung's east gate. Walk east along Cheongwadae-ro to Samcheong-dong.",
-            "Turn into the lane beside the Samcheong police box: rice-cake skewers at Pungnyeon Ssalnongsan, then the cafés and galleries around Jeongdok Library.",
+            "Turn into the lane beside the Samcheong police box and follow it to the cafés and galleries around Jeongdok Library.",
             "Up into Bukchon Hanok Village: the Gahoe-dong 31 alley and the viewpoint on Bukchon-ro 12-gil, roofs in the foreground and Namsan behind. Morning is quietest. Back downhill to Anguk Station.",
             "East along Yulgok-ro and down Samil-daero to the Hyundai Trevian apartments; the lane beside them leads into Ikseon-dong's hanok street. Meals are in the grill alley, Donhwamun-ro 11ga-gil.",
             "Past Jongno 3-ga, where one lane fills with pojangmacha street-food tents after dark, and Tapgol Park.",
@@ -168,7 +168,7 @@ export const cities: City[] = [
           tips: [
             "🚇 Getting there: Anguk Station (line 3) sits in the middle of the walk. Cheong Wa Dae visits need a free online reservation in advance.",
             "📍 Bukchon is a residential area with posted quiet hours. Stay on the marked lanes and keep voices down, especially around Gahoe-dong.",
-            "🍜 Eat little and often: rice-cake skewers in Samcheong-dong, Ikseon-dong grills, Insadong tea houses. Gwangjang Market is a short hop from the end.",
+            "🍜 Eat little and often: cafés in Samcheong-dong, Ikseon-dong grills, Insadong tea houses. Gwangjang Market is a short hop from the end.",
             "📍 Extras pinned on the map: Gwanghwamun Square and the gate, Changdeokgung and Changgyeonggung palaces, and Seosulla-gil, the café lane along the Jongmyo Shrine wall.",
             "📍 Hanbok rental shops cluster around Anguk; wearers enter the royal palaces free.",
             "🏡 Namsangol Hanok Village is free to enter. Unlike Bukchon, where most hanok were altered and are small, it shows a variety of old elite homes, with a garden, Cheonugak Pavilion and a time capsule buried in 1994. Seoul Namsan Gugakdang, a performance hall, is up the road. Check opening days and the show schedule on the official site (hanokmaeul.or.kr) before you go.",
