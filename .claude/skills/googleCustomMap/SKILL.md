@@ -45,6 +45,15 @@ but works from Chrome: `scripts/naver_course_shape.html` does the fetches in-pag
 (edit the `[route, mid]` list first) and parse the `<pre>` JSON; MultiLineString parts are contiguous. Use
 this line as-is (`approx: false`); OSM relations and routing are only for courses Naver lacks. The user
 pointed at these Naver entries after two wrong rebuilds (2026-10-13): ask for / look for them first.
+**Wolmido (2026-10-25):** the file:// Chrome fetch above now gets a placeholder HTML page back, but a plain `curl -X POST
+https://api.place.naver.com/graphql` works when it sends `Origin: https://m.place.naver.com`, `Referer:
+https://m.place.naver.com/trail/<placeId>/home`, an iPhone UA and `variables {mid}`, with the `mid` read from the trail
+page's Apollo state (`"mainCourse":{"mid":"…"}`; `curl -L m.place.naver.com/place/<id>/home` redirects to `/trail/<id>/home`).
+The page also lists the course's facilities (toilets, car parks, tourist offices). Incheon Dulle-gil course 13 (Wolmido,
+인천둘레길13코스, 4.97 km, 192 points) starts at Incheon Station and loops the island; check which pins lie within ~150 m of
+the line (dense the line to 5 m and measure) and say which are off it. Naver lists each monorail stop as category 모노레일.
+For café pins, the place page's voted keywords (`"displayName":"뷰가 좋아요","count":…`) and any 노을/일몰/석양 mention
+in the page text are the evidence for a "sunset café"; only pin those that carry it. Spec: examples/wolmido-sunset.json.
 Hongdae (2026-10-17): city walking courses are on Naver too (`마포걷고싶은길1코스(경의선숲길)`, `레드로드`,
 `홍대땡땡거리`, all category 도보코스). Their pages carry **no `mid`**: query `getShapeGeoJSON` with
 `{businessIds: ["<placeId>"]}` instead (edit the vars in `naver_course_shape.html`); the shape `key` equals

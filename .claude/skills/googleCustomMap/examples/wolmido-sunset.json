@@ -1,0 +1,212 @@
+{
+ "name": "Wolmido Sunset",
+ "desc": "Wolmido island on Incheon's waterfront, built for the hour before sunset: the short walk from Incheon Station (line 1, Suin-Bundang line) to the Wolmi Sea Train monorail (the ticket is a round ticket: one ride out and one more the same day), all four monorail stops, the 5 km Wolmido walking loop (Naver Map's official line for Incheon Dulle-gil course 13), four cafés where reviewers watch the sunset, and public toilets. Hours and prices are as listed on Naver Map and Incheon city's pages in October 2026, so check before you go.",
+ "layers": [
+  {
+   "name": "Incheon Station to the monorail (인천역 → 월미바다역)",
+   "line": {
+    "name": "Incheon Station → Wolmi Sea Station, about 200 m",
+    "color": "7B1FA2",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Station forecourt, south on Jemullyang-ro, right onto Wolmi-ro (pedestrian router on OSM streets)",
+     "approx": false,
+     "coords": "37.476377,126.616958 37.476377,126.617379 37.475966,126.617379 37.475856,126.617379 37.475725,126.617379 37.475438,126.617308 37.475380,126.617275 37.475348,126.617229 37.475304,126.617123 37.475420,126.616574"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.476377,
+     "lon": 126.616958,
+     "name": "Start – Incheon Station (인천역)",
+     "icon": "subway",
+     "naver_id": "11655615",
+     "desc": "Jemullyang-ro 269. Line 1 terminus and the Suin-Bundang line. Walk south from the station forecourt and turn right on Wolmi-ro: Wolmi Sea Station, the first monorail stop, is about 200 m away (3 minutes).",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f&size=256x256&src=https%3A%2F%2Fsimg.pstatic.net%2Fstatic.map%2Fv2%2Fmap%2Fstaticmap.bin%3Fcaller%3Dpubtrans_search%26scale%3D1%26w%3D256%26h%3D256%26center%3D126.6169577%2C37.4763766%26level%3D16%26format%3Djpg%26markers%3Dtype%3Ad%7Csize%3Amid%7CviewSizeRatio%3A0.7%7Cpos%3A126.6169577%2037.4763766%7Ccolor%3ADefault"
+    }
+   ]
+  },
+  {
+   "name": "Wolmi Sea Train monorail stops (월미바다열차 정거장)",
+   "pins": [
+    {
+     "lat": 37.475409,
+     "lon": 126.61657,
+     "name": "1. Wolmi Sea Station (월미바다역)",
+     "icon": "subway",
+     "naver_id": "1718894508",
+     "desc": "Wolmi-ro 6, beside Incheon Station: stop 1 and the ticket office. Anyone who booked online can only board here; tickets can be bought at all four stops. The monorail ticket is a round ticket: it covers one more ride on the same day, so you can get off at any stop, walk, and board again. Booking and timetable: wolmiseatrain.or.kr, tel. +82 32 450 7600. Walking path: 9 m.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191114_251%2F1573708685817nIcCv_JPEG%2FUVmmicQZUmtqkbiYcrU49jCH.jpg"
+    },
+    {
+     "lat": 37.476197,
+     "lon": 126.606117,
+     "name": "2. Wolmi Park Station (월미공원역)",
+     "icon": "subway",
+     "naver_id": "1193561565",
+     "desc": "Wolmi-ro 482: stop 2, with a rooftop observatory (per Incheon city). The Wolmi Park main gate, where the walking path ends, is about 60 m away. Your round ticket works for one more ride from here. Walking path: 19 m.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191108_161%2F1573205030347Txtm4_JPEG%2FCr7WGFY6_zhwUk6MLwQg--Yl.jpg"
+    },
+    {
+     "lat": 37.477321,
+     "lon": 126.599257,
+     "name": "3. Wolmi Culture Street Station (월미문화의거리역)",
+     "icon": "subway",
+     "naver_id": "1295994661",
+     "desc": "Wolmi-munhwa-ro 5: stop 3, north of Wolmi Culture Street. The station sits on the monorail's northern edge, about 350 m from the walking path, so walk south to the seafront street to rejoin it. Your round ticket works for one more ride from here.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191108_216%2F1573204907183woRez_JPEG%2F5z6xHvHqqbGUgSUk8Gv7PK0w.jpg"
+    },
+    {
+     "lat": 37.470335,
+     "lon": 126.59748,
+     "name": "4. Museum Station (박물관역)",
+     "icon": "subway",
+     "naver_id": "1458783661",
+     "desc": "Wolmi-ro 297: stop 4, at the Korea Emigration Museum. There is a public toilet at the stop. Your round ticket works for one more ride from here. Walking path: 64 m.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191108_249%2F15732046397035if0O_JPEG%2FxyYxaukYsCxMuexwXt9I61zM.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Wolmido walking path (월미도 걷기 · 인천둘레길 13코스)",
+   "line": {
+    "name": "Wolmido walking path, 5.0 km: Incheon Station → Wolmi Culture Street → Wolmi Park (Incheon Dulle-gil course 13)",
+    "color": "E65100",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Naver Map's official line for Incheon Dulle-gil course 13 (Wolmido), 192 points, used as published",
+     "approx": false,
+     "coords": "37.475738,126.617252 37.475621,126.617213 37.475561,126.617178 37.475480,126.617080 37.475441,126.617000 37.475428,126.616945 37.475534,126.616304 37.475553,126.616285 37.475579,126.616269 37.475605,126.616270 37.475646,126.616279 37.475701,126.615872 37.475378,126.615797 37.475320,126.615634 37.476534,126.614977 37.476973,126.614780 37.477687,126.614447 37.477936,126.614338 37.478229,126.614202 37.478320,126.614142 37.478398,126.614056 37.478424,126.613980 37.478446,126.613891 37.478477,126.613633 37.478477,126.613411 37.478442,126.613115 37.477158,126.608735 37.476841,126.607652 37.476313,126.605882 37.476287,126.605787 37.476275,126.605738 37.476181,126.605696 37.476130,126.605506 37.476287,126.605446 37.476121,126.604899 37.475863,126.604086 37.475798,126.603851 37.475783,126.603797 37.475557,126.602970 37.475548,126.602939 37.475462,126.602696 37.475385,126.602574 37.475265,126.602361 37.475198,126.602333 37.475036,126.602140 37.475023,126.602059 37.474998,126.602033 37.474940,126.601951 37.474869,126.601833 37.474761,126.601571 37.474664,126.601387 37.474517,126.601226 37.474196,126.600804 37.474146,126.600754 37.474120,126.600739 37.474034,126.600672 37.473865,126.600420 37.473852,126.600396 37.473656,126.599980 37.473482,126.599535 37.473321,126.599157 37.473223,126.598998 37.472982,126.598424 37.472918,126.598380 37.472880,126.598310 37.472801,126.598100 37.472884,126.598055 37.472932,126.598152 37.472949,126.598159 37.472981,126.598155 37.473011,126.598136 37.473353,126.597872 37.473543,126.597708 37.473957,126.597355 37.474085,126.597329 37.474272,126.597155 37.473727,126.596874 37.473262,126.596633 37.472845,126.596414 37.472318,126.596150 37.471921,126.595947 37.471843,126.595945 37.471720,126.595951 37.471177,126.596042 37.471143,126.596056 37.471108,126.596074 37.470878,126.596331 37.470845,126.596412 37.470836,126.596502 37.470871,126.597005 37.470999,126.596936 37.471020,126.597013 37.471044,126.597087 37.470862,126.597202 37.470924,126.597285 37.470996,126.597365 37.471039,126.597430 37.471018,126.597500 37.470974,126.597560 37.470970,126.597612 37.471008,126.597675 37.471039,126.597697 37.471206,126.597785 37.471242,126.597812 37.471268,126.597882 37.471301,126.597885 37.471345,126.597862 37.471398,126.597847 37.471454,126.597850 37.471508,126.597885 37.471579,126.597977 37.471625,126.598045 37.471672,126.598085 37.471536,126.598250 37.471445,126.598465 37.471298,126.598775 37.471068,126.599170 37.471056,126.599310 37.471056,126.599560 37.471080,126.599890 37.471120,126.600230 37.471092,126.600360 37.471032,126.600495 37.470822,126.600900 37.470703,126.601120 37.470580,126.601310 37.470279,126.601730 37.470243,126.601815 37.470160,126.601980 37.470108,126.602055 37.469913,126.602200 37.469796,126.602340 37.469743,126.602435 37.469612,126.602800 37.469529,126.603010 37.469413,126.603215 37.469219,126.603395 37.469068,126.603505 37.468721,126.603811 37.468540,126.604030 37.468503,126.604085 37.468441,126.604175 37.468386,126.604270 37.468318,126.604465 37.468267,126.604770 37.468274,126.605010 37.468310,126.605295 37.468366,126.605440 37.468505,126.605595 37.468913,126.605970 37.469231,126.606160 37.469584,126.606300 37.469771,126.606320 37.469898,126.606295 37.470084,126.606225 37.470219,126.606205 37.470505,126.606360 37.470814,126.606480 37.470965,126.606495 37.471100,126.606495 37.471243,126.606420 37.471576,126.606060 37.471703,126.605855 37.471866,126.605540 37.471953,126.605410 37.472144,126.605185 37.472894,126.604705 37.473243,126.604510 37.473294,126.604420 37.473346,126.604245 37.473390,126.604160 37.473457,126.604110 37.473564,126.604095 37.473659,126.604120 37.473747,126.604155 37.473854,126.604140 37.473973,126.604005 37.474108,126.603695 37.474199,126.603565 37.474576,126.603320 37.474733,126.603191 37.474810,126.603292 37.474845,126.603303 37.474894,126.603285 37.474999,126.603370 37.475534,126.603803 37.475663,126.603925 37.475785,126.603858 37.475852,126.604090 37.476111,126.604905 37.476274,126.605441 37.476287,126.605446"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.474198,
+     "lon": 126.59718,
+     "name": "Wolmi Culture Street (월미문화의거리)",
+     "icon": "street",
+     "naver_id": "16578796",
+     "desc": "Wolmi-munhwa-ro 36-1. Wolmido's seafront street, with snack stalls, claw machines and the monorail passing overhead. The walking path runs right along it, 2.2 km from the start.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNjA4MzBfMjQx%2FMDAxNzg4MDUxODU3MDg0.zHXSqQKbmn0uncFxmvW28KEYyxwuKK1VEJOlWeiq93wg.j0klNUd8UrheeDpysjTorLjDz9JXhbBBStbzsNqAbgsg.JPEG%2F20260830_091707.jpg.jpg"
+    },
+    {
+     "lat": 37.47026,
+     "lon": 126.6002,
+     "name": "Korea Emigration Museum (한국이민사박물관)",
+     "icon": "museum",
+     "naver_id": "13312649",
+     "desc": "Wolmi-ro 329. Korea's first museum of emigration history, built by Incheon citizens and overseas Koreans for the 2003 centenary of emigration to the US (per Naver). It closed at 18:00 on 25 October, so check the day's hours and closed days. 86 m from the walking path, beside Museum Station.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_261%2F1441018751064MeRwt_JPEG%2F116079518121591_0.jpg"
+    },
+    {
+     "lat": 37.469608,
+     "lon": 126.605293,
+     "name": "Wolmi Observatory (월미공원 월미전망대)",
+     "icon": "camera",
+     "naver_id": "32582344",
+     "desc": "Hilltop observatory: three floors, 23 m high, with views of Incheon Port, the West Sea and Incheon Bridge, and a café inside (per Incheon city's Wolmi Park page). Reports say it takes about 30 minutes on foot to reach, or less by the park's shuttle. Naver showed it open until 21:30 on 25 October. 86 m from the walking path.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=http%3A%2F%2Fblogfiles.naver.net%2F20140603_237%2Fran_c_1401771184339TerdY_JPEG%2FSAM_4330.JPG"
+    },
+    {
+     "lat": 37.474401,
+     "lon": 126.605381,
+     "name": "Wolmi Traditional Garden (월미공원 전통정원)",
+     "icon": "park",
+     "naver_id": "36411241",
+     "desc": "Wolmi-ro 131-9. A Korean traditional garden at the foot of the observatory hill; visitor reviews mention reeds, animals and a quiet autumn stroll. 125 m from the walking path.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzEyMTFfMjA5%2FMDAxNzAyMjk0NDEzOTM5.V-tWN4mQ5O_1i4xTw3ty2M1wYZKgOctUNYkA-EpKr2Ag.4Acycje7aSJyomQkL3JWAdn53YSLt2KoTBmyLcoAGK8g.JPEG%2F20231211_151114.jpg.jpg"
+    },
+    {
+     "lat": 37.476287,
+     "lon": 126.605446,
+     "name": "End – Wolmi Park main gate (월미공원 정문)",
+     "icon": "end",
+     "naver_id": "1304222496",
+     "desc": "The end of Incheon Dulle-gil course 13 (4.97 km, about 81 minutes on Naver Map). Wolmi Park Station is about 60 m away, so you can ride the monorail back to Wolmi Sea Station on the second half of your round ticket."
+    }
+   ]
+  },
+  {
+   "name": "Sunset cafés (노을 카페, checked 2026-10-25)",
+   "pins": [
+    {
+     "lat": 37.475879,
+     "lon": 126.614962,
+     "name": "Storage Incheon (스토리지 인천)",
+     "icon": "cafe",
+     "naver_id": "1747213417",
+     "desc": "Wolmi-ro 33, 3rd and 4th floors, a few minutes' walk from Incheon Station and 30 m from the walking path. Big windows face the West Sea, and a reviewer's write-up is titled for its sunset view. Naver showed last order at 19:00 on 25 October.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240903_236%2F1725348755595HACkS_JPEG%2FKakaoTalk_20240830_182057941_01.jpg"
+    },
+    {
+     "lat": 37.475334,
+     "lon": 126.597904,
+     "name": "Wolmido Remi (월미도레미)",
+     "icon": "cafe",
+     "naver_id": "1239508577",
+     "desc": "Wolmi-munhwa-ro 35, 2nd floor, in the middle of Wolmi Culture Street. Visitors praise the sea view, and the signature drink is the Wolmi Sunset Tea (월미선셋티), raspberry-grapefruit Earl Grey. Naver showed last order at 21:30 on 25 October. 135 m from the walking path.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20251224_231%2F1766565428640JIfgI_JPEG%2F1766565174480.jpg"
+    },
+    {
+     "lat": 37.474866,
+     "lon": 126.597593,
+     "name": "Me Too Coffee (미투커피)",
+     "icon": "cafe",
+     "naver_id": "37366230",
+     "desc": "Wolmi-munhwa-ro 39. A retro-styled café; the café's own description on Naver mentions 2nd-floor window seats over the sea and a rooftop terrace for dusk. Naver showed last order at 21:30 on 25 October. 77 m from the walking path.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20260518_213%2F17791159775058RsNF_JPEG%2F850979AA-BF31-4AC9-962B-3275A8CEE874.jpg"
+    },
+    {
+     "lat": 37.476103,
+     "lon": 126.598658,
+     "name": "Artos Hope Party (아르토스 희망파티)",
+     "icon": "cafe",
+     "naver_id": "1833684551",
+     "desc": "Wolmi-ro 226beon-gil 10, 5th floor of the Wolmi Ocean Terrace building. The café's own directions on Naver call the 5th floor 'beautiful for sunsets', and a blog titles it a Wolmido café with a lovely sunset. Naver showed closing at 20:00 on 25 October. 243 m from the walking path.",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231018_51%2F16976060208444JTni_JPEG%2F231012_0154.jpg"
+    }
+   ]
+  },
+  {
+   "name": "Public toilets (공중화장실)",
+   "pins": [
+    {
+     "lat": 37.475651,
+     "lon": 126.60257,
+     "name": "Public toilet, Wolmi Park entrance (공중화장실 월미공원)",
+     "icon": "toilet",
+     "naver_id": "36253628",
+     "desc": "Wolmi-ro 131-50, by the Wolmi Park entrance and car park. 24 m from the walking path."
+    },
+    {
+     "lat": 37.47468,
+     "lon": 126.599409,
+     "name": "Wolmi pier toilet (월미도뱃터화장실)",
+     "icon": "toilet",
+     "naver_id": "1933053042",
+     "desc": "Wolmi-ro 237, at the Wolmi pier end of the culture street. 124 m from the walking path."
+    },
+    {
+     "lat": 37.471114,
+     "lon": 126.595847,
+     "name": "Wolmi Culture Street toilet (월미도문화의거리화장실)",
+     "icon": "toilet",
+     "naver_id": "1851818117",
+     "desc": "Wolmi-munhwa-ro 84, by the crane (학) stage at the west end of the culture street. 19 m from the walking path."
+    },
+    {
+     "lat": 37.471048,
+     "lon": 126.597223,
+     "name": "Public toilet, Museum Station (공중화장실 박물관역)",
+     "icon": "toilet",
+     "naver_id": "36253684",
+     "desc": "Wolmi-ro 297, at the Museum Station monorail stop. 11 m from the walking path."
+    }
+   ]
+  }
+ ]
+}

@@ -106,6 +106,8 @@ All allow free use; the credit is given in every case.
 - Cherry Blossom walk banners (Seoul and Busan): *Cherry Blossom in Yeouido Park - panoramio (1)*, Alexey
   Komarov, CC BY 3.0.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg
+- Wolmido Sunset path banner: *Sunset over Incheon Harbor* (looking west from Wolmido), JNicol, CC BY-SA 3.0.
+  https://commons.wikimedia.org/wiki/File:Sunset_over_Incheon_Harbor.jpg
 - Indoors Trip path banner: *Seoul botanic park 05* (the greenhouse), Korea.net / Korean Culture and
   Information Service, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Seoul_botanic_park_05.jpg
 - Naksan Park path banner: *서울 한양도성 … 낙산야경1-1*, Seoul Metropolitan Fire &
