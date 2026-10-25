@@ -76,7 +76,7 @@ def style_for(icon):
 
 
 def placemark(a, image):
-    img = f'<img src="{image}" width="300"><br>' if image else ''
+    img = f'<img src="{image}" width="300"><br>' if image else '<!--nophoto-->'   # marker: later runs keep it photo-less
     return (f'<Placemark><name>*CLICK* {a["name"]}</name><description><![CDATA[{img}<b>{a["name"]} ({a["korean"]})</b>'
             f'<br>{a["desc"]}<br><a href="{naver_link(a["naver_id"], a["lat"], a["lon"])}">Open Naver Map</a>]]></description>'
             f'<styleUrl>#{style_for(a["icon"])}</styleUrl><Point><coordinates>{a["lon"]},{a["lat"]},0</coordinates></Point></Placemark>')
@@ -138,7 +138,7 @@ def photos(kml, cache, offline, extra_skip):
     def one(m):
         nonlocal added
         p = m.group(0)
-        if '<Point>' not in p or '<img' in p:
+        if '<Point>' not in p or '<img' in p or '<!--nophoto-->' in p:
             return p
         n = cl(re.search(r'<name>(.*?)</name>', p, re.S).group(1)).replace('*CLICK* ', '')
         st = re.search(r'<styleUrl>#icon-(\d+)-', p)

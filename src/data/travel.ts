@@ -576,7 +576,7 @@ export const cities: City[] = [
         id: 'villages-and-hotspots',
         name: 'Culture Villages and Hotspots',
         description:
-          'The Gwangalli night walk, 2.9 km under the lit bridge, plus Busan\'s other must-sees on one map: the Nampo-dong markets, the Huinnyeoul and Gamcheon culture villages and Haedong Yonggungsa temple. Toilets and checked restaurants and cafés at each.',
+          'The Gwangalli night walk, 2.9 km under the lit bridge, plus Busan\'s other must-sees on one map: the Nampo-dong markets, the Huinnyeoul and Gamcheon culture villages, Busan\'s Chinatown and Haedong Yonggungsa temple. Toilets and checked restaurants and cafés at each.',
         duration: '2h walk',
         updated: '2026-10-25',
         tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
@@ -590,7 +590,7 @@ export const cities: City[] = [
         image: 'gamcheon.jpg',
         imageCredit: 'Photo: Basile Morin · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=11Nm3BTkYHgR9W5t2oMYbhGo-tN8Tg0k',
-        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'NightMarket', 'KoreaTravel'],
+        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'NightMarket', 'BusanChinatown', 'KoreaTravel'],
         notices: [
           {
             icon: '🌃',
@@ -615,7 +615,8 @@ export const cities: City[] = [
             "Millak raw-fish town at the east end: buy a fish in the fishermen's market downstairs, then eat upstairs for a table fee or carry it to Millak Waterfront Park, right under the bridge.",
             "Nampo-dong, line 1 to Jagalchi: the fish market hall and quay stalls, then the arcades of Gukje and Kkangtong markets. Gukje grew from a street market after liberation, and in the Korean War refugees sold US army supplies there; Kkangtong, 'tin can', is named for the canned goods from US bases.",
             "BIFF Square, made when the film festival began in 1996 and now the home of the hotteok carts, and the escalators up Yongdusan Park to Busan Tower. The park was re-made after a great fire in 1954.",
-            "Busan Station and Choryang, line 1: Anmok Busan Station for pork gukbap (rice soup), and Ochoryang, a tea house and small gallery in a wooden Japanese-style house built in 1925, five minutes from Choryang Station exits 7 and 9. Ochoryang is closed on Mondays and Tuesdays and is booked on Naver.",
+            "Busan Chinatown, right in front of Busan Station. Korean sources trace it to 1884, when a Qing consulate opened in Choryang and merchants settled around it; the street sold silk, cloth and flower shoes from Shanghai, part of it became Texas Street after the war, and the Shanghai Gate went up in 1999 for the sister-city tie with Shanghai.",
+            "Also at Busan Station and Choryang, line 1: Anmok Busan Station for pork gukbap (rice soup), and Ochoryang, a tea house and small gallery in a wooden Japanese-style house built in 1925, five minutes from Choryang Station exits 7 and 9. Ochoryang is closed on Mondays and Tuesdays and is booked on Naver.",
             "Huinnyeoul Culture Village, bus 7, 71 or 508 from Nampo-dong over Yeongdo Bridge. 'White rapids' is named for the white foam where streams from Bongnae Mountain meet the sea, and the white houses and murals on the cliff lane are from the 2010s revival. Add the short coastal tunnel and the Jeoryeong coast walk.",
             "Gamcheon Culture Village, bus 1-1, 2 or 2-2 from Toseong Station exit 6 to the top. The pastel houses stack down a steep valley, and a public art project began painting them in 2009. Buy the stamp map at the information centre, follow the fish signs and keep to the marked lanes: people still live here. The Little Prince and the fox on the railing is the most queued photo in Busan.",
             "Haedong Yonggungsa, bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974. Toilets, restaurants and view cafés are pinned at every spot, all checked on Naver.",
@@ -626,6 +627,7 @@ export const cities: City[] = [
             "⏰ Saturday is the night: the drone show at 20:00 or 19:00 by season, then the bridge lights on the hour. Weeknights are calmer and the fish market cheaper.",
             "🍜 The fish-market system: buy downstairs, then a table fee upstairs covers side dishes and soup; take-away to the park is free. At BIFF Square the seed hotteok queue moves fast.",
             "🍲 Pork gukbap is Busan's classic bowl, and Anmok has two pins: near Busan Station (open from 11:00 on weekdays, 10:00 at weekends) and in Seomyeon (from 10:00 on weekdays, 09:00 at weekends). Hours as listed on Naver Map on 25 October 2026.",
+            "🔗 Korea's oldest China Town is in Incheon, an hour from Seoul, with its own walk on this site.",
             "👟 Gwangalli and Nampo-dong are flat. Gamcheon and Huinnyeoul are stairs and slopes; Yonggungsa is 108 steps each way.",
             "🔗 The Haeundae Coastal Path on this site is two stops away from Gwangalli and makes the next morning.",
           ],

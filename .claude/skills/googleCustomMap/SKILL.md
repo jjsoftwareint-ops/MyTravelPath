@@ -34,7 +34,7 @@ Do the mechanical work with scripts, not by writing code or printing dumps each 
   update on every food pin), the live-map export for the rebase, WebSearch for facts. Everything after that is local.
 - **Keep output small:** read only the lines you need (`| tail`, `cut -c1-200`), never print a whole kml or a page of HTML,
   save fetched pages in the scratchpad and grep them. A pin with no Naver place of its own (an event, a lookout) gets
-  `"image": "none"` and is listed in `no_photo`: the Naver photo of a neighbouring place (a campsite beside a night
+  `"image": "none"` (the script leaves a hidden `<!--nophoto-->` marker so later runs keep it photo-less) and is listed in `no_photo`: the Naver photo of a neighbouring place (a campsite beside a night
   market) is not a picture of it.
 
 ## Layered KML workflow (hiking videos: ascent + descent + restaurants)
