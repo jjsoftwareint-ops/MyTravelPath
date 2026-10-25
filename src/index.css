@@ -302,6 +302,10 @@ a:focus-visible {
   background: light-dark(#ffedd5, #7c2d12);
   color: light-dark(#c2410c, #fed7aa);
 }
+.pill.tag-rainy {
+  background: light-dark(#e0f2fe, #0c4a6e);
+  color: light-dark(#075985, #bae6fd);
+}
 .tag-icon {
   width: 13px;
   height: 13px;

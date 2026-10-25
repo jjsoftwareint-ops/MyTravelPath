@@ -36,6 +36,128 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'korean-sauna-stone-oven-for-humans',
+    title: 'The Korean sauna is a stone oven for humans',
+    description:
+      "Korea's traditional sauna started as a stone dome fired with pine logs. Where the kiln came from, how it works, and how to sweat without cooking yourself.",
+    teaser: 'Would you climb into one?',
+    icon: 'hot_springs',
+    date: '2026-10-25',
+    updated: '2026-10-25',
+    keywords: ['KoreaTravel', 'Jjimjilbang', 'KoreanSauna', 'Hanjeungmak', 'Seoul'],
+    body: [
+      {
+        type: 'p',
+        text: 'Here is a Korean pastime that sounds like a threat. You pay a small fee, walk into a stone dome that was heated by burning logs, and sit there until you have had enough.',
+      },
+      {
+        type: 'p',
+        text: 'We call it **a stone oven for humans**. Nobody gets baked, but the idea is not far off.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'fire', text: 'How the oven works' },
+      {
+        type: 'img',
+        src: 'jjimjilbang-bulgama.jpg',
+        alt: 'A tiled hall in a jjimjilbang with a large dome painted with a farming scene on the right and arched stone doorways on the left',
+        caption: 'A kiln room in a modern jjimjilbang: the painted dome on the right.',
+        href: 'https://commons.wikimedia.org/wiki/File:2020-03-11_20.39.31_%EC%B0%9C%EC%A7%88%EB%B0%A9_%EB%B6%88%EA%B0%80%EB%A7%88.jpg',
+        credit: { author: 'Choikwangmo9', license: 'CC0 1.0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      {
+        type: 'p',
+        text: 'The old kind is called 한증막 (hanjeungmak). It is a dome of stone, heated by burning pine wood inside it.',
+      },
+      {
+        type: 'p',
+        text: 'The order matters. One hanjeungmak on Mount Palgong told a newspaper in 2012 that it burns pine logs for about three hours, lets the heat settle, rakes the ash out, and only then opens the door.',
+      },
+      {
+        type: 'p',
+        text: 'A women\'s sweat lodge on Ganghwa Island, visited in 2014, worked the same way. Fire first, and once it had burned out, people crawled in and sat on green pine twigs. So it is a wood-fired oven, and you are the pizza.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'hourglass_not_done', text: 'Older than it looks' },
+      {
+        type: 'p',
+        text: 'Reports say the first record of the **한증소 (hanjeungso)**, the early kiln sauna, is in the Annals of Sejong in the 15th century. It was medicine, supported by the state and run by Buddhist monks, and men and women got separate buildings from 1429.',
+      },
+      {
+        type: 'p',
+        text: 'So sweating as a cure is no new wellness trend. It was already state business about 600 years ago.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'sparkles', text: 'Then came the jjimjilbang' },
+      {
+        type: 'p',
+        text: 'Today the kiln lives inside the **찜질방 (jjimjilbang)**, the Korean bathhouse that boomed in the 1990s. The hanjeungmak was folded into it, and the hot version is called a 불가마 (bulgama), the fire kiln.',
+      },
+      {
+        type: 'p',
+        text: 'A jjimjilbang has two halves. The baths are same-gender and nude. Everything else is shared: you wear the T-shirt and shorts from the front desk and walk between hot rooms, salt rooms, ice rooms, a snack bar and a sleeping floor.',
+      },
+      {
+        type: 'p',
+        text: 'If you know a German sauna, expect a different mood. There it is nude and mixed, and people go to be quiet. Here the hot rooms are a place to hang out, with families and friends together on the floor.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'hot_face', text: 'The charcoal kiln' },
+      {
+        type: 'p',
+        text: 'The wildest version is the **숯가마 (sutgama)**, the charcoal kiln. Makers fire a clay kiln for days to turn wood into charcoal, and the leftover heat becomes a sauna.',
+      },
+      {
+        type: 'p',
+        text: 'A 2012 newspaper report described the inside of such a kiln at 150 to 300 °C. Its advice for beginners: 30 seconds in, 30 seconds out, then a little longer each round. About 30 minutes of heat in total, spread over two hours.',
+      },
+      {
+        type: 'p',
+        text: 'We have one on our map. 숲속한방랜드 (Supsok Hanbang-raendeu), or Forest Herbal Land, sits in the woods near Sinchon with its charcoal kilns outdoors. Write-ups from 2025 describe low, middle and high kilns and advise beginners to start in the middle.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'indoors-trip',
+        text: 'Forest Herbal Land is pinned on our Indoors Trip map, with the museums and the Magok greenhouse.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'stopwatch', text: 'Do not cook yourself' },
+      {
+        type: 'p',
+        text: 'The boring part matters. A Hallym University professor, quoted in a 2001 Seoul Shinmun article, said not to stay in the heat for more than 10 minutes at a time.',
+      },
+      {
+        type: 'p',
+        text: 'The same article says the pulse can reach 160 to 170 after about five minutes, which is a sprint, sitting down. It tells people with high blood pressure, diabetes, severe obesity or chest pain to skip it, and so anyone hungry, stuffed or within two hours of a drink.',
+      },
+      {
+        type: 'p',
+        text: 'And the far-infrared sales pitch? The professor said those rays reach only 1 to 2 cm into the body, and no sauna could show a measurement. It is one old article, so be sceptical, not certain. We would enjoy the heat and skip the miracle claims.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'egg', text: 'What to eat' },
+      {
+        type: 'p',
+        text: 'The classic snack-bar order is [맥반석 계란](https://www.google.com/search?tbm=isch&q=%EB%A7%A5%EB%B0%98%EC%84%9D+%EA%B3%84%EB%9E%80) (maekbanseok gyeran), eggs baked until the shells turn brown, with a cold cup of [식혜](https://www.google.com/search?tbm=isch&q=%EC%8B%9D%ED%98%9C) (sikhye), a sweet rice punch.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'door', text: 'Your first visit' },
+      {
+        type: 'list',
+        items: [
+          'Shoes go in a locker at the entrance. Its key gets you the key to your clothes locker.',
+          'Shower first, then the bath. The wet area is same-gender and nude.',
+          'Drink water between rounds, and step out when you feel dizzy.',
+        ],
+      },
+      {
+        type: 'verdict',
+        text: 'Go once, on a cold evening. Short rounds, plenty of water, and ignore the miracle claims. You will leave warm, a bit silly and very hungry.',
+      },
+    ],
+  },
+  {
     id: 'which-hanok-village-are-you',
     title: 'Seoul has 4 hanok villages',
     description:

@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy'
 export type Tag = string | { icon: TagIconName; label: string }
 
 // Longer text for the detail page: what the walk is, the stages in order and
@@ -418,9 +418,55 @@ export const cities: City[] = [
       {
         id: 'indoors-trip',
         name: 'Indoors Trip',
-        description: 'Rainy-day and winter-day spots under a roof: museums, markets, malls and cafés. Map coming soon.',
-        updated: '2026-10-23',
-        mapUrl: 'REPLACE_ME',
+        description:
+          'Seoul on a rainy or freezing day, all under a roof: the Magok cluster with the Seoul Botanic Park greenhouse, two indoor malls and the Tadao Ando-designed LG Arts Center, eight big museums, the Han River Bus from Magok to Yeouido and a traditional Korean sauna (jjimjilbang) in the woods. Cafés and restaurants checked, Botanic Park toilets pinned.',
+        duration: 'Full day',
+        updated: '2026-10-25',
+        tags: [{ icon: 'rainy', label: 'Rainy day' }],
+        notices: [
+          {
+            icon: '🚫',
+            title: 'Closed on Mondays',
+            body: "Seoul Botanic Park, the War Memorial of Korea, Leeum Museum of Art, the Seoul Museum of History and LG Arts Center Seoul are **closed every Monday**, and so is Café La Copella inside the arts centre. Plan the Magok half day and those museums for Tuesday to Sunday, and check any other museum on its Naver Map page first: the National Palace Museum showed as closed on Monday 26 October.",
+            since: 'Opening hours as listed on Naver Map, checked 24 October 2026; the Botanic Park closure also matches its official site. Public holidays can change the closing day.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Seoul Botanic Park greenhouse: winter hours and ticket',
+            body: "The greenhouse and display garden are inside the paid Botanic Garden, open **09:30–17:00 from November to February** (09:30–18:00 from March to October), with the last ticket sold before closing. Adults pay **₩5,000**, teenagers ₩3,000 and children ₩2,000. The lake, forest and wetland parts of the park around it are free.",
+            since: "Seoul Botanic Park's official site lists the winter hours and fees. Checked October 2026; summer hours are from the Naver Map listing.",
+          },
+        ],
+        image: 'indoors.jpg',
+        imageCredit: 'Photo: Korea.net / KOCIS · CC BY-SA 2.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1qs8hKu4Ep0rtcsLwrVbQ79y1s2egkXs',
+        keywords: ['Seoul', 'RainyDayInSeoul', 'WinterInSeoul', 'SeoulMuseums', 'SeoulBotanicPark', 'Magok', 'HanRiverBus', 'Jjimjilbang', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "☔ A rainy or freezing day in Seoul does not have to be a lost one. This map gathers the places where you stay under a roof: a **greenhouse** in the middle of the city, indoor malls, an arts centre by Tadao Ando, eight big **museums**, a **traditional Korean sauna** in the woods and a river boat for the night view.",
+            "There is no walking line, just pins in groups. The **Magok cluster** in west Seoul makes a half day on its own; the museums sit around Yongsan and Gwanghwamun and take two or three hours each. Mix them by the weather, and remember that **many close on Mondays**.",
+          ],
+          route: [
+            "Seoul Botanic Park, Magoknaru Station exit 3 or 4: the big greenhouse keeps the park green all year, even in winter. Its toilets are pinned in their own layer.",
+            "LG Arts Center Seoul, a performing arts venue designed by Tadao Ando, with Café La Copella on the 2nd floor and a terrace view back over the park.",
+            "One Grove Magok and COEX Magok, two indoor complexes with restaurants and shops under one roof; COEX Magok has most of its restaurants on the lower floors.",
+            "Lunch or coffee in Magok: Bogyeong Sujebi for hand-pulled dough soup, Cafe Gongmyeong Magok Chaekppang for a café with a book lounge, or salt bread from Tardema Bakery Magoknaru. All checked on Naver on 24 October 2026.",
+            "Han River Bus from Magok pier to Yeouido pier: the boat gives you Seoul's night view from the river. Check the current timetable before you plan the evening around it.",
+            "The museums. In the south, the National Museum of Korea, the War Memorial of Korea and Leeum Museum of Art. Five more cluster around Gyeongbokgung and Gwanghwamun: MMCA Seoul, the National Folk Museum of Korea, the Seoul Museum of History, the National Palace Museum of Korea and the National Museum of Korean Contemporary History.",
+            "Forest Herbal Land (숲속한방랜드) at Bongwonsa-gil 75-7 in Seodaemun-gu, near Sinchon: a traditional Korean sauna, a jjimjilbang, set in the woods. Reports say its charcoal kilns are outdoors, which is unusual for a city spa. Open daily 06:30–22:00. The warmest way to end a cold day.",
+          ],
+          tips: [
+            "🚇 Getting there: Magoknaru Station (exits 3 or 4) for Seoul Botanic Park and the Magok cluster, or Yangcheon Hyanggyo Station exit 8 for the other side of the park. Ichon Station is right next to the National Museum of Korea.",
+            "🎟️ The permanent exhibitions at the National Museum of Korea, the War Memorial of Korea, the National Folk Museum, the Seoul Museum of History and the National Palace Museum are free. Leeum and MMCA Seoul charge by exhibition, so check Naver Map before you go.",
+            "⏰ Late nights: on Wednesday and Saturday the National Museum of Korea, the National Palace Museum, MMCA Seoul and the Contemporary History museum stay open until 21:00, and the Folk Museum until 20:00 on Wednesday. The Seoul Museum of History is open until 21:00 on most days but closes at 18:00 on Thursday. All from Naver Map, 24 October 2026.",
+            "🍜 Bogyeong Sujebi has a wait at weekday lunch, and the Tardema Bakery Magoknaru branch is mostly takeaway. Restaurants and cafés are the pink pins.",
+            "🚤 The Han River Bus cost ₩3,000 one way at the time of writing, and the city has proposed higher weekend fares from next year. Its timetable has changed several times, so use the operator's current schedule, not an old one.",
+            "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Forest Herbal Land is open from 06:30 to 22:00 every day (Naver Map, 24 October 2026), but a 2025 write-up gives 08:00 to 21:00 for its charcoal kilns, so check before you go. Write-ups from 2025 list about ₩16,000 to ₩17,000 for the charcoal kilns and ₩10,000 to ₩11,000 for the bath alone; prices change, so confirm them and what to bring on its Naver Map page.",
+            "🚻 Public toilets are pinned in their own layer at Seoul Botanic Park; the museums, malls and arts centre have their own inside, and those are not pinned.",
+            "📍 Seonungak is a hanok café at the foot of Bukhansan in Ui-dong, far from Magok. It is a good wet-day stop after the Bukhansan Dulle-gil walk on this site, which starts in Ui-dong too. Naver lists it as closed on Sundays, and autumn-leaf season brings queues.",
+            "🔗 MMCA Seoul is a short walk from the Samcheong-dong end of the Hanok Villages walk on this site, so the two pair well on a dry morning and a wet afternoon.",
+          ],
+        },
       },
     ],
   },
