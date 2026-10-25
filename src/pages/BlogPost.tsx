@@ -112,6 +112,13 @@ function renderBlock(b: Block, i: number, from: string) {
           </figcaption>
         </figure>
       )
+    case 'photo':
+      return (
+        <figure key={i} className="post-figure">
+          <img src={`${import.meta.env.BASE_URL}blog/${b.src}`} alt={b.alt} loading="lazy" decoding="async" />
+          <figcaption>{b.caption}</figcaption>
+        </figure>
+      )
     case 'route':
       return (
         <p key={i} className="post-route">

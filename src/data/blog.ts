@@ -19,6 +19,7 @@ export type Block =
       href: string
       credit: { author: string; license: string; licenseUrl: string }
     }
+  | { type: 'photo'; src: string; alt: string; caption: string } // our own photo (file in assets/blog/), shown whole, no outside credit
   | { type: 'route'; cityId: string; pathId: string; text: string } // link to a walking route page
   | { type: 'ad'; slot: 'inArticle' } // a manual AdSense slot, max two per post (see AdSlot.tsx)
 
@@ -120,6 +121,34 @@ export const posts: Post[] = [
         cityId: 'seoul',
         pathId: 'indoors-trip',
         text: 'Forest Herbal Land is pinned on our Indoors Trip map, with the museums and the Magok greenhouse.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'roasted_sweet_potato', text: 'Sweet potatoes and sleepy cats' },
+      {
+        type: 'photo',
+        src: 'jjimjilbang-yard-night.jpg',
+        alt: 'A dim kiln yard at night: a wooden platform with towels and a black-and-white cat sitting on a red mat, a charcoal brazier on the right and a TV on the wall',
+        caption: 'The kiln yard at night: a wooden platform to rest on, a charcoal brazier, and a cat on a red mat.',
+      },
+      {
+        type: 'p',
+        text: 'The best part was outside. Next to the kilns there was a charcoal brazier, and I ate a **군고구마 (gungogu-ma)**, a sweet potato roasted on it.',
+      },
+      {
+        type: 'photo',
+        src: 'jjimjilbang-sweet-potatoes.jpg',
+        alt: 'Sweet potatoes wrapped in foil on a grill over glowing red charcoal',
+        caption: 'Sweet potatoes roasting in foil over the coals.',
+      },
+      {
+        type: 'p',
+        text: 'The yard has other regulars: cats. They roam around there, and the reason is easy to guess. It is warm.',
+      },
+      {
+        type: 'photo',
+        src: 'jjimjilbang-cat.jpg',
+        alt: 'A black-and-white cat on a wooden bench pressing its chin into an open hand',
+        caption: "One of the yard's cats, enjoying a scratch under the chin.",
       },
       { type: 'space' },
       { type: 'h', icon: 'stopwatch', text: 'Do not cook yourself' },
