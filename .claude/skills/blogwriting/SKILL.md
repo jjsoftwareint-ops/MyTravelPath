@@ -32,6 +32,35 @@ read **like a friendly blog**, emoji and coloured words are welcome, and every p
 - `keywords` also feed `usePageMeta` ([src/seo.ts](../../../src/seo.ts)), which sets the per-route
   `<title>`, description and `meta keywords`.
 
+## 1a. A short history under the header image (`story`) and one-line histories in the route
+
+User's request (2026-10-25, trialled on Busan Culture Villages and Hotspots: "short historical stories under the header
+image rather than a whole explanation about the route"). The pattern, in this order on the page: banner → pills →
+short description → **`story`** → notices → map → guide.
+
+```ts
+story: {
+  title: 'When Busan was the capital',
+  text: ["Two or three short paragraphs, about 100 words in all …", "…"],   // RichText markup, **highlight** 2–3 names
+},
+```
+
+- **One thread, not a tour.** Pick the one historical thread that ties the places together (Busan: the wartime capital
+  and its refugee hillsides, which explains Huinnyeoul and Gamcheon). The story is why the place exists; the route
+  says where to stand. Ask the user which thread they want if the place has several (they may know one: Huinnyeoul's
+  refugee history was theirs).
+- **Route steps become short:** one line of what/where (keep bus numbers and exits) plus one line of history for the
+  place, only where a source backs it. A stop with no checked history gets no history line; never pad.
+- **Shorten the description** to two sentences when a story is added: the story now carries the "why", the description
+  only says what is on the map (it is also the meta description).
+- **Sourcing rules are stricter than for tips:** two sources for any date or number, or "by its own history" /
+  "reports say" when the source is the place's own claim (Haedong Yonggungsa's 1376). Say "around 2009 to 2011" when
+  sources disagree. Do not turn a source's silence into a fact: Wikipedia and news do not call Gamcheon's Taegeukdo
+  settlers refugees, so we did not either. Leave out a year you could not confirm (Busan Tower).
+- Search in Korean too (`<place> 유래`, `<place> 역사`), then read the official page with `curl -sLk` (WebFetch often fails on
+  Korean government sites). Date the story's facts in the final message so the user can veto single-source ones.
+- Rendered by `PathDetail.tsx` (`.path-story`, accent line on the left, 15px/1.6 `--text-soft`).
+
 ## 1b. Important information above the map (`notices`)
 
 Standing rule (2026-10-20): **anything the visitor must know before setting off, such as opening or visiting
@@ -122,6 +151,8 @@ same tag appears on related walks (`SeoulCityWall` on Naksan, Inwangsan and Haeb
 - [ ] Intro has one leading emoji and 2–4 `**highlights**`; every tip has an emoji key.
 - [ ] 8–9 keywords, city first, `KoreaTravel` last.
 - [ ] Nothing is stated that the kmz, the spec JSON or common knowledge cannot back.
+- [ ] If the page has a `story` (§1a): about 100 words, one thread, every date sourced or attributed ("by its own
+      history"), route steps carry one-line histories, description cut to two sentences.
 - [ ] Facts with a deadline (hours, closures, fees) are in `notices` above the map, verified, with a date in `since`.
 - [ ] `updated` set to today on every path you touched.
 - [ ] Not committed; the user pushes.

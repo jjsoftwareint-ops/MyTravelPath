@@ -96,6 +96,17 @@ export default function PathDetail() {
             )}
           </div>
 
+          {path.story && (
+            <section className="path-story" aria-label={path.story.title}>
+              <h2>{path.story.title}</h2>
+              {path.story.text.map((text) => (
+                <p key={text}>
+                  <RichText text={text} />
+                </p>
+              ))}
+            </section>
+          )}
+
           {path.notices && (
             <ul className="notices" aria-label="Important information">
               {path.notices.map((n) => (

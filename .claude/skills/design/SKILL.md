@@ -89,7 +89,8 @@ tricks or transparency work unless asked.
 - Home: **no banner above the list**. Cities are accordion rows (`/:cityId` keeps one open), each may carry
   a header photo; paths are the children with their pills; a path opens `/:cityId/:pathId`.
 - Path detail, top to bottom: banner photo → pills row (tags/duration left, **"Updated <date>" right**) →
-  description → **important-information boxes** (`notices`: opening hours, closure days, fees, booking
+  description → **short history** (`story`, optional: a titled block with an accent line, two or three short
+  paragraphs; see the `blogwriting` skill §1a) → **important-information boxes** (`notices`: opening hours, closure days, fees, booking
   rules; amber, one fact each) → embedded My Maps (behind "Tap to explore") → Naver notice → "Open in
   Google Maps" button → guide card. Anything the visitor must know *before* setting off goes in a notice
   **above the map**, never buried in the guide text. Placeholder `REPLACE_ME` links render disabled.

@@ -26,10 +26,18 @@ export type PathNotice = {
   since?: string // when the rule came in or was last checked, e.g. 'Checked October 2026'
 }
 
+// A short history shown right under the header image and description: the story of the place, in two or three
+// short paragraphs (RichText markup allowed). Only facts we can source; the route steps carry one-line histories.
+export type PathStory = {
+  title: string // e.g. 'When Busan was the capital'
+  text: string[]
+}
+
 export type TravelPath = {
   id: string
   name: string
   description?: string
+  story?: PathStory // short history under the header image
   guide?: PathGuide // shown under the map on the detail page
   keywords?: string[] // hashtags under the guide; also the page's meta keywords
   notices?: PathNotice[] // important facts shown above the map (hours, closures, fees)
@@ -65,8 +73,15 @@ export const cities: City[] = [
         name: 'Fortress wall and stream',
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
-        updated: '2026-10-20',
+        updated: '2026-10-25',
         tags: [{ icon: 'moon', label: 'Night walk' }],
+        story: {
+          title: 'A wall, and a river that was buried',
+          text: [
+            "Seoul's city wall was first built by the founding king of Joseon, as earth on the flat ground and stone on the hills, and it still runs 18.6 km over the mountains around the old city. Its stones carry carved records: first the counties that built each stretch, and after King Sukjong's repairs the overseer and the date.",
+            "The stream below the wall had a worse century. From 1958 it was covered over, and later it carried an elevated highway 5.6 km long. When the structure became a safety worry, the highway came down in 2003 and the stream reopened on **1 October 2005**, 47 years after the covering began.",
+          ],
+        },
         image: 'naksan.jpg',
         imageCredit: 'Photo: Seoul Metropolitan Fire & Disaster HQ · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
@@ -77,10 +92,10 @@ export const cities: City[] = [
             "Then it only gets easier. The wall carries you downhill to Dongdaemun gate, and the **Cheonggyecheon** stream, lit up and full of life after dark, carries you 3.3 km west through the old city to Cheonggye Plaza. 5.6 km, almost all downhill or flat, with dinner at **Gwangjang Market** halfway.",
           ],
           route: [
-            "Naksan Park entrance on the Dongsung-dong side, 10 min uphill from Hyehwa Station exit 2: the park path to the central plaza and the small exhibition hall on the wall's history.",
+            "Naksan Park entrance on the Dongsung-dong side, 10 min uphill from Hyehwa Station exit 2: the park path to the central plaza and the small exhibition hall on the wall's history. Naksan is named for its camel-back shape, and it was the palace's 'left blue dragon' hill.",
             "First View Plaza: panorama west over Jongno, Bukhansan and N Seoul Tower. Best light at sunset.",
-            "Join the Seoul City Wall and keep it on your left all the way down. The first secret gate opens onto Ihwa Mural Village and the angel-wings mural 100 m down the lane. Residents live here, so keep quiet.",
-            "Heunginjimun Park above the road, then Dongdaemun gate itself in the middle of the junction. The silver curves of Dongdaemun Design Plaza are a short detour south.",
+            "Join the Seoul City Wall and keep it on your left all the way down. The first secret gate opens onto Ihwa Mural Village and the angel-wings mural 100 m down the lane. Ihwa is an old hillside settlement that grew just after the Korean War; a 2006 public art project painted it, the visitors came, and some of its best-known murals have since been removed after residents complained of noise. Residents live here, so keep quiet.",
+            "Heunginjimun Park above the road, then Dongdaemun gate itself in the middle of the junction. The gate was rebuilt in 1869, and the walls beside it were pulled down in 1907, which is why it stands alone. The silver curves of Dongdaemun Design Plaza are a short detour south.",
             "Down the stairs at Cheonggyecheon Fashion Plaza and upstream along the water: the Jeon Tae-il bridge, Gwangjang Market overhead at Saebyeok-dari, the Sewoon arcade sky deck.",
             "The 192 m ceramic mural of King Jeongjo's procession, Gwangtonggyo, the oldest stone bridge on the stream, and the candle fountain at Cheonggye Plaza. Gwanghwamun and City Hall stations are minutes away.",
           ],
@@ -561,10 +576,17 @@ export const cities: City[] = [
         id: 'villages-and-hotspots',
         name: 'Culture Villages and Hotspots',
         description:
-          'The Gwangalli night walk, 2.9 km from Gwangan Station along the beach to the raw-fish town and the waterfront park under the lit bridge, plus the places every visitor asks about pinned on the same map: Jagalchi Market, BIFF Square and Gukje Market, Huinnyeoul and Gamcheon culture villages, and Haedong Yonggungsa temple on the rocks. Toilets and checked restaurants and view cafés at each, plus pork gukbap near Busan Station and Seomyeon, the Ochoryang tea house in a 1925 Japanese-style house and the seasonal Hwamyeong night market.',
+          'The Gwangalli night walk, 2.9 km under the lit bridge, plus Busan\'s other must-sees on one map: the Nampo-dong markets, the Huinnyeoul and Gamcheon culture villages and Haedong Yonggungsa temple. Toilets and checked restaurants and cafés at each.',
         duration: '2h walk',
         updated: '2026-10-25',
         tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
+        story: {
+          title: 'When Busan was the capital',
+          text: [
+            "For 1,023 days between 1950 and 1953, Busan was Korea's wartime capital. Refugees from all over the peninsula arrived with almost nothing and built wherever the land was free, which here meant the steep slopes and cliffs above the harbour.",
+            "**Huinnyeoul** was a small fishing village on Yeongdo's coast until refugees settled along its cliffs and it became a crowded, poor settlement. **Gamcheon**, on the other side of the harbour, grew from a community of Taegeukdo believers who settled there in the 1950s. Both were poor places until residents and artists began repairing and painting the houses, around 2009 to 2011. Those are the culture villages on this map.",
+          ],
+        },
         image: 'gamcheon.jpg',
         imageCredit: 'Photo: Basile Morin · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=11Nm3BTkYHgR9W5t2oMYbhGo-tN8Tg0k',
@@ -589,14 +611,14 @@ export const cities: City[] = [
             "The walk itself is short, **2.9 km and flat**, which is why this map also carries the other places people ask me about in Busan: the Nampo-dong markets, the two hillside villages and the temple on the rocks. They are not on a walking line from each other, so each hot spot has its own pins, toilets and food, and the guide tells you how to get there.",
           ],
           route: [
-            "Gwangan Station exit 3, ten minutes down Gwangan-ro, and the bridge fills the end of the street. Turn left along the beach promenade with the bridge ahead; the café street is one block behind you.",
-            "Millak raw-fish town at the east end: skip the restaurants and go into the fishermen's market. Pick a fish downstairs, pay by weight, then either eat upstairs for a per-person table fee or carry it out to the park.",
-            "Millak Waterfront Park, right under the bridge: steps, lawns and families on mats. The drone show and the bridge lights are best from here. Walk back along the beach for the bars, or on to Millak Port and the coast road.",
-            "Nampo-dong, line 1 to Jagalchi: the fish market hall and quay stalls, BIFF Square's hotteok carts, the arcades of Gukje and Kkangtong markets, and the escalators up Yongdusan to Busan Tower for the view. Two hours on foot, all within a few hundred metres.",
+            "Gwangan Station exit 3, ten minutes to the beach with the bridge ahead. The 7.4 km Gwangan Bridge was finished at the end of 2002 and now lights up the whole bay at night.",
+            "Millak raw-fish town at the east end: buy a fish in the fishermen's market downstairs, then eat upstairs for a table fee or carry it to Millak Waterfront Park, right under the bridge.",
+            "Nampo-dong, line 1 to Jagalchi: the fish market hall and quay stalls, then the arcades of Gukje and Kkangtong markets. Gukje grew from a street market after liberation, and in the Korean War refugees sold US army supplies there; Kkangtong, 'tin can', is named for the canned goods from US bases.",
+            "BIFF Square, made when the film festival began in 1996 and now the home of the hotteok carts, and the escalators up Yongdusan Park to Busan Tower. The park was re-made after a great fire in 1954.",
             "Busan Station and Choryang, line 1: Anmok Busan Station for pork gukbap (rice soup), and Ochoryang, a tea house and small gallery in a wooden Japanese-style house built in 1925, five minutes from Choryang Station exits 7 and 9. Ochoryang is closed on Mondays and Tuesdays and is booked on Naver.",
-            "Huinnyeoul Culture Village, bus 7, 71 or 508 from Nampo-dong over Yeongdo Bridge: white houses on the cliff lane above the sea, the short coastal tunnel and the Jeoryeong coast walk. Quieter than Gamcheon, with the same kind of photos.",
-            "Gamcheon Culture Village, the 'Machu Picchu of Busan': hundreds of pastel houses stacked down a steep valley, built in the 1950s by refugees of the Taegeukdo faith and painted and filled with art from 2009. Bus 1-1, 2 or 2-2 from Toseong Station exit 6 to the top. Buy the stamp map at the information centre and follow the fish signs through the alleys: murals, small galleries in old houses, rooftop cafés, the lighthouse viewpoint and the Little Prince and the fox on the railing, the most queued photo in Busan. Allow two hours; it is all stairs and people still live here, so keep to the marked lanes.",
-            "Haedong Yonggungsa, bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks above the sea. Toilets, restaurants and view cafés are pinned at every spot, all checked on Naver.",
+            "Huinnyeoul Culture Village, bus 7, 71 or 508 from Nampo-dong over Yeongdo Bridge. 'White rapids' is named for the white foam where streams from Bongnae Mountain meet the sea, and the white houses and murals on the cliff lane are from the 2010s revival. Add the short coastal tunnel and the Jeoryeong coast walk.",
+            "Gamcheon Culture Village, bus 1-1, 2 or 2-2 from Toseong Station exit 6 to the top. The pastel houses stack down a steep valley, and a public art project began painting them in 2009. Buy the stamp map at the information centre, follow the fish signs and keep to the marked lanes: people still live here. The Little Prince and the fox on the railing is the most queued photo in Busan.",
+            "Haedong Yonggungsa, bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974. Toilets, restaurants and view cafés are pinned at every spot, all checked on Naver.",
             "Two more pins sit away from the rest: Anmok Seomyeon, the same pork gukbap house in Seomyeon, and the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above the map).",
           ],
           tips: [

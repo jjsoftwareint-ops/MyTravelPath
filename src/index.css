@@ -704,6 +704,25 @@ a:focus-visible {
   white-space: nowrap;
 }
 
+/* ── Short history under the header image ── */
+.path-story {
+  border-left: 3px solid var(--accent);
+  padding: 2px 0 2px 14px;
+}
+.path-story h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+.path-story p {
+  margin: 0 0 8px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+.path-story p:last-child {
+  margin-bottom: 0;
+}
+
 /* ── Important information above the map (hours, closures, fees) ── */
 .notices {
   list-style: none;
