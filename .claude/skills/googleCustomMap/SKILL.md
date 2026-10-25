@@ -19,6 +19,24 @@ Two products, chosen by what the user wants (their standing preference, 2026-09-
 
 Route KML and CSV overlays exist but are only produced on request.
 
+## Cheap and offline first (user request 2026-10-25: "you use a lot of tokens")
+
+Do the mechanical work with scripts, not by writing code or printing dumps each time:
+
+- **Editing an existing kmz** (add pins, recolour, photos, check): `scripts/patch_kmz.py file.kmz patch.json`
+  (format in its docstring; example `examples/busan-additions.json`). One call backs up the file, adds the pins,
+  recolours every old blue/green icon to the palette colour of the same icon, adds Naver photos to pins that lack one,
+  bumps folder names, validates and writes the kmz in place. `--check [--against old.kmz]` only validates and lists
+  removed/added pins and photo-less pins. Replayed offline on the Busan backup it rebuilt the identical file.
+- **Photo URLs are cached** in `cache/og_images.json` (Naver place id → og:image). `--offline` never touches the network and
+  lists ids it could not fill; without it only missing ids are fetched (1.8 s each). Seed the cache by running once online.
+- **What still needs the network:** `naver_place.py` lookups (new venues), `naver_status.py` (open/closed, run it once per
+  update on every food pin), the live-map export for the rebase, WebSearch for facts. Everything after that is local.
+- **Keep output small:** read only the lines you need (`| tail`, `cut -c1-200`), never print a whole kml or a page of HTML,
+  save fetched pages in the scratchpad and grep them. A pin with no Naver place of its own (an event, a lookout) gets
+  `"image": "none"` and is listed in `no_photo`: the Naver photo of a neighbouring place (a campsite beside a night
+  market) is not a picture of it.
+
 ## Layered KML workflow (hiking videos: ascent + descent + restaurants)
 
 A layer may also carry `more_lines`: extra *disconnected* lines in the layer's colour, each its own

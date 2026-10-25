@@ -37,6 +37,130 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'bukangi-the-shark-of-busan',
+    title: 'A shark moved into a Busan park canal',
+    description:
+      'A 3 m dusky shark swam into a canal in a Busan park, got a nickname, an honorary job, trademark filings and 1.5 million visits. What we know so far.',
+    teaser: 'Would you have gone to look?',
+    icon: 'shark',
+    date: '2026-10-25',
+    updated: '2026-10-25',
+    keywords: ['KoreaTravel', 'Busan', 'Bukangi', 'Shark', 'KoreaTrends', 'Bukhang'],
+    body: [
+      {
+        type: 'p',
+        text: 'On 18 September, somebody spotted a shark in a canal. Not in an aquarium. In a landscaped waterway in a city park, a short walk from Busan Station.',
+      },
+      {
+        type: 'p',
+        text: 'Within a month it had a nickname, an honorary city job, a pile of trademark filings and over a million visitors. Meet **부캉이 (bukang-i)**.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'shark', text: 'Who is 부캉이 (bukang-i)?' },
+      {
+        type: 'p',
+        text: 'The name is a pun on a place. The park sits at Busan\'s North Port, **북항 (Bukhang)**. Say 북항이 (bukhang-i), "the one from Bukhang", quickly and it comes out as 부캉이 (bukang-i).',
+      },
+      {
+        type: 'p',
+        text: 'A fact-check in Kyunghyang Weekly says the park\'s operator coined it and used it in its social posts. The same piece had to swat down an online claim that the name was a plot to make North Korea sound friendly, a play on 북한 (Bukhan). It found no evidence for that.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'thinking_face', text: 'A guess, then a correction' },
+      {
+        type: 'img',
+        src: 'dusky-shark-noaa.jpg',
+        alt: 'A small grey-brown shark held across the deck of a boat by a researcher in an orange life vest and white glove',
+        caption: 'A young dusky shark held by a NOAA researcher. 부캉이 (bukang-i) is about 3 m long, far bigger than this one.',
+        href: 'https://commons.wikimedia.org/wiki/File:Carcharhinus_obscurus_noaa.jpg',
+        credit: { author: 'NOAA', license: 'Public domain', licenseUrl: 'https://creativecommons.org/publicdomain/mark/1.0/' },
+      },
+      {
+        type: 'p',
+        text: 'At first it was called a **무태상어 (mutae-sangeo)**, a sandbar shark. On 6 October the National Institute of Fisheries Science corrected that: a female **흑상어 (heuk-sangeo)**, a dusky shark, about 3 m long.',
+      },
+      {
+        type: 'p',
+        text: 'The clue was a ridge of skin between the two back fins. The sandbar shark has no such ridge.',
+      },
+      {
+        type: 'p',
+        text: 'Dusky sharks are listed as Endangered by the IUCN. They grow slowly, breed slowly, and can reach about 4.2 m.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'stopwatch', text: 'How the month went' },
+      {
+        type: 'table',
+        head: ['Date', 'What happened'],
+        rows: [
+          ['18 Sep', 'Spotted in the canal'],
+          ['29 Sep', 'First guided release attempt; named honorary city ambassador'],
+          ['2 to 3 Oct', 'A net snags on the canal bottom and the shark swims over it'],
+          ['6 Oct', 'Identified as a dusky shark'],
+          ['21 Oct', 'Third attempt, with divers: it leaves the canal'],
+          ['24 Oct', 'Found about 2 km away, in good health'],
+        ],
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'sparkles', text: 'Why a million people came' },
+      {
+        type: 'p',
+        text: 'Before the shark, the park saw about 2,000 visitors on an average weekend, reports say. Then came Chuseok, the harvest holiday.',
+      },
+      {
+        type: 'p',
+        text: 'On 25 September about 136,000 people came in one day. The park passed one million visits on 5 October, and by 20 October the count was 1.54 million.',
+      },
+      {
+        type: 'p',
+        text: 'It is free, it is next to a station, and it is a real wild animal where nobody expected one. A student at Pukyong National University even built a "where is Bukangi now" page where people post sightings.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'flashlight', text: 'Fans and flashlights' },
+      {
+        type: 'p',
+        text: 'The fun has a limit. On 7 October the fisheries institute reported a scrape near the shark\'s snout. It said bright lights shone at night make the shark swerve suddenly, and asked visitors to stop.',
+      },
+      {
+        type: 'p',
+        text: 'Experts also said they could not confirm it was feeding, and the water was cooling. That is why the city pushed to guide it out.',
+      },
+      {
+        type: 'p',
+        text: 'Our view: a shark in a dead-end canal is a lost animal, not an attraction. If you are European, think of the whale that swam up the Thames in 2006. Same crowds on the bank, same urge to look at something that should not be there.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'ribbon', text: 'Ambassadors and trademarks' },
+      {
+        type: 'p',
+        text: 'On 29 September Busan named the shark an honorary PR ambassador, after an Instagram poll where 91% of over 8,000 voters said yes. The city now uses it in its social and YouTube posts.',
+      },
+      {
+        type: 'p',
+        text: 'The merch rush was faster. The Seoul Shinmun reports five trademark applications from 21 September, three days after the sighting, covering about 40 products such as keyrings, clothes and plush toys.',
+      },
+      {
+        type: 'p',
+        text: 'Busan said it would file its own in October and respond to the private filings, so that no single party owns a name the whole city used. A filing alone grants nothing; the examiners decide. We side with the city here.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'water_wave', text: 'Where is it now?' },
+      {
+        type: 'p',
+        text: 'On 21 October the third rescue attempt worked and the shark swam out of the canal. On 25 October it was reported healthy about 2 km away, near the Busan Port International Passenger Terminal, not yet in open sea.',
+      },
+      {
+        type: 'p',
+        text: 'That will be out of date soon. For the current position, try the fan-made site [부캉스 (bukang-seu)](https://boocance.vercel.app/), which maps sightings sent in by visitors. It is not an official tracker. Busan City\'s live broadcast from 29 September is [still on YouTube](https://youtu.be/61LTo2BjNyE).',
+      },
+      {
+        type: 'verdict',
+        text: 'The best ending for 부캉이 (bukang-i) is a boring one: back in the open sea, unwatched. The crowds were fun while they lasted, but a wild shark is a visitor that lost its way, not a show.',
+      },
+    ],
+  },
+  {
     id: 'korean-sauna-stone-oven-for-humans',
     title: 'The Korean sauna is a stone oven for humans',
     description:
