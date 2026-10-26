@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from '../components/Link'
 import Layout from '../components/Layout'
 import Tags from '../components/Tags'
 import { bookmarkKey, useBookmarks } from '../bookmarks'

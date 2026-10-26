@@ -1,5 +1,6 @@
 import { GrAnnounce } from "react-icons/gr";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import Link from "../components/Link";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import Tags from "../components/Tags";

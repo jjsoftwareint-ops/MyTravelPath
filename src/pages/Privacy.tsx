@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "../components/Link";
 import Layout from "../components/Layout";
 import { usePageMeta } from "../seo";
 import { CONTACT_EMAIL } from "./Contact";

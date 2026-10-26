@@ -34,6 +34,19 @@ for (const { path } of list) {
   mkdirSync(dir, { recursive: true })
   writeFileSync(join(dir, 'index.html'), page(path))
 }
+// Addresses that moved. GitHub Pages cannot send a 301, so each old address gets a small page that points at the new one
+// (canonical link, instant refresh and a visible link). They stay out of the sitemap.
+const MOVED = { '/suwon/': '/gyeonggi-do/hwaseong/', '/suwon/hwaseong/': '/gyeonggi-do/hwaseong/' }
+for (const [from, to] of Object.entries(MOVED)) {
+  const dir = join(dist, from)
+  mkdirSync(dir, { recursive: true })
+  writeFileSync(
+    join(dir, 'index.html'),
+    `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>This page moved | My Travel Path</title>` +
+      `<link rel="canonical" href="${SITE}${to}"><meta http-equiv="refresh" content="0; url=${to}"></head>` +
+      `<body><p>This page moved to <a href="${to}">${SITE}${to}</a>.</p></body></html>\n`,
+  )
+}
 // Unknown URLs: GitHub Pages serves this with status 404; the client then navigates home.
 writeFileSync(join(dist, '404.html'), page('/'))
 

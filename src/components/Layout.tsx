@@ -1,5 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
+import Link from './Link'
 import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
 import { BookmarkLink } from './BookmarkButton'

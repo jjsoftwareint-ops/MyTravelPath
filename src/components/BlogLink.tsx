@@ -1,5 +1,5 @@
 import { FaBlogger } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
+import Link from './Link'
 
 // Header button right of the saved-paths icon, main page only: opens the blog's title list.
 export default function BlogLink() {

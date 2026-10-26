@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
+import { Navigate, useLocation, useParams } from 'react-router-dom'
+import Link from '../components/Link'
 import AdSlot from '../components/AdSlot'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from './Link'
 import { postsByMonth } from '../data/blog'
 import { formatMonth } from '../dates'
 import { useLastRead } from '../lastRead'

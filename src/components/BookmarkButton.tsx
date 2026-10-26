@@ -1,5 +1,5 @@
 import { IoBookmark, IoBookmarkOutline } from 'react-icons/io5'
-import { Link } from 'react-router-dom'
+import Link from './Link'
 import { bookmarkKey, toggleBookmark, useBookmarks } from '../bookmarks'
 
 // Header button left of the theme toggle: opens the list of saved paths, with a count.
