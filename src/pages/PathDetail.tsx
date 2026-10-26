@@ -173,7 +173,6 @@ export default function PathDetail() {
                 {hydrated && isPhone() && (
                   <>
                     {" "}
-                    Downloading the app is highly recommended.{" "}
                     <a
                       className="link"
                       href={NAVER_MAP_STORE[isIOS() ? "ios" : "android"]}
