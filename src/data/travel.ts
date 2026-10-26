@@ -956,7 +956,7 @@ export const cities: City[] = [
         ],
         image: 'ganghwa.jpg',
         imageCredit: 'Photo: HyeonChangu · CC BY-SA 4.0',
-        mapUrl: 'REPLACE_ME',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1sPEoE3OUe5ZvgjiqrdGL1s-FxDstUpA',
         keywords: ['Incheon', 'Ganghwado', 'DayTripFromSeoul', 'Jeondeungsa', 'Bomunsa', 'Dondae', 'GanghwaAnglicanChurch', 'JoyangTextile', 'KoreaTravel'],
         guide: {
           intro: [
