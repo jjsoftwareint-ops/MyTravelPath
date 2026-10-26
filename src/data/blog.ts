@@ -37,6 +37,85 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'kakao-t-for-foreigners',
+    title: "The taxi app that won't let tourists in",
+    description:
+      "In Seoul the street is closed to taxis and the app has a lock. Kakao's side door for foreigners is k.ride: email login, card from abroad. What to know.",
+    teaser: 'Your email is enough.',
+    icon: 'taxi',
+    date: '2026-10-26',
+    updated: '2026-10-26',
+    keywords: ['KoreaTravel', 'KakaoT', 'Kride', 'Taxi', 'Seoul', 'KoreaApps'],
+    body: [
+      {
+        type: 'p',
+        text: 'Picture Seoul at 11 pm. It is raining. The street is full of taxis, and not one of them will stop for you.',
+      },
+      {
+        type: 'p',
+        text: 'Some are not even looking. One driver told a Korean news outlet in 2017 that he waits in a side street with his lights off, until the app rings with a passenger heading his way. A passenger he refuses on the street counts against him. A call from the app does not.',
+      },
+      {
+        type: 'p',
+        text: 'So the street is closed and the app is the door. We would go further: in Seoul at night, hailing a taxi by hand is close to impossible now. We found no number for street hailing itself, so that is our view, not a statistic.',
+      },
+      {
+        type: 'p',
+        text: "What we can back is the shift. A 2020 Seoul Institute survey found 42% of passengers already booked through an app, and in 2021 the city estimated Kakao's share of the app market at nearly 90%.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'door', text: 'And the door has a lock' },
+      {
+        type: 'p',
+        text: "The door is **카카오 T (Kakao T)**. It runs on a Kakao account and a Korean phone number, and guides say paying works best with a Korean card. Most tourists have none of the three.",
+      },
+      {
+        type: 'p',
+        text: 'Our view: that is Korean online life in one example. Wonderful once you are inside, a locked door from the outside. Banks, delivery, ticketing and taxis all do it.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'mobile_phone', text: 'The side door' },
+      {
+        type: 'p',
+        text: "Kakao quietly built one. It is called **k.ride**, it comes from Kakao Mobility, the same company as Kakao T, and it has been out since 2024. The App Store lists May 2024, Korean press covered the launch on 4 June 2024, and the store page shows an update on 21 October 2026. It is the best-kept secret of a company that is not small.",
+      },
+      {
+        type: 'p',
+        text: "If you heard news about a \"new Kakao app for foreigners\", it may be this one, or one of two other stories. This month Kakao Bank opened its services to foreigners. Last November Kakao Pay added a Global Home screen for foreign residents.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'compass', text: 'What changes' },
+      {
+        type: 'table',
+        head: ['', 'Kakao T', 'k.ride'],
+        rows: [
+          ['Sign-up', 'Kakao account and Korean phone verification, as guides describe it', 'Google, Apple or email account'],
+          ['Payment', 'Korean cards work best; paying the driver is the fallback', 'Credit cards issued abroad'],
+          ['Language', 'Three languages on its App Store page', 'Four (English, Japanese, two Chinese scripts), plus translated destination search and driver chat'],
+        ],
+      },
+      {
+        type: 'p',
+        text: "It plugs into Kakao T's taxi network in Korea, and it works beyond Korea too: the App Store lists 35 countries, from the US and Germany to Japan and Thailand. The store says chat and search translation covers 133 languages. At launch the company said about 100.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'stopwatch', text: 'The fine print' },
+      {
+        type: 'p',
+        text: 'One 2026 travel guide warns that foreigner-friendly options can default to a more expensive car type, so check the vehicle before you confirm. We only found that in blogs, so take it as a tip, not a rule.',
+      },
+      {
+        type: 'p',
+        text: 'And set it up before you land. Add your card and language on hotel Wi-Fi, not on the pavement at 11 pm.',
+      },
+      {
+        type: 'verdict',
+        text: 'Install [k.ride](https://apps.apple.com/us/app/k-ride-taxi-cab-travel/id6474654222) on the plane. Add your card at the hotel. Then, when it rains at 11 pm and the taxis go dark, be the smug one.',
+      },
+    ],
+  },
+  {
     id: 'bukangi-the-shark-of-busan',
     title: 'A shark moved into a Busan park canal',
     description:
