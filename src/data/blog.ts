@@ -100,10 +100,27 @@ export const posts: Post[] = [
         text: "It plugs into Kakao T's taxi network in Korea, and it works beyond Korea too: the App Store lists 35 countries, from the US and Germany to Japan and Thailand. The store says chat and search translation covers 133 languages. At launch the company said about 100.",
       },
       { type: 'space' },
-      { type: 'h', icon: 'stopwatch', text: 'The fine print' },
+      { type: 'h', icon: 'stopwatch', text: 'What it costs' },
       {
         type: 'p',
-        text: 'One 2026 travel guide warns that foreigner-friendly options can default to a more expensive car type, so check the vehicle before you confirm. We only found that in blogs, so take it as a tip, not a rule.',
+        text: "Not the same as the meter, and not the same on every car. Kakao's own price page for k.ride lists four types:",
+      },
+      {
+        type: 'list',
+        items: [
+          '**Standard** (Kakao T Blue partner taxis): the meter fare plus a 10% service fee.',
+          '**Deluxe**: the meter fare, a flexible fee of 0 to 5,000 won, and the 10% service fee.',
+          '**Comfort** (Kakao T Venti): its own fare, 4,000 won for the first 800 m, a demand multiplier of 0.8 to 4.0, and the 10% fee.',
+          '**Luxury** (Kakao T Black): from 6,000 won, a multiplier of 0.7 to 4.0, and the 10% fee.',
+        ],
+      },
+      {
+        type: 'p',
+        text: "So the cheapest way in is Standard, and it costs the meter plus 10%. Kakao says the service fee can change with demand and traffic. One 2026 travel guide warns that the app can default to a pricier type, so check which car is selected before you confirm. That tip is from a blog, not Kakao.",
+      },
+      {
+        type: 'p',
+        text: "Is that dearer than Kakao T for Koreans? Probably about the same on a short ride and more on a long one. Reports from 2021 put Kakao T's fees at up to 3,000 won for a Blue call and 1,000 won (2,000 at night) for a smart call, while a regular call had none. Ten percent of a 10,000 won ride is 1,000 won, and it only passes 3,000 won when the meter is above 30,000 won. Those 2021 figures may have changed, and we found no current Kakao T fee page, so check the estimate in the app.",
       },
       {
         type: 'p',
