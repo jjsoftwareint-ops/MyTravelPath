@@ -93,7 +93,7 @@ All allow free use; the credit is given in every case.
   https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_1-1_03.jpg
 - Incheon card photo: *Incheon Grand Bridge*, Cameron Henderson, public domain.
   https://commons.wikimedia.org/wiki/File:Incheon_Grand_Bridge.jpg
-- Suwon card photo: *방화수류정 Banghwa Suryu Pavilion, Hwaseong Fortress*, 김병모, CC0,
+- Suwon with Hwaseong Fortress path banner: *방화수류정 Banghwa Suryu Pavilion, Hwaseong Fortress*, 김병모, CC0,
   [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%EB%B0%A9%ED%99%94%EC%88%98%EB%A5%98%EC%A0%95_Banghwa_Suryu_Pavilion,_Hwaseong_Fortress.jpg).
 - Gyeonggi-do card photo: *Gapyeong-eup, Gapyeong-gun, Gyeonggi-do*, Korea Tourism Organization,
   KOGL Type 1. https://commons.wikimedia.org/wiki/File:Gapyeong-eup,_Gapyeong-gun,_Gyeonggi-do.jpg
@@ -108,6 +108,8 @@ All allow free use; the credit is given in every case.
 - Cherry Blossom walk banners (Seoul and Busan): *Cherry Blossom in Yeouido Park - panoramio (1)*, Alexey
   Komarov, CC BY 3.0.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg
+- Abroad in Korea path banner: *German Village in Namhae* (photo by Choi2451), CC0.
+  https://commons.wikimedia.org/wiki/File:View_of_German_Village_in_Namhae,_South_Korea.jpg
 - Wolmido Sunset path banner: *Sunset over Incheon Harbor* (looking west from Wolmido), JNicol, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:Sunset_over_Incheon_Harbor.jpg
 - Indoors Trip path banner: *Seoul botanic park 05* (the greenhouse), Korea.net / Korean Culture and

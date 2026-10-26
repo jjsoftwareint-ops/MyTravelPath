@@ -37,6 +37,8 @@ export type TravelPath = {
   id: string
   name: string
   description?: string
+  seoTitle?: string // <title> headline for Google (about 45 characters, before ' | My Travel Path'); falls back to the name
+  seoDescription?: string // meta description (about 150 characters); falls back to `description`
   story?: PathStory // short history under the header image
   guide?: PathGuide // shown under the map on the detail page
   keywords?: string[] // hashtags under the guide; also the page's meta keywords
@@ -56,6 +58,9 @@ export type TravelPath = {
 export type City = {
   id: string
   name: string
+  seoTitle?: string // <title> headline for the city page, e.g. 'Jeju walking trails: Olle routes with maps'
+  seoDescription?: string // meta description for the city page (about 150 characters)
+  theme?: boolean // a collection of themed paths across Korea, not one place (page titles say "Themed routes", not "in <name>")
   image?: string // file in ./assets, shown as the city card's header photo
   imageCredit?: string // shown as a small label on the photo
   paths: TravelPath[]
@@ -144,6 +149,8 @@ export const cities: City[] = [
       {
         id: 'hanok-villages',
         name: 'Hanok Villages',
+        seoTitle: 'Hanok Village walk, Seoul: Bukchon, Ikseon-dong',
+        seoDescription: 'A 5.1 km hanok village walk in Seoul: Bukchon, Ikseon-dong and Insadong on a free map, with Namsangol Hanok Village, local food, toilets and visiting hours.',
         description: 'Cheong Wa Dae to Bukchon, Ikseon-dong and Insadong, ending at Ssamziegil. 5.1 km, with Namsangol Hanok Village and Pil-dong food as an extra.',
         duration: '2h',
         updated: '2026-10-24',
@@ -638,12 +645,16 @@ export const cities: City[] = [
   {
     id: 'jeju',
     name: 'Jeju',
+    seoTitle: 'Jeju walking trails: Olle routes with maps',
+    seoDescription: 'Free Jeju walking trails: Olle Trail routes 1, 1-1, 5, 6, 7, 17 and 18-1 on Google My Maps, with toilets, stamp boxes, restaurants and cafés pinned.',
     image: 'jeju.jpg',
     imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
     paths: [
       {
         id: 'jeju-olle-trail',
         name: 'Jeju Olle Trail 5-6-7',
+        seoTitle: 'Jeju Olle Trail routes 5, 6, 7: south coast',
+        seoDescription: 'Walk Jeju Olle Trail routes 5, 6 and 7 along the south coast, Namwon to Seogwipo, one colour per route, with every toilet and first-aid kit on a free map.',
         description:
           'Routes 5, 6 and 7 of the 437 km island trail: Namwon → Soesokkak → Seogwipo → Seogwipo Bus Terminal along the south coast, one colour per route, with every toilet and first-aid kit from the official maps.',
         duration: '1 day per route',
@@ -675,6 +686,8 @@ export const cities: City[] = [
       {
         id: 'jeju-olle-trail-18-1',
         name: 'Jeju Olle Trail 18.1 (Chuja Island)',
+        seoTitle: 'Jeju Olle Trail 18-1 on Chuja Island',
+        seoDescription: 'Olle Trail route 18-1 on Chuja Island, 11.4 km over Bonggeulle-san and round the Yecho-ri cliffs, with stamp boxes, toilets, restaurants and cafés mapped.',
         description:
           'Route 18-1 on Chuja Island, the Olle trail\'s outlier an hour north of Jeju by ferry: 11.4 km from the township office over Bonggeulle-san, across Chuja Bridge, up Dondae-san and round the Yecho-ri cliffs to Sinyang Port, with the three stamp boxes, every toilet and first-aid kit, and the island\'s restaurants and harbour cafés pinned.',
         duration: '1 day',
@@ -716,6 +729,8 @@ export const cities: City[] = [
       {
         id: 'jeju-olle-trail-17',
         name: 'Jeju Olle Trail 17',
+        seoTitle: 'Jeju Olle Trail 17: Gwangnyeong to Jeju City',
+        seoDescription: 'Olle Trail route 17, 19 km from Gwangnyeong to Jeju City: Musucheon gorge, Dodu-bong and Dongmun Market, with stamps, toilets and cafés mapped.',
         description:
           'Route 17 into Jeju City: 19 km from Gwangnyeong down the Musucheon gorge to the sea at Oedo Woldae, along Iho Tewoo Beach, over Dodu-bong with the planes landing beside you, past the airport coast to Yongduam and the old town, ending at the Kim Man-deok Memorial by Dongmun Market. Stamps, every toilet and first-aid kit, and 14 checked restaurants and sea-view cafés pinned.',
         duration: '1 day',
@@ -750,6 +765,8 @@ export const cities: City[] = [
       {
         id: 'jeju-olle-trail-1-udo',
         name: 'Jeju Olle Trail 1-1.1 (Udo Island)',
+        seoTitle: 'Jeju Olle Trail 1 and 1-1: Seongsan, Udo',
+        seoDescription: 'Olle Trail route 1 (14.9 km, Siheung-ri to Gwangchigi Beach) and the 11.3 km Udo island loop 1-1 on one free map, with stamps, toilets and cafés.',
         description:
           'The first two routes of the Olle trail in one map, one colour each: Route 1 from Siheung-ri over the Malmi and Al oreums along the Jongdal and Seongsan coast to Gwangchigi Beach, 14.9 km, and Route 1-1, the 11.3 km loop of Udo island from Cheonjin Port past the coral-sand beach, the lighthouse and Hagosudong Beach. Stamps, every toilet and first-aid kit, and checked restaurants and sea-view cafés pinned.',
         duration: '1 day each',
@@ -835,6 +852,8 @@ export const cities: City[] = [
       {
         id: 'gyeyangsan',
         name: 'Gyeyangsan Night Hiking',
+        seoTitle: "Gyeyangsan hiking: 3 trails up Incheon's peak",
+        seoDescription: "Three trails up Gyeyangsan (395 m), Incheon's highest peak: deck stairs, a gentler museum route and a forest climb from Gyesan Station. Free map, night hike tips.",
         description:
           'Three ways up Incheon\'s highest peak (395 m): the deck-stair trail from the Gyeyang Park office, the gentler museum and open-air stage route, and the forest climb from Yeonmujeong pavilion, plus the walk from Gyesan Station.',
         duration: '2–3h',
@@ -986,21 +1005,6 @@ export const cities: City[] = [
     ],
   },
   {
-    id: 'suwon',
-    name: 'Suwon',
-    image: 'suwon.jpg',
-    imageCredit: 'Photo: 김병모 · CC0',
-    paths: [
-      {
-        id: 'hwaseong',
-        name: 'Hwaseong Fortress',
-        description: 'A walk along the 18th-century fortress wall of Suwon. Map coming soon.',
-        updated: '2026-10-23',
-        mapUrl: 'REPLACE_ME',
-      },
-    ],
-  },
-  {
     id: 'gyeonggi-do',
     name: 'Gyeonggi-do',
     image: 'gyeonggi.jpg',
@@ -1008,10 +1012,10 @@ export const cities: City[] = [
     paths: [
       {
         id: 'gapyeong',
-        name: 'Gapyeong',
+        name: 'Gapyeong with Nami island',
         description: 'A day trip east of Seoul to the lakes, islands and gardens of Gapyeong: Petite France, Morning Calm Arboretum, Jara Island, Gapyeong Rail Park, Italian Village, Homyeong Lake and Nami Island. Map coming soon.',
         duration: 'Day trip',
-        updated: '2026-10-23',
+        updated: '2026-10-26',
         keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'PetiteFrance', 'MorningCalmArboretum', 'JaraIsland', 'RailPark', 'HomyeongLake', 'KoreaTravel'],
         mapUrl: 'REPLACE_ME',
         guide: {
@@ -1031,6 +1035,120 @@ export const cities: City[] = [
           tips: [
             "🗺️ Map coming soon, with every stop pinned and a toilet layer.",
             "🚌 The stops are far apart, so plan a car, taxi or bus between them rather than walking.",
+          ],
+        },
+      },
+      {
+        id: 'hwaseong',
+        name: 'Suwon with Hwaseong Fortress',
+        description:
+          "Hwaseong Fortress in one loop: the 5.6 km wall with its four gates and view points, the palace and lanes of Haenggung-dong, and a few stops beyond the walls. Four map layers, 18 pins, public toilets included.",
+        duration: '3h',
+        updated: '2026-10-26',
+        tags: [{ icon: 'village', label: 'Old town' }],
+        story: {
+          title: 'A fortress built for a father',
+          text: [
+            "King Jeongjo built Hwaseong from **1794 to 1796** to honour his father, Crown Prince Sado, whose tomb he had moved nearby in 1789. The scholar **Jeong Yak-yong** designed it, with a wall, four main gates and a stream running through the middle.",
+            "The Korean War damaged much of it, and it was rebuilt from the **Uigwe**, the construction record written after Jeongjo's death. UNESCO listed it in **1997**.",
+          ],
+        },
+        notices: [
+          {
+            icon: '⏰',
+            title: 'Hwaseong Haenggung palace: open daily, last entry 17:30',
+            body: "The palace is open **09:00 to 18:00** every day of the year, with the last entry at **17:30**.",
+            since: 'Opening hours on Naver Map, checked 26 October 2026.',
+          },
+        ],
+        image: 'suwon.jpg',
+        imageCredit: 'Photo: 김병모 · CC0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1PMZUkDSkLVi-b-z9Igps2p3zW54rNzQ',
+        keywords: ['Suwon', 'Gyeonggi', 'HwaseongFortress', 'HwaseongHaenggung', 'Haenggungdong', 'Banghwasuryujeong', 'Seojangdae', 'DayTripFromSeoul', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🏯 **Hwaseong Fortress** is an easy day trip from Seoul for anyone who likes walking on history: a 5.7 km wall with four main gates, built in two years in the 1790s, and a royal palace and old lanes inside it. The orange line on the map follows the wall for about **5.6 km**, three hours with stops.",
+            "Start at **Janganmun**, the north gate, and walk west to **Hwaseomun**, up Paldalsan to **Seojangdae**, down to **Paldalmun**, and back along the east wall to **Banghwasuryujeong**. Then take the short **Haenggung-dong path** (the purple line) from the palace. The pink camera pins are the view and photo spots.",
+          ],
+          route: [
+            "Janganmun, the north gate: the largest city gate in Korea, destroyed in the Korean War and rebuilt in the 1970s. A public toilet stands beside the meeting square just south.",
+            "Hwaseomun, the west gate: small, but a good example of 18th-century fortress building. In autumn the silver-grass field in the park beside it is a popular photo corner.",
+            "Seojangdae, the west command post on top of Paldalsan: where the fortress's commanders directed troops, rebuilt in 2007 after an arson fire in 2006. Come at dusk for the night view.",
+            "Paldalmun, the south gate: it came through the Korean War mostly intact. The wall east of here is gone, so the line follows Jeongjo-ro for about 380 m before it meets the wall again.",
+            "Changnyongmun, the east gate: destroyed in the Korean War and rebuilt in the 1970s (sources say 1975 or 1978). The wall has a short gap here too, 175 m on the pavement.",
+            "Banghwasuryujeong pavilion: built in 1794 as the north-east pavilion, meant as a lookout and command post and loved for feasts. The pond below is Yongyeon; reviewers mention silver grass and yellow ginkgo in late autumn.",
+            "Hwaseong Haenggung palace, where the Haenggung-dong path starts: King Jeongjo's temporary palace, 576 chambers, used on his trips from 1789 to 1800, mostly destroyed under Japanese rule and open again since 2003. Mirohanjeong, the pavilion in its rear garden, is a view point; its name hints at Jeongjo's wish to retire to Suwon.",
+            "Haenggungdong Mural Village, on the 1 km path from the palace to Banghwasuryujeong: a lane of old houses with painted walls, between the palace and the wall.",
+          ],
+          tips: [
+            "🚇 Getting there: Line 1 to Suwon Station, then a taxi or local bus to Paldalmun or Janganmun. Check the bus number on the day.",
+            "🎬 Wolhwawon (월화원), the Chinese garden in Hyowon Park, is about 3 km south-east of the fortress. It is free, open 09:00–22:00, and known as a filming location of Moon Lovers: Scarlet Heart Ryeo (달의 연인).",
+            "🛍️ The Starfield Suwon library (별마당도서관) is about 2 km west of the wall inside the mall, so it works as a rainy-day stop. Naver lists no separate hours for it.",
+            "🏘️ The Korean Folk Village is in Yongin, about 10 km south-east, and needs a trip of its own. Naver lists it open 10:00–19:00 Monday to Thursday and until 22:00 Friday to Sunday.",
+            "🚻 Public toilets are pinned at Janganmun, Hwaseomun, Paldalsan, Paldalmun, the palace and Changnyongmun. There is none near Banghwasuryujeong; the nearest is at Janganmun, about 400 m away.",
+            "👟 The wall climbs Paldalsan to Seojangdae, so wear shoes with grip. Allow three hours for the loop and more for the palace.",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    id: 'theme',
+    name: 'Theme',
+    theme: true,
+    paths: [
+      {
+        id: 'k-drama-shooting-spots',
+        name: 'K-Drama shooting spots',
+        description: 'Places from Korean dramas that you can walk to. Map coming soon.',
+        updated: '2026-10-26',
+        mapUrl: 'REPLACE_ME',
+      },
+      {
+        id: 'abroad-in-korea',
+        name: 'Abroad in Korea',
+        description:
+          'Places in Korea that feel like somewhere else: European villages, Japanese colonial sites, China Towns, American and Central Asian districts. 22 pins across the country, with photos.',
+        updated: '2026-10-26',
+        image: 'abroad.jpg',
+        imageCredit: 'Photo: Choi2451 · CC0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1Bbj7tkaIr9_-vF7Y9NRViJcr3pulbGQ',
+        keywords: ['Korea', 'ChinaTown', 'GermanVillage', 'PetiteFrance', 'Gapyeong', 'NijimoriStudio', 'Gunsan', 'Itaewon', 'ThemedVillages', 'KoreaTravel'],
+        story: {
+          title: 'Why Korea has a German village',
+          text: [
+            "Most of Korea's \"abroad\" was built for one of three reasons. **Ports**: Incheon opened to foreign trade in 1883, and Busan's Chinese quarter dates to a Qing consulate in 1884. **Armies**: Songtan and Itaewon grew up beside American bases. **Homecomings**: the German Village in Namhae was built for Korean miners and nurses who had worked in Germany and come home.",
+            "The rest are copies of a holiday: Provence, Santorini and Switzerland rebuilt as theme villages and resorts, Jeju's Swiss Village as recently as 2016. Gunsan's Japanese houses and temple are different again, left over from the colonial period.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🌊',
+            title: 'Sinan 12 Apostles trail: check the tide',
+            body: 'The twelve chapels stand on five islands joined by **causeways that sink at high tide**, so the path can be cut. Look up the tide table before you set out, and start at the Daegijeom pier, where the first chapel stands. The pin on this map is approximate.',
+            since: 'Korean press reports, 2019 to 2023. Confirm times with Sinan County before you go.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🌍 **Abroad in Korea** is for the days you want a change of scene without a flight: German houses by the sea, a Greek-white resort, an Edo-period film set, a Mongolian lane in Seoul. Twenty-two places in five groups, spread across the country, so pick one region at a time.",
+            "Some are theme villages built for visitors. Others are real neighbourhoods where people live, so be a polite guest and ask before photographing people.",
+          ],
+          route: [
+            "Gapyeong, about an hour from Seoul: Petite France and the Italian Village (Pinocchio and Da Vinci), a short walk apart.",
+            "Paju, north-west of Seoul: Provence Village and the Heyri Art Village, a few minutes apart.",
+            "The long-distance Europe: Namhae German Village, Oedo Botania by boat off Geoje, Asan's Mediterranean Village, Solbeach Samcheok, Jade Garden in Chuncheon, Damyang Meta Provence and Jeju's Swiss Village. Each is a trip of its own.",
+            "Sinan 12 Apostles Pilgrimage Trail: twelve small chapels on five islands along a 12 km path, nicknamed Seomtiago after the Camino de Santiago.",
+            "Japan in Korea: Hirotsu House and Dongguksa temple in Gunsan, and Nijimori Studio, an Edo-style film-set village in Dongducheon.",
+            "China Towns: Incheon (our walk is on this site), Busan, where Texas Street next door has had Russian shops since the 1990s, and Daerim-dong in Seoul.",
+            "American districts: Songtan beside the Osan air base, and Itaewon's World Food Street near the old Yongsan garrison.",
+            "Central Asia and the Middle East in Seoul: Central Asia Street and Mongol Town by Dongdaemun, and the Seoul Central Mosque on Itaewon hill.",
+          ],
+          tips: [
+            "🔗 Several of these have their own page on this site: Gapyeong with Nami island, Incheon China Town and the Busan culture villages.",
+            "🕌 At the Seoul Central Mosque, dress modestly and ask before you go inside.",
+            "🚌 Check the way to each place on Naver Map before you go; most outside Seoul need a car, a taxi or a long bus ride.",
+            "📍 Photos on the pins come from Naver Map. Jeju Swiss Village, the Sinan trail and Songtan have none there.",
           ],
         },
       },

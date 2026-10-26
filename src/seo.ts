@@ -8,9 +8,9 @@ import { cities, findCity, findPath, hasMap } from "./data/travel";
 
 export const SITE_URL = "https://koreatravelpath.com";
 export const SITE_NAME = "My Travel Path";
-const HOME_TITLE = "My Travel Path – free walking routes in Korea";
+const HOME_TITLE = "Free Korea walking trails with maps | My Travel Path";
 const HOME_DESCRIPTION =
-  "Free walking routes for travellers in Korea: Seoul, Busan, Jeju and Incheon. Each path opens in Google My Maps, with Naver Map links for every stop. No sign-up.";
+  "Free walking trails in Korea: Seoul, Busan, Jeju, Incheon and more. Google My Maps files with Naver Map links, public toilets and short histories. No sign-up.";
 const DEFAULT_IMAGE = `${SITE_URL}/og.jpg`;
 const PUBLISHER = { "@type": "Organization", name: "JJ SOFTWARE", url: SITE_URL };
 
@@ -167,12 +167,18 @@ export function pageMeta(pathname: string): PageMeta {
 
   const city = findCity(a);
   if (city && !b) {
-    const description = `${city.paths.length} free walking routes in ${city.name}, Korea: ${city.paths
-      .map((p) => p.name)
-      .join(", ")}. Open in Google Maps and Naver Map.`;
+    const n = city.paths.length;
+    const heading =
+      city.seoTitle ??
+      (city.theme ? "Themed routes in Korea" : `${city.name} walking trails: ${n} free ${n === 1 ? "route" : "routes"} with maps`);
+    const description =
+      city.seoDescription ??
+      `${n} free ${city.theme ? "themed routes across" : "walking trails and routes in"} ${
+        city.theme ? "Korea" : `${city.name}, Korea`
+      }: ${city.paths.slice(0, 3).map((p) => p.name).join(", ")}${n > 3 ? " and more" : ""}. Free maps for Google Maps and Naver Map.`;
     return {
       path,
-      title: `Walking routes in ${city.name} | ${SITE_NAME}`,
+      title: `${heading} | ${SITE_NAME}`,
       description,
       keywords: [city.name, "KoreaTravel", "WalkingRoutes"],
       image: city.image ? `${SITE_URL}/${city.image}` : DEFAULT_IMAGE,
@@ -185,7 +191,7 @@ export function pageMeta(pathname: string): PageMeta {
             { name: SITE_NAME, path: "/" },
             { name: city.name, path },
           ]),
-          { "@type": "WebPage", name: `Walking routes in ${city.name}`, url: SITE_URL + path, description },
+          { "@type": "WebPage", name: heading, url: SITE_URL + path, description },
         ],
       },
     };
@@ -193,11 +199,12 @@ export function pageMeta(pathname: string): PageMeta {
 
   const p = city ? findPath(a, b) : undefined;
   if (city && p) {
-    const description = p.description ?? HOME_DESCRIPTION;
+    const description = p.seoDescription ?? p.description ?? HOME_DESCRIPTION;
     const image = p.image ? `${SITE_URL}/${p.image}` : DEFAULT_IMAGE;
+    const headline = p.seoTitle ?? (city.theme ? p.name : `${p.name} – ${city.name}`);
     return {
       path,
-      title: `${p.name} – ${city.name} | ${SITE_NAME}`,
+      title: `${headline} | ${SITE_NAME}`,
       description,
       keywords: p.keywords ?? [],
       image,
@@ -213,7 +220,7 @@ export function pageMeta(pathname: string): PageMeta {
           ]),
           {
             "@type": "Article",
-            headline: `${p.name} – ${city.name}`,
+            headline,
             description,
             image,
             dateModified: p.updated,
@@ -247,6 +254,17 @@ export function placeholderPaths(): Set<string> {
   return out;
 }
 
+/** Search results cut a description at about 155 characters: end it on a sentence or clause, not mid-word. */
+export function snippet(text: string, max = 155): string {
+  if (text.length <= max) return text;
+  const head = text.slice(0, max);
+  for (const sep of [". ", "; ", ": ", ", "]) {
+    const i = head.lastIndexOf(sep);
+    if (i >= 90) return head.slice(0, i) + (sep === ". " ? "." : "");
+  }
+  return head.slice(0, head.lastIndexOf(" ")).replace(/[,;:]$/, "") + "…";
+}
+
 const esc = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
@@ -255,13 +273,13 @@ export function renderHeadTags(m: PageMeta): string {
   const url = SITE_URL + m.path;
   const tags = [
     `<title>${esc(m.title)}</title>`,
-    `<meta name="description" content="${esc(m.description)}" />`,
+    `<meta name="description" content="${esc(snippet(m.description))}" />`,
     m.keywords.length ? `<meta name="keywords" content="${esc(m.keywords.join(", "))}" />` : "",
     `<link rel="canonical" href="${url}" />`,
     `<meta property="og:type" content="${m.type}" />`,
     `<meta property="og:site_name" content="${SITE_NAME}" />`,
     `<meta property="og:title" content="${esc(m.title)}" />`,
-    `<meta property="og:description" content="${esc(m.description)}" />`,
+    `<meta property="og:description" content="${esc(snippet(m.description))}" />`,
     `<meta property="og:url" content="${url}" />`,
     m.image ? `<meta property="og:image" content="${m.image}" />` : "",
     m.image === DEFAULT_IMAGE
@@ -269,7 +287,7 @@ export function renderHeadTags(m: PageMeta): string {
       : "",
     `<meta name="twitter:card" content="${m.image ? "summary_large_image" : "summary"}" />`,
     `<meta name="twitter:title" content="${esc(m.title)}" />`,
-    `<meta name="twitter:description" content="${esc(m.description)}" />`,
+    `<meta name="twitter:description" content="${esc(snippet(m.description))}" />`,
     m.image ? `<meta name="twitter:image" content="${m.image}" />` : "",
     `<script type="application/ld+json">${JSON.stringify(m.jsonLd).replace(/</g, "\\u003c")}</script>`,
   ];
@@ -304,17 +322,17 @@ export function usePageMeta() {
     const m = pageMeta(pathname);
     const url = SITE_URL + m.path;
     document.title = m.title;
-    setMeta('meta[name="description"]', { name: "description" }, m.description);
+    setMeta('meta[name="description"]', { name: "description" }, snippet(m.description));
     setMeta('meta[name="keywords"]', { name: "keywords" }, m.keywords.join(", "));
     setLink("canonical", url);
     setMeta('meta[property="og:type"]', { property: "og:type" }, m.type);
     setMeta('meta[property="og:title"]', { property: "og:title" }, m.title);
-    setMeta('meta[property="og:description"]', { property: "og:description" }, m.description);
+    setMeta('meta[property="og:description"]', { property: "og:description" }, snippet(m.description));
     setMeta('meta[property="og:url"]', { property: "og:url" }, url);
     if (m.image) setMeta('meta[property="og:image"]', { property: "og:image" }, m.image);
     else document.head.querySelector('meta[property="og:image"]')?.remove();
     setMeta('meta[name="twitter:title"]', { name: "twitter:title" }, m.title);
-    setMeta('meta[name="twitter:description"]', { name: "twitter:description" }, m.description);
+    setMeta('meta[name="twitter:description"]', { name: "twitter:description" }, snippet(m.description));
     if (m.image) setMeta('meta[name="twitter:image"]', { name: "twitter:image" }, m.image);
     else document.head.querySelector('meta[name="twitter:image"]')?.remove();
     setMeta('meta[name="twitter:card"]', { name: "twitter:card" }, m.image ? "summary_large_image" : "summary");
