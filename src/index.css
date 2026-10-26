@@ -1037,7 +1037,8 @@ button.cta {
 }
 
 /* A supplied banner photo is shown whole, at its own ratio, never cropped */
-.path-image.whole img {
+.path-image.whole img,
+.card-image.whole img {
   height: auto;
 }
 

@@ -63,6 +63,7 @@ export type City = {
   theme?: boolean // a collection of themed paths across Korea, not one place (page titles say "Themed routes", not "in <name>")
   image?: string // file in ./assets, shown as the city card's header photo
   imageCredit?: string // shown as a small label on the photo
+  imageWhole?: boolean // show the header image whole at its own ratio (a supplied image), not as the slim band
   paths: TravelPath[]
 }
 
@@ -1096,6 +1097,8 @@ export const cities: City[] = [
     id: 'theme',
     name: 'Theme',
     theme: true,
+    image: 'theme.jpg',
+    imageWhole: true,
     paths: [
       {
         id: 'k-drama-shooting-spots',

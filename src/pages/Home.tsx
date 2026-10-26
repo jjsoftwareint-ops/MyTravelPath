@@ -46,7 +46,7 @@ export default function Home() {
                   tabIndex={-1}
                   aria-hidden="true"
                 >
-                  <span className="card-image">
+                  <span className={city.imageWhole ? "card-image whole" : "card-image"}>
                     <img
                       src={`${import.meta.env.BASE_URL}${city.image}`}
                       alt=""
