@@ -97,6 +97,8 @@ All allow free use; the credit is given in every case.
   [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%EB%B0%A9%ED%99%94%EC%88%98%EB%A5%98%EC%A0%95_Banghwa_Suryu_Pavilion,_Hwaseong_Fortress.jpg).
 - Gyeonggi-do card photo: *Gapyeong-eup, Gapyeong-gun, Gyeonggi-do*, Korea Tourism Organization,
   KOGL Type 1. https://commons.wikimedia.org/wiki/File:Gapyeong-eup,_Gapyeong-gun,_Gyeonggi-do.jpg
+- Ganghwa-do path banner: *분오리돈대* (Bunori Dondae), HyeonChangu, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:%EB%B6%84%EC%98%A4%EB%A6%AC%EB%8F%88%EB%8C%80.jpg
 - Incheon China Town path banner: *Chinatown, incheon 20230430 002* (the 1st Paeru gate),
   Mobius6, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Chinatown,_incheon_20230430_002.jpg
 - Hongdae Hot Places path banner: *Hongdae Party District at Night, Seoul*, Ken Eckert,

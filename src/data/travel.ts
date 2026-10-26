@@ -925,6 +925,64 @@ export const cities: City[] = [
           ],
         },
       },
+      {
+        id: 'ganghwa-do',
+        name: 'Ganghwa-do island day trip',
+        description:
+          "Incheon's big island in a day: a hanok-style church, a temple said to be among Korea's oldest, old coastal forts and a textile town, with cafés and restaurants pinned. Five map layers, 21 pins.",
+        duration: 'Full day',
+        updated: '2026-10-26',
+        tags: [{ icon: 'village', label: 'Island day trip' }],
+        story: {
+          title: 'The island that guarded the way to Seoul',
+          text: [
+            "In **1232** the Goryeo court left the mainland for Ganghwa and ruled from the island for nearly forty years, because the Mongol army could not easily cross the water to reach it.",
+            "The island kept that job. It sits where the Han and Imjin rivers meet the sea, the water road to Seoul, so in **1679** the Joseon court lined its coast with **48 small forts called dondae**, and Yeonmijeong pavilion on the north tip watched the river mouth.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚌',
+            title: 'The sights are far apart: plan a taxi or a car',
+            body: "From Ganghwa town the main stops lie **4 to 18 km** away in a straight line: Yeonmijeong 4 km, Jeondeungsa 13 km, Bunori Dondae 17.5 km. Bus 3000 from Sinchon reaches the Ganghwa bus terminal; reports put the ride at about 90 minutes to over two hours.",
+            since: 'Distances from the map pins; bus times from travel sites that disagree. Checked 26 October 2026.',
+          },
+          {
+            icon: '🚫',
+            title: 'Closed days to plan around',
+            body: "**Mondays:** Sochang Experience Hall, Geummundo and Metaforest are closed. **Wednesdays:** Toga, Café Frans and the Ryu Distillery café are closed (Ryu also on Thursdays). Geummundo closes at 14:30, so go at lunch.",
+            since: 'Opening hours on Naver Map, checked 26 October 2026.',
+          },
+        ],
+        image: 'ganghwa.jpg',
+        imageCredit: 'Photo: HyeonChangu · CC BY-SA 4.0',
+        mapUrl: 'REPLACE_ME',
+        keywords: ['Incheon', 'Ganghwado', 'DayTripFromSeoul', 'Jeondeungsa', 'Bomunsa', 'Dondae', 'GanghwaAnglicanChurch', 'JoyangTextile', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🏯 **Ganghwa-do** is Incheon's big island, one bus ride from Seoul and mostly rice fields, hills and sea. On it you find a church built as a hanok, a temple said to be among the oldest in Korea, coastal forts from the 1600s and a town that became a textile centre in the 1930s.",
+            "This is **not a walk**. The stops are kilometres apart, so the page is a day plan in clusters: start in **Ganghwa town**, go south to **Jeondeungsa**, then finish on the coast at **Bunori Dondae**. The pink pins are cafés and restaurants, checked on Naver on 25 and 26 October.",
+          ],
+          route: [
+            "Joyang Textile, Ganghwa town: a retro café in a factory founded in 1933 to make artificial silk. It closed in 1958 and opened as an art gallery in 2018.",
+            "Sochang Experience Hall, in the same old town: opened in 2017 on the site of the Pyeonghwa Textile factory. Sochang is a plain cotton cloth, and Ganghwa became a textile town after 1933. Tue–Sun 10:00–18:00.",
+            "Ganghwa Anglican Church: built from 1899 and finished in November 1900 as an Anglican church in Korean hanok style, with a Western basilica layout inside. National Historic Site No. 424. Open daily 10:00–18:00 on Naver.",
+            "Yeonmijeong Pavilion, 4 km north-east: where the Han and Imjin rivers fork like a swallow's tail. It was a front-line watchpost on the waterway to Seoul, and a small fort, Wolgot-jin, sits just inside it.",
+            "Onsu-ri Anglican Church, Gilsang-myeon: St Andrew's, a hanok-style church consecrated in 1906 according to the sources we found, which disagree on which bishop did it. The church and the priest's house are both Incheon heritage listings.",
+            "Jeondeungsa Temple, on the slopes of Jeongjoksan: by tradition one of the oldest temples in Korea, said to date from the Goguryeo era. The Jukrim Dawon tea house stands inside the grounds.",
+            "Bunori Dondae, beside Dongmak Beach: one of the 48 dondae built on Ganghwa in 1679. Most are square or round, but this one follows the headland and ended up crescent-shaped.",
+            "Optional, far west: Bomunsa Temple on Seokmodo island. Incheon's folklore pages say the monk Hoejeong founded it in 635, and it is counted among Korea's three great Guanyin pilgrimage sites.",
+          ],
+          tips: [
+            "🚌 Getting there: bus 3000 from Sinchon runs to the Ganghwa bus terminal, about 90 minutes to over two hours depending on traffic and on which site you read. Sites also give different Sinchon exits, so check the stop on the day. Taxis are the easy way on from the terminal; travel sites report 15 to 20 minutes to Jeondeungsa.",
+            "🍜 Food: five restaurants are pinned. Kkomak Hansang (cockle bibimbap), Manisan Sanchae (a mountain-herb set meal), Geummundo (turnip tangsuyuk, lunch only), Toga (fresh tofu and shrimp stew) and Ssambap-ine (wrap-your-own ssambap). Naver shows no hours for Kkomak Hansang this week, so phone 032-937-2868 first.",
+            "☕ Cafés: eight are pinned, from the retro Joyang Textile factory to Metaforest and Café Irim in Gilsang-myeon and Café Talkrapy on the south coast. Hours and closed days are on each pin.",
+            "🎟️ Travel sites disagree on whether Jeondeungsa charges an entrance fee (free, or about ₩3,000), so keep a little cash for the gate.",
+            "📍 Bomunsa sits on Seokmodo island off the west coast. Treat it as a separate trip and check the way across before you go.",
+            "🔗 Another Incheon day on this site: the Incheon China Town and Wolmido Sunset walks.",
+          ],
+        },
+      },
     ],
   },
   {
