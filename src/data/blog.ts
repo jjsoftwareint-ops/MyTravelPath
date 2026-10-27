@@ -37,6 +37,126 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'bugaksan-opens-after-58-years',
+    title: '58 years later, the mountain behind the Blue House is open',
+    description:
+      'The last locked trail on Bugaksan, behind Cheong Wa Dae, opened on 17 October 2026, after 58 years and nine months. What opened and what we could not confirm.',
+    teaser: 'It is open round the clock.',
+    icon: 'mountain',
+    date: '2026-10-27',
+    updated: '2026-10-27',
+    keywords: ['KoreaTravel', 'Seoul', 'Bugaksan', 'Bukaksan', 'BlueHouse', 'CheongWaDae', 'KoreaTrends', 'Hiking'],
+    body: [
+      {
+        type: 'p',
+        text: 'On 17 October the last locked trail on **북악산 (Bugaksan)** opened. The mountain stands right behind **청와대 (Cheong Wa Dae)**, the Blue House, Korea\'s presidential compound. For almost six decades, most of it was off limits to ordinary walkers.',
+      },
+      {
+        type: 'p',
+        text: 'It is not a hidden mountain. It is the green peak behind Gyeongbokgung in most photos of the palace. You could photograph it, but you could not climb all of it.',
+      },
+      {
+        type: 'img',
+        src: 'bugaksan-folk-museum.jpg',
+        alt: 'A green, rocky peak rising behind the tower of the National Folk Museum, with a path and a palace wall in the foreground',
+        caption: 'Bugaksan rising behind the National Folk Museum, inside the Gyeongbokgung grounds.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bugaksan_and_National_Folk_Museum_of_Korea.jpg',
+        credit: { author: 'Tristan Surtel', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'hourglass_not_done', text: 'Why it was closed' },
+      {
+        type: 'p',
+        text: 'On 21 January 1968, 31 North Korean commandos tried to reach the Blue House. The raid is known as the **김신조 (Kim Sin-jo)** incident, after one of the men. Afterwards the hills behind the compound were closed for security.',
+      },
+      {
+        type: 'p',
+        text: 'By the calendar that is 58 years and about nine months. Korean papers round it up to 59 years.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'door', text: 'It opened one slice at a time' },
+      {
+        type: 'table',
+        head: ['When', 'What opened'],
+        rows: [
+          ['2007', '4.3 km of the Seoul city wall trail, from Changuimun to Waryong Park'],
+          ['2020', '2.2 km of trail on the north side'],
+          ['April 2022', '3.0 km on the south-east side'],
+          ['17 Oct 2026', 'The last 1.32 km, on the south-west side toward Cheongun-dong'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'So the opening was never one big day. It came in four steps, and this one finishes the set.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'compass', text: 'What the new 1.32 km is like' },
+      {
+        type: 'p',
+        text: 'It climbs the south-west slope above Cheongun-dong, in Jongno-gu. Most of it follows an old patrol path the soldiers used, so less of the mountain had to be dug up.',
+      },
+      {
+        type: 'p',
+        text: 'Four new viewing spots look over Inwangsan, Namsan, the Blue House grounds, Gyeongbokgung and the streets of Seoul.',
+      },
+      {
+        type: 'img',
+        src: 'bugaksan-south-trail-bench.jpg',
+        alt: 'A wooden bench on a granite rock under pine trees, looking out over a hazy Seoul',
+        caption: 'A bench on Bugaksan\'s south trail, opened in 2022 (photo from March 2022). The new south-west section is a different stretch.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bukaksan_Mountain_11.jpg',
+        credit: { author: 'Republic of Korea (Korean Culture and Information Service)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0' },
+      },
+      {
+        type: 'p',
+        text: 'The Korea Herald describes the start at **Dolgorae Shelter**, the first rest stop on the way up from Changuimun. Then come rocky outcrops and pine groves, and **Manse Dongbang**, a spring beside a rock carved with a wish for the king\'s long life. Further on stands the Jan. 21 Incident Pine, which still has bullet holes from 1968.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'flashlight', text: 'Open all night, with guards' },
+      {
+        type: 'p',
+        text: 'The Presidential Security Service says all the trails, the new one included, are open 24 hours a day.',
+      },
+      {
+        type: 'p',
+        text: 'It is a strange kind of open. The presidential office moved back to the Blue House, and in March the service chose to keep the mountain open round the clock under what it calls "open security, low-profile security".',
+      },
+      {
+        type: 'p',
+        text: 'Expect patrols and cameras. Six information centres (Changuimun, Cheongundae, Gokjang, Sukjeongmun, Malbawi and Samcheong) run daily from 09:00 to 18:00. The area is still a security zone.',
+      },
+      {
+        type: 'p',
+        text: 'We could not confirm whether you need to show ID or take a pass at an entrance. Ask at an information centre first.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'thinking_face', text: 'Our view' },
+      {
+        type: 'p',
+        text: 'We like it. You could photograph this mountain from Gyeongbokgung for years. Now you can also climb it.',
+      },
+      {
+        type: 'p',
+        text: 'What we would watch: "open 24 hours" is a promise from the security service, with a president living next door. Rules at the gates can change, so check on the day.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: worth the climb. Go in daylight, and ask the information centre what is open that day.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'inwang-mountain-trail',
+        text: 'Next door: the Inwangsan trail, one of the mountains you can see from the new viewing spots',
+      },
+      {
+        type: 'p',
+        text: 'What we read: the Korea Herald (16 Oct 2026), Seoul Economic Daily (5 Mar and 13 Oct 2026) and Kyunghyang Shinmun (13 Oct 2026).',
+      },
+    ],
+  },
+  {
     id: 'kakao-t-for-foreigners',
     title: "The taxi app that won't let tourists in",
     description:
