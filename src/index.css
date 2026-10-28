@@ -513,6 +513,49 @@ a:focus-visible {
   border-top: 1px solid var(--border);
 }
 
+/* Short real text under the home list and under an open city's paths, so these pages are not only menus. */
+.site-intro {
+  margin: 20px 0 8px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+}
+.site-intro h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.site-intro p,
+.city-intro p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-soft);
+}
+.site-intro p + p,
+.city-intro p + p {
+  margin-top: 10px;
+}
+.sublist.has-intro {
+  border-radius: 0;
+}
+.city-intro {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 16px 16px;
+  padding: 14px 16px 16px;
+}
+.city-intro h3 {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .child {
   display: flex;
   align-items: center;

@@ -60,6 +60,7 @@ export type City = {
   name: string
   seoTitle?: string // <title> headline for the city page, e.g. 'Jeju walking trails: Olle routes with maps'
   seoDescription?: string // meta description for the city page (about 150 characters)
+  intro?: string[] // one or two short paragraphs under the city name when it is open (RichText markup allowed); real text for readers and search, no filler
   theme?: boolean // a collection of themed paths across Korea, not one place (page titles say "Themed routes", not "in <name>")
   image?: string // file in ./assets, shown as the city card's header photo
   imageCredit?: string // shown as a small label on the photo
@@ -71,6 +72,10 @@ export const cities: City[] = [
   {
     id: 'seoul',
     name: 'Seoul',
+    intro: [
+      "Ten routes in the capital. The shortest are a one-to-two-hour stroll in **Hongdae** or an evening in **Haebangchon**; the longest is the **Bukhansan Dulle-gil** trek at about four hours.",
+      "The cherry blossom walks are for spring, the night walks (the fortress wall and stream, Gangnam) are best after dark, and the **Indoors Trip** fills a whole rainy day under a roof.",
+    ],
     image: 'seoul.jpg',
     imageCredit: 'Photo: Seoul Tourism Organization · KOGL 1',
     paths: [
@@ -496,6 +501,9 @@ export const cities: City[] = [
   {
     id: 'busan',
     name: 'Busan',
+    intro: [
+      "Three routes in Korea's second city: a spring **cherry blossom walk**, the **Haeundae Coastal Path** for half a day by the sea, and a two-hour walk through the **culture villages** and hotspots, which is also good at night.",
+    ],
     image: 'busan.jpg',
     imageCredit: 'Photo: Busan Metropolitan City · KOGL 1',
     paths: [
@@ -646,6 +654,9 @@ export const cities: City[] = [
   {
     id: 'jeju',
     name: 'Jeju',
+    intro: [
+      "Four **Olle trail** routes, each about one day on foot. Two of them are on small islands, **Udo** and **Chuja**, so plan the boat before you set out.",
+    ],
     seoTitle: 'Jeju walking trails: Olle routes with maps',
     seoDescription: 'Free Jeju walking trails: Olle Trail routes 1, 1-1, 5, 6, 7, 17 and 18-1 on Google My Maps, with toilets, stamp boxes, restaurants and cafés pinned.',
     image: 'jeju.jpg',
@@ -812,6 +823,9 @@ export const cities: City[] = [
   {
     id: 'incheon',
     name: 'Incheon',
+    intro: [
+      "Four routes, from a two-to-three-hour old-town walk in **China Town** and a night hike on **Gyeyangsan**, to a three-hour sunset walk on **Wolmido** and a full day on **Ganghwa-do** island.",
+    ],
     image: 'incheon.jpg',
     imageCredit: 'Photo: Cameron Henderson · Public domain',
     paths: [
@@ -1008,34 +1022,73 @@ export const cities: City[] = [
   {
     id: 'gyeonggi-do',
     name: 'Gyeonggi-do',
+    intro: [
+      "Two day trips: **Gapyeong**, with its gardens, lakeside cafés and the ferry to Nami Island (pick two or three stops and go by car), and **Suwon**, a three-hour walk around the Hwaseong Fortress old town.",
+    ],
     image: 'gyeonggi.jpg',
     imageCredit: 'Photo: Korea Tourism Organization · KOGL 1',
     paths: [
       {
         id: 'gapyeong',
         name: 'Gapyeong with Nami island',
-        description: 'A day trip east of Seoul to the lakes, islands and gardens of Gapyeong: Petite France, Morning Calm Arboretum, Jara Island, Gapyeong Rail Park, Italian Village, Homyeong Lake and Nami Island. Map coming soon.',
+        seoTitle: 'Gapyeong day trip: Nami Island ferry and map',
+        seoDescription: 'Gapyeong day trip east of Seoul: Nami Island ferry times and prices, Morning Calm Arboretum, Petite France and view cafés, with hours and a map.',
+        description: 'A day trip east of Seoul to the gardens, islands and lakeside of Gapyeong: Morning Calm Arboretum, the Jat Scent Blue Forest, Petite France, the Italian Village, Jara Island, the Rail Park and the ferry to Nami Island. The map has photos, opening hours, four lakeside view cafés and a toilet layer.',
         duration: 'Day trip',
-        updated: '2026-10-26',
-        keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'PetiteFrance', 'MorningCalmArboretum', 'JaraIsland', 'RailPark', 'HomyeongLake', 'KoreaTravel'],
-        mapUrl: 'REPLACE_ME',
+        image: 'gapyeong.jpg',
+        imageCredit: 'Photo: Jocelyndurrey · CC BY-SA 4.0',
+        updated: '2026-10-28',
+        keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'NamiIslandFerry', 'PetiteFrance', 'MorningCalmArboretum', 'JatForest', 'JaraIsland', 'RailPark', 'CheongpyeongLake', 'ViewCafe', 'JadeGarden', 'KoreaTravel'],
+        notices: [
+          {
+            icon: '⛴️',
+            title: 'Ferry to Nami Island: times',
+            body: "Boats leave from the **Gapyeong wharf** and the crossing takes about 5 minutes. Into the island the first boat is **08:00** and the last **21:00**; back out the first is 08:05 and the last **21:05**. They run every 10–20 minutes from 09:00 to 18:00 and every 30 minutes outside that. **18 Sep–22 Nov 2026:** extra sailings, first boat **07:30** daily, last boat **21:30** on Fri, Sat, Sun and public holidays.",
+            since: 'Official Nami Island site (namisum.com), checked 28 October 2026. The ferry can pause when heavy dam release makes the river fast; the site posts a notice.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Nami Island ticket includes the ferry',
+            body: "The entrance ticket covers the **round-trip ferry**: adult **₩19,000**, discounted ₩16,000, age 36 months to elementary school ₩13,000. The faster motorboat in costs more (₩29,000 adult) and runs 09:00–18:00 from about April to November. The wharf car park is ₩6,000 for a small car.",
+            since: 'Official Nami Island site, checked 28 October 2026.',
+          },
+          {
+            icon: '⏰',
+            title: 'Opening hours of the main stops',
+            body: "**Morning Calm Arboretum** 08:30–19:00 daily. **Jade Garden** 09:00–18:00 daily, last entry 17:00. **Petite France** and the **Italian Village** 09:00–18:00 daily. **Nami Island** 08:00–21:00 daily. Last entry at the gardens is one hour before closing.",
+            since: 'Naver Map, checked 28 October 2026. Hours change by season.',
+          },
+          {
+            icon: '🚫',
+            title: 'Jat forest closes on Mondays, Rail Park breaks at midday',
+            body: "The **Jat Scent Blue Forest** is closed **every Monday** (09:00–18:00 or 09:00–17:00 on the other days; Naver lists both without dates). **Gapyeong Rail Park** is open Mon–Fri 10:00–18:00 with a break 11:30–13:00, and Sat–Sun 09:00–18:30 with a break 12:00–13:30.",
+            since: 'Naver Map, checked 28 October 2026.',
+          },
+          {
+            icon: '☕',
+            title: 'The view cafés close early',
+            body: "**La Cuna** 10:00–18:00. **Cafe The Wave** 11:00–18:00 (to 19:00 at weekends). **Corydalis** 09:00–20:00 (to 21:00 Fri and Sat). **Jajam 157** 10:00–19:00 (09:30–20:00 at weekends and holidays). Plan the café stop before dusk.",
+            since: 'Naver Map, checked 28 October 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1WFNxPHvLMtl_pkwfuYt8qsYs47GAKsk',
         guide: {
           intro: [
-            "🌿 **Gapyeong** is the green day trip east of Seoul: a lake and river valley with islands, gardens and themed villages, all in one county. The map is on its way; here is what will be on it.",
-            "The seven stops are spread over a wide area, so this is a **pick two or three** kind of day, not a single walk.",
+            "🌿 **Gapyeong** is the green day trip east of Seoul: a lake and river valley with islands, gardens and themed villages. The map pins ten places, four lakeside view cafés and the public toilets, each with its Naver photo and opening hours.",
+            "The stops are spread over a wide area, so this is a **pick two or three** kind of day, not a single walk. The hours differ a lot: the Jat forest is closed on Mondays and the cafés close early.",
           ],
           route: [
-            "Petite France: a French-themed village on the hillside.",
-            "Morning Calm Arboretum: the garden of the morning calm, for a slow walk among the plantings.",
-            "Jara Island: a long island in the river, flat and open.",
-            "Gapyeong Rail Park: rides on the old railway line.",
-            "Italian Village: an Italian-style village to stroll through.",
-            "Homyeong Lake: a mountain lake with a view over the valley.",
-            "Nami Island: the famous tree-lined island, reached by boat.",
+            "Morning Calm Arboretum and the Jat Scent Blue Forest: a garden and a pine-nut forest about 3.5 km apart in the hills of Sangmyeon. Pair them by car.",
+            "Petite France and the Italian Village (Pinocchio and Da Vinci): two themed villages about 200 m apart on the Hoban-ro lakeside road.",
+            "Cheongpyeong Lake view cafés: Corydalis and La Cuna on Hoban-ro, The Wave and Jajam 157 a little further south. All four are voted for their views on Naver.",
+            "Jara Island and Gapyeong Rail Park: an island in the Bukhan River and rail bikes on an old railway line, both near Gapyeong town.",
+            "Nami Island and Jade Garden: both are in Chuncheon (Gangwon), just across the border. Nami Island is a 5-minute ferry ride from the Gapyeong wharf; Jade Garden is close by.",
           ],
           tips: [
-            "🗺️ Map coming soon, with every stop pinned and a toilet layer.",
+            "⛴️ The ferry is part of the Nami Island ticket, so there is no separate fare. Times and prices are in the boxes above the map.",
             "🚌 The stops are far apart, so plan a car, taxi or bus between them rather than walking.",
+            "🚻 Public toilets are pinned in their own layer for Morning Calm, Jara Island, Petite France and Nami Island. Naver lists no separate public toilet for the Jat forest, the Rail Park, Jade Garden or the lake, so use the toilets inside the sites.",
+            "📝 Hours come from Naver and the official Nami Island site, read on 28 October 2026. They change by season, so check before you go.",
           ],
         },
       },
@@ -1096,6 +1149,9 @@ export const cities: City[] = [
   {
     id: 'theme',
     name: 'Theme',
+    intro: [
+      "Two collections that cross the country instead of staying in one city: **K-Drama shooting spots**, and **Abroad in Korea**, the foreign-style villages and districts.",
+    ],
     theme: true,
     image: 'theme.jpg',
     imageWhole: true,
@@ -1103,9 +1159,70 @@ export const cities: City[] = [
       {
         id: 'k-drama-shooting-spots',
         name: 'K-Drama shooting spots',
-        description: 'Places from Korean dramas that you can walk to. Map coming soon.',
-        updated: '2026-10-26',
-        mapUrl: 'REPLACE_ME',
+        description:
+          '18 places where Korean dramas were filmed, from a Chinese garden in Suwon to the big open sets in the south. Each pin has a photo and a Naver Map link.',
+        seoTitle: 'K-drama filming locations in Korea: 18 spots on a map',
+        seoDescription:
+          'Where Korean dramas were filmed: Mr. Sunshine, The Glory, Goblin, Jumong and more. 18 sets and locations on one map, with the drama behind each place.',
+        updated: '2026-10-28',
+        image: 'kdrama.jpg',
+        imageCredit: 'Photo: Choi2451 · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1EYhgxfPiltP6Ns7IbUJQiuwoBN6ha2U',
+        keywords: ['Korea', 'KDrama', 'FilmingLocations', 'MrSunshine', 'TheGlory', 'KoreanFolkVillage', 'Mungyeong', 'Nonsan', 'KoreaTravel'],
+        story: {
+          title: 'Why Korea builds whole towns for television',
+          text: [
+            "A period drama needs streets that no longer exist, so production companies build them. **Naju** opened its set in 2006 for the drama Jumong, and reports at the time counted 650,000 visitors in the first months. **Mungyeong** has two open sets that, by one count, have hosted about 300 dramas and films since 2000, and Hapcheon's set is reported to have passed 190.",
+            "After the cameras leave, the town stays. Some sets became theme parks, some are rented out again, and a few are taken down: the baduk park from The Glory was mostly dismantled once filming ended. That is why each pin below says what you can still see.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🎬',
+            title: 'Sets close on filming days',
+            body: 'Open sets can **close for a shoot without much warning**, and sources disagree on Iksan Prison Set\'s closing day. Look at the Naver Map page for the hours before you drive out.',
+            since: 'Tourist listings and local press, checked October 2026.',
+          },
+          {
+            icon: '🏗️',
+            title: 'The Glory baduk park was a temporary set',
+            body: 'The giant **baduk boards beside Cheongnaru** were built for filming in 2022 and mostly removed afterwards. In March 2023 Incheon said it would rebuild part of the set; check what stands there now.',
+            since: 'Press report, March 2023. Not rechecked since.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🎬 This map is for the drama you finished at 2 a.m. and now want to stand inside. Nine of the pins are **big sets** built for television, from the **Mr. Sunshine** street in Nonsan to the royal court of **Mungyeong Saejae**. The rest are real places that a drama borrowed for a few scenes.",
+            "Mind the distance: the Seoul-area pins fit in two day trips, and the southern sets are each a trip of their own, usually by car. Where I could not find a named drama for a place, the text says so.",
+          ],
+          route: [
+            "Yongin Daejanggeum Park: MBC's period-drama park of about 84 hectares. Reports list Jumong, Moon Embracing the Sun and Queen Seondeok among its dramas. The original Dae Jang Geum set stood in Yangju and closed in 2011.",
+            "Korean Folk Village, Yongin: a Joseon-style village with a market street and a government office. One report names KBS2's Eun-ae-ha-neun Doejeok-nim-a, shot at its Jeju-mok bridge.",
+            "Wolhwawon Garden, Hyowon Park, Suwon: a Cantonese garden built under a 2003 Gyeonggi–Guangdong friendship agreement. Known as a location of Scarlet Heart: Ryeo and Moonlight Drawn by Clouds, both 2016.",
+            "Unhyeongung Yanggwan, Seoul: the Western-style house of the Unhyeongung estate. Goblin used Unhyeongung as Kim Shin's house; the sources I found do not say which building. Duksung Women's University uses the Yanggwan today.",
+            "Yanghwajin Historical Park, Seoul: a riverside history park with a public toilet at its car park. I found no named drama here; it is a calm Han River stop between the other pins.",
+            "Incheon Open Port Street: the late-1800s port district. Mr. Sunshine is set in this era and its characters sail from Jemulpo, though it was filmed in Nonsan. Incheon's Goblin course also passes Freedom Park and the Jemulpo Club.",
+            "Cheongnaru, Cheongna Lake Park: the pavilion beside the baduk-park scenes of The Glory. The set was mostly dismantled after filming (see the box above).",
+            "Heyri Art Village, Paju: set up in 1998 by about 380 publishers and artists, with a 12 m height limit and no walls. Tourist listings call it a modern-drama backdrop; I could not confirm a title.",
+            "Byeokchoji Arboretum, Paju: 27 Eastern and Western gardens around a pond. Listings say dramas and films were shot here but do not name them.",
+            "First Garden, Paju: a second garden about 15 km away, listed the same way. Treat it as a separate stop.",
+            "Sunshine Studio, Nonsan: the main Mr. Sunshine set, with the Glory Hotel, modelled on Seoul's first Western-style hotel, the Sontag Hotel. Sunshine Land, 150 m away, is the experience hall.",
+            "Choi Champan House, Pyeongsa-ri, Hadong: a village of 14 hanok built as a set around 2002. It stars as the home in Toji (SBS, 2004 to 2005), and Mr. Sunshine and Moonlight Drawn by Clouds also shot here. The Choi family in the novel is fiction.",
+            "Hapcheon Image Theme Park: reported to have hosted over 190 productions, including Mr. Sunshine and the films Assassination, Taxi Driver and The Age of Shadows. A Blue House set was added in 2015 at about two thirds of the real size.",
+            "Suncheon Drama Filming Site: a 1960s to 1980s hillside village. Listings name Eden's East, Love and Ambition and Giant; recent shoots include When Life Gives You Tangerines.",
+            "Mungyeong Saejae Open Set: a Joseon royal court and market street. Taejo Wang Geon, The King's Affection and The Red Sleeve were shot here, and the 2026 film The King's Warden. Press lists Kingdom's first two seasons too.",
+            "Buan Image Theme Park: the set of the 2005 film The King and the Clown. Press also names the dramas Dong Yi (2010) and Gu Family Book (2013) for its naval-headquarters set.",
+            "Naju Image Theme Park: opened in 2006 as the Samhanji Theme Park for the drama Jumong. The pin sits on the main gate.",
+            "Iksan Prison Set: Korea's only set built as a prison, on the grounds of a closed branch school. Prison Playbook, Signal and The Penthouse are named in local press; counts of productions vary from about 28 to over 200.",
+          ],
+          tips: [
+            "🚗 Everything outside Seoul is easiest by car. Mr. Sunshine fans can chain **Nonsan, Hapcheon and Hadong** over two days.",
+            "📸 Paju has two gardens and Heyri within about 15 km: Byeokchoji and Heyri fit in one afternoon, First Garden is the detour.",
+            "🏞️ The pins on sets mark the main entrance, not each location. Photos on the pins come from Naver Map; three places have none there.",
+            "🚻 Most sets and parks have toilets inside. The only public toilet outside paid grounds is the one pinned at Yanghwajin Park.",
+            "🔗 Heyri also appears on our Abroad in Korea map, and Incheon Open Port Street is next to the Incheon China Town walk.",
+          ],
+        },
       },
       {
         id: 'abroad-in-korea',

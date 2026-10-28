@@ -110,8 +110,13 @@ All allow free use; the credit is given in every case.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg
 - Abroad in Korea path banner: *German Village in Namhae* (photo by Choi2451), CC0.
   https://commons.wikimedia.org/wiki/File:View_of_German_Village_in_Namhae,_South_Korea.jpg
+- K-Drama shooting spots path banner: *Mungyeong Saejae Open Film Set* (photo by Choi2451), CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Open_Film_Set.jpg
 - Wolmido Sunset path banner: *Sunset over Incheon Harbor* (looking west from Wolmido), JNicol, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:Sunset_over_Incheon_Harbor.jpg
+- Gapyeong path banner: *Nami Island (South Korea) banner Tree Lane* (the tree-lined lane on Nami Island),
+  Jocelyndurrey, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Nami_Island_(South_Korea)_banner_Tree_Lane.JPG
 - Indoors Trip path banner: *Seoul botanic park 05* (the greenhouse), Korea.net / Korean Culture and
   Information Service, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Seoul_botanic_park_05.jpg
 - Naksan Park path banner: *서울 한양도성 … 낙산야경1-1*, Seoul Metropolitan Fire &

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Link from "../components/Link";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
+import RichText from "../components/RichText";
 import Tags from "../components/Tags";
 import VisitorCount from "../components/VisitorCount";
 import { cities, hasMap } from "../data/travel";
@@ -75,7 +76,7 @@ export default function Home() {
                 <span className="chevron caret">›</span>
               </Link>
               {open && (
-                <ul className="sublist">
+                <ul className={`sublist${city.intro ? " has-intro" : ""}`}>
                   {city.paths.map((path) => (
                     <li key={path.id}>
                       <Link to={`/${city.id}/${path.id}`} className="child">
@@ -89,11 +90,30 @@ export default function Home() {
                   ))}
                 </ul>
               )}
+              {open && city.intro && (
+                <section className="city-intro" aria-label={`About the ${city.name} routes`}>
+                  <h3>About these routes</h3>
+                  {city.intro.map((para, i) => (
+                    <p key={i}>
+                      <RichText text={para} />
+                    </p>
+                  ))}
+                </section>
+              )}
             </li>
           );
         })}
       </ul>
 
+      <section className="site-intro" aria-labelledby="site-intro-title">
+        <h2 id="site-intro-title">✨ About MyTravelPath</h2>
+        <p>
+          <RichText text="**MyTravelPath** is a collection of free walking routes and day trips across Korea. Each one opens a Google My Maps map with its stops pinned and linked to Naver Map, the map most people use in Korea. Newer maps also have a layer of public toilets." />
+        </p>
+        <p>
+          <RichText text="Not sure where to begin? **Seoul** has the most routes, from a two-hour evening walk to a full rainy day indoors. For a long coastal walk try **Jeju Olle**, and for a day trip out of Seoul try **Gapyeong**." />
+        </p>
+      </section>
     </Layout>
   );
 }
