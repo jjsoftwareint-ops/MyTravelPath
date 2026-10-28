@@ -145,6 +145,31 @@ a:focus-visible {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* Home wordmark: the supplied brush lettering, scaled whole (black ink on white). The white blends away on the
+   header colour; in dark mode the image is inverted so the ink turns light on the dark header. The negative
+   vertical margin only lets the image's own white margins overlap the header padding; nothing is cropped. */
+.header-text h1.wordmark {
+  overflow: visible;
+  line-height: 0;
+}
+.wordmark img {
+  display: block;
+  width: 100%;
+  max-width: 168px;
+  height: auto;
+  margin: -9px 0;
+  mix-blend-mode: multiply;
+}
+:root[data-theme="dark"] .wordmark img {
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .wordmark img {
+    filter: invert(1);
+    mix-blend-mode: screen;
+  }
+}
 /* Sub-pages: smaller title, still one line with an ellipsis */
 .header.detail .header-text h1 {
   font-size: 19px;
@@ -997,6 +1022,10 @@ button.cta {
   }
   .header-text p {
     font-size: 14px;
+  }
+  .wordmark img {
+    max-width: 210px;
+    margin: -11px 0;
   }
   .content {
     padding: 24px 24px 20px;

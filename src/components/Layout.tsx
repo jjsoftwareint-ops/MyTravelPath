@@ -7,6 +7,8 @@ import ThemeToggle from './ThemeToggle'
 
 type Props = {
   title: string
+  /** Wordmark shown in place of the title text (file in ./assets, scaled whole); the title stays as its alt text. */
+  titleImage?: string
   subtitle?: string
   backTo?: string
   /** Element shown in place of the back button, e.g. the brand mark on the home screen. */
@@ -20,7 +22,7 @@ type Props = {
   children: ReactNode
 }
 
-export default function Layout({ title, subtitle, backTo, icon, actions, hideSaved, showBlog, children }: Props) {
+export default function Layout({ title, titleImage, subtitle, backTo, icon, actions, hideSaved, showBlog, children }: Props) {
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -48,7 +50,13 @@ export default function Layout({ title, subtitle, backTo, icon, actions, hideSav
           <span className="back placeholder" />
         )}
         <div className="header-text">
-          <h1>{title}</h1>
+          {titleImage ? (
+            <h1 className="wordmark">
+              <img src={`${import.meta.env.BASE_URL}${titleImage}`} alt={title} width={800} height={266} />
+            </h1>
+          ) : (
+            <h1>{title}</h1>
+          )}
           {subtitle && <p>{subtitle}</p>}
         </div>
         {showBlog && <BlogLink />}

@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <Layout
       title="My Travel Path"
-      subtitle="Pick a city or theme, then a path"
+      titleImage="wordmark.png"
       icon={<BrandMark />}
       showBlog
     >
