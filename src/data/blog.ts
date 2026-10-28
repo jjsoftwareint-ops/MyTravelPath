@@ -37,6 +37,138 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'why-korea-is-awake-at-midnight',
+    title: 'Why is Korea still awake at midnight?',
+    description:
+      'Hongdae at 1 am looks like a European city at 7 pm. Where the lights, the late restaurants and the all-night shops come from, and why some of it is fading.',
+    teaser: 'Europe is in bed, Seoul is ordering chicken.',
+    icon: 'night_with_stars',
+    date: '2026-10-28',
+    updated: '2026-10-28',
+    keywords: ['KoreaTravel', 'Seoul', 'Hongdae', 'Sinchon', 'SeoulNightlife', 'Yasik', 'ConvenienceStore', 'KoreaVsEurope', 'KoreaCulture'],
+    body: [
+      {
+        type: 'p',
+        text: 'Coming back to Seoul from Europe, the thing that hit us was not the food or the traffic. It was the clock.',
+      },
+      {
+        type: 'p',
+        text: 'At 11 pm in **홍대 (Hongdae)** the street is still filling up. People are arriving, not leaving. In **신촌 (Sinchon)** every second sign is lit, and the restaurants are not wiping tables, they are seating.',
+      },
+      {
+        type: 'p',
+        text: 'In most European cities we know, 11 pm looks like this: the kitchen closed an hour ago, the tram is half empty, and the only light on the street comes from a kebab shop.',
+      },
+      {
+        type: 'img',
+        src: 'hongdae-night.jpg',
+        alt: 'A narrow Hongdae street at night, packed with people under bright shop signs and neon',
+        caption: 'Hongdae on a Saturday night. This is the quiet end.',
+        href: 'https://commons.wikimedia.org/wiki/File:Hongdae_Party_District_at_Night,_Seoul.jpg',
+        credit: { author: 'Ken Eckert', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'owl', text: '"Dark and silent", said the city' },
+      {
+        type: 'p',
+        text: 'Back in 2014 Seoul published a guide to 58 places that stay open all night. The official who presented it put it bluntly: "Most European cities become dark and silent at night." A city government said that on the record, as a selling point.',
+      },
+      {
+        type: 'p',
+        text: 'Twelve years on, it is still the plan. Reports say the city announced a new night-time economy push this August, branding itself a 24-hour city and aiming for 5 trillion won more spent after dark within five years.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'convenience_store', text: 'The machinery behind the lights' },
+      {
+        type: 'p',
+        text: 'Lights need something to shine on. Korea has built a whole set of systems that assume you will be out late.',
+      },
+      {
+        type: 'list',
+        items: [
+          '[편의점](https://www.google.com/search?tbm=isch&q=%ED%8E%B8%EC%9D%98%EC%A0%90%20%EC%95%BC%EA%B0%84) (pyeonuijeom), convenience stores: about 55,000 nationwide at the last industry count, roughly one for every 950 people, the densest in the world. Most never lock the door.',
+          '**야식 (yasik)**, food after 10 pm: a word, not an exception. Delivery apps now run until 5 am, and Coupang Eats reportedly went 24 hours in Seoul and the big cities this year.',
+          '[올빼미버스](https://www.google.com/search?tbm=isch&q=%EC%98%AC%EB%B9%BC%EB%AF%B8%EB%B2%84%EC%8A%A4) (olppaemi beoseu), the Owl Bus: 14 night routes for after the last train, which in Seoul leaves around midnight.',
+          '**2차 (i-cha)** and **3차 (sam-cha)**, the second and third round: dinner is only the start, then a bar, then karaoke or a [포장마차](https://www.google.com/search?tbm=isch&q=%ED%8F%AC%EC%9E%A5%EB%A7%88%EC%B0%A8) (pojangmacha), a tent bar on the pavement.',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'City data puts about 342,000 people on the move in Seoul between midnight and 4 am. That is not a party crowd. That is a town.',
+      },
+      {
+        type: 'img',
+        src: 'daegu-street-food-night.jpg',
+        alt: 'Street food stalls lit up at night on a pavement in Daegu, with customers standing at the counters',
+        caption: 'Street food stalls at night near Keimyung University, Daegu. The same scene plays out in every Korean city.',
+        href: 'https://commons.wikimedia.org/wiki/File:Street_Food_in_Daegu,_South_Korea.jpg',
+        credit: { author: 'Ken Eckert', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'sleeping_face', text: 'Why Europe goes to bed' },
+      {
+        type: 'p',
+        text: 'It is not that Europeans dislike fun. The rules are different, and so is the history.',
+      },
+      {
+        type: 'p',
+        text: 'In Germany, **Ruhezeit**, the legal quiet time, runs from about 10 pm to 6 am, and all of Sunday. Shops are closed on Sundays by state law. A sign reading **Küchenschluss 22 Uhr**, kitchen closes at ten, is normal, and nobody argues with it.',
+      },
+      {
+        type: 'p',
+        text: 'Korea, meanwhile, works long. The average was 1,833 hours a year in 2025, against an OECD average of 1,736. Leave the office at eight, and dinner starts at nine and the evening at ten. Our reading: the Korean night did not come from freedom. It came from the lack of it.',
+      },
+      {
+        type: 'p',
+        text: 'Density does the rest. Seoul puts over nine million people in one city, so a food street is never far away. A 2 am kitchen can live on that. A European town of 30,000 cannot feed one.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'crescent_moon', text: 'One night, two clocks' },
+      {
+        type: 'p',
+        text: 'Put a Friday in Seoul next to a Friday in a German city and the two days barely overlap.',
+      },
+      {
+        type: 'table',
+        head: ['Time', 'Seoul', 'Germany'],
+        rows: [
+          ['20:00', 'Leaving the office. Dinner starts now.', 'Dinner is over. Tatort is on.'],
+          ['22:00', 'Second round. "One more."', 'Küchenschluss. Ruhezeit begins. Shh.'],
+          ['00:00', 'Last train. Taxi, or stay?', 'Lights off. The kebab shop glows alone.'],
+          ['02:00', 'Chicken and beer, in a 24-hour place or on the sofa.', 'Silence.'],
+          ['04:00', 'Clubs still going. Apps still delivering.', 'The baker clocks in.'],
+          ['05:30', 'First train. Hangover soup.', 'First tram, same hour, far fewer regrets.'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'The soup is **해장국 (haejangguk)**, and whole restaurants exist for the morning after. Both timetables are normal to the people living them. That is the fun of it: nobody in either city thinks they are the strange one.',
+      },
+      {
+        type: 'p',
+        text: 'One small aside. Even Koreans say the night is getting shorter, with restaurants trimming hours and pubs closing by the thousand. Hongdae has not got the memo.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'clinking_beer_mugs', text: 'Our verdict' },
+      {
+        type: 'verdict',
+        text: 'Korea is awake at midnight because it built a city that expects you to be. Europe is asleep because it wrote laws to protect the sleep. Both are a choice. Only one of them lets you eat [치맥](https://www.google.com/search?tbm=isch&q=%EC%B9%98%EB%A7%A5) (chimaek), fried chicken with beer, at 2 am without feeling like a criminal.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'hongdae-hot-places',
+        text: 'Walk the Red Road busking street in Hongdae with our map. Best after 7 pm.',
+      },
+      {
+        type: 'p',
+        text: 'One practical note. Last trains in Seoul moved half an hour earlier in 2025 on Lines 1 to 8, so check the time in Naver Map before the **2차 (i-cha)**, or keep taxi money aside.',
+      },
+    ],
+  },
+  {
     id: 'bugaksan-opens-after-58-years',
     title: '58 years later, the mountain behind the Blue House is open',
     description:
