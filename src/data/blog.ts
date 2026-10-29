@@ -37,6 +37,146 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'danpung-nori-korea-goes-to-the-mountains',
+    title: 'Danpung-nori: the week Korea goes to the mountains',
+    description:
+      'Autumn leaves are a national event in Korea, with forecast maps, chartered buses and daily visitor caps. When the colour peaks in 2026, where to see it in Seoul, and how to avoid the crowd.',
+    teaser: 'The leaves have a forecast, like the weather.',
+    icon: 'maple_leaf',
+    date: '2026-10-29',
+    updated: '2026-10-29',
+    keywords: ['KoreaTravel', 'Danpung', 'AutumnInKorea', 'Seoul', 'Naejangsan', 'Bukhansan', 'Deoksugung', 'Hiking', 'KoreaVsEurope'],
+    body: [
+      {
+        type: 'p',
+        text: 'Every autumn, the Korean evening news does something we have never seen a European weather report do. It forecasts the leaves.',
+      },
+      {
+        type: 'p',
+        text: 'A map of the country, a date on every mountain, revised when the weather changes its mind. People plan weekends around it. The habit has its own word, **단풍놀이 (danpung-nori)**, literally "playing in the red leaves", which tells you how seriously it is taken: it is not a walk, it is play.',
+      },
+      {
+        type: 'img',
+        src: 'naejangsan-autumn.jpg',
+        alt: 'A painted wooden pavilion at Naejangsan with maple branches turning orange and red in front of it',
+        caption: 'Naejangsan (내장산), the mountain Koreans name first when you say 단풍 (danpung).',
+        href: 'https://commons.wikimedia.org/wiki/File:%EB%82%B4%EC%9E%A5%EC%82%B0%EC%9D%98_%EB%8B%A8%ED%92%8D1.jpg',
+        credit: { author: 'Shunshan Piao', license: 'CC BY-SA 3.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'The leaf forecast', icon: 'deciduous_tree' },
+      {
+        type: 'p',
+        text: 'The colour comes down the country like a slow red wave: north first, high first. Seoraksan (설악산) in the north-east goes around 20 October, Seoul\'s mountains in the first days of November, Naejangsan (내장산) in the south-west right after, and Jeju last.',
+      },
+      {
+        type: 'table',
+        head: ['Where', 'Peak colour, 2026'],
+        rows: [
+          ['Seoraksan (설악산), Gangwon', 'around 20 Oct'],
+          ['Bukhansan (북한산), Seoul', 'around 4 Nov'],
+          ['Naejangsan (내장산), Jeolla', 'around 4 Nov'],
+          ['Hallasan (한라산), Jeju', 'around 6 Nov'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Those are the Forest Service dates. The weather office publishes its own, a few days later, because it waits for more of the mountain to turn before it will say "peak". So every mountain has two birthdays and the newspapers print both. Nobody minds. More weekends.',
+      },
+      {
+        type: 'p',
+        text: 'One thing the map does not hide: the wave is arriving later every year. Autumn nights have to drop to 5 degrees before a leaf bothers to change, and warm Septembers keep pushing that night back. The forecasters say the big mountains now turn about a week later than they did in the 1990s.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'A sport, not a stroll', icon: 'hiking_boot' },
+      {
+        type: 'p',
+        text: 'In most of Europe, autumn leaves are something you notice on the way to work and rake off the lawn on Sunday. In Korea they are a destination. Ten million people visited the national parks in the two leaf months last year, a quarter of the whole year squeezed into eight weeks.',
+      },
+      {
+        type: 'p',
+        text: 'The engine behind this is the **산악회 (sanakhoe)**, the hiking club. Every office, church, apartment block and online café seems to have one. The club charters a coach, leaves Seoul before sunrise on Saturday, drives four hours to the mountain of the week, climbs it, and drives back in time for dinner. Multiply by a few thousand clubs.',
+      },
+      {
+        type: 'p',
+        text: 'Then there is the outfit. A Korean hiking club at the trailhead looks like a summit expedition: matching shell jackets, two poles each, a hat with a neck flap, a backpack with a hip belt. The trail is mostly wooden stairs. We laughed at this once. Then we saw how fast it gets dark and cold at five o\'clock in November and quietly bought a jacket.',
+      },
+      {
+        type: 'p',
+        text: 'At the top, the ritual. First the queue for the summit stone, because a photo with the stone is the proof and the proof is the point. Thirty people in line at Gwanaksan (관악산) on a weekday morning is normal. Then the kimbap comes out, and the cup noodle, and often a bottle of **막걸리 (makgeolli)**, the milky rice wine, because the descent is easier when you are cheerful.',
+      },
+      {
+        type: 'p',
+        text: 'The famous mountains have started acting like nightclubs. Naejangsan now puts a guest list on its best section, **790 people a day**, from 19 October to 17 November, and Seoraksan\'s prettiest valley needs a reservation until the end of November. Walk up without one and a ranger turns you around, politely, with the view behind him.',
+      },
+      { type: 'emoji', name: 'fallen_leaf' },
+      { type: 'h', text: 'The yellow version', icon: 'camera' },
+      {
+        type: 'p',
+        text: 'Here is the thing the coach people miss. Seoul\'s best autumn colour is not red and it is not on a mountain. It is the yellow of the **은행나무 (eunhaengnamu)**, the ginkgo, which lines the old streets of the city centre and goes gold about a week before the maples.',
+      },
+      {
+        type: 'p',
+        text: 'If you grew up in Europe you may have met one ginkgo in your life, in a botanical garden, with a label. Goethe had one in Weimar and wrote it a love poem. In Seoul it is the street tree. A hundred thousand of them, on ordinary roads, planted like plane trees.',
+      },
+      {
+        type: 'p',
+        text: 'It is a strange tree to be so ordinary. The ginkgo is the last survivor of a family that was already old when the dinosaurs arrived; every other relative is a fossil. It has no close living cousins, it is nearly extinct in the wild, and it survived in Chinese and Korean temple gardens for a thousand years before anyone in the West had seen a leaf. Then Korea made it a kerbside tree.',
+      },
+      {
+        type: 'img',
+        src: 'deoksugung-autumn.jpg',
+        alt: 'Deoksugung palace seen from above in November, its grounds full of yellow ginkgo and red maples against the office towers of central Seoul',
+        caption: 'Deoksugung (덕수궁) from above in early November. The yellow is ginkgo, the red is maple, the grey is City Hall.',
+        href: 'https://commons.wikimedia.org/wiki/File:%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg',
+        credit: { author: '라성민', license: 'CC BY-SA 3.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0' },
+      },
+      {
+        type: 'p',
+        text: 'The ginkgo has one problem, and every Seoul resident will tell you about it unprompted. The female trees drop a fruit that smells, with no exaggeration, like a dog has been at the pavement. About a quarter of Seoul\'s ginkgo street trees are female.',
+      },
+      {
+        type: 'p',
+        text: 'So every September, before the fruit falls, district teams go out with cherry pickers, nets and a machine that grips the trunk and shakes it, and harvest the stink in advance. One district is replacing 115 female trees with males this year. The trees have no say.',
+      },
+      {
+        type: 'list',
+        items: [
+          '**덕수궁 돌담길 (Deoksugung doldam-gil)**, the lane along the palace wall: the gold tunnel in the photo above, two minutes from City Hall station, flat, free. Best around 10 November.',
+          '**삼청동 (Samcheong-dong)** and the lane along Gyeongbokgung (경복궁)\'s east wall: cafés on one side, palace wall on the other, late October to early November.',
+          '**북한산 둘레길 (Bukhansan Dulle-gil)**, the trail round the foot of the big mountain: all the colour of the national park, none of the stairs, and it holds a few days longer than the summit.',
+          '**남산 (Namsan)**: the lazy one. A paved loop, a cable car, and the leaves stay until mid November.',
+        ],
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'bukhansan-dulle-gil-1-3',
+        text: 'Our Bukhansan Dulle-gil map, sections 1 to 3: the easy forest trail round the park, with the November closure dates and last-entry times in the notes.',
+      },
+      {
+        type: 'p',
+        text: 'And if you want the full Korean experience with a guide, Seoul runs a **Hiking Week** from 26 October to 15 November this year, one mountain per week, with free boots and poles for foreign visitors at the Seoul Hiking Tourism Centers. There is a lantern night hike along the old city wall in the last week.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'How to not hate it', icon: 'compass' },
+      {
+        type: 'list',
+        items: [
+          'Go on a weekday. The coaches run at weekends. The same trail on a Tuesday is a different mountain.',
+          'If it must be a weekend, be walking by eight. Entrances jam after nine at the famous places.',
+          'Dress like the clubs, a little. The forest is dark by half past five, and last entry on the mountain trails is **17:00**.',
+          'Bukhansan closes some trails from **15 November to 15 December** for fire season. The fine for walking a closed one is up to ₩500,000, which buys a lot of makgeolli (막걸리).',
+          'A week of wind and rain can end the show early. If the forecast says storm, go this week, not next.',
+        ],
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: do it once the Korean way, up a mountain, in the queue, with the clubs and the noodles, because the crowd is the show. Then do the ginkgo lanes on a weekday morning. They cost nothing, need no coach, and the photo is probably better.',
+      },
+    ],
+  },
+  {
     id: 'why-korea-is-awake-at-midnight',
     title: 'Why is Korea still awake at midnight?',
     description:
