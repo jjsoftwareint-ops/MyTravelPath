@@ -467,6 +467,11 @@ a:focus-visible {
   height: 120px;
   object-fit: cover;
 }
+/* Detail banners are never cut in height (user rule 2026-10-30): the whole photo at its own ratio,
+   at every width. The 120 px band above is for the city cards on Home only. */
+.card-image.path-image img {
+  height: auto;
+}
 /* Photo credit for the banner, as the last line of the intro text (user request 2026-10-30). */
 .photo-credit {
   margin: 8px 0 0 !important;
@@ -1069,9 +1074,6 @@ button.cta {
   }
   .card-image img {
     height: 170px;
-  }
-  .path-image img {
-    height: 220px;
   }
   .prose {
     max-width: 720px;

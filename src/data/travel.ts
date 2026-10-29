@@ -1223,7 +1223,7 @@ export const cities: City[] = [
         description: 'A day trip east of Seoul to the gardens, islands and lakeside of Gapyeong: Morning Calm Arboretum, the Jat Scent Blue Forest, Petite France, the Italian Village, Jara Island, the Rail Park and the ferry to Nami Island. Also on the map: a 17 km river trail from Gapyeong Station to Gangchon, four lakeside view cafés and a toilet layer.',
         duration: 'Day trip',
         image: 'gapyeong.jpg',
-        imageCredit: 'Photo: Jocelyndurrey · CC BY-SA 4.0',
+        imageCredit: 'Photo: Katsujiro Maekawa · CC0',
         updated: '2026-10-30',
         keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'NamiIslandFerry', 'PetiteFrance', 'MorningCalmArboretum', 'JatForest', 'JaraIsland', 'RailPark', 'CheongpyeongLake', 'ViewCafe', 'JadeGarden', 'BukhanRiver', 'GangchonTrail', 'KoreaTravel'],
         notices: [
@@ -1428,7 +1428,7 @@ export const cities: City[] = [
     id: 'theme',
     name: 'Theme',
     intro: [
-      "Two collections that cross the country instead of staying in one city: **K-Drama shooting spots**, and **Abroad in Korea**, the foreign-style villages and districts.",
+      "Three collections that cross the country instead of staying in one city: **K-Drama shooting spots**, **Abroad in Korea**, the foreign-style villages and districts, and the **BTS Army Tour** of music-video, show and hometown places.",
     ],
     theme: true,
     image: 'theme.jpg',
@@ -1552,6 +1552,74 @@ export const cities: City[] = [
             "🚌 Check the way to each place on Naver Map before you go; most outside Seoul need a car, a taxi or a long bus ride.",
             "🚢 The Sinan line is approximate in places: the short links to chapels 3, 9, 11 and 12 are drawn straight, so follow the signs on the ground. Wear shoes that can get wet or muddy, and take water with you.",
             "📍 Photos on the pins come from Naver Map. Jeju Swiss Village, the Sinan trail and Songtan have none there.",
+          ],
+        },
+      },
+      {
+        id: 'bts-army-tour',
+        name: 'BTS Army Tour',
+        description:
+          '34 BTS places on one map, by region: the music-video and album-cover sites, the Tonight Show stages in Seoul, the trainee-days diner, and the hometown murals in Busan and Daegu. Each pin says which song, show or member, with a Naver Map link.',
+        seoTitle: 'BTS filming locations in Korea: 34 places on one map',
+        seoDescription:
+          'BTS pilgrimage map: the Spring Day station, the You Never Walk Alone bus stop, Butter beach, Daechwita, the Tonight Show palace stage, Yujeong Sikdang and the Busan and Daegu murals, with Naver links.',
+        updated: '2026-10-30',
+        image: 'bts.jpg',
+        imageCredit: 'Photo: Real SLOW TV · CC BY 3.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1iNNOEVkwLmYVLl9vaZSpOUs1iMUe1pc',
+        keywords: ['Korea', 'BTS', 'ARMY', 'BTSFilmingLocations', 'SpringDay', 'IryeongStation', 'Jumunjin', 'Butter', 'Daechwita', 'Gamcheon', 'KoreaTravel'],
+        story: {
+          title: 'The pilgrimage the label never planned',
+          text: [
+            "HYBE does not publish where its videos are shot, so every place on this map was found by fans: frame by frame, then on foot. When **Save ME** came out in 2016 nobody could find the field; it turned out to be the reclaimed flats of **Saemangeum**. The lone bus stop from the You Never Walk Alone cover was a prop on Jumunjin's Hyangho Beach, taken down after the shoot; the town rebuilt it when the visitors kept coming.",
+            "The cities caught up. For the tenth anniversary in 2023 the Seoul Tourism Organization printed a **Seoul BTS tour map** of 13 places, from the trainee-days diner in Nonhyeon-dong to the Run BTS sites, and Daegu and Busan painted the members on the walls of their hometowns.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🎬',
+            title: 'Which places are confirmed, and which are fan lore',
+            body: "The label does not confirm locations. Press-confirmed on this map: **Hyangho Beach, Maengbang Beach, Iryeong Station, Gyeongbokgung, World Cup Bridge, Sungnyemun, the Daegu and Busan murals**. Pins marked \"reported by fan tour lists\" (Achasan, the Oil Tank park, Nodeul Island, Euljiro, Ueumdo, Hwarang Hill and others) rest on fan research only.",
+            since: 'Checked against press reports, 30 October 2026.',
+          },
+          {
+            icon: '🚫',
+            title: 'Two sites cannot be entered',
+            body: "**Jichuk train depot** (Love Yourself: Her photos) is a working Seoul Metro depot and **World Cup Bridge** (Dynamite) is a road bridge: look from the road and the river park, do not go in or walk on them. The SNU old pool is inside a university campus.",
+            since: 'Site rules, checked 30 October 2026.',
+          },
+          {
+            icon: '⏰',
+            title: 'Gyeongbokgung closes on Tuesdays',
+            body: "The palace of the Tonight Show stage is open **09:00–18:00** (to 17:00 November to February), **closed Tuesdays**, ₩3,000, free in hanbok. Sungnyemun is closed Mondays. The Oil Tank Culture Park is closed Mondays.",
+            since: 'Official palace site and Naver Map, checked 30 October 2026.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Seohuri Forest and Awon charge entry and change by season',
+            body: "**Seohuri Forest** (2019 Season's Greetings) is a private forest with an entry fee and opening days that change by season. **Awon** in Wanju (2019 Summer Package) admits day visitors through its gallery café, about ₩10,000 with a drink. Check both on Naver before driving out.",
+            since: 'Naver Map, checked 30 October 2026.',
+          },
+        ],
+        guide: {
+          intro: [
+            "💜 This is the map for the fan who wants to stand where the video was shot, not just read about it. The pink camera pins are **filming and photo-shoot sites**, from the **Spring Day** platform at Iryeong Station to the **Butter** parasols still standing on Maengbang Beach; the purple pins are the places the members lived, ate and performed, and the walls their hometowns painted for them.",
+            "Thirty-four pins over the whole country is not a route, so the layers are regions: Gangwon beaches, Seoul, the Gyeonggi countryside, Chungcheong and Jeolla, and Gyeongsang with the Busan and Daegu hometowns. Pick a region, open the pins, and let Naver drive.",
+          ],
+          route: [
+            "Gangwon: the BTS bus stop at Hyangho Beach in Jumunjin (You Never Walk Alone cover; the Spring Day jacket was shot on the breakwater nearby), Maengbang Beach in Samcheok (Butter), Gimyujeong Station as the Chuncheon stop, and Phoenix Pyeongchang, where In the SOOP 2 was filmed and the house was opened to visitors in 2022.",
+            "Seoul: Gyeongbokgung (IDOL in front of Geunjeongjeon and Mikrokosmos at Gyeonghoeru for the Tonight Show, September 2020), World Cup Bridge (Dynamite), Sungnyemun (Permission to Dance for Global Citizen Live, 2021), the National Museum (Dear Class of 2020), Yeouido Hangang Park (BTS Festa 2023), HYBE headquarters, and the trainee years in Nonhyeon-dong: Hakdong Park and Yujeong Sikdang.",
+            "Gyeonggi: Iryeong Station in Yangju (Spring Day), Seohuri Forest in Yangpyeong (2019 Season's Greetings), Yongin Daejanggeum Park (Daechwita, Agust D), Jichuk depot (Love Yourself: Her, view from outside) and Ueumdo in Hwaseong.",
+            "Chungcheong and Jeolla: Awon hanok in Wanju (2019 Summer Package), Jecheon airfield (Epilogue: Young Forever), the Saemangeum Seawall (Save ME), and RM's Damyang walk along the Metasequoia Road and Gwanbangjerim.",
+            "Gyeongsang: Gamcheon Culture Village with the Jimin and Jungkook mural, Busan Citizens Park and its V road, the V mural street at Daeseong Elementary in Daegu and the Suga lanes by Myeongdeok Station, Gyeongju's Hwarang Hill and Cheomseongdae from RM's trip, and Gyeongjeong Port in Yeongdeok (HYYH prologue).",
+          ],
+          tips: [
+            "🚗 The regions are hours apart: Seoul and Gyeonggi fit in two days by subway and bus, the Gangwon beaches are a day by car along the coast, and the south is a trip of its own. Jumunjin to Maengbang is about 90 minutes by car.",
+            "📸 Daeseong Elementary is a working school: photograph the wall from the street and leave the gate alone. The same goes for the SNU campus and the depot.",
+            "🍜 Yujeong Sikdang grills pork and is open daily, about 10:00–21:30 on weekdays and to 20:00 at weekends, checked 30 October 2026; the walls are covered in ARMY notes, so bring a pen.",
+            "🚻 Public toilets are pinned where Naver lists one: Hakdong Park, inside Gyeongbokgung, Gamcheon and Busan Citizens Park. The beaches, Iryeong, Saemangeum and Damyang have none listed; use the cafés.",
+            "📝 Each pin names its source: press for the confirmed sites, \"fan tour lists\" for the rest. If you know a better-documented spot, tell me and I will move the pin.",
+            "🔗 Gyeongbokgung is on our Hanok Villages walk, Gamcheon on the Busan Culture Villages path, and Daejanggeum Park and Heyri are on the K-Drama map.",
           ],
         },
       },

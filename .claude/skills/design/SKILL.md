@@ -69,7 +69,11 @@ Rules learned the hard way:
 - `zsh`: `rm -f ./*.jpg` aborts a `&&` chain when nothing matches; `seq -w 1 8` does **not** zero-pad.
 - Pick with a contact sheet (§4), never blind: tourism-board sets contain exercise equipment and signboards.
 
-Card header spec: crop a horizontal band ≈ 21 % of the image height, export **1200×252 JPEG, quality 72**
+**Path detail banners are shown whole** (user rule 2026-10-30: "let's not cut the detail header photos of height"):
+`.path-image img { height: auto }`, so save the full photo scaled to 1200 px wide (`sips -Z 1200`), no band crop. The slim
+band below is only for the **city cards on Home** (`.card-image img` stays 120 px, `object-fit: cover`).
+
+City card header spec: crop a horizontal band ≈ 21 % of the image height, export **1200×252 JPEG, quality 72**
 (~110–130 KB) into `assets/<city>.jpg`:
 ```bash
 sips -c <band> <width> --cropOffset <y> 0 wide.jpg --out crop.jpg

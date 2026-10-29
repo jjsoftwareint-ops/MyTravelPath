@@ -1,0 +1,377 @@
+{
+ "name": "BTS tour",
+ "layers": [
+  {
+   "name": "Gangwon: beaches and album covers (강원)",
+   "pins": [
+    {
+     "lat": 37.912332,
+     "lon": 128.8176,
+     "name": "BTS bus stop at Hyangho Beach, Jumunjin (향호해변 BTS 버스정류장)",
+     "icon": "camera",
+     "naver_id": "15698326",
+     "image": "none",
+     "desc": "Hyangho Beach, Jumunjin-eup, Gangneung. The lone bus stop on the sand is the cover of the album You Never Walk Alone (2017), rebuilt as a photo zone; the Spring Day jacket photos were taken on the Jumunjin breakwater nearby. Free, open all hours; busiest at sunrise."
+    },
+    {
+     "lat": 37.390316,
+     "lon": 129.232213,
+     "name": "Maengbang Beach, Butter jacket (맹방해수욕장)",
+     "icon": "camera",
+     "naver_id": "13490997",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_284%2F1441045553676BTGPv_JPEG%2F157155536976227_0.jpg",
+     "desc": "Geundeok-myeon, Samcheok. The beach of the Butter (2021) jacket and concept photos; the parasols, sunbeds and surfboard props are kept as a photo zone on the sand. Free."
+    },
+    {
+     "lat": 37.818365,
+     "lon": 127.714198,
+     "name": "Gimyujeong Station, the Chuncheon stop (김유정역)",
+     "icon": "subway",
+     "naver_id": "13590944",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f&size=256x256&src=https%3A%2F%2Fsimg.pstatic.net%2Fstatic.map%2Fv2%2Fmap%2Fstaticmap.bin%3Fcaller%3Dpubtrans_search%26scale%3D1%26w%3D256%26h%3D256%26center%3D127.714198%2C37.8183649%26level%3D16%26format%3Djpg%26markers%3Dtype%3Ad%7Csize%3Amid%7CviewSizeRatio%3A0.7%7Cpos%3A127.714198%2037.8183649%7Ccolor%3ADefault",
+     "desc": "Gyeongchun line, Sindong-myeon, Chuncheon; the old station building next door is preserved. On fan itineraries as the Chuncheon stop: In the SOOP season 1 (2020) was shot at a private lakeside villa in Chuncheon that cannot be visited, so this station and the rail bike are what fans come to. No BTS shoot is documented at the station itself."
+    },
+    {
+     "lat": 37.58139,
+     "lon": 128.32731,
+     "name": "Phoenix Pyeongchang, In the SOOP 2 (휘닉스 평창)",
+     "icon": "hotel",
+     "naver_id": "11727758",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240305_207%2F17096038165535wjGO_JPEG%2F%25A1%25DA%25C8%25D6%25B4%25D0%25BD%25BA%25C6%25F2%25C3%25A2_%25C0%25FC%25B0%25E6_%25BA%25BD%25BF%25A9%25B8%25A7_%25283%2529.jpg",
+     "desc": "Taegi-ro 174, Bongpyeong-myeon, Pyeongchang. The resort where In the SOOP season 2 (2021) was filmed; the resort opened the house and grounds used in the show to visitors in 2022 (Kyunghyang, Aug 2022). Check with the resort what is still open."
+    }
+   ]
+  },
+  {
+   "name": "Seoul: performances and trainee days (서울)",
+   "pins": [
+    {
+     "lat": 37.578841,
+     "lon": 126.977016,
+     "name": "Gyeongbokgung Palace, Tonight Show stage (경복궁 근정전·경회루)",
+     "icon": "historic",
+     "naver_id": "11571707",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_194%2F1440997727456lEljl_GIF%2F11571707_0.gif",
+     "desc": "Sajik-ro 161, Jongno-gu. For NBC's The Tonight Show Starring Jimmy Fallon \"BTS Week\" (September 2020) the group performed IDOL in front of Geunjeongjeon throne hall and Mikrokosmos at Gyeonghoeru pavilion. Palace open 09:00–18:00 (to 17:00 Nov–Feb), closed Tuesdays, ₩3,000; free in hanbok."
+    },
+    {
+     "lat": 37.524087,
+     "lon": 126.980388,
+     "name": "National Museum of Korea, Dear Class of 2020 (국립중앙박물관)",
+     "icon": "museum",
+     "naver_id": "11620570",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=http%3A%2F%2Fldb.phinf.naver.net%2F20140407_137%2F1396854285598o47tJ_JPEG%2F%25BC%25AD%25BF%25EF_%25B1%25B9%25B8%25B3%25C1%25DF%25BE%25D3%25B9%25DA%25B9%25B0%25B0%25FC_12.jpg%3Ftype%3Dm500_500",
+     "desc": "Seobinggo-ro 137, Yongsan-gu. The museum's halls and the view of N Seoul Tower from its steps were the set of the Dear Class of 2020 speech and performance (June 2020) and of a Seoul tourism film. Free; closed 1 January, Seollal and Chuseok days."
+    },
+    {
+     "lat": 37.51767,
+     "lon": 126.958052,
+     "name": "Nodeul Island (노들섬)",
+     "icon": "park",
+     "naver_id": "1640249712",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201026_202%2F1603703640038bk7Nl_JPEG%2FcaD2qhZpl6nFXhusvsMGJ02n.jpg",
+     "desc": "Yangnyeong-ro 445, on the Han River under Hangang Bridge. Reported shooting site of the 2021 Season's Greetings photos and of a Seoul promotion video. Free; cafés, bookshop and lawns."
+    },
+    {
+     "lat": 37.566303,
+     "lon": 126.990976,
+     "name": "Euljiro print alleys, around Euljiro 3-ga Station (을지로 인쇄골목)",
+     "icon": "street",
+     "naver_id": "13479381",
+     "image": "none",
+     "desc": "The lanes of small print shops between Euljiro 3-ga and Chungmuro. Reported shooting site of the 2021 Season's Greetings. Naver has no entry for the alleys themselves, so this pin is the station; walk south from exit 10."
+    },
+    {
+     "lat": 37.515493,
+     "lon": 127.025222,
+     "name": "Hakdong Park, trainee days (학동근린공원)",
+     "icon": "park",
+     "naver_id": "13491285",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=http%3A%2F%2Fblogfiles16.naver.net%2F20150508_239%2Ftheapple5350_1431064979961fBpJR_JPEG%2F%25C7%25D0%25B5%25BF%25B0%25F8%25BF%25F8_%25BB%25EA%25C3%25A5_%25287%2529.jpg",
+     "desc": "Gangnam-daero 140-gil 47, Nonhyeon-dong. The small park near the old Big Hit office where the trainees practised and rested; one of the stops of the Seoul BTS tour map by the Seoul Tourism Organization."
+    },
+    {
+     "lat": 37.518365,
+     "lon": 127.028139,
+     "name": "Yujeong Sikdang, the trainee-days restaurant (유정식당)",
+     "icon": "restaurant",
+     "naver_id": "31744281",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20201214_121%2F1607921516105lCHoB_JPEG%2F0M8N_adeHh-jKaOywdIFIfuR.jpg",
+     "desc": "Dosan-daero 28-gil 14, Nonhyeon-dong. The pork-grill diner where the members ate in their trainee years; the walls are covered with notes and goods from ARMY. Hours on Naver (checked 2026-10-30): weekdays 10:00–21:30, Sat–Sun 10:00–20:00, last order 25 min before. Still in business on Naver as of 2026-10-30."
+    },
+    {
+     "lat": 37.524552,
+     "lon": 126.96419,
+     "name": "HYBE headquarters (하이브 용산 사옥)",
+     "icon": "hall",
+     "naver_id": "1710180573",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNTEyMDJfMjg3%2FMDAxNzY0NjYyNzEzOTc3.iqNYtJ-EPp6BKE0eC5Pvgb8IcydS4k-iZLP2FRF658Eg.aY1AKkEKg83jjKqlMgWsf3IB-B0tw2AypNHDOAt7s60g.JPEG%2F20251031_112326.jpg.jpg",
+     "desc": "Hangang-daero 42, Yongsan-gu, by Yongsan Station. The company building since 2021; no public tour, but the lobby café HYBE Insight area and the street outside are a fan meeting point."
+    },
+    {
+     "lat": 37.45335,
+     "lon": 126.95513,
+     "name": "Seoul National University old pool, HYYH prologue (서울대 폐수영장)",
+     "icon": "camera",
+     "naver_id": "18717136",
+     "image": "none",
+     "desc": "Gwanak campus, Gwanak-ro 1. The abandoned outdoor pool on the campus is the empty pool of the HYYH on stage: prologue film (2015). Naver's entry is the campus pool; ask at the campus for the old pool, and respect that it is a university."
+    },
+    {
+     "lat": 37.559976,
+     "lon": 126.975356,
+     "name": "Sungnyemun, Global Citizen Live (숭례문)",
+     "icon": "monument",
+     "naver_id": "13491509",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_60%2F1441045635833GhE61_JPEG%2F13491509_0.jpg",
+     "desc": "Sejong-daero 40. The gate was the backdrop of the Permission to Dance performance for Global Citizen Live (September 2021). Free, 09:00–18:00, closed Mondays."
+    },
+    {
+     "lat": 37.555375,
+     "lon": 126.88489,
+     "name": "World Cup Bridge, Dynamite on the Tonight Show (월드컵대교)",
+     "icon": "bridge",
+     "naver_id": "18809568",
+     "image": "none",
+     "desc": "The Han River bridge, then unopened, on which Dynamite was performed for The Tonight Show BTS Week (September 2020); the city allowed the shoot before the bridge opened (JoongAng). It is a road bridge: view it from Haneul Park or the riverside, do not walk on it."
+    },
+    {
+     "lat": 37.566845,
+     "lon": 127.102741,
+     "name": "Achasan, Run BTS (아차산)",
+     "icon": "mountain",
+     "naver_id": "11491459",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150831_260%2F1440992272261sxuRJ_JPEG%2F11491459_0.jpg",
+     "desc": "Gwangjin-gu, 287 m. An easy city hill with Han River views; on fan lists as a Run BTS filming place. Reported by fan tour lists and the press; HYBE does not confirm filming locations."
+    },
+    {
+     "lat": 37.571105,
+     "lon": 126.894119,
+     "name": "Oil Tank Culture Park, Run BTS (문화비축기지)",
+     "icon": "park",
+     "naver_id": "701718829",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170902_155%2F15043295025708oGxJ_JPEG%2FAZqP7XvGZbfZILGm79AoqfMR.jpg",
+     "desc": "Jeungsan-ro 87, Mapo-gu, next to World Cup Stadium. Old oil tanks turned into a culture park; on fan lists as a Run BTS filming place. Reported by fan tour lists and the press; HYBE does not confirm filming locations. Free, closed Mondays."
+    },
+    {
+     "lat": 37.526323,
+     "lon": 126.934827,
+     "name": "Yeouido Hangang Park, BTS Festa 2023 (여의도한강공원)",
+     "icon": "park",
+     "naver_id": "13416869",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_42%2F1441033962212ocm6V_JPEG%2F13416869_0.jpg",
+     "desc": "Yeouido-dong-ro 330. The park and the river were the stage of the 10th-anniversary BTS Festa (17 June 2023) with the fireworks over the Han. Free."
+    }
+   ]
+  },
+  {
+   "name": "Gyeonggi: music video countryside (경기)",
+   "pins": [
+    {
+     "lat": 37.700744,
+     "lon": 126.92921,
+     "name": "Iryeong Station, Spring Day (일영역)",
+     "icon": "camera",
+     "naver_id": "13513034",
+     "image": "https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=pubtrans_search&lang=ko&scale=2&w=200&h=200&center=126.9292099,37.7007445&level=15&format=png&maptype=basic&markers=type:d|size:mid|viewSizeRatio:0.7|pos:126.9292099 37.7007445|color:0x029DFF&logo=false",
+     "desc": "Iryeong-ro 647beon-gil 25, Jangheung-myeon, Yangju. The closed station of the Gyoe-oe line where the Spring Day music video (2017) opens, with the members on the platform and the tracks. Free; the platform is open, the line is disused."
+    },
+    {
+     "lat": 37.566317,
+     "lon": 127.430161,
+     "name": "Seohuri Forest, 2019 Season's Greetings (서후리숲)",
+     "icon": "flower",
+     "naver_id": "1482178701",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210301_83%2F1614568136174pzotQ_JPEG%2Fl0j6-qtoz-_83PqmMKFPRJUr.jpeg.jpg",
+     "desc": "Geobukbawi 1-gil 200, Seojong-myeon, Yangpyeong. A private birch forest and garden, the setting of the 2019 Season's Greetings photos. Entry fee; opening days change by season, check Naver."
+    },
+    {
+     "lat": 37.121443,
+     "lon": 127.336946,
+     "name": "Yongin Daejanggeum Park, Daechwita (용인 대장금파크)",
+     "icon": "camera",
+     "naver_id": "13523487",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_135%2F14410497966854LPJd_JPEG%2F116879586922338_0.jpg",
+     "desc": "Yongcheon Drama-gil 25, Baegam-myeon, Yongin. The MBC period-drama set where Agust D (Suga) shot the Daechwita music video (2020). Open daily, about ₩9,500; the throne hall and the market street are the scenes."
+    },
+    {
+     "lat": 37.650817,
+     "lon": 126.905926,
+     "name": "Jichuk train depot, Love Yourself: Her photos (지축차량기지)",
+     "icon": "camera",
+     "naver_id": "19036639",
+     "image": "none",
+     "desc": "Samsong-ro 300, Deogyang-gu, Goyang. A Seoul Metro depot where the Love Yourself 承 Her concept photos were taken (2017). Not open to the public; the pin is for the view from the road."
+    },
+    {
+     "lat": 37.287182,
+     "lon": 126.731526,
+     "name": "Ueumdo, Spring Day outdoor scenes (우음도)",
+     "icon": "camera",
+     "naver_id": "13491834",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=http%3A%2F%2Fblogfiles3.naver.net%2F20150531_34%2Floitocorp_1433084231704mWCsS_JPEG%2F20150530%25BF%25EC%25C0%25BD%25B5%25B5_%25BB%25E2%25B1%25E2LTC_1570_1.jpg",
+     "desc": "Songsan-myeon, Hwaseong, in the reclaimed Sihwa flats. On fan lists as the open-field scenes of Spring Day. Reported by fan tour lists and the press; HYBE does not confirm filming locations. Free, a bare landscape; bring water."
+    }
+   ]
+  },
+  {
+   "name": "Chungcheong and Jeolla (충청·전라)",
+   "pins": [
+    {
+     "lat": 35.903554,
+     "lon": 127.244605,
+     "name": "Awon hanok, 2019 Summer Package (완주 아원고택)",
+     "icon": "historic",
+     "naver_id": "35085458",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200104_200%2F1578134398123jRHXa_PNG%2FWikQfrK9rv5OHEGVwX6tmcSy.png",
+     "desc": "Songgwangsuman-ro 516-7, Soyang-myeon, Wanju. A 250-year-old hanok moved from Jinju and set over a modern gallery; the 2019 Summer Package photos and shows were shot here. Day visitors pay for the gallery café (about ₩10,000, drink included); it is also a hanok stay."
+    },
+    {
+     "lat": 37.162898,
+     "lon": 128.213515,
+     "name": "Jecheon airfield, Epilogue: Young Forever (제천 모산비행장)",
+     "icon": "camera",
+     "naver_id": "1857012458",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNjEwMDNfMjE4%2FMDAxNzkxMDM4ODUxOTEx.fVc1mPp2D3spn6Rs23youW5Oveta7FljkiRTfUEh0uMg.-5myHu2jjbIFghJ20rsfro-HtYtBPtqKuzLrcaeLgCAg.JPEG%2F20261003_180049.jpg.jpg",
+     "desc": "Mosan-dong, Jecheon. The small grass airfield where the members ran down the runway in the Epilogue: Young Forever video (2016). Open ground, free."
+    },
+    {
+     "lat": 35.895945,
+     "lon": 126.517547,
+     "name": "Saemangeum Seawall, Save ME (부안 새만금방조제)",
+     "icon": "camera",
+     "naver_id": "17513085",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200630_29%2F1593522358011SrIzb_JPEG%2FVu3QXK2GP_ODRctuvsFJlh5D.jpg",
+     "desc": "The 33 km seawall between Buan and Gunsan; its reclaimed flats are where Save ME (2016) was danced. The Saemangeum exhibition hall park in Byeonsan-myeon has a photo zone with the view of Gyehwado and Seokbulsan from the video."
+    },
+    {
+     "lat": 35.323517,
+     "lon": 127.003439,
+     "name": "Damyang Metasequoia Road, RM's trip (담양 메타세쿼이아길)",
+     "icon": "flower",
+     "naver_id": "13542610",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210625_56%2F16246205489709YoVt_JPEG%2FizIqv-ID2Xf40C83Y5UYToFP.jpg",
+     "desc": "Damyang-eup. The 2 km avenue of metasequoias that RM visited on his own travels, after which fans followed; ₩2,000."
+    },
+    {
+     "lat": 35.323931,
+     "lon": 126.985956,
+     "name": "Gwanbangjerim river forest (관방제림)",
+     "icon": "park",
+     "naver_id": "13491356",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20150901_11%2F1441045610729y6SvI_JPEG%2F13491356_0.jpg",
+     "desc": "Gaeksa 7-gil 37, Damyang-eup. The 300-year-old embankment forest along the Damyang stream, 2 km from the metasequoia road, on RM's Damyang walk. Free."
+    }
+   ]
+  },
+  {
+   "name": "Gyeongsang: hometowns and the sea (경상)",
+   "pins": [
+    {
+     "lat": 35.098641,
+     "lon": 129.010439,
+     "name": "Gamcheon Culture Village, Jimin and Jungkook mural (감천문화마을)",
+     "icon": "camera",
+     "naver_id": "21884707",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200512_19%2F1589277688612pXXYe_JPEG%2FhMGCt6zRUIMEO4qYeZGR5wO4.jpg",
+     "desc": "Gamnae 2-ro 203, Saha-gu, Busan. The hillside village has a large mural of the two Busan members, Jimin and Jungkook, with queues of fans in front of it (Seoul Shinmun, June 2026). Free; the information centre sells the village map."
+    },
+    {
+     "lat": 35.168576,
+     "lon": 129.057114,
+     "name": "Busan Citizens Park, the V road (부산시민공원)",
+     "icon": "park",
+     "naver_id": "12228256",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180119_126%2F15163234027025yz4F_JPEG%2FT45n8pkwss5iicWv5bIUJCRN.jpg",
+     "desc": "Simingongwon-ro 73, Busanjin-gu. The park where V was photographed on a walk; the lane is sold by tour operators as the \"V road\". Free."
+    },
+    {
+     "lat": 35.870908,
+     "lon": 128.577079,
+     "name": "V mural street at Daeseong Elementary, Daegu (대구 비산동 뷔 벽화거리)",
+     "icon": "camera",
+     "naver_id": "11556921",
+     "image": "none",
+     "desc": "Gukchaebosang-ro 426, Seo-gu, Daegu. The 60 m mural along the wall of V's old primary school in Bisan-dong, painted in December 2021 and extended in 2022, paid for by his Chinese fan club; \"Borahae\" is written in many languages along the top (Seoul Shinmun, May 2022). Next to Dalseong Toseong village."
+    },
+    {
+     "lat": 35.857967,
+     "lon": 128.591156,
+     "name": "Suga mural lanes near Myeongdeok Station (대구 슈가 벽화거리)",
+     "icon": "camera",
+     "naver_id": "13479603",
+     "image": "none",
+     "desc": "Myeongdeok-ro 185, Nam-gu, Daegu. The lanes around Myeongdeok Station (the Mulbegi street) carry about ten murals painted in 2022 for the Daegu-born Suga. The pin is the station."
+    },
+    {
+     "lat": 35.768915,
+     "lon": 129.09107,
+     "name": "Hwarang Hill, Gyeongju (경주 화랑의언덕)",
+     "icon": "viewpoint",
+     "naver_id": "1838298326",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20190805_250%2F1564981586207VwCvf_JPEG%2F8ZK66vIiUx-uQ35yi9to-Yev.jpg",
+     "desc": "Geoncheon-eup, Gyeongju. The grass hill with the big pine that became a photo spot after RM posted his visit. Reported by fan tour lists and the press; HYBE does not confirm filming locations. Free, open all hours."
+    },
+    {
+     "lat": 35.834706,
+     "lon": 129.218997,
+     "name": "Cheomseongdae observatory (첨성대)",
+     "icon": "monument",
+     "naver_id": "13491802",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200106_270%2F1578237425235vhzPG_JPEG%2FBtFgbHMA5t8daqoR2j0zHNBL.jpeg.jpg",
+     "desc": "Gyeongju. The 7th-century stone observatory, on RM's Gyeongju trip and on every fan itinerary of the city. Free, lit at night."
+    },
+    {
+     "lat": 36.482665,
+     "lon": 129.434516,
+     "name": "Gyeongjeong Port, HYYH prologue (영덕 경정항)",
+     "icon": "camera",
+     "naver_id": "37784988",
+     "image": "none",
+     "desc": "Gyeongjeong-ri, Chuksan-myeon, Yeongdeok. The small harbour and its breakwater structures are the seaside scenes of the HYYH on stage: prologue film (2015)."
+    }
+   ]
+  },
+  {
+   "name": "Public toilets (공중화장실)",
+   "pins": [
+    {
+     "lat": 37.516317,
+     "lon": 127.025669,
+     "name": "Toilet at Hakdong Park (학동공원화장실)",
+     "icon": "toilet",
+     "naver_id": "36257432",
+     "image": "none",
+     "desc": "Gangnam-daero 140-gil 47."
+    },
+    {
+     "lat": 37.578841,
+     "lon": 126.977016,
+     "name": "Toilet at Gyeongbokgung, Gyeonghoeru (경복궁 경회루 개방화장실)",
+     "icon": "toilet",
+     "naver_id": "1641488025",
+     "image": "none",
+     "desc": "Inside the palace by the pavilion."
+    },
+    {
+     "lat": 35.09758,
+     "lon": 129.0106,
+     "name": "Toilet at Gamcheon Culture Village (감천문화마을공중화장실)",
+     "icon": "toilet",
+     "naver_id": "1589248295",
+     "image": "none",
+     "desc": "Gamnae 2-ro 201, by the information centre."
+    },
+    {
+     "lat": 35.169025,
+     "lon": 129.060221,
+     "name": "Toilet at Busan Citizens Park (부산시민공원화장실)",
+     "icon": "toilet",
+     "naver_id": "788073541",
+     "image": "none",
+     "desc": "In the park."
+    }
+   ]
+  }
+ ]
+}

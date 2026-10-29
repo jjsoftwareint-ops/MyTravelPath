@@ -114,12 +114,29 @@ All allow free use; the credit is given in every case.
   https://commons.wikimedia.org/wiki/File:Mungyeong_Saejae_Open_Film_Set.jpg
 - Wolmido Sunset path banner: *Sunset over Incheon Harbor* (looking west from Wolmido), JNicol, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:Sunset_over_Incheon_Harbor.jpg
-- Gapyeong path banner: *Nami Island (South Korea) banner Tree Lane* (the tree-lined lane on Nami Island),
-  Jocelyndurrey, CC BY-SA 4.0.
-  https://commons.wikimedia.org/wiki/File:Nami_Island_(South_Korea)_banner_Tree_Lane.JPG
+- Gapyeong path banner: *0012-10-12 (2024-11-12) Gapyeong - Chuncheon* (autumn maples by the river on Nami Island),
+  Katsujiro Maekawa, CC0.
+  https://commons.wikimedia.org/wiki/File:0012-10-12_(2024-11-12)_*Gapyeong_-_Chuncheon_*Gyeonggi_-_Gangwon.jpg
 - Paju path banner: *Imjingak pyunghwanuri* (the windmill hill of Pyeonghwa Nuri park at Imjingak),
   한국문화관광연구원 (Korea Culture & Tourism Institute), CC0.
   https://commons.wikimedia.org/wiki/File:Imjingak_pyunghwanuri.jpg
+- BTS Army Tour path banner: *BTS 'Spring Day' bus stop* (the rebuilt bus stop on Hyangho Beach, Jumunjin),
+  Real SLOW TV-The sound of nature (YouTube frame), CC BY 3.0.
+  https://commons.wikimedia.org/wiki/File:BTS_%27Spring_Day%27_bus_stop.jpg
+- Bukhansan Dulle-gil path banner: *Korea Bukhansan Mountain 20140731 13*, Korea.net / Korean Culture and
+  Information Service, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Korea_Bukhansan_Mountain_20140731_13_(14822171914).jpg
+- Haeundae Coast path banner: *Sky Capsule train at Haeundae Blueline Park, Busan*, VN.NguyenDucDuy, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Sky_Capsule_train_at_Haeundae_Blueline_Park,_Busan.jpg
+- Busan Culture Villages path banner: *Colorful houses in Gamcheon Culture Village at sunset in Busan South Korea*,
+  Basile Morin, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Colorful_houses_in_Gamcheon_Culture_Village_at_sunset_in_Busan_South_Korea.jpg
+- Jeju Olle 18-1 (Chuja) path banner: *Jeju Olle Route 18-1*, Jeju Olle Foundation, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_18-1.jpg
+- Jeju Olle 17 path banner: *Jejuolle-route-17(4)*, Jeju Olle Foundation, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Jejuolle-route-17(4).jpg
+- Jeju Olle 1 and 1-1 (Udo) path banner: *Udo, Jeju Province, South Korea 02*, Jeju Film Commission (제주영상문화산업진흥원),
+  KOGL Type 1. https://commons.wikimedia.org/wiki/File:Udo,_Jeju_Province,_South_Korea_02.jpg
+- Seongsu-dong path banner: *Seongsu-dong storefronts*, CartoonChess, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Seongsu-dong_storefronts.jpg
 - Indoors Trip path banner: *Seoul botanic park 05* (the greenhouse), Korea.net / Korean Culture and
   Information Service, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Seoul_botanic_park_05.jpg
 - Naksan Park path banner: *서울 한양도성 … 낙산야경1-1*, Seoul Metropolitan Fire &

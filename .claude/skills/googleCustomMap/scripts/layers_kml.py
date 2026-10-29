@@ -81,7 +81,9 @@ def main():
         for w in layer.get('pins', []):
             iid, color, _, _ = ICONS[w['icon']]
             desc = with_korean_line(w.get('desc', ''), w['name']) + f'<br><a href="{naver_url(w["lat"], w["lon"], w.get("naver_id"), w.get("address"))}">Open Naver Map</a>'
-            if w.get('image'):  # hotlinked Naver/Google place photo (no copyright issue as a link), only for important pins
+            if w.get('image') == 'none':  # no photo on purpose (toilets, pins without a Naver place); patch_kmz.py keeps it photo-less
+                desc = '<!--nophoto-->' + desc
+            elif w.get('image'):  # hotlinked Naver/Google place photo (no copyright issue as a link), only for important pins
                 desc = f'<img src="{w["image"]}" width="300"><br>' + desc
             K.append(f"<Placemark><name>{esc(pin_name(w['name']))}</name><description><![CDATA[{desc}]]></description>"
                      f"<styleUrl>#icon-{iid}-{color}</styleUrl><Point><coordinates>{w['lon']:.6f},{w['lat']:.6f},0</coordinates></Point></Placemark>")
