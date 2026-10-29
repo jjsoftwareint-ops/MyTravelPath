@@ -37,6 +37,99 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: 'why-the-laugh-track-confuses-us',
+    title: 'Why the laugh track on Friends confuses us',
+    description:
+      'Americans, Europeans and Koreans laugh at different moments. A sitcom that a whole country learned English from, a film critic who understands 97% of a Korean comedy, and the 3% that is the joke.',
+    teaser: 'We know every word. We still miss the joke.',
+    icon: 'rolling_on_the_floor_laughing',
+    date: '2026-10-29',
+    updated: '2026-10-29',
+    keywords: ['KoreaCulture', 'KoreanHumor', 'Friends', 'Sitcom', 'KoreaVsEurope', 'Ajaegag', 'KoreanVariety', 'LearnKorean'],
+    body: [
+      {
+        type: 'p',
+        text: 'We have watched Friends more times than we would admit. We know the lines. And still, a few times an episode, the laugh track goes off and we sit there thinking: what was that?',
+      },
+      {
+        type: 'p',
+        text: 'It is not the English. It is the laughing point. Americans, Europeans and Koreans put it in different places, and once you notice, you cannot stop noticing.',
+      },
+      { type: 'emoji', name: 'television' },
+      { type: 'h', text: 'The missing 3 percent', icon: 'thinking_face' },
+      {
+        type: 'p',
+        text: 'The best description of this feeling comes from the other direction. Darcy Paquet, the American film critic who has lived in Korea since the 90s and did the English subtitles for Parasite, once wrote that he understands about 97 percent of a Korean comedy. "내가 이해하지 못하는 그 3%는 다 웃기는 부분이다 (nae-ga ihae-haji mothaneun geu sam-peosenteu-neun da utgineun bubun-ida)": the 3 percent I don\'t get is all the funny parts.',
+      },
+      {
+        type: 'p',
+        text: 'His guess at why: Korean humour is "more dynamic and direct". American humour is delivered calm, because, in his words, Americans always have to look cool. The joke is in the composure. Which is exactly where we lose it.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'America: the cool line', icon: 'speech_balloon' },
+      {
+        type: 'p',
+        text: 'Think of Chandler. Half of his jokes are sarcasm aimed at a friend, delivered flat. To an American audience that is affection. Research on how sarcasm is read across cultures found that Western participants tend to hear it as amusing, while East Asian participants tend to hear it as also aggressive. So when Chandler mocks Joey, we hear a small insult and wait for the apology. The laugh track hears love.',
+      },
+      {
+        type: 'p',
+        text: 'Americans do soften it. Simon Pegg once pointed out that they like to add a "just kidding" at the end, in case. A Korean would not make the joke at all, unless the friendship is old enough to survive it. Teasing is a privilege you earn, not an opener.',
+      },
+      { type: 'h', text: 'Europe: the awkward silence', icon: 'hourglass_not_done' },
+      {
+        type: 'p',
+        text: 'The British, says Ricky Gervais, use irony "as liberally as prepositions". The joke is often that nothing happens: someone says something wrong, nobody reacts, and the silence is the punchline. The original Office is forty minutes of that. Germans and Scandinavians have their own flavours of it, dry enough to miss entirely if you are waiting for a cue.',
+      },
+      {
+        type: 'p',
+        text: 'Gervais also thinks Americans are raised to believe they could be president, and Brits are told early that they will not be, so British comedy is comfortable with losers. Korea sits closer to Britain here. Our variety shows run on a cast of lovable failures.',
+      },
+      { type: 'emoji', name: 'face_with_tears_of_joy' },
+      { type: 'h', text: 'Korea: the caption laughs first', icon: 'television' },
+      {
+        type: 'p',
+        text: 'A European watching a Korean variety show (**예능 (yeneung)**) for the first time usually asks the same question: why is the screen full of writing? The captions are the Korean laugh track. A producer told the Korea Herald they are "an extra narrator", there to make sure no one misses the point. Someone falls into a pond, the caption says "splash", a sad trombone plays, and a second caption says what the person is probably thinking. The silence a British show would leave empty, a Korean show fills with text.',
+      },
+      {
+        type: 'p',
+        text: 'Then there is the pun. The **아재개그 (ajae-gaeg)**, literally "uncle joke", is Korea\'s dad joke, and it had a nationwide revival on TV around 2015. The form: a word that sounds like the start of another word, glued on. "알겠습니다람쥐 (algesseumni-daramjwi)" is "understood" with a squirrel attached. It is objectively terrible. Everyone groans. The groan is the laugh.',
+      },
+      {
+        type: 'p',
+        text: 'And the body. **몸개그 (mom-gaeg)**, "body gag", is slapstick with full commitment: the exaggerated fall, the face, the recovery. Western comedy left this mostly behind after the silent era. Korea never did, because a fall needs no vocabulary and no rank. Which brings us to the real difference.',
+      },
+      {
+        type: 'h', text: 'Who is allowed to joke', icon: 'owl' },
+      {
+        type: 'p',
+        text: 'Korean has honorific speech levels that change with the age and rank of the person you talk to. A workplace study in Korea found that the kind of humour people use depends on their position, and so does how a junior may respond. You do not roast your senior. He can roast you, gently, and you laugh. So the sharp, equal, everyone-mocks-everyone humour of a New York apartment has no natural home at a Korean dinner table. Puns and pratfalls do: they punch nobody.',
+      },
+      {
+        type: 'table',
+        head: ['', 'Where the laugh is', 'How it is delivered'],
+        rows: [
+          ['USA', 'the sarcastic line', 'calm, cool, to a friend'],
+          ['Britain / Europe', 'the silence after', 'deadpan, nobody reacts'],
+          ['Korea', 'the pun, the fall, the face', 'loud, physical, captioned'],
+        ],
+      },
+      { type: 'space' },
+      { type: 'h', text: 'The textbook nobody laughs at', icon: 'books' },
+      {
+        type: 'p',
+        text: 'Here is the funny part. Friends is the most-used English textbook in Korea. A teacher says he imported it as class material as early as 1991, publishers have sold pattern books built on it for twenty years, and when RM of BTS told an American talk show he learned English from it, sales went up again. A whole country learned to speak from a show whose jokes it half gets.',
+      },
+      {
+        type: 'p',
+        text: 'Maybe that is fine. You can learn "how you doin\'" without understanding why it is funny. The joke is the last thing you learn in any language, and the first thing that tells you where you are.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict, for visitors: do not open with sarcasm, it reads as an insult until you are friends. A bad pun will land. Laughing loudly at your own mistake will land better. And if a Korean laughs at a moment that seems like nothing to you, that was the 3 percent.',
+      },
+    ],
+  },
+  {
     id: 'danpung-nori-korea-goes-to-the-mountains',
     title: 'Danpung-nori: the week Korea goes to the mountains',
     description:
