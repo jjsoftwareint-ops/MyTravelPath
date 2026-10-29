@@ -37,6 +37,111 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-10-30-0542',
+    title: 'What the stickers on Korean restaurant doors mean',
+    description:
+      'The blue ribbon, the red ribbon and the 100-year shop sign: who hands each one out, what it really tells you, and which one to trust when you are hungry.',
+    teaser: 'Not every sticker on the door means the same thing.',
+    icon: 'ribbon',
+    date: '2026-10-30',
+    updated: '2026-10-30',
+    keywords: ['KoreaTravel', 'BlueRibbon', 'RedRibbon', 'Baengnyeongage', 'KoreanFood', 'RestaurantGuide', 'Michelin', 'Nopo'],
+    body: [
+      {
+        type: 'p',
+        text: 'Walk down any food street in Korea and the doors start talking. A blue bow here, a red sticker there, a small plaque that says the shop is a "hundred years" something. From the pavement they look alike. They are not the same kind of thing at all.',
+      },
+      {
+        type: 'p',
+        text: 'Here is who hands out what, and how much we would lean on each.',
+      },
+      {
+        type: 'photo',
+        src: 'ribbon-stickers-2025.webp',
+        alt: 'A blue Blue Ribbon Survey 2025 sticker next to a red Red Ribbon by Blue Ribbon Survey and Coca-Cola 2025 sticker',
+        caption: 'Two stickers side by side. Left: 블루리본서베이 2025 수록 (beullu ribon seobei 2025 surok), "listed in the 2025 edition". Right: 코카-콜라와 어울리는 맛집 (koka-kolla-wa eoullineun matjip), "a restaurant that goes with Coca-Cola".',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'Blue ribbons', icon: 'blue_circle' },
+      {
+        type: 'p',
+        text: 'The **Blue Ribbon Survey** (블루리본 서베이, beullu ribon seobei) is Korea\'s first restaurant guide. It started in November 2005 and brings out a new edition every year. It is a private guide, not a government list.',
+      },
+      {
+        type: 'p',
+        text: 'The ribbons are easy to read. **One** means worth a return visit. **Two** means worth recommending to others. **Three** means the best in its field. The 2026 Seoul edition gave three ribbons to 43 restaurants, six of them new, according to news reports.',
+      },
+      {
+        type: 'p',
+        text: 'At heart it is a readers\' vote. The scoring looks at taste, atmosphere, service, price, creativity and tradition. Reports differ on whether a panel of experts still has a say, so we would not call it either a pure poll or an expert verdict.',
+      },
+      {
+        type: 'p',
+        text: 'Compare Michelin, which came to Seoul with its 2017 edition. Anonymous inspectors, stars, one company\'s opinion. Blue Ribbon is closer to a very large, well organised poll.',
+      },
+      { type: 'h', text: 'Red ribbons', icon: 'red_paper_lantern' },
+      {
+        type: 'p',
+        text: 'The **Red Ribbon** (레드리본, redeu ribon) sounds like the next level up. It is not. In 2024 the Blue Ribbon Survey teamed up with Coca-Cola, and the red sticker went to 550 restaurants nationwide whose food, in the campaign\'s words, goes well with a fizzy drink.',
+      },
+      {
+        type: 'p',
+        text: 'A sticker and a nameplate go on the door, and the list sits on the Blue Ribbon website, Naver Map and KakaoMap. The first campaign was announced to run until about October 2024, but the sticker in the photo above is dated 2025, so the campaign seems to have continued.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our reading: blue is a vote, red is a partnership. Nothing wrong with that, but it is not a ranking.',
+      },
+      { type: 'h', text: 'Hundred-year shops', icon: 'hourglass_not_done' },
+      {
+        type: 'photo',
+        src: 'baeknyeon-gage-logo.jpg',
+        alt: 'The logo of the 백년가게 (baengnyeon gage) programme',
+        caption: 'Logo: 백년가게 (baengnyeon gage), Ministry of SMEs and Startups, shown only to identify it.',
+      },
+      {
+        type: 'p',
+        text: '**백년가게** (baengnyeon gage, "hundred-year shop") is the odd one out, because it is the only one run by the state. The Ministry of SMEs and Startups (중소벤처기업부, jungsobencheo-gieopbu) has been designating them since 2018.',
+      },
+      {
+        type: 'p',
+        text: 'The name promises more than it asks. A shop needs **30 years** in the same line of business, and it has to pass a paper review, a site visit and a committee. The "hundred years" is a hope for how long it will last. The version for makers, **백년소공인** (baengnyeon sogongin), asks for 15 years.',
+      },
+      {
+        type: 'p',
+        text: 'A designation lasts five years. This summer the ministry added 150 more shops and 150 makers, which brings the totals to 1,545 shops and 1,053 makers, according to its figures.',
+      },
+      {
+        type: 'p',
+        text: 'What it tells you: this place has survived, is run properly and matters to its neighbourhood. What it does not tell you: whether you will like the food.',
+      },
+      { type: 'h', text: 'All the signs side by side', icon: 'door' },
+      {
+        type: 'list',
+        items: [
+          '**Blue Ribbon** (블루리본, beullu ribon): a restaurant guide, mostly reader scores. Many diners liked it.',
+          '**Red Ribbon** (레드리본, redeu ribon): the same guide with Coca-Cola, since 2024. Goes well with a fizzy drink, not a rank.',
+          '**백년가게** (baengnyeon gage): the ministry, since 2018. Thirty years or more and well run, nothing on taste.',
+          '**노포** (nopo): nobody gives it. It just means an old shop, with no test at all.',
+          '**Michelin**: anonymous inspectors. Stars, and Bib Gourmand for good value.',
+        ],
+      },
+      { type: 'h', text: 'Which one to trust', icon: 'thinking_face' },
+      {
+        type: 'p',
+        text: 'Hungry, in a street you do not know? Read them together. A blue ribbon on a shop that is also a 백년가게 (baengnyeon gage) is the strongest sign you will get at street level: many diners liked it, and it has lasted. A red sticker on its own is a sticker.',
+      },
+      {
+        type: 'p',
+        text: 'And look at the year. Both stickers in the photo carry 2025, the edition they come from. The lists change, the doors do not.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: blue means many diners liked it, a hundred-year shop means it has lasted, red means a Coke partner. None of them is a promise that you will.',
+      },
+    ],
+  },
+  {
     id: 'seoul-put-zombies-on-the-tour-bus',
     title: 'Seoul put zombies on the sightseeing bus',
     description:
