@@ -1219,13 +1219,13 @@ export const cities: City[] = [
         id: 'gapyeong',
         name: 'Gapyeong with Nami island',
         seoTitle: 'Gapyeong day trip: Nami Island ferry and map',
-        seoDescription: 'Gapyeong day trip east of Seoul: Nami Island ferry times and prices, Morning Calm Arboretum, Petite France and view cafés, with hours and a map.',
-        description: 'A day trip east of Seoul to the gardens, islands and lakeside of Gapyeong: Morning Calm Arboretum, the Jat Scent Blue Forest, Petite France, the Italian Village, Jara Island, the Rail Park and the ferry to Nami Island. The map has photos, opening hours, four lakeside view cafés and a toilet layer.',
+        seoDescription: 'Gapyeong day trip east of Seoul: Nami Island ferry times and prices, Morning Calm Arboretum, Petite France, view cafés and a 17 km river trail to Gangchon, with hours and a map.',
+        description: 'A day trip east of Seoul to the gardens, islands and lakeside of Gapyeong: Morning Calm Arboretum, the Jat Scent Blue Forest, Petite France, the Italian Village, Jara Island, the Rail Park and the ferry to Nami Island. Also on the map: a 17 km river trail from Gapyeong Station to Gangchon, four lakeside view cafés and a toilet layer.',
         duration: 'Day trip',
         image: 'gapyeong.jpg',
         imageCredit: 'Photo: Jocelyndurrey · CC BY-SA 4.0',
-        updated: '2026-10-28',
-        keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'NamiIslandFerry', 'PetiteFrance', 'MorningCalmArboretum', 'JatForest', 'JaraIsland', 'RailPark', 'CheongpyeongLake', 'ViewCafe', 'JadeGarden', 'KoreaTravel'],
+        updated: '2026-10-30',
+        keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'NamiIslandFerry', 'PetiteFrance', 'MorningCalmArboretum', 'JatForest', 'JaraIsland', 'RailPark', 'CheongpyeongLake', 'ViewCafe', 'JadeGarden', 'BukhanRiver', 'GangchonTrail', 'KoreaTravel'],
         notices: [
           {
             icon: '⛴️',
@@ -1261,7 +1261,7 @@ export const cities: City[] = [
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1WFNxPHvLMtl_pkwfuYt8qsYs47GAKsk',
         guide: {
           intro: [
-            "🌿 **Gapyeong** is the green day trip east of Seoul: a lake and river valley with islands, gardens and themed villages. The map pins ten places, four lakeside view cafés and the public toilets, each with its Naver photo and opening hours.",
+            "🌿 **Gapyeong** is the green day trip east of Seoul: a lake and river valley with islands, gardens and themed villages. The map pins ten places, four lakeside view cafés, a **17 km river trail** from Gapyeong Station to Gangchon and the public toilets, each with its Naver photo and opening hours.",
             "The stops are spread over a wide area, so this is a **pick two or three** kind of day, not a single walk. The hours differ a lot: the Jat forest is closed on Mondays and the cafés close early.",
           ],
           route: [
@@ -1270,10 +1270,14 @@ export const cities: City[] = [
             "Cheongpyeong Lake view cafés: Corydalis and La Cuna on Hoban-ro, The Wave and Jajam 157 a little further south. All four are voted for their views on Naver.",
             "Jara Island and Gapyeong Rail Park: an island in the Bukhan River and rail bikes on an old railway line, both near Gapyeong town.",
             "Nami Island and Jade Garden: both are in Chuncheon (Gangwon), just across the border. Nami Island is a 5-minute ferry ride from the Gapyeong wharf; Jade Garden is close by.",
+            "The river trail: Gapyeong Station → Gyeonggang Bridge → Chunseong Bridge → Baegyang-ri Station → old Baegyang-ri Station → old Gangchon Station → Gangchon Station. The orange line on the map, 16.7 km along the Bukhan River and the old Gyeongchun railway, about 5 to 6 hours with lunch; it crosses into Chuncheon, Gangwon.",
           ],
           tips: [
             "⛴️ The ferry is part of the Nami Island ticket, so there is no separate fare. Times and prices are in the boxes above the map.",
             "🚌 The stops are far apart, so plan a car, taxi or bus between them rather than walking.",
+            "🥾 The river trail is a proper day walk: flat, mostly paved bike path and old railway, no shade in summer, few benches (bring a small mat), silver grass at Baegyang-ri in autumn. Short on time? Start at **Baegyang-ri Station** instead: about 6 km and 2 hours to Gangchon.",
+            "🚆 Trail transport: ITX-Cheongchun from Yongsan to Gapyeong Station in under an hour, back from Gangchon Station in about 1 h 10 (the ordinary Gyeongchun line takes about 2 hours). Both stations and Baegyang-ri have public toilets, pinned in the toilet layer; there is nothing else between the bridge and Gangchon.",
+            "🍗 Gangchon is dakgalbi country: the two pink pins by Gangchon Station are charcoal dakgalbi houses with over a thousand reviews each, open daily, checked 30 October 2026.",
             "🚻 Public toilets are pinned in their own layer for Morning Calm, Jara Island, Petite France and Nami Island. Naver lists no separate public toilet for the Jat forest, the Rail Park, Jade Garden or the lake, so use the toilets inside the sites.",
             "📝 Hours come from Naver and the official Nami Island site, read on 28 October 2026. They change by season, so check before you go.",
           ],

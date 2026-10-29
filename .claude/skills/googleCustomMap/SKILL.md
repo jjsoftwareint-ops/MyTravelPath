@@ -105,6 +105,15 @@ Lessons from Inwangsan (2026-10): the trail from the Tiger Statue to the wall is
 wall path has 5–20 m node gaps that make Valhalla detour 2.5 km, so chain the `한양도성 순성길` nodes by hand
 for summit → junction legs; the B-course stairs are boardwalk way 1314758863 ending opposite Choso Bookshop.
 
+**Overpass (2026-10-30):** `overpass.py` must be run with `/opt/homebrew/bin/python3` (OpenSSL); the Xcode
+`python3` fails the TLS handshake and every curl form gets nginx 406 on all mirrors. `overpass.py ways S W N E --out
+ways.json` then `scripts/osm_route.py ways.json line.json "label|lat,lon|lat,lon" …` routes legs over those ways with a
+bike-path/riverside preference (Valhalla via `route.py` prefers the national road beside a river path). Used for the
+Gapyeong river trail (가평역 → 경강교 → 북한강변길 → 백양리역 → old railway → 강촌역, 16.7 km, 2026-10-30): the old
+Gyeongchun-line rail trail and the Piam tunnel are an unnamed `service` way in OSM, the riverside is `북한강변길` +
+`북한강 자전거길`. The trail layer was spliced into Gapyeong.kmz (styles after the last style, folder before
+`</Document>`), the station toilets added with `patch_kmz.py`; spec in examples/gapyeong-river-trail.json.
+
 ## Hard rules
 
 - **Place photos on important pins** (user rule 2026-10-23: "add image from now on in .kmz"; hotlinked, so no

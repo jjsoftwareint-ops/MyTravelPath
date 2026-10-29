@@ -1,0 +1,156 @@
+{
+ "name": "Gapyeong river trail",
+ "layers": [
+  {
+   "name": "River trail: Gapyeong Stn → Gangchon Stn (북한강 강변길), 16.7 km · 5–6 h",
+   "line": {
+    "name": "Bukhan River trail, Gapyeong Station → Gangchon Station (가평역 → 강촌역), 16.7 km",
+    "color": "E65100",
+    "width": 5
+   },
+   "segments": [
+    {
+     "label": "Gapyeong Station → Gyeonggang Bridge (가평역 → 경강교)",
+     "approx": false,
+     "coords": "37.814629,127.511345 37.815258,127.510701 37.815405,127.510550 37.816158,127.511721 37.816227,127.511828 37.816306,127.511772 37.816391,127.511711 37.816395,127.511751 37.816404,127.511788 37.816418,127.511801 37.816459,127.511786 37.816511,127.511779 37.816546,127.511786 37.816583,127.511809 37.816628,127.511861 37.816658,127.512302 37.816679,127.512730 37.816711,127.513319 37.816744,127.513560 37.816803,127.513898 37.816851,127.514146 37.816942,127.514560 37.816981,127.514633 37.817052,127.514741 37.817552,127.514714 37.817613,127.514721 37.817642,127.514892 37.817791,127.515340 37.817893,127.515656 37.817997,127.516055 37.818183,127.516732 37.818240,127.516939 37.818342,127.517263 37.818444,127.517606 37.818586,127.518030 37.818723,127.518447 37.818750,127.518528 37.818771,127.518589 37.818794,127.518645 37.818821,127.518703 37.818847,127.518751 37.818879,127.518803 37.818919,127.518858 37.818967,127.518914 37.819010,127.518959 37.819055,127.518997 37.819114,127.519035 37.819170,127.519075 37.819226,127.519099 37.819306,127.519132 37.819423,127.519169 37.819570,127.519219 37.819657,127.519246 37.819713,127.519261 37.819759,127.519273 37.819797,127.519282 37.819836,127.519289 37.819876,127.519294 37.819912,127.519297 37.819955,127.519296 37.820001,127.519296 37.820075,127.519295 37.820242,127.519289 37.820338,127.519287 37.820450,127.519279 37.820546,127.519271 37.820551,127.519303 37.820569,127.519340 37.820597,127.519367 37.820629,127.519380 37.820663,127.519378 37.821059,127.521236 37.820859,127.521478"
+    },
+    {
+     "label": "Across Gyeonggang Bridge into Chuncheon (경강교)",
+     "approx": true,
+     "coords": "37.820859,127.521478 37.821059,127.521236 37.821202,127.521077 37.821396,127.520825 37.821492,127.520705 37.822804,127.519060 37.822837,127.519019 37.823058,127.518818 37.823027,127.518535 37.823015,127.518488 37.822718,127.517577 37.822711,127.517555 37.822437,127.516716 37.822332,127.516486 37.822468,127.516408 37.822521,127.516397 37.822692,127.516827 37.822825,127.516992 37.822759,127.516759 37.823043,127.517469 37.823414,127.518562 37.823717,127.519427 37.823958,127.519947 37.824185,127.520394 37.824499,127.520894 37.824861,127.521407 37.825232,127.521914 37.826457,127.523650"
+    },
+    {
+     "label": "Riverside bike path to Chunseong Bridge (북한강 강변길 → 춘성대교)",
+     "approx": false,
+     "coords": "37.826457,127.523650 37.829153,127.527434 37.829746,127.528257 37.829892,127.528284 37.830001,127.528240 37.830009,127.528159 37.830006,127.528103 37.829991,127.528054 37.829908,127.527940 37.829438,127.527390 37.829351,127.527307 37.829249,127.527248 37.829151,127.527214 37.828739,127.527138 37.828739,127.527074 37.828773,127.526799 37.828806,127.526616 37.828822,127.526615 37.828879,127.526615 37.828957,127.526614 37.829334,127.526646 37.829562,127.526672 37.829754,127.526712 37.829839,127.526743 37.829947,127.526798 37.830049,127.526851 37.830117,127.526881 37.830179,127.526902 37.830574,127.526976 37.830749,127.527012 37.830860,127.527037 37.830930,127.527062 37.831122,127.527144 37.831251,127.527200 37.831308,127.527234 37.831421,127.527305 37.831500,127.527355 37.831593,127.527403 37.831682,127.527450 37.831817,127.527498 37.831945,127.527541 37.832202,127.527626 37.832264,127.527654 37.832323,127.527686 37.832383,127.527721 37.832436,127.527759 37.832771,127.528029 37.832911,127.528076 37.833200,127.528134 37.833795,127.528363 37.834444,127.528710 37.834880,127.528965 37.835444,127.529295 37.836517,127.530056 37.836670,127.530166 37.836951,127.530370 37.837067,127.530430 37.837194,127.530478 37.837232,127.530494 37.837687,127.530784 37.838096,127.531109 37.838417,127.531495 37.838530,127.531605 37.839342,127.532284 37.839566,127.532438 37.839687,127.532505 37.839802,127.532543 37.839877,127.532599 37.840004,127.532753 37.840128,127.532924 37.840300,127.533213 37.840483,127.533572 37.840586,127.533679 37.840643,127.533727 37.840792,127.533850 37.840993,127.534076 37.841202,127.534366 37.841391,127.534752 37.841814,127.535516 37.841995,127.535808 37.842513,127.536404 37.842611,127.536671 37.842711,127.537209 37.842870,127.537559 37.843188,127.538185 37.843327,127.538673 37.843610,127.539264 37.843933,127.539892 37.844164,127.540411 37.844420,127.541641 37.844738,127.542258 37.845113,127.544448 37.845170,127.544900 37.845198,127.545179 37.845186,127.545534 37.845170,127.546014 37.844952,127.548124 37.844926,127.548309 37.844793,127.548706 37.844623,127.549252 37.844390,127.549999 37.844161,127.550752 37.844031,127.551185 37.843911,127.551419 37.843793,127.551601 37.843711,127.551844 37.843671,127.552106 37.843671,127.552373 37.843668,127.552509"
+    },
+    {
+     "label": "Deck path and silver grass to Baegyang-ri Station (백양리역)",
+     "approx": false,
+     "coords": "37.843668,127.552509 37.843661,127.552740 37.843652,127.552928 37.843629,127.553304 37.843597,127.553788 37.843516,127.554044 37.843491,127.554178 37.843461,127.554312 37.843359,127.554660 37.843266,127.554923 37.842849,127.556002 37.842237,127.557686 37.841672,127.559310 37.841329,127.560274 37.841056,127.561162 37.840960,127.561453 37.840905,127.561587 37.840845,127.561673 37.840769,127.561775 37.840722,127.561882 37.840672,127.562072 37.840604,127.562308 37.840523,127.562490 37.840220,127.563101 37.840049,127.563493 37.840015,127.563622 37.839951,127.563815 37.839786,127.564250 37.838994,127.566015 37.838825,127.566433 37.838786,127.566513 37.838583,127.566819 37.838478,127.567054 37.838388,127.567324 37.838291,127.567576 37.838096,127.567949 37.837490,127.569108 37.837412,127.569242 37.837249,127.569428 37.837024,127.569837 37.836901,127.570063 37.836668,127.570540 37.836346,127.571159 37.835863,127.572133 37.834885,127.574066 37.834807,127.574203 37.834764,127.574368 37.834671,127.574605 37.834367,127.575665 37.834286,127.575802 37.833488,127.578498 37.833428,127.578637 37.833367,127.578759 37.833274,127.578923 37.833233,127.578989 37.833192,127.579088 37.833070,127.579557 37.833017,127.579776 37.832986,127.579988 37.832970,127.580054 37.832135,127.582779 37.832103,127.582877 37.832031,127.583144 37.831962,127.583659 37.831347,127.588472 37.831276,127.588825 37.831274,127.589042 37.831270,127.589082 37.831250,127.589260"
+    },
+    {
+     "label": "Up to the old Baegyang-ri Station (백양리역 폐역)",
+     "approx": false,
+     "coords": "37.831250,127.589260 37.830512,127.593655 37.830469,127.593945 37.830095,127.596659 37.829321,127.601261 37.829272,127.601551 37.829163,127.603879 37.828583,127.609055 37.828460,127.609020 37.828438,127.609199 37.828214,127.609200 37.828109,127.609201 37.828007,127.609218 37.827926,127.609238 37.827838,127.609246 37.827815,127.609227 37.827771,127.609254 37.827693,127.609239 37.827473,127.609099 37.827424,127.609073 37.827337,127.609024 37.827517,127.609377 37.827576,127.609499 37.827601,127.609649 37.827605,127.609751 37.827516,127.609976 37.827393,127.610255 37.827355,127.610427 37.827405,127.610469 37.827366,127.610612 37.827031,127.611486 37.826561,127.612737"
+    },
+    {
+     "label": "Old railway walk through the Piam tunnel to old Gangchon Station (옛 경춘선 → 강촌 피암터널 → 옛 강촌역)",
+     "approx": false,
+     "coords": "37.826561,127.612737 37.826373,127.613135 37.826239,127.613381 37.826012,127.613778 37.825421,127.614586 37.824791,127.615594 37.824666,127.615795 37.824615,127.615896 37.824401,127.616253 37.824213,127.616612 37.823926,127.617053 37.823798,127.617306 37.822494,127.619891 37.822223,127.620396 37.822022,127.620732 37.821868,127.620958 37.820900,127.622321 37.820578,127.622798 37.820413,127.623093 37.820273,127.623383 37.820019,127.624011 37.819541,127.625227 37.819280,127.625806 37.818964,127.626505 37.818530,127.627352 37.818317,127.627704 37.817967,127.628373 37.817806,127.628692 37.817648,127.629041 37.817448,127.629705 37.817342,127.630151 37.817255,127.630416 37.817191,127.630603 37.817119,127.630769 37.817051,127.630944 37.816915,127.631194 37.816571,127.631743 37.816291,127.632139 37.816069,127.632435"
+    },
+    {
+     "label": "Restaurant street and riverside to the suspension bridge (강촌 출렁다리)",
+     "approx": true,
+     "coords": "37.816069,127.632435 37.815811,127.632801 37.815688,127.632742 37.815591,127.632713 37.815443,127.632695 37.815310,127.632689 37.815080,127.632685 37.814750,127.632715 37.814625,127.632781 37.814570,127.632810 37.814280,127.633020 37.814200,127.633088 37.814050,127.633214 37.813823,127.633405 37.813636,127.633586 37.813585,127.633816 37.813516,127.633852 37.813789,127.634226 37.813726,127.634305 37.813667,127.634353 37.813365,127.634836 37.813048,127.635220"
+    },
+    {
+     "label": "Along the river to Gangchon Station (강촌역)",
+     "approx": true,
+     "coords": "37.813048,127.635220 37.813006,127.635271 37.812519,127.635845 37.811866,127.636537 37.811039,127.637470 37.810836,127.637679 37.810603,127.637861 37.810391,127.637974 37.810188,127.638103 37.809988,127.638242 37.809882,127.638279 37.809743,127.638275 37.809624,127.638237 37.809471,127.638173 37.809387,127.638100 37.809339,127.637991 37.809322,127.637894 37.809250,127.637374 37.809162,127.637153 37.809022,127.636895 37.808929,127.636750 37.808847,127.636588 37.808838,127.636493 37.808788,127.636501 37.808600,127.636540 37.808369,127.636585 37.807709,127.636689 37.807200,127.636752 37.806817,127.636777 37.806645,127.636756 37.806451,127.636731 37.806275,127.636673 37.806244,127.636670 37.805880,127.636630 37.805710,127.636630 37.805561,127.636689 37.805484,127.636530 37.805441,127.636234 37.805448,127.635861 37.805476,127.635594 37.805430,127.635358 37.805344,127.635144 37.805265,127.634834 37.805241,127.634714 37.805146,127.634394"
+    }
+   ],
+   "pins": [
+    {
+     "lat": 37.814518,
+     "lon": 127.510731,
+     "name": "Start: Gapyeong Station (가평역)",
+     "icon": "subway",
+     "naver_id": "13590931",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f&size=256x256&src=https%3A%2F%2Fsimg.pstatic.net%2Fstatic.map%2Fv2%2Fmap%2Fstaticmap.bin%3Fcaller%3Dpubtrans_search%26scale%3D1%26w%3D256%26h%3D256%26center%3D127.5107313%2C37.8145184%26level%3D16%26format%3Djpg%26markers%3Dtype%3Ad%7Csize%3Amid%7CviewSizeRatio%3A0.7%7Cpos%3A127.5107313%2037.8145184%7Ccolor%3ADefault",
+     "desc": "Gyeongchun line. ITX-Cheongchun from Yongsan takes under an hour (first train 06:15 in the video); the ordinary subway about 1 h 40. Leave the station and turn left; at the big crossroads turn left again and go straight up; pass under the Gyeongchun line bridge, cross at the Jara Island sign and keep left; at the small five-way junction take the 2 o'clock arm onto the paved bike path, which leads to Gyeonggang Bridge. Convenience stores along the way; buy drinks here, there is little on the trail. From the video \"경기도와 강원을 이어주는 17km 강변 트레킹\" (Oct 2023)."
+    },
+    {
+     "lat": 37.826689,
+     "lon": 127.524043,
+     "name": "Gyeonggang Bridge, Gyeonggi–Gangwon border (경강교)",
+     "icon": "bridge",
+     "naver_id": "19146842",
+     "image": "none",
+     "desc": "Jara Island is on the right as you cross. Gyeonggi ends here; the far end of the bridge is Chuncheon, Gangwon. Follow the bike lane down under the bridge: that is the entrance of the Bukhan River riverside path (북한강 강변길), and the trail turns right along the river."
+    },
+    {
+     "lat": 37.84317,
+     "lon": 127.550019,
+     "name": "Old Gyeongchun-line railway bridge, now the rail bike (강촌레일파크 경강레일바이크)",
+     "icon": "camera",
+     "naver_id": "30840801",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20180912_285%2F1536713978172hIcRz_JPEG%2F5LsAsWsxZ1sSNuXYak7cXVrQ.jpg",
+     "desc": "Seobaek-gil 57, Namsan-myeon, Chuncheon. The old iron railway bridge is the first thing you meet on the riverside path; today only the Gangchon Rail Park bikes cross it. An unpaved path on the left runs closer to the water: the best stretch of the walk in the video."
+    },
+    {
+     "lat": 37.8456,
+     "lon": 127.551813,
+     "name": "Chunseong Bridge (춘성대교)",
+     "icon": "bridge",
+     "naver_id": "15648415",
+     "image": "none",
+     "desc": "The red bridge between Namsan-myeon and Seo-myeon of Chuncheon. The riverside deck path (북한강 데크길) starts after it, with the pointed peak of Samaksan ahead. Few benches on this trail: bring a small mat."
+    },
+    {
+     "lat": 37.830883,
+     "lon": 127.589108,
+     "name": "Baegyang-ri Station, alternative start (백양리역)",
+     "icon": "subway",
+     "naver_id": "13590937",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f&size=256x256&src=https%3A%2F%2Fsimg.pstatic.net%2Fstatic.map%2Fv2%2Fmap%2Fstaticmap.bin%3Fcaller%3Dpubtrans_search%26scale%3D1%26w%3D256%26h%3D256%26center%3D127.5891079%2C37.8308826%26level%3D16%26format%3Djpg%26markers%3Dtype%3Ad%7Csize%3Amid%7CviewSizeRatio%3A0.7%7Cpos%3A127.5891079%2037.8308826%7Ccolor%3ADefault",
+     "desc": "Bukhangangbyeon-gil 690, Namsan-myeon. Gyeongchun line and ITX stop. Short on time? Start here: about 6 km and 2 hours to Gangchon Station. The field of silver grass (억새) in front of the station is the autumn highlight of the walk. Toilets at the station; from the riverside path go up through the car park and the stairs. Further along the road a signpost points to the old station: there is no crossing, take care."
+    },
+    {
+     "lat": 37.826654,
+     "lon": 127.612699,
+     "name": "Old Baegyang-ri Station, closed (백양리역 폐역)",
+     "icon": "historic",
+     "naver_id": "20676916",
+     "image": "https://simg.pstatic.net/static.map/v2/map/staticmap.bin?caller=pubtrans_search&lang=ko&scale=2&w=200&h=200&center=127.6126992,37.8266538&level=15&format=png&maptype=basic&markers=type:d|size:mid|viewSizeRatio:0.7|pos:127.6126992 37.8266538|color:0x029DFF&logo=false",
+     "desc": "The abandoned station of the old Gyeongchun line, a short climb up the hill. The ticket hall and station office are preserved with the old fares and books; rest area. From here the old track, turned into a 2 km walking path, leads to the old Gangchon Station through the Gangchon Piam tunnel (강촌 피암터널), full of graffiti. Autumn colour is good on this stretch."
+    },
+    {
+     "lat": 37.815878,
+     "lon": 127.632518,
+     "name": "Old Gangchon Station and Gangchon Rail Park (옛 강촌역 · 강촌레일파크 강촌역)",
+     "icon": "historic",
+     "naver_id": "30836923",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNjEwMjdfMTAx%2FMDAxNzkzMDY1OTM3NDQ0.ZpfW10KrnGKitu_mKUEsQHSRKz8TziMa3-feEGbMi_cg.r2XZOk5UyChpJiSKlgzAiH7XhhEtpXRjmT7DAosHQrcg.JPEG%2F20261027_095722.jpg",
+     "desc": "Gangchon-ro 34, Namsan-myeon. The old station building is now a craft workshop; in front stand the duck statue (또오리상) and the rail bike platform, and the old railway bridge beyond is rail-bike only. The restaurant street (dakgalbi) is just below; the big convenience store in the middle of it has a lane down to the river."
+    },
+    {
+     "lat": 37.805263,
+     "lon": 127.637215,
+     "name": "Gangchon Umi charcoal dakgalbi (강촌우미숯불닭갈비)",
+     "icon": "restaurant",
+     "naver_id": "31418439",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210903_216%2F1630634855336HuEkX_JPEG%2FOXUwtQWfOt73WfssFPRir3AN.jpg",
+     "desc": "Gangchon-ro 159, next to Gangchon Station. Charcoal-grilled dakgalbi (spicy chicken), the best-reviewed in Gangchon (1,260+ Naver reviews); single portions are cooked separately. Hours on Naver (checked 2026-10-30): Mon–Thu, Sun 11:00–20:30, Fri–Sat 11:00–21:00, last order an hour before. Still in business on Naver as of 2026-10-30."
+    },
+    {
+     "lat": 37.808501,
+     "lon": 127.63567,
+     "name": "Yoonskko octopus and dakgalbi (윤스꼬 맥반석숯불문어와닭갈비)",
+     "icon": "restaurant",
+     "naver_id": "36957242",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=100&type=f640_380&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240509_171%2F1715228787429uxwiU_JPEG%2F%25C5%25A9%25B1%25E2%25BA%25AF%25C8%25AFIMG_0169.JPG",
+     "desc": "Gangchon Gugok-gil 9, between the restaurant street and the station. Dakgalbi and octopus grilled on elvan stone over charcoal; 1,300+ Naver reviews. Hours on Naver (checked 2026-10-30): Mon–Fri 10:30–21:00, Sat–Sun 10:00–22:00, last order an hour before. Still in business on Naver as of 2026-10-30."
+    },
+    {
+     "lat": 37.813323,
+     "lon": 127.635399,
+     "name": "Gangchon suspension bridge over the stream (강촌 출렁다리, Naver: 등선교)",
+     "icon": "bridge",
+     "naver_id": "37053726",
+     "image": "none",
+     "desc": "Where the Gangchon stream meets the river, below the restaurant street: stepping stones and a swaying footbridge with a good view. The riverside promenade is a small detour but far prettier than the road. Then follow the embankment under Gangchon Bridge (강촌대교), cross the small wooden bridge and keep straight to the station."
+    },
+    {
+     "lat": 37.805744,
+     "lon": 127.634172,
+     "name": "End: Gangchon Station (강촌역)",
+     "icon": "subway",
+     "naver_id": "13590942",
+     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f&size=256x256&src=https%3A%2F%2Fsimg.pstatic.net%2Fstatic.map%2Fv2%2Fmap%2Fstaticmap.bin%3Fcaller%3Dpubtrans_search%26scale%3D1%26w%3D256%26h%3D256%26center%3D127.6341726%2C37.8057443%26level%3D16%26format%3Djpg%26markers%3Dtype%3Ad%7Csize%3Amid%7CviewSizeRatio%3A0.7%7Cpos%3A127.6341726%2037.8057443%7Ccolor%3ADefault",
+     "desc": "Gangchon-ro 150, Namsan-myeon. ITX-Cheongchun to Yongsan about 1 h 10, ordinary subway about 2 h. The video's walk from Gapyeong Station took about 6 hours including lunch and rests; total about 17 km. Toilets at the station."
+    }
+   ]
+  }
+ ]
+}
