@@ -1419,14 +1419,14 @@ export const cities: City[] = [
         name: 'Abroad in Korea',
         seoTitle: "Korea's German village, Petite France and more",
         seoDescription:
-          'Korean places that feel like somewhere else: European villages, Japanese colonial sites, China Towns and Central Asian districts. 22 pins with photos.',
+          'Korean places that feel like somewhere else: European villages, Japanese colonial sites, China Towns and Central Asian districts. 22 places, plus a map of the Sinan chapel trail.',
         description:
-          'Places in Korea that feel like somewhere else: European villages, Japanese colonial sites, China Towns, American and Central Asian districts. 22 pins across the country, with photos.',
-        updated: '2026-10-26',
+          'Places in Korea that feel like somewhere else: European villages, Japanese colonial sites, China Towns, American and Central Asian districts. 22 places across the country, with photos, and a walking line for the Sinan chapel trail.',
+        updated: '2026-10-29',
         image: 'abroad.jpg',
         imageCredit: 'Photo: Choi2451 · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1Bbj7tkaIr9_-vF7Y9NRViJcr3pulbGQ',
-        keywords: ['Korea', 'ChinaTown', 'GermanVillage', 'PetiteFrance', 'Gapyeong', 'NijimoriStudio', 'Gunsan', 'Itaewon', 'ThemedVillages', 'KoreaTravel'],
+        keywords: ['Korea', 'ChinaTown', 'GermanVillage', 'PetiteFrance', 'Gapyeong', 'NijimoriStudio', 'Gunsan', 'Itaewon', 'Sinan', 'Seomtiago', 'ThemedVillages', 'KoreaTravel'],
         story: {
           title: 'Why Korea has a German village',
           text: [
@@ -1438,8 +1438,8 @@ export const cities: City[] = [
           {
             icon: '🌊',
             title: 'Sinan 12 Apostles trail: check the tide',
-            body: 'The twelve chapels stand on five islands joined by **causeways that sink at high tide**, so the path can be cut. Look up the tide table before you set out, and start at the Daegijeom pier, where the first chapel stands. The pin on this map is approximate.',
-            since: 'Korean press reports, 2019 to 2023. Confirm times with Sinan County before you go.',
+            body: 'The twelve chapels stand on five islands joined by **causeways that sink at high tide**, so the path can be cut. Look up the tide table (물때표) before you set out. The way over is the **ferry from Songgong Port** (송공항): about 1 hour 7 minutes to the end of the line, reported 2026 departures 06:50, 09:30, 12:30 and 15:10, adult fare 6,500 won. I could not confirm the return times, so check the **last boat back** with the terminal (061-261-4221) before you start walking.',
+            since: 'Korean press reports 2019 to 2023; ferry times from a travel blog citing the operator, April 2026. Confirm with Sinan County and the ferry operator before you go.',
           },
         ],
         guide: {
@@ -1451,7 +1451,8 @@ export const cities: City[] = [
             "Gapyeong, about an hour from Seoul: Petite France and the Italian Village (Pinocchio and Da Vinci), a short walk apart.",
             "Paju, north-west of Seoul: Provence Village and the Heyri Art Village, a few minutes apart.",
             "The long-distance Europe: Namhae German Village, Oedo Botania by boat off Geoje, Asan's Mediterranean Village, Solbeach Samcheok, Jade Garden in Chuncheon, Damyang Meta Provence and Jeju's Swiss Village. Each is a trip of its own.",
-            "Sinan 12 Apostles Pilgrimage Trail: twelve small chapels on five islands along a 12 km path, nicknamed Seomtiago after the Camino de Santiago.",
+            "**Sinan 12 Apostles Pilgrimage Trail** (신안 12사도 순례길): twelve small chapels, each named for an apostle, on five islands in Jeungdo-myeon, joined by paths and tidal causeways. It is nicknamed Seomtiago after the Camino de Santiago. The map has a walking line through all twelve, about 10 km as drawn and usually quoted as 12 km; plan three to five hours.",
+            "Getting to the Sinan chapels: drive to **Songgong Port** (about 25 minutes from Mokpo over the Aphae Bridge) and take the ferry. It calls at the **Soak**, **Sogijeom** and **Daegijeom** docks, in that order. Chapel 1 stands at the end of the Daegijeom pier (ring its small bell to start) and chapel 12 is near the Soak dock, so you can walk either way. The map pins the terminal, the car park and the three docks.",
             "Japan in Korea: Hirotsu House and Dongguksa temple in Gunsan, and Nijimori Studio, an Edo-style film-set village in Dongducheon.",
             "China Towns: Incheon (our walk is on this site), Busan, where Texas Street next door has had Russian shops since the 1990s, and Daerim-dong in Seoul.",
             "American districts: Songtan beside the Osan air base, and Itaewon's World Food Street near the old Yongsan garrison.",
@@ -1461,6 +1462,7 @@ export const cities: City[] = [
             "🔗 Several of these have their own page on this site: Gapyeong with Nami island, Incheon China Town and the Busan culture villages.",
             "🕌 At the Seoul Central Mosque, dress modestly and ask before you go inside.",
             "🚌 Check the way to each place on Naver Map before you go; most outside Seoul need a car, a taxi or a long bus ride.",
+            "🚢 The Sinan line is approximate in places: the short links to chapels 3, 9, 11 and 12 are drawn straight, so follow the signs on the ground. Wear shoes that can get wet or muddy, and take water with you.",
             "📍 Photos on the pins come from Naver Map. Jeju Swiss Village, the Sinan trail and Songtan have none there.",
           ],
         },
