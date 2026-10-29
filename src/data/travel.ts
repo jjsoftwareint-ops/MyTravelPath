@@ -84,7 +84,7 @@ export const cities: City[] = [
         name: 'Fortress wall and stream',
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
-        updated: '2026-10-25',
+        updated: '2026-10-29',
         tags: [{ icon: 'moon', label: 'Night walk' }],
         story: {
           title: 'A wall, and a river that was buried',
@@ -95,6 +95,26 @@ export const cities: City[] = [
         },
         image: 'naksan.jpg',
         imageCredit: 'Photo: Seoul Metropolitan Fire & Disaster HQ · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '🌙',
+            title: "Naksan Park and the wall path are open all night",
+            body: "**Naksan Park** has no closing time on Naver (00:00–24:00) and the **Seoul City Wall** path along it is lit after dark. The small **Hanyangdoseong exhibition hall** at the central plaza is open **09:00–17:00** and **closed on Mondays**.",
+            since: "Naver Map and a Seoul city article of 21 October 2026. Checked 29 October 2026.",
+          },
+          {
+            icon: '🍜',
+            title: "Gwangjang Market: the food alley is daily, the shops are not",
+            body: "The **food alley** (먹자골목) runs **daily 09:00–23:00**. The main textile and hanbok market keeps Mon–Sat 09:00–18:00 and the vintage arcade Mon–Sat 10:00–19:00; both are **closed on Sundays**. Individual stalls set their own days off.",
+            since: "Seoul city media hub; a 2026 blog gives the same times. Checked 29 October 2026.",
+          },
+          {
+            icon: '🤫',
+            title: "Ihwa Mural Village is a residential lane",
+            body: "Many of the murals were **painted over** after conflicts with residents, so expect fewer than old photos show. People live along the stairs: keep voices down on a night walk and do not photograph into windows.",
+            since: "Seoul city media hub. Checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',
         keywords: ['Seoul', 'NightWalk', 'Naksan', 'SeoulCityWall', 'Cheonggyecheon', 'Dongdaemun', 'GwangjangMarket', 'SunsetView', 'KoreaTravel'],
         guide: {
@@ -124,10 +144,24 @@ export const cities: City[] = [
         description:
           'Haebangchon evening walk, 2.4 km: the 108 Stairs, the Sinheung Market food alleys, Sowol-ro rooftop views and the Seoul City Wall to Baekbeom Square.',
         duration: '2h',
-        updated: '2026-10-23',
+        updated: '2026-10-29',
         tags: [{ icon: 'sunset', label: 'Evening walk' }],
         image: 'haebangchon.jpg',
         imageCredit: 'Photo: Lee Jeong Woo / Korea MCST · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '🛗',
+            title: "The 108 Stairs lift runs early to late",
+            body: "The inclined lift beside the 108 Stairs (15 people, about one minute to the top) is reported to run **06:00–23:30**. Yongsan-gu has not published hours we could find, so treat the times as unconfirmed; the stairs are open at all hours.",
+            since: "Yongsan-gu opened the lift in November 2018 (Yonhap). Hours from an unofficial listing. Checked 29 October 2026.",
+          },
+          {
+            icon: '🚻',
+            title: "Namsan Library: toilets, but not late",
+            body: "The walk crosses Sowol-ro at **Namsan Library**, the last easy toilet before the wall path. It is open **Mon–Fri 09:00–20:00**, **Sat–Sun 09:00–17:00**, and **closed on the 1st and 3rd Monday** of each month. After that, use the public toilets pinned on the map.",
+            since: "Naver Map, checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1kOFoicmAJJvQvsioIIOu1ng9dDQ4Exk',
         keywords: ['Seoul', 'Haebangchon', 'HBC', 'SinheungMarket', 'Namsan', 'RooftopBar', 'SeoulCityWall', 'Itaewon', 'KoreaTravel'],
         guide: {
@@ -211,13 +245,27 @@ export const cities: City[] = [
         name: 'Inwang Mountain Trail',
         description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
         duration: '2.5h',
-        updated: '2026-10-22',
+        updated: '2026-10-29',
         tags: [
           { icon: 'hiker', label: 'Hiking' },
           { icon: 'sunset', label: 'Evening walk' },
         ],
         image: 'inwangsan.jpg',
         imageCredit: 'Photo: Rtflakfizer · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '🔥',
+            title: "Fire-prevention seasons: check before a spring or late-autumn hike",
+            body: "Korea's spring fire-prevention period runs **20 January–15 May 2026**; Bukhansan National Park closes some trails 3 Mar–15 May and 15 Nov–15 Dec. **No closure for Inwangsan's trails has been announced** as of this check, but Jongno-gu can restrict paths on dry, windy days. The mountain has no gates or opening hours otherwise.",
+            since: "Korea Forest Service and the national park closure list for 2026. Checked 29 October 2026.",
+          },
+          {
+            icon: '📚',
+            title: "Yun Dong-ju Literature Museum, at the Changuimun fork",
+            body: "If you take the Changuimun branch instead of Suseongdong, the museum at the bottom is **free**, open **10:00–18:00** (last entry 17:30, closed for cleaning 13:30–14:00) and **closed on Mondays**, 1 January and the Seollal and Chuseok days.",
+            since: "Naver Map, checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1JPHJVSHobZnrwTiCPU8KQt-3SUX3Wqg',
         keywords: ['Seoul', 'Inwangsan', 'SeoulHiking', 'SeoulCityWall', 'Gyeongbokgung', 'NightView', 'Seochon', 'Beombawi', 'KoreaTravel'],
         guide: {
@@ -292,10 +340,24 @@ export const cities: City[] = [
         description:
           'Two walks through the student quarter: the Gyeongui Line Forest Park from Yeontral Park past the Book Street to Seogang, and the Red Road busking street from Hongik University Station down to the Han River.',
         duration: '1–2h each',
-        updated: '2026-10-20',
+        updated: '2026-10-29',
         tags: [{ icon: 'hot', label: 'Hot place' }],
         image: 'hongdae-hot.jpg',
         imageCredit: 'Photo: Ken Eckert · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '📚',
+            title: "Book Street closes on Mondays",
+            body: "The train-carriage book kiosks of the **Gyeongui Line Book Street** are **closed every Monday**. Opening is listed as **11:00–20:00** by the Korea Tourism Organization, though older notices say 18:00; the park path itself is open at all hours.",
+            since: "Korea Tourism Organization and Seoul city media hub. Checked 29 October 2026.",
+          },
+          {
+            icon: '🛍️',
+            title: "Kakao Friends flagship and the charcoal-kiln spa",
+            body: "**Kakao Friends Hongdae flagship** (three floors on Yanghwa-ro): daily **10:30–22:00**. **Forest Herbal Land** (숲속한방랜드), the charcoal-kiln spa pinned on the map: daily **06:30–22:00**; its restaurant 08:00–21:00.",
+            since: "Naver Map, checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1MacGBkR5Qdw577FGrG4yztVioZYpBy0',
         keywords: ['Seoul', 'Hongdae', 'Busking', 'YeontralPark', 'GyeonguiLineForestPark', 'RedRoad', 'SeoulNightlife', 'HanRiver', 'KoreaTravel'],
         guide: {
@@ -325,10 +387,24 @@ export const cities: City[] = [
         description:
           'Trails 1 to 3 of the path that circles Bukhansan, from the Uiryeong-gil entrance in Ui-dong over the Pine Forest Path, the Pilgrimage Path past the April 19 cemetery and the White Cloud Path to the Bukhansan Eco Forest. 9.3 km, one colour per trail, with public toilets, restaurants and view cafés pinned.',
         duration: '4h',
-        updated: '2026-10-22',
+        updated: '2026-10-29',
         tags: [{ icon: 'hiking', label: 'Trekking' }],
         image: 'bukhansan.jpg',
         imageCredit: 'Photo: Korea.net / KOCIS · CC BY-SA 2.0',
+        notices: [
+          {
+            icon: '🪦',
+            title: "April 19 National Cemetery: hours and the memorial hall",
+            body: "The cemetery grounds on trail 2 are open **daily 06:00–18:00** (Seoul lists 07:00–17:00 from November to February), free. The **memorial hall** is open 09:30–17:30 (to 16:30 Nov–Feb) and **closed on Mondays**. It is a national cemetery: quiet voices, no picnics on the lawns.",
+            since: "Naver Map and the Ministry of Patriots and Veterans Affairs site, tel. 02-996-0419. Checked 29 October 2026.",
+          },
+          {
+            icon: '🔥',
+            title: "Fire-season closures in the national park",
+            body: "Bukhansan National Park restricts trails **3 March–15 May** and **15 November–15 December 2026**. The listed closed section is on the Dobong side, not on Dulle-gil trails 1–3, but check the park's notice board before you set out: entering a closed trail carries a fine of up to ₩500,000. The park also sets last-entry times for its mountain trails (16:00 in Dec–Feb, 17:00 otherwise); finish the Dulle-gil by dusk.",
+            since: "Korea National Park Service closure list for 2026. Checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1hKTShjnYqc2Vq4R1aCOynVVpxKte1Is',
         keywords: ['Seoul', 'Bukhansan', 'BukhansanDullegil', 'SeoulHiking', 'Uidong', 'April19Cemetery', 'Hwagyesa', 'ForestWalk', 'KoreaTravel'],
         guide: {
@@ -670,10 +746,30 @@ export const cities: City[] = [
         description:
           'Routes 5, 6 and 7 of the 437 km island trail: Namwon → Soesokkak → Seogwipo → Seogwipo Bus Terminal along the south coast, one colour per route, with every toilet and first-aid kit from the official maps.',
         duration: '1 day per route',
-        updated: '2026-10-22',
+        updated: '2026-10-29',
         tags: [{ icon: 'hiking', label: 'Trekking' }],
         image: 'olle.jpg',
         imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '📒',
+            title: "Olle passport and the Tourist Center",
+            body: "The **Olle passport** for the stamps costs **₩20,000**, printed or in the Olle Pass app, sold at the **Jeju Olle Tourist Center** (end of route 6, start of route 7), the official information desks and the online Olle store. The centre is open **daily 08:00–21:30**; completion certificates are issued **14:00–16:30**.",
+            since: "Jeju Olle passport page and Naver Map. Checked 29 October 2026.",
+          },
+          {
+            icon: '💧',
+            title: "Jeongbang Falls on route 6: ticket and last entry",
+            body: "The route passes the falls' information centre; the waterfall itself is a paid side visit: **adult ₩2,000**, youth and child ₩1,000, open **09:00–17:50** (it follows sunset), **last entry 17:30**, closed in bad weather.",
+            since: "Seogwipo City e-ticket site. Checked 29 October 2026.",
+          },
+          {
+            icon: '🍊',
+            title: "Seogwipo Maeil Olle Market hours",
+            body: "The market at the end of route 6 is open **daily 07:00–21:00** (some listings say 20:00). The food stalls are busiest from late afternoon.",
+            since: "Naver Map, checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1KEy42fnL8YeGcNgyhB_9PVreKLgwiTM',
         keywords: ['Jeju', 'JejuOlle', 'OlleTrail', 'Seogwipo', 'Oedolgae', 'Soesokkak', 'JejuHiking', 'Camellia', 'KoreaTravel'],
         guide: {
@@ -746,10 +842,24 @@ export const cities: City[] = [
         description:
           'Route 17 into Jeju City: 19 km from Gwangnyeong down the Musucheon gorge to the sea at Oedo Woldae, along Iho Tewoo Beach, over Dodu-bong with the planes landing beside you, past the airport coast to Yongduam and the old town, ending at the Kim Man-deok Memorial by Dongmun Market. Stamps, every toilet and first-aid kit, and 14 checked restaurants and sea-view cafés pinned.',
         duration: '1 day',
-        updated: '2026-10-22',
+        updated: '2026-10-29',
         tags: [{ icon: 'hiking', label: 'Trekking' }],
         image: 'olle17.jpg',
         imageCredit: 'Photo: Jeju Olle Foundation · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '🏁',
+            title: "End stamp: Kim Man-deok Memorial Hall closes on Mondays",
+            body: "The hall with the end stamp is **free**, open **09:00–18:00**, and **closed every Monday** (the next weekday when Monday is a holiday). The stamp box is outside, so you can still stamp on a Monday, but the exhibition is shut.",
+            since: "Naver Map and the Ministry of Culture event listing, tel. 064-759-6095. Checked 29 October 2026.",
+          },
+          {
+            icon: '🏯',
+            title: "Jeju Mokgwana: ticket for the restored offices, Gwandeokjeong is free",
+            body: "**Gwandeokjeong** pavilion stands in an open plaza and costs nothing. The restored **Jeju Mokgwana** offices behind it are **₩1,500**, open **09:00–18:00** daily, last ticket 17:30. Some years it opens free in the evenings from May to October; not confirmed for 2026.",
+            since: "Visit Jeju and Naver Map, tel. 064-710-6717. Checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1cMhDeaaSQ67KAfCaduH2pO01t-d9Rt0',
         keywords: ['Jeju', 'JejuOlle', 'OlleTrail17', 'Yongduam', 'IhoBeach', 'Dodubong', 'JejuCity', 'DongmunMarket', 'KoreaTravel'],
         guide: {
@@ -835,10 +945,24 @@ export const cities: City[] = [
         description:
           'Korea\'s oldest China Town, 2 minutes from Incheon Station: the lantern street and its lanes, the Songwol-dong Fairy Tale Village loop, the Japanese-style street of the old port, plus the two mural streets and the Incheon Citizens\' House.',
         duration: '2–3h',
-        updated: '2026-10-25',
+        updated: '2026-10-29',
         tags: [{ icon: 'village', label: 'Old town' }],
         image: 'chinatown.jpg',
         imageCredit: 'Photo: Mobius6 · CC BY-SA 4.0',
+        notices: [
+          {
+            icon: '🏛️',
+            title: "The museums close on Mondays",
+            body: "The **Jajangmyeon Museum**, the **Incheon Open Port Museum**, the **Modern Architecture Exhibition Hall** and **Incheon Citizens' House** are all **closed on Mondays** (the next day when Monday is a holiday), and on 1 January and the Seollal and Chuseok days. Hours **09:00–18:00**, last entry 17:30 (Citizens' House 09:30–17:30). The Fairy Tale Village and the streets are open at all hours.",
+            since: "Naver Map and the Jemulpo Cultural Foundation. Checked 29 October 2026.",
+          },
+          {
+            icon: '🎟️',
+            title: "Museum tickets and the combined pass",
+            body: "**Jajangmyeon Museum** adult ₩1,000, youth ₩700, children and over-65 free. **Open Port Museum** and **Modern Architecture Exhibition Hall** adult ₩500, youth ₩300. A **combined ticket** for the five old-town museums (these three plus the Daebul Hotel exhibition and the Korean-Chinese Cultural Center) is **adult ₩3,400**, youth ₩2,300.",
+            since: "Ministry of Culture listing and the Jemulpo Cultural Foundation fee table. Checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1RoZet4u2GSJ8N6XbSHqcuN0xW6vYEXA',
         keywords: ['Incheon', 'Chinatown', 'Jajangmyeon', 'FairyTaleVillage', 'OpenPort', 'DayTripFromSeoul', 'Songwoldong', 'IncheonStation', 'KoreaTravel'],
         guide: {
@@ -872,12 +996,26 @@ export const cities: City[] = [
         description:
           'Three ways up Incheon\'s highest peak (395 m): the deck-stair trail from the Gyeyang Park office, the gentler museum and open-air stage route, and the forest climb from Yeonmujeong pavilion, plus the walk from Gyesan Station.',
         duration: '2–3h',
-        updated: '2026-10-22',
+        updated: '2026-10-29',
         tags: [{ icon: 'hiking', label: 'Hiking' }, { icon: 'moon', label: 'Night hiking' }],
         image: 'gyeyangsan.png',
         imageWhole: true,
         screenshot: 'gyeyangsan-naver-map.png',
         screenshotCaption: 'Naver Map: the Gyeyangsan courses and trailheads. Google Maps does not show these trails accurately.',
+        notices: [
+          {
+            icon: '🏛️',
+            title: "Gyeyangsanseong Museum at the route 2 trailhead",
+            body: "Open **09:00–18:00**, last entry 17:30, **closed on Mondays** (Tuesday when Monday is a holiday), 1 January and the Seollal and Chuseok days. Adults ₩1,000; children, teenagers and seniors free. The trails themselves have no gate or opening hours.",
+            since: "Naver Map and a July 2025 report, tel. 032-552-8317. Checked 29 October 2026.",
+          },
+          {
+            icon: '🔦',
+            title: "No lighting on the trail",
+            body: "We found no official word of lamps on the deck stairs or the summit path, and night-hiking reports all say to bring your own light. Take a headlamp and a spare, and remember the only toilet is at the park-office trailhead.",
+            since: "Checked 29 October 2026.",
+          },
+        ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1XTAYMo1N6LQjXbxIkmdwxT_JUpNReGY',
         keywords: ['Incheon', 'Gyeyangsan', 'NightHiking', 'IncheonHiking', 'DayTripFromSeoul', 'GyesanStation', 'HikingKorea', 'KoreaTravel'],
         guide: {

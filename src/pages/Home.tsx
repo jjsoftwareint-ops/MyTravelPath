@@ -105,15 +105,6 @@ export default function Home() {
         })}
       </ul>
 
-      <section className="site-intro" aria-labelledby="site-intro-title">
-        <h2 id="site-intro-title">✨ About MyTravelPath</h2>
-        <p>
-          <RichText text="**MyTravelPath** is a collection of free walking routes and day trips across Korea. Each one opens a Google My Maps map with its stops pinned and linked to Naver Map, the map most people use in Korea. Newer maps also have a layer of public toilets." />
-        </p>
-        <p>
-          <RichText text="Not sure where to begin? **Seoul** has the most routes, from a two-hour evening walk to a full rainy day indoors. For a long coastal walk try **Jeju Olle**, and for a day trip out of Seoul try **Gapyeong**." />
-        </p>
-      </section>
     </Layout>
   );
 }
