@@ -128,6 +128,9 @@ All allow free use; the credit is given in every case.
 - Blog, Danpung-nori post: *덕수궁의 가을* (Deoksugung in autumn, from above), 라성민, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg
 
+- Blog, zombie bus post: *Seoul Tiger Open Top Bus* (the Tiger Bus in front of City Hall), Minseong Kim, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Seoul_Tiger_Open_Top_Bus.jpg
+
 The app icon, favicon and home-header mark are the project's own artwork (a suitcase with a
 Korean flag tag among cherry blossoms).
 Tag icons are from FontAwesome (CC BY 4.0), Game Icons (CC BY 3.0) and Lucide (ISC),
