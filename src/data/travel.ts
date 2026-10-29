@@ -82,6 +82,9 @@ export const cities: City[] = [
       {
         id: 'naksan-cheonggyecheon',
         name: 'Fortress wall and stream',
+        seoTitle: 'Naksan Park sunset walk to Cheonggyecheon',
+        seoDescription:
+          "Walk Seoul's city wall on Naksan at sunset, pass Ihwa mural village and Dongdaemun gate, then follow the lit Cheonggyecheon stream. Map and tips.",
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
         updated: '2026-10-29',
@@ -141,6 +144,9 @@ export const cities: City[] = [
       {
         id: 'haebangchon-evening',
         name: 'Haebangchon late evening walk',
+        seoTitle: 'Haebangchon evening walk: 108 Stairs and views',
+        seoDescription:
+          'A 2.4 km evening walk in Haebangchon, Seoul: the 108 Stairs, Sinheung Market alleys, Sowol-ro rooftop views and the city wall. Free map and tips.',
         description:
           'Haebangchon evening walk, 2.4 km: the 108 Stairs, the Sinheung Market food alleys, Sowol-ro rooftop views and the Seoul City Wall to Baekbeom Square.',
         duration: '2h',
@@ -243,6 +249,9 @@ export const cities: City[] = [
       {
         id: 'inwang-mountain-trail',
         name: 'Inwang Mountain Trail',
+        seoTitle: 'Inwangsan hike: Seoul city wall with views',
+        seoDescription:
+          'Climb Inwangsan along the Seoul fortress wall for views over Gyeongbokgung and the whole city. Free map with the route, pins and tips.',
         description: 'Seoul fortress wall climb with views over Gyeongbokgung and the whole city.',
         duration: '2.5h',
         updated: '2026-10-29',
@@ -293,6 +302,9 @@ export const cities: City[] = [
       {
         id: 'cherry-blossom-walk',
         name: 'Cherry Blossom walk',
+        seoTitle: 'Seoul cherry blossom walks: 4 routes for April',
+        seoDescription:
+          'Four cherry blossom walks in Seoul for early April: Dorimcheon and Anyangcheon, Yeouido Yunjung-ro, Seokchon Lake and more. Free map with blossom pins.',
         description:
           'Four blossom walks for early April: Dorimcheon and the Anyangcheon embankment, Yeouido Yunjung-ro, the Seokchon Lake loop and the Namsan North Loop.',
         duration: '2–3h each',
@@ -337,6 +349,9 @@ export const cities: City[] = [
       {
         id: 'hongdae-hot-places',
         name: 'Hongdae Hot Places',
+        seoTitle: 'Hongdae walks: Gyeongui Forest Park, Red Road',
+        seoDescription:
+          'Two Hongdae walks on one map: the Gyeongui Line Forest Park and Book Street, then the Red Road busking street down to the Han River.',
         description:
           'Two walks through the student quarter: the Gyeongui Line Forest Park from Yeontral Park past the Book Street to Seogang, and the Red Road busking street from Hongik University Station down to the Han River.',
         duration: '1–2h each',
@@ -384,6 +399,9 @@ export const cities: City[] = [
       {
         id: 'bukhansan-dulle-gil-1-3',
         name: 'Bukhansan Dulle-gil 1-2-3',
+        seoTitle: 'Bukhansan Dulle-gil 1-3: 9.3 km trail map',
+        seoDescription:
+          'Dulle-gil trails 1 to 3 around Bukhansan: 9.3 km from Ui-dong over the Pine Forest, Pilgrimage and White Cloud paths. Toilets and cafés pinned.',
         description:
           'Trails 1 to 3 of the path that circles Bukhansan, from the Uiryeong-gil entrance in Ui-dong over the Pine Forest Path, the Pilgrimage Path past the April 19 cemetery and the White Cloud Path to the Bukhansan Eco Forest. 9.3 km, one colour per trail, with public toilets, restaurants and view cafés pinned.',
         duration: '4h',
@@ -431,6 +449,9 @@ export const cities: City[] = [
       {
         id: 'seongsu-dong',
         name: 'Seongsu Popup Street + Forest',
+        seoTitle: 'Seongsu-dong pop-up walk to Seoul Forest',
+        seoDescription:
+          "A 2.8 km walk through Seongsu, Seoul's warehouse district: pop-up lanes, concept stores, bakeries and brunch, ending at the Seoul Forest cafés.",
         description:
           'The warehouse district young Seoul goes to: from Seongsu Station along Yeonmujang-gil and its pop-up lanes to the Seoul Forest café street, 2.8 km. Walk it in either direction, and start or finish in Seoul Forest. Pop-up spaces, stationery and concept stores, bakeries and brunch, with toilets and checked cafés pinned.',
         duration: '3h',
@@ -473,6 +494,9 @@ export const cities: City[] = [
       {
         id: 'gangnam-night-streets',
         name: 'Gangnam Night and Rainbow Bridge',
+        seoTitle: 'Gangnam night walks: Garosu-gil and Banpo',
+        seoDescription:
+          'Gangnam after dark: back streets near the station, Garosu-gil in Sinsa-dong, the Banpo Bridge fountain and Sevit Island, plus Starfield Library by day.',
         description:
           'The back streets around Gangnam Station after dark: Seocho-daero 75-gil and 77-gil on the west side, Teheran-ro 1-gil on the east, and short walks from exits 10 and 11 along Gangnam-daero. Plus Garosu-gil in Sinsa-dong and the Banpo Bridge fountain with Sevit Island on the Han River. Starfield Library and Bongeunsa Temple are pinned for the daytime.',
         duration: '2h',
@@ -522,6 +546,9 @@ export const cities: City[] = [
       {
         id: 'indoors-trip',
         name: 'Indoors Trip',
+        seoTitle: 'Seoul rainy day: indoor places on one map',
+        seoDescription:
+          'What to do in Seoul when it rains or freezes: a botanic-park greenhouse, malls, museums, the Han River Bus and a jjimjilbang. Cafés checked, map included.',
         description:
           'Seoul on a rainy or freezing day, all under a roof: the Magok cluster with the Seoul Botanic Park greenhouse, two indoor malls and the Tadao Ando-designed LG Arts Center, eight big museums, the Han River Bus from Magok to Yeouido and a traditional Korean sauna (jjimjilbang) in the woods. Cafés and restaurants checked, Botanic Park toilets pinned.',
         duration: 'Full day',
@@ -586,6 +613,9 @@ export const cities: City[] = [
       {
         id: 'cherry-blossom-walk',
         name: 'Cherry Blossom walk',
+        seoTitle: 'Busan cherry blossom walks: 4 routes for March',
+        seoDescription:
+          'Four cherry blossom walks in Busan for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil and more. Free map with blossom pins.',
         description:
           'Four blossom walks for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil over the pass to Songjeong, and the Nakdong embankment at Samnak.',
         duration: '1.5–3h each',
@@ -625,6 +655,9 @@ export const cities: City[] = [
       {
         id: 'haeundae-coast',
         name: 'Haeundae Coastal Path',
+        seoTitle: 'Haeundae coastal walk: Dongbaek to Songjeong',
+        seoDescription:
+          'A 9.5 km Busan coast walk in three parts: Dongbaek Island, Haeundae Beach, the Blueline Park cliffs, Daritdol skywalk and Songjeong Beach. Free map.',
         description:
           'Haeundae Station to the beach, the Dongbaek Island boardwalk past Nurimaru, east along the sand to Mipo, the Blueline Park walkway along the cliffs to Cheongsapo and the Daritdol skywalk, and on to Songjeong Beach. 9.5 km in three parts.',
         duration: 'Half day',
@@ -667,6 +700,9 @@ export const cities: City[] = [
       {
         id: 'villages-and-hotspots',
         name: 'Culture Villages and Hotspots',
+        seoTitle: 'Busan culture villages and Gwangalli night walk',
+        seoDescription:
+          "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, Gamcheon and Huinnyeoul villages, Nampo-dong markets and Haedong Yonggungsa.",
         description:
           'The Gwangalli night walk, 2.9 km under the lit bridge, plus Busan\'s other must-sees on one map: the Nampo-dong markets, the Huinnyeoul and Gamcheon culture villages, Busan\'s Chinatown and Haedong Yonggungsa temple. Toilets and checked restaurants and cafés at each.',
         duration: '2h walk',
@@ -942,6 +978,9 @@ export const cities: City[] = [
       {
         id: 'china-town',
         name: 'Incheon China Town',
+        seoTitle: 'Incheon China Town walk: lanterns and murals',
+        seoDescription:
+          "Korea's oldest China Town, 2 minutes from Incheon Station: the lantern street, Songwol-dong Fairy Tale Village, the Japanese-style street and murals.",
         description:
           'Korea\'s oldest China Town, 2 minutes from Incheon Station: the lantern street and its lanes, the Songwol-dong Fairy Tale Village loop, the Japanese-style street of the old port, plus the two mural streets and the Incheon Citizens\' House.',
         duration: '2–3h',
@@ -1042,6 +1081,9 @@ export const cities: City[] = [
       {
         id: 'wolmido-sunset',
         name: 'Wolmido Sunset',
+        seoTitle: 'Wolmido sunset walk and Sea Train, Incheon',
+        seoDescription:
+          'Wolmido island at sunset: reach it from Incheon Station, ride the Sea Train, walk the 5 km loop and stop at sunset cafés and the hilltop observatory.',
         description:
           'Wolmido island at sunset: from Incheon Station by monorail or bus, all four Wolmi Sea Train stops, the 5 km Wolmido walking loop, four sunset cafés and the hilltop observatory. Public toilets pinned.',
         duration: '3h',
@@ -1100,6 +1142,9 @@ export const cities: City[] = [
       {
         id: 'ganghwa-do',
         name: 'Ganghwa-do island day trip',
+        seoTitle: 'Ganghwa-do day trip: temples, forts and cafés',
+        seoDescription:
+          "Incheon's big island in a day: a hanok-style church, an old temple, coastal forts and a textile town, with cafés and restaurants pinned on a free map.",
         description:
           "Incheon's big island in a day: a hanok-style church, a temple said to be among Korea's oldest, old coastal forts and a textile town, with cafés and restaurants pinned. Five map layers, 21 pins.",
         duration: 'Full day',
@@ -1233,6 +1278,9 @@ export const cities: City[] = [
       {
         id: 'hwaseong',
         name: 'Suwon with Hwaseong Fortress',
+        seoTitle: 'Suwon Hwaseong Fortress walk: 5.6 km loop',
+        seoDescription:
+          'Walk the 5.6 km Hwaseong Fortress wall in Suwon, with its four gates and view points, plus Haenggung-dong lanes. Public toilets and 18 pins on the map.',
         description:
           "Hwaseong Fortress in one loop: the 5.6 km wall with its four gates and view points, the palace and lanes of Haenggung-dong, and a few stops beyond the walls. Four map layers, 18 pins, public toilets included.",
         duration: '3h',
@@ -1365,6 +1413,9 @@ export const cities: City[] = [
       {
         id: 'abroad-in-korea',
         name: 'Abroad in Korea',
+        seoTitle: "Korea's German village, Petite France and more",
+        seoDescription:
+          'Korean places that feel like somewhere else: European villages, Japanese colonial sites, China Towns and Central Asian districts. 22 pins with photos.',
         description:
           'Places in Korea that feel like somewhere else: European villages, Japanese colonial sites, China Towns, American and Central Asian districts. 22 pins across the country, with photos.',
         updated: '2026-10-26',
