@@ -53,9 +53,6 @@ export default function Home() {
                       alt=""
                       decoding="async"
                     />
-                    {city.imageCredit && (
-                      <span className="credit">{city.imageCredit}</span>
-                    )}
                   </span>
                 </Link>
               )}
@@ -98,6 +95,9 @@ export default function Home() {
                       <RichText text={para} />
                     </p>
                   ))}
+                  {city.imageCredit && (
+                    <p className="photo-credit">{city.imageCredit}</p>
+                  )}
                 </section>
               )}
             </li>

@@ -76,7 +76,8 @@ sips -c <band> <width> --cropOffset <y> 0 wide.jpg --out crop.jpg
 sips -Z 1200 -s format jpeg -s formatOptions 72 crop.jpg --out assets/busan.jpg
 ```
 Then set `image: 'busan.jpg'` and `imageCredit: 'Photo: Busan Metropolitan City · KOGL 1'` on the city in
-`src/data/travel.ts`, and add the Commons page URL to the README "Credits" list. Images are referenced as
+`src/data/travel.ts` (it is shown as the last line of the intro text, see the layout rules below), and add the
+Commons page URL to the README "Credits" list. Images are referenced as
 `${import.meta.env.BASE_URL}<file>` — never a leading `/`, the site lives under `/MyTravelPath/`.
 
 Favicon / app icon: the user supplies the artwork (current one: a route map with the Korean flag, Namsan
@@ -96,7 +97,10 @@ tricks or transparency work unless asked.
   **above the map**, never buried in the guide text. Placeholder `REPLACE_ME` links render disabled.
 - `updated` (ISO date on every path in `travel.ts`) is bumped on **every** edit to that page: text, notice,
   pins or map. Standing rule from the user (2026-10-20).
-- Credits on photos: tiny translucent pill, bottom-right, clipped by the card (`overflow: hidden`).
+- **Photo credits are text, not an overlay** (user rule 2026-10-30: "put the information inside the card at the end
+  of the introduction"). `imageCredit` renders as a `.photo-credit` line (11 px, `--muted`) as the **last line of the
+  intro text**: on Home at the bottom of the "About <city>" card, on a path page at the end of the intro paragraphs
+  of "About this walk", before "The route". Nothing is drawn on the photo itself; the old bottom-right pill was removed.
 - Dark and light mode both come from the tokens in `src/index.css`; photos and icon colours are fixed.
 
 ## 3b. Typography and text colour (user rule, 2026-10-24)

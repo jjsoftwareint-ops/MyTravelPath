@@ -79,9 +79,6 @@ export default function PathDetail() {
                 alt=""
                 decoding="async"
               />
-              {path.imageCredit && (
-                <span className="credit">{path.imageCredit}</span>
-              )}
             </span>
           )}
           <div className="card-body">
@@ -252,6 +249,9 @@ export default function PathDetail() {
                 <RichText text={text} />
               </p>
             ))}
+            {path.imageCredit && (
+              <p className="photo-credit">{path.imageCredit}</p>
+            )}
             {path.guide.route && (
               <>
                 <h3>🚶 The route</h3>

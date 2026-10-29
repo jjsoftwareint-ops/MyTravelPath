@@ -467,21 +467,12 @@ a:focus-visible {
   height: 120px;
   object-fit: cover;
 }
-.credit {
-  position: absolute;
-  right: 8px;
-  bottom: 6px;
-  padding: 2px 7px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.45);
-  color: rgba(255, 255, 255, 0.9);
-  max-width: calc(100% - 16px);
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  line-height: 1.4;
-  letter-spacing: 0.01em;
+/* Photo credit for the banner, as the last line of the intro text (user request 2026-10-30). */
+.photo-credit {
+  margin: 8px 0 0 !important;
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  color: var(--muted) !important;
 }
 
 /* ── Accordion: city → paths ───────────────────────────────────────────────────────── */
