@@ -168,7 +168,7 @@ def validate(kml, before=None):
     if bad:
         print('FAIL blue/green icons still in use:', bad); ok = False
     pins = [p for p in re.findall(r'<Placemark>.*?</Placemark>', kml, re.S) if '<Point>' in p]
-    noclick = [cl(re.search(r'<name>(.*?)</name>', p, re.S).group(1)) for p in pins if '<name>*CLICK* ' not in p]
+    noclick = [n for n in (cl(re.search(r'<name>(.*?)</name>', p, re.S).group(1)) for p in pins) if not n.startswith('*CLICK* ')]   # names may sit in CDATA
     hangul = [n for n in (cl(re.search(r'<name>(?:\*CLICK\* )?(.*?)</name>', p, re.S).group(1)) for p in pins) if re.match(r'[가-힣]', n)]
     kakao = len(re.findall('kakao', kml.replace('KakaoTalk', ''), re.I))
     if noclick or hangul or kakao:
@@ -204,7 +204,7 @@ def main():
     for pin in spec.get('add', []):
         img = pin.get('image', 'auto')
         img = None if img == 'none' else (og(pin['naver_id'], cache, offline) if img == 'auto' else img)
-        i = next((m.start() for m in re.finditer(r'<Folder><name>(.*?)</name>', kml) if cl(m.group(1)).startswith(pin['folder'])), None)
+        i = next((m.start() for m in re.finditer(r'<Folder>\s*<name>(.*?)</name>', kml) if cl(m.group(1)).startswith(pin['folder'])), None)
         if i is None:
             print('FAIL no folder starting with', pin['folder']); return 1
         j = kml.index('</Folder>', i)

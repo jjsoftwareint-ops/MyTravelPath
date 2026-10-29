@@ -1280,6 +1280,90 @@ export const cities: City[] = [
         },
       },
       {
+        id: 'paju',
+        name: 'Paju: DMZ, Heyri and the Imjin River',
+        seoTitle: 'Paju day trip: Imjingak, DMZ tour and Heyri',
+        seoDescription:
+          'Paju day trip north of Seoul: Imjingak and the Peace Gondola, the DMZ tour to the 3rd Tunnel, Heyri Art Village, Book City, two suspension bridges. Buses, hours and a map.',
+        description:
+          "Paju in one map: Imjingak and the DMZ tour, Heyri Art Village and Provence, Odusan Observatory, Book City, the Gamaksan and Majang Lake suspension bridges, with 18 well-known restaurants and the public toilets.",
+        duration: 'Day trip',
+        image: 'paju.jpg',
+        imageCredit: 'Photo: 한국문화관광연구원 · CC0',
+        updated: '2026-10-30',
+        keywords: ['Paju', 'Gyeonggi', 'DayTripFromSeoul', 'DMZ', 'Imjingak', 'HeyriArtVillage', 'PajuBookCity', 'GamaksanSuspensionBridge', 'MajangLake', 'PajuPremiumOutlets', 'KoreaTravel'],
+        story: {
+          title: 'The last stop before the border',
+          text: [
+            "Paju is where the roads north end. **Imjingak** was built in 1972 as a place where families cut off from the North could look across the Imjin River; next to it the **Freedom Bridge** is where 12,773 prisoners of war walked south in 1953. The **3rd Tunnel**, dug under the border and found in 1978, is 4 km on, inside the civilian control line, so you can only go with the DMZ tour.",
+            "The same river gives the town its food: the eel houses on its banks, the spicy river-fish stews at Duji-ri, and the **Jangdan beans** grown in the fields along the control line, which every tofu restaurant here puts on its sign.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🛂',
+            title: 'DMZ tour: passport, closed Mondays, tickets at Imjingak',
+            body: "The tour to the **3rd Tunnel** and **Dora Observatory** leaves from the ticket office at Imjingak, Tue–Sun **09:00–14:30**, closed Mondays and on weekday public holidays. Every foreign visitor needs the **original passport**. Walking into the tunnel ₩9,200, with the monorail ₩12,200; no concessions for foreigners, no photos on the course.",
+            since: 'Paju city DMZ site (dmz.paju.go.kr) and Naver Map, checked 30 October 2026.',
+          },
+          {
+            icon: '🚧',
+            title: 'Dora Observatory skipped 23–30 November 2026',
+            body: "The access road is resurfaced **23–30 November 2026**. That week the tour goes to the **3rd Tunnel only** and tickets are sold on the spot, not online.",
+            since: 'Notice on the Paju city DMZ site, posted 23 October 2026.',
+          },
+          {
+            icon: '⏰',
+            title: 'Odusan Observatory and the Heyri museum close on Mondays',
+            body: "**Odusan Unification Observatory** is open 09:30–17:30 March to October and 10:00–17:00 November to February, last entry 30 min before, **closed Mondays**, free. The **Museum of Korean Modern and Contemporary History** in Heyri is open 10:00–18:00 Tue–Sun, closed Mondays.",
+            since: 'Naver Map and the observatory site, checked 30 October 2026.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Peace Gondola fares',
+            body: "The gondola over the Imjin River runs weekdays **09:00–18:00** and weekends 09:00–19:00, closed the first Monday of March, June, September and December. Return ticket adult **₩12,000**, child ₩10,000; the glass-floor crystal cabin ₩15,000 / ₩13,000.",
+            since: 'dmzgondola.com and Naver Map, checked 30 October 2026.',
+          },
+          {
+            icon: '⛵',
+            title: 'Hwangpo sailboat: no sailings December to February',
+            body: "The replica cargo sailboat on the Imjin River at Duji-ri sails Tue–Fri 13:00–15:00 and Sat–Sun 10:00–17:00, closed Mondays, needs **at least 8 passengers** per sailing and does not run **December to February**. About ₩10,000 adult.",
+            since: 'Naver Map, checked 30 October 2026; the fare comes from travel sites, not an official page.',
+          },
+          {
+            icon: '🚌',
+            title: 'Weekend double-decker buses no longer run',
+            body: "The weekend buses that used to serve Heyri, Majang Lake and the Gamaksan bridge (routes **7300, 7500, 7700, 7701**) were withdrawn on **1 January 2025**. Older guides still list them; use the routes in the tips below.",
+            since: 'Paju city notice, December 2024. Checked 30 October 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1IFyDpcP7u9GmFBPVBJLp5UQTpSIXw1E',
+        guide: {
+          intro: [
+            "🕊️ **Paju** is the day trip north of Seoul that most visitors only know for the DMZ, and the DMZ is the reason to come: the **Peace Gondola** over the Imjin River, the tour to the **3rd Tunnel** and Dora Observatory, and the windmills of Pyeonghwa Nuri park. But the same town has an artists' village, a city built for publishers, an outlet mall and two long suspension bridges, and the map pins all of them with their Naver photos and hours.",
+            "The stops are spread over 40 km, so this is a **pick one cluster** kind of day: Imjingak and the DMZ, or Heyri with Provence and Odusan, or the bridges in the east. The restaurants layer has 18 places with thousands of reviews each, so you will not eat badly wherever you end up.",
+          ],
+          route: [
+            "Imjingak Tourist Site, Pyeonghwa Nuri Park and the Dokgae Bridge: the park with the windmills, the old railway bridge you can walk out on, and the Peace Gondola across the river. The DMZ tour ticket office is in the same car park.",
+            "The 3rd Infiltration Tunnel and Dora Observatory: by tour bus from Imjingak only, passport in hand. Dora looks straight into Kaesong on a clear day.",
+            "Heyri Art Village, the Museum of Korean Modern and Contemporary History and Provence Village: galleries and cafés in a wetland village, a museum of 20th-century street life, and the pastel French village 1 km away.",
+            "Gyeonggi Future Education Paju Campus (the former English Village) and Odusan Unification Observatory: the mock-English campus is free to walk; Odusan looks across the Han and Imjin confluence to North Korean villages 2 km away.",
+            "Paju Book City, the Forest of Wisdom and Paju Premium Outlets: the publishers' city with its library of 20,000 donated books, and the outlet mall 6 km north.",
+            "Imjin River Hwangpo sailboat pier and the Gamaksan Suspension Bridge: the river-stew village of Duji-ri in the north-east, and a 150 m bridge over a gorge 7 km further.",
+            "Byeokchoji Arboretum, First Garden and the Majang Lake Suspension Bridge: the gardens of Gwangtan and a 220 m bridge across a reservoir, with the lake café at its end.",
+          ],
+          tips: [
+            "🚌 Heyri, Book City, both outlets and Provence: bus **2200** from Hongik University Station exit 1 or Hapjeong Station exit 1, every 10–15 minutes, about 45–50 minutes on the Jayu-ro expressway. It stops at Lotte Premium Outlets in Book City, Heyri gates 1, 4 and 6, the Future Education campus and the back gate of Paju Premium Outlets. Odusan is a 10-minute taxi ride from Heyri.",
+            "🚆 Imjingak: take the Gyeongui-Jungang line to **Munsan Station** (about 1 h 15 from Seoul Station or Hongik University), then bus **058** from the stop 200 m from exit 1 (only every 35–80 minutes) or a 15-minute taxi. Red bus **9710** from Gwanghwamun and Seoul Station also goes to Munsan Station. Korail's shuttle train from Munsan to Imjingang Station has been suspended several times; check before relying on it.",
+            "🚌 Gamaksan bridge: from Munsan Station bus **92** or 95 to Jeokseong traditional market, then bus 25 or 25-1 to the Chulleong-dari-ipgu stop. Majang Lake: bus 31 or 774 from Bulgwang Station exit 8 to Gwangtan junction, then 37 or 313 to Gisan-ri and a 20-minute walk. Both are slow; a taxi from Munsan or Geumchon is the realistic option.",
+            "🎫 Paju City Tour: a coach from Hongik University Station at **09:00**, Tuesday to Sunday, with a different course each day (Heyri and Odusan, Majang Lake and Byeokchoji, the sailboat and Jeokseong market, the DMZ). From ₩7,000 per person, booking on pjcitytour.kr or 02-730-0531, minimum 10 people, photo ID on the day.",
+            "🍜 The pink pins are the restaurants: two famous eel houses, the Duji-ri river-fish stews, Jangdan-bean tofu at Provence and near Imjingak, the garlic-bread bakery, a 120-year-old chogyetang house, and the big cafés at Munjiri and the Majang bridge. Each pin has its hours and the date it was checked.",
+            "🚻 Public toilets are pinned in their own layer at Imjingak (three), Odusan and the Gamaksan bridge car park. The gardens, museums and malls have toilets inside.",
+            "📝 Hours and fares were read on 30 October 2026 from Naver Map and the official sites. The museum and First Garden prices rest on travel sites only.",
+          ],
+        },
+      },
+      {
         id: 'hwaseong',
         name: 'Suwon with Hwaseong Fortress',
         seoTitle: 'Suwon Hwaseong Fortress walk: 5.6 km loop',

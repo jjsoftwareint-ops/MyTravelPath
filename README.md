@@ -117,6 +117,9 @@ All allow free use; the credit is given in every case.
 - Gapyeong path banner: *Nami Island (South Korea) banner Tree Lane* (the tree-lined lane on Nami Island),
   Jocelyndurrey, CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Nami_Island_(South_Korea)_banner_Tree_Lane.JPG
+- Paju path banner: *Imjingak pyunghwanuri* (the windmill hill of Pyeonghwa Nuri park at Imjingak),
+  한국문화관광연구원 (Korea Culture & Tourism Institute), CC0.
+  https://commons.wikimedia.org/wiki/File:Imjingak_pyunghwanuri.jpg
 - Indoors Trip path banner: *Seoul botanic park 05* (the greenhouse), Korea.net / Korean Culture and
   Information Service, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Seoul_botanic_park_05.jpg
 - Naksan Park path banner: *서울 한양도성 … 낙산야경1-1*, Seoul Metropolitan Fire &
