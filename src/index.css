@@ -440,7 +440,9 @@ a:focus-visible {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  transition: background 0.08s ease, border-color 0.08s ease;
+  transition:
+    background 0.08s ease,
+    border-color 0.08s ease;
 }
 .group.has-image .group-row {
   border-top: 0;
@@ -845,6 +847,12 @@ a:focus-visible {
 .visitors b {
   font-weight: 700;
 }
+.korea-map {
+  display: block;
+  width: min(50%, 360px);
+  height: auto;
+  margin: 32px auto 0;
+}
 .content > .notice {
   margin-bottom: 14px; /* home page: notice above the list */
 }
@@ -1161,7 +1169,7 @@ button.cta {
   width: 22px;
   height: 22px;
 }
-.bookmark-toggle[aria-pressed='true'] {
+.bookmark-toggle[aria-pressed="true"] {
   background: var(--accent);
   color: var(--accent-text);
 }

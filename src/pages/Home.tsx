@@ -105,6 +105,14 @@ export default function Home() {
         })}
       </ul>
 
+      <img
+        className="korea-map"
+        src={`${import.meta.env.BASE_URL}korea-map.webp`}
+        alt="Map of South Korea showing its provinces and major cities"
+        width={724}
+        height={960}
+        decoding="async"
+      />
     </Layout>
   );
 }
