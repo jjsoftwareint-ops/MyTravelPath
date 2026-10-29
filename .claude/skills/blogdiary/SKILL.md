@@ -16,11 +16,19 @@ Path guide text is a different job: that is the `blogwriting` skill.
 
 ## 1. Where a post lives
 
+**Post ids (user rule, 2026-10-29):** a new post's `id` is its creation date and time, `YYYY-MM-DD-HHMM` in
+Seoul time (`2026-10-29-1430`, address `/blog/2026-10-29-1430/`). Not a title slug: titles get edited later, and
+then the address no longer matches. Words in a URL are a very small search signal, so nothing is lost. **Never
+rename an existing post's id** (the 12 posts made before this rule keep their slugs): a changed address drops
+out of Google's index and shows as redirect or not-indexed warnings in Search Console. The sitemap, canonical
+link and Article JSON-LD are all built from the id, so they follow automatically. The `date` field stays
+`YYYY-MM-DD`; two posts in the same minute are impossible, check the id is unique anyway.
+
 One entry in `posts` in [src/data/blog.ts](../../../src/data/blog.ts), **newest first**:
 
 ```ts
 {
-  id: 'is-the-long-line-worth-it',       // URL slug
+  id: '2026-10-29-1430',                 // URL: creation date and time, YYYY-MM-DD-HHMM (see 'Post ids' below)
   title: 'Is the long line really worth it?',
   description: 'One or two sentences: meta description and social preview.',
   teaser: 'One short sentence.',          // shown under the title in the list
@@ -173,7 +181,7 @@ Sharing Debugger after a change.
 1. User gives a topic (or Claude proposes one) → research → draft the entry → `npm run build` → screenshot at phone
    width (390px) → user reviews. **No commit or push until told** (CLAUDE.md).
 2. Per post: every Hangul word has its pronunciation in parentheses (grep check in section 2) and an English gloss · a visual for any dish or object nobody could picture
-   (free photo, or tell the user none exists; never a look-alike passed off as the thing) · `teaser` is one short sentence · `id` unique and URL-safe · `date`/`updated` set · `keywords` · description under ~160
+   (free photo, or tell the user none exists; never a look-alike passed off as the thing) · `teaser` is one short sentence · `id` is the creation date-time (`YYYY-MM-DD-HHMM`), never a title slug · `date`/`updated` set · `keywords` · description under ~160
    characters · newest first in the array · no invented experiences · facts sourced and dated ·
    images credited or captioned · at most two in-article `ad` blocks · build passes and
    `dist/blog/<id>/index.html` exists.

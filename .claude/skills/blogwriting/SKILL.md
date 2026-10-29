@@ -232,7 +232,7 @@ link previews see the content without JavaScript. Consequences for writing:
 - `updated` on a path becomes the sitemap `lastmod` and the Article `dateModified`: bump it on every edit.
 - `sitemap.xml` is **generated at build time**; never hand-edit one into `assets/`.
 - **Every city, path and post `id` is lowercase letters, digits and hyphens** (`indoors-trip`, never `Indoors Trip`):
-  the id is the URL. `scripts/prerender.mjs` now fails `npm run build` on any other route (2026-10-24: a path id with a
+  the id is the URL (blog posts use `YYYY-MM-DD-HHMM`, see the blogdiary skill; never rename a live id). `scripts/prerender.mjs` now fails `npm run build` on any other route (2026-10-24: a path id with a
   space and capitals reached the sitemap as `/seoul/Indoors Trip/`, which Google cannot use). After adding a path or
   post, open `dist/sitemap.xml` and read the new line before pushing.
 - Paths still showing "Map link coming soon" (`mapUrl: 'REPLACE_ME'`) are pre-rendered but **left out of the sitemap**
