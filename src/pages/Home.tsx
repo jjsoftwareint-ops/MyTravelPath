@@ -91,8 +91,8 @@ export default function Home() {
                 </ul>
               )}
               {open && city.intro && (
-                <section className="city-intro" aria-label={`About the ${city.name} routes`}>
-                  <h3>About these routes</h3>
+                <section className="city-intro" aria-label={city.theme ? "About these routes" : `About ${city.name}`}>
+                  <h3>{city.theme ? "About these routes" : `About ${city.name}`}</h3>
                   {city.intro.map((para, i) => (
                     <p key={i}>
                       <RichText text={para} />

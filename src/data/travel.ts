@@ -73,8 +73,8 @@ export const cities: City[] = [
     id: 'seoul',
     name: 'Seoul',
     intro: [
-      "Ten routes in the capital. The shortest are a one-to-two-hour stroll in **Hongdae** or an evening in **Haebangchon**; the longest is the **Bukhansan Dulle-gil** trek at about four hours.",
-      "The cherry blossom walks are for spring, the night walks (the fortress wall and stream, Gangnam) are best after dark, and the **Indoors Trip** fills a whole rainy day under a roof.",
+      "Korea's capital for more than 600 years, since the Joseon dynasty made it its seat in 1394. About **9 million people** live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
+      "The **Han River** splits it in two: palaces, hanok lanes and the old fortress wall on the north bank, towers and Gangnam on the south. Four inner mountains, **Bugaksan, Inwangsan, Naksan and Namsan**, ring the old city, and the subway reaches almost everywhere.",
     ],
     image: 'seoul.jpg',
     imageCredit: 'Photo: Seoul Tourism Organization · KOGL 1',
@@ -605,7 +605,8 @@ export const cities: City[] = [
     id: 'busan',
     name: 'Busan',
     intro: [
-      "Three routes in Korea's second city: a spring **cherry blossom walk**, the **Haeundae Coastal Path** for half a day by the sea, and a two-hour walk through the **culture villages** and hotspots, which is also good at night.",
+      "Korea's second city, with about **3.3 million people**, a big port on the south-east coast and a different feel from Seoul: hills running down to the sea, beaches in the middle of the city, and a stronger local accent.",
+      "**Haeundae** is the famous beach, **Gamcheon** the hillside culture village, **Jagalchi** the fish market. The KTX high-speed train from Seoul takes about two and a half hours.",
     ],
     image: 'busan.jpg',
     imageCredit: 'Photo: Busan Metropolitan City · KOGL 1',
@@ -767,7 +768,8 @@ export const cities: City[] = [
     id: 'jeju',
     name: 'Jeju',
     intro: [
-      "Four **Olle trail** routes, each about one day on foot. Two of them are on small islands, **Udo** and **Chuja**, so plan the boat before you set out.",
+      "A volcanic island off the south coast and a province of its own, about an hour's flight from Seoul. **Hallasan**, at 1,947 m the highest mountain in South Korea, rises in the middle, and the island's volcanic landscape and lava tubes are a UNESCO World Natural Heritage site.",
+      "The **Olle trails** loop around the coast and through villages for more than 400 km. Public buses are slow and sparse, so many visitors rent a car.",
     ],
     seoTitle: 'Jeju walking trails: Olle routes with maps',
     seoDescription: 'Free Jeju walking trails: Olle Trail routes 1, 1-1, 5, 6, 7, 17 and 18-1 on Google My Maps, with toilets, stamp boxes, restaurants and cafés pinned.',
@@ -970,7 +972,8 @@ export const cities: City[] = [
     id: 'incheon',
     name: 'Incheon',
     intro: [
-      "Four routes, from a two-to-three-hour old-town walk in **China Town** and a night hike on **Gyeyangsan**, to a three-hour sunset walk on **Wolmido** and a full day on **Ganghwa-do** island.",
+      "Korea's third-largest city, on the west coast next to Seoul, and the home of **Incheon International Airport**, which is why it is most visitors' first stop. The subway and the airport railway link it to Seoul.",
+      "Its port opened to foreign ships in 1883, which left Korea's first **China Town** and old harbour streets. The city also covers islands such as **Ganghwa-do**, **Wolmido** and the airport island of Yeongjong.",
     ],
     image: 'incheon.jpg',
     imageCredit: 'Photo: Cameron Henderson · Public domain',
@@ -1206,7 +1209,8 @@ export const cities: City[] = [
     id: 'gyeonggi-do',
     name: 'Gyeonggi-do',
     intro: [
-      "Two day trips: **Gapyeong**, with its gardens, lakeside cafés and the ferry to Nami Island (pick two or three stops and go by car), and **Suwon**, a three-hour walk around the Hwaseong Fortress old town.",
+      "The province that wraps around Seoul and Incheon, and Korea's most populous one with more than **13 million people**. Its capital is **Suwon**, whose Hwaseong Fortress is a UNESCO World Heritage site.",
+      "Beyond the suburbs it turns to rivers, lakes and hills, easy day trips from Seoul by subway, train or bus. **Gapyeong**, about an hour east, is known for its lakeside cafés and Nami Island.",
     ],
     image: 'gyeonggi.jpg',
     imageCredit: 'Photo: Korea Tourism Organization · KOGL 1',
