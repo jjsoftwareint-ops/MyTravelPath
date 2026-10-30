@@ -18,6 +18,7 @@ export default function PostList({ currentId }: { currentId?: string }) {
                 <Link to={`/blog/${p.id}/`} aria-current={p.id === currentId ? 'page' : undefined}>
                   <strong>{p.title}</strong>
                   <span>{p.teaser}</span>
+                  <span className="post-list-tags">{p.keywords.map((k) => `#${k}`).join(' ')}</span>
                   {p.id === lastRead && p.id !== currentId && <em className="pill">📖 Continue reading</em>}
                 </Link>
               </li>

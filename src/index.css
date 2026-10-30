@@ -1272,6 +1272,11 @@ button.cta {
   font-size: 14px;
   color: var(--muted);
 }
+.post-list span.post-list-tags {
+  font-size: 10px;
+  color: var(--muted);
+  opacity: 0.55;
+}
 .post-list em.pill {
   align-self: flex-start;
   margin-top: 4px;
