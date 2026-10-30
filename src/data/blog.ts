@@ -37,6 +37,55 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-10-30-1145',
+    title: 'Sir Patrick Stewart has died at 86. Korean cinemas haven\'t said goodbye yet.',
+    description:
+      'The actor behind Captain Picard and Professor X died on 28 October 2026. His last screen role, in Avengers: Doomsday, is still due in Korean cinemas this December.',
+    teaser: 'His last film hasn\'t opened here yet.',
+    icon: 'candle',
+    date: '2026-10-30',
+    updated: '2026-10-30',
+    keywords: ['PatrickStewart', 'StarTrek', 'XMen', 'AvengersDoomsday', 'ProfessorX', 'Logan', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "**Sir Patrick Stewart** died at his home in Los Angeles on 28 October 2026, at 86. His spokesperson, Kelly Bush Novak, said he had \"a brief and poignant journey with Alzheimer's Disease and Lewy Body Dementia.\" His wife, Sunny Ozell, was with him.",
+      },
+      {
+        type: 'img',
+        src: 'patrick-stewart-peabody.jpg',
+        alt: 'Sir Patrick Stewart, in a grey suit, holding an award beside Peabody Awards director Horace Newcomb',
+        caption: 'Sir Patrick Stewart (right) receiving a Peabody Award from director Horace Newcomb, May 2012.',
+        href: 'https://commons.wikimedia.org/wiki/File:Patrick_Stewart_(7268383816).jpg',
+        credit: { author: 'Anders Krusberg / Peabody Awards', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/' },
+      },
+      { type: 'h', text: 'The man millions met twice', icon: 'camera' },
+      {
+        type: 'p',
+        text: 'He played Captain Jean-Luc Picard on **Star Trek: The Next Generation** from 1987, then returned to the role across three seasons of **Star Trek: Picard**. He played **Professor Charles Xavier** in the X-Men films from 2000 onward, a role he was set to reprise once more. Hugh Jackman, his X-Men co-star for over a decade, called him one of the greats of stage and screen; Marvel Studios said it was "deeply saddened" by his passing.',
+      },
+      { type: 'h', text: 'Sixty years on stage first', icon: 'performing_arts' },
+      {
+        type: 'p',
+        text: 'Before any of that, Stewart spent decades with the **Royal Shakespeare Company**, won two Olivier Awards, and was knighted in 2010 for services to drama. His 2023 memoir, *Making It So*, was a New York Times bestseller.',
+      },
+      { type: 'space' },
+      { type: 'h', text: "Korea's own goodbye to Wolverine", icon: 'admission_tickets' },
+      {
+        type: 'p',
+        text: "We don't know of a single place in Korea Stewart ever filmed or visited, and we're not going to invent one. But Korean cinemas do have a real claim on this story. **Logan**, his and Jackman's last outing together as Professor X and Wolverine, opened at No. 1 here in March 2017 and drew about 2.1 million admissions, a strong result for an R-rated film.",
+      },
+      {
+        type: 'p',
+        text: "And he isn't finished on Korean screens yet. Stewart's last performance as Professor X is already filmed, for **Avengers: Doomsday**, due in US cinemas on 18 December 2026; a Korean release poster lists 16 December, which would match how recent Marvel films have tended to open a day or two early here. The first teaser shows Professor X caught in a collision of two film universes, widely read as the end of the X-Men line he has played since 2000.",
+      },
+      {
+        type: 'verdict',
+        text: 'A strange kind of send-off: arranged months ago, before anyone knew it would be one. Rest well, Sir Patrick. Professor X gets one last scene, and Korea gets to watch it.',
+      },
+    ],
+  },
+  {
     id: '2026-10-30-0845',
     title: "Nami Island isn't really a country. Try telling the gift shop that.",
     description:

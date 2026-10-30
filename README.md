@@ -159,6 +159,10 @@ All allow free use; the credit is given in every case.
 - Blog, Naminara Republic post: *남이섬 (36)* (the cenotaph built for General Nami), Jocelyndurrey, CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:%EB%82%A8%EC%9D%B4%EC%84%AC_(36).JPG
 
+- Blog, Patrick Stewart obituary post: *Patrick Stewart (7268383816)* (receiving a Peabody Award from
+  director Horace Newcomb, May 2012), Anders Krusberg / Peabody Awards, CC BY 2.0.
+  https://commons.wikimedia.org/wiki/File:Patrick_Stewart_(7268383816).jpg
+
 The app icon, favicon and home-header mark are the project's own artwork (a suitcase with a
 Korean flag tag among cherry blossoms).
 Tag icons are from FontAwesome (CC BY 4.0), Game Icons (CC BY 3.0) and Lucide (ISC),
