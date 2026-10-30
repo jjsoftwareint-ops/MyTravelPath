@@ -703,11 +703,11 @@ export const cities: City[] = [
         name: 'Culture Villages and Hotspots',
         seoTitle: 'Busan culture villages and Gwangalli night walk',
         seoDescription:
-          "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, Gamcheon and Huinnyeoul villages, Nampo-dong markets and Haedong Yonggungsa.",
+          "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, Gamcheon and Huinnyeoul villages, Nampo-dong markets, Haedong Yonggungsa, Beomeosa, the Dongbaek Island night views and the Songdo cloud bridge.",
         description:
-          'The Gwangalli night walk, 2.9 km under the lit bridge, plus Busan\'s other must-sees on one map: the Nampo-dong markets, the Huinnyeoul and Gamcheon culture villages, Busan\'s Chinatown and Haedong Yonggungsa temple. Toilets and checked restaurants and cafés at each.',
+          'The Gwangalli night walk, 2.9 km under the lit bridge, plus Busan\'s other must-sees on one map: the Nampo-dong markets, the Huinnyeoul and Gamcheon culture villages, Busan\'s Chinatown, Haedong Yonggungsa temple, the Dongbaek Island boardwalk loop past Nurimaru APEC House and The Bay 101, and further-out pins at Beomeosa, the Songdo cloud bridge, Byeongpungam Seokbulsa, Orangdae and the Jukseong film-set church in Gijang. Toilets and checked restaurants and cafés at each.',
         duration: '2h walk',
-        updated: '2026-10-25',
+        updated: '2026-10-30',
         tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
         story: {
           title: 'When Busan was the capital',
@@ -719,7 +719,7 @@ export const cities: City[] = [
         image: 'gamcheon.jpg',
         imageCredit: 'Photo: Basile Morin · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=11Nm3BTkYHgR9W5t2oMYbhGo-tN8Tg0k',
-        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'NightMarket', 'BusanChinatown', 'KoreaTravel'],
+        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'NightMarket', 'BusanChinatown', 'DongbaekIsland', 'NurimaruAPECHouse', 'TheBay101', 'Beomeosa', 'SongdoCloudBridge', 'Seokbulsa', 'Orangdae', 'JukseongChurch', 'KoreaTravel'],
         notices: [
           {
             icon: '🌃',
@@ -737,7 +737,7 @@ export const cities: City[] = [
         guide: {
           intro: [
             "🌉 **Gwangalli after dark** is the Busan evening I send everyone to: a long beach with the Diamond Bridge lit in colour across the bay, chicken and beer on the sand, and at the far end a fish market where you buy your dinner downstairs and eat it on the steps under the bridge. On Saturdays a thousand drones draw pictures over the water.",
-            "The walk itself is short, **2.9 km and flat**, which is why this map also carries the other places people ask me about in Busan: the Nampo-dong markets, the two hillside villages and the temple on the rocks. They are not on a walking line from each other, so each hot spot has its own pins, toilets and food, and the guide tells you how to get there.",
+            "The walk itself is short, **2.9 km and flat**, which is why this map also carries the other places people ask me about in Busan: the Nampo-dong markets, the two hillside villages, the temple on the rocks, the camellia island out in Haeundae with Busan's other great night view, and a handful of pins further out still: a mountain temple, a cliff shrine, a glass-floor bridge and a film-set church.",
           ],
           route: [
             "Gwangan Station exit 3, ten minutes to the beach with the bridge ahead. The 7.4 km Gwangan Bridge was finished at the end of 2002 and now lights up the whole bay at night.",
@@ -749,16 +749,62 @@ export const cities: City[] = [
             "Huinnyeoul Culture Village, bus 7, 71 or 508 from Nampo-dong over Yeongdo Bridge. 'White rapids' is named for the white foam where streams from Bongnae Mountain meet the sea, and the white houses and murals on the cliff lane are from the 2010s revival. Add the short coastal tunnel and the Jeoryeong coast walk.",
             "Gamcheon Culture Village, bus 1-1, 2 or 2-2 from Toseong Station exit 6 to the top. The pastel houses stack down a steep valley, and a public art project began painting them in 2009. Buy the stamp map at the information centre, follow the fish signs and keep to the marked lanes: people still live here. The Little Prince and the fox on the railing is the most queued photo in Busan.",
             "Haedong Yonggungsa, bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974. Toilets, restaurants and view cafés are pinned at every spot, all checked on Naver.",
+            "Dongbaek Island, Haeundae Station exit 3 or 5: a short boardwalk loop around the camellia-covered headland, past the mermaid statue to Nurimaru APEC House on the southern tip, built for the 2005 APEC summit and shaped like a traditional pavilion. At the island's foot, on Dongbaek-ro, **The Bay 101** is Busan's other big night view after Gwangalli: a waterfront lounge and yacht-tour complex looking straight across the bay to the Gwangan Bridge.",
             "Two more pins sit away from the rest: Anmok Seomyeon, the same pork gukbap house in Seomyeon, and the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above the map).",
+            "Further afield, five more pins for a day with a car or a longer metro ride: **Beomeosa**, one of Korea's great mountain temples, founded in 678 on the slopes of Geumjeongsan, with a stone-pillared gate and pagoda that are both national Treasures. **Byeongpungam Seokbulsa**, a small temple on Mandeok Pass built right against a sheer cliff wall. The **Songdo Yonggung Cloud Bridge**, a 127 m glass-floor suspension bridge out to a rock stack off Songdo Beach in the west of the city. And on the Gijang coast, two together: **Orangdae**, a rock pavilion where the waves break right below the deck, best at sunrise, and a few minutes down the same road the so-called **Jukseong Church**, a chapel built only as a set for the 2009 drama *Dream* and never a working church, beside a real fortress and a striped lighthouse.",
           ],
           tips: [
-            "🚇 Gwangan Station (line 2) for the walk; Jagalchi and Nampo stations (line 1) for the markets; Toseong Station (line 1) for the Gamcheon bus; Haeundae Station (line 2) for the Yonggungsa bus.",
-            "⏰ Saturday is the night: the drone show at 20:00 or 19:00 by season, then the bridge lights on the hour. Weeknights are calmer and the fish market cheaper.",
+            "🚇 Gwangan Station (line 2) for the walk; Jagalchi and Nampo stations (line 1) for the markets; Toseong Station (line 1) for the Gamcheon bus; Haeundae Station (line 2) for the Yonggungsa bus and for Dongbaek Island.",
+            "⏰ Saturday is the night: the drone show at 20:00 or 19:00 by season, then the bridge lights on the hour. Weeknights are calmer and the fish market cheaper. Dongbaek Island and The Bay 101 are their own after-dark stop, any night.",
             "🍜 The fish-market system: buy downstairs, then a table fee upstairs covers side dishes and soup; take-away to the park is free. At BIFF Square the seed hotteok queue moves fast.",
             "🍲 Pork gukbap is Busan's classic bowl, and Anmok has two pins: near Busan Station (open from 11:00 on weekdays, 10:00 at weekends) and in Seomyeon (from 10:00 on weekdays, 09:00 at weekends). Hours as listed on Naver Map on 25 October 2026.",
             "🔗 Korea's oldest China Town is in Incheon, an hour from Seoul, with its own walk on this site.",
             "👟 Gwangalli and Nampo-dong are flat. Gamcheon and Huinnyeoul are stairs and slopes; Yonggungsa is 108 steps each way.",
             "🔗 The Haeundae Coastal Path on this site is two stops away from Gwangalli and makes the next morning.",
+            "🚇 The further-afield pins are not a walking day together: Beomeosa Station (line 1) for the temple, Songdo for the cloud bridge (bus from Nampo-dong), Mandeok Station (line 3) for Seokbulsa, and Orangdae and Jukseong in Gijang are easiest by car or taxi from Haeundae.",
+          ],
+        },
+      },
+      {
+        id: 'indoor-activity',
+        name: 'Indoor Activity',
+        seoTitle: 'Busan rainy day: indoor places on one map',
+        seoDescription:
+          'Busan under a roof: museums at Yeongdo, Gijang and Dongnae, Busan Tower and X the Sky, Centum and Gwangalli spas, a character café and the Blueline beach train.',
+        description:
+          'Busan on a rainy or freezing day, all pinned by category rather than one walking line: seven museums spread from Yeongdo to Gijang, four spas and jjimjilbang from Centum City to Gwangalli and Dongnae, a converted factory, a character café and a mind-care exhibition space, plus two towers with an indoor observation deck and the coastal beach train.',
+        duration: 'Full day',
+        updated: '2026-10-30',
+        tags: [{ icon: 'rainy', label: 'Rainy day' }],
+        notices: [
+          {
+            icon: '🎪',
+            title: "Podium Dive's Miffy pop-up has ended",
+            body: "The 'Miffy and the Magic Mailbox' pop-up pinned at Gwangalli's **Podium Dive** ran only 9–22 January 2026 and is already over. Podium Dive keeps running new pop-ups in the same basement space, so the pin is worth checking on its own channel before a visit, not for this specific show.",
+            since: 'Checked 30 October 2026.',
+          },
+        ],
+        image: 'busan-indoor.jpg',
+        imageCredit: 'Photo: bryansjs · CC BY-SA 2.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1oQUMXW3eqC7zXTSijNX2mwYpDZYxkRM',
+        keywords: ['Busan', 'RainyDayInBusan', 'BusanMuseums', 'BusanTower', 'XTheSky', 'CentumSpaLand', 'Heosimcheong', 'F1963', 'Jjimjilbang', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "☔ A rainy or freezing day in Busan still has plenty to do, you just stay under a roof. This map gathers it by category rather than by route: **museums** scattered from the harbour at Yeongdo out to Gijang, **spas and jjimjilbang** from the department-store sauna at Centum to the old hot-spring town of Dongnae, two towers with an indoor view, and a handful of cafés and culture spaces.",
+            "There is no walking line here, just pinned groups across the whole city. Pick a cluster near where you're staying rather than trying to cover it all in one day.",
+          ],
+          route: [
+            "Museums: Busan Museum in Nam-gu's UN Peace Park, Bokcheon Museum over an excavated Gaya-era tomb cluster in Dongnae, the National Maritime Museum of Korea and the free Busan Modern & Contemporary History Museum in a 1929 former bank building, the Busan Fishing Village Folk Museum by the Nakdong estuary, the hands-on Busan National Science Museum out in Gijang, and Memory Treasure Island, a paid 1970s–90s nostalgia collection near Gukje Market.",
+            "Spas, saunas & water parks: Centum Spa Land, a big jjimjilbang inside Shinsegae Centum City department store; Club D Oasis Spa & Waterpark in the LCT tower at Haeundae; Hotel Aquapalace's jjimjilbang right on Gwangalli beach with an infinity pool facing the bridge; and Heosimcheong, one of Busan's oldest hot-spring bathhouses at Dongnae, with a craft-beer taproom downstairs.",
+            "Cafés, characters & culture: F1963, a 1963 wire-rope factory turned bookstore-café, brewery and gallery complex; Hello Kitty Apple Cafe in Centum City; 4233 Mind Center, a calming light-and-sound exhibition space near Gwangalli; and Podium Dive, the pop-up venue that hosted the Miffy exhibition (see the notice above the map for its current status).",
+            "Towers & scenic train: Busan Tower's 1973 indoor observation deck over Yongdusan Park and the harbour; Busan X the Sky, Korea's tallest observation deck on floors 98–100 of LCT Landmark Tower; and the Haeundae Blueline beach train from Mipo, a sheltered, sit-down way to see the coast between Haeundae and Songjeong.",
+          ],
+          tips: [
+            "🚇 Spread by district: Nam-gu and Jung-gu for the Busan Museum, Busan Tower and Memory Treasure Island; Yeongdo for the maritime museum; Dongnae for Bokcheon Museum and Heosimcheong; Haeundae/Centum/Gwangalli for the spas, X the Sky, F1963 and the cafés; Gijang for the science museum.",
+            "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Check each place's current hours and prices on Naver before going, they change by season.",
+            "🎟️ Busan Museum and the Modern & Contemporary History Museum are free; the science museum, maritime museum and folk museum charge little or nothing; Memory Treasure Island and the spas are paid entry.",
+            "🚻 Public toilets are not swept for every pin here since the venues are spread across the whole city rather than one route; each museum, mall and spa has its own restrooms. One standalone public toilet is pinned near the Gwangalli cluster.",
+            "🔗 The Culture Villages and Hotspots walk on this site covers Busan Tower's Yongdusan Park escalators and the Gwangalli night walk in more detail; this map is the wet-weather backup for the same areas.",
           ],
         },
       },
