@@ -1,6 +1,4 @@
-Fluent Emoji 3D by Microsoft, https://github.com/microsoft/fluentui-emoji
-MIT License. Copyright (c) Microsoft Corporation.
-Permission is hereby granted, free of charge, to any person obtaining a copy of these files, to deal in them
-without restriction, including the rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell
-copies, subject to the above copyright notice and this permission notice being included in all copies.
-THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+OpenMoji, https://openmoji.org, by the OpenMoji contributors.
+Licensed under CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/
+The images are the original OpenMoji "color" PNGs, scaled to 144 px; they are not otherwise changed.
+(Until 2026-10-30 this folder held Microsoft's Fluent Emoji 3D, MIT.)

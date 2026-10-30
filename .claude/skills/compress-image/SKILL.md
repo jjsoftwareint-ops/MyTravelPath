@@ -28,7 +28,7 @@ and writes in place (git is the backup: run it on a clean tree or after `git add
 
 1. **Never resize or crop here.** Banners are already the whole photo at 1200 px wide (design skill, 2026-10-30);
    this skill only re-encodes. Supplied artwork is never cropped (CLAUDE.md).
-2. **Lossy is fine for photos and the Fluent emoji PNGs**: JPG quality 78 (mozjpeg), PNG `pngquant 65-80`,
+2. **Lossy is fine for photos and the emoji PNGs**: JPG quality 78 (mozjpeg), PNG `pngquant 65-80`,
    WebP q 80. Below that the banners start to band in skies.
 3. **Lossless only for the user's own artwork**: `favicon.png`, `favicon.ico` (leave the .ico alone), `icon-192.png`,
    `icon-512.png`, `apple-touch-icon.png`, `logo.png`, `brand.png`, `wordmark.png`, `kr.svg` (skip SVG).

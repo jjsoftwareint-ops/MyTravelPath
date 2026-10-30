@@ -20,7 +20,7 @@ export default function Blog() {
           Updated {formatDate(blogUpdated)}
         </time>
         <PostList />
-        <p className="emoji-credit">Emoji: Fluent Emoji by Microsoft (MIT)</p>
+        <p className="emoji-credit">Emoji: OpenMoji (CC BY-SA 4.0)</p>
       </div>
     </Layout>
   )

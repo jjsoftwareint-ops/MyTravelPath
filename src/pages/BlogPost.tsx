@@ -195,7 +195,7 @@ export default function BlogPost() {
       <section className="blog-wrap all-posts">
         <h2>All posts</h2>
         <PostList currentId={post.id} />
-        <p className="emoji-credit">Emoji: Fluent Emoji by Microsoft (MIT)</p>
+        <p className="emoji-credit">Emoji: OpenMoji (CC BY-SA 4.0)</p>
       </section>
     </Layout>
   )

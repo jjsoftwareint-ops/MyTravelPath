@@ -105,15 +105,19 @@ The user wants posts written from Claude's own knowledge and research (standing 
 
 ## 5. Images and emoji
 
-- **react-icons is for the app UI only, not blog content.** Blog visuals come from free illustration/emoji libraries fetched the same way as Fluent Emoji (download the files, host them in `assets/`).
-- **Emoji are 3D images, not text emoji**: Microsoft Fluent Emoji 3D (MIT), files in
-  `assets/emoji/<name>.png` at 144px (`assets/emoji/LICENSE.txt` holds the notice; the blog pages carry a
-  one-line credit). Native emoji looked boring to the user. Use them in `h` icons and as the post's
-  title `icon`; inline emoji inside sentences stay native, sparingly. To add one: download
-  `https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/<Name With Spaces>/3D/<snake_name>_3d.png`
-  (path names are the CLDR name, e.g. `Round pushpin`/`round_pushpin_3d.png`), shrink with
-  `sips -Z 144`. Pick cute or funny ones, and don't use an emoji that misstates the topic (🏯 is a
-  *Japanese* castle, so palace posts use a lantern or teacup instead).
+- **react-icons is for the app UI only, not blog content.** Blog visuals come from free illustration/emoji libraries fetched the same way as the emoji (download the files, host them in `assets/`).
+- **Emoji are flat OpenMoji images, not text emoji** (user's choice, 2026-10-30: the glossy Fluent 3D set,
+  used until then, "I don't like", and he picked OpenMoji from a side-by-side sheet of Fluent Flat, Twemoji
+  and OpenMoji). OpenMoji, CC BY-SA 4.0, files in `assets/emoji/<name>.png` at 144px; the names are still the
+  old Fluent snake names (`red_paper_lantern`, `hourglass_not_done`), so no code or post had to change.
+  `assets/emoji/LICENSE.txt` holds the notice and the blog pages carry a one-line credit. Native emoji
+  looked boring to the user. Use them in `h` icons and as the post's title `icon`; inline emoji inside
+  sentences stay native, sparingly. To add one: look up its codepoint (e.g. `1F4CD`; add `-FE0F` when the
+  emoji has a variation selector) and download
+  `https://cdn.jsdelivr.net/gh/hfg-gmuend/openmoji@15.0.0/color/618x618/<CODEPOINT>.png`, then shrink with
+  `sips -Z 144` and save it under a snake_case name. Pick cute or funny ones, and don't use an emoji that
+  misstates the topic (🏯 is a *Japanese* castle, so palace posts use a lantern or teacup instead; a pink
+  bow is not a blue ribbon, user caught it 2026-10-30, use a colour-matched emoji such as `blue_circle`).
 - **No free photo? Link the dish name to Google Images** (the user's idea, 2026-10-23: images are
   copyright-limited, so don't embed unlicensed ones; and no "See photos" label, the name itself is the link).
   In the text write `[두쫀쿠](https://www.google.com/search?tbm=isch&q=<URL-encoded keyword>) (dujjonku)`,
