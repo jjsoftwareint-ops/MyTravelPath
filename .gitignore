@@ -29,3 +29,6 @@ assets/maps/
 # Drafts for Reddit, Threads and other posts: kept locally only
 docs/
 __pycache__/
+
+# Claude Code skills: workflow notes, scripts and research methods, kept locally only
+.claude/skills/
