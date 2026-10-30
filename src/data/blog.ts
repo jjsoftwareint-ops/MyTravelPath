@@ -37,6 +37,85 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-10-30-0845',
+    title: "Nami Island isn't really a country. Try telling the gift shop that.",
+    description:
+      "In 2006 a tourist island east of Seoul declared \"cultural independence\" from South Korea. It still issues its own passports and currency today, flag and all.",
+    teaser: 'It has its own flag, its own money, and a passport you can actually buy.',
+    icon: 'passport_control',
+    date: '2026-10-30',
+    updated: '2026-10-30',
+    keywords: ['KoreaTravel', 'NamiIsland', 'Naminara', 'Gapyeong', 'Micronation', 'WinterSonata', 'KoreaHistory'],
+    body: [
+      {
+        type: 'p',
+        text: "**Nami Island** (남이섬, Namiseom) is at its prettiest right about now, a half-moon of maples and metasequoia an hour east of Seoul. It is also, since 2006, a country. Not a real one. It has just never once broken character about it.",
+      },
+      {
+        type: 'img',
+        src: 'naminara-autumn.jpg',
+        alt: 'Red and orange maple trees over a lakeside path on Nami Island in autumn, with visitors walking underneath',
+        caption: 'Nami Island in autumn, the season everyone is actually there for.',
+        href: 'https://commons.wikimedia.org/wiki/File:0012-10-12_(2024-11-12)_*Gapyeong_-_Chuncheon_*Gyeonggi_-_Gangwon.jpg',
+        credit: { author: 'Katsujiro Maekawa', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      {
+        type: 'p',
+        text: "Pull up to the ferry pier and two flags fly side by side: the Taegeukgi, and one you have never seen anywhere else. That second flag belongs to the country that does not exist.",
+      },
+      {
+        type: 'img',
+        src: 'naminara-ferry.jpg',
+        alt: 'The Nami Island ferry at the pier, flying the South Korean flag and several other flags',
+        caption: 'The ferry pier at Namiseom. Look closely and the Naminara flag flies with the rest.',
+        href: 'https://commons.wikimedia.org/wiki/File:Gapyeong-Nami_Island_Ferry.jpg',
+        credit: { author: 'Minseong Kim', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'p',
+        text: "On 1 March 2006, the company that runs the island, **Namisum Inc.**, declared its \"cultural independence\" and renamed itself the **나미나라공화국** (naminara gonghwaguk), the Naminara Republic. \"나라\" (nara) just means \"country\" in Korean, so the name is literally \"Nami's Country\". One account has the reasoning as blunt marketing math: the Korean-drama tourist wave from **Winter Sonata** (겨울연가, gyeoul yeonga), filmed here in 2002, was expected to fade within a few years, so management went looking for a hook nobody else had. A country was the hook.",
+      },
+      { type: 'h', text: 'Your money is no good here (bring more money)', icon: 'money_bag' },
+      {
+        type: 'p',
+        text: "Buy a ferry ticket and you are, technically, buying an entry visa. We checked the official prices for our own ",
+      },
+      {
+        type: 'route',
+        cityId: 'gyeonggi-do',
+        pathId: 'gapyeong',
+        text: 'Gapyeong day-trip guide',
+      },
+      {
+        type: 'p',
+        text: 'and the round trip runs about **₩19,000** for an adult, less for children. Once inside, the republic has its own stamps, its own phone cards and its own currency, sources call it the Nami (some say Nami Tongbo), which the information centre will change for won on the way in and change back on the way out. It even appointed its own ambassadors. None of this is backed by a central bank. All of it is backed by a gift shop.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'The general the island is named for' },
+      {
+        type: 'img',
+        src: 'naminara-nami-tomb.jpg',
+        alt: "A grave mound and stone guardian statues on Nami Island, built as General Nami's cenotaph",
+        caption: "The cenotaph on Nami Island, built around an older stone cairn said to mark General Nami's grave.",
+        href: 'https://commons.wikimedia.org/wiki/File:%EB%82%A8%EC%9D%B4%EC%84%AC_(36).JPG',
+        credit: { author: 'Jocelyndurrey', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'p',
+        text: 'The island, and the republic, are both named after **General Nami** (남이, Nami), a Joseon general executed for treason at 28 under King Sejo in 1468. The mound and stone guardians above look like his grave. They are not. His real grave is in Hwaseong, and this one is a cenotaph that the island\'s founder, **Min Byung-do**, built in 1965 around a far older stone cairn, after buying what was then a half-wild sandbar in the Han River.',
+      },
+      { type: 'h', text: "Nobody is fooled, and that's fine", icon: 'face_with_raised_eyebrow' },
+      {
+        type: 'p',
+        text: "No government recognises the Naminara Republic, obviously, and neither does South Korea's small community of hobbyist micronation builders: one of their own wikis notes it exists purely to make money, which is a strange complaint to make about a resort. An older estimate put annual visitors at around 1.5 million, Japanese tourists especially, which would make it one of the most visited pretend countries anywhere.",
+      },
+      {
+        type: 'verdict',
+        text: "It is not a country. It is a theme, committed to for almost twenty years, and it works precisely because nobody involved breaks character at the door. Bring your passport anyway. The real one.",
+      },
+    ],
+  },
+  {
     id: '2026-10-30-0542',
     title: 'What the stickers on Korean restaurant doors mean',
     description:

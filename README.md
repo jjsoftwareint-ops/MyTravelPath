@@ -151,6 +151,14 @@ All allow free use; the credit is given in every case.
 - Blog, zombie bus post: *Seoul Tiger Open Top Bus* (the Tiger Bus in front of City Hall), Minseong Kim, CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Seoul_Tiger_Open_Top_Bus.jpg
 
+- Blog, Naminara Republic post: *0012-10-12 (2024-11-12) Gapyeong - Chuncheon* (same autumn photo as the
+  Gapyeong path banner, reused), Katsujiro Maekawa, CC0.
+  https://commons.wikimedia.org/wiki/File:0012-10-12_(2024-11-12)_*Gapyeong_-_Chuncheon_*Gyeonggi_-_Gangwon.jpg
+- Blog, Naminara Republic post: *Gapyeong-Nami Island Ferry* (the ferry pier flags), Minseong Kim, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Gapyeong-Nami_Island_Ferry.jpg
+- Blog, Naminara Republic post: *남이섬 (36)* (the cenotaph built for General Nami), Jocelyndurrey, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:%EB%82%A8%EC%9D%B4%EC%84%AC_(36).JPG
+
 The app icon, favicon and home-header mark are the project's own artwork (a suitcase with a
 Korean flag tag among cherry blossoms).
 Tag icons are from FontAwesome (CC BY 4.0), Game Icons (CC BY 3.0) and Lucide (ISC),
