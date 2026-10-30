@@ -6,18 +6,32 @@ import { MdOutlinePinDrop } from "react-icons/md";
 import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import CopyLink from "../components/CopyLink";
+import Emoji from "../components/Emoji";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { formatDate } from "../dates";
+import { emojiFile, splitLeadingEmoji } from "../emoji";
 import { browserUrl, isIOS, isPhone, NAVER_MAP_STORE } from "../platform";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
 // The site owner's PayPal.Me link.
 const DONATE_URL = "https://paypal.me/berlinersejin";
+
+// A guide line (intro paragraph, route step or tip) with its native leading emoji swapped for the
+// matching flat OpenMoji icon (site rule 2026-10-30: flat icons everywhere, not just the blog).
+function GuideLine({ text }: { text: string }) {
+  const { icon, rest } = splitLeadingEmoji(text);
+  return (
+    <>
+      {icon && <Emoji name={icon} className="guide-emoji" />}
+      <RichText text={rest} />
+    </>
+  );
+}
 
 export default function PathDetail() {
   const { cityId, pathId } = useParams();
@@ -98,7 +112,7 @@ export default function PathDetail() {
               <h2>{path.story.title}</h2>
               {path.story.text.map((text) => (
                 <p key={text}>
-                  <RichText text={text} />
+                  <GuideLine text={text} />
                 </p>
               ))}
             </section>
@@ -109,7 +123,7 @@ export default function PathDetail() {
               {path.notices.map((n) => (
                 <li key={n.title} className="notice-card">
                   <span className="notice-card-icon" aria-hidden="true">
-                    {n.icon ?? "ℹ️"}
+                    <Emoji name={emojiFile(n.icon ?? "ℹ️") ?? "information"} size={20} />
                   </span>
                   <div>
                     <strong className="notice-card-title">{n.title}</strong>
@@ -233,7 +247,8 @@ export default function PathDetail() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaPaypal aria-hidden="true" /> Would you like to buy me a ☕️?
+                <FaPaypal aria-hidden="true" /> Would you like to buy me a{" "}
+                <Emoji name="hot_beverage" size={16} />?
               </a>
             </>
           ) : (
@@ -243,10 +258,12 @@ export default function PathDetail() {
 
         {path.guide && (
           <section className="guide" aria-labelledby="guide-title">
-            <h2 id="guide-title">✨ About this walk</h2>
+            <h2 id="guide-title">
+              <Emoji name="sparkles" size={20} /> About this walk
+            </h2>
             {path.guide.intro.map((text) => (
               <p key={text}>
-                <RichText text={text} />
+                <GuideLine text={text} />
               </p>
             ))}
             {path.imageCredit && (
@@ -254,11 +271,13 @@ export default function PathDetail() {
             )}
             {path.guide.route && (
               <>
-                <h3>🚶 The route</h3>
+                <h3>
+                  <Emoji name="person_walking" size={20} /> The route
+                </h3>
                 <ol>
                   {path.guide.route.map((step) => (
                     <li key={step}>
-                      <RichText text={step} />
+                      <GuideLine text={step} />
                     </li>
                   ))}
                 </ol>
@@ -266,11 +285,13 @@ export default function PathDetail() {
             )}
             {path.guide.tips && (
               <>
-                <h3>💡 Good to know</h3>
+                <h3>
+                  <Emoji name="light_bulb" size={20} /> Good to know
+                </h3>
                 <ul>
                   {path.guide.tips.map((tip) => (
                     <li key={tip}>
-                      <RichText text={tip} />
+                      <GuideLine text={tip} />
                     </li>
                   ))}
                 </ul>

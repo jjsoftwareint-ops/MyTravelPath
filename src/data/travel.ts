@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car'
 export type Tag = string | { icon: TagIconName; label: string }
 
 // Longer text for the detail page: what the walk is, the stages in order and
@@ -187,7 +187,6 @@ export const cities: City[] = [
             "🚇 Getting there: village bus Yongsan 02 to its last stop, the Huam-dong terminus, where the walk starts.",
             "🍜 Dinner in the market: Pad Ka Pao for Thai on the second floor, Haebangchon Dak for herbal roast chicken, H5NG for neon American-Chinese. Mersin Kebab's tantuni and Haebang Wang Gopchang are a minute away. Haebang Park's rooftop café is where to wait out a queue and catch the sunset.",
             "👟 The lanes are steep and some stairs are unlit; wear proper shoes. The village bus shares the narrow road, so step aside when it comes.",
-            "🚻 Public toilets are pinned in their own layer: by Sinheung Market, on the Sowol-ro climb, by Namsan Library and the City Wall, and near Baekbeom Square.",
             "📍 The lit wall path continues up Namsan from Baekbeom Square.",
           ],
         },
@@ -242,7 +241,6 @@ export const cities: City[] = [
             "📍 Hanbok rental shops cluster around Anguk; wearers enter the royal palaces free.",
             "🏡 Namsangol Hanok Village is free to enter. Unlike Bukchon, where most hanok were altered and are small, it shows a variety of old elite homes, with a garden, Cheonugak Pavilion and a time capsule buried in 1994. Seoul Namsan Gugakdang, a performance hall, is up the road. Check opening days and the show schedule on the official site (hanokmaeul.or.kr) before you go.",
             "🍜 Pil-dong, beside Namsangol, is the food district: Pildong Myeonok for Pyongyang naengmyeon, Pildong Hambak for hamburger steak, Dongdae Dakhanmari for chicken stew, and cafés like Sector Coffee and Hebe Coffee. Korea House near Chungmuro Station serves royal-style meals and tea. All pinned in their own layers; restaurants and cafés were checked on Naver on 24 October 2026.",
-            "🚻 Public toilets are pinned in their own layer: Tapgol Park, Anguk Station, Insadong-gil, near Ssamziegil, by the Bukchon Village Info Centre and at Namsangol.",
           ],
         },
       },
@@ -593,7 +591,6 @@ export const cities: City[] = [
             "🍜 Bogyeong Sujebi has a wait at weekday lunch, and the Tardema Bakery Magoknaru branch is mostly takeaway. Restaurants and cafés are the pink pins.",
             "🚤 The Han River Bus cost ₩3,000 one way at the time of writing, and the city has proposed higher weekend fares from next year. Its timetable has changed several times, so use the operator's current schedule, not an old one.",
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Forest Herbal Land is open from 06:30 to 22:00 every day (Naver Map, 24 October 2026), but a 2025 write-up gives 08:00 to 21:00 for its charcoal kilns, so check before you go. Write-ups from 2025 list about ₩16,000 to ₩17,000 for the charcoal kilns and ₩10,000 to ₩11,000 for the bath alone; prices change, so confirm them and what to bring on its Naver Map page.",
-            "🚻 Public toilets are pinned in their own layer at Seoul Botanic Park; the museums, malls and arts centre have their own inside, and those are not pinned.",
             "📍 Seonungak is a hanok café at the foot of Bukhansan in Ui-dong, far from Magok. It is a good wet-day stop after the Bukhansan Dulle-gil walk on this site, which starts in Ui-dong too. Naver lists it as closed on Sundays, and autumn-leaf season brings queues.",
             "🔗 MMCA Seoul is a short walk from the Samcheong-dong end of the Hanok Villages walk on this site, so the two pair well on a dry morning and a wet afternoon.",
           ],
@@ -776,6 +773,20 @@ export const cities: City[] = [
         duration: 'Full day',
         updated: '2026-10-30',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
+        notices: [
+          {
+            icon: '🆓',
+            title: 'Which museums are free',
+            body: 'Busan Museum, Bokcheon Museum, the National Maritime Museum of Korea, the Fishing Village Folk Museum and the Modern & Contemporary History Museum charge **nothing**. The science museum is paid: ₩3,000 adult / ₩2,000 teen for the permanent hall, free under 7. Memory Treasure Island lists from about ₩2,500 on ticket sites; the adult price is not published, so check at the door.',
+            since: 'Checked 30 October 2026.',
+          },
+          {
+            icon: '💰',
+            title: 'Spa, tower and experience prices',
+            body: 'Heosimcheong ₩15,000 weekday / ₩18,000 weekend; Centum Spa Land about ₩17,000–18,000; Club D Oasis from ₩30,000 (spa only) to ₩69,000 (full water park + spa); Hotel Aquapalace varies by bundle, phone ahead. Busan Tower about ₩8,000–8,500; Busan X the Sky from about ₩23,000 online; the Blueline beach train ₩8,000–10,000 a ride or ₩16,000 for an all-stations pass; 4233 Mind Center sells as a two-person ticket, about ₩50,000 for two. F1963, the Hello Kitty café and the museums above have no separate entrance beyond what is listed.',
+            since: 'Resale/ticket-site and official prices as found in late October 2026; most change by season, check before you book.',
+          },
+        ],
         image: 'busan-indoor.jpg',
         imageCredit: 'Photo: HappyMidnight · CC BY-SA 3.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1oQUMXW3eqC7zXTSijNX2mwYpDZYxkRM',
@@ -794,8 +805,7 @@ export const cities: City[] = [
           tips: [
             "🚇 Spread by district: Nam-gu and Jung-gu for the Busan Museum, Busan Tower and Memory Treasure Island; Yeongdo for the maritime museum; Dongnae for Bokcheon Museum and Heosimcheong; Haeundae/Centum/Gwangalli for the spas, X the Sky, F1963 and the cafés; Gijang for the science museum.",
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Check each place's current hours and prices on Naver before going, they change by season.",
-            "🎟️ Busan Museum and the Modern & Contemporary History Museum are free; the science museum, maritime museum and folk museum charge little or nothing; Memory Treasure Island and the spas are paid entry.",
-            "🚻 Public toilets are not swept for every pin here since the venues are spread across the whole city rather than one route; each museum, mall and spa has its own restrooms. One standalone public toilet is pinned near the Gwangalli cluster.",
+            "🎟️ See the price notices above the map for what's free and what each paid spot costs; booking apps (NOL, Waug, Klook) are usually a bit cheaper than paying at the counter for the spas, towers and X the Sky.",
             "🔗 The Culture Villages and Hotspots walk on this site covers Busan Tower's Yongdusan Park escalators and the Gwangalli night walk in more detail; this map is the wet-weather backup for the same areas.",
           ],
         },
@@ -1112,7 +1122,6 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 Getting there: Incheon Line 1 to Gyesan Station, exit 5, then 10 minutes on foot to the museum trailhead.",
-            "🚻 There is one public toilet, just above the park-office trailhead. None higher up, so go before you climb.",
             "🔦 This is a night hike, so bring a torch or headlamp and keep your phone battery for the way down.",
             "👟 The deck stairs are steep but safe; sturdy shoes and water are enough.",
             "📍 Google Maps does not draw these trails correctly, so use the Naver Map screenshot under the map.",
@@ -1175,7 +1184,6 @@ export const cities: City[] = [
             "🎟️ The monorail ticket is a round ticket: one ride out and one more the same day. Ride out to stop 3 or 4, walk the island, and use the second ride from Wolmi Park Station. Stop 3, Wolmi Culture Street Station, is about 350 m from the path.",
             "⏰ Café hours differ, so check them against the sunset. On Naver Map on 25 October, last order was 19:00 at Storage Incheon, 21:30 at Wolmido Remi and Me Too Coffee, and Artos Hope Party closed at 20:00. The sunset cafés were checked on Naver that day.",
             "👟 Mostly paved. The loop climbs to about 40 m over the hill, and takes about 81 minutes without stops according to Naver Map.",
-            "🚻 Public toilets are pinned in their own layer: Wolmi Park entrance, Wolmi pier, the culture street and Museum Station. The building toilets at Incheon Station and in the cafés are not pinned.",
             "🔗 The sunset trip can follow the China Town walk on this site. Both start at Incheon Station: China Town takes two to three hours, so start it around lunch, then come back to the station for the monorail or bus 45 and reach Wolmido in time for the golden hour.",
           ],
         },
@@ -1316,7 +1324,6 @@ export const cities: City[] = [
             "🥾 The river trail is a proper day walk: flat, mostly paved bike path and old railway, no shade in summer, few benches (bring a small mat), silver grass at Baegyang-ri in autumn. Short on time? Start at **Baegyang-ri Station** instead: about 6 km and 2 hours to Gangchon.",
             "🚆 Trail transport: ITX-Cheongchun from Yongsan to Gapyeong Station in under an hour, back from Gangchon Station in about 1 h 10 (the ordinary Gyeongchun line takes about 2 hours). Both stations and Baegyang-ri have public toilets, pinned in the toilet layer; there is nothing else between the bridge and Gangchon.",
             "🍗 Gangchon is dakgalbi country: the two pink pins by Gangchon Station are charcoal dakgalbi houses with over a thousand reviews each, open daily, checked 30 October 2026.",
-            "🚻 Public toilets are pinned in their own layer for Morning Calm, Jara Island, Petite France and Nami Island. Naver lists no separate public toilet for the Jat forest, the Rail Park, Jade Garden or the lake, so use the toilets inside the sites.",
             "🔗 Nami Island's Winter Sonata avenue is also pinned on our K-Drama shooting spots map, and the island's own \"country\" gimmick, the Naminara Republic, is a blog post of its own.",
             "📝 Hours come from Naver and the official Nami Island site, read on 28 October 2026. They change by season, so check before you go.",
           ],
@@ -1401,7 +1408,6 @@ export const cities: City[] = [
             "🚌 Gamaksan bridge: from Munsan Station bus **92** or 95 to Jeokseong traditional market, then bus 25 or 25-1 to the Chulleong-dari-ipgu stop. Majang Lake: bus 31 or 774 from Bulgwang Station exit 8 to Gwangtan junction, then 37 or 313 to Gisan-ri and a 20-minute walk. Both are slow; a taxi from Munsan or Geumchon is the realistic option.",
             "🎫 Paju City Tour: a coach from Hongik University Station at **09:00**, Tuesday to Sunday, with a different course each day (Heyri and Odusan, Majang Lake and Byeokchoji, the sailboat and Jeokseong market, the DMZ). From ₩7,000 per person, booking on pjcitytour.kr or 02-730-0531, minimum 10 people, photo ID on the day.",
             "🍜 The pink pins are the restaurants: two famous eel houses, the Duji-ri river-fish stews, Jangdan-bean tofu at Provence and near Imjingak, the garlic-bread bakery, a 120-year-old chogyetang house, and the big cafés at Munjiri and the Majang bridge. Each pin has its hours and the date it was checked.",
-            "🚻 Public toilets are pinned in their own layer at Imjingak (three), Odusan and the Gamaksan bridge car park. The gardens, museums and malls have toilets inside.",
             "📝 Hours and fares were read on 30 October 2026 from Naver Map and the official sites. The museum and First Garden prices rest on travel sites only.",
           ],
         },
@@ -1456,8 +1462,135 @@ export const cities: City[] = [
             "🎬 Wolhwawon (월화원), the Chinese garden in Hyowon Park, is about 3 km south-east of the fortress. It is free, open 09:00–22:00, and known as a filming location of Moon Lovers: Scarlet Heart Ryeo (달의 연인).",
             "🛍️ The Starfield Suwon library (별마당도서관) is about 2 km west of the wall inside the mall, so it works as a rainy-day stop. Naver lists no separate hours for it.",
             "🏘️ The Korean Folk Village is in Yongin, about 10 km south-east, and needs a trip of its own. Naver lists it open 10:00–19:00 Monday to Thursday and until 22:00 Friday to Sunday.",
-            "🚻 Public toilets are pinned at Janganmun, Hwaseomun, Paldalsan, Paldalmun, the palace and Changnyongmun. There is none near Banghwasuryujeong; the nearest is at Janganmun, about 400 m away.",
             "👟 The wall climbs Paldalsan to Seojangdae, so wear shoes with grip. Allow three hours for the loop and more for the palace.",
+          ],
+        },
+      },
+    ],
+  },
+  {
+    id: 'gangwon-do',
+    name: 'Gangwon-do',
+    intro: [
+      "Korea's mountain and coast province, split by the Taebaek range into a quiet inland of valleys and ski resorts and an east coast of beach towns. **Chuncheon** and **Gangneung** are its best-known cities; **Pyeongchang** hosted the 2018 Winter Olympics.",
+      "**Seoraksan**, the country's most dramatic national park, rises over **Sokcho**, and the coast road south from there strings together Gangneung's coffee street, Jeongdongjin's sunrise beach and Gangwon's cold-noodle and squid-ink towns.",
+    ],
+    image: 'gangwon-do.jpg',
+    imageCredit: 'Photo: Loewelad · CC BY-SA 3.0',
+    paths: [
+      {
+        id: 'uiam-lake-rail-bike',
+        name: 'Chuncheon: Uiam Lake & Gim Yu-jeong Rail Bike',
+        seoTitle: 'Chuncheon day trip: Uiam Lake & rail bike',
+        seoDescription:
+          "Chuncheon day trip near Legoland: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, a 28 km lake circuit, dakgalbi and cafes.",
+        description:
+          "Chuncheon's lakefront in one map: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, Soyanggang Dam and the Soyang Lake cruise, and a 28 km Uiam Lake circuit for cyclists. Also pinned: Chuncheon's dakgalbi and potato-bread cafes.",
+        duration: 'Day trip',
+        image: 'gimyujeong-railbike.jpg',
+        imageCredit: 'Photo: Gage Skidmore · CC BY-SA 4.0',
+        updated: '2026-10-30',
+        keywords: ['Chuncheon', 'Gangwon', 'DayTripFromSeoul', 'UiamLake', 'SoyanggangSkywalk', 'GimYujeongRailBike', 'GangchonRailPark', 'Dakgalbi', 'KoreaTravel'],
+        story: {
+          title: 'A valley remade twice',
+          text: [
+            "Chuncheon was not always a lake city. **Uiam Dam**, finished in 1967, flooded the valley west of downtown into 17 km² of **Uiam Lake**; the high ground left dry became islands, among them Jungdo, where Legoland Korea now stands. Upstream, the **Soyanggang Dam** was Asia's largest rock-fill dam when it was completed in 1973, backing the Bukhan River up into Soyang Lake, still Korea's biggest reservoir.",
+            "The old Gyeongchun railway had its own second life. This station opened in 1939 as Sillam; renamed **Gim Yu-jeong** in 2004 for the writer born in the village next door, it became the first Korean station named after a person. The 2010 double-tracking of the line left this stretch disused, and by 2012 it had reopened as the rail bike.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🎟️',
+            title: 'Book the rail bike online, in advance',
+            body: "Gim Yu-jeong Rail Bike is popular and weekend seats sell out, so **book online ahead of time** rather than turning up. The official site, [en.railpark.co.kr](https://en.railpark.co.kr/course/gimyujeong/schedule), takes English bookings: a 2-seater is **₩40,000**, a 4-seater **₩56,000**, and the ticket covers both the rail bike and the sightseeing train on to the old Gangchon station. English-language resellers such as Klook and Pelago list the same Gimyujeong-course ticket.",
+            since: 'en.railpark.co.kr, checked 30 October 2026.',
+          },
+          {
+            icon: '📅',
+            title: 'Monday closures at the Literary Village and the dam café',
+            body: "The **Gim Yu-jeong Literary Village** and the café inside the **Soyanggang Dam water-culture centre** are both closed every **Monday**.",
+            since: 'Naver listings, checked 30 October 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1Kn1Wg2IeegR-2gIu2wUqIPvlcF5RocU',
+        guide: {
+          intro: [
+            "🚂 **Chuncheon** is Gangwon's lake city, an hour east of Seoul by train and now also the gateway to **Legoland Korea** — but the better reasons to come are older: **Uiam Lake**, ringed by a new cable car and Korea's longest glass-floor skywalk, and the old Gyeongchun railway reborn as the **Gim Yu-jeong Rail Bike** through the Bukhan River gorge.",
+            "This map covers a full day around the lake: ride the rail bike from Gimyujeong down to the old Gangchon station, cross by cable car or skywalk for the view, then circle back for Chuncheon's own dakgalbi and the potato bread that made Gamjabat famous. The stops sit 10–30 minutes apart by car, so pick two or three rather than all of it.",
+          ],
+          route: [
+            "Samaksan Lake Cable Car, Uiam Lake station: Chuncheon's newest attraction, crossing Uiam Lake to Samaksan; glass-floor cabins cost extra.",
+            "Gim Yu-jeong Rail Bike boarding platform, next to Gimyujeong Station: an 8 km ride down the old Gyeongchun line, 6 km by rail bike through the Bukhan River gorge and a themed tunnel to Nangu Village, then 2 km by sightseeing train on to the old Gangchon station; a shuttle brings riders back. Opened in 2012 on the stretch of track left disused when the line was double-tracked in 2010.",
+            "Gimyujeong Station, disused, and the Gim Yu-jeong Literary Village: the old closed station is a well-known photo spot; next to it is the reconstructed home village of the writer Gim Yu-jeong (1908–1937). Renamed from Sillam in 2004 in his honour, it was the first Korean station ever named after a person.",
+            "Soyanggang Dam and the Soyang Lake cruise: Korea's largest dam by reservoir volume, nicknamed the country's own fjord, with a cruise boat across Soyang Lake to its remoter temples and villages. Finished in 1973, once Asia's largest rock-fill dam.",
+            "Soyanggang Skywalk: Korea's longest glass-floor skywalk, out over the Soyang River beside the Maiden statue.",
+            "The Uiam Lake circuit (의암호 둘레길): a 28 km lakeside loop past Yungrim Land, the Literature Park, the Animation Museum, the skywalk again, Songam Sports Town, Gongjicheon and the Ethiopia Korean War Memorial — built more for cyclists than for one walk.",
+            "Restaurants and cafes: the pink pins, from charcoal dakgalbi at Todam to the potato-bread bakery Gamjabat and the lakeside cafes along Baksa-ro.",
+          ],
+          tips: [
+            "🚆 Getting there: the ITX-Cheongchun runs from Yongsan to Chuncheon Station in about 1h10; the stops here are spread around the lake, so a car or taxi between them is easier than the bus.",
+            "🚲 The Uiam Lake circuit is built for cyclists, not one walk: rent a bike near the Skywalk or the cable car station, or just walk the short stretch between the two.",
+            "🎟️ Book the rail bike before you go (box above); a free shuttle bus brings riders back from the old Gangchon station to Gimyujeong.",
+            "🍗 Dakgalbi country: Todam Charcoal Dakgalbi and Top Place Dining are the pink pins, both checked open 30 October 2026.",
+            "🥔 Gamjabat's potato bread (감자빵) is the Chuncheon bakery everyone photographs; go early, it sells out.",
+            "🔗 The old Gangchon station here is the same end point as our Gapyeong river trail from Gapyeong Station — the two maps meet.",
+            "📝 Hours and reviews come from Naver, checked 30 October 2026.",
+          ],
+        },
+      },
+      {
+        id: 'gangneung',
+        name: 'Gangneung Highlights',
+        seoTitle: 'Gangneung travel map: 30 places, one trip',
+        seoDescription:
+          "Gangneung in one map: Wolhwa-geori's old rail trail, Anmok Coffee Street, Gyeongpo's lake and pavilions, Ojukheon, Jumunjin's Goblin-drama breakwater, Jeongdongjin's sunrise station and the Anbandegi highland village.",
+        description:
+          "Gangneung's 30 best-known spots on one map, grouped by area: downtown, Gyeongpo, Anmok, Jumunjin, Jeongdongjin and Daegwallyeong. Wolhwa-geori, Anmok Coffee Street and the Bada-buchae-gil coastal trail are drawn as walking lines; everything else is a pin.",
+        duration: '2 days (by car)',
+        tags: [{ icon: 'car', label: 'Road trip' }],
+        image: 'gangneung.jpg',
+        imageCredit: 'Photo: Mobius6 · CC BY-SA 4.0',
+        imageWhole: true,
+        updated: '2026-10-30',
+        keywords: ['Gangneung', 'Gangwon', 'WolhwaGeori', 'AnmokCoffeeStreet', 'GyeongpoBeach', 'JeongdongjinStation', 'Anbandegi', 'Ojukheon', 'KoreaTravel'],
+        story: {
+          title: 'Two literary families, one city',
+          text: [
+            "Barely 5 km apart on this map are two of Joseon Korea's most celebrated literary families. **Shin Saimdang** (1504–1551) painted and raised her son at **Ojukheon**, a Treasure-listed house named for its black bamboo. That son, the scholar **Yi I** (Yulgok), now shares Korea's banknotes with her — Saimdang on the ₩50,000 note, Yulgok on the ₩5,000 — said to be the first mother and son on any country's currency.",
+            "At Chodang, named for scholar **Heo Yeop**'s pen name, his son **Heo Gyun** (1569–1618) wrote Korea's first Hangul novel, The Tale of Hong Gildong. His sister **Heo Nanseolheon** (1563–1589) wrote poetry so admired it reached China and Japan before she died at 27; their memorial park stands on her birthplace.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🎟️',
+            title: 'Bada-buchae-gil fee, hours and weather closures',
+            body: 'Entry to the coastal trail is **₩5,000** adult (₩4,000 teen, ₩3,000 child). Open **09:00–17:30** (last ticket 16:30) April–October, **09:00–16:30** (last ticket 15:30) November–March. It **closes entirely** under a wind or wave advisory, and can also close for military reasons, so check before you drive out.',
+            since: 'searoad.gtdc.or.kr and news reports, checked 30 October 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1FoMgpM80SNMCVbsmITD2_YoB1p-4W0s',
+        guide: {
+          intro: [
+            "🌊 **Gangneung** is Gangwon-do's biggest coastal city, mountains on one side and the East Sea on the other, and this map puts **30** of its best-known spots on one page: a lantern-lit converted rail line downtown, Gyeongpo's lake and pavilions, the café strip at Anmok, Jumunjin's fish market and a K-drama breakwater, Jeongdongjin's sunrise station, and the highland farms above Daegwallyeong.",
+            "It's too spread out for one day: downtown, Gyeongpo and Anmok sit close together, but Jumunjin, Jeongdongjin and the mountains are each another 30–50 minutes by car. Pick one or two clusters a day rather than chasing all 30 pins.",
+          ],
+          route: [
+            'Downtown (도심권): Jungang Market, dating to before Japanese colonial rule; the Myeongju-dong art alley, named for Gangneung\'s own Silla-era name; the Daedohobu government office, whose surviving gate is a National Treasure; Hyanggyo Confucian school, Korea\'s first; and the Byeongsan potato-dumpling village.',
+            'Wolhwa-geori (월화거리): drawn as a 2.2 km line, the Gangneung rail line (closed 2012) turned into a lantern-lit park, named for a local legend said to have inspired the classic story of Chunhyang, from Mal-나눔터 park past Jungang Market to Wolhwagyo bridge.',
+            'Gyeongpo (경포권): the beach, Sageunjin cape viewpoint, Gyeongpoho lake, 1326-built Gyeongpodae pavilion, Seongyojang estate, Ojukheon (Shin Saimdang and Yulgok\'s home), the Heo Gyun & Heo Nanseolheon memorial park and the Chodang tofu village — see the story above for how the last three connect.',
+            'Anmok Coffee Street (안목 커피거리): drawn as a 0.7 km line from Gangneung Port along the beach to the café strip said to have started with beachside vending-machine coffee in the 1980s.',
+            'Jumunjin (주문진권): the Goblin-drama breakwater, the fish market trading since 1936, Adeulbawi rock park on 150-million-year-old granite, and the BTS bus stop.',
+            'Jeongdongjin (정동진권): Sun Cruise Resort, Hourglass Park (built 1999) and its Time Museum, the Guinness-listed Jeongdongjin Station, and Haslla Art World.',
+            'Bada-buchae-gil (바다부채길): drawn as a 3.0 km line along a wave-cut marine terrace, from the Jeongdong ticket gate below Sun Cruise to the Simgok ticket gate.',
+            'Daegwallyeong (대관령권): the old pass road Shin Saimdang is said to have once walked with young Yulgok, Korea\'s first recreation forest (1988), Solhyang Arboretum, the Anbandegi highland village and the Nochusan stone-tower path.',
+          ],
+          tips: [
+            '🚗 A car makes this map work: the five clusters are 20 minutes to over an hour apart by road.',
+            '☕ Anmok Coffee Street gets crowded at sunset; come mid-morning for a quieter table with the same sea view.',
+            '🌄 Anbandegi is best at sunrise for its sea of clouds, so it suits an overnight stay nearby rather than a day trip from downtown.',
+            "👟 The Nochusan stone-tower path and Daegwallyeong's old road are forest walks, not paved streets — wear proper shoes.",
+            '🗺️ Three spots are drawn as actual walking lines on the map — Wolhwa-geori, Anmok Coffee Street and Bada-buchae-gil — because their names literally mean "street" or "road"; everything else is a pin.',
+            '📝 Coordinates and descriptions come from the video and Naver, checked 30 October 2026.',
           ],
         },
       },
@@ -1539,7 +1672,6 @@ export const cities: City[] = [
             "🚗 Everything outside Seoul is easiest by car. Mr. Sunshine fans can chain **Nonsan, Hapcheon and Hadong** over two days.",
             "📸 Paju has two gardens and Heyri within about 15 km: Byeokchoji and Heyri fit in one afternoon, First Garden is the detour.",
             "🏞️ The pins on sets mark the main entrance, not each location. Photos on the pins come from Naver Map; four places have none there.",
-            "🚻 Most sets and parks have toilets inside. The only public toilet outside paid grounds is the one pinned at Yanghwajin Park.",
             "🔗 Heyri also appears on our Abroad in Korea map, Incheon Open Port Street is next to the Incheon China Town walk, and Nami Island has its own full page on our Gapyeong path.",
           ],
         },
@@ -1659,7 +1791,6 @@ export const cities: City[] = [
             "🚗 The regions are hours apart: Seoul and Gyeonggi fit in two days by subway and bus, the Gangwon beaches are a day by car along the coast, and the south is a trip of its own. Jumunjin to Maengbang is about 90 minutes by car.",
             "📸 Daeseong Elementary is a working school: photograph the wall from the street and leave the gate alone. The same goes for the SNU campus and the depot.",
             "🍜 Yujeong Sikdang grills pork and is open daily, about 10:00–21:30 on weekdays and to 20:00 at weekends, checked 30 October 2026; the walls are covered in ARMY notes, so bring a pen.",
-            "🚻 Public toilets are pinned where Naver lists one: Hakdong Park, inside Gyeongbokgung, Gamcheon and Busan Citizens Park. The beaches, Iryeong, Saemangeum and Damyang have none listed; use the cafés.",
             "📝 Each pin names its source: press for the confirmed sites, \"fan tour lists\" for the rest. If you know a better-documented spot, tell me and I will move the pin.",
             "🔗 Gyeongbokgung is on our Hanok Villages walk, Gamcheon on the Busan Culture Villages path, and Daejanggeum Park and Heyri are on the K-Drama map.",
           ],

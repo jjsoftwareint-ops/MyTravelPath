@@ -330,6 +330,10 @@ a:focus-visible {
   background: light-dark(#e0f2fe, #0c4a6e);
   color: light-dark(#075985, #bae6fd);
 }
+.pill.tag-car {
+  background: light-dark(#e2e8f0, #334155);
+  color: light-dark(#334155, #e2e8f0);
+}
 .tag-icon {
   width: 13px;
   height: 13px;
@@ -774,6 +778,12 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
+/* ── Flat icon (OpenMoji) in place of a native emoji glyph, path detail pages ── */
+.emoji-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* ── Important information above the map (hours, closures, fees) ── */
 .notices {
   list-style: none;
@@ -797,8 +807,10 @@ a:focus-visible {
 }
 .notice-card-icon {
   flex: 0 0 auto;
-  font-size: 18px;
   line-height: 1.2;
+}
+.notice-card-icon img {
+  display: block;
 }
 .notice-card-title {
   display: block;
@@ -1025,6 +1037,15 @@ button.cta {
   margin: 16px 0 6px;
   font-size: 15px;
   font-weight: 700;
+}
+.guide h2 img,
+.guide h3 img {
+  vertical-align: -0.2em;
+  margin-right: 6px;
+}
+.guide-emoji {
+  vertical-align: -0.3em;
+  margin-right: 6px;
 }
 .guide p {
   margin: 0 0 12px;

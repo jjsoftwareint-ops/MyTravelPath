@@ -1,3 +1,4 @@
+import { FaCar } from 'react-icons/fa'
 import { FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
 import { GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
 import { LuFlower, LuUmbrella } from 'react-icons/lu'
@@ -23,5 +24,7 @@ export default function TagIcon({ name }: { name: TagIconName }) {
       return <FaFire className="tag-icon" aria-hidden="true" />
     case 'rainy':
       return <LuUmbrella className="tag-icon" aria-hidden="true" />
+    case 'car':
+      return <FaCar className="tag-icon" aria-hidden="true" />
   }
 }
