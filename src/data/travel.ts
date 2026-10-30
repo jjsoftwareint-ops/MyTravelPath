@@ -1483,14 +1483,14 @@ export const cities: City[] = [
         name: 'Chuncheon: Uiam Lake & Gim Yu-jeong Rail Bike',
         seoTitle: 'Chuncheon day trip: Uiam Lake & rail bike',
         seoDescription:
-          "Chuncheon day trip near Legoland: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, a 28 km lake circuit, dakgalbi and cafes.",
+          "Chuncheon day trip with Legoland Korea: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, a 28 km lake circuit, the Myeongdong dakgalbi alley and cafes.",
         description:
-          "Chuncheon's lakefront in one map: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, Soyanggang Dam and the Soyang Lake cruise, and a 28 km Uiam Lake circuit for cyclists. Also pinned: Chuncheon's dakgalbi and potato-bread cafes.",
+          "Chuncheon's lakefront in one map: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, Soyanggang Dam and the Soyang Lake cruise, and a 28 km Uiam Lake circuit for cyclists. Also pinned: Legoland Korea, the Myeongdong dakgalbi alley and potato-bread cafes.",
         duration: 'Day trip',
         image: 'gimyujeong-railbike.jpg',
         imageCredit: 'Photo: Gage Skidmore · CC BY-SA 4.0',
         updated: '2026-10-30',
-        keywords: ['Chuncheon', 'Gangwon', 'DayTripFromSeoul', 'UiamLake', 'SoyanggangSkywalk', 'GimYujeongRailBike', 'GangchonRailPark', 'Dakgalbi', 'KoreaTravel'],
+        keywords: ['Chuncheon', 'Gangwon', 'DayTripFromSeoul', 'LegolandKorea', 'UiamLake', 'SoyanggangSkywalk', 'GimYujeongRailBike', 'Dakgalbi', 'KoreaTravel'],
         story: {
           title: 'A valley remade twice',
           text: [
@@ -1520,18 +1520,19 @@ export const cities: City[] = [
           ],
           route: [
             "Samaksan Lake Cable Car, Uiam Lake station: Chuncheon's newest attraction, crossing Uiam Lake to Samaksan; glass-floor cabins cost extra.",
+            "Legoland Korea: the country's first Legoland, a theme park and resort opened in 2022 on Jungdo, an island in Uiam Lake.",
             "Gim Yu-jeong Rail Bike boarding platform, next to Gimyujeong Station: an 8 km ride down the old Gyeongchun line, 6 km by rail bike through the Bukhan River gorge and a themed tunnel to Nangu Village, then 2 km by sightseeing train on to the old Gangchon station; a shuttle brings riders back. Opened in 2012 on the stretch of track left disused when the line was double-tracked in 2010.",
             "Gimyujeong Station, disused, and the Gim Yu-jeong Literary Village: the old closed station is a well-known photo spot; next to it is the reconstructed home village of the writer Gim Yu-jeong (1908–1937). Renamed from Sillam in 2004 in his honour, it was the first Korean station ever named after a person.",
             "Soyanggang Dam and the Soyang Lake cruise: Korea's largest dam by reservoir volume, nicknamed the country's own fjord, with a cruise boat across Soyang Lake to its remoter temples and villages. Finished in 1973, once Asia's largest rock-fill dam.",
             "Soyanggang Skywalk: Korea's longest glass-floor skywalk, out over the Soyang River beside the Maiden statue.",
             "The Uiam Lake circuit (의암호 둘레길): a 28 km lakeside loop past Yungrim Land, the Literature Park, the Animation Museum, the skywalk again, Songam Sports Town, Gongjicheon and the Ethiopia Korean War Memorial — built more for cyclists than for one walk.",
-            "Restaurants and cafes: the pink pins, from charcoal dakgalbi at Todam to the potato-bread bakery Gamjabat and the lakeside cafes along Baksa-ro.",
+            "Restaurants and cafes: the pink pins, from charcoal dakgalbi at Todam to the potato-bread bakery Gamjabat and the lakeside cafes along Baksa-ro. Downtown, the Myeongdong Dakgalbi Alley is a whole street of dakgalbi restaurants side by side.",
           ],
           tips: [
             "🚆 Getting there: the ITX-Cheongchun runs from Yongsan to Chuncheon Station in about 1h10; the stops here are spread around the lake, so a car or taxi between them is easier than the bus.",
             "🚲 The Uiam Lake circuit is built for cyclists, not one walk: rent a bike near the Skywalk or the cable car station, or just walk the short stretch between the two.",
             "🎟️ Book the rail bike before you go (box above); a free shuttle bus brings riders back from the old Gangchon station to Gimyujeong.",
-            "🍗 Dakgalbi country: Todam Charcoal Dakgalbi and Top Place Dining are the pink pins, both checked open 30 October 2026.",
+            "🍗 Dakgalbi country: Todam Charcoal Dakgalbi and Top Place Dining are the pink pins, both checked open 30 October 2026, or head downtown to the Myeongdong Dakgalbi Alley for a whole street of it.",
             "🥔 Gamjabat's potato bread (감자빵) is the Chuncheon bakery everyone photographs; go early, it sells out.",
             "🔗 The old Gangchon station here is the same end point as our Gapyeong river trail from Gapyeong Station — the two maps meet.",
             "📝 Hours and reviews come from Naver, checked 30 October 2026.",
