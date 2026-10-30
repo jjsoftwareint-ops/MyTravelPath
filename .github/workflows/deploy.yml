@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      urls: ${{ steps.urls.outputs.json }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,6 +30,11 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+      - name: Collect sitemap URLs for IndexNow
+        id: urls
+        run: |
+          JSON=$(grep -o '<loc>[^<]*</loc>' dist/sitemap.xml | sed 's/<loc>//;s#</loc>##' | python3 -c "import sys, json; print(json.dumps([l.strip() for l in sys.stdin]))")
+          echo "json=$JSON" >> "$GITHUB_OUTPUT"
 
   deploy:
     needs: build
@@ -38,3 +45,15 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      # Tell Bing and Yandex about every page once the deploy is actually live (IndexNow
+      # protocol). Google does not support IndexNow and has no automatic equivalent; new
+      # posts still need "Request indexing" by hand in Search Console for faster Google pickup.
+      - name: Ping IndexNow (Bing, Yandex)
+        continue-on-error: true # a failed ping must never mark the deploy itself as failed
+        env:
+          URLS: ${{ needs.build.outputs.urls }}
+        run: |
+          KEY=d20316c90c86e3305c0afecddd66ef5b
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{\"host\":\"koreatravelpath.com\",\"key\":\"$KEY\",\"keyLocation\":\"https://koreatravelpath.com/$KEY.txt\",\"urlList\":$URLS}"
