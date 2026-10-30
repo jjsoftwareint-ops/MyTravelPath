@@ -843,11 +843,40 @@ a:focus-visible {
 .visitors b {
   font-weight: 700;
 }
-.korea-map {
+.korea-map-trigger {
   display: block;
   width: min(50%, 360px);
-  height: auto;
   margin: 32px auto 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.korea-map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.map-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(15, 17, 21, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+.map-overlay-image {
+  max-width: 92vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
 }
 .content > .notice {
   margin-bottom: 14px; /* home page: notice above the list */

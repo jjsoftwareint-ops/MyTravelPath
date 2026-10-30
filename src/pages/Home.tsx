@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { GrAnnounce } from "react-icons/gr";
 import { useParams } from "react-router-dom";
 import Link from "../components/Link";
@@ -14,6 +15,16 @@ import { usePageMeta } from "../seo";
 export default function Home() {
   const { cityId } = useParams();
   usePageMeta();
+  const [mapOpen, setMapOpen] = useState(false);
+
+  useEffect(() => {
+    if (!mapOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMapOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [mapOpen]);
 
   return (
     <Layout
@@ -105,14 +116,38 @@ export default function Home() {
         })}
       </ul>
 
-      <img
-        className="korea-map"
-        src={`${import.meta.env.BASE_URL}korea-map.webp`}
-        alt="Map of South Korea showing its provinces and major cities"
-        width={724}
-        height={960}
-        decoding="async"
-      />
+      <button
+        type="button"
+        className="korea-map-trigger"
+        onClick={() => setMapOpen(true)}
+        aria-label="View full-size map of South Korea"
+      >
+        <img
+          className="korea-map"
+          src={`${import.meta.env.BASE_URL}korea-map.webp`}
+          alt="Map of South Korea showing its provinces and major cities"
+          width={724}
+          height={960}
+          decoding="async"
+        />
+      </button>
+
+      {mapOpen && (
+        <div
+          className="map-overlay"
+          onClick={() => setMapOpen(false)}
+          role="button"
+          tabIndex={0}
+          aria-label="Close map"
+        >
+          <img
+            className="map-overlay-image"
+            src={`${import.meta.env.BASE_URL}korea-map.webp`}
+            alt="Map of South Korea showing its provinces and major cities"
+            decoding="async"
+          />
+        </div>
+      )}
     </Layout>
   );
 }
