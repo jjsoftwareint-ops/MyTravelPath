@@ -767,7 +767,7 @@ export const cities: City[] = [
       },
       {
         id: 'indoor-activity',
-        name: 'Indoor Activity',
+        name: 'Indoors Trip',
         seoTitle: 'Busan rainy day: indoor places on one map',
         seoDescription:
           'Busan under a roof: museums at Yeongdo, Gijang and Dongnae, Busan Tower and X the Sky, Centum and Gwangalli spas, a character café and the Blueline beach train.',
@@ -776,16 +776,8 @@ export const cities: City[] = [
         duration: 'Full day',
         updated: '2026-10-30',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
-        notices: [
-          {
-            icon: '🎪',
-            title: "Podium Dive's Miffy pop-up has ended",
-            body: "The 'Miffy and the Magic Mailbox' pop-up pinned at Gwangalli's **Podium Dive** ran only 9–22 January 2026 and is already over. Podium Dive keeps running new pop-ups in the same basement space, so the pin is worth checking on its own channel before a visit, not for this specific show.",
-            since: 'Checked 30 October 2026.',
-          },
-        ],
         image: 'busan-indoor.jpg',
-        imageCredit: 'Photo: bryansjs · CC BY-SA 2.0',
+        imageCredit: 'Photo: HappyMidnight · CC BY-SA 3.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1oQUMXW3eqC7zXTSijNX2mwYpDZYxkRM',
         keywords: ['Busan', 'RainyDayInBusan', 'BusanMuseums', 'BusanTower', 'XTheSky', 'CentumSpaLand', 'Heosimcheong', 'F1963', 'Jjimjilbang', 'KoreaTravel'],
         guide: {
@@ -796,7 +788,7 @@ export const cities: City[] = [
           route: [
             "Museums: Busan Museum in Nam-gu's UN Peace Park, Bokcheon Museum over an excavated Gaya-era tomb cluster in Dongnae, the National Maritime Museum of Korea and the free Busan Modern & Contemporary History Museum in a 1929 former bank building, the Busan Fishing Village Folk Museum by the Nakdong estuary, the hands-on Busan National Science Museum out in Gijang, and Memory Treasure Island, a paid 1970s–90s nostalgia collection near Gukje Market.",
             "Spas, saunas & water parks: Centum Spa Land, a big jjimjilbang inside Shinsegae Centum City department store; Club D Oasis Spa & Waterpark in the LCT tower at Haeundae; Hotel Aquapalace's jjimjilbang right on Gwangalli beach with an infinity pool facing the bridge; and Heosimcheong, one of Busan's oldest hot-spring bathhouses at Dongnae, with a craft-beer taproom downstairs.",
-            "Cafés, characters & culture: F1963, a 1963 wire-rope factory turned bookstore-café, brewery and gallery complex; Hello Kitty Apple Cafe in Centum City; 4233 Mind Center, a calming light-and-sound exhibition space near Gwangalli; and Podium Dive, the pop-up venue that hosted the Miffy exhibition (see the notice above the map for its current status).",
+            "Cafés, characters & culture: F1963, a 1963 wire-rope factory turned bookstore-café, brewery and gallery complex; Hello Kitty Apple Cafe in Centum City; and 4233 Mind Center, a calming light-and-sound exhibition space near Gwangalli.",
             "Towers & scenic train: Busan Tower's 1973 indoor observation deck over Yongdusan Park and the harbour; Busan X the Sky, Korea's tallest observation deck on floors 98–100 of LCT Landmark Tower; and the Haeundae Blueline beach train from Mipo, a sheltered, sit-down way to see the coast between Haeundae and Songjeong.",
           ],
           tips: [
