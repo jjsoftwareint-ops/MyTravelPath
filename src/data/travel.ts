@@ -88,7 +88,7 @@ export const cities: City[] = [
         description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
         duration: '3h',
         updated: '2026-10-30',
-        tags: [{ icon: 'moon', label: 'Night walk' }],
+        tags: [{ icon: 'sunset', label: 'Evening walk' }, { icon: 'moon', label: 'Night walk' }],
         story: {
           title: 'A wall, and a river that was buried',
           text: [
@@ -126,7 +126,7 @@ export const cities: City[] = [
             "Then it only gets easier. The wall carries you downhill to Dongdaemun gate, and the **Cheonggyecheon** stream, lit up and full of life after dark, carries you 3.3 km west through the old city to Cheonggye Plaza. 5.6 km, almost all downhill or flat, with dinner at **Gwangjang Market** halfway.",
           ],
           route: [
-            "Blue spur, alternate start: from Hansungdae-ipgu Station exit 6, Hyehwamun gate is a short walk away; stairs beside it climb the Hanyangdoseong patrol path onto the wall near 369 Village, a resident-run rest stop, then pass Seoul Guesthouse on the way down to First View Plaza, where this spur joins the main route below.",
+            "Blue spur, alternate start: from Hansungdae-ipgu Station exit 4, walk to the corner of the junction and a footpath leads straight onto the Hanyangdoseong trail, with Hyehwamun gate across the road. It climbs onto the wall near 369 Village, a resident-run rest stop, then passes Seoul Guesthouse on the way down to First View Plaza, where this spur joins the main route below.",
             "Naksan Park entrance on the Dongsung-dong side, 10 min uphill from Hyehwa Station exit 2: the park path to the central plaza and the small exhibition hall on the wall's history. Naksan is named for its camel-back shape, and it was the palace's 'left blue dragon' hill.",
             "First View Plaza: panorama west over Jongno, Bukhansan and N Seoul Tower. Best light at sunset.",
             "Join the Seoul City Wall and keep it on your left all the way down. The first secret gate opens onto Ihwa Mural Village and the angel-wings mural 100 m down the lane. Ihwa is an old hillside settlement that grew just after the Korean War; a 2006 public art project painted it, the visitors came, and some of its best-known murals have since been removed after residents complained of noise. Residents live here, so keep quiet.",
@@ -136,7 +136,7 @@ export const cities: City[] = [
             "The 192 m ceramic mural of King Jeongjo's procession, Gwangtonggyo, the oldest stone bridge on the stream, and the candle fountain at Cheonggye Plaza. Gwanghwamun and City Hall stations are minutes away.",
           ],
           tips: [
-            "🚇 Getting there: Hyehwa Station (line 4), exit 2, then through the Daehangno theatre quarter and up Naksan-gil. Hansungdae-ipgu Station (line 4), exit 6, is the alternate start via Hyehwamun gate.",
+            "🚇 Getting there: Hyehwa Station (line 4), exit 2, then through the Daehangno theatre quarter and up Naksan-gil. Hansungdae-ipgu Station (line 4), exit 4, is the alternate start straight onto the city-wall trail.",
             "🍜 Gwangjang Market, directly above the stream halfway along, is the dinner stop: bindaetteok mung-bean pancakes, mayak gimbap and yukhoe. Most stalls run until late evening.",
             "🔦 The wall path is steps and slopes with dark patches between the lit sections; a phone torch helps. The stream walkway is flat and lit.",
             "📍 The stream walkway closes after heavy rain. Toilets at the Naksan central plaza.",
