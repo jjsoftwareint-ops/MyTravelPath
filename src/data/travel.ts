@@ -1267,15 +1267,15 @@ export const cities: City[] = [
         screenshot: 'gyeyangsan-naver-map.png',
         screenshotCaption: 'Naver Map: the Gyeyangsan courses and trailheads. Google Maps does not show these trails accurately.',
         whyVisit: [
-          "Incheon's highest peak, 395 m, ten minutes on foot from a subway station, and most people climb it at night.",
-          "Three ways up, from deck stairs to a forest path, all meeting at **an octagonal pavilion open on every side**.",
-          "Forty minutes to the top by the fast way, and **the city lights below** for the way down.",
+          "**A panoramic night view** over Incheon from the top of its highest peak, 395 m, ten minutes on foot from a subway station.",
+          "Most people climb after dark, by deck stairs or a forest path, and at the summit pavilion the city lights spread out on every side.",
+          "It is forty minutes to the top by the fast way, with **the lights below you** for the whole way down.",
         ],
         story: {
           title: 'A fortress on the Incheon side',
           text: [
             "**Gyeyangsanseong**, the stone fortress on the mountain's east ridge, is thought to date from the Three Kingdoms period, when this hill watched the approaches to the Han River; the museum at the route 2 trailhead holds what the excavations found.",
-            "The mountain was named for the cinnamon and cassia trees said to have grown here. Its octagonal summit pavilion is modern, built for the view over Incheon and, on a clear day, across to Ganghwa and the sea.",
+            "The mountain was named for the cinnamon and cassia trees said to have grown here. The summit pavilion is modern, and its panorama takes in Incheon and, on a clear day, Ganghwa and the sea.",
           ],
         },
         notices: [
@@ -1296,8 +1296,8 @@ export const cities: City[] = [
         keywords: ['Incheon', 'Gyeyangsan', 'NightHiking', 'IncheonHiking', 'DayTripFromSeoul', 'GyesanStation', 'HikingKorea', 'KoreaTravel'],
         guide: {
           intro: [
-            "⛰️ Ten minutes from the station to the trailheads, and then you **choose your start**: deck stairs straight up in 40 minutes, the gentle museum route in an hour and a quarter, or the forest climb from the pavilion.",
-            "All three meet on the ridge and finish at the summit pavilion. Go **after dark**; that is what the mountain is for.",
+            "⛰️ Ten minutes from the station to the trailheads, and then you choose your start: deck stairs straight up in 40 minutes, the gentle museum route in an hour and a quarter, or the forest climb from the pavilion.",
+            "All three meet on the ridge and finish at the summit pavilion. Go **after dark** for the panorama.",
           ],
           route: [
             "Route 1, from the Gyeyang Park Management Office next to Kyungin Women's University: deck stairs the whole way, about 40 to 50 minutes. The fastest way up.",

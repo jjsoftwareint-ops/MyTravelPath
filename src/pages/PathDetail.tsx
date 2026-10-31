@@ -7,13 +7,12 @@ import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
 import FollowTipDialog from "../components/FollowTipDialog";
-import ListenButton from "../components/ListenButton";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
-import { findCity, findPath, hasMap, mapEmbedUrl, type TravelPath } from "../data/travel";
+import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { formatDate } from "../dates";
 import { useFollowTipHidden } from "../followTip";
 import { emojiFile, splitLeadingEmoji } from "../emoji";
@@ -23,20 +22,6 @@ import { usePageMeta } from "../seo";
 
 // The site owner's PayPal.Me link.
 const DONATE_URL = "https://paypal.me/berlinersejin";
-
-// Plain-text paragraphs for the Listen button: the pitch, the history, then the plan, markup stripped.
-function spokenParagraphs(path: TravelPath): string[] {
-  const plain = (t: string) =>
-    splitLeadingEmoji(t).rest
-      .replace(/\*\*(.+?)\*\*/g, "$1")
-      .replace(/\{(?:red|blue):([^}]+)\}/g, "$1")
-      .replace(/\[([^\]]+)\]\(https?:\/\/[^)]+\)/g, "$1");
-  return [
-    ...(path.whyVisit ?? []),
-    ...(path.story ? [path.story.title, ...path.story.text] : []),
-    ...(path.guide?.intro ?? []),
-  ].map(plain);
-}
 
 // A guide line (intro paragraph, route step or tip) with its native leading emoji swapped for the
 // matching flat OpenMoji icon (site rule 2026-10-30: flat icons everywhere, not just the blog).
@@ -135,12 +120,9 @@ export default function PathDetail() {
 
           {path.whyVisit && (
             <section className="path-why" aria-labelledby="why-visit-title">
-              <div className="heading-row">
-                <h2 id="why-visit-title">
+              <h2 id="why-visit-title">
                   <Emoji name="star" size={20} /> What makes it worth a visit
                 </h2>
-                <ListenButton paragraphs={spokenParagraphs(path)} />
-              </div>
               {path.whyVisit.map((text) => (
                 <p key={text}>
                   <GuideLine text={text} />
