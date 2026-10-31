@@ -334,6 +334,22 @@ a:focus-visible {
   background: light-dark(#e2e8f0, #334155);
   color: light-dark(#334155, #e2e8f0);
 }
+.pill.tag-surf {
+  background: light-dark(#cffafe, #164e63);
+  color: light-dark(#0e7490, #a5f3fc);
+}
+.pill.tag-railbike {
+  background: light-dark(#ecfccb, #365314);
+  color: light-dark(#3f6212, #d9f99d);
+}
+.pill.tag-dmz {
+  background: light-dark(#f1efd9, #3f3c1a);
+  color: light-dark(#57532a, #e5e2b0);
+}
+.pill.tag-art {
+  background: light-dark(#ede9fe, #4c1d95);
+  color: light-dark(#6d28d9, #ddd6fe);
+}
 .tag-icon {
   width: 13px;
   height: 13px;

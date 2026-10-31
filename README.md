@@ -146,6 +146,8 @@ All allow free use; the credit is given in every case.
   CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Jeongdongjin_Beach.jpg
 - Sokcho path banner: *Pedestrian bridge at Daepo Port 02*, Bernard Gagnon, CC0.
   https://commons.wikimedia.org/wiki/File:Pedestrian_bridge_at_Daepo_Port_02.jpg
+- Yangyang path banner: *Gangwon coast* (Inku Beach and its surf town seen from Jukdo), EasyKL, CC BY-SA 3.0.
+  https://commons.wikimedia.org/wiki/File:Gangwon_coast.JPG
 
 - Blog, Danpung-nori post: *내장산의 단풍1* (Naejangsan pavilion in autumn), Shunshan Piao, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:%EB%82%B4%EC%9E%A5%EC%82%B0%EC%9D%98_%EB%8B%A8%ED%92%8D1.jpg
@@ -169,7 +171,7 @@ All allow free use; the credit is given in every case.
 
 The app icon, favicon and home-header mark are the project's own artwork (a suitcase with a
 Korean flag tag among cherry blossoms).
-Tag icons are from FontAwesome (CC BY 4.0), Game Icons (CC BY 3.0) and Lucide (ISC),
+Tag icons are from FontAwesome (CC BY 4.0), Game Icons (CC BY 3.0), Lucide (ISC) and Material Design (Apache 2.0),
 the path notice icon from IcoMoon Free (CC BY 4.0), the home announcement icon from
 Grommet Icons (Apache 2.0) and the light/dark toggle from Ionicons (MIT), all via the
 react-icons package.

@@ -1,7 +1,8 @@
 import { FaCar } from 'react-icons/fa'
-import { FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
-import { GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
-import { LuFlower, LuUmbrella } from 'react-icons/lu'
+import { FaBicycle, FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
+import { GiBarbedWire, GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
+import { LuFlower, LuPalette, LuUmbrella } from 'react-icons/lu'
+import { MdSurfing } from 'react-icons/md'
 import type { TagIconName } from '../data/travel'
 
 // Icons for path tags, from the FontAwesome and Game Icons sets in react-icons.
@@ -26,5 +27,13 @@ export default function TagIcon({ name }: { name: TagIconName }) {
       return <LuUmbrella className="tag-icon" aria-hidden="true" />
     case 'car':
       return <FaCar className="tag-icon" aria-hidden="true" />
+    case 'surf':
+      return <MdSurfing className="tag-icon" aria-hidden="true" />
+    case 'railbike':
+      return <FaBicycle className="tag-icon" aria-hidden="true" />
+    case 'dmz':
+      return <GiBarbedWire className="tag-icon" aria-hidden="true" />
+    case 'art':
+      return <LuPalette className="tag-icon" aria-hidden="true" />
   }
 }

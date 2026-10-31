@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car' | 'surf' | 'railbike' | 'dmz' | 'art'
 export type Tag = string | { icon: TagIconName; label: string }
 
 // Longer text for the detail page: what the walk is, the stages in order and
@@ -1465,6 +1465,7 @@ export const cities: City[] = [
         seoTitle: 'Gapyeong day trip: Nami Island ferry and map',
         seoDescription: 'Gapyeong day trip east of Seoul: Nami Island ferry times and prices, Morning Calm Arboretum, Petite France, view cafés and a 17 km river trail to Gangchon, with hours and a map.',
         duration: 'Day trip',
+        tags: [{ icon: 'village', label: 'Island day trip' }, { icon: 'railbike', label: 'Rail bike' }, { icon: 'hiking', label: 'Trekking' }],
         image: 'gapyeong.jpg',
         imageCredit: 'Photo: Katsujiro Maekawa · CC0',
         updated: '2026-10-31',
@@ -1544,6 +1545,7 @@ export const cities: City[] = [
         seoDescription:
           'Paju day trip north of Seoul: Imjingak and the Peace Gondola, the DMZ tour to the 3rd Tunnel, Heyri Art Village, Book City, two suspension bridges. Buses, hours and a map.',
         duration: 'Day trip',
+        tags: [{ icon: 'dmz', label: 'DMZ' }, { icon: 'art', label: 'Art village' }],
         image: 'paju.jpg',
         imageCredit: 'Photo: 한국문화관광연구원 · CC0',
         updated: '2026-10-31',
@@ -1699,6 +1701,7 @@ export const cities: City[] = [
         seoDescription:
           "Chuncheon day trip with Legoland Korea: the Soyanggang Skywalk and Samaksan cable car over Uiam Lake, the Gim Yu-jeong Rail Bike to the old Gangchon station, a 28 km lake circuit, the Myeongdong dakgalbi alley and cafes.",
         duration: 'Day trip',
+        tags: [{ icon: 'hiking', label: 'Trekking' }, { icon: 'railbike', label: 'Rail bike' }],
         image: 'gimyujeong-railbike.jpg',
         imageCredit: 'Photo: Gage Skidmore · CC BY-SA 4.0',
         updated: '2026-10-31',
@@ -1882,6 +1885,67 @@ export const cities: City[] = [
             "👟 Nori Forest and Sangdomun are quiet walks, and the Gwongeumseong path is gentle earth and rock for about 10 minutes from the cable car's top station.",
             '🗺️ Streets and trails with a gil, geori or ro in their name are drawn as lines on the map; Yeongri-dan-gil and the Sangdomun lanes are approximate, drawn along the nearest mapped streets.',
             '🔗 The Gangneung Highlights map on this site is the next stop down the coast.',
+          ],
+        },
+      },
+      {
+        id: 'yangyang',
+        name: "Yangyang: Korea's Surf Coast",
+        seoTitle: 'Yangyang surf beaches map: Yangri-dan-gil and food',
+        seoDescription:
+          "Yangyang on one map: the surf-town street Yangri-dan-gil between Inku and Jukdo beaches, Hajodae and Naksan beaches, the Jujeongol valley walk, 14 restaurants and the bus from Seoul.",
+        duration: '2 days',
+        tags: [{ icon: 'hot', label: 'Hot place' }, { icon: 'surf', label: 'Surf town' }],
+        image: 'yangyang.jpg',
+        imageCredit: 'Photo: EasyKL · CC BY-SA 3.0',
+        imageWhole: true,
+        updated: '2026-10-31',
+        keywords: ['Yangyang', 'Gangwon', 'Surfing', 'YangriDanGil', 'InkuBeach', 'JukdoBeach', 'Hajodae', 'Naksan', 'KoreaTravel'],
+        whyVisit: [
+          "A hip beach town where **the nights are as lively as the days**: surf shops, pubs, cocktails and espresso bars in the same few lanes behind the sand.",
+          "A surf-camp mood at Inku and Jukdo, with cafés and pubs facing the waves, and Seoul only two hours away.",
+          "Not a surfer? **An electric surfboard** needs no waves and no skill, and a cool mountain valley waits inland.",
+        ],
+        story: {
+          title: 'From fishing village to surf town',
+          text: [
+            "Yangyang was a **small fishing village** until Korean surfers, hunting for waves closer to Seoul, found the beaches at Inku and Jukdo in the 2000s. The Seoul–Yangyang expressway then brought them within about two hours of the capital.",
+            "In 2014 the county's new head, Kim Jin-ha, made surfing his project. By 2019 nearly **70 surf shops** had opened, 300 of the county office's 500 staff had taken lessons, and the shrinking population had started to grow again. Jukdo, the first beach to catch on, filled with campsites, caravans, pubs and surf shops, and the strip behind Inku Beach, now called **Yangri-dan-gil**, added the cafés and bars that keep the night going.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚌',
+            title: 'Seoul to Yangyang: about 2 hours',
+            body: "Express buses from Dong Seoul Terminal take about **2 hours**, hourly, roughly ₩12,000–21,000. Yangyang's terminal is about 17 km from Inku and Jukdo beaches as the crow flies, and I could not confirm a direct local bus, so check Naver Map or take a taxi. By car, the main surf beaches are under 10 minutes from the Hajodae exit of the Seoul–Yangyang expressway.",
+            since: 'Rome2rio timings and a travel-blog itinerary, checked 31 October 2026. Confirm times and fares on KOBUS before you go.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1OAFV7OxvK0FIbDzIJN2MDoYtTXWenpc',
+        guide: {
+          intro: [
+            "🏄 Yangyang is a hip beach town where you can **try surfing** for the first time and stay out for the night. Inku and Jukdo beaches sit side by side, and the street behind Inku Beach, Yangri-dan-gil, is lined with surf shops, guesthouses, cafés and bars.",
+            "Spend **day one** on that strip: gelato on the street, the short spiral path up to the Jukdo lookout, a paddleboard rented at Jukdo, then dinner and a drink on Inku-gil. Hajodae and Seobi beaches are about 7 km north.",
+            "On **day two** head to Naksan for the temple and its cliff pavilion, then inland to the Jujeongol valley. Finish with a bowl of buckwheat noodles or clam soup from the restaurant list.",
+          ],
+          route: [
+            "Yangri-dan-gil (양리단길), 0.8 km along Inku-gil from Inku Beach to Jukdo Beach, with the parallel lanes drawn as their own lines: surf shops, cafés and gelato.",
+            "Jukdo Beach (죽도해변) and Jukdo Pavilion (죽도정): a short spiral path up to the lookout, with Inku Beach on one side and Jukdo Beach on the other, then steps down to the rocks.",
+            "Hajodae Beach (하조대해수욕장) and Seobi Beach (서피비치), the busiest beach and the beach club beside it.",
+            "Namae Port (남애항) and its free skywalk lookout, Dongho Beach (동호해변) with its wide sand, and Hyuhyuam Temple (휴휴암) on the sea, where you can feed the fish.",
+            "Mulchi Beach (물치해수욕장), where the electric surfboards are rented, then Naksan Beach (낙산해수욕장), where the Namdaecheon river meets the sea, and the Namdaecheon eco-trail (남대천 생태관찰로), drawn approximately.",
+            "Naksansa Temple (낙산사) and Uisangdae Pavilion (의상대), the cliff-edge pavilion and sunrise spot.",
+            "Jujeongol valley (주전골), 2.5 km one way from Osaek Spring (오색약수터) to Yongso Falls (용소폭포).",
+            "Songi Valley zipline (송이밸리) and Solbeach Yangyang (쏠비치 양양), the beach resort.",
+            "Restaurants (맛집): fourteen places, from Naksan abalone and Beombau buckwheat noodles to Yangyang's silk-clam soup and the shellfish and pork bars on Yangri-dan-gil.",
+          ],
+          tips: [
+            '🏄 Pick your beach by level: a Korean press guide rates Hajodae for beginners to intermediates and Inku for intermediates to advanced, and calls Seobi Beach surf-only, so swimmers and boards do not collide.',
+            '🍂 Autumn suits surfing: the waves are bigger, the water is still warm and the beaches are quieter than in summer, according to ELLE Korea.',
+            '🌙 Stay for the evening: Yangri-dan-gil is where Yangyang\'s night happens, with bars, pubs and takeaway cocktails on and around Inku-gil.',
+            '⚡ Electric surfboards are rented at Mulchi Beach. They have their own motor, so no waves or surf skill is needed, and even children rode them in the video.',
+            '🍜 Eat by area: buckwheat noodles at Beombau and Sangun, clam soup at Yangyang Jjaebok, abalone at Naksan, and naengsam or shellfish on Inku-gil in the evening.',
+            '🚗 Jukdo and Inku are one short walk; Naksan, Osaek and Solbeach lie 10 to 30 km apart, so a car or taxi saves a lot of time.',
           ],
         },
       },
