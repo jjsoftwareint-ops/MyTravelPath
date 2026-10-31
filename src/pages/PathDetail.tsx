@@ -6,6 +6,7 @@ import { IoFootstepsSharp } from "react-icons/io5";
 import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
+import FollowTipDialog from "../components/FollowTipDialog";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
@@ -13,6 +14,7 @@ import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { formatDate } from "../dates";
+import { useFollowTipHidden } from "../followTip";
 import { emojiFile, splitLeadingEmoji } from "../emoji";
 import { browserUrl, isIOS, isPhone, NAVER_MAP_STORE } from "../platform";
 import { useHydrated } from "../hooks";
@@ -46,6 +48,10 @@ export default function PathDetail() {
   // "To the point & Location" shows the whole My Map full screen instead of opening a new tab.
   const [mapOpen, setMapOpen] = useState(false);
   const closeMap = useCallback(() => setMapOpen(false), []);
+  // iPhone tip before "To follow the path", unless the visitor chose not to see it again.
+  const [tipOpen, setTipOpen] = useState(false);
+  const closeTip = useCallback(() => setTipOpen(false), []);
+  const tipHidden = useFollowTipHidden();
   usePageMeta();
   // The iOS two-button variant only after hydration (see hooks.ts).
   const hydrated = useHydrated();
@@ -208,15 +214,26 @@ export default function PathDetail() {
                   {/* iPhone/iPad: the Google Maps app follows the route well but shows the
                     Naver Map links in pin descriptions as plain text, so a second button
                     shows the same map full screen in the page (new Safari tab only as fallback, see platform.ts). */}
-                  <a
-                    href={path.mapUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta"
-                  >
-                    To follow the path
-                    <IoFootstepsSharp className="cta-icon" aria-hidden="true" />
-                  </a>
+                  {tipHidden ? (
+                    <a
+                      href={path.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta"
+                    >
+                      To follow the path
+                      <IoFootstepsSharp className="cta-icon" aria-hidden="true" />
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className="cta"
+                      onClick={() => setTipOpen(true)}
+                    >
+                      To follow the path
+                      <IoFootstepsSharp className="cta-icon" aria-hidden="true" />
+                    </button>
+                  )}
                   {embed ? (
                     <button
                       type="button"
@@ -318,6 +335,7 @@ export default function PathDetail() {
           </section>
         )}
       </div>
+      {tipOpen && <FollowTipDialog url={path.mapUrl} onClose={closeTip} />}
       {mapOpen && embed && (
         <MapOverlay src={embed} title={`${path.name} map`} onClose={closeMap} />
       )}

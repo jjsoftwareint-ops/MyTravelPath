@@ -1601,3 +1601,66 @@ button.cta {
     transform: translateX(100dvw) rotate(90deg);
   }
 }
+
+/* ── Small confirm dialog (tip before "To follow the path") ─ */
+.dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(15, 17, 21, 0.6);
+}
+.dialog {
+  width: 100%;
+  max-width: 340px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+.dialog p {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.dialog-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 15px;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+.dialog-check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+}
+.dialog-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.dialog-actions .cta {
+  flex: 1;
+  margin-top: 0;
+}
+.dialog-cancel {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--muted);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
