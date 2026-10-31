@@ -35,7 +35,7 @@ export default function FollowTipDialog({
         onClick={(e) => e.stopPropagation()}
       >
         <p>
-          Open <b>Google Maps</b> first when you don't see the locations.
+          Open <b>Google Maps</b> first <u>when you don't see the locations</u>.
         </p>
         <label className="dialog-check">
           <input
