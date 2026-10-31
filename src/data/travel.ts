@@ -1599,6 +1599,69 @@ export const cities: City[] = [
           ],
         },
       },
+      {
+        id: 'sokcho',
+        name: 'Sokcho: Sea, Lakes & Seoraksan',
+        seoTitle: 'Sokcho travel map: 54 places and the bus from Seoul',
+        seoDescription:
+          "Sokcho on one map: the traveller alley, Yeongnang and Cheongcho lakes, Abai Village and the Gaetbae ferry, Daepo Port, Seorak-hyanggi-ro and Seoraksan, plus the bus from Seoul and hotels by the terminals.",
+        description:
+          "Sokcho's 54 best-known spots on one map, grouped by area from the bus terminals to Seoraksan, with 16 restaurants and four hotels by the two terminals. The streets, lake walks and trails (the traveller alley, Yeongnang Lake boardwalk, the coast road, Cheongcho Lake, Abai Village, Seorak-hyanggi-ro, the road to Sinheungsa and the path to Gwongeumseong) are drawn as lines; everything else is a pin.",
+        duration: '2 days',
+        tags: [{ icon: 'hiking', label: 'Coast & mountain' }],
+        image: 'sokcho.jpg',
+        imageCredit: 'Photo: Bernard Gagnon · CC0',
+        imageWhole: true,
+        updated: '2026-10-31',
+        keywords: ['Sokcho', 'Gangwon', 'Seoraksan', 'SeoulToSokcho', 'AbaiVillage', 'GaetbaeFerry', 'SokchoBeach', 'DaepoPort', 'KoreaTravel'],
+        story: {
+          title: 'A border town that became a refuge',
+          text: [
+            "After 1945 Sokcho lay **north of the 38th parallel**. The Korean War moved the line, and in 1954 the area passed to South Korean civil rule. Refugees from Hamgyeong, in the far north-east, settled on the empty sand of Cheongho-dong, hoping to go home soon.",
+            "They never did, and the hamlet became **Abai Village**, named for the Hamgyeong word for an old man. The hand-pulled **Gaetbae** ferry, ₩500 across the canal, still links it to downtown.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚌',
+            title: 'Bus from Seoul: about 2 to 2.5 hours',
+            body: 'Sokcho has **no train station**, so you come by express or intercity bus, about **2 to 2.5 hours** from Seoul. Buses leave from Dong Seoul Terminal (Gangbyeon Station, Line 2) and from Seoul Express Bus Terminal (Gangnam); a standard premium seat is roughly **₩20,000 to ₩22,000**.',
+            since: "The video's own guide and bus timetable sites (bus.koreacharts.com, bustrain.kr), checked 31 October 2026. Times and fares vary by day: confirm on KOBUS or Tmoney before you go.",
+          },
+          {
+            icon: '🚧',
+            title: 'Bada-hyanggi-ro seaside walk is closed',
+            body: 'Sokcho City closed the whole **Oeongchi Bada-hyanggi-ro** deck walkway on **1 December 2025** after a safety inspection gave it the lowest grade (E). The video expects repairs to last until about **the end of 2027**, and the Sokcho Lighthouse observatory was also under repair. The line stays on the map for when it reopens.',
+            since: 'Kyunghyang (27 November 2025) and Cheonji Ilbo reports, plus the video; checked 31 October 2026. Sokcho City tourism: 033-639-2362.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1sVLZpHxUM4IdyPnbwOFy1w8Wggh-i0A',
+        guide: {
+          intro: [
+            "🌊 **Sokcho** is where the East Sea meets **Seoraksan**: a fishing town with a lake on each side, a market, a refugee village reached by hand-pulled ferry, and the national park at the end of the bus line. This map puts **54** places on one page, grouped by area, with the walks drawn as lines.",
+            "Plan **two days**: the coast, lakes and harbours on the first, Nohak-dong and Seoraksan on the second. You do not need a car. From Seoul it is a bus ride, and the video says a few core city bus routes link the main sights. Stay near one of the two bus terminals (hotels are pinned).",
+          ],
+          route: [
+            'Bus terminal alley and Yeongnang Lake (영랑호): the Sokcho Intercity Bus Terminal, the Soho-geori traveller alley (소호거리) with its bookshops, cafés and the Soho 259 hostel, the approximate Yeongri-dan-gil (영리단길) walk to the lake, the Yeongnangho Sumit-gil boardwalk and Beom-bawi rock. Starbucks Yeongnangho Resort is the one coffee stop.',
+            'Lighthouse beach and Dongmyeong Port: Museum X Sokcho, the Sokcho Lighthouse observatory, then Yeongnanghae-gil to Yeonggeumjeong and its sunrise pavilion, Dongmyeong Port and the Sokcho Tourist & Fish Market.',
+            'Cheongcho Lake and Abai Village: the Gaetbae ferry across to Abai Village, Chilseong Shipyard café, Cheongcho Lake amusement park and Expo Tower, with the 5 km lakeside loop drawn in pink.',
+            'Sokcho Beach and the south coast: the Sokcho Express Bus Terminal, the beach and the Sokcho Eye, Oeongchi Beach to Oeongchi Port on the closed Bada-hyanggi-ro, Daepo Port with its fried-seafood alley, and Seorak Port.',
+            'Nohak-dong: Sokcho City Museum, the Nori Forest path, the National Mountaineering Museum, Seorak Chaek, the Seoraksan Native Plant Garden, Hagsapyeong soft-tofu village and the outdoor foot bath at Cheoksan Hot Spring.',
+            'Sangdomun stone-wall village (상도문 돌담마을): old hanok and low stone walls with stone-art sparrows and dogs; the line is an approximate stroll through the lanes.',
+            'Seoraksan: Seorak-hyanggi-ro from Sogongwon, Seoraksan-ro to Sinheungsa and its Unification Buddha, the Seorak Cable Car and the path to the Gwongeumseong fortress site.',
+            'Restaurants (맛집): the 16 pink pins are local favourites, from sundae-guk, tonkatsu and dak-gangjeong near the terminals to the Meokgeori food street just west of Cheongcho Lake, where the raw-fish, grilled-pork and gopchang places line up.',
+          ],
+          tips: [
+            "🚌 Pick your terminal: the Express Bus Terminal is a 5-minute walk from Sokcho Beach, while the Intercity Bus Terminal is by Jungang Market and the traveller alley. Check which one your ticket names.",
+            '🍜 Eat by area: dak-gangjeong and squid sundae at the market, Abai sundae and Hamheung cold noodles in Abai Village, mul-hoe (cold raw-fish soup) by the lighthouse beach, soft tofu in Nohak-dong.',
+            '🌙 Go to Cheongcho Lake and Sokcho Beach after dark: Expo Tower, the Sokcho Eye and the LED Headland breakwater (121 lights) are lit.',
+            "👟 Nori Forest and Sangdomun are quiet walks, and the Gwongeumseong path is gentle earth and rock for about 10 minutes from the cable car's top station.",
+            '🗺️ Streets and trails with a gil, geori or ro in their name are drawn as lines on the map; Yeongri-dan-gil and the Sangdomun lanes are approximate, drawn along the nearest mapped streets.',
+            '🔗 The Gangneung Highlights map on this site is the next stop down the coast.',
+            '📝 Coordinates and descriptions come from the video and Naver, checked 31 October 2026. All 16 restaurants were still open on Naver that day.',
+          ],
+        },
+      },
     ],
   },
   {

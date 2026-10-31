@@ -144,6 +144,8 @@ All allow free use; the credit is given in every case.
   https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8_%ED%95%9C%EC%96%91%EB%8F%84%EC%84%B1(%EC%84%9C%EC%9A%B8_%E6%BC%A2%E9%99%BD%E9%83%BD%E5%9F%8E,_Fortress_Wall_of_Seoul)_2011%EB%85%84_11%EC%9B%94_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C_%EB%AA%85%EC%86%8C_(Seoul_best_attractions)_%EC%82%AC%EB%B3%B8_-%EB%82%99%EC%82%B0%EC%95%BC%EA%B2%BD1-1.jpg
 - Gangwon-do card photo: *Jeongdongjin Beach* (sunrise over the beach, Sun Cruise hotel on the cliff), Loewelad,
   CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Jeongdongjin_Beach.jpg
+- Sokcho path banner: *Pedestrian bridge at Daepo Port 02*, Bernard Gagnon, CC0.
+  https://commons.wikimedia.org/wiki/File:Pedestrian_bridge_at_Daepo_Port_02.jpg
 
 - Blog, Danpung-nori post: *내장산의 단풍1* (Naejangsan pavilion in autumn), Shunshan Piao, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:%EB%82%B4%EC%9E%A5%EC%82%B0%EC%9D%98_%EB%8B%A8%ED%92%8D1.jpg
