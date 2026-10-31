@@ -112,7 +112,9 @@ export default function PathDetail() {
               </time>
             </div>
             {path.description && (
-              <p className="card-desc">{path.description}</p>
+              <p className="card-desc">
+                <RichText text={path.description} />
+              </p>
             )}
           </div>
 

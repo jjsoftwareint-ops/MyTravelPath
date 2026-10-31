@@ -1018,6 +1018,9 @@ button.cta {
   color: var(--accent);
   font-weight: 700;
 }
+.hl.hl-red {
+  color: var(--danger);
+}
 .hashtags {
   display: flex;
   flex-wrap: wrap;

@@ -85,9 +85,10 @@ export const cities: City[] = [
         seoTitle: 'Naksan Park sunset walk to Cheonggyecheon',
         seoDescription:
           "Walk Seoul's city wall on Naksan at sunset, pass Ihwa mural village and Dongdaemun gate, then follow the lit Cheonggyecheon stream. Map and tips.",
-        description: 'Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights.',
+        description:
+          "Naksan Park fortress wall at dusk, then down to the Cheonggyecheon stream lights. The {red:red path} is the shorter way, and the {blue:blue path} winds through narrow little alleys lined with Korea's old-time houses. Mix the two however you like.",
         duration: '3h',
-        updated: '2026-10-30',
+        updated: '2026-10-31',
         tags: [{ icon: 'sunset', label: 'Evening walk' }, { icon: 'moon', label: 'Night walk' }],
         story: {
           title: 'A wall, and a river that was buried',
