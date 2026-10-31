@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { FaInfoCircle } from "react-icons/fa";
 import { FaBus, FaPaypal } from "react-icons/fa6";
-import { GiPathDistance } from "react-icons/gi";
 import { ImInfo } from "react-icons/im";
-import { MdOutlinePinDrop } from "react-icons/md";
+import { IoFootstepsSharp } from "react-icons/io5";
 import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
-import CopyLink from "../components/CopyLink";
 import Emoji from "../components/Emoji";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
+import MapOverlay from "../components/MapOverlay";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
@@ -43,6 +43,9 @@ export default function PathDetail() {
   // The embedded map starts behind a cover so that scrolling the page over it
   // does not pan the map instead. One tap hands control to the map.
   const [mapActive, setMapActive] = useState(false);
+  // "To the point & Location" shows the whole My Map full screen instead of opening a new tab.
+  const [mapOpen, setMapOpen] = useState(false);
+  const closeMap = useCallback(() => setMapOpen(false), []);
   usePageMeta();
   // The iOS two-button variant only after hydration (see hooks.ts).
   const hydrated = useHydrated();
@@ -204,7 +207,7 @@ export default function PathDetail() {
                 <>
                   {/* iPhone/iPad: the Google Maps app follows the route well but shows the
                     Naver Map links in pin descriptions as plain text, so a second button
-                    opens the same map in a new Safari tab (see platform.ts). */}
+                    shows the same map full screen in the page (new Safari tab only as fallback, see platform.ts). */}
                   <a
                     href={path.mapUrl}
                     target="_blank"
@@ -212,23 +215,32 @@ export default function PathDetail() {
                     className="cta"
                   >
                     To follow the path
-                    <GiPathDistance
-                      className="cta-icon bold"
-                      aria-hidden="true"
-                    />
+                    <IoFootstepsSharp className="cta-icon" aria-hidden="true" />
                   </a>
-                  <a
-                    href={browserUrl(path.mapUrl)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta secondary"
-                  >
-                    To the point
-                    <MdOutlinePinDrop className="cta-icon" aria-hidden="true" />
-                    <FaBus className="cta-icon" aria-hidden="true" />
-                    &amp; Location
-                    <ImInfo className="cta-icon" aria-hidden="true" />
-                  </a>
+                  {embed ? (
+                    <button
+                      type="button"
+                      className="cta secondary"
+                      onClick={() => setMapOpen(true)}
+                    >
+                      To the point
+                      <FaBus className="cta-icon" aria-hidden="true" />
+                      &amp; Location
+                      <FaInfoCircle className="cta-icon" aria-hidden="true" />
+                    </button>
+                  ) : (
+                    <a
+                      href={browserUrl(path.mapUrl)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta secondary"
+                    >
+                      To the point
+                      <FaBus className="cta-icon" aria-hidden="true" />
+                      &amp; Location
+                      <FaInfoCircle className="cta-icon" aria-hidden="true" />
+                    </a>
+                  )}
                 </>
               ) : (
                 <a
@@ -240,7 +252,6 @@ export default function PathDetail() {
                   Open in Google Maps ↗
                 </a>
               )}
-              <CopyLink url={path.mapUrl} />
               <a
                 className="donate"
                 href={DONATE_URL}
@@ -307,6 +318,9 @@ export default function PathDetail() {
           </section>
         )}
       </div>
+      {mapOpen && embed && (
+        <MapOverlay src={embed} title={`${path.name} map`} onClose={closeMap} />
+      )}
     </Layout>
   );
 }
