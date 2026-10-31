@@ -7,12 +7,13 @@ import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
 import FollowTipDialog from "../components/FollowTipDialog";
+import ListenButton from "../components/ListenButton";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
 import ShareLink from "../components/ShareLink";
 import Tags from "../components/Tags";
-import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
+import { findCity, findPath, hasMap, mapEmbedUrl, type TravelPath } from "../data/travel";
 import { formatDate } from "../dates";
 import { useFollowTipHidden } from "../followTip";
 import { emojiFile, splitLeadingEmoji } from "../emoji";
@@ -22,6 +23,20 @@ import { usePageMeta } from "../seo";
 
 // The site owner's PayPal.Me link.
 const DONATE_URL = "https://paypal.me/berlinersejin";
+
+// Plain-text paragraphs for the Listen button: the pitch, the history, then the plan, markup stripped.
+function spokenParagraphs(path: TravelPath): string[] {
+  const plain = (t: string) =>
+    splitLeadingEmoji(t).rest
+      .replace(/\*\*(.+?)\*\*/g, "$1")
+      .replace(/\{(?:red|blue):([^}]+)\}/g, "$1")
+      .replace(/\[([^\]]+)\]\(https?:\/\/[^)]+\)/g, "$1");
+  return [
+    ...(path.whyVisit ?? []),
+    ...(path.story ? [path.story.title, ...path.story.text] : []),
+    ...(path.guide?.intro ?? []),
+  ].map(plain);
+}
 
 // A guide line (intro paragraph, route step or tip) with its native leading emoji swapped for the
 // matching flat OpenMoji icon (site rule 2026-10-30: flat icons everywhere, not just the blog).
@@ -118,9 +133,28 @@ export default function PathDetail() {
             )}
           </div>
 
+          {path.whyVisit && (
+            <section className="path-why" aria-labelledby="why-visit-title">
+              <div className="heading-row">
+                <h2 id="why-visit-title">
+                  <Emoji name="star" size={20} /> What makes it worth a visit
+                </h2>
+                <ListenButton paragraphs={spokenParagraphs(path)} />
+              </div>
+              {path.whyVisit.map((text) => (
+                <p key={text}>
+                  <GuideLine text={text} />
+                </p>
+              ))}
+            </section>
+          )}
+
           {path.story && (
-            <section className="path-story" aria-label={path.story.title}>
-              <h2>{path.story.title}</h2>
+            <section className="path-story" aria-labelledby="history-title">
+              <h2 id="history-title">
+                <Emoji name="classical_building" size={20} /> History
+              </h2>
+              <h3>{path.story.title}</h3>
               {path.story.text.map((text) => (
                 <p key={text}>
                   <GuideLine text={text} />
@@ -289,20 +323,24 @@ export default function PathDetail() {
         {path.guide && (
           <section className="guide" aria-labelledby="guide-title">
             <h2 id="guide-title">
-              <Emoji name="sparkles" size={20} /> About this walk
+              <Emoji name="person_walking" size={20} /> About this walk
             </h2>
-            {path.guide.intro.map((text) => (
-              <p key={text}>
-                <GuideLine text={text} />
-              </p>
-            ))}
-            {path.imageCredit && (
-              <p className="photo-credit">{path.imageCredit}</p>
-            )}
+            <div className="talk-bubbles">
+              {path.guide.intro.map((text, i) => (
+                <div className="talk-bubble-row" key={text}>
+                  <span className="talk-avatar" aria-hidden={i > 0}>
+                    {i === 0 && <Emoji name="waving_hand" size={22} />}
+                  </span>
+                  <p className="talk-bubble">
+                    <GuideLine text={text} />
+                  </p>
+                </div>
+              ))}
+            </div>
             {path.guide.route && (
               <>
                 <h3>
-                  <Emoji name="person_walking" size={20} /> The route
+                  <Emoji name="round_pushpin" size={20} /> The locations
                 </h3>
                 <ol>
                   {path.guide.route.map((step) => (
@@ -333,6 +371,9 @@ export default function PathDetail() {
                   <li key={k}>#{k}</li>
                 ))}
               </ul>
+            )}
+            {path.imageCredit && (
+              <p className="photo-credit">{path.imageCredit}</p>
             )}
           </section>
         )}
