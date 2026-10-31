@@ -685,7 +685,7 @@ a:focus-visible {
 .cta.secondary {
   background: var(--card);
   color: var(--accent);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--accent);
 }
 .cta.secondary:active {
   background: var(--press);
@@ -1552,10 +1552,18 @@ button.cta {
   height: 100%;
   border: 0;
 }
-.map-fullscreen-close {
+/* The buttons float over the map's top-right corner, where Google draws its own share and
+   fullscreen icons. The wrapper's transparent padding makes the touch area bigger than the
+   circles, so a tap that misses a circle never reaches an icon underneath. */
+.map-fullscreen-actions {
   position: absolute;
-  top: calc(env(safe-area-inset-top, 0px) + 12px);
-  right: calc(env(safe-area-inset-right, 0px) + 12px);
+  top: env(safe-area-inset-top, 0px);
+  right: env(safe-area-inset-right, 0px);
+  display: flex;
+  gap: 8px;
+  padding: 14px;
+}
+.map-fullscreen-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1570,6 +1578,26 @@ button.cta {
   font-size: 26px;
   cursor: pointer;
 }
-.map-fullscreen-close:active {
+.map-fullscreen-btn.rotate {
+  font-size: 24px;
+}
+.map-fullscreen-btn:active {
   background: var(--press);
+}
+/* Landscape mode: the box is as wide as the screen is tall and turned 90 degrees clockwise, so
+   the map reads sideways in a portrait phone. Only while the phone is still in portrait; once
+   it is physically turned, the plain full-screen box already is landscape. */
+@media (orientation: portrait) {
+  .map-fullscreen.landscape {
+    inset: auto;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    width: 100dvh;
+    height: 100vw;
+    height: 100dvw;
+    transform-origin: top left;
+    transform: translateX(100vw) rotate(90deg);
+    transform: translateX(100dvw) rotate(90deg);
+  }
 }
