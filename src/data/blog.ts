@@ -37,6 +37,204 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-10-31-2018',
+    title: 'Remembering Itaewon, four years on',
+    description:
+      'On 29 October 2022 a crowd crush in Itaewon took 159 lives. What happened, what has changed, and where the families are still waiting for answers.',
+    teaser: 'The families are still waiting for answers.',
+    icon: 'candle',
+    date: '2026-10-31',
+    updated: '2026-10-31',
+    keywords: ['Itaewon', 'Remembrance', 'Seoul', 'Halloween', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "This is not a funny post. On 29 October 2022, reports estimate about 100,000 people were out in Seoul's Itaewon for the Halloween weekend. At about 10:20 pm a crowd crush began in a narrow, sloping alley beside the Hamilton Hotel, about 45 metres long and 3.2 metres wide at its narrowest. Reports put the start anywhere between 10:08 and 10:20.",
+      },
+      { type: 'h', text: 'The people we lost' },
+      {
+        type: 'list',
+        items: [
+          '**159** people died. The [Korea JoongAng Daily](https://www.koreajoongangdaily.com/korea/never-again-such-an-injustice-lee-vows-to-protect-public-on-anniversary-of-itaewon-tragedy/12945044) reports a 160th death was recognised in June 2026 as linked to the disaster.',
+          '**196** people were injured, according to the [Korea Times](https://www.koreatimes.co.kr/southkorea/20261029/lee-vows-to-leave-no-suspicions-unresolved-on-4th-anniv-of-itaewon-crowd-crush).',
+          '**26** of those who died were foreign nationals, from 14 countries.',
+          '**Mostly young:** an early count of the victims listed 4 teenagers and 96 people in their twenties.',
+        ],
+      },
+      {
+        type: 'p',
+        text: "Every one of them was someone's child, friend or neighbour.",
+      },
+      { type: 'h', text: 'What the investigations found' },
+      {
+        type: 'p',
+        text: 'Police had 137 officers on duty in Itaewon that night. The national police\'s own investigation, announced in January 2023, found that a lack of safety precautions and police errors contributed to the deaths, which came mostly from suffocation.',
+      },
+      {
+        type: 'p',
+        text: 'In September 2024 a court convicted three police officers, among them the former head of the Yongsan police station, of negligence. The court said the crush was not a natural disaster and could have been prevented.',
+      },
+      { type: 'h', text: 'Where things stand' },
+      {
+        type: 'p',
+        text: 'Four years on, who was responsible is still being worked out. A revised special law passed in September 2026, and the commission investigating the disaster now has until September 2027. Its interim findings, announced on 27 October, say the interior ministry\'s situation room learned of the crush at 10:48 pm.',
+      },
+      {
+        type: 'p',
+        text: 'The fourth anniversary memorial was held on 29 October at Gwanghwamun Square, with about 1,000 people. They included 35 relatives of foreign victims, invited to Seoul by the government. President Lee Jae Myung, the first sitting president to attend, promised that no one will "fall victim to such an injustice again due to the absence or negligence of the state."',
+      },
+      {
+        type: 'p',
+        text: 'A representative of the bereaved families asked for a thorough investigation, so that their short lives are not wiped out in vain.',
+      },
+      { type: 'h', text: 'What has changed' },
+      {
+        type: 'p',
+        text: 'Halloween in Seoul is now run as a safety operation. This year\'s plan covers 14 areas, with AI crowd cameras, drones and subway trains that can skip crowded stations. Our [Halloween post](https://koreatravelpath.com/blog/2026-10-31-2013/) has the details.',
+      },
+      { type: 'h', text: 'If you are in Itaewon' },
+      {
+        type: 'p',
+        text: 'Flowers and notes were left at Itaewon Station Exit 1 in 2022, and this year\'s candlelit march from Noksapyeong ended at the alley beside it. Korean media report that a memorial march is planned around Itaewon on 31 October.',
+      },
+      {
+        type: 'p',
+        text: 'If you meet it, step aside and keep your voice low.',
+      },
+      {
+        type: 'quote',
+        text: 'To the families and friends of the 159 people who died, including the 26 who came from abroad, and to everyone who was hurt that night: we are deeply sorry for your loss. We remember them. May they rest in peace.',
+      },
+    ],
+  },
+  {
+    id: '2026-10-31-2013',
+    title: "Korean ghosts don't want candy. They want justice.",
+    description:
+      "Halloween in Korea is a night out for grown-ups, the real ghost season is summer, and Seoul runs a safety plan for the weekend. What to know before you go.",
+    teaser: 'The real horror season here is July.',
+    icon: 'jack-o-lantern',
+    date: '2026-10-31',
+    updated: '2026-10-31',
+    keywords: ['KoreaTravel', 'Halloween', 'KoreanGhosts', 'Gwisin', 'Hongdae', 'Itaewon', 'Everland', 'LotteWorld', 'KoreaCulture'],
+    body: [
+      {
+        type: 'p',
+        text: "Don't buy a bowl of sweets. Nobody is coming to your door. Halloween here is spelled **핼러윈** (haelleowin) in the newspapers and **할로윈** (hallowin) on most shop signs, and it is mostly a party for grown-ups, not a doorbell holiday for kids.",
+      },
+      {
+        type: 'p',
+        text: 'The sociologist Linus Owens wrote in 2022 that it is celebrated primarily by young adults. So Koreans took the costumes, kept the night out and left the trick-or-treating behind.',
+      },
+      {
+        type: 'img',
+        src: 'halloween-lotte-world-performance.jpg',
+        alt: 'A marching band in orange and purple uniforms plays in front of a giant jack-o-lantern and pumpkin mascots at Lotte World',
+        caption: 'Lotte World in Seoul, November 2019. A brass band, a giant pumpkin and not a single doorbell.',
+        href: 'https://commons.wikimedia.org/wiki/File:Halloween_Performance_at_Lotte_World.jpg',
+        credit: { author: 'Ethan Doyle White', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      { type: 'h', text: 'A very bored missionary', icon: 'calendar' },
+      {
+        type: 'p',
+        text: 'The oldest Halloween note we know of from Korea is a complaint. On 31 October 1908 a missionary, Ethel Mills, wrote that it was "Halloween night and nothing to do in Korea." So the first Korean Halloween was boredom. We have all been there.',
+      },
+      {
+        type: 'p',
+        text: "Five years later, missionaries in Pyongyang threw a proper children's party, with popcorn, pumpkin lights and a man dressed as a witch telling fortunes. Both stories come from the historian Robert Neff in the Korea Times.",
+      },
+      {
+        type: 'p',
+        text: 'The party-night version came much later. Korea Times reporting after 2022 says Itaewon bars, clubs and hotels began hosting Halloween parties in the 1990s, when more young foreigners were arriving. The foreigners partied, Koreans noticed, and the district became the place to be.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'Korean ghosts keep a different calendar', icon: 'ghost' },
+      {
+        type: 'p',
+        text: 'If you come from a place where the scary season is autumn, Korea has the calendar upside down. Here it is summer. Horror films and TV specials are timed for the hottest weeks, a bone-chilling way to beat the heat, as the Korea Herald put it in 2016.',
+      },
+      {
+        type: 'p',
+        text: 'There is even a word for it: **납량특집** (nabryang teukjip), a "cool-down special". The idea is that a good fright makes the humid air feel thinner.',
+      },
+      {
+        type: 'p',
+        text: "And the ghosts themselves are not mischievous. The classic is the **처녀귀신** (cheonyeo gwisin), a young woman who died unmarried, in a white hanbok with long black hair. You know she is near when the temperature and the wind suddenly change.",
+      },
+      {
+        type: 'p',
+        text: 'Folktales treat these ghosts as resentful, staying behind because of an injustice or unfinished business. Which is why we say Korean ghosts do not want candy. They want justice.',
+      },
+      {
+        type: 'p',
+        text: 'The **구미호** (gumiho), a nine-tailed fox, and the **도깨비** (dokkaebi), a fairy-tale goblin, are regulars in the same stories.',
+      },
+      { type: 'h', text: 'What to wear', icon: 'performing_arts' },
+      {
+        type: 'p',
+        text: 'Korean ghosts make good costumes, and they are easy to explain at a party. The [저승사자](https://www.google.com/search?tbm=isch&q=%EC%A0%80%EC%8A%B9%EC%82%AC%EC%9E%90) (jeoseung-saja), the underworld messenger, is the closest thing to a grim reaper: an all-black suit and a hat, or a black coat and a traditional [갓](https://www.google.com/search?tbm=isch&q=%EA%B0%93) (gat) for the full effect.',
+      },
+      {
+        type: 'p',
+        text: 'The Saja Boys in KPop Demon Hunters borrow the name and the look. Last October the Seoul Economic Daily reported that the top five US Halloween costume searches on Google Trends were all KPop Demon Hunters characters, with Jinu of the Saja Boys in fourth. Korea made a film and the world did the costume work.',
+      },
+      {
+        type: 'list',
+        items: [
+          '**Cheap props:** Daiso sells devil-horn headbands, scar stickers and face paint. Korean blog roundups quote 1,000 to 2,000 won, so check in store.',
+          "**Not a police uniform:** wearing one when you are not an officer is illegal under Korea's police uniform law, and Korean news reports say police have watched online sellers around Halloween. Yes, even as a joke.",
+        ],
+      },
+      { type: 'h', text: 'The night Seoul does not joke about', icon: 'candle' },
+      {
+        type: 'p',
+        text: 'We have to be quieter here. On 29 October 2022 a crowd crush in a narrow Itaewon alley killed 159 people, among them visitors from 14 other countries. We wrote a separate post to remember them: [Remembering Itaewon, four years on](https://koreatravelpath.com/blog/2026-10-31-2018/).',
+      },
+      {
+        type: 'p',
+        text: 'Halloween has been run as a crowd-safety operation ever since. For this year Seoul and the national government drew up a plan for 14 areas, with eight priority zones: Itaewon, Hongdae (홍대), Ikseon-dong, Myeongdong, the Seongsu café street, the Konkuk University food street, Gangnam Station and Apgujeong Rodeo. The Kyunghyang Shinmun reported on 22 October more than 3,000 staff, AI crowd cameras and drones.',
+      },
+      {
+        type: 'p',
+        text: 'Two things matter if you go out on the night. Itaewon-ro is closed to cars on 31 October, and so is one lane of Hongdae\'s club street. And at crowded stations (Itaewon, Hongik Univ., Seongsu, Konkuk Univ.) trains may pass without stopping. If yours rolls straight past the platform, it is on purpose. Plan to walk to the next station.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'hongdae-hot-places',
+        text: 'Hongdae Hot Places, for an ordinary evening in the same streets',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'seongsu-dong',
+        text: 'Seongsu Popup Street + Forest',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', text: 'Or scream in daylight', icon: 'ticket' },
+      {
+        type: 'p',
+        text: "The theme parks treat Halloween as a season, not a night. Everland's zombie show, Blood City Zero: Gate of Hell, runs from 12 September to 22 November, daily from 4 to 9 pm and included in the park ticket, according to the park's September announcement. The horror maze is a separate paid ticket.",
+      },
+      {
+        type: 'p',
+        text: "Lotte World Adventure's autumn season runs to 15 November, reports say. Both are, we would bet, far calmer than a Hongdae pavement on a Saturday night. Check the parks' own pages before you go, because the dates differ between sources.",
+      },
+      {
+        type: 'img',
+        src: 'halloween-lotte-world-decorations.jpg',
+        alt: 'A giant jack-o-lantern wreath of autumn leaves on a lamp post under a Horror Halloween sign at Lotte World',
+        caption: 'A lamp post at Lotte World, November 2019. The sign says "Horror Halloween". The pumpkin looks pleased about it.',
+        href: 'https://commons.wikimedia.org/wiki/File:Halloween_Decorations_at_Lotte_World.jpg',
+        credit: { author: 'Ethan Doyle White', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: dress up, skip the doorbell, check the train and be kind to the crowd. The real ghosts are saving themselves for July.',
+      },
+    ],
+  },
+  {
     id: '2026-10-30-1145',
     title: 'Sir Patrick Stewart has died at 86. Korean cinemas haven\'t said goodbye yet.',
     description:
