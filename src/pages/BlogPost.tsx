@@ -148,6 +148,7 @@ export default function BlogPost() {
       title="Blog"
       subtitle="Stories about Korea"
       backTo="/blog/"
+      noSaved
       actions={<ShareLink compact title={post.title} text={`${post.title} – on the My Travel Path blog`} />}
     >
       <article className="card post">

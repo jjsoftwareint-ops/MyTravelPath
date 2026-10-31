@@ -17,12 +17,14 @@ type Props = {
   actions?: ReactNode
   /** Hide the Saved paths link on phones, where the header is short of space (a path page has its own save button). */
   hideSaved?: boolean
+  /** Leave the Saved paths link out entirely, on every screen size (the blog pages). */
+  noSaved?: boolean
   /** Blog button left of the Saved paths icon; the main page only. */
   showBlog?: boolean
   children: ReactNode
 }
 
-export default function Layout({ title, titleImage, subtitle, backTo, icon, actions, hideSaved, showBlog, children }: Props) {
+export default function Layout({ title, titleImage, subtitle, backTo, icon, actions, hideSaved, noSaved, showBlog, children }: Props) {
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -60,7 +62,7 @@ export default function Layout({ title, titleImage, subtitle, backTo, icon, acti
           {subtitle && <p>{subtitle}</p>}
         </div>
         {showBlog && <BlogLink />}
-        <BookmarkLink />
+        {!noSaved && <BookmarkLink />}
         <ThemeToggle />
         {actions}
       </header>

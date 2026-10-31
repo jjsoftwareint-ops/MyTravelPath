@@ -13,6 +13,7 @@ export default function Blog() {
       title="Blog"
       subtitle="Stories about Korea"
       backTo="/"
+      noSaved
       actions={<ShareLink compact title="My Travel Path Blog" text="Stories about Korea, on My Travel Path" />}
     >
       <div className="blog-wrap">
