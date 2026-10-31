@@ -98,7 +98,7 @@ export const cities: City[] = [
           title: 'A wall, and a river that was buried',
           text: [
             "Seoul's city wall was first built by the founding king of Joseon, as earth on the flat ground and stone on the hills, and it still runs 18.6 km over the mountains around the old city. Its stones carry carved records: first the counties that built each stretch, and after King Sukjong's repairs the overseer and the date.",
-            "The stream below the wall had a worse century. From 1958 it was covered over, and later it carried an elevated highway 5.6 km long. When the structure became a safety worry, the highway came down in 2003 and the stream reopened on **1 October 2005**, 47 years after the covering began.",
+            "The stream below the wall had a worse century. From 1958 it was covered over, and later it carried an elevated highway 5.6 km long. When the structure became a safety worry, the highway came down from 2003 and the stream reopened on **1 October 2005**, 47 years after the covering began.",
           ],
         },
         image: 'naksan.jpg',
@@ -132,7 +132,7 @@ export const cities: City[] = [
             "Ihwa Mural Village, through the first secret gate in the wall: a hillside settlement from just after the Korean War, painted by a 2006 art project. Some of the best-known murals were removed after residents tired of the crowds, and people still live on these stairs, so keep quiet.",
             "The {blue:blue} loop's hilltop cafés, where people watch the sunset before the wall: Deoham186, a hidden café and pottery workshop; Cafe Nakta at the old quarry viewpoint, looking straight onto the cliff face; the Reading Cat book café by the secret gate; Odeoksae, walled in like a small fortress near the angel-wings mural. The Ihwa-dong Village Museum and the Seoul City Wall Museum are on the way down.",
             "Dongdaemun gate, standing alone in the middle of the junction: rebuilt in 1869, its flanking walls pulled down in 1907. Dongdaemun Design Plaza is a short detour south.",
-            "Cheonggyecheon, down the stairs at Cheonggyecheon Fashion Plaza: the Jeon Tae-il bridge, Gwangjang Market overhead at Saebyeok-dari, and the Sewoon arcade sky deck.",
+            "Cheonggyecheon Stream, down the stairs at Cheonggyecheon Fashion Plaza: the Jeon Tae-il bridge, Gwangjang Market overhead at Saebyeok-dari, and the Sewoon arcade sky deck.",
             "The last stretch of the stream: a 192 m ceramic mural of King Jeongjo's procession, Gwangtonggyo, the oldest stone bridge on the stream, and the candle fountain at Cheonggye Plaza, minutes from Gwanghwamun and City Hall stations.",
           ],
           tips: [
@@ -164,7 +164,7 @@ export const cities: City[] = [
           title: 'A village named for liberation',
           text: [
             "The hill was a Japanese shrine ground until 1945; the **108 Stairs** were built in 1943 as its approach. When Korea was freed, people with nowhere else to go, many of them from the north, built homes on the slope and called it **Haebangchon**, Liberation Village.",
-            "**Sinheung Market** went up in the 1970s to serve them. When the shoppers left for supermarkets it stood half-empty for years, until young cooks and bar owners found a roofed market with cheap rents and a view, which is what you eat in tonight.",
+            "**Sinheung Market** went up in the early 1960s to serve them. When the shoppers left for supermarkets it stood half-empty for years, until young cooks and bar owners found a roofed market with cheap rents and a view, which is what you eat in tonight.",
           ],
         },
         notices: [
@@ -213,7 +213,7 @@ export const cities: City[] = [
         updated: '2026-10-31',
         tags: [{ icon: 'village', label: 'Traditional' }],
         whyVisit: [
-          "Three hanok quarters in one 5 km walk, **laid out in 1394 and still lived in**: tiled roofs stepping down a hill with Namsan behind them.",
+          "Three hanok quarters in one 5 km walk, **laid out in 1394 and still lived in**: tiled roofs stepping down a hill with Namsan Mountain behind them.",
           "There is a palace at each end, tea in Insadong, grills in the Ikseon-dong lanes and **a street that fills with pojangmacha tents after dark**.",
           "Two hours of walking that takes a whole day, because there is far too much good food along the way.",
         ],
@@ -221,7 +221,7 @@ export const cities: City[] = [
           title: 'Hanok for the middle class',
           text: [
             "**Bukchon** sits between two palaces because the Joseon court's officials lived here, close to work. But most of the tiled roofs you see are not that old: in the 1930s, as Seoul grew and Japanese developers moved in, the builder **Jeong Se-gwon** bought up the big estates and divided them into small, modern hanok for ordinary Korean families.",
-            "**Ikseon-dong** was his too, built in the 1920s. Those tight blocks of tiny courtyards were nearly demolished for apartments in the 2000s; instead the cafés arrived, and the two quarters became the most visited old streets in the city.",
+            "**Ikseon-dong** was his too, built in the 1920s. Those tight blocks of tiny courtyards were slated for redevelopment in the 2000s; instead the cafés arrived, and both quarters filled with visitors.",
           ],
         },
         notices: [
@@ -299,7 +299,7 @@ export const cities: City[] = [
           {
             icon: '🔥',
             title: "Fire-prevention seasons: check before a spring or late-autumn hike",
-            body: "Korea's spring fire-prevention period runs **20 January–15 May 2026**; Bukhansan National Park closes some trails 3 Mar–15 May and 15 Nov–15 Dec. **No closure for Inwangsan's trails has been announced** as of this check, but Jongno-gu can restrict paths on dry, windy days. The mountain has no gates or opening hours otherwise.",
+            body: "Korea's spring and late-autumn fire-prevention periods can close mountain trails; **check the Korea National Park Service notice for Bukhansan** before you go. **No closure for Inwangsan's trails has been announced** as of this check, but Jongno-gu can restrict paths on dry, windy days. The mountain has no gates or opening hours otherwise.",
             since: "Korea Forest Service and the national park closure list for 2026. Checked 29 October 2026.",
           },
           {
@@ -343,21 +343,21 @@ export const cities: City[] = [
         updated: '2026-10-31',
         whyVisit: [
           "Ten days in early April when Seoul turns pink, and these are the four walks locals use, not the one everyone queues for.",
-          "**The blossom tunnel the locals walk**, along the Anyangcheon from Sindorim to Gocheok Bridge, and Yeouido's 1,800 trees for the one time you want the crowd.",
+          "**The blossom tunnel the locals walk**, along the Anyangcheon stream from Sindorim to Gocheok Bridge, and Yeouido's 1,800 trees for the one time you want the crowd.",
           "All flat, all by a subway station, all lit after dark.",
         ],
         story: {
           title: 'Trees on a runway',
           text: [
             "**Yeouido** was Seoul's airfield until 1971, a sandbank in the river used for flights since the 1910s. When the National Assembly moved here in 1975 the island was rebuilt as a government district, and **Yunjung-ro** behind the Assembly was lined with cherry trees.",
-            "The streams are younger still as walks. **Dorimcheon** and **Anyangcheon** were concrete drainage channels for the factories of Guro until the city turned their banks into paths in the 2000s; the cherry tunnels grew up along them.",
+            "The streams are younger still as walks. **Dorimcheon** and **Anyangcheon** were concrete drainage channels until the city turned their banks into paths in the 2000s; the cherry tunnels grew up along them.",
           ],
         },
         notices: [
           {
             icon: '🌸',
             title: 'Expected cherry blossom dates in Seoul, spring 2027',
-            body: "Seoul usually opens in the **first week of April** and is in full bloom four to seven days later. Recent first-bloom dates: 1 April 2024, 4 April 2025 and about 3 April 2026, against a 30-year normal of 8 April. For 2027 expect first bloom around **1–6 April** and full bloom **5–12 April**. The official forecast comes out in early March; check it before you book.",
+            body: "Seoul's 30-year normal for **first bloom is 8 April**, with full bloom a few days later. Recent first-bloom dates: 1 April 2024, 4 April 2025 and 29 March 2026. For 2027 expect first bloom between about **29 March and 8 April**, and full bloom within a few days of it. The official forecast comes out in early March; check it before you book.",
             since: 'Based on Korea Meteorological Administration observations 2024–2026. Written October 2026; the 2027 forecast is not out yet.',
           },
         ],
@@ -380,7 +380,7 @@ export const cities: City[] = [
             "Dorimcheon and the Anyangcheon embankment, 3.3 km, from Sindorim Station exit 6 to Gocheok Bridge: the walk locals do, a blossom tunnel along two streams.",
             "Yeouido Yunjung-ro, 2.6 km, from National Assembly Station exit 6: the riverside road behind the Assembly with about 1,800 trees, closed to cars and the city's festival street, very crowded at peak.",
             "Seokchon Lake, 3.4 km, from Jamsil Station exit 2 or 3: a loop of both lakes under the trees with Lotte World Tower behind them. The west lake is calmer.",
-            "Namsan North Loop, 2.1 km, by bus 01A or 01B from Dongguk University Station to the National Theatre: a car-free loop road to Namsan Library, shaded, with views over the city.",
+            "Namsan North Loop, 2.1 km, by bus 01A or 01B from Dongguk University Station to the National Theatre: a car-free, shaded road up the mountain to Namsan Library, with views over the city.",
           ],
           tips: [
             "⏰ Go early morning or after dark. Yunjung-ro and Seokchon Lake are lit at night and **far less crowded before 9 am**.",
@@ -410,7 +410,7 @@ export const cities: City[] = [
           title: 'A railway that became a park',
           text: [
             "The lawn you walk on was the **Gyeongui Line**, the railway north to Sinuiju, opened in 1906. Trains ran at street level through Yeonnam-dong and Hongdae for a century; Ddaengddaeng-geori is named for the **bell** at its level crossing.",
-            "The line went underground between 2005 and 2012, and the city turned the empty strip into the **Gyeongui Line Forest Park**, finished in 2016.",
+            "The line went underground from 2005, and the city turned the empty strip into the **Gyeongui Line Forest Park**, finished in 2016.",
           ],
         },
         notices: [
@@ -470,7 +470,7 @@ export const cities: City[] = [
           title: 'A path around the mountain, and the graves beside it',
           text: [
             "The **Dulle-gil** opened in 2010, linking old village paths around the foot of Bukhansan so that the mountain could be walked without being climbed. The three trails on the Seoul side were among the first.",
-            "They pass the **April 19 National Cemetery**, where the students killed in the 1960 uprising that ended Syngman Rhee's rule are buried, and the graves of independence leaders including **Son Byong-hi** and **Yi Jun**, which is why trail 2 is called the Pilgrimage Path.",
+            "They pass the **April 19 National Cemetery**, where the students killed in the 1960 uprising that ended Syngman Rhee's rule are buried, and the graves of independence patriots including **Yi Jun**; this stretch is called the Pilgrimage Path.",
           ],
         },
         notices: [
@@ -530,8 +530,8 @@ export const cities: City[] = [
         story: {
           title: 'From shoe factories to pop-ups',
           text: [
-            "**Seongsu-dong** was Seoul's light-industry district from the 1960s: shoe workshops, print shops, car-repair yards and the red-brick warehouses that are still here. By the 2000s much of it stood empty.",
-            "Cheap, big spaces drew artists and then cafés; **Daelim Changgo**, a 1970s rice warehouse turned gallery-café, is usually named as the start. **Seoul Forest** next door opened in 2005 on the old racecourse and waterworks, and the two pulled the district the way it has gone since.",
+            "**Seongsu-dong** was Seoul's light-industry district from the 1970s: shoe workshops, print shops and the red-brick warehouses that are still here. By the 2000s much of it stood empty.",
+            "Cheap, big spaces drew artists and then cafés; **Daelim Changgo**, a 1970s rice mill turned gallery-café, is usually named as the start. **Seoul Forest** next door opened in 2005 on the old racecourse and waterworks, and the two pulled the district the way it has gone since.",
           ],
         },
         notices: [
@@ -642,14 +642,14 @@ export const cities: City[] = [
           title: 'Seoul\'s last rice paddies',
           text: [
             "**Magok**, the far west of Seoul, was still rice fields inside the city limits in the 2000s, the last large farmland left. The development district was approved in 2007, and the research campuses and apartment blocks went up through the 2010s.",
-            "The **Seoul Botanic Park** opened in 2019 on part of that land, its greenhouse the city's first of its kind. The **museums** on this map are older: the National Museum of Korea moved to its Yongsan site in 2005, onto land that had been a military base for a century.",
+            "The **Seoul Botanic Park** opened in 2019 on part of that land, as Korea's first botanic park. The **museums** on this map are older: the National Museum of Korea moved to its Yongsan site in 2005, onto land that had been a military base for a century.",
           ],
         },
         notices: [
           {
             icon: '🚫',
             title: 'Closed on Mondays',
-            body: "Seoul Botanic Park, the War Memorial of Korea, Leeum Museum of Art, the Seoul Museum of History and LG Arts Center Seoul are **closed every Monday**, and so is Café La Copella inside the arts centre. Plan the Magok half day and those museums for Tuesday to Sunday, and check any other museum on its Naver Map page first: the National Palace Museum showed as closed on Monday 26 October.",
+            body: "Seoul Botanic Park's greenhouse and theme gardens (the open parkland stays open), the War Memorial of Korea and Leeum Museum of Art are **closed every Monday**; the Seoul Museum of History, LG Arts Center Seoul and Café La Copella inside it usually are too. Plan the Magok half day and those museums for Tuesday to Sunday, and check any other museum on its Naver Map page first: the National Palace Museum showed as closed on Monday 26 October, and its closing day may have changed.",
             since: 'Opening hours as listed on Naver Map, checked 24 October 2026; the Botanic Park closure also matches its official site. Public holidays can change the closing day.',
           },
           {
@@ -717,7 +717,7 @@ export const cities: City[] = [
         story: {
           title: 'A hot spring, an apartment avenue and a levee',
           text: [
-            "**Oncheoncheon** is named for the **Dongnae hot springs** beside it, used since the Silla era by record and turned into a resort with a tram line under Japanese rule. The stream itself was walled and neglected for decades before the city re-made its banks as a park in the 2000s.",
+            "**Oncheoncheon** stream is named for the **Dongnae hot springs** beside it, used since the Silla era by record and turned into a resort with a tram line under Japanese rule. The channel itself was walled and neglected for decades before the city re-made its banks as a park from the late 1990s.",
             "The tunnel of trees at **Namcheon-dong** was planted with the Samik Beach apartments around 1980, which is why they are called forty-year-old trees. **Dalmaji-gil** means moon-watching road: the pass above Haeundae where people went to see the moon rise over the sea.",
           ],
         },
@@ -725,7 +725,7 @@ export const cities: City[] = [
           {
             icon: '🌸',
             title: 'Expected cherry blossom dates in Busan, spring 2027',
-            body: "Busan opens about **a week before Seoul**. Forecasts put first bloom at 22–25 March in 2024–2026, against a normal of 28 March, with full bloom about a week later. For 2027 expect first bloom around **22–28 March** and full bloom **28 March – 4 April**. The official forecast comes out in early March; check it before you book.",
+            body: "Busan opens **a few days to a week before Seoul**. First bloom came on **26 March in 2026**, with full bloom on 31 March; 2024 and 2025 were forecast for 22–25 March, against a normal of about 28 March. For 2027 expect first bloom around **22–28 March** and full bloom **28 March – 4 April**. The official forecast comes out in early March; check it before you book.",
             since: 'Based on Korea Meteorological Administration data 2024–2026. Written October 2026; the 2027 forecast is not out yet.',
           },
         ],
@@ -784,7 +784,7 @@ export const cities: City[] = [
           {
             icon: '🚃',
             title: 'Blueline Park: Beach Train and Sky Capsule hours and fares',
-            body: 'The **Beach Train** runs Mipo – Cheongsapo – Songjeong with seven stops, from **09:00** until 19:00 in winter (Nov–Feb), 19:30 in Mar, Apr and Oct, and 20:20 in May, Jun and Sep. The **Sky Capsule** runs Mipo – Cheongsapo only, from 08:30 until 18:00, 18:30 or 19:30 by the same seasons. Train: single ride about **₩10,000**, all-stops pass ₩16,000. Capsule: per cabin one way, about **₩35,000 for two**, ₩50,000 for four. Capsules sell out on weekends, so book ahead online; trains keep running in rain but stop in storms.',
+            body: 'The **Beach Train** runs Mipo – Cheongsapo – Songjeong with seven stops, from **09:00** until 19:00 in winter (Nov–Feb), 19:30 in Mar, Apr and Oct, and 20:30 in May, Jun and Sep. The **Sky Capsule** runs Mipo – Cheongsapo only, from 08:30 until 18:00, 18:30 or 19:30 by the same seasons. Train: single ride about **₩8,000**, all-stops pass ₩16,000. Capsule: per cabin one way, about **₩40,000 for two**, ₩50,000 for four. Capsules sell out on weekends, so book ahead online; trains keep running in rain but stop in storms.',
             since: 'Haeundae Blueline Park published hours and fares, as reported in 2026; July and August run later. Info line 051-701-5548. Checked October 2026.',
           },
         ],
@@ -826,7 +826,7 @@ export const cities: City[] = [
           title: 'When Busan was the capital',
           text: [
             "For 1,023 days between 1950 and 1953, Busan was Korea's wartime capital. Refugees from all over the peninsula arrived with almost nothing and built wherever the land was free, which here meant the steep slopes and cliffs above the harbour.",
-            "**Huinnyeoul** was a small fishing village on Yeongdo's coast until refugees settled along its cliffs and it became a crowded, poor settlement. **Gamcheon**, on the other side of the harbour, grew from a community of Taegeukdo believers who settled there in the 1950s. Both were poor places until residents and artists began repairing and painting the houses, around 2009 to 2011. Those are the culture villages on this map.",
+            "**Huinnyeoul** was a small fishing village on the coast of Yeongdo island until refugees settled along its cliffs and it became a crowded, poor settlement. **Gamcheon**, on the other side of the harbour, grew from a community of Taegeukdo believers who settled there in the 1950s. Both were poor places until residents and artists began repairing and painting the houses, around 2009 to 2011. Those are the culture villages on this map.",
           ],
         },
         image: 'gamcheon.jpg',
@@ -895,8 +895,8 @@ export const cities: City[] = [
         story: {
           title: 'Busan\'s twentieth century, under one roof',
           text: [
-            "The city's two best indoor museums are old buildings themselves. The **Modern & Contemporary History Museum** fills the 1929 Busan branch of the Oriental Development Company, the colonial land firm, later the American Cultural Center that students occupied in protest in 1982.",
-            "**F1963** was a wire-rope factory from 1963, when Busan made the steel cable for the country's bridges and ships; the company kept the shell and turned it into a bookshop, brewery and gallery in 2016. **Busan Tower** dates from 1973, the harbour city's first landmark.",
+            "The city's two best indoor museums are old buildings themselves. The **Modern & Contemporary History Museum** fills the 1929 Busan branch of the Oriental Development Company, the colonial land firm, later the American Cultural Center, which was set on fire in a 1982 protest.",
+            "**F1963** was a wire-rope factory from 1963; the company kept the shell and turned it into a bookshop, brewery and gallery in 2016. **Busan Tower** dates from 1973.",
           ],
         },
         notices: [
@@ -1027,13 +1027,13 @@ export const cities: City[] = [
         keywords: ['Jeju', 'ChujaIsland', 'Chujado', 'JejuOlle', 'OlleTrail18', 'IslandHiking', 'Dondaesan', 'JejuFerry', 'KoreaTravel'],
         whyVisit: [
           "**Forty-two islands, 1,700 people and almost no cars**, an hour north of Jeju by ferry: the Olle trail's one outlier.",
-          "Two climbs, a bridge between the two inhabited islands, and from Dondae-san **the whole archipelago below you** with Hallasan on the horizon.",
+          "Two climbs, a bridge between the two inhabited islands, and from Dondae-san **the whole archipelago below you** with Hallasan Mountain on the horizon.",
           "11.4 km that fits between the morning boat and the evening one, or stay the night and make it a holiday.",
         ],
         story: {
           title: 'An island of exiles and anchovies',
           text: [
-            "**Chuja** has long been a place people were sent or washed up. The shrine on route 18-1 is to **General Choe Yeong**, who sheltered here in 1374 on his way to put down a rebellion on Jeju.",
+            "**Chuja** has long been a place people were sent or washed up. The shrine on route 18-1 is to **General Choe Yeong**, who by local tradition sheltered here in 1374 on his way to put down a rebellion on Jeju.",
             "In 1801, during the persecution of Catholics, the infant son of the martyr Hwang Sa-yeong was exiled to Chuja and raised by islanders; the grave of **Hwang Gyeong-han** on the east coast is his. The islands' fame today is their salted **anchovy**, and the boats you see are the fleet that catches it.",
           ],
         },
@@ -1105,13 +1105,13 @@ export const cities: City[] = [
         keywords: ['Jeju', 'JejuOlle', 'OlleTrail17', 'Yongduam', 'IhoBeach', 'Dodubong', 'JejuCity', 'DongmunMarket', 'KoreaTravel'],
         guide: {
           intro: [
-            "🌊 I like this one for the contrast. A quiet river gorge in the morning, the beach at Iho Tewoo for lunch, **Dodu-bong in the mid-afternoon** with the runway at your feet, and **Yongduam at sunset** before the end stamp in the old town.",
+            "🌊 I like this one for the contrast. A quiet river gorge in the morning, the beach at Iho Tewoo for lunch, **Dodu-bong peak in the mid-afternoon** with the runway at your feet, and **Yongduam at sunset** before the end stamp in the old town.",
             "It's six to seven hours and almost all flat; the only climb is 65 m Dodu-bong, and that turns out to be the best viewpoint of the day.",
           ],
           route: [
             "Gwangnyeong Elementary, the start: stamp and information desk at the kids' book café opposite, then the Musucheon gorge and the stream path past Chang-o Bridge.",
             "Oedo Woldae, where the stream meets the sea under old pines: the first toilets and first-aid kit, and the first bakery café. Then Hyeonsa Port and Iho Tewoo Beach with its horse-shaped lighthouses.",
-            "Dodu: the painted Memory Lane, the harbour with its noodle houses and the big milk-tea café, then Dodu-bong for Hallasan behind and the airport runway at your feet.",
+            "Dodu: the painted Memory Lane, the harbour with its noodle houses and the big milk-tea café, then Dodu-bong for Hallasan Mountain behind and the airport runway at your feet.",
             "Eoyeong Park, the mid-route stamp, toilets and first-aid kit, then the Yongdam seafront: Leports Park, Sunset Hill and the long line of coast-road cafés.",
             "Yongduam, the Dragon Head Rock, and the Yongyeon Cloud Bridge over the gorge, then Gwandeokjeong, Jeju's oldest building, and the restored Mokgwana.",
             "The Kim Man-deok Memorial Hall, the end stamp. Dongmun Market, pork noodles and the airport bus are five minutes away.",
@@ -1146,7 +1146,7 @@ export const cities: City[] = [
           title: 'Where the trail began, and the women who dive',
           text: [
             "**Route 1** was the first Olle route, opened in September 2007 from Siheung-ri, and the view from Malmi Oreum over Seongsan Ilchulbong is the image the whole trail was built around.",
-            "Both routes pass the houses of the **haenyeo**, the women who free-dive for shellfish and seaweed, a tradition UNESCO listed in 2016. **Udo** has one of the island's oldest diving communities, and the beacon mound at Osopo is a reminder that this coast once watched for Japanese raiders.",
+            "Both routes pass the houses of the **haenyeo**, the women who free-dive for shellfish and seaweed, a tradition UNESCO listed in 2016.",
           ],
         },
         notices: [
@@ -1206,13 +1206,13 @@ export const cities: City[] = [
           "Korea's oldest China Town, one hour from Seoul Station and two minutes from the subway exit, **under a street of red lanterns**.",
           "You eat your way uphill, from wood-fired mandu at the shop with the always-long queue to the **jajangmyeon that was invented here**.",
           "Then a village painted with Pinocchio and the Little Prince, 77 mural panels down one lane, and an 1880s stair where Chinese lanterns face Japanese wooden façades.",
-          "Stay for the lanterns after dark, or walk on to Wolmido for the sunset.",
+          "Stay for the lanterns after dark, or walk on to the island of Wolmido for the sunset.",
         ],
         story: {
           title: 'The port that opened Korea',
           text: [
             "**Incheon** was forced open to foreign trade in 1883, and the hill above the port was divided into concessions. The Chinese one, settled by merchants from Shandong, became this China Town; the Japanese one is the street of old bank buildings next to it.",
-            "**Jajangmyeon**, the black-bean noodle dish, is usually traced to the Chinese dockworkers' kitchens here around 1905, and **Gonghwachun**, opened in 1908, is credited with putting it on a restaurant menu; its building is now the Jajangmyeon Museum.",
+            "**Jajangmyeon**, the black-bean noodle dish, is usually traced to the Chinese dockworkers' kitchens here, and **Gonghwachun**, which opened in the early 1900s, is credited with putting it on a restaurant menu; its building is now the Jajangmyeon Museum.",
           ],
         },
         notices: [
@@ -1331,8 +1331,8 @@ export const cities: City[] = [
         story: {
           title: 'An island that saw an emigration and a landing',
           text: [
-            "In 1902 the first Korean emigrants to Hawaii sailed from Incheon, and the **Korea Emigration Museum** at the end of this walk tells their story. Wolmido was a Japanese naval base and then a resort island in the colonial years.",
-            "On 15 September 1950 the **Incheon landing** began here: UN forces took Wolmido at dawn before the main assault on the city, turning the Korean War. The island was later a Korean naval base, and only reopened to the public as a park in 2001.",
+            "In 1902 the first Korean emigrants to Hawaii sailed from Incheon, and the **Korea Emigration Museum** at the end of this walk tells their story. Wolmido was a Japanese navy coal depot and later a resort island in the colonial years.",
+            "On 15 September 1950 the **Incheon landing** began here: UN forces took Wolmido at dawn before the main assault on the city, turning the Korean War. The island was later a Korean naval base; its public park opened in 2001.",
           ],
         },
         notices: [
@@ -1408,7 +1408,7 @@ export const cities: City[] = [
           {
             icon: '🚌',
             title: 'The sights are far apart: plan a taxi or a car',
-            body: "From Ganghwa town the main stops lie **4 to 18 km** away in a straight line: Yeonmijeong 4 km, Jeondeungsa 13 km, Bunori Dondae 17.5 km. Bus 3000 from Sinchon reaches the Ganghwa bus terminal; reports put the ride at about 90 minutes to over two hours.",
+            body: "From Ganghwa town the main stops lie **4 to 18 km** away in a straight line: Yeonmijeong 4 km, Jeondeungsa Temple 13 km, Bunori Dondae 17.5 km. Bus 3000 from Sinchon reaches the Ganghwa bus terminal; reports put the ride at about 90 minutes to over two hours.",
             since: 'Distances from the map pins; bus times from travel sites that disagree. Checked 26 October 2026.',
           },
           {
@@ -1425,7 +1425,7 @@ export const cities: City[] = [
         guide: {
           intro: [
             "🏯 Start in Ganghwa town with the hanok church and the silk-factory café, go south to Jeondeungsa and its tea house, and finish on the coast at Bunori Dondae beside the beach.",
-            "The stops are kilometres apart, so plan a taxi or a car from the bus terminal and take the day in clusters. Bomunsa on Seokmodo is a separate trip, and a good one.",
+            "The stops are kilometres apart, so plan a taxi or a car from the bus terminal and take the day in clusters. Bomunsa Temple, on Seokmodo island, is a separate trip, and a good one.",
           ],
           route: [
             "Joyang Textile, Ganghwa town: a retro café in a factory founded in 1933 to make artificial silk. It closed in 1958 and opened as an art gallery in 2018.",
@@ -1478,7 +1478,7 @@ export const cities: City[] = [
           title: 'A railway, a drama and an island',
           text: [
             "The **Gyeongchun Line** from Seoul to Chuncheon opened in 1939, following the Bukhan River through Gapyeong. When the line was double-tracked and straightened in 2010, the old riverside track was left behind, and it is the rail bikes and the river trail of this map.",
-            "**Nami Island** was a half-forgotten riverside park until **Winter Sonata** filmed its tree-lined avenue in 2002. The drama's success in Japan and across Asia brought the first wave of drama tourism to Korea, and the island has run on it since.",
+            "**Nami Island** was a half-forgotten riverside park until the 2002 drama **Winter Sonata** filmed its tree-lined avenue here. The drama's success in Japan and across Asia brought the first wave of drama tourism to Korea, and the island has run on it since.",
           ],
         },
         notices: [
@@ -1556,8 +1556,8 @@ export const cities: City[] = [
         story: {
           title: 'The last stop before the border',
           text: [
-            "Paju is where the roads north end. **Imjingak** was built in 1972 as a place where families cut off from the North could look across the Imjin River; next to it the **Freedom Bridge** is where 12,773 prisoners of war walked south in 1953. The **3rd Tunnel**, dug under the border and found in 1978, is 4 km on, inside the civilian control line, so you can only go with the DMZ tour.",
-            "The same river gives the town its food: the eel houses on its banks, the spicy river-fish stews at Duji-ri, and the **Jangdan beans** grown in the fields along the control line, which every tofu restaurant here puts on its sign.",
+            "Paju is where the roads north end. **Imjingak** was built in 1972 as a place where families cut off from the North could look across the Imjin River; next to it the **Freedom Bridge** is where 12,773 prisoners of war walked south in 1953. The **3rd Tunnel**, dug under the border and found in 1978, lies further on, inside the civilian control line, so you can only go with the DMZ tour.",
+            "The same river gives the town its food: the eel houses on its banks, the spicy river-fish stews at Duji-ri, and the **Jangdan beans** grown in the fields along the control line, which tofu restaurants here put on their signs.",
           ],
         },
         notices: [
@@ -1711,15 +1711,15 @@ export const cities: City[] = [
         story: {
           title: 'A valley remade twice',
           text: [
-            "Chuncheon was not always a lake city. **Uiam Dam**, finished in 1967, flooded the valley west of downtown into 17 km² of **Uiam Lake**; the high ground left dry became islands, among them Jungdo, where Legoland Korea now stands. Upstream, the **Soyanggang Dam** was Asia's largest rock-fill dam when it was completed in 1973, backing the Bukhan River up into Soyang Lake, still Korea's biggest reservoir.",
-            "The old Gyeongchun railway had its own second life. This station opened in 1939 as Sillam; renamed **Gim Yu-jeong** in 2004 for the writer born in the village next door, it became the first Korean station named after a person. The 2010 double-tracking of the line left this stretch disused, and by 2012 it had reopened as the rail bike.",
+            "Chuncheon was not always a lake city. **Uiam Dam**, finished in 1967, flooded the valley west of downtown into 17 km² of **Uiam Lake**; the high ground left dry became islands, among them Jungdo, where Legoland Korea now stands. Upstream, the **Soyanggang Dam** was Korea's largest rock-fill dam when it was completed in 1973, backing the Bukhan River up into Soyang Lake, still Korea's biggest reservoir.",
+            "The old Gyeongchun railway had its own second life. This station opened in 1939 as Sinnam; renamed **Gim Yu-jeong** in 2004 for the writer born in the village next door, it became the first Korean station named after a person. The 2010 double-tracking of the line left this stretch disused, and by 2012 it had reopened as the rail bike.",
           ],
         },
         notices: [
           {
             icon: '🎟️',
             title: 'Book the rail bike online, in advance',
-            body: "Gim Yu-jeong Rail Bike is popular and weekend seats sell out, so **book online ahead of time** rather than turning up. The official site, [en.railpark.co.kr](https://en.railpark.co.kr/course/gimyujeong/schedule), takes English bookings: a 2-seater is **₩40,000**, a 4-seater **₩56,000**, and the ticket covers both the rail bike and the sightseeing train on to the old Gangchon station. English-language resellers such as Klook and Pelago list the same Gimyujeong-course ticket.",
+            body: "Gim Yu-jeong Rail Bike is popular and weekend seats sell out, so **book online ahead of time** rather than turning up. The official site, [en.railpark.co.kr](https://en.railpark.co.kr/course/gimyujeong/schedule), takes English bookings: a 2-seater is **₩40,000**, a 4-seater **₩56,000**. English-language resellers such as Klook and Pelago list the same Gimyujeong-course ticket.",
             since: 'en.railpark.co.kr, checked 30 October 2026.',
           },
           {
@@ -1739,8 +1739,8 @@ export const cities: City[] = [
             "Samaksan Lake Cable Car, Uiam Lake station: Chuncheon's newest attraction, crossing Uiam Lake to Samaksan; glass-floor cabins cost extra.",
             "Legoland Korea: the country's first Legoland, a theme park and resort opened in 2022 on Jungdo, an island in Uiam Lake.",
             "Gim Yu-jeong Rail Bike boarding platform, next to Gimyujeong Station: an 8 km ride down the old Gyeongchun line, 6 km by rail bike through the Bukhan River gorge and a themed tunnel to Nangu Village, then 2 km by sightseeing train on to the old Gangchon station. A free shuttle brings you back.",
-            "Gimyujeong Station, disused, and the Gim Yu-jeong Literary Village: the old closed station is a well-known photo spot; next to it is the reconstructed home village of the writer Gim Yu-jeong (1908–1937). Renamed from Sillam in 2004 in his honour, it was the first Korean station named after a person.",
-            "Soyanggang Dam and the Soyang Lake cruise: Korea's largest dam by reservoir volume, nicknamed the country's own fjord, with a cruise boat across Soyang Lake to its remoter temples and villages. Finished in 1973, once Asia's largest rock-fill dam.",
+            "Gimyujeong Station, disused, and the Gim Yu-jeong Literary Village: the old closed station is a well-known photo spot; next to it is the reconstructed home village of the writer Gim Yu-jeong (1908–1937). Renamed from Sinnam in 2004 in his honour, it was the first Korean station named after a person.",
+            "Soyanggang Dam and the Soyang Lake cruise: Korea's largest dam by reservoir volume, nicknamed the country's own fjord, with a cruise boat across Soyang Lake to its remoter temples and villages. Finished in 1973 as Korea's largest rock-fill dam.",
             "Soyanggang Skywalk: Korea's longest glass-floor skywalk, out over the Soyang River beside the Maiden statue.",
             "The Uiam Lake circuit (의암호 둘레길), a 28 km lakeside loop built more for cyclists than for one walk: Yungrim Land, the Literature Park, the Animation Museum, Songam Sports Town, Gongjicheon and the Ethiopia Korean War Memorial.",
             "Restaurants and cafés: charcoal dakgalbi at Todam, the potato-bread bakery Gamjabat and the lakeside cafés along Baksa-ro. Downtown, the Myeongdong Dakgalbi Alley is a whole street of dakgalbi restaurants side by side.",
@@ -1778,7 +1778,7 @@ export const cities: City[] = [
           title: 'Two literary families, one city',
           text: [
             "Barely 5 km apart on this map are two of Joseon Korea's most celebrated literary families. **Shin Saimdang** (1504–1551) painted and raised her son at **Ojukheon**, a Treasure-listed house named for its black bamboo. That son, the scholar **Yi I** (Yulgok), now shares Korea's banknotes with her — Saimdang on the ₩50,000 note, Yulgok on the ₩5,000 — said to be the first mother and son on any country's currency.",
-            "At Chodang, named for scholar **Heo Yeop**'s pen name, his son **Heo Gyun** (1569–1618) wrote Korea's first Hangul novel, The Tale of Hong Gildong. His sister **Heo Nanseolheon** (1563–1589) wrote poetry so admired it reached China and Japan before she died at 27; their memorial park stands on her birthplace.",
+            "At Chodang, named for scholar **Heo Yeop**'s pen name, his son **Heo Gyun** (1569–1618) is traditionally credited with Korea's first Hangul novel, The Tale of Hong Gildong. His sister **Heo Nanseolheon** (1563–1589) wrote poetry so admired it reached China and Japan before she died at 27; their memorial park stands on her birthplace.",
           ],
         },
         notices: [
@@ -1828,7 +1828,7 @@ export const cities: City[] = [
         updated: '2026-10-31',
         keywords: ['Sokcho', 'Gangwon', 'Seoraksan', 'SeoulToSokcho', 'AbaiVillage', 'GaetbaeFerry', 'SokchoBeach', 'DaepoPort', 'KoreaTravel'],
         whyVisit: [
-          "The endless blue of the East Sea, and Seoraksan, counted among the **finest mountain scenery in Korea**.",
+          "The endless blue of the East Sea, and Seoraksan Mountain, counted among the **finest mountain scenery in Korea**.",
           "A place that holds both of these, sea and mountain, at once: this is Sokcho, **Korea's signature summer destination**.",
           "From East Coast beaches where the cool waves roll in to the grand scenery carved out by Ulsanbawi, two very different faces of nature meet in one place.",
         ],
@@ -1842,8 +1842,8 @@ export const cities: City[] = [
         notices: [
           {
             icon: '🚌',
-            title: 'Bus from Seoul: about 2 to 2.5 hours',
-            body: 'Sokcho has **no train station**, so you come by express or intercity bus, about **2 to 2.5 hours** from Seoul. Buses leave from Dong Seoul Terminal (Gangbyeon Station, Line 2) and from Seoul Express Bus Terminal (Gangnam); a standard premium seat is roughly **₩20,000 to ₩22,000**.',
+            title: 'Bus from Seoul: about 2 to 3 hours',
+            body: 'Sokcho has **no train station**, so you come by express or intercity bus, about **2 to 3 hours** from Seoul. Buses leave from Dong Seoul Terminal (Gangbyeon Station, Line 2) and from Seoul Express Bus Terminal (Gangnam); a standard premium seat from Dong Seoul is roughly **₩20,000 to ₩22,000**.',
             since: "The video's own guide and bus timetable sites (bus.koreacharts.com, bustrain.kr), checked 31 October 2026. Times and fares vary by day: confirm on KOBUS or Tmoney before you go.",
           },
           {
@@ -1857,7 +1857,7 @@ export const cities: City[] = [
         guide: {
           intro: [
             "🌊 **Day one, the water.** Take the morning bus from Seoul and leave your bag at a hotel by the terminal. Spend the morning on the traveller alley and the Yeongnang Lake boardwalk, have lunch at the fish market, then cross to Abai Village on the hand-pulled ferry. Stay out until the Expo Tower and the Sokcho Eye light up.",
-            "**Day two, the mountain.** Take the city bus to Seoraksan early, before the cable-car queue builds. See Sinheungsa and its Buddha, ride the cable car up and walk the short path to Gwongeumseong. On the way back into town, stop for soft tofu in Hagsapyeong and the outdoor foot bath at Cheoksan Hot Spring. Your bus to Seoul leaves from the terminal you arrived at.",
+            "**Day two, the mountain.** Take the city bus to Seoraksan early, before the cable-car queue builds. See Sinheungsa Temple and its Buddha, ride the cable car up and walk the short path to Gwongeumseong. On the way back into town, stop for soft tofu in Hagsapyeong and the outdoor foot bath at Cheoksan Hot Spring. Your bus to Seoul leaves from the terminal you arrived at.",
             "**If it rains**, swap a half-day. Sokcho City Museum and the National Mountaineering Museum in Nohak-dong are indoors, and a café on Yeongnang Lake gives you the view through glass. Mondays close the Literary Village and the dam café, so check the box above first.",
           ],
           route: [
@@ -1916,8 +1916,8 @@ export const cities: City[] = [
         story: {
           title: 'Why Korea builds whole towns for television',
           text: [
-            "A period drama needs streets that no longer exist, so production companies build them. **Naju** opened its set in 2006 for the drama Jumong, and reports at the time counted 650,000 visitors in the first months. **Mungyeong** has two open sets that, by one count, have hosted about 300 dramas and films since 2000, and Hapcheon's set is reported to have passed 190.",
-            "After the cameras leave, the town stays. Some sets became theme parks, some are rented out again, and a few are taken down: the baduk park from The Glory was mostly dismantled once filming ended. That is why each pin below says what you can still see.",
+            "A period drama needs streets that no longer exist, so production companies build them. **Naju** opened its set in 2006 for the drama Jumong, and reports at the time counted about 640,000 visitors in the first eight months. **Mungyeong** has two open sets that, by one count, have hosted about 300 dramas and films since 2000, and Hapcheon's operator counts more than 300.",
+            "After the cameras leave, the town stays. Some sets became theme parks, some are rented out again, and a few are taken down: the baduk park from The Glory began as a temporary set. That is why each pin below says what you can still see.",
             "Not every pin is a built set. **Nami Island** was already a real place before **Winter Sonata** (2002) made its tree-lined avenue famous and helped start the first wave of Korean-drama tourism, and a **Gangneung breakwater** became a pilgrimage site the same way after **Goblin** (2016–2017): the city itself started promoting it as a filming location in 2026.",
           ],
         },
@@ -1947,13 +1947,13 @@ export const cities: City[] = [
             "Unhyeongung Yanggwan, Seoul: the Western-style house of the Unhyeongung estate. Goblin used Unhyeongung as Kim Shin's house; the sources I found do not say which building. Duksung Women's University uses the Yanggwan today.",
             "Yanghwajin Historical Park, Seoul: a riverside history park with a public toilet at its car park. I found no named drama here; it is a calm Han River stop between the other places.",
             "Incheon Open Port Street: the late-1800s port district. Mr. Sunshine is set in this era and its characters sail from Jemulpo, though it was filmed in Nonsan. Incheon's Goblin course also passes Freedom Park and the Jemulpo Club.",
-            "Cheongnaru, Cheongna Lake Park: the pavilion beside the baduk-park scenes of The Glory. The set was mostly dismantled after filming (see the box above).",
+            "Cheongnaru, Cheongna Lake Park: the pavilion beside the baduk-park scenes of The Glory. It began as a temporary set, so check what stands there now (see the box above).",
             "Heyri Art Village, Paju: set up in 1998 by about 380 publishers and artists, with a 12 m height limit and no walls. Tourist listings call it a modern-drama backdrop; I could not confirm a title.",
             "Byeokchoji Arboretum, Paju: 27 Eastern and Western gardens around a pond. Listings say dramas and films were shot here but do not name them.",
             "First Garden, Paju: a second garden about 15 km away, listed the same way. Treat it as a separate stop.",
             "Sunshine Studio, Nonsan: the main Mr. Sunshine set, with the Glory Hotel, modelled on Seoul's first Western-style hotel, the Sontag Hotel. Sunshine Land, 150 m away, is the experience hall.",
             "Choi Champan House, Pyeongsa-ri, Hadong: a village of 14 hanok built as a set around 2002. It stars as the home in Toji (SBS, 2004 to 2005), and Mr. Sunshine and Moonlight Drawn by Clouds also shot here. The Choi family in the novel is fiction.",
-            "Hapcheon Image Theme Park: reported to have hosted over 190 productions, including Mr. Sunshine and the films Assassination, Taxi Driver and The Age of Shadows. A Blue House set was added in 2015 at about two thirds of the real size.",
+            "Hapcheon Image Theme Park: its operator counts more than 300 productions, including Mr. Sunshine and the films Assassination, Taxi Driver and The Age of Shadows. A Blue House set was added in 2015 at about two thirds of the real size.",
             "Suncheon Drama Filming Site: a 1960s to 1980s hillside village. Listings name Eden's East, Love and Ambition and Giant; recent shoots include When Life Gives You Tangerines.",
             "Mungyeong Saejae Open Set: a Joseon royal court and market street. Taejo Wang Geon, The King's Affection and The Red Sleeve were shot here, and the 2026 film The King's Warden. Press lists Kingdom's first two seasons too.",
             "Buan Image Theme Park: the set of the 2005 film The King and the Clown. Press also names the dramas Dong Yi (2010) and Gu Family Book (2013) for its naval-headquarters set.",
@@ -1990,14 +1990,14 @@ export const cities: City[] = [
           title: 'Why Korea has a German village',
           text: [
             "Most of Korea's \"abroad\" was built for one of three reasons. **Ports**: Incheon opened to foreign trade in 1883, and Busan's Chinese quarter dates to a Qing consulate in 1884. **Armies**: Songtan and Itaewon grew up beside American bases. **Homecomings**: the German Village in Namhae was built for Korean miners and nurses who had worked in Germany and come home.",
-            "The rest are copies of a holiday: Provence, Santorini and Switzerland rebuilt as theme villages and resorts, Jeju's Swiss Village as recently as 2016. Gunsan's Japanese houses and temple are different again, left over from the colonial period.",
+            "The rest are copies of a holiday: Provence, Santorini and Switzerland rebuilt as theme villages and resorts, Jeju's Swiss Village among them. Gunsan's Japanese houses and temple are different again, left over from the colonial period.",
           ],
         },
         notices: [
           {
             icon: '🌊',
             title: 'Sinan 12 Apostles trail: check the tide',
-            body: 'The twelve chapels stand on five islands joined by **causeways that sink at high tide**, so the path can be cut. Look up the tide table (물때표) before you set out. The way over is the **ferry from Songgong Port** (송공항): about 1 hour 7 minutes to the end of the line, reported 2026 departures 06:50, 09:30, 12:30 and 15:10, adult fare 6,500 won. I could not confirm the return times, so check the **last boat back** with the terminal (061-261-4221) before you start walking.',
+            body: 'The twelve chapels stand on five islands joined by **causeways that sink at high tide**, so the path can be cut. Look up the tide table (물때표) before you set out. The way over is the **ferry from Songgong Port** (송공항): about 1 hour 10 minutes to the end of the line, winter departures 06:50, 09:40, 12:30 and 15:00 (the county timetable for 1 October to 28 February), adult fare reported at 6,500 won. I could not confirm the return times, so check the **last boat back** with the terminal (061-261-4221) before you start walking.',
             since: 'Korean press reports 2019 to 2023; ferry times from a travel blog citing the operator, April 2026. Confirm with Sinan County and the ferry operator before you go.',
           },
         ],
