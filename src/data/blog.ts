@@ -41,7 +41,7 @@ export const posts: Post[] = [
     title: 'Why tourists queue outside a Korean drugstore at 9 am',
     description:
       'Why people queue outside Olive Young before it opens: the free skin tests, the passport rule at the till, the sale months, and what the staff are trained to answer.',
-    teaser: 'Bring your passport and a free morning.',
+    teaser: 'Bring your passport for the tax refund.',
     icon: 'shopping_bags',
     date: '2026-11-01',
     updated: '2026-11-01',
@@ -60,6 +60,25 @@ export const posts: Post[] = [
         text: 'By August, foreign shoppers had passed [1 trillion won in purchases](https://dailypharm.com/user/news/341955) this year, up 47% on the year before.',
       },
       { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'Bring your passport for the tax refund', icon: 'passport_control' },
+      {
+        type: 'img',
+        src: 'olive-young-myeongdong.jpg',
+        alt: 'Shoppers queueing at the checkout counters of a large Olive Young shop under a green screen, with signs along the counters asking customers to prepare their physical passport for an immediate tax refund',
+        caption: 'The tills at Olive Young Myeongdong in August 2024. The signs say it in English and Chinese.',
+        href: 'https://commons.wikimedia.org/wiki/File:Olive_Young_Myeongdong.jpg',
+        credit: { author: 'Sgroey', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'list',
+        items: [
+          '**Your physical passport**, the original. The signs at the tills say so in English and Chinese.',
+          '**Visitors only.** The refund is for foreign visitors staying less than six months.',
+          '**Instant refund at the till** for a purchase under 1 million won, up to 5 million in total. There is a minimum per receipt, about 15,000 won, though some guides still say 30,000. Ask before you shop.',
+          '**Missed it?** Keep every receipt and claim at the airport when you leave.',
+        ],
+      },
       { type: 'space' },
       { type: 'h', text: 'Ask how, not what', icon: 'information' },
       {
@@ -93,20 +112,6 @@ export const posts: Post[] = [
         text: 'Hanok Villages, with Anguk Station in the middle of the walk',
       },
       { type: 'space' },
-      { type: 'h', text: 'Passport, receipt, patience', icon: 'passport_control' },
-      {
-        type: 'img',
-        src: 'olive-young-myeongdong.jpg',
-        alt: 'Shoppers queueing at the checkout counters of a large Olive Young shop under a green screen, with signs along the counters asking customers to prepare their physical passport for an immediate tax refund',
-        caption: 'The tills at Olive Young Myeongdong in August 2024. The signs say it in English and Chinese.',
-        href: 'https://commons.wikimedia.org/wiki/File:Olive_Young_Myeongdong.jpg',
-        credit: { author: 'Sgroey', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
-      },
-      {
-        type: 'p',
-        text: 'Have your physical passport ready for an immediate tax refund. The minimum is about 15,000 won a receipt, but the rules and caps change, so ask at the till before you shop.',
-      },
-      { type: 'space' },
       { type: 'h', text: 'When to go', icon: 'calendar' },
       {
         type: 'p',
@@ -134,111 +139,7 @@ export const posts: Post[] = [
       },
       {
         type: 'verdict',
-        text: 'Go in with two questions and your passport. The shelves are the easy part. The free tests and the staff are what is worth the queue.',
-      },
-    ],
-  },
-  {
-    id: '2026-11-01-2003',
-    title: 'The clocks go back, and the sun goes with them',
-    description:
-      'Europe set its clocks back on 25 October, the US on 1 November. Korea changes nothing, and its winter is still full of sun. Why that matters for your mood.',
-    teaser: 'Seoul keeps its winter sun.',
-    icon: 'alarm_clock',
-    date: '2026-11-01',
-    updated: '2026-11-01',
-    keywords: ['KoreaTravel', 'DaylightSaving', 'WinterInKorea', 'WinterHiking', 'Seoul'],
-    body: [
-      {
-        type: 'p',
-        text: 'Europe set its clocks back on 25 October. The US does it on 1 November. In Berlin this week the sun sets at about 16:40, and it keeps getting earlier until mid-December.',
-      },
-      {
-        type: 'p',
-        text: 'Korea moved no clocks at all. Its winter is cold, but it is bright, and people go out in it. That is the part visitors from Northern Europe never expect.',
-      },
-      { type: 'ad', slot: 'inArticle' },
-      { type: 'space' },
-      { type: 'h', text: 'The clock is not the real problem', icon: 'cloud' },
-      {
-        type: 'p',
-        text: 'Putting the clocks back does not shorten the day. It only moves the sun on the dial. What really counts is how far north you live, and how many clouds sit on top of you.',
-      },
-      {
-        type: 'table',
-        head: ['City', 'Shortest day', 'Sunset that day'],
-        rows: [
-          ['Stockholm', '6 h 05 min', '14:48'],
-          ['Berlin', '7 h 39 min', '15:54'],
-          ['London', '7 h 50 min', '15:53'],
-          ['Seattle', '8 h 26 min', '16:20'],
-          ['Chicago', '9 h 08 min', '16:22'],
-          ['Seoul', '9 h 34 min', '17:17'],
-        ],
-      },
-      {
-        type: 'p',
-        text: 'Our own calculation for 21 December, in local time. Seoul gets **almost two hours more daylight than Berlin**, and its sun sets 83 minutes later.',
-      },
-      {
-        type: 'p',
-        text: 'Then come the clouds. Climate tables built on the German weather service\'s data give Berlin about **45 hours of sunshine in all of December**. For Seoul they give about **160**, more than three times as much.',
-      },
-      { type: 'space' },
-      { type: 'h', text: 'What the dark does to people', icon: 'crescent_moon' },
-      {
-        type: 'p',
-        text: 'Light changes mood. A [2025 review of 24 studies](https://pubmed.ncbi.nlm.nih.gov/40614973/) with about 32,900 people put **seasonal affective disorder**, the winter depression tied to short days, at around 5%. The rate rose the further people lived from the equator. A milder winter slump was nearly twice as common, around 9%.',
-      },
-      {
-        type: 'p',
-        text: 'We found no comparable Korean study, so we will not say Koreans feel better in winter. We only know the light is there, and that people use it.',
-      },
-      {
-        type: 'p',
-        text: 'Korea did try 서머타임 (seomeo-taim), summer time, once. It ran in 1987 and 1988 for the Seoul Olympics and was dropped in 1989, after complaints about tiredness and longer working hours. The [national archives](https://theme.archives.go.kr/next/koreaOfRecord/summerTime.do) tell the story. Since then the clocks stay put.',
-      },
-      { type: 'space' },
-      { type: 'h', text: 'Winter is for walking here', icon: 'sun' },
-      {
-        type: 'p',
-        text: 'So people walk in it. Winter hiking is a real weekend habit in Korea. The big draw is [눈꽃](https://www.google.com/search?tbm=isch&q=%EB%88%88%EA%BD%83) (nunkkot), "snow flowers": frost and snow piled on bare branches. 덕유산 (Deogyusan) and 태백산 (Taebaeksan) are the mountains Korean news names every winter.',
-      },
-      {
-        type: 'p',
-        text: 'Then there are the real flowers. [복수초](https://www.google.com/search?tbm=isch&q=%EB%B3%B5%EC%88%98%EC%B4%88) (boksucho), the adonis, pushes up through snow and ice around January and February. Its other name is **얼음새꽃 (eoreumsaekkot)**. Reports say the blooms open fully in the warm hours, from late morning to mid-afternoon. A [photo report](https://www.asiae.co.kr/en/article/2021012818313034674) caught it in the snow at Hongneung Arboretum in Seoul in January 2021.',
-      },
-      {
-        type: 'img',
-        src: 'boksucho-namsan.jpg',
-        alt: 'A single yellow adonis flower in bloom on bare dark soil, with a second bud out of focus behind it',
-        caption: 'An adonis, 복수초 (boksucho), in bloom on Namsan in Seoul on 4 March 2013.',
-        href: 'https://commons.wikimedia.org/wiki/File:KOCIS_Korea_Early_Spring_Flower_02_(8526795375).jpg',
-        credit: { author: 'Jeon Han / Korea.net', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
-      },
-      {
-        type: 'p',
-        text: 'On Jeju the star is [동백](https://www.google.com/search?tbm=isch&q=%EB%8F%99%EB%B0%B1) (dongbaek), the camellia, which reports put at its best from December to January. Camellia Hill, 카멜리아힐 (kamelria-hil), is said to hold 500 kinds. And on our Olle Route 5 the path runs through a camellia forest with the winter sea beside it.',
-      },
-      {
-        type: 'route',
-        cityId: 'jeju',
-        pathId: 'jeju-olle-trail',
-        text: 'Jeju Olle Trail 5-6-7, with the Wimi camellia habitat on Route 5',
-      },
-      { type: 'space' },
-      { type: 'h', text: 'If you go in winter', icon: 'hiking_boot' },
-      {
-        type: 'list',
-        items: [
-          '**Start in the morning.** Even in Seoul the sun sets at about 17:15 on the shortest day.',
-          '**Crampons and warm layers** for snow trails. Korean reports say it every winter, and they mean it.',
-          '**Check bloom news first.** Flowers follow the weather, and a warm week can bring them forward.',
-        ],
-      },
-      {
-        type: 'verdict',
-        text: 'The clocks go back and the sun does not come with them. Korean winter is cold, but it is not dark. We would take that.',
+        text: 'Go in with two questions, and your passport for the tax refund. The shelves are the easy part. The free tests and the staff are what is worth the queue.',
       },
     ],
   },
