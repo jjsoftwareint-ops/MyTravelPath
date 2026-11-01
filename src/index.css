@@ -1590,8 +1590,10 @@ button.cta {
   cursor: auto;
 }
 
-/* Links inside a post keep the look of **highlighted** words, plus an always-visible underline */
-.post-body a.link {
+/* Links inside a post, and in the text of a path page, keep the look of **highlighted** words,
+   plus an always-visible underline */
+.post-body a.link,
+.path-layout a.link {
   font-weight: 700;
   background: linear-gradient(transparent 62%, var(--pill) 62%);
   color: inherit;
