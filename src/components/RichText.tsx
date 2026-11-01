@@ -6,7 +6,9 @@ import { imageSearchUrl } from "./ImagePopup";
 //   {red:words}     → bold red, {blue:words} → bold blue: to name a coloured line on the map
 //   [label](https://…)  → external link, opens in a new tab (https only; write ( ) in a URL as %28 %29)
 //   [[Place]] or [[Place|search words]] → a place name; a tap opens its Google Images in a popup
-//     (see ImagePopup). The search is the city name plus the place, e.g. "Seoul Samcheong-dong".
+//     (see ImagePopup). Search in Korean, city included, and add 카페 for a café, e.g.
+//     [[Storage Incheon|스토리지 인천 카페]]: Korean results beat English ones for local places.
+//     Without search words the English name is searched with the city in front ("Seoul Samcheong-dong").
 //     Plain text when the caller passes no onPlace. With onPlace, a [label](Google Images URL) link
 //     opens the same popup instead of a new tab.
 // Emoji need no markup; put them straight in the string.
@@ -48,7 +50,9 @@ export default function RichText({
           if (!onPlace) return <Fragment key={i}>{place[1]}</Fragment>;
           const words = place[2] ?? place[1].replace(/^The /, "");
           const query =
-            city && !words.toLowerCase().includes(city.toLowerCase()) ? `${city} ${words}` : words;
+            city && !/[가-힣]/.test(words) && !words.toLowerCase().includes(city.toLowerCase())
+              ? `${city} ${words}`
+              : words;
           return (
             <a
               key={i}
