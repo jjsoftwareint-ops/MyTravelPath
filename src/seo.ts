@@ -11,7 +11,7 @@ export const SITE_NAME = "My Travel Path";
 const HOME_TITLE = "Free Korea walking trails with maps | My Travel Path";
 const HOME_DESCRIPTION =
   "Free walking trails in Korea: Seoul, Busan, Jeju, Incheon and more. Google My Maps files with Naver Map links, public toilets and short histories. No sign-up.";
-const DEFAULT_IMAGE = `${SITE_URL}/og.jpg`;
+const DEFAULT_IMAGE = `${SITE_URL}/og.jpg?v=7`;
 const PUBLISHER = { "@type": "Organization", name: "JJ SOFTWARE", url: SITE_URL };
 
 export type PageMeta = {
@@ -283,7 +283,7 @@ export function renderHeadTags(m: PageMeta): string {
     `<meta property="og:url" content="${url}" />`,
     m.image ? `<meta property="og:image" content="${m.image}" />` : "",
     m.image === DEFAULT_IMAGE
-      ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="Bukchon hanok rooftops with the Seoul skyline, and the My Travel Path icon" />`
+      ? `<meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="Bukchon hanok rooftops with the Seoul skyline, and the My Travel Path logo" />`
       : "",
     `<meta name="twitter:card" content="${m.image ? "summary_large_image" : "summary"}" />`,
     `<meta name="twitter:title" content="${esc(m.title)}" />`,
