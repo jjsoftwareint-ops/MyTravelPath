@@ -1,13 +1,37 @@
 import { Fragment } from "react";
+import { imageSearchUrl } from "./ImagePopup";
 
 // Tiny inline markup for guide text written in travel.ts:
 //   **words**       → highlighted in the accent colour (bold)
 //   {red:words}     → bold red, {blue:words} → bold blue: to name a coloured line on the map
 //   [label](https://…)  → external link, opens in a new tab (https only; write ( ) in a URL as %28 %29)
+//   [[Place]] or [[Place|search words]] → a place name; a tap opens its Google Images in a popup
+//     (see ImagePopup). The search is the city name plus the place, e.g. "Seoul Samcheong-dong".
+//     Plain text when the caller passes no onPlace. With onPlace, a [label](Google Images URL) link
+//     opens the same popup instead of a new tab.
 // Emoji need no markup; put them straight in the string.
-const TOKEN = /(\*\*.+?\*\*|\{(?:red|blue):[^}]+\}|\[[^\]]+\]\(https:\/\/[^)\s]+\))/g;
+const TOKEN = /(\[\[[^\]|]+(?:\|[^\]]+)?\]\]|\*\*.+?\*\*|\{(?:red|blue):[^}]+\}|\[[^\]]+\]\(https:\/\/[^)\s]+\))/g;
 
-export default function RichText({ text }: { text: string }) {
+// The search words of a Google Images link (https://www.google.com/search?tbm=isch&q=…), else null.
+function googleImagesQuery(href: string) {
+  try {
+    const u = new URL(href);
+    if (u.hostname !== "www.google.com" || u.pathname !== "/search" || u.searchParams.get("tbm") !== "isch") return null;
+    return u.searchParams.get("q");
+  } catch {
+    return null;
+  }
+}
+
+export default function RichText({
+  text,
+  city,
+  onPlace,
+}: {
+  text: string;
+  city?: string; // prefixed to a place's image search, unless the search already names it
+  onPlace?: (query: string) => void;
+}) {
   const parts = text.split(TOKEN);
   return (
     <>
@@ -17,6 +41,26 @@ export default function RichText({ text }: { text: string }) {
             <strong key={i} className="hl">
               {part.slice(2, -2)}
             </strong>
+          );
+        }
+        const place = /^\[\[([^\]|]+)(?:\|([^\]]+))?\]\]$/.exec(part);
+        if (place) {
+          if (!onPlace) return <Fragment key={i}>{place[1]}</Fragment>;
+          const words = place[2] ?? place[1].replace(/^The /, "");
+          const query =
+            city && !words.toLowerCase().includes(city.toLowerCase()) ? `${city} ${words}` : words;
+          return (
+            <a
+              key={i}
+              className="link"
+              href={imageSearchUrl(query)}
+              onClick={(e) => {
+                e.preventDefault();
+                onPlace(query);
+              }}
+            >
+              {place[1]}
+            </a>
           );
         }
         const colour = /^\{(red|blue):([^}]+)\}$/.exec(part);
@@ -29,8 +73,25 @@ export default function RichText({ text }: { text: string }) {
         }
         const link = /^\[([^\]]+)\]\((https:\/\/[^)\s]+)\)$/.exec(part);
         if (link) {
+          // A Google Images link in a blog post opens the popup too; modified clicks still open a tab.
+          const imageQuery = onPlace ? googleImagesQuery(link[2]) : null;
           return (
-            <a key={i} className="link" href={link[2]} target="_blank" rel="noopener noreferrer">
+            <a
+              key={i}
+              className="link"
+              href={link[2]}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={
+                imageQuery
+                  ? (e) => {
+                      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+                      e.preventDefault();
+                      onPlace?.(imageQuery);
+                    }
+                  : undefined
+              }
+            >
               {link[1]}
             </a>
           );

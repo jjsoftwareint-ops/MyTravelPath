@@ -7,6 +7,7 @@ import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
 import FollowTipDialog from "../components/FollowTipDialog";
+import ImagePopup from "../components/ImagePopup";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
@@ -25,12 +26,20 @@ const DONATE_URL = "https://paypal.me/berlinersejin";
 
 // A guide line (intro paragraph, route step or tip) with its native leading emoji swapped for the
 // matching flat OpenMoji icon (site rule 2026-10-30: flat icons everywhere, not just the blog).
-function GuideLine({ text }: { text: string }) {
+function GuideLine({
+  text,
+  city,
+  onPlace,
+}: {
+  text: string;
+  city?: string;
+  onPlace?: (query: string) => void;
+}) {
   const { icon, rest } = splitLeadingEmoji(text);
   return (
     <>
       {icon && <Emoji name={icon} className="guide-emoji" />}
-      <RichText text={rest} />
+      <RichText text={rest} city={city} onPlace={onPlace} />
     </>
   );
 }
@@ -48,6 +57,9 @@ export default function PathDetail() {
   // "To the point & Location" shows the whole My Map full screen instead of opening a new tab.
   const [mapOpen, setMapOpen] = useState(false);
   const closeMap = useCallback(() => setMapOpen(false), []);
+  // A place name in "The locations" opens its Google Images in a popup (the search words, or null).
+  const [placeQuery, setPlaceQuery] = useState<string | null>(null);
+  const closePlace = useCallback(() => setPlaceQuery(null), []);
   // iPhone tip before "To follow the path", unless the visitor chose not to see it again.
   const [tipOpen, setTipOpen] = useState(false);
   const closeTip = useCallback(() => setTipOpen(false), []);
@@ -327,7 +339,11 @@ export default function PathDetail() {
                 <ol>
                   {path.guide.route.map((step) => (
                     <li key={step}>
-                      <GuideLine text={step} />
+                      <GuideLine
+                        text={step}
+                        city={city.theme ? undefined : city.name.replace(/-do$/, "")}
+                        onPlace={setPlaceQuery}
+                      />
                     </li>
                   ))}
                 </ol>
@@ -364,6 +380,7 @@ export default function PathDetail() {
       {mapOpen && embed && (
         <MapOverlay src={embed} title={`${path.name} map`} onClose={closeMap} />
       )}
+      {placeQuery && <ImagePopup query={placeQuery} onClose={closePlace} />}
     </Layout>
   );
 }

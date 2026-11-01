@@ -1664,6 +1664,70 @@ button.cta {
   }
 }
 
+/* ── Google Images popup (place names in "The locations") ─── */
+.image-popup-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(15, 17, 21, 0.6);
+}
+.image-popup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  max-height: 760px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+.image-popup-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 6px 6px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.image-popup-title {
+  min-width: 0;
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.image-popup-close {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--text);
+  font-size: 26px;
+  cursor: pointer;
+}
+.image-popup-close:active {
+  background: var(--press);
+}
+.image-popup iframe {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background: #fff; /* Google's page is light whatever the site theme */
+}
+
 /* ── Small confirm dialog (tip before "To follow the path") ─ */
 .dialog-backdrop {
   position: fixed;
