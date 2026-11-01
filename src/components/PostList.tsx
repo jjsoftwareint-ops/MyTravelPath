@@ -9,8 +9,9 @@ export default function PostList({ currentId }: { currentId?: string }) {
   const groups = postsByMonth()
   return (
     <div className="post-list">
-      {groups.map((g, i) => (
-        <details key={g.month} open={i === 0 || g.posts.some((p) => p.id === currentId)}>
+      {groups.map((g) => (
+        // Every month starts open (user, 2026-11-01); a visitor can still fold one.
+        <details key={g.month} open>
           <summary>{formatMonth(g.month + '-01')}</summary>
           <ul>
             {g.posts.map((p) => (
