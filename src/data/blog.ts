@@ -1183,12 +1183,16 @@ export const posts: Post[] = [
       { type: 'space' },
       { type: 'h', icon: 'fire', text: 'How the oven works' },
       {
-        type: 'img',
-        src: 'jjimjilbang-bulgama.jpg',
-        alt: 'A tiled hall in a jjimjilbang with a large dome painted with a farming scene on the right and arched stone doorways on the left',
-        caption: 'A kiln room in a modern jjimjilbang: the painted dome on the right.',
-        href: 'https://commons.wikimedia.org/wiki/File:2020-03-11_20.39.31_%EC%B0%9C%EC%A7%88%EB%B0%A9_%EB%B6%88%EA%B0%80%EB%A7%88.jpg',
-        credit: { author: 'Choikwangmo9', license: 'CC0 1.0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+        type: 'photo',
+        src: 'forest-herbal-land-kilns.jpg',
+        alt: 'A row of small brick and clay kiln entrances with iron doors and red curtains, under a corrugated metal wall and roof beams',
+        caption: 'The kilns at Forest Herbal Land, seen from the yard. Photo: Korea Tourism Organization, KOGL Type 1.',
+      },
+      {
+        type: 'photo',
+        src: 'forest-herbal-land-kiln-room.jpg',
+        alt: 'Inside a kiln room: a rough clay dome lit orange, with a round wooden floor',
+        caption: 'Inside one of the kiln rooms: a round wooden floor under a rough clay dome. Photo: Korea Tourism Organization, KOGL Type 1.',
       },
       {
         type: 'p',
@@ -1239,7 +1243,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'We have one on our map. 숲속한방랜드 (Supsok Hanbang-raendeu), or Forest Herbal Land, sits in the woods near Sinchon with its charcoal kilns outdoors. Write-ups from 2025 describe low, middle and high kilns and advise beginners to start in the middle.',
+        text: 'We have one on our map. 숲속한방랜드 (Supsok Hanbang-raendeu), or Forest Herbal Land, sits in the woods near Sinchon, with its own charcoal kilns. Write-ups from 2025 describe low, middle and high kilns and advise beginners to start in the middle.',
       },
       {
         type: 'route',
