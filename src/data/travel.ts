@@ -74,7 +74,7 @@ export const cities: City[] = [
     id: 'seoul',
     name: 'Seoul',
     intro: [
-      "Korea's capital for more than 600 years, since the Joseon dynasty made it its seat in 1394. About **9 million people** live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
+      "**Korea's capital** for more than 600 years, since the Joseon dynasty made it its seat in 1394. About 9 million people live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
       "The **Han River** splits it in two: palaces, hanok lanes and the old fortress wall on the north bank, towers and Gangnam on the south. Four inner mountains, **Bugaksan, Inwangsan, Naksan and Namsan**, ring the old city, and the subway reaches almost everywhere.",
     ],
     image: 'seoul.jpg',
@@ -87,7 +87,7 @@ export const cities: City[] = [
         seoDescription:
           "Walk Seoul's city wall on Naksan at sunset, pass Ihwa mural village and Dongdaemun gate, then follow the lit Cheonggyecheon stream. Map and tips.",
         duration: '3h',
-        updated: '2026-10-31',
+        updated: '2026-11-01',
         tags: [{ icon: 'sunset', label: 'Evening walk' }, { icon: 'moon', label: 'Night walk' }],
         whyVisit: [
           "Naksan Park has **the most beautiful sunset and night view in Seoul**, and you watch the sunset from a café: Cafe Nakta sits on the lip of the old quarry, San 1-1 by the wall, with the whole of the old city below.",
@@ -98,7 +98,7 @@ export const cities: City[] = [
           title: 'A wall, and a river that was buried',
           text: [
             "Seoul's city wall was first built by the founding king of Joseon, as earth on the flat ground and stone on the hills, and it still runs 18.6 km over the mountains around the old city. Its stones carry carved records: first the counties that built each stretch, and after King Sukjong's repairs the overseer and the date.",
-            "The stream below the wall had a worse century. From 1958 it was covered over, and later it carried an elevated highway 5.6 km long. When the structure became a safety worry, the highway came down from 2003 and the stream reopened on **1 October 2005**, 47 years after the covering began.",
+            "The stream below the wall had a worse century. From 1958 it was covered over, and later it carried an elevated highway 5.6 km long. When the structure became a safety worry, the highway came down from 2003 and the stream **reopened** on 1 October 2005, 47 years after the covering began.",
           ],
         },
         image: 'naksan.jpg',
@@ -213,7 +213,7 @@ export const cities: City[] = [
         updated: '2026-11-01',
         tags: [{ icon: 'village', label: 'Traditional' }],
         whyVisit: [
-          "Three hanok quarters in one 5 km walk, **laid out in 1394 and still lived in**: tiled roofs stepping down a hill with Namsan Mountain behind them.",
+          "Three hanok quarters in one 5 km walk, laid out in 1394 and **still lived in**: tiled roofs stepping down a hill with Namsan Mountain behind them.",
           "There is a palace at each end, tea in Insadong, grills in the Ikseon-dong lanes and **a street that fills with pojangmacha tents after dark**.",
           "Two hours of walking that takes a whole day, because there is far too much good food along the way.",
         ],
@@ -277,7 +277,7 @@ export const cities: City[] = [
         seoDescription:
           'Climb Inwangsan along the Seoul fortress wall for views over Gyeongbokgung and the whole city. Free map with the route, pins and tips.',
         duration: '2.5h',
-        updated: '2026-10-31',
+        updated: '2026-11-01',
         tags: [
           { icon: 'hiker', label: 'Hiking' },
           { icon: 'sunset', label: 'Evening walk' },
@@ -293,7 +293,7 @@ export const cities: City[] = [
           title: 'A mountain closed for twenty-five years',
           text: [
             "The wall over **Inwangsan** is part of Hanyangdoseong, the city wall begun in 1396, and the peak is the city's **white tiger** in the old geomancy, guarding the palace's west.",
-            "In 1968 North Korean commandos came over this ridge to attack the Blue House. The mountain was closed to the public and stayed closed until **1993**; the guard posts you pass, one of them now the Forest Shelter, are left from those years.",
+            "In 1968 North Korean commandos came over this ridge to attack the Blue House. The mountain was **closed to the public** and stayed closed until 1993; the guard posts you pass, one of them now the Forest Shelter, are left from those years.",
           ],
         },
         notices: [
@@ -699,7 +699,7 @@ export const cities: City[] = [
     id: 'busan',
     name: 'Busan',
     intro: [
-      "Korea's second city, with about **3.3 million people**, a big port on the south-east coast and a different feel from Seoul: hills running down to the sea, beaches in the middle of the city, and a stronger local accent.",
+      "**Korea's second city**, with about 3.3 million people, a big port on the south-east coast and a different feel from Seoul: hills running down to the sea, beaches in the middle of the city, and a stronger local accent.",
       "**Haeundae** is the famous beach, **Gamcheon** the hillside culture village, **Jagalchi** the fish market. The KTX high-speed train from Seoul takes about two and a half hours.",
     ],
     image: 'busan.jpg',
@@ -889,10 +889,10 @@ export const cities: City[] = [
         seoDescription:
           'Busan under a roof: museums at Yeongdo, Gijang and Dongnae, Busan Tower and X the Sky, Centum and Gwangalli spas, a character café and the Blueline beach train.',
         duration: 'Full day',
-        updated: '2026-10-31',
+        updated: '2026-11-01',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
         whyVisit: [
-          "A rainy day in Busan with **a jjimjilbang on the beach, a 1929 bank turned history museum and Korea's tallest observation deck** all under a roof.",
+          "A rainy day in Busan with **a jjimjilbang on the beach, a bank turned history museum and Korea's tallest observation deck** all under a roof.",
           "A wire-rope factory that became a bookshop and brewery, a Gaya-era tomb cluster you walk over, and a beach train that runs in any weather.",
           "Spread across the city by type, so pick the cluster nearest your bed.",
         ],
@@ -1140,14 +1140,14 @@ export const cities: City[] = [
         seoTitle: 'Jeju Olle Trail 1 and 1-1: Seongsan, Udo',
         seoDescription: 'Olle Trail route 1 (14.9 km, Siheung-ri to Gwangchigi Beach) and the 11.3 km Udo island loop 1-1 on one free map, with stamps, toilets and cafés.',
         duration: '1 day each',
-        updated: '2026-10-31',
+        updated: '2026-11-01',
         tags: [{ icon: 'hiking', label: 'Trekking' }],
         image: 'udo.jpg',
         imageCredit: 'Photo: Jeju Film Commission · KOGL 1',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1RGT7_JFASnnB4euajgRTSGrM7CVMjC0',
         keywords: ['Jeju', 'JejuOlle', 'OlleTrail1', 'UdoIsland', 'Udo', 'Seongsan', 'Gwangchigi', 'SeobinBaeksa', 'KoreaTravel'],
         whyVisit: [
-          "**Where the whole Olle trail began in 2007**, and the view from its first hill takes in Seongsan's sunrise peak and the cow-shaped island beyond.",
+          "**Where the whole Olle trail began**, in 2007, and the view from its first hill takes in Seongsan's sunrise peak and the cow-shaped island beyond.",
           "Udo is a 15-minute ferry away, with coral-sand beaches, a lighthouse on its one hill and **peanut ice cream at the ports**.",
           "Two routes, two easy days, a night in Seongsan between them.",
         ],
@@ -1399,7 +1399,7 @@ export const cities: City[] = [
         seoDescription:
           "Incheon's big island in a day: a hanok-style church, an old temple, coastal forts and a textile town, with cafés and restaurants pinned on a free map.",
         duration: 'Full day',
-        updated: '2026-10-31',
+        updated: '2026-11-01',
         tags: [{ icon: 'village', label: 'Island day trip' }],
         whyVisit: [
           "An island that **ruled Korea for forty years while the Mongols waited on the far shore**, one bus ride from Seoul.",
@@ -1409,8 +1409,8 @@ export const cities: City[] = [
         story: {
           title: 'The island that guarded the way to Seoul',
           text: [
-            "In **1232** the Goryeo court left the mainland for Ganghwa and ruled from the island for nearly forty years, because the Mongol army could not easily cross the water to reach it.",
-            "The island kept that job. It sits where the Han and Imjin rivers meet the sea, the water road to Seoul, so in **1679** the Joseon court lined its coast with **48 small forts called dondae**, and Yeonmijeong pavilion on the north tip watched the river mouth.",
+            "In 1232 the Goryeo court **left the mainland for Ganghwa** and ruled from the island for nearly forty years, because the Mongol army could not easily cross the water to reach it.",
+            "The island kept that job. It sits where the Han and Imjin rivers meet the sea, the water road to Seoul, so in 1679 the Joseon court lined its coast with 48 small forts called **dondae**, and Yeonmijeong pavilion on the north tip watched the river mouth.",
           ],
         },
         notices: [
@@ -1462,7 +1462,7 @@ export const cities: City[] = [
     id: 'gyeonggi-do',
     name: 'Gyeonggi-do',
     intro: [
-      "The province that wraps around Seoul and Incheon, and Korea's most populous one with more than **13 million people**. Its capital is **Suwon**, whose Hwaseong Fortress is a UNESCO World Heritage site.",
+      "The province that **wraps around Seoul and Incheon**, and Korea's most populous one with more than 13 million people. Its capital is Suwon, whose Hwaseong Fortress is a **UNESCO** World Heritage site.",
       "Beyond the suburbs it turns to rivers, lakes and hills, easy day trips from Seoul by subway, train or bus. **Gapyeong**, about an hour east, is known for its lakeside cafés and Nami Island.",
     ],
     image: 'gyeonggi.jpg',
@@ -1640,7 +1640,7 @@ export const cities: City[] = [
         seoDescription:
           'Walk the 5.6 km Hwaseong Fortress wall in Suwon, with its four gates and view points, plus Haenggung-dong lanes. Public toilets and 18 pins on the map.',
         duration: '3h',
-        updated: '2026-10-31',
+        updated: '2026-11-01',
         tags: [{ icon: 'village', label: 'Old town' }],
         whyVisit: [
           "A **UNESCO fortress you can walk right round in three hours**: 5.7 km of wall, four gates, and a hilltop command post with a night view over Suwon.",
@@ -1651,8 +1651,8 @@ export const cities: City[] = [
         story: {
           title: 'A fortress built for a father',
           text: [
-            "King Jeongjo built Hwaseong from **1794 to 1796** to honour his father, Crown Prince Sado, whose tomb he had moved nearby in 1789. The scholar **Jeong Yak-yong** designed it, with a wall, four main gates and a stream running through the middle.",
-            "The Korean War damaged much of it, and it was rebuilt from the **Uigwe**, the construction record written after Jeongjo's death. UNESCO listed it in **1997**.",
+            "**King Jeongjo** built Hwaseong from 1794 to 1796 to honour his father, Crown Prince Sado, whose tomb he had moved nearby in 1789. The scholar **Jeong Yak-yong** designed it, with a wall, four main gates and a stream running through the middle.",
+            "The Korean War damaged much of it, and it was rebuilt from the **Uigwe**, the construction record written after Jeongjo's death. **UNESCO** listed it in 1997.",
           ],
         },
         notices: [
@@ -1688,6 +1688,59 @@ export const cities: City[] = [
             "🛍️ The Starfield Suwon library (별마당도서관) is about 2 km west of the wall inside the mall, so it works as a rainy-day stop. Naver lists no separate hours for it.",
             "🏘️ The Korean Folk Village is in Yongin, about 10 km south-east, and needs a trip of its own. Naver lists it open 10:00–19:00 Monday to Thursday and until 22:00 Friday to Sunday.",
             "👟 The wall climbs Paldalsan to Seojangdae, so wear shoes with grip. Allow three hours for the loop and more for the palace.",
+          ],
+        },
+      },
+      {
+        id: 'namhansanseong',
+        name: 'Namhansanseong Fortress walks',
+        seoTitle: 'Namhansanseong Fortress: three walking courses',
+        seoDescription:
+          'Namhansanseong, a UNESCO fortress near Seoul: three loops of 3, 4 and 8.5 km past its gates and command post, with the bus route, toilets and a map.',
+        duration: '1–3h',
+        updated: '2026-11-01',
+        tags: [{ icon: 'hiking', label: 'Fortress walk' }],
+        whyVisit: [
+          "A **UNESCO World Heritage fortress** with stone gates, a hilltop command post and a wall you can walk along.",
+          "Three loops to choose from, from an easy hour to a circuit through **all four gates**.",
+          "A temporary palace inside the walls, and a lookout at the West Gate.",
+        ],
+        story: {
+          title: 'The emergency capital',
+          text: [
+            "Namhansanseong was Joseon's **emergency capital**: a fortress town in the hills where the court could retreat if Seoul fell.",
+            "In 1636 **King Injo** took refuge here when Qing armies invaded. After about six weeks he surrendered and sent his sons to the Qing as hostages.",
+            "**UNESCO** listed the fortress in 2014, as an emergency capital and as an example of fortress building shared across East Asia.",
+          ],
+        },
+        notices: [
+          {
+            icon: '⏰',
+            title: 'Namhansanseong Haenggung palace: closed on Mondays',
+            body: "The palace is open **10:00 to 18:00** from Tuesday to Sunday and {red:closed every Monday}.",
+            since: 'Opening hours on Naver Map, checked 1 November 2026.',
+          },
+        ],
+        image: 'namhansanseong.jpg',
+        imageCredit: 'Photo: Noh Mun Duek · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1CRf0DjdJukWu6DG4OO1NYszqHd1cj84',
+        keywords: ['Gyeonggi', 'DayTripFromSeoul', 'Namhansanseong', 'NamhansanseongFortress', 'UNESCO', 'Suojangdae', 'NamhansanseongHaenggung', 'FortressWall', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🏯 I'd start with **Course 1**, a loop past three of the gates and the command post.",
+            "Short of time, take Course 2. With the afternoon free, **walk Course 5**, the long circuit. Courses 3 and 4 can wait for a second visit.",
+          ],
+          route: [
+            "**Course 1** (3.97 km, 1.5h): [[Rotary car park|남한산성 로터리 주차장]] → [[North Gate|남한산성 북문]] → [[West Gate|남한산성 서문]] with its lookout → [[Suojangdae|수어장대]] → Yeongchunjeong pavilion → [[South Gate|남한산성 남문]] → Rotary car park. Courses 1, 2 and 4 all start here.",
+            "**Course 2** (3.04 km, 1h): Rotary car park → [[Haenggung palace|남한산성행궁]] → Sungnyeoljeon shrine → Suojangdae → West Gate → [[Gukcheongsa temple|남한산성 국청사]] → Rotary car park. The shortest of the three.",
+            "**Course 5** (8.5 km, 3h): [[World Heritage Center|남한산성세계유산센터]] car park → East Gate → North Gate → West Gate lookout → Suojangdae → South Gate → East Gate → car park. All four main gates in one walk.",
+          ],
+          tips: [
+            "🚇 Getting there: Line 8 to Namhansanseong Station (남한산성입구), then bus 53, or to Sanseong Station (산성역), exit 2, then bus 9 or 52. Check the bus number on the day, because weekday and weekend services differ.",
+            "🍜 Lunch is easy: tofu houses and a bakery by the History Hall car park, chicken soup and cafés by the Rotary. Two of the tofu houses close on Mondays.",
+            "👟 Wear shoes with grip: Course 1 climbs to about 485 m and Course 5 to about 500 m.",
+            "💧 Bring water for Course 5.",
+            "🔗 Want another UNESCO fortress walk? [Suwon Hwaseong](https://koreatravelpath.com/gyeonggi-do/hwaseong/) is on Line 1.",
           ],
         },
       },
