@@ -51,10 +51,9 @@ export default function PathDetail() {
   const backTo = from?.startsWith("/blog/") ? from : undefined;
   const city = findCity(cityId);
   const path = findPath(cityId, pathId);
-  // The embedded map starts behind a cover so that scrolling the page over it
-  // does not pan the map instead. One tap hands control to the map.
-  const [mapActive, setMapActive] = useState(false);
-  // "To the point & Location" shows the whole My Map full screen instead of opening a new tab.
+  // The small map is only a preview: a cover blocks every touch and scroll on it (visitors kept
+  // trying to pan it in place), and a tap on it, like "To the point & Location", opens the whole
+  // My Map full screen instead of opening a new tab.
   const [mapOpen, setMapOpen] = useState(false);
   const closeMap = useCallback(() => setMapOpen(false), []);
   // A place name in "The locations" opens its Google Images in a popup (the search words, or null).
@@ -184,17 +183,16 @@ export default function PathDetail() {
                 src={embed}
                 title={`${path.name} map`}
                 loading="lazy"
-                allowFullScreen
+                tabIndex={-1}
               />
-              {!mapActive && (
-                <button
-                  type="button"
-                  className="map-cover"
-                  onClick={() => setMapActive(true)}
-                >
-                  <span>Tap to explore the map</span>
-                </button>
-              )}
+              <button
+                type="button"
+                className="map-cover"
+                aria-label={`Open the ${path.name} map full screen`}
+                onClick={() => setMapOpen(true)}
+              >
+                <span>Tap to open the full map</span>
+              </button>
             </div>
           )}
 

@@ -614,6 +614,7 @@ a:focus-visible {
   --trim-bottom: 20px;
 }
 .map iframe {
+  pointer-events: none;
   display: block;
   width: 100%;
   height: calc(100% + var(--trim-top) + var(--trim-bottom));
