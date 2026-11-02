@@ -412,8 +412,8 @@ export const cities: City[] = [
       },
       {
         id: 'hongdae-hot-places',
-        name: 'Hongdae Hot Places',
-        seoTitle: 'Hongdae, Sinchon and Yeonhui-dong walks',
+        name: 'Hongdae, Sinchon, Ewha & Yeonhui',
+        seoTitle: 'Hongdae, Sinchon, Ewha and Yeonhui walks',
         seoDescription:
           'Hongdae walks on one map: Gyeongui Line Forest Park and the Red Road, plus the Sinchon, Ewha and Yeonhui-dong streets and popular restaurants.',
         duration: '1–2h each',

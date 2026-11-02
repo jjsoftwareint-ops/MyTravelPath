@@ -101,7 +101,7 @@ All allow free use; the credit is given in every case.
   https://commons.wikimedia.org/wiki/File:%EB%B6%84%EC%98%A4%EB%A6%AC%EB%8F%88%EB%8C%80.jpg
 - Incheon China Town path banner: *Chinatown, incheon 20230430 002* (the 1st Paeru gate),
   Mobius6, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Chinatown,_incheon_20230430_002.jpg
-- Hongdae Hot Places path banner: *Hongdae Party District at Night, Seoul*, Ken Eckert,
+- Hongdae, Sinchon, Ewha & Yeonhui path banner: *Hongdae Party District at Night, Seoul*, Ken Eckert,
   CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Hongdae_Party_District_at_Night,_Seoul.jpg
 - Gangnam Night Streets path banner: *20150209-20150214강남대로C300* (Gangnam-daero at night, by Gangnam
   Station), 최광모, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:20150209-20150214강남대로C300.jpg

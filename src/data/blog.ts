@@ -367,7 +367,7 @@ export const posts: Post[] = [
         type: 'route',
         cityId: 'seoul',
         pathId: 'hongdae-hot-places',
-        text: 'Hongdae Hot Places, for an ordinary evening in the same streets',
+        text: 'Hongdae, Sinchon, Ewha & Yeonhui, for an ordinary evening in the same streets',
       },
       {
         type: 'route',
