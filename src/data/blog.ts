@@ -37,6 +37,60 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-03-0119',
+    title: 'Why do Koreans drink iced coffee in the snow?',
+    description:
+      'Why Koreans order iced americano all winter: what 얼죽아 (eol-juk-a) means, plus the two words that get you an iced or a hot one.',
+    teaser: 'Yes, the cup still has ice in it.',
+    icon: 'ice_cube',
+    date: '2026-11-03',
+    updated: '2026-11-03',
+    keywords: ['KoreaTravel', 'IcedAmericano', 'KoreanCafe', 'KoreanSlang', 'KoreanCulture'],
+    body: [
+      {
+        type: 'p',
+        text: 'Picture a Korean bus stop in January. The wind hurts your face. The woman next to you is wearing a puffer coat down to her ankles, and in her gloved hand there is a clear cup, ice rattling, straw in.',
+      },
+      {
+        type: 'p',
+        text: 'Look twice. Yes. Iced.',
+      },
+      {
+        type: 'p',
+        text: 'Welcome to **얼죽아** (eol-juk-a), short for 얼어 죽어도 아이스 아메리카노 (eoreo jugeodo aiseu amerikano). Iced americano, even if I freeze to death. Koreans say it about themselves, proudly, like the name of a club.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'But why?', icon: 'thinking_face' },
+      {
+        type: 'p',
+        text: 'Ask around and you get three answers. One: the heating. Buses, shops, offices and even the floors are warm, so under that puffer you are basically a baked potato. Two: the taste. The ice melts slowly, the coffee changes as you drink, and a cold cup is easy to sip at a desk for hours.',
+      },
+      {
+        type: 'p',
+        text: 'Three is not really an answer. It is the cup you order every day, so why would December change anything?',
+      },
+      {
+        type: 'p',
+        text: 'Inside, you unzip, you unwind the scarf, and the cold cup suddenly makes sense. Outside, your fingers have opinions. There is even a coat version, **얼죽코** (eol-juk-ko), a coat even if I freeze to death, for people who skip the puffer to keep the outfit.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Join the club, or stay warm', icon: 'hot_beverage' },
+      {
+        type: 'list',
+        items: [
+          '**아아** (a-a): iced americano. Order it, keep your face calm, and do not shiver. That is the rule.',
+          '**뜨아** (tteu-a): hot americano, short for 뜨거운 아메리카노 (tteugeoun amerikano). No shame in it.',
+          'English works too. Just say "hot americano" clearly.',
+        ],
+      },
+      {
+        type: 'verdict',
+        text: 'Be honest: hot or iced in December? We are team hot, with both hands round the cup. Koreans, as you can see, are team ice.',
+      },
+    ],
+  },
+  {
     id: '2026-11-02-1940',
     title: 'The chocolate stick Koreans use to say "I like you"',
     description:
