@@ -37,6 +37,64 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-02-1940',
+    title: 'The chocolate stick Koreans use to say "I like you"',
+    description:
+      'Pepero Day on 11 November: why Koreans give each other chocolate sticks, and how it became the day many use to tell a crush how they feel.',
+    teaser: 'The date is four sticks in a row.',
+    icon: 'chocolate_bar',
+    date: '2026-11-02',
+    updated: '2026-11-02',
+    keywords: ['KoreaTravel', 'PeperoDay', 'Pepero', 'KoreanDating', 'KoreanCulture'],
+    body: [
+      {
+        type: 'p',
+        text: 'Try explaining Pepero Day to someone who has never heard of it. On 11 November, Koreans give each other biscuit sticks dipped in chocolate: Pepero (빼빼로, ppaeppaero). Why that day? Write the date in numbers. 11/11. Four sticks standing in a row. That is the whole logic, and somehow it works.',
+      },
+      {
+        type: 'p',
+        text: 'We like a holiday whose reason fits on a napkin.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'img',
+        src: 'pepero-sticks.jpg',
+        alt: 'Twenty-three chocolate-coated biscuit sticks laid out in a fan on a wooden table, each with a bare biscuit handle at the bottom',
+        caption: 'Pepero, the classic. The bare end is the handle.',
+        href: 'https://commons.wikimedia.org/wiki/File:Lotte_pepero_original_chocolate_flavored_biscuit_sticks.jpg',
+        credit: { author: 'Fumikas Sagisavas', license: 'CC0 1.0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      { type: 'space' },
+      { type: 'h', text: 'The day to say it', icon: 'purple_heart' },
+      {
+        type: 'p',
+        text: 'Pepero Day works like a second Valentine\'s Day. Couples swap boxes, and friends and co-workers get one too. But the real drama is the 고백 (gobaek), the confession. [Many young Koreans use 11 November](https://www.koreanclass101.com/lesson/mustknow-korean-holiday-words-10-pepero-day) to tell a crush how they feel.',
+      },
+      {
+        type: 'p',
+        text: 'A box of sticks is the cheapest gift in the shop, and we think that is the clever part. Nobody needs a big gesture. If the answer is no, you only gave away a snack.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Nobody planned it', icon: 'thinking_face' },
+      {
+        type: 'p',
+        text: 'Nobody announced the day. It is said to have started with [teenage girls](https://www.koreatimes.co.kr/southkorea/society/20241107/how-pepero-day-got-started-in-korea) swapping Pepero and wishing each other to be "slim like Pepero". The wish has aged badly. The sticks have not.',
+      },
+      {
+        type: 'p',
+        text: 'The same date is also [Farmers\' Day](https://tilnote.io/pages/67315eafa2655b428d1b632c), and the agriculture ministry would like you to eat [가래떡](https://www.google.com/search?tbm=isch&q=%EA%B0%80%EB%9E%98%EB%96%A1) (garaetteok) instead, the long white rice cake. The rice cake has the ministry. The chocolate has the shops.',
+      },
+      {
+        type: 'p',
+        text: 'This year\'s [limited boxes](https://news.mtn.co.kr/news-detail/2026101411291266453) read like a fan convention: Stray Kids, Hello Kitty and Cinnamoroll, and the cartoon dog Ganadi. If you are in Korea this month, buy one and hand it to someone you like. Or to a friend, if you are not brave yet.',
+      },
+      {
+        type: 'verdict',
+        text: 'Pepero Day is the smallest gift in the shop and the easiest way to tell someone you like them. The date does the explaining.',
+      },
+    ],
+  },
+  {
     id: '2026-11-01-2013',
     title: 'Why tourists queue outside a Korean drugstore at 9 am',
     description:
