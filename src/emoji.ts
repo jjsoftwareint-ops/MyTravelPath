@@ -160,6 +160,8 @@ export const EMOJI_FILES: Record<string, string> = {
   "🏗": "building_construction",
   "🏗️": "building_construction",
   "✨": "sparkles",
+  "🏄": "person_surfing",
+  "🏄️": "person_surfing",
   "✨️": "sparkles",
   "🚶": "person_walking",
   "🚶️": "person_walking",

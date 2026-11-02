@@ -727,12 +727,19 @@ a:focus-visible {
 .path-why {
   padding: 16px 0 6px;
 }
-/* ── History: boxed section, matching "About this walk" ── */
+/* ── History: its own card, matching "About this walk" ── */
 .path-story {
-  background: var(--bg);
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 14px 16px;
+  padding: 16px;
+}
+/* History and "About this walk": the second column on a wide screen, stacked under the main card on a phone. */
+.path-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
 }
 .path-why h2,
 .path-story h2 {
@@ -780,6 +787,14 @@ a:focus-visible {
   color: var(--text);
   font-size: 14px;
   line-height: 1.45;
+}
+/* A closure or cancellation notice: red, so nobody misses it (user rule 2026-11-02). */
+.notice-card.urgent {
+  border-color: light-dark(#f87171, #b91c1c);
+  background: light-dark(#fef2f2, #3a1212);
+}
+.notice-card.urgent .notice-card-title {
+  color: light-dark(#b91c1c, #fca5a5);
 }
 .notice-card-icon {
   flex: 0 0 auto;
@@ -1027,6 +1042,7 @@ button.cta {
   margin: 0 0 12px;
   color: var(--text-soft);
 }
+/* The intro as chat bubbles: the walking person "speaks" the first one, the guide's voice (it was a waving hand until 2026-11-02). */
 .talk-bubbles {
   margin-bottom: 12px;
 }
@@ -1049,14 +1065,19 @@ button.cta {
 .talk-avatar:empty {
   background: transparent;
 }
+.talk-avatar img {
+  display: block;
+}
 .talk-bubble {
   margin: 0;
   padding: 10px 14px;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-top-left-radius: 4px;
   border-radius: 16px;
   color: var(--text-soft);
+}
+.talk-bubble-row:first-child .talk-bubble {
+  border-top-left-radius: 4px; /* the tail points at the speaker */
 }
 .guide ol,
 .guide ul {
@@ -1792,4 +1813,56 @@ button.cta {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* ── Folded parts of a path page: "Read more" / "Show all" (user, 2026-11-02, after readers found the page overwhelming) ── */
+.path-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 4px 0 2px;
+}
+.path-jump a {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text-soft);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.path-jump a:active {
+  background: var(--press);
+}
+#path-map,
+#history,
+#locations,
+#tips {
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
+/* A folded text shows about three lines under a fade; all of it stays in the page for search engines. */
+.fold {
+  position: relative;
+  max-height: 5.6em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.show-all {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--accent);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.show-all:active {
+  background: var(--press);
 }

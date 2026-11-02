@@ -63,6 +63,8 @@ export default function PathDetail() {
   const [tipOpen, setTipOpen] = useState(false);
   const closeTip = useCallback(() => setTipOpen(false), []);
   const tipHidden = useFollowTipHidden();
+  // Folded part of the page: History ("Read more"). The locations list and the notices stay open.
+  const [historyOpen, setHistoryOpen] = useState(false);
   usePageMeta();
   // The iOS two-button variant only after hydration (see hooks.ts).
   const hydrated = useHydrated();
@@ -72,6 +74,45 @@ export default function PathDetail() {
 
   const ready = hasMap(path);
   const embed = ready ? mapEmbedUrl(path) : undefined;
+  // Notices stay in one block above the map, urgent ones (closures, cancellations) first, the rest in their written order.
+  const urgent = (n: { icon?: string; title: string }) =>
+    ["🚫", "🚧", "🔥", "🔦"].includes(n.icon ?? "") ||
+    /clos|skipp|no sailings|no longer|no lighting/i.test(n.title);
+  const notices = [
+    ...(path.notices?.filter(urgent) ?? []),
+    ...(path.notices?.filter((n) => !urgent(n)) ?? []),
+  ];
+  // History: a few lines show, the rest unfolds. A short history needs no fold.
+  const foldHistory = (path.story?.text.join(" ").length ?? 0) > 260;
+  // Jump links at the top; each target is also reachable by scrolling.
+  const jump = (id: string, unfold?: () => void) => (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    unfold?.();
+    requestAnimationFrame(() =>
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }),
+    );
+  };
+  const noticeItem = (n: NonNullable<typeof path.notices>[number]) => (
+    <li key={n.title} className={urgent(n) ? "notice-card urgent" : "notice-card"}>
+      <span className="notice-card-icon" aria-hidden="true">
+        <Emoji name={emojiFile(n.icon ?? "ℹ️") ?? "information"} size={20} />
+      </span>
+      <div>
+        <strong className="notice-card-title">{n.title}</strong>
+        <p>
+          <RichText text={n.body} />
+        </p>
+        {n.since && <small>{n.since}</small>}
+      </div>
+    </li>
+  );
+  const hasMapBlock = Boolean(embed || path.screenshot);
+  const chips = [
+    hasMapBlock && { id: "path-map", label: "Map", unfold: undefined },
+    path.story && { id: "history", label: "History", unfold: () => setHistoryOpen(true) },
+    path.guide?.route && { id: "locations", label: "Locations", unfold: undefined },
+    path.guide?.tips && { id: "tips", label: "Good to know", unfold: undefined },
+  ].filter(Boolean) as { id: string; label: string; unfold?: () => void }[];
   // YouTube live stream: under the map by default, above it when the path asks for it.
   const liveCam = path.liveCam && (
     <figure className="live-cam">
@@ -142,43 +183,26 @@ export default function PathDetail() {
             </section>
           )}
 
-          {path.story && (
-            <section className="path-story" aria-labelledby="history-title">
-              <h2 id="history-title">
-                <Emoji name="classical_building" size={20} /> History
-              </h2>
-              <h3>{path.story.title}</h3>
-              {path.story.text.map((text) => (
-                <p key={text}>
-                  <GuideLine text={text} />
-                </p>
+          {chips.length >= 3 && (
+            <nav className="path-jump" aria-label="On this page">
+              {chips.map((c) => (
+                <a key={c.id} href={`#${c.id}`} onClick={jump(c.id, c.unfold)}>
+                  {c.label}
+                </a>
               ))}
-            </section>
+            </nav>
           )}
 
-          {path.notices && (
+          {notices.length > 0 && (
             <ul className="notices" aria-label="Important information">
-              {path.notices.map((n) => (
-                <li key={n.title} className="notice-card">
-                  <span className="notice-card-icon" aria-hidden="true">
-                    <Emoji name={emojiFile(n.icon ?? "ℹ️") ?? "information"} size={20} />
-                  </span>
-                  <div>
-                    <strong className="notice-card-title">{n.title}</strong>
-                    <p>
-                      <RichText text={n.body} />
-                    </p>
-                    {n.since && <small>{n.since}</small>}
-                  </div>
-                </li>
-              ))}
+              {notices.map(noticeItem)}
             </ul>
           )}
 
           {path.liveCam?.above && liveCam}
 
           {embed && (
-            <div className="map">
+            <div className="map" id="path-map">
               <iframe
                 src={embed}
                 title={`${path.name} map`}
@@ -197,7 +221,7 @@ export default function PathDetail() {
           )}
 
           {path.screenshot && (
-            <figure className="map-shot">
+            <figure className="map-shot" id={embed ? undefined : "path-map"}>
               <img
                 src={`${import.meta.env.BASE_URL}${path.screenshot}`}
                 alt={`${path.name} trail map`}
@@ -312,29 +336,67 @@ export default function PathDetail() {
           )}
         </article>
 
+        {(path.story || path.guide) && (
+          <div className="path-side">
+        {path.story && (
+          <section className="path-story" id="history" aria-labelledby="history-title">
+            <h2 id="history-title">
+              <Emoji name="classical_building" size={20} /> History
+            </h2>
+            <h3>{path.story.title}</h3>
+            <div
+              id="history-text"
+              className={foldHistory && !historyOpen ? "fold" : undefined}
+            >
+              {path.story.text.map((text) => (
+                <p key={text}>
+                  <GuideLine text={text} />
+                </p>
+              ))}
+            </div>
+            {foldHistory && (
+              <button
+                type="button"
+                className="show-all"
+                aria-expanded={historyOpen}
+                aria-controls="history-text"
+                onClick={() => setHistoryOpen((o) => !o)}
+              >
+                {historyOpen ? "Show less" : "Read more"}
+              </button>
+            )}
+          </section>
+        )}
+
         {path.guide && (
           <section className="guide" aria-labelledby="guide-title">
             <h2 id="guide-title">
-              <Emoji name="person_walking" size={20} /> About this walk
+              <Emoji name="sparkles" size={26} /> About this walk
             </h2>
             <div className="talk-bubbles">
-              {path.guide.intro.map((text, i) => (
-                <div className="talk-bubble-row" key={text}>
-                  <span className="talk-avatar" aria-hidden={i > 0}>
-                    {i === 0 && <Emoji name="waving_hand" size={22} />}
-                  </span>
-                  <p className="talk-bubble">
-                    <GuideLine text={text} />
-                  </p>
-                </div>
-              ))}
+              {path.guide.intro.map((text, i) => {
+                // The avatar is the line's own leading emoji (a wave for a coast, a surfer for a surf town,
+                // a train for a rail bike), moved out of the text; the first bubble falls back to a walker.
+                const { icon, rest } = splitLeadingEmoji(text);
+                const avatar = icon ?? (i === 0 ? "person_walking" : undefined);
+                return (
+                  <div className="talk-bubble-row" key={text}>
+                    <span className="talk-avatar" aria-hidden="true">
+                      {avatar && <Emoji name={avatar} size={26} />}
+                    </span>
+                    <p className="talk-bubble">
+                      <RichText text={rest} />
+                    </p>
+                  </div>
+                );
+              })}
             </div>
             {path.guide.route && (
               <>
-                <h3>
+                <h3 id="locations">
                   <Emoji name="round_pushpin" size={20} /> The locations
                 </h3>
-                <ol>
+                <ol id="locations-list">
                   {path.guide.route.map((step) => (
                     <li key={step}>
                       <GuideLine
@@ -349,7 +411,7 @@ export default function PathDetail() {
             )}
             {path.guide.tips && (
               <>
-                <h3>
+                <h3 id="tips">
                   <Emoji name="light_bulb" size={20} /> Good to know
                 </h3>
                 <ul>
@@ -372,6 +434,8 @@ export default function PathDetail() {
               <p className="photo-credit">{path.imageCredit}</p>
             )}
           </section>
+        )}
+          </div>
         )}
       </div>
       {tipOpen && <FollowTipDialog url={path.mapUrl} onClose={closeTip} />}
