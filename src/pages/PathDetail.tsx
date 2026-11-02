@@ -92,18 +92,24 @@ export default function PathDetail() {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }),
     );
   };
+  // A notice is one line (icon + headline) that opens on tap: a TL;DR first (user, 2026-11-02). The full text stays
+  // in the page whether or not it is open.
   const noticeItem = (n: NonNullable<typeof path.notices>[number]) => (
     <li key={n.title} className={urgent(n) ? "notice-card urgent" : "notice-card"}>
-      <span className="notice-card-icon" aria-hidden="true">
-        <Emoji name={emojiFile(n.icon ?? "ℹ️") ?? "information"} size={20} />
-      </span>
-      <div>
-        <strong className="notice-card-title">{n.title}</strong>
-        <p>
-          <RichText text={n.body} />
-        </p>
-        {n.since && <small>{n.since}</small>}
-      </div>
+      <details>
+        <summary>
+          <span className="notice-card-icon" aria-hidden="true">
+            <Emoji name={emojiFile(n.icon ?? "ℹ️") ?? "information"} size={20} />
+          </span>
+          <strong className="notice-card-title">{n.title}</strong>
+        </summary>
+        <div className="notice-card-body">
+          <p>
+            <RichText text={n.body} />
+          </p>
+          {n.since && <small>{n.since}</small>}
+        </div>
+      </details>
     </li>
   );
   const hasMapBlock = Boolean(embed || path.screenshot);
