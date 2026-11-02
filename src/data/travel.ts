@@ -291,7 +291,7 @@ export const cities: City[] = [
         seoDescription:
           'Climb Inwangsan along the Seoul fortress wall for views over Gyeongbokgung and the whole city. Free map with the route, pins and tips.',
         duration: '2.5h',
-        updated: '2026-11-01',
+        updated: '2026-11-02',
         tags: [
           { icon: 'hiker', label: 'Hiking' },
           { icon: 'sunset', label: 'Evening walk' },
@@ -320,6 +320,7 @@ export const cities: City[] = [
           },
           {
             icon: '📚',
+            at: "Yun Dong-ju",
             title: "Yun Dong-ju Literature Museum, at the Changuimun fork",
             body: "The museum at the foot of the Changuimun branch (not Suseongdong) is **free**, open **10:00–18:00** (last entry 17:30, closed for cleaning 13:30–14:00). {red:Closed on Mondays}, 1 January, Seollal and Chuseok.",
             since: "Checked 29 October 2026.",
@@ -340,6 +341,7 @@ export const cities: City[] = [
             "The viewpoint where the wall and Namsan Tower line up, then Beombawi (Tiger Rock), the photo spot and a famous night-view point. Many people turn around here.",
             "[[The summit|서울 인왕산 정상]]: slippery granite with cables and a cliff section for the last stretch, and the whole of central Seoul below.",
             "The descent to Seochon: the Forest Shelter, a converted guard post from the years the mountain was closed, the boardwalk stairs to the Choso Bookshop café, and Suseongdong Valley.",
+            "[[Yun Dong-ju Literature Museum|서울 윤동주문학관]], at the foot of the Changuimun branch, the other way down from the ridge instead of Suseongdong Valley: a museum for the poet Yun Dong-ju.",
           ],
           tips: [
             "🔦 Start **about two hours before sunset** to reach Beombawi as the lights come on, and carry a torch for the way down. Avoid rain and ice: the granite gets slippery.",
@@ -411,11 +413,11 @@ export const cities: City[] = [
       {
         id: 'hongdae-hot-places',
         name: 'Hongdae Hot Places',
-        seoTitle: 'Hongdae walks: Gyeongui Forest Park, Red Road',
+        seoTitle: 'Hongdae, Sinchon and Yeonhui-dong walks',
         seoDescription:
-          'Two Hongdae walks on one map: the Gyeongui Line Forest Park and Book Street, then the Red Road busking street down to the Han River.',
+          'Hongdae walks on one map: Gyeongui Line Forest Park and the Red Road, plus the Sinchon, Ewha and Yeonhui-dong streets and popular restaurants.',
         duration: '1–2h each',
-        updated: '2026-11-01',
+        updated: '2026-11-02',
         tags: [{ icon: 'hot', label: 'Hot place' }],
         image: 'hongdae-hot.jpg',
         imageCredit: 'Photo: Ken Eckert · CC BY-SA 4.0',
@@ -423,6 +425,7 @@ export const cities: City[] = [
           "Seoul's art-school quarter, where **the busking starts at seven and the night does not end at midnight**.",
           "A park laid along an old railway line, 250 m of book kiosks shaped like train carriages, then **dance crews on the Red Road all the way to the Han River**.",
           "Both walks start at one station, the park by day and the Red Road after dark.",
+          "Next door, **three more streets** for food and shopping: Sinchon, Ewha and Yeonhui-dong.",
         ],
         story: {
           title: 'A railway that became a park',
@@ -442,18 +445,28 @@ export const cities: City[] = [
           },
           {
             icon: '🛍️',
-            title: "Kakao Friends flagship and the charcoal-kiln spa",
-            body: "**Kakao Friends Hongdae flagship** (three floors on Yanghwa-ro): daily **10:30–22:00**. **Forest Herbal Land** (숲속한방랜드), the charcoal-kiln spa pinned on the map: daily **06:30–22:00**; its restaurant 08:00–21:00.",
+            at: "Kakao Friends",
+            title: "Kakao Friends flagship hours",
+            body: "Open daily **10:30–22:00**.",
+            since: "Checked 29 October 2026.",
+            source: "Naver Map, checked 29 October 2026.",
+          },
+          {
+            icon: '♨️',
+            at: "Forest Herbal Land",
+            title: "Forest Herbal Land hours",
+            body: "The charcoal-kiln spa pinned on the map is open daily **06:30–22:00**; its restaurant 08:00–21:00.",
             since: "Checked 29 October 2026.",
             source: "Naver Map, checked 29 October 2026.",
           },
         ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1MacGBkR5Qdw577FGrG4yztVioZYpBy0',
-        keywords: ['Seoul', 'Hongdae', 'Busking', 'YeontralPark', 'GyeonguiLineForestPark', 'RedRoad', 'SeoulNightlife', 'HanRiver', 'KoreaTravel'],
+        keywords: ['Seoul', 'Hongdae', 'Busking', 'YeontralPark', 'GyeonguiLineForestPark', 'RedRoad', 'Sinchon', 'EwhaShoppingStreet', 'Yeonhuidong', 'SeoulNightlife', 'HanRiver', 'KoreaTravel'],
         guide: {
           intro: [
             "🎸 I have never once managed to walk through Hongdae quickly, so don't plan to. Walk the old railway line from Yeontral Park past the Book Street to Seogang. Take a break at the station, then follow the busking street all the way down to the river.",
             "The two walks are 4.6 km together, with the station in the middle. The busking is biggest on Friday and Saturday nights, and that is when I'd go.",
+            "Sinchon and Ewha are the next two stops on line 2, each with a street of its own. Yeonhui-dong, with its café and food streets, is about 1.5 km north of Sinchon.",
           ],
           route: [
             "[[Gyeongui Line Forest Park|서울 경의선숲길]], 2.7 km, from Gajwa Station exit 1: Yeontral Park, the lawn stretch of Yeonnam-dong lined with cafés and bakeries where everyone picnics.",
@@ -462,9 +475,16 @@ export const cities: City[] = [
             "[[Red Road|서울 홍대 레드로드]], 1.9 km, from Hongik University Station exit 9: the busking street, with dance crews and singers most evenings and the biggest crowds on Friday and Saturday nights.",
             "The Red Road stage and art centre at the midpoint, with Sangsu Station's café streets a short detour away.",
             "[[Mapo Saebit Culture Forest|서울 마포 새빛문화숲]], the park around the old Danginri power station, and the Han River path. Hapjeong Station is ten minutes away.",
+            "[[Sinchon Myeongmul-gil|서울 신촌 명물길]], 0.4 km, the food street of Sinchon, a lane of restaurants about 190 m north of Sinchon Station exit 3. Side lanes run off it.",
+            "[[Ewha Shopping Street|서울 이대쇼핑거리]], 0.5 km along Ewha-yeodae-gil from Ewha Womans University Station: the fashion and shoe street by the university, with two smaller shopping lanes (5-gil and 7-gil).",
+            "[[Yeonhui-dong café and food streets|서울 연희동 카페거리]]: Yeonhui-matro, the food street, and the lanes off it (Yeonhui-ro 11ga-gil, 11-gil, 15-gil and 25-gil), with cafés and restaurants in a quiet residential quarter. Saruga Market stands in the middle.",
+            "[[Kakao Friends Hongdae flagship|서울 카카오프렌즈 홍대 플래그십 스토어]], three floors of character shops on Yanghwa-ro.",
+            "[[Forest Herbal Land|서울 숲속한방랜드]], a traditional charcoal-kiln sauna (jjimjilbang) in the woods of Seodaemun-gu near Sinchon, pinned on the map.",
           ],
           tips: [
-            "🍜 Busking peaks **between about 7 and 10 pm**. Street food and the Hongdae Playground are beside the main stretch.",
+            "🎸 Busking peaks **between about 7 and 10 pm**. Street food and the Hongdae Playground are beside the main stretch.",
+            "🍜 Popular restaurants are pinned on the map in three layers: Hongdae, Sinchon and Yeonhui-dong. Switch a layer on or off in the map, and read the hours on each pin: several close mid-afternoon or on Mondays.",
+            "🚇 Line 2 runs Hongik University, Sinchon, Ewha Womans University, one stop each. Yeonhui-dong is about 1.5 km north of Sinchon Station, a 20-minute walk.",
             "✂️ Shorter park walk: start at Hongik University Station exit 3 instead of Gajwa, 1.3 km to Seogang.",
             "⏰ Yeontral Park is packed on weekend afternoons; weekday mornings are the time for photos.",
             "⏰ Hongdae is Seoul's late-night district. The last trains leave around midnight; after that it is taxis or the all-night cafés.",

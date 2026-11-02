@@ -68,7 +68,7 @@ Nothing is sent while running locally or while the site code is empty.
 ## Credits
 
 Photos are from Wikimedia Commons: the Seoul and Busan cards under the Korea Open
-Government License (KOGL) Type 1, the Jeju card under CC BY-SA 4.0, the Incheon card public domain, the path banners under CC BY 3.0, CC BY-SA 4.0 or CC0.
+Government License (KOGL) Type 1, the Jeju card under CC BY-SA 4.0, the Incheon card public domain, the path banners under CC BY 3.0, CC BY-SA 2.0, 3.0 or 4.0, or CC0.
 All allow free use; the credit is given in every case.
 
 - Seoul card photo: *Downtown Seoul from Inwangsan in 2023*,
@@ -148,6 +148,13 @@ All allow free use; the credit is given in every case.
   https://commons.wikimedia.org/wiki/File:Pedestrian_bridge_at_Daepo_Port_02.jpg
 - Yangyang path banner: *Gangwon coast* (Inku Beach and its surf town seen from Jukdo), EasyKL, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:Gangwon_coast.JPG
+- Busan Indoors Trip path banner: *Ship for Joseon Tongsinsa, collections of National Maritime Museum, South Korea 02*,
+  HappyMidnight, CC BY-SA 3.0.
+  https://commons.wikimedia.org/wiki/File:Ship_for_Joseon_Tongsinsa,_collections_of_National_Maritime_Museum,_South_Korea_02.JPG
+- Namhansanseong path banner: *Namhansanseong Fortress (남한산성) with snow*, Noh Mun Duek, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Namhansanseong_Fortress_(%EB%82%A8%ED%95%9C%EC%82%B0%EC%84%B1)_with_snow.jpg
+- Chuncheon rail bike path banner: *Gangchon Rail Park train - 54971861637*, Gage Skidmore, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Gangchon_Rail_Park_train_-_54971861637.jpg
 
 - Blog, Danpung-nori post: *내장산의 단풍1* (Naejangsan pavilion in autumn), Shunshan Piao, CC BY-SA 3.0.
   https://commons.wikimedia.org/wiki/File:%EB%82%B4%EC%9E%A5%EC%82%B0%EC%9D%98_%EB%8B%A8%ED%92%8D1.jpg
@@ -168,6 +175,42 @@ All allow free use; the credit is given in every case.
 - Blog, Patrick Stewart obituary post: *Patrick Stewart (7268383816)* (receiving a Peabody Award from
   director Horace Newcomb, May 2012), Anders Krusberg / Peabody Awards, CC BY 2.0.
   https://commons.wikimedia.org/wiki/File:Patrick_Stewart_(7268383816).jpg
+
+- Blog, Pepero Day post: *Lotte pepero original chocolate flavored biscuit sticks*, Fumikas Sagisavas, CC0.
+  https://commons.wikimedia.org/wiki/File:Lotte_pepero_original_chocolate_flavored_biscuit_sticks.jpg
+- Blog, Olive Young tax refund post: *Olive Young Myeongdong* (the tills in August 2024), Sgroey, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Olive_Young_Myeongdong.jpg
+- Blog, Halloween post: *Halloween Performance at Lotte World*, Ethan Doyle White, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Halloween_Performance_at_Lotte_World.jpg
+- Blog, Halloween post: *Halloween Decorations at Lotte World*, Ethan Doyle White, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Halloween_Decorations_at_Lotte_World.jpg
+- Blog, "Why Korea is awake at midnight" post: *Hongdae Party District at Night, Seoul* (same photo as the Hongdae
+  Hot Places banner) and *Street Food in Daegu, South Korea*, Ken Eckert, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Street_Food_in_Daegu,_South_Korea.jpg
+- Blog, Bugaksan post: *Bugaksan and National Folk Museum of Korea*, Tristan Surtel, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Bugaksan_and_National_Folk_Museum_of_Korea.jpg
+- Blog, Bugaksan post: *Bukaksan Mountain 11* (the bench on the south trail), Republic of Korea (Korean Culture and
+  Information Service), CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Bukaksan_Mountain_11.jpg
+- Blog, Bukangi shark post: *Carcharhinus obscurus noaa* (a young dusky shark), NOAA, public domain.
+  https://commons.wikimedia.org/wiki/File:Carcharhinus_obscurus_noaa.jpg
+- Blog, hanok village quiz post: *Flowery alley lined with hanok houses and red rosebush in Bukchon Hanok Village
+  Seoul*, Basile Morin, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Flowery_alley_lined_with_hanok_houses_and_red_rosebush_in_Bukchon_Hanok_Village_Seoul.jpg
+- Blog, hanok village quiz post: *Ikseon-dong 익선동 October 1 2020 1*, S h y numis, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Ikseon-dong_%EC%9D%B5%EC%84%A0%EB%8F%99_October_1_2020_1.jpg
+- Blog, hanok village quiz post: *Seoul-Insadong-Street-01*, travelmate2021, CC BY 2.0.
+  https://commons.wikimedia.org/wiki/File:Seoul-Insadong-Street-01.jpg
+- Blog, hanok village quiz post: *옥인동윤씨가옥 사진 (2)* (inside a Namsangol hanok), 록콜롤룸, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:%EC%98%A5%EC%9D%B8%EB%8F%99%EC%9C%A4%EC%94%A8%EA%B0%80%EC%98%A5_%EC%82%AC%EC%A7%84_(2).jpg
+- Blog, pansori post: *Pansori performance in Unhyeon Palace 1* (Unhyeongung, 2013), photographer not named on
+  Commons ("Wikimedia Commons contributor"), public domain.
+  https://commons.wikimedia.org/wiki/File:Pansori_performance_in_Unhyeon_Palace_1.jpg
+- Blog, palace dates post: *Gyeongbokgung(palace) Geunjeongjeon(hall)*, Brady Bellini, CC0.
+  https://commons.wikimedia.org/wiki/File:Gyeongbokgung(palace)_Geunjeongjeon(hall).jpg
+- Blog, palace dates post: *Pensive Bodhisattva 01*, National Museum of Korea (국립중앙박물관), KOGL Type 1.
+  https://commons.wikimedia.org/wiki/File:Pensive_Bodhisattva_01.jpg
+- Blog, long line post: *MangoPomeloSago 1*, Thomas.Lu, CC BY 3.0.
+  https://commons.wikimedia.org/wiki/File:MangoPomeloSago_1.jpg
 
 The app icon, favicon and home-header mark are the project's own artwork (a suitcase with a
 Korean flag tag among cherry blossoms).
