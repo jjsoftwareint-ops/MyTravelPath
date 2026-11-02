@@ -2146,7 +2146,7 @@ export const cities: City[] = [
         seoTitle: 'Gyeongju walking route: Silla tombs and Wolji at night',
         seoDescription:
           "Walk Gyeongju's Silla centre: Daereungwon tombs, Hwangnidan-gil, Cheomseongdae and Wolji at night. Map with sights, toilets and cafés.",
-        duration: 'Day trip',
+        duration: '2 days',
         updated: '2026-11-02',
         tags: [{ icon: 'village', label: 'Traditional' }, { icon: 'moon', label: 'Night walk' }],
         whyVisit: [
@@ -2247,7 +2247,7 @@ export const cities: City[] = [
       {
         id: 'jeonju',
         name: 'Jeonju Hanok Village',
-        duration: 'Half day',
+        duration: 'Full day',
         updated: '2026-11-02',
         tags: [{ icon: 'village', label: 'Traditional' }],
         image: 'jeonju-hanok.jpg',
