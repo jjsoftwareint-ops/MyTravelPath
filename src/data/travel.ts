@@ -23,6 +23,7 @@ export type PathNotice = {
   icon?: string // one emoji, e.g. '⏰' hours, '🎟️' tickets, '🚫' closure, '📅' booking
   title: string // e.g. 'Bukchon Hanok Village visiting hours'
   body: string // RichText markup allowed (**bold**)
+  at?: string // a phrase from the location (route) line this notice belongs to: it is shown under that location. Without it, the notice sits under 'The Locations'.
   since?: string // shown under the notice: only the check date, e.g. 'Checked 29 October 2026.'
   source?: string // the full sources and caveats, for the editor only: never shown on the page
 }
@@ -44,7 +45,7 @@ export type TravelPath = {
   story?: PathStory // short history under the header image
   guide?: PathGuide // shown under the map on the detail page
   keywords?: string[] // hashtags under the guide; also the page's meta keywords
-  notices?: PathNotice[] // important facts shown above the map (hours, closures, fees)
+  notices?: PathNotice[] // important facts shown in 'About this walk', under 'The Locations', or under the location it belongs to via `at` (hours, closures, fees)
   updated: string // ISO date of the last edit to this page (text, notices or map). Bump it on every change.
   duration?: string // e.g. "2h", "Half day"
   tags?: Tag[] // e.g. [{ icon: 'moon', label: 'Night walk' }] or a plain string
@@ -108,6 +109,7 @@ export const cities: City[] = [
           {
             icon: '🌙',
             title: "Naksan Park and the wall path are open all night",
+            at: "Naksan Park",
             body: "**Naksan Park** has no closing time (Naver: 00:00–24:00), and the **Seoul City Wall** path is lit after dark. The **Hanyangdoseong exhibition hall** on the central plaza is open **09:00–17:00**, {red:closed on Mondays}.",
             since: "Checked 29 October 2026.",
             source: "Naver Map and a Seoul city article of 21 October 2026. Checked 29 October 2026.",
@@ -115,6 +117,7 @@ export const cities: City[] = [
           {
             icon: '🤫',
             title: "Ihwa Mural Village is a residential lane",
+            at: "Ihwa Mural Village",
             body: "Many murals were **painted over** after complaints from residents, so expect fewer than in old photos. People live here: keep your voice down at night and do not photograph into windows.",
             since: "Checked 29 October 2026.",
             source: "Seoul city media hub. Checked 29 October 2026.",
@@ -174,6 +177,7 @@ export const cities: City[] = [
           {
             icon: '🛗',
             title: "The 108 Stairs lift runs early to late",
+            at: "108 Stairs",
             body: "The lift beside the 108 Stairs (15 people, about one minute to the top) reportedly runs **06:00–23:30**; unconfirmed, as no hours are published. The stairs are always open.",
             since: "Checked 29 October 2026.",
             source: "Yongsan-gu opened the lift in November 2018 (Yonhap). Hours from an unofficial listing. Checked 29 October 2026.",
@@ -181,6 +185,7 @@ export const cities: City[] = [
           {
             icon: '🚻',
             title: "Namsan Library: toilets, but not late",
+            at: "Sowol-ro",
             body: "**Namsan Library** on Sowol-ro is the last easy toilet before the wall path. Open **Mon–Fri 09:00–20:00** and **Sat–Sun 09:00–17:00**, {red:closed on the 1st and 3rd Monday} of each month.",
             since: "Checked 29 October 2026.",
             source: "Naver Map, checked 29 October 2026.",
@@ -233,6 +238,7 @@ export const cities: City[] = [
           {
             icon: '⏰',
             title: 'Bukchon Hanok Village visiting hours',
+            at: "Bukchon Hanok Village",
             body: "**Bukchon-ro 11-gil** (the Gahoe-dong 31 alley on this route) is open to visitors **10:00–17:00** only. At other times it is residents only, with a ₩100,000 fine. The rest of Bukchon stays open. The rule has applied since March 2025.",
             since: "Checked October 2026.",
             source: 'Jongno-gu special management area, enforced since March 2025. Checked October 2026.',
@@ -240,6 +246,7 @@ export const cities: City[] = [
           {
             icon: '💂',
             title: 'Gyeongbokgung Royal Guard Changing Ceremony, 2027 timetable',
+            at: "Cheong Wa Dae",
             body: "Just inside **Gwanghwamun Gate**: the Royal Guard Changing Ceremony runs daily at **10:00 and 14:00** (about 20 minutes), and the gate-guard duty at **11:00 and 13:00**. {red:No ceremonies on Tuesdays} (palace closed) and none in heavy rain or snow. The courtyard is free; no palace ticket needed. Expected to stay the same in 2027; confirm on the Korea Heritage Service royal palaces site.",
             since: "Checked October 2026.",
             source: 'Times unchanged for several years and expected to carry into 2027; confirm on the Korea Heritage Service royal palaces site before you go. Checked October 2026.',
@@ -428,6 +435,7 @@ export const cities: City[] = [
           {
             icon: '📚',
             title: "Book Street closes on Mondays",
+            at: "The Book Street",
             body: "The book kiosks of the **Gyeongui Line Book Street** are {red:closed every Monday}. Hours: **11:00–20:00** (Korea Tourism Organization), 18:00 on older notices. The park path is always open.",
             since: "Checked 29 October 2026.",
             source: "Korea Tourism Organization and Seoul city media hub. Checked 29 October 2026.",
@@ -491,6 +499,7 @@ export const cities: City[] = [
           {
             icon: '🪦',
             title: "April 19 National Cemetery: hours and the memorial hall",
+            at: "Trail 2",
             body: "Grounds on trail 2: **daily 06:00–18:00** (Seoul lists 07:00–17:00 from November to February), free. **Memorial hall**: **09:30–17:30** (to 16:30 Nov–Feb), {red:closed on Mondays}. It is a national cemetery: quiet voices, no picnics on the lawns. Tel. 02-996-0419.",
             since: "Checked 29 October 2026.",
             source: "Naver Map and the Ministry of Patriots and Veterans Affairs site, tel. 02-996-0419. Checked 29 October 2026.",
@@ -554,6 +563,7 @@ export const cities: City[] = [
           {
             icon: '🛍️',
             title: 'Pop-up stores change every few weeks',
+            at: "Yeonmujang 5-gil",
             body: "Themed events on **Yeonmujang-gil and Yeonmujang 5-gil** change **every two to four weeks**, and some need a **reservation or a queue ticket on the day**. Check the brand's Instagram or Naver Map page. Shops open around **11:00** and close between **20:00 and 22:00**; Mondays vary.",
             since: "Checked October 2026.",
             source: 'General pattern for Seongsu pop-ups; exact dates change. Checked October 2026.',
@@ -676,6 +686,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'Seoul Botanic Park greenhouse: winter hours and ticket',
+            at: "Seoul Botanic Park",
             body: "Greenhouse and display garden are inside the paid Botanic Garden: **09:30–17:00 from November to February**, 09:30–18:00 from March to October, last ticket sold before closing. Adults **₩5,000**, teenagers ₩3,000, children ₩2,000. The lake, forest and wetland parts are free.",
             since: "Checked October 2026.",
             source: "Seoul Botanic Park's official site lists the winter hours and fees. Checked October 2026; summer hours are from the Naver Map listing.",
@@ -688,7 +699,7 @@ export const cities: City[] = [
         guide: {
           intro: [
             "☔ Let the weather pick for you. The Magok half-day is the greenhouse, two malls and the arts centre, then the river boat to Yeouido. The other half of the map is the museums around Yongsan and Gwanghwamun, two or three hours each.",
-            "{red:A lot of this closes on Mondays}, so check the box above before you plan an evening around a late opening.",
+            "{red:A lot of this closes on Mondays}, so check the boxes below before you plan an evening around a late opening.",
           ],
           route: [
             "[[Seoul Botanic Park|서울식물원]], Magoknaru Station exit 3 or 4: the big greenhouse keeps the park green all year, even in winter.",
@@ -807,6 +818,7 @@ export const cities: City[] = [
           {
             icon: '🚃',
             title: 'Blueline Park: Beach Train and Sky Capsule hours and fares',
+            at: "Blueline Park",
             body: "**Beach Train** (Mipo – Cheongsapo – Songjeong, seven stops): from **09:00** until 19:00 in Nov–Feb, 19:30 in Mar, Apr and Oct, 20:30 in May, Jun and Sep. About **₩8,000** a ride, ₩16,000 for an all-stops pass. **Sky Capsule** (Mipo – Cheongsapo only): from 08:30 until 18:00, 18:30 or 19:30 in the same seasons; about **₩40,000 per cabin for two**, ₩50,000 for four. Capsules sell out at weekends, so book online. Trains run in rain but {red:stop in storms}. July and August run later. Info line 051-701-5548.",
             since: "Checked October 2026.",
             source: 'Haeundae Blueline Park published hours and fares, as reported in 2026; July and August run later. Info line 051-701-5548. Checked October 2026.',
@@ -861,6 +873,7 @@ export const cities: City[] = [
           {
             icon: '🌃',
             title: 'Starry Sea Busan Night Market: seasonal, 2026 dates have ended',
+            at: "Starry Sea",
             body: "The night market at **Hwamyeong Eco Park** is seasonal. In 2026 it ran **10–14 June** and **26 September to 18 October**, Thursday to Saturday 17:00–22:00 and Sunday 16:00–21:00. {red:Both 2026 seasons are over} and no new dates are announced. Check [Visit Busan](https://www.visitbusan.net/v/7DND) or Instagram @starrynightbusan.",
             since: "Checked 25 October 2026.",
             source: 'Visit Busan event page and Busan city press releases. Checked 25 October 2026.',
@@ -868,6 +881,7 @@ export const cities: City[] = [
           {
             icon: '🚁',
             title: 'Gwangalli drone show: every Saturday, twice',
+            at: "Gwangalli Beach",
             body: "The **Gwangalli M Drone Light Show** flies **every Saturday**, about 12 minutes, free. **March to September at 20:00 and 22:00; October to February at 19:00 and 21:00.** Best from the middle of the beach or Millak Waterfront Park. {red:Cancelled in rain or strong wind}, usually announced the day before.",
             since: "Checked October 2026.",
             source: 'Busan city schedule for the permanent show, July 2026 to June 2027. Checked October 2026.',
@@ -889,7 +903,7 @@ export const cities: City[] = [
             "[[Gamcheon Culture Village|부산 감천문화마을]], bus 1-1, 2 or 2-2 from Toseong Station exit 6: pastel houses stacked down a steep valley, painted by a public art project that began in 2009. Buy the stamp map at the information centre and follow the fish signs.",
             "[[Haedong Yonggungsa|부산 해동용궁사]], bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974.",
             "[[Dongbaek Island|부산 동백섬]], Haeundae Station exit 3 or 5: a boardwalk loop around the camellia-covered headland, past the mermaid statue to Nurimaru APEC House on the southern tip, built for the 2005 APEC summit and shaped like a traditional pavilion.",
-            "Two more stops sit away from the rest: Anmok Seomyeon, the same pork gukbap house in Seomyeon, and the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above the map).",
+            "Two more stops sit away from the rest: Anmok Seomyeon, the same pork gukbap house in Seomyeon, and the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above).",
             "Further afield, five more places for a day with a car or a longer metro ride: **Beomeosa**, one of Korea's great mountain temples, founded in 678 on the slopes of Geumjeongsan, with a stone-pillared gate and pagoda that are both national Treasures; the Songdo cloud bridge; the cliff shrine at Seokbulsa; and Orangdae and Jukseong church in Gijang.",
           ],
           tips: [
@@ -929,6 +943,7 @@ export const cities: City[] = [
           {
             icon: '🆓',
             title: 'Which museums are free',
+            at: "Museums:",
             body: "**Free**: Busan Museum, Bokcheon Museum, the National Maritime Museum of Korea, the Fishing Village Folk Museum and the Modern & Contemporary History Museum. The science museum is paid: ₩3,000 adult / ₩2,000 teen for the permanent hall, free under 7. Memory Treasure Island: from about ₩2,500 on ticket sites; the adult price is not published, so ask at the door.",
             since: "Checked 30 October 2026.",
             source: 'Checked 30 October 2026.',
@@ -959,7 +974,7 @@ export const cities: City[] = [
           tips: [
             "🚇 Spread by district: Nam-gu and Jung-gu for the Busan Museum, Busan Tower and Memory Treasure Island; Yeongdo for the maritime museum; Dongnae for Bokcheon Museum and Heosimcheong; Haeundae/Centum/Gwangalli for the spas, X the Sky, F1963 and the cafés; Gijang for the science museum.",
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Check each place's current hours and prices on Naver before going, they change by season.",
-            "🎟️ See the price notices above the map for what's free and what each paid spot costs; booking apps (NOL, Waug, Klook) are usually a bit cheaper than paying at the counter for the spas, towers and X the Sky.",
+            "🎟️ See the price notices above for what's free and what each paid spot costs; booking apps (NOL, Waug, Klook) are usually a bit cheaper than paying at the counter for the spas, towers and X the Sky.",
             "🔗 The Culture Villages and Hotspots walk on this site covers Busan Tower's Yongdusan Park escalators and the Gwangalli night walk in more detail; this page is the wet-weather backup for the same areas.",
           ],
         },
@@ -1011,6 +1026,7 @@ export const cities: City[] = [
           {
             icon: '💧',
             title: "Jeongbang Falls on route 6: ticket and last entry",
+            at: "[[Route 6|",
             body: "The route passes the falls' information centre; the waterfall is a paid side visit: **adult ₩2,000**, youth and child ₩1,000, **09:00–17:50** (it follows sunset), **last entry 17:30**, {red:closed in bad weather}.",
             since: "Checked 29 October 2026.",
             source: "Seogwipo City e-ticket site. Checked 29 October 2026.",
@@ -1018,6 +1034,7 @@ export const cities: City[] = [
           {
             icon: '🍊',
             title: "Seogwipo Maeil Olle Market hours",
+            at: "[[Route 6|",
             body: "The market at the end of route 6 is open **daily 07:00–21:00** (some listings say 20:00). The food stalls are busiest from late afternoon.",
             since: "Checked 29 October 2026.",
             source: "Naver Map, checked 29 October 2026.",
@@ -1128,6 +1145,7 @@ export const cities: City[] = [
           {
             icon: '🏁',
             title: "End stamp: Kim Man-deok Memorial Hall closes on Mondays",
+            at: "Gwandeokjeong",
             body: "End-stamp hall: **free**, **09:00–18:00**, {red:closed every Monday} (the next weekday if Monday is a holiday). The stamp box is outside, so you can still stamp on a Monday; only the exhibition is shut. Tel. 064-759-6095.",
             since: "Checked 29 October 2026.",
             source: "Naver Map and the Ministry of Culture event listing, tel. 064-759-6095. Checked 29 October 2026.",
@@ -1135,6 +1153,7 @@ export const cities: City[] = [
           {
             icon: '🏯',
             title: "Jeju Mokgwana: ticket for the restored offices, Gwandeokjeong is free",
+            at: "Mokgwana",
             body: "**Gwandeokjeong** pavilion: open plaza, free. Restored **Jeju Mokgwana** offices behind it: **₩1,500**, **09:00–18:00** daily, last ticket 17:30. Some years it is free in the evenings from May to October; not confirmed for 2026. Tel. 064-710-6717.",
             since: "Checked 29 October 2026.",
             source: "Visit Jeju and Naver Map, tel. 064-710-6717. Checked 29 October 2026.",
@@ -1259,6 +1278,7 @@ export const cities: City[] = [
           {
             icon: '🏛️',
             title: "The museums close on Mondays",
+            at: "Jajangmyeon",
             body: "{red:Closed on Mondays} (the next day if Monday is a holiday), 1 January, Seollal and Chuseok: the **Jajangmyeon Museum**, **Incheon Open Port Museum**, **Modern Architecture Exhibition Hall** and **Incheon Citizens' House**. Hours **09:00–18:00**, last entry 17:30 (Citizens' House 09:30–17:30). The Fairy Tale Village and the streets are always open.",
             since: "Checked 29 October 2026.",
             source: "Naver Map and the Jemulpo Cultural Foundation. Checked 29 October 2026.",
@@ -1266,6 +1286,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: "Museum tickets and the combined pass",
+            at: "Jajangmyeon",
             body: "**Jajangmyeon Museum**: adult ₩1,000, youth ₩700, children and over-65 free. **Open Port Museum** and **Modern Architecture Exhibition Hall**: adult ₩500, youth ₩300. **Combined ticket** for the five old-town museums (these three plus the Daebul Hotel exhibition and the Korean-Chinese Cultural Center): **adult ₩3,400**, youth ₩2,300.",
             since: "Checked 29 October 2026.",
             source: "Ministry of Culture listing and the Jemulpo Cultural Foundation fee table. Checked 29 October 2026.",
@@ -1324,6 +1345,7 @@ export const cities: City[] = [
           {
             icon: '🏛️',
             title: "Gyeyangsanseong Museum at the route 2 trailhead",
+            at: "Route 2",
             body: "Open **09:00–18:00**, last entry 17:30; {red:closed on Mondays} (Tuesday if Monday is a holiday), 1 January, Seollal and Chuseok. Adults ₩1,000; children, teenagers and seniors free. The trails have no gate or opening hours. Tel. 032-552-8317.",
             since: "Checked 29 October 2026.",
             source: "Naver Map and a July 2025 report, tel. 032-552-8317. Checked 29 October 2026.",
@@ -1382,6 +1404,7 @@ export const cities: City[] = [
           {
             icon: '🚃',
             title: 'Wolmi Sea Train: closed Mondays, last train times',
+            at: "Wolmi Park Station",
             body: "{red:Closed on Mondays.} Runs **10:00–18:00 from Tuesday to Sunday**, later at weekends from April to October: until 21:00 on Incheon's tourism page, but Naver Map showed 19:00 on Sunday 25 October. Check the last train against sunset before you plan around it.",
             since: "Checked 25 October 2026.",
             source: "Incheon tourism page, last updated 22 June 2026, and Naver Map, checked 25 October 2026. The two disagree on weekend closing time.",
@@ -1389,6 +1412,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'The monorail ticket is a round ticket',
+            at: "Wolmi Park Station",
             body: "One ticket covers the ride out and **one more ride the same day**: get off at any of the four stops, walk, board again. Adults from outside Incheon paid **₩11,000 on weekdays and ₩14,000 at weekends** from August 2024. Online bookings can only board at Wolmi Sea Station, the first stop; tickets are sold at all four. Booking: wolmiseatrain.or.kr. Fares are from August 2024 and may have changed.",
             since: "Checked 25 October 2026.",
             source: "Incheon tourism page (June 2026) for the ticket rule and boarding; fares from Incheon city's August 2024 notice and may have changed. Booking: wolmiseatrain.or.kr.",
@@ -1534,6 +1558,7 @@ export const cities: City[] = [
           {
             icon: '⛴️',
             title: 'Ferry to Nami Island: times',
+            at: "Jade Garden",
             body: "**Gapyeong wharf**, about 5 minutes across. To the island: first boat **08:00**, last **21:00**. Back: first 08:05, last **21:05**. Every 10–20 minutes from 09:00 to 18:00, every 30 minutes outside that. **18 Sep–22 Nov 2026:** extra sailings, first boat **07:30** daily, last boat **21:30** on Fri, Sat, Sun and public holidays. {red:The ferry can pause when a dam release makes the river fast.}",
             since: "Checked 28 October 2026.",
             source: 'Official Nami Island site (namisum.com), checked 28 October 2026. The ferry can pause when heavy dam release makes the river fast; the site posts a notice.',
@@ -1541,6 +1566,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'Nami Island ticket includes the ferry',
+            at: "Jade Garden",
             body: "The entrance ticket includes the **round-trip ferry**: adult **₩19,000**, discounted ₩16,000, age 36 months to elementary school ₩13,000. The faster motorboat costs more (₩29,000 adult) and runs 09:00–18:00 from about April to November. Wharf car park: ₩6,000 for a small car.",
             since: "Checked 28 October 2026.",
             source: 'Official Nami Island site, checked 28 October 2026.',
@@ -1555,6 +1581,7 @@ export const cities: City[] = [
           {
             icon: '🚫',
             title: 'Jat forest closes on Mondays, Rail Park breaks at midday',
+            at: "Morning Calm Arboretum",
             body: "**Jat Scent Blue Forest**: {red:closed every Monday} (open 09:00–18:00 or 09:00–17:00 on other days; Naver lists both without dates). **Gapyeong Rail Park**: Mon–Fri 10:00–18:00 with a break 11:30–13:00, Sat–Sun 09:00–18:30 with a break 12:00–13:30.",
             since: "Checked 28 October 2026.",
             source: 'Naver Map, checked 28 October 2026.',
@@ -1562,6 +1589,7 @@ export const cities: City[] = [
           {
             icon: '☕',
             title: 'The view cafés close early',
+            at: "view cafés",
             body: "**La Cuna** 10:00–18:00. **Cafe The Wave** 11:00–18:00 (to 19:00 at weekends). **Corydalis** 09:00–20:00 (to 21:00 Fri and Sat). **Jajam 157** 10:00–19:00 (09:30–20:00 at weekends and holidays). Plan the café stop before dusk.",
             since: "Checked 28 October 2026.",
             source: 'Naver Map, checked 28 October 2026.',
@@ -1582,7 +1610,7 @@ export const cities: City[] = [
             "The river trail, Gapyeong Station to Gangchon Station, 16.7 km along the Bukhan River and the old Gyeongchun railway: Gyeonggang Bridge, Chunseong Bridge, Baegyang-ri and its old station, and the old Gangchon Station, about five hours.",
           ],
           tips: [
-            "⛴️ The ferry is part of the Nami Island ticket, so there is no separate fare. Times and prices are in the boxes above the map.",
+            "⛴️ The ferry is part of the Nami Island ticket, so there is no separate fare. Times and prices are in the boxes above.",
             "🚌 The stops are far apart, so plan a car, taxi or bus between them rather than walking.",
             "🚆 Trail transport: ITX-Cheongchun from Yongsan to Gapyeong Station in under an hour, back from Gangchon Station in about 1 h 10 (the ordinary Gyeongchun line takes about 2 hours).",
             "🍗 Gangchon is dakgalbi country: the two charcoal dakgalbi houses by Gangchon Station have over a thousand reviews each and open daily.",
@@ -1619,6 +1647,7 @@ export const cities: City[] = [
           {
             icon: '🛂',
             title: 'DMZ tour: passport, closed Mondays, tickets at Imjingak',
+            at: "Imjingak",
             body: "The tour to the **3rd Tunnel** and **Dora Observatory** leaves from the Imjingak ticket office, Tue–Sun **09:00–14:30**, {red:closed Mondays} and on weekday public holidays. Foreign visitors need the **original passport**. Walking into the tunnel ₩9,200, with the monorail ₩12,200. No foreign concessions, no photos on the course.",
             since: "Checked 30 October 2026.",
             source: 'Paju city DMZ site (dmz.paju.go.kr) and Naver Map, checked 30 October 2026.',
@@ -1626,6 +1655,7 @@ export const cities: City[] = [
           {
             icon: '🚧',
             title: 'Dora Observatory skipped 23–30 November 2026',
+            at: "3rd Infiltration Tunnel",
             body: "Road resurfacing **23–30 November 2026**: {red:that week the tour goes to the 3rd Tunnel only}, with tickets sold on the spot, not online.",
             since: "Checked 30 October 2026.",
             source: 'Notice on the Paju city DMZ site, posted 23 October 2026.',
@@ -1633,6 +1663,7 @@ export const cities: City[] = [
           {
             icon: '⏰',
             title: 'Odusan Observatory and the Heyri museum close on Mondays',
+            at: "Heyri Art Village",
             body: "**Odusan Unification Observatory**: 09:30–17:30 March to October, 10:00–17:00 November to February, last entry 30 min before, free, {red:closed Mondays}. **Museum of Korean Modern and Contemporary History** in Heyri: 10:00–18:00 Tue–Sun, {red:closed Mondays}.",
             since: "Checked 30 October 2026.",
             source: 'Naver Map and the observatory site, checked 30 October 2026.',
@@ -1640,6 +1671,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'Peace Gondola fares',
+            at: "Imjingak",
             body: "The gondola over the Imjin River: weekdays **09:00–18:00**, weekends 09:00–19:00, {red:closed the first Monday} of March, June, September and December. Return ticket adult **₩12,000**, child ₩10,000; glass-floor crystal cabin ₩15,000 / ₩13,000.",
             since: "Checked 30 October 2026.",
             source: 'dmzgondola.com and Naver Map, checked 30 October 2026.',
@@ -1647,6 +1679,7 @@ export const cities: City[] = [
           {
             icon: '⛵',
             title: 'Hwangpo sailboat: no sailings December to February',
+            at: "Hwangpo sailboat",
             body: "The replica cargo sailboat at Duji-ri on the Imjin River: Tue–Fri 13:00–15:00, Sat–Sun 10:00–17:00, {red:closed Mondays} and {red:no sailings from December to February}. It needs **at least 8 passengers**. About ₩10,000 adult. The fare is from travel sites, not an official page.",
             since: "Checked 30 October 2026.",
             source: 'Naver Map, checked 30 October 2026; the fare comes from travel sites, not an official page.',
@@ -1709,6 +1742,7 @@ export const cities: City[] = [
           {
             icon: '⏰',
             title: 'Hwaseong Haenggung palace: open daily, last entry 17:30',
+            at: "Hwaseong Haenggung palace",
             body: "The palace is open **09:00 to 18:00** every day of the year, with the last entry at **17:30**.",
             since: "Checked 26 October 2026.",
             source: 'Opening hours on Naver Map, checked 26 October 2026.',
@@ -1836,6 +1870,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'Book the rail bike online, in advance',
+            at: "Rail Bike boarding",
             body: "Weekend seats sell out: **book the rail bike online in advance**. The official site, [en.railpark.co.kr](https://en.railpark.co.kr/course/gimyujeong/schedule), takes English bookings: a 2-seater is **₩40,000**, a 4-seater **₩56,000**. Klook and Pelago list the same Gimyujeong-course ticket.",
             since: "Checked 30 October 2026.",
             source: 'en.railpark.co.kr, checked 30 October 2026.',
@@ -1904,6 +1939,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'Bada-buchae-gil fee, hours and weather closures',
+            at: "Bada-buchae-gil",
             body: "Entry **₩5,000** adult (₩4,000 teen, ₩3,000 child). Open **09:00–17:30** (last ticket 16:30) April–October, **09:00–16:30** (last ticket 15:30) November–March. {red:Closes entirely} under a wind or wave advisory, and can close for military reasons: check before you drive out.",
             since: "Checked 30 October 2026.",
             source: 'searoad.gtdc.or.kr and news reports, checked 30 October 2026.',
@@ -1963,6 +1999,7 @@ export const cities: City[] = [
           {
             icon: '🚌',
             title: 'Bus from Seoul: about 2 to 3 hours',
+            at: "Sokcho Intercity Bus Terminal",
             body: "Sokcho has **no train station**: come by express or intercity bus, about **2 to 3 hours** from Seoul. Buses leave from Dong Seoul Terminal (Gangbyeon Station, Line 2) and Seoul Express Bus Terminal (Gangnam). A premium seat from Dong Seoul costs roughly **₩20,000 to ₩22,000**. Times and fares vary by day: confirm on KOBUS or Tmoney before you go.",
             since: "Checked 31 October 2026.",
             source: "The video's own guide and bus timetable sites (bus.koreacharts.com, bustrain.kr), checked 31 October 2026. Times and fares vary by day: confirm on KOBUS or Tmoney before you go.",
@@ -1970,6 +2007,7 @@ export const cities: City[] = [
           {
             icon: '🚧',
             title: 'Bada-hyanggi-ro seaside walk is closed',
+            at: "Oeongchi",
             body: "{red:The whole Oeongchi Bada-hyanggi-ro deck walkway is closed}: Sokcho City shut it on **1 December 2025** after a safety inspection gave it the lowest grade (E). Repairs are expected to last until about **the end of 2027** (the video's estimate), and the Sokcho Lighthouse observatory was also under repair. The line stays on the map for when it reopens. Sokcho City tourism: 033-639-2362.",
             since: "Checked 31 October 2026.",
             source: 'Kyunghyang (27 November 2025) and Cheonji Ilbo reports, plus the video; checked 31 October 2026. Sokcho City tourism: 033-639-2362.',
@@ -2116,6 +2154,7 @@ export const cities: City[] = [
           {
             icon: '🏗️',
             title: 'The Glory baduk park was a temporary set',
+            at: "Cheongnaru",
             body: 'The giant **baduk boards beside Cheongnaru** were built for filming in 2022 and mostly removed afterwards. In March 2023 Incheon said it would rebuild part of the set; check what stands there now.',
             since: "Last checked March 2023.",
             source: 'Press report, March 2023. Not rechecked since.',
@@ -2183,6 +2222,7 @@ export const cities: City[] = [
           {
             icon: '🌊',
             title: 'Sinan 12 Apostles trail: check the tide',
+            at: "Sinan 12 Apostles",
             body: "The twelve chapels stand on five islands joined by **causeways that sink at high tide**, so the path can be cut: check the tide table (물때표) first. Take the **ferry from Songgong Port** (송공항), about 1 hour 10 minutes to the end of the line. Winter departures 06:50, 09:40, 12:30 and 15:00 (county timetable, 1 October to 28 February), adult fare reported at 6,500 won. Return times are unconfirmed: ask the terminal (061-261-4221) for the **last boat back** before you start walking. Confirm with Sinan County and the ferry operator.",
             since: "Checked April 2026.",
             source: 'Korean press reports 2019 to 2023; ferry times from a travel blog citing the operator, April 2026. Confirm with Sinan County and the ferry operator before you go.',
@@ -2253,6 +2293,7 @@ export const cities: City[] = [
           {
             icon: '⏰',
             title: 'Gyeongbokgung closes on Tuesdays',
+            at: "Gyeongbokgung",
             body: "The palace of the Tonight Show stage: **09:00–18:00** (to 17:00 November to February), {red:closed Tuesdays}, ₩3,000, free in hanbok. Sungnyemun and the Oil Tank Culture Park are {red:closed Mondays}.",
             since: "Checked 30 October 2026.",
             source: 'Official palace site and Naver Map, checked 30 October 2026.',
@@ -2260,6 +2301,7 @@ export const cities: City[] = [
           {
             icon: '🎟️',
             title: 'Seohuri Forest and Awon charge entry and change by season',
+            at: "Awon",
             body: "**Seohuri Forest** (2019 Season's Greetings) is private, with an entry fee and opening days that change by season. **Awon** in Wanju (2019 Summer Package) admits day visitors through its gallery café, about ₩10,000 with a drink. Check both on Naver before you drive out.",
             since: "Checked 30 October 2026.",
             source: 'Naver Map, checked 30 October 2026.',

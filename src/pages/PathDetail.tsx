@@ -56,14 +56,14 @@ export default function PathDetail() {
   // My Map full screen instead of opening a new tab.
   const [mapOpen, setMapOpen] = useState(false);
   const closeMap = useCallback(() => setMapOpen(false), []);
-  // A place name in "The locations" opens its Google Images in a popup (the search words, or null).
+  // A place name in "The Locations" opens its Google Images in a popup (the search words, or null).
   const [placeQuery, setPlaceQuery] = useState<string | null>(null);
   const closePlace = useCallback(() => setPlaceQuery(null), []);
   // iPhone tip before "To follow the path", unless the visitor chose not to see it again.
   const [tipOpen, setTipOpen] = useState(false);
   const closeTip = useCallback(() => setTipOpen(false), []);
   const tipHidden = useFollowTipHidden();
-  // Folded part of the page: History ("Read more"). The locations list and the notices stay open.
+  // Folded part of the page: History ("Read more"). The Locations list and the notices stay open.
   const [historyOpen, setHistoryOpen] = useState(false);
   usePageMeta();
   // The iOS two-button variant only after hydration (see hooks.ts).
@@ -112,6 +112,19 @@ export default function PathDetail() {
       </details>
     </li>
   );
+  // Information boxes: the general ones sit right under "The Locations" title; a box tied to one place (its `at` phrase is
+  // in that location's line) sits under that location. A page without a route list shows them all in one block.
+  const route = path.guide?.route ?? [];
+  const placeOf = (n: { at?: string }) => (n.at ? route.findIndex((step) => step.includes(n.at as string)) : -1);
+  const overallNotices = notices.filter((n) => placeOf(n) < 0);
+  const noticeList = (list: typeof notices) =>
+    list.length > 0 && (
+      <ul className="notices" aria-label="Important information">
+        {list.map(noticeItem)}
+      </ul>
+    );
+  const noticesBlock = noticeList(overallNotices);
+  const noticesAt = (i: number) => noticeList(notices.filter((n) => placeOf(n) === i));
   const hasMapBlock = Boolean(embed || path.screenshot);
   const chips = [
     hasMapBlock && { id: "path-map", label: "Map", unfold: undefined },
@@ -199,11 +212,7 @@ export default function PathDetail() {
             </nav>
           )}
 
-          {notices.length > 0 && (
-            <ul className="notices" aria-label="Important information">
-              {notices.map(noticeItem)}
-            </ul>
-          )}
+          {!path.guide && noticesBlock}
 
           {path.liveCam?.above && liveCam}
 
@@ -344,36 +353,6 @@ export default function PathDetail() {
 
         {(path.story || path.guide) && (
           <div className="path-side">
-        {path.story && (
-          <section className="path-story" id="history" aria-labelledby="history-title">
-            <h2 id="history-title">
-              <Emoji name="classical_building" size={20} /> History
-            </h2>
-            <h3>{path.story.title}</h3>
-            <div
-              id="history-text"
-              className={foldHistory && !historyOpen ? "fold" : undefined}
-            >
-              {path.story.text.map((text) => (
-                <p key={text}>
-                  <GuideLine text={text} />
-                </p>
-              ))}
-            </div>
-            {foldHistory && (
-              <button
-                type="button"
-                className="show-all"
-                aria-expanded={historyOpen}
-                aria-controls="history-text"
-                onClick={() => setHistoryOpen((o) => !o)}
-              >
-                {historyOpen ? "Show less" : "Read more"}
-              </button>
-            )}
-          </section>
-        )}
-
         {path.guide && (
           <section className="guide" aria-labelledby="guide-title">
             <h2 id="guide-title">
@@ -397,19 +376,22 @@ export default function PathDetail() {
                 );
               })}
             </div>
+            {!path.guide.route && noticesBlock}
             {path.guide.route && (
               <>
                 <h3 id="locations">
-                  <Emoji name="round_pushpin" size={20} /> The locations
+                  <Emoji name="round_pushpin" size={20} /> The Locations
                 </h3>
+                {noticesBlock}
                 <ol id="locations-list">
-                  {path.guide.route.map((step) => (
+                  {path.guide.route.map((step, i) => (
                     <li key={step}>
                       <GuideLine
                         text={step}
                         city={city.theme ? undefined : city.name.replace(/-do$/, "")}
                         onPlace={setPlaceQuery}
                       />
+                      {noticesAt(i)}
                     </li>
                   ))}
                 </ol>
@@ -438,6 +420,36 @@ export default function PathDetail() {
             )}
             {path.imageCredit && (
               <p className="photo-credit">{path.imageCredit}</p>
+            )}
+          </section>
+        )}
+
+        {path.story && (
+          <section className="path-story" id="history" aria-labelledby="history-title">
+            <h2 id="history-title">
+              <Emoji name="classical_building" size={20} /> History
+            </h2>
+            <h3>{path.story.title}</h3>
+            <div
+              id="history-text"
+              className={foldHistory && !historyOpen ? "fold" : undefined}
+            >
+              {path.story.text.map((text) => (
+                <p key={text}>
+                  <GuideLine text={text} />
+                </p>
+              ))}
+            </div>
+            {foldHistory && (
+              <button
+                type="button"
+                className="show-all"
+                aria-expanded={historyOpen}
+                aria-controls="history-text"
+                onClick={() => setHistoryOpen((o) => !o)}
+              >
+                {historyOpen ? "Show less" : "Read more"}
+              </button>
             )}
           </section>
         )}

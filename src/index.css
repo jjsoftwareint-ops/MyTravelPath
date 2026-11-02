@@ -1113,6 +1113,23 @@ button.cta {
 .talk-bubble-row:first-child .talk-bubble {
   border-top-left-radius: 4px; /* the tail points at the speaker */
 }
+/* The information boxes inside the guide keep their own look, not the list and paragraph styles of the guide. */
+.guide .notices {
+  margin: 8px 0 14px;
+  padding-left: 0;
+  list-style: none;
+}
+.guide li > .notices {
+  margin: 8px 0 4px; /* a box under one location */
+}
+.guide .notices li {
+  margin: 0;
+  padding: 0;
+}
+.guide .notice-card p {
+  margin: 0;
+  color: var(--text);
+}
 .guide ol,
 .guide ul {
   margin: 0;
@@ -1722,7 +1739,7 @@ button.cta {
   }
 }
 
-/* ── Google Images popup (place names in "The locations") ─── */
+/* ── Google Images popup (place names in "The Locations") ─── */
 .image-popup-backdrop {
   position: fixed;
   inset: 0;
