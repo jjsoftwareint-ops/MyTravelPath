@@ -89,7 +89,7 @@ export const cities: City[] = [
         seoDescription:
           "Walk Seoul's city wall on Naksan at sunset, pass Ihwa mural village and Dongdaemun gate, then follow the lit Cheonggyecheon stream. Map and tips.",
         duration: '3h',
-        updated: '2026-11-01',
+        updated: '2026-11-03',
         tags: [{ icon: 'sunset', label: 'Evening walk' }, { icon: 'moon', label: 'Night walk' }],
         whyVisit: [
           "Naksan Park has **the most beautiful sunset and night view in Seoul**, and you watch the sunset from a café: Cafe Nakta sits on the lip of the old quarry, San 1-1 by the wall, with the whole of the old city below.",
@@ -121,6 +121,14 @@ export const cities: City[] = [
             body: "Many murals were **painted over** after complaints from residents, so expect fewer than in old photos. People live here: keep your voice down at night and do not photograph into windows.",
             since: "Checked 29 October 2026.",
             source: "Seoul city media hub. Checked 29 October 2026.",
+          },
+          {
+            icon: '🏮',
+            title: "Seoul Lantern Festival lights the stream from 11 December to 31 January",
+            at: "The last stretch of the stream",
+            body: "The **Seoul Lantern Festival** fills the stream with lanterns and light art from **Cheonggye Plaza to Samil Bridge**, every evening from **18:00 to 23:00**, between **11 December 2026 and 31 January 2027**. This year's theme is the Symphony of Light.",
+            since: "Checked 3 November 2026.",
+            source: "Seoul Tourism Organization festival page. Checked 3 November 2026.",
           },
         ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1w8F-eVqm5RpMFykhZ3HQUrb9TydjQV8',

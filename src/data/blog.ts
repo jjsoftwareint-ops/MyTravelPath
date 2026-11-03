@@ -37,6 +37,110 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-03-1842',
+    title: 'Gyeongju in autumn: hanbok by day, a glowing bridge by night',
+    description:
+      'Gyeongju in autumn: rent a 한복 (hanbok), walk the royal tombs and Hwangnidan-gil, then watch the bridge and palace pond light up at night.',
+    teaser: 'The town works two shifts.',
+    icon: 'fallen_leaf',
+    date: '2026-11-03',
+    updated: '2026-11-03',
+    keywords: ['KoreaTravel', 'Gyeongju', 'Hanbok', 'KoreaAutumn', 'GyeongjuNightView', 'Silla'],
+    body: [
+      {
+        type: 'p',
+        text: 'Gyeongju works two shifts. By day, you put on a hanbok (한복), stand in front of a grassy hill and make a friend take sixty photos. By night, a whole bridge turns orange.',
+      },
+      {
+        type: 'p',
+        text: 'This was the capital of the Silla kingdom for nearly a thousand years. That grassy hill is a king\'s tomb. Nobody here finds that strange.',
+      },
+      {
+        type: 'img',
+        src: 'gyeongju-woljeonggyo-night.jpg',
+        alt: 'A long roofed wooden bridge with two pavilions at each end, lit orange and green against a deep blue evening sky and reflected in the water',
+        caption: 'Woljeonggyo Bridge at blue hour. Save your phone battery for this one.',
+        href: 'https://commons.wikimedia.org/wiki/File:Illuminated_Woljeonggyo_Bridge_at_blue_hour_in_Gyeongju_South_Korea.jpg',
+        credit: { author: 'Basile Morin', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'Day shift: hanbok and tombs', icon: 'camera_with_flash' },
+      {
+        type: 'p',
+        text: 'Hanbok rental shops cluster around **Hwangnidan-gil** (황리단길), the café and gift-shop street in old hanok-style buildings, and near the tomb park. You rent by the hour, and one guide says two hours is plenty. Pick a colour that pops against green grass. We would go pink.',
+      },
+      {
+        type: 'img',
+        src: 'gyeongju-hwangnidan-gil.jpg',
+        alt: 'A paved street at dusk lined with hanok-style buildings and shops, a lamp post in the middle and a few people walking',
+        caption: 'Hwangnidan-gil at dusk.',
+        href: 'https://commons.wikimedia.org/wiki/File:Hwangnidan-gil_01.jpg',
+        credit: { author: 'Seefooddiet', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      {
+        type: 'p',
+        text: 'Then wander through **Daereungwon** (대릉원), a park of 23 royal tomb mounds. One of them, Cheonmachong, is open, so you can actually walk inside a tomb.',
+      },
+      {
+        type: 'p',
+        text: 'Snack as you go: [십원빵](https://www.google.com/search?tbm=isch&q=%EC%8B%AD%EC%9B%90%EB%B9%B5) (sibwon-ppang), the little 10-won bread the street is known for.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'The newer spots', icon: 'sparkles' },
+      {
+        type: 'p',
+        text: 'The old railway station is now an exhibition space, Gyeongju Culture Center 1918, with a retro photo corner out front. And the OAR Museum is a new art museum whose big glass window frames the tomb mounds like a painting. It is {red:closed on Tuesdays}.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Are the leaves out yet?', icon: 'maple_leaf' },
+      {
+        type: 'p',
+        text: 'Forecasts put Gyeongju\'s peak in early to mid November. The ginkgo spots go first, and Bulguksa temple is forecast around 10 November. These are forecasts, not a promise, so look at a fresh photo before you book.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Night shift: the lights', icon: 'night_with_stars' },
+      {
+        type: 'p',
+        text: 'After dark, **Woljeonggyo Bridge** and **Wolji pond** light up, and both are open until 22:00. By day you cross the river on stepping stones. At night you walk over the bridge itself, which is the better deal.',
+      },
+      {
+        type: 'img',
+        src: 'gyeongju-wolji-sunset.jpg',
+        alt: 'A golden-lit pavilion on a stone wall mirrored in a still pond under a purple and orange sunset sky, a second pavilion on the left',
+        caption: 'Wolji pond at sunset, just as the lights come on.',
+        href: 'https://commons.wikimedia.org/wiki/File:Anapji_pond,_Korea.jpg',
+        credit: { author: 'hyungname (via Pixabay)', license: 'CC0 1.0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      {
+        type: 'img',
+        src: 'gyeongju-wolji-night.jpg',
+        alt: 'A pavilion on a stone wall lit golden at night, reflected in a dark pond, with pine trees on the left',
+        caption: 'Donggung Palace and Wolji pond at night.',
+        href: 'https://commons.wikimedia.org/wiki/File:Donggung_Palace_%26_Wolji_Pond,_Gyeongju_-_Donggung2687.jpg',
+        credit: { author: 'lumoplank', license: 'CC0 1.0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      {
+        type: 'p',
+        text: 'Get to Wolji for sunset. The sky turns pink and purple, then the lights come on one by one and the halls mirror in the water. It is called the best night view in Gyeongju, and we agree. The old star-watching tower, Cheomseongdae, also gets a media-art show projected onto it at night, so check the time.',
+      },
+      {
+        type: 'p',
+        text: 'From Seoul, take the KTX-Eum from Cheongnyangni Station to Gyeongju Station, or the KTX from Seoul Station to Singyeongju Station. Check the timetable, and give it two days.',
+      },
+      {
+        type: 'route',
+        cityId: 'gyeongju-jeonju',
+        pathId: 'gyeongju',
+        text: 'Our Gyeongju walk, pin by pin: tombs, café street and the pond at night.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: the hanbok is the excuse. The glowing bridge is the reason.',
+      },
+    ],
+  },
+  {
     id: '2026-11-03-0119',
     title: 'Why do Koreans drink iced coffee in the snow?',
     description:
