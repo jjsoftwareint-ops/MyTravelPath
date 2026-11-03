@@ -74,13 +74,15 @@ export default function ThisWeek() {
   const ongoing = thisWeek.ongoing.filter(keep)
   const comingUp = thisWeek.comingUp.filter((c) => !city || !c.cityId || c.cityId === city.id)
 
+  const heading = `Events in ${city ? city.name : 'Korea'}`
+
   return (
     <Layout
-      title="This week in Korea"
-      subtitle={city ? `Events in ${city.name}` : 'Festivals, fireworks and light shows'}
+      title={heading}
+      subtitle="Festivals, fireworks and light shows"
       backTo="/"
       noSaved
-      actions={<ShareLink compact title="This week in Korea" text="Festivals and events in Korea this week, on My Travel Path" />}
+      actions={<ShareLink compact title={heading} text="Festivals and events in Korea this week, on My Travel Path" />}
     >
       <div className="blog-wrap week-wrap">
         <time className="updated blog-updated" dateTime={thisWeek.updated}>
