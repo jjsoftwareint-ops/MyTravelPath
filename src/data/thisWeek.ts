@@ -23,7 +23,7 @@ export type Week = {
 }
 
 export type ThisWeek = {
-  updated: string // YYYY-MM-DD, the day the page was last refreshed (drives the red dot on the header icon)
+  updated: string // YYYY-MM-DD, the day the page was last refreshed (shown as Updated, and the sitemap lastmod)
   headline: string // id of the event the home-page card names; the one most readers should not miss
   weeks: Week[] // this week first, then next week
   ongoing: WeekEvent[] // runs through both weeks

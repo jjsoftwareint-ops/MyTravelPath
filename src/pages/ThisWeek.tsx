@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
@@ -9,7 +8,6 @@ import { thisWeek, type WeekEvent } from '../data/thisWeek'
 import { useHydrated } from '../hooks'
 import { formatDate } from '../dates'
 import { usePageMeta } from '../seo'
-import { markWeekSeen } from '../weekSeen'
 
 function EventCard({ e }: { e: WeekEvent }) {
   return (
@@ -63,7 +61,6 @@ function EventCard({ e }: { e: WeekEvent }) {
 // The filter is applied after hydration only, so the pre-rendered page always shows everything.
 export default function ThisWeek() {
   usePageMeta()
-  useEffect(() => markWeekSeen(), [])
   const hydrated = useHydrated()
   const [params] = useSearchParams()
   const filterCities = cities.filter((c) => !c.theme)

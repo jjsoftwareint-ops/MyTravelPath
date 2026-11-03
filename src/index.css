@@ -2047,21 +2047,6 @@ button.cta {
 }
 
 /* ── This week in Korea (/this-week/, src/data/thisWeek.ts) ── */
-.event-button {
-  position: relative;
-}
-.event-button svg {
-  width: 19px;
-  height: 19px;
-}
-.badge.dot {
-  top: -2px;
-  right: -2px;
-  min-width: 0;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-}
 .week-card .new-posts-icon {
   color: var(--accent);
 }

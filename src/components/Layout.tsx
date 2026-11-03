@@ -2,7 +2,6 @@ import { useEffect, useRef, type ReactNode } from 'react'
 import Link from './Link'
 import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
-import EventLink from './EventLink'
 import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
 import InstallHint from './InstallHint'
@@ -21,7 +20,7 @@ type Props = {
   hideSaved?: boolean
   /** Leave the Saved paths link out entirely, on every screen size (the blog pages). */
   noSaved?: boolean
-  /** Event and Blog buttons left of the Saved paths icon; the main page only. */
+  /** Blog button left of the Saved paths icon; the main page only. */
   showBlog?: boolean
   children: ReactNode
 }
@@ -63,7 +62,6 @@ export default function Layout({ title, titleImage, subtitle, backTo, icon, acti
           )}
           {subtitle && <p>{subtitle}</p>}
         </div>
-        {showBlog && <EventLink />}
         {showBlog && <BlogLink />}
         {!noSaved && <BookmarkLink />}
         <ThemeToggle />
