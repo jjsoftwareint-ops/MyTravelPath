@@ -1,13 +1,17 @@
+import { useEffect } from 'react'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import { blogUpdated } from '../data/blog'
 import { formatDate } from '../dates'
 import ShareLink from '../components/ShareLink'
+import { markBlogSeen } from '../newPosts'
 import { usePageMeta } from '../seo'
 
-// Title list of the diary. The post a visitor read last carries a "Continue reading" pill.
+// Title list of the diary. The post a visitor read last carries a "Continue reading" pill,
+// posts since their last look here a "New" pill (opening the list marks them seen).
 export default function Blog() {
   usePageMeta()
+  useEffect(() => markBlogSeen(), [])
   return (
     <Layout
       title="Blog"

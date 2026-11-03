@@ -6,8 +6,12 @@ import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import RichText from "../components/RichText";
 import Tags from "../components/Tags";
+import NewPosts from "../components/NewPosts";
 import VisitorCount from "../components/VisitorCount";
+import WeekCard from "../components/WeekCard";
 import { cities, hasMap } from "../data/travel";
+import { eventCount } from "../data/thisWeek";
+import { FaCalendarDays } from "react-icons/fa6";
 import { usePageMeta } from "../seo";
 
 // The expanded city lives in the URL (/:cityId) so that coming back from a
@@ -40,6 +44,10 @@ export default function Home() {
         </ul>
       </div>
 
+      <WeekCard />
+
+      <NewPosts />
+
       <VisitorCount />
 
       <ul className="list">
@@ -65,6 +73,26 @@ export default function Home() {
                       decoding="async"
                     />
                   </span>
+                </Link>
+              )}
+              {city.image && !city.theme && (
+                // Over the photo's top right corner: this city's events from /this-week/.
+                <Link
+                  to={`/this-week/?city=${city.id}`}
+                  className="city-events"
+                  aria-label={
+                    eventCount(city.id) > 0
+                      ? `Events in ${city.name}: ${eventCount(city.id)}`
+                      : `Events in ${city.name}`
+                  }
+                  title={`Events in ${city.name}`}
+                >
+                  <FaCalendarDays aria-hidden="true" />
+                  {eventCount(city.id) > 0 && (
+                    <span className="city-events-count" aria-hidden="true">
+                      {eventCount(city.id)}
+                    </span>
+                  )}
                 </Link>
               )}
               {/* The name row sticks under the page header while this city's paths scroll past. */}

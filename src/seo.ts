@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { blogUpdated, findPost, posts } from "./data/blog";
 import { cities, findCity, findPath, hasMap } from "./data/travel";
+import { thisWeek } from "./data/thisWeek";
 
 // One source of truth for every page's <head>: used by the pre-render script at
 // build time (renderHeadTags) and by the client on navigation (usePageMeta).
@@ -32,6 +33,12 @@ const STATIC: Record<string, { title: string; description: string; updated: stri
     description:
       "Short, honest stories about Korea: dessert queues, palace dates, hand-written letters and a few strong opinions.",
     updated: blogUpdated,
+  },
+  "this-week": {
+    title: "This week in Korea",
+    description:
+      "Festivals, fireworks, drone and light shows in Korea this week and next, with dates, prices and the nearest station. Refreshed every week.",
+    updated: thisWeek.updated,
   },
   about: {
     title: "About",

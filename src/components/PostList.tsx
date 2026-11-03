@@ -2,10 +2,12 @@ import Link from './Link'
 import { postsByMonth } from '../data/blog'
 import { formatMonth } from '../dates'
 import { useLastRead } from '../lastRead'
+import { useNewPostsAtLoad } from '../newPosts'
 
 // Title list of every post, grouped by month; used on /blog/ and under each post.
 export default function PostList({ currentId }: { currentId?: string }) {
   const lastRead = useLastRead()
+  const fresh = useNewPostsAtLoad()
   const groups = postsByMonth()
   return (
     <div className="post-list">
@@ -21,6 +23,7 @@ export default function PostList({ currentId }: { currentId?: string }) {
                   <span>{p.teaser}</span>
                   <span className="post-list-tags">{p.keywords.map((k) => `#${k}`).join(' ')}</span>
                   {p.id === lastRead && p.id !== currentId && <em className="pill">📖 Continue reading</em>}
+                  {fresh.includes(p) && p.id !== currentId && <em className="pill new">New</em>}
                 </Link>
               </li>
             ))}

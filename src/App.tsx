@@ -10,6 +10,7 @@ import Imprint from './pages/Imprint'
 import PathDetail from './pages/PathDetail'
 import Privacy from './pages/Privacy'
 import Saved from './pages/Saved'
+import ThisWeek from './pages/ThisWeek'
 
 // Routes only. The router comes from the entry: BrowserRouter in the browser
 // (entry-client.tsx), StaticRouter when pre-rendering (entry-server.tsx).
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/imprint" element={<Imprint />} />
         <Route path="/saved" element={<Saved />} />
+        <Route path="/this-week" element={<ThisWeek />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:postId" element={<BlogPost />} />
         <Route path="/:cityId" element={<Home />} />
