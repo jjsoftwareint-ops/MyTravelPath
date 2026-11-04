@@ -37,6 +37,84 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-04-1852',
+    title: 'Busan fireworks: skip the seat, bring the chicken',
+    description:
+      'The Busan Fireworks Festival lights up the Gwangan Bridge for one hour this Saturday. The beach is free, the seats are not, and locals bring 치맥 (chimaek).',
+    teaser: 'We watched last year\'s on a laptop in Berlin.',
+    icon: 'fireworks',
+    date: '2026-11-04',
+    updated: '2026-11-04',
+    keywords: ['KoreaTravel', 'Busan', 'BusanFireworksFestival', 'Gwangalli', 'GwanganBridge', 'Chimaek'],
+    body: [
+      {
+        type: 'p',
+        text: 'Last year we watched the Busan fireworks on a laptop in Berlin. A waterfall of fire poured off the Gwangan Bridge, G-Dragon came out of the speakers, and we got goosebumps through a screen.',
+      },
+      {
+        type: 'p',
+        text: 'This Saturday it happens again. This time we would rather be on the sand.',
+      },
+      {
+        type: 'img',
+        src: 'busan-fireworks-gwangan-bridge.jpg',
+        alt: 'Huge red, orange and white fireworks bursting over a long suspension bridge lit in purple, with the city towers below and the colours reflected in the sea',
+        caption: 'The Gwangan Bridge as a stage. The whole bay is the front row.',
+        href: 'https://commons.wikimedia.org/wiki/File:The_Busan_International_Fireworks_Festival.jpg',
+        credit: { author: 'Busan Metropolitan City', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'One hour, one bridge', icon: 'fireworks' },
+      {
+        type: 'p',
+        text: '**Gwangalli Beach** (광안리, Gwangalli) is a long curve of sand with a 7 km bridge lit in colour across the whole bay. On Saturday, from 19:00, the bridge becomes the stage: a guest show from China first, then Busan\'s own, then the finale.',
+      },
+      {
+        type: 'p',
+        text: 'Last year 1.17 million people came. That is the population of a city, standing on one beach, all looking the same way.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Seat or sand?', icon: 'poultry_leg' },
+      {
+        type: 'p',
+        text: 'There are paid seats: ₩70,000 for a chair, ₩100,000 for a chair with a table, and you have to be sitting in it by 18:00 or they can turn you away. We think those are for tourists.',
+      },
+      {
+        type: 'p',
+        text: 'Locals come in the afternoon with a mat, a box of fried chicken and a can of beer. The combination has its own word, **치맥** (chimaek), chicken plus maekju (beer), and a beach at sunset is where it tastes best. The sand is free, and so is the side view from Igidae and Dongbaek Island if the beach is already full.',
+      },
+      {
+        type: 'img',
+        src: 'busan-fireworks-from-the-beach.jpg',
+        alt: 'Green, white and red fireworks over the bridge seen from the beach, with a crowd of silhouettes holding up phones in the foreground',
+        caption: 'The view from the sand: everyone films, nobody minds.',
+        href: 'https://commons.wikimedia.org/wiki/File:Busan_Firework_Festival_2008-1.jpg',
+        credit: { author: 'RedMosQ', license: 'Public domain', licenseUrl: 'https://commons.wikimedia.org/wiki/File:Busan_Firework_Festival_2008-1.jpg' },
+      },
+      { type: 'space' },
+      { type: 'h', text: 'If you miss Saturday', icon: 'bridge_at_night' },
+      {
+        type: 'p',
+        text: 'The bridge does not go dark for the rest of the year. Every Saturday a swarm of drones draws pictures over the water, free, at 19:00 and 21:00 in winter. Less noise, same beer.',
+      },
+      {
+        type: 'p',
+        text: 'One warning for the big night: afterwards, Gwangan Station is a wall of people. Walk one stop further to Geumnyeonsan and you will be on a train while the others are still queuing.',
+      },
+      {
+        type: 'route',
+        cityId: 'busan',
+        pathId: 'villages-and-hotspots',
+        text: 'Our Gwangalli evening on a map: the walk under the bridge, the fish market and the Saturday drone show.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: skip the seat, buy the chicken, be on the sand before the sun goes down.',
+      },
+    ],
+  },
+  {
     id: '2026-11-03-1842',
     title: 'Gyeongju in autumn: hanbok by day, a glowing bridge by night',
     description:
