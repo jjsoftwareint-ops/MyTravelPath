@@ -1933,6 +1933,13 @@ button.cta {
 .image-popup-close:active {
   background: var(--press);
 }
+.image-popup-actions {
+  display: flex;
+  flex: none;
+}
+.image-popup-tab {
+  font-size: 22px;
+}
 .image-popup iframe {
   flex: 1;
   width: 100%;

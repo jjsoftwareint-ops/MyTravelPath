@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Navigate, useLocation, useParams } from 'react-router-dom'
 import Link from '../components/Link'
 import AdSlot from '../components/AdSlot'
-import ImagePopup from '../components/ImagePopup'
+import ImagePopup, { type PopupPage } from '../components/ImagePopup'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import RichText from '../components/RichText'
@@ -12,12 +12,18 @@ import { formatDate } from '../dates'
 import { setLastRead } from '../lastRead'
 import { usePageMeta } from '../seo'
 
-function renderBlock(b: Block, i: number, from: string, onPlace: (query: string) => void) {
+function renderBlock(
+  b: Block,
+  i: number,
+  from: string,
+  onPlace: (query: string) => void,
+  onLink: (page: PopupPage) => void,
+) {
   switch (b.type) {
     case 'p':
       return (
         <p key={i}>
-          <RichText text={b.text} onPlace={onPlace} />
+          <RichText text={b.text} onPlace={onPlace} onLink={onLink} />
         </p>
       )
     case 'h':
@@ -40,7 +46,7 @@ function renderBlock(b: Block, i: number, from: string, onPlace: (query: string)
         <ul key={i} className="post-bullets">
           {b.items.map((t) => (
             <li key={t}>
-              <RichText text={t} onPlace={onPlace} />
+              <RichText text={t} onPlace={onPlace} onLink={onLink} />
             </li>
           ))}
         </ul>
@@ -55,7 +61,7 @@ function renderBlock(b: Block, i: number, from: string, onPlace: (query: string)
                   <img src={`${import.meta.env.BASE_URL}emoji/${d.icon}.png`} alt="" width="40" height="40" />
                 </span>
                 <span>
-                  <RichText text={d.text} onPlace={onPlace} />
+                  <RichText text={d.text} onPlace={onPlace} onLink={onLink} />
                 </span>
               </li>
             )
@@ -86,13 +92,13 @@ function renderBlock(b: Block, i: number, from: string, onPlace: (query: string)
     case 'quote':
       return (
         <blockquote key={i}>
-          <RichText text={b.text} onPlace={onPlace} />
+          <RichText text={b.text} onPlace={onPlace} onLink={onLink} />
         </blockquote>
       )
     case 'verdict':
       return (
         <p key={i} className="post-verdict">
-          <RichText text={b.text} onPlace={onPlace} />
+          <RichText text={b.text} onPlace={onPlace} onLink={onLink} />
         </p>
       )
     case 'img':
@@ -155,8 +161,10 @@ export default function BlogPost() {
   const { postId } = useParams()
   const { pathname } = useLocation()
   const post = findPost(postId)
-  const [imageQuery, setImageQuery] = useState<string | null>(null)
-  const closeImages = useCallback(() => setImageQuery(null), [])
+  // Google Images of a word, or an outside link (src/framing.ts), in one popup.
+  const [popup, setPopup] = useState<PopupPage | null>(null)
+  const closePopup = useCallback(() => setPopup(null), [])
+  const showImages = useCallback((query: string) => setPopup({ query }), [])
   usePageMeta()
   useEffect(() => {
     if (post) setLastRead(post.id)
@@ -181,7 +189,7 @@ export default function BlogPost() {
             <img className="title-emoji" src={`${import.meta.env.BASE_URL}emoji/${post.icon}.png`} alt="" width="32" height="32" />
           </h1>
         </header>
-        <div className="post-body">{post.body.map((b, i) => renderBlock(b, i, pathname, setImageQuery))}</div>
+        <div className="post-body">{post.body.map((b, i) => renderBlock(b, i, pathname, showImages, setPopup))}</div>
         <AdSlot slot="below" />
         <ul className="hashtags" aria-label="Tags">
           {post.keywords.map((k) => (
@@ -218,7 +226,7 @@ export default function BlogPost() {
         <PostList currentId={post.id} />
         <p className="emoji-credit">Emoji: OpenMoji (CC BY-SA 4.0)</p>
       </section>
-      {imageQuery && <ImagePopup query={imageQuery} onClose={closeImages} />}
+      {popup && <ImagePopup {...popup} onClose={closePopup} />}
     </Layout>
   )
 }

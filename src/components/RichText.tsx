@@ -1,5 +1,7 @@
 import { Fragment } from "react";
-import { imageSearchUrl } from "./ImagePopup";
+import { imageSearchUrl, type PopupPage } from "./ImagePopup";
+import Link from "./Link";
+import { framedSrc, internalPath, siteName } from "../framing";
 
 // Tiny inline markup for guide text written in travel.ts:
 //   **words**       → highlighted in the accent colour (bold)
@@ -11,6 +13,9 @@ import { imageSearchUrl } from "./ImagePopup";
 //     Without search words the English name is searched with the city in front ("Seoul Samcheong-dong").
 //     Plain text when the caller passes no onPlace. With onPlace, a [label](Google Images URL) link
 //     opens the same popup instead of a new tab.
+//     With onLink, every other outside link opens in that popup too (a YouTube link as its player),
+//     except sites that refuse to be framed (src/framing.ts), which keep a new tab. A link to
+//     koreatravelpath.com always stays in the app.
 // Emoji need no markup; put them straight in the string.
 const TOKEN = /(\[\[[^\]|]+(?:\|[^\]]+)?\]\]|\*\*.+?\*\*|\{(?:red|blue):[^}]+\}|\[[^\]]+\]\(https:\/\/[^)\s]+\))/g;
 
@@ -29,10 +34,12 @@ export default function RichText({
   text,
   city,
   onPlace,
+  onLink,
 }: {
   text: string;
   city?: string; // prefixed to a place's image search, unless the search already names it
   onPlace?: (query: string) => void;
+  onLink?: (page: PopupPage) => void;
 }) {
   const parts = text.split(TOKEN);
   return (
@@ -77,8 +84,17 @@ export default function RichText({
         }
         const link = /^\[([^\]]+)\]\((https:\/\/[^)\s]+)\)$/.exec(part);
         if (link) {
+          const inApp = internalPath(link[2]);
+          if (inApp) {
+            return (
+              <Link key={i} className="link" to={inApp}>
+                {link[1]}
+              </Link>
+            );
+          }
           // A Google Images link in a blog post opens the popup too; modified clicks still open a tab.
           const imageQuery = onPlace ? googleImagesQuery(link[2]) : null;
+          const frame = !imageQuery && onLink ? framedSrc(link[2]) : null;
           return (
             <a
               key={i}
@@ -93,7 +109,13 @@ export default function RichText({
                       e.preventDefault();
                       onPlace?.(imageQuery);
                     }
-                  : undefined
+                  : frame
+                    ? (e) => {
+                        if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+                        e.preventDefault();
+                        onLink?.({ query: siteName(link[2]), src: frame, href: link[2] });
+                      }
+                    : undefined
               }
             >
               {link[1]}

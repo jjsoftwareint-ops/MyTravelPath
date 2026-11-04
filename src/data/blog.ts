@@ -93,7 +93,7 @@ export const posts: Post[] = [
       { type: 'h', text: 'Snacks and souvenirs', icon: 'convenience_store' },
       {
         type: 'p',
-        text: 'Rumi eats her [김밥](https://www.google.com/search?tbm=isch&q=%ED%86%B5%EA%B9%80%EB%B0%A5) (gimbap) whole, uncut, like a demon hunter with no time for a knife. Korean convenience stores now sell uncut rolls, and CU, the biggest chain, said sales to foreign customers jumped 185% after the film. We admire her jaw more than her sword.',
+        text: 'Rumi eats her [김밥](https://www.google.com/search?tbm=isch&q=%ED%86%B5%EA%B9%80%EB%B0%A5) (gimbap) [whole, uncut](https://www.google.com/search?tbm=isch&q=KPop%20Demon%20Hunters%20Rumi%20gimbap), like a demon hunter with no time for a knife. Korean convenience stores now sell uncut rolls, and CU, the biggest chain, said sales to foreign customers jumped 185% after the film. We admire her jaw more than her sword.',
       },
       {
         type: 'p',

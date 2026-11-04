@@ -7,7 +7,7 @@ import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
 import FollowTipDialog from "../components/FollowTipDialog";
-import ImagePopup from "../components/ImagePopup";
+import ImagePopup, { type PopupPage } from "../components/ImagePopup";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
@@ -27,16 +27,18 @@ function GuideLine({
   text,
   city,
   onPlace,
+  onLink,
 }: {
   text: string;
   city?: string;
   onPlace?: (query: string) => void;
+  onLink?: (page: PopupPage) => void;
 }) {
   const { icon, rest } = splitLeadingEmoji(text);
   return (
     <>
       {icon && <Emoji name={icon} className="guide-emoji" />}
-      <RichText text={rest} city={city} onPlace={onPlace} />
+      <RichText text={rest} city={city} onPlace={onPlace} onLink={onLink} />
     </>
   );
 }
@@ -54,8 +56,10 @@ export default function PathDetail() {
   const [mapOpen, setMapOpen] = useState(false);
   const closeMap = useCallback(() => setMapOpen(false), []);
   // A place name in "The Locations" opens its Google Images in a popup (the search words, or null).
-  const [placeQuery, setPlaceQuery] = useState<string | null>(null);
-  const closePlace = useCallback(() => setPlaceQuery(null), []);
+  // Outside links in the guide (src/framing.ts) open in the same popup.
+  const [popup, setPopup] = useState<PopupPage | null>(null);
+  const closePopup = useCallback(() => setPopup(null), []);
+  const setPlaceQuery = useCallback((query: string) => setPopup({ query }), []);
   // iPhone tip before "To follow the path", unless the visitor chose not to see it again.
   const [tipOpen, setTipOpen] = useState(false);
   const closeTip = useCallback(() => setTipOpen(false), []);
@@ -102,7 +106,7 @@ export default function PathDetail() {
         </summary>
         <div className="notice-card-body">
           <p>
-            <RichText text={n.body} />
+            <RichText text={n.body} onLink={setPopup} />
           </p>
           {n.since && <small>{n.since}</small>}
         </div>
@@ -181,7 +185,7 @@ export default function PathDetail() {
             </div>
             {path.description && (
               <p className="card-desc">
-                <RichText text={path.description} />
+                <RichText text={path.description} onLink={setPopup} />
               </p>
             )}
           </div>
@@ -358,7 +362,7 @@ export default function PathDetail() {
                       {avatar && <Emoji name={avatar} size={26} />}
                     </span>
                     <p className="talk-bubble">
-                      <RichText text={rest} />
+                      <RichText text={rest} onLink={setPopup} />
                     </p>
                   </div>
                 );
@@ -378,6 +382,7 @@ export default function PathDetail() {
                         text={step}
                         city={city.theme ? undefined : city.name.replace(/-do$/, "")}
                         onPlace={setPlaceQuery}
+                        onLink={setPopup}
                       />
                       {noticesAt(i)}
                     </li>
@@ -448,7 +453,7 @@ export default function PathDetail() {
       {mapOpen && embed && (
         <MapOverlay src={embed} title={`${path.name} map`} onClose={closeMap} />
       )}
-      {placeQuery && <ImagePopup query={placeQuery} onClose={closePlace} />}
+      {popup && <ImagePopup {...popup} onClose={closePopup} />}
     </Layout>
   );
 }
