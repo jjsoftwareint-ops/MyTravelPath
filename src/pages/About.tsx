@@ -59,9 +59,8 @@ export default function About() {
 
         <h2>How the site is funded</h2>
         <p>
-          The site is free to use. It is paid for out of pocket, voluntary
-          donations through the PayPal link on each path, and advertising that
-          may be shown on some pages. See the{" "}
+          The site is free to use. It is paid for out of pocket and by
+          advertising that may be shown on some pages. See the{" "}
           <Link className="link" to="/privacy">
             privacy policy
           </Link>{" "}

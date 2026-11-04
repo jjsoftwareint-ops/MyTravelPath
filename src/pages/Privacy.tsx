@@ -3,9 +3,9 @@ import Layout from "../components/Layout";
 import { usePageMeta } from "../seo";
 import { CONTACT_EMAIL } from "./Contact";
 
-const UPDATED = "22 October 2026";
+const UPDATED = "4 November 2026";
 
-// Privacy policy covering hosting, analytics, embedded maps, donations and
+// Privacy policy covering hosting, analytics, embedded maps and
 // advertising (Google AdSense). Update UPDATED when the text changes.
 export default function Privacy() {
   usePageMeta();
@@ -17,7 +17,7 @@ export default function Privacy() {
           My Travel Path is a static website. It has no accounts, no login and
           no database of visitors. It does not set tracking cookies of its own.
           Third parties involved in running the site (hosting, page-view
-          statistics, embedded maps, donations and advertising) may process
+          statistics, embedded maps and advertising) may process
           some data, as described below.
         </p>
 
@@ -148,22 +148,6 @@ export default function Privacy() {
           options”, and you can reopen your choices at any time through the
           small privacy settings button that Google's message leaves on the
           page.</p>
-
-        <h2>Donations</h2>
-        <p>
-          The “buy me a coffee” link opens PayPal. PayPal processes the payment
-          under its own{" "}
-          <a
-            className="link"
-            href="https://www.paypal.com/webapps/mpp/ua/privacy-full"
-            target="_blank"
-            rel="noreferrer"
-          >
-            privacy statement
-          </a>
-          ; we receive the name and e-mail address PayPal passes on with a
-          donation and use them only to thank you and for bookkeeping.
-        </p>
 
         <h2>Contact</h2>
         <p>

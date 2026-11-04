@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { FaInfoCircle } from "react-icons/fa";
-import { FaBus, FaPaypal } from "react-icons/fa6";
+import { FaBus } from "react-icons/fa6";
 import { ImInfo } from "react-icons/im";
 import { IoFootstepsSharp } from "react-icons/io5";
 import { Navigate, useLocation, useParams } from "react-router-dom";
@@ -20,9 +20,6 @@ import { emojiFile, splitLeadingEmoji } from "../emoji";
 import { browserUrl, isIOS, isPhone, NAVER_MAP_STORE } from "../platform";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
-
-// The site owner's PayPal.Me link.
-const DONATE_URL = "https://paypal.me/berlinersejin";
 
 // A guide line (intro paragraph, route step or tip) with its native leading emoji swapped for the
 // matching flat OpenMoji icon (site rule 2026-10-30: flat icons everywhere, not just the blog).
@@ -336,15 +333,6 @@ export default function PathDetail() {
                   Open in Google Maps ↗
                 </a>
               )}
-              <a
-                className="donate"
-                href={DONATE_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaPaypal aria-hidden="true" /> Would you like to buy me a{" "}
-                <Emoji name="hot_beverage" size={16} />?
-              </a>
             </>
           ) : (
             <span className="cta">Map link coming soon</span>
