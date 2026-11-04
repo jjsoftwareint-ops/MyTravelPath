@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { usePageMeta } from "../seo";
 import { CONTACT_EMAIL } from "./Contact";
 
-const UPDATED = "4 November 2026";
+const UPDATED = "5 November 2026";
 
 // Privacy policy covering hosting, analytics, embedded maps and
 // advertising (Google AdSense). Update UPDATED when the text changes.
@@ -71,7 +71,10 @@ export default function Privacy() {
         <p>
           Your light or dark theme choice is kept in your browser's local
           storage. It never leaves your device and can be cleared through your
-          browser settings.
+          browser settings. The same storage keeps the date of your last visit.
+          When you come back on a later day, GoatCounter receives one anonymous
+          “returning visitor” count, without the date or anything that
+          identifies you.
         </p>
 
         <h2>Embedded maps and external links</h2>
@@ -90,6 +93,12 @@ export default function Privacy() {
           . Links to Google Maps, Naver Map, YouTube, the App Store and Google
           Play open third-party services whose own policies apply once you
           follow them.
+        </p>
+        <p>
+          Some blog posts embed a YouTube video in YouTube's privacy-enhanced
+          mode (youtube-nocookie.com). Loading the player connects your browser
+          to Google, which receives your IP address; YouTube sets cookies only
+          once you play the video, under the same Google privacy policy.
         </p>
 
         <h2>Advertising (Google AdSense)</h2>

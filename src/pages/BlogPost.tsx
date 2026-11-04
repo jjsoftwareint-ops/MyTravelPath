@@ -121,6 +121,23 @@ function renderBlock(b: Block, i: number, from: string, onPlace: (query: string)
           <figcaption>{b.caption}</figcaption>
         </figure>
       )
+    case 'video':
+      // youtube-nocookie: YouTube sets no cookies until the reader presses play.
+      return (
+        <figure key={i} className="post-figure post-video">
+          <div className="post-video-frame">
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${b.id}`}
+              title={b.title}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+          <figcaption>{b.caption}</figcaption>
+        </figure>
+      )
     case 'route':
       return (
         <p key={i} className="post-route">

@@ -20,6 +20,7 @@ export type Block =
       credit: { author: string; license: string; licenseUrl: string }
     }
   | { type: 'photo'; src: string; alt: string; caption: string } // our own photo (file in assets/blog/), shown whole, no outside credit
+  | { type: 'video'; id: string; title: string; caption: string } // YouTube player; id = the part after youtu.be/ (no ?si= tracking)
   | { type: 'route'; cityId: string; pathId: string; text: string } // link to a walking route page
   | { type: 'ad'; slot: 'inArticle' } // a manual AdSense slot, max two per post (see AdSlot.tsx)
 
@@ -36,6 +37,90 @@ export type Post = {
 }
 
 export const posts: Post[] = [
+  {
+    id: '2026-11-05-0437',
+    title: 'KPop Demon Hunters in Seoul: the places are real, the stadium is not',
+    description:
+      'Where KPop Demon Hunters happens in real Seoul: the Naksan city wall, the Bukchon roofs, Namsan Tower, uncut gimbap and a tiger badge that sells out.',
+    teaser: 'Bring gimbap. Do not climb the roofs.',
+    icon: 'tiger_face',
+    date: '2026-11-05',
+    updated: '2026-11-05',
+    keywords: ['KoreaTravel', 'KPopDemonHunters', 'Seoul', 'NaksanPark', 'Bukchon', 'NSeoulTower', 'Gimbap'],
+    body: [
+      {
+        type: 'p',
+        text: '**KPop Demon Hunters** won two Oscars this year, and the best news for fans is that most of it happens in real Seoul. You can walk into the film for the price of a subway ride.',
+      },
+      {
+        type: 'p',
+        text: 'Not all of it is real, though. In the film, the big final concert happens in a stadium under **Namsan Tower**. The real tower has a cable car, a lot of love padlocks and no stadium. Please don\'t ask the ticket desk.',
+      },
+      {
+        type: 'img',
+        src: 'kpdh-naksan-city-wall-night.jpg',
+        alt: 'A stone city wall lit in warm yellow at night, a wide path beside it with people walking, and the lights of Seoul below a dark mountain',
+        caption: 'The wall at Naksan Park after dark. Bring someone you would sing with.',
+        href: 'https://commons.wikimedia.org/wiki/File:%EB%82%99%EC%82%B0%EA%B3%B5%EC%9B%90.jpg',
+        credit: { author: 'Shinhee Kim', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'The date course', icon: 'night_with_stars' },
+      {
+        type: 'p',
+        text: 'Rumi and Jinu\'s night talk happens on the **Seoul City Wall** at **낙산공원** (Naksan Gongwon), Naksan Park. The wall glows yellow after dark and the park never closes, so the date can run as late as yours does. Readers of a Korean newspaper voted it the film spot they most want to visit.',
+      },
+      {
+        type: 'p',
+        text: 'In **북촌** (Bukchon) they sing on the hanok rooftops. Real families live under those roofs, so admire them from the street.',
+      },
+      {
+        type: 'video',
+        id: 'fjOeJssZX_Q',
+        title: 'KPop Demon Hunters, "Free", official lyric video',
+        caption: 'Rumi and Jinu\'s duet, "Free". Video: Sony Pictures Animation on YouTube.',
+      },
+      {
+        type: 'img',
+        src: 'kpdh-bukchon-alley-namsan.jpg',
+        alt: 'A sunny Bukchon lane between traditional tiled-roof hanok houses, with Namsan Tower and the city towers in the distance',
+        caption: 'Bukchon\'s roofs, with Namsan Tower behind: two film spots in one look.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village_01.jpg',
+        credit: { author: 'Bgag', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Snacks and souvenirs', icon: 'convenience_store' },
+      {
+        type: 'p',
+        text: 'Rumi eats her [김밥](https://www.google.com/search?tbm=isch&q=%ED%86%B5%EA%B9%80%EB%B0%A5) (gimbap) whole, uncut, like a demon hunter with no time for a knife. Korean convenience stores now sell uncut rolls, and CU, the biggest chain, said sales to foreign customers jumped 185% after the film. We admire her jaw more than her sword.',
+      },
+      {
+        type: 'p',
+        text: 'Derpy the tiger and Sussie the magpie come from old folk paintings of a [까치호랑이](https://www.google.com/search?tbm=isch&q=%EA%B9%8C%EC%B9%98%ED%98%B8%EB%9E%91%EC%9D%B4) (kkachi-horangi), a tiger with a magpie. The **National Museum of Korea** sells a badge of the pair that sold out in 20 minutes last summer, with people queuing before opening. The museum is free. The badge is the real boss fight.',
+      },
+      {
+        type: 'p',
+        text: 'And Huntrix\'s stadium in Jamsil? {red:Closed for remodelling}, due to reopen in December. Even demon hunters wait for construction.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'naksan-cheonggyecheon',
+        text: 'Rumi and Jinu\'s wall on our map: the Naksan city wall at night, then down to the Cheonggyecheon stream.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'hanok-villages',
+        text: 'The Bukchon roofs on our hanok village walk, with the alley hours on the page.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: walk the wall at night, look at the roofs from the street, and eat your gimbap in as many bites as you like.',
+      },
+    ],
+  },
   {
     id: '2026-11-04-1852',
     title: 'Busan fireworks: skip the seat, bring the chicken',
