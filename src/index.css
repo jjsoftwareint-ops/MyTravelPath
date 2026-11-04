@@ -1370,61 +1370,50 @@ button.cta {
   font-size: 24px;
   color: var(--muted);
 }
-/* Above the footer on phones from the second visit: Add to Home Screen (install.ts). */
-.install-hint {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0 16px 16px;
-  padding: 10px 8px 10px 12px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--card);
-  color: var(--text);
-  font-size: 14px;
-  line-height: 1.45;
-}
-.install-hint p {
-  flex: 1;
-  margin: 0;
-}
-.install-hint-icon {
-  flex: 0 0 auto;
-  font-size: 26px;
-  color: var(--accent);
-}
-.install-hint-inline {
-  vertical-align: -3px;
-  font-size: 18px;
-  color: var(--accent);
-}
-.install-hint-button {
-  padding: 4px 10px;
-  border: 0;
-  border-radius: 999px;
-  background: var(--accent);
-  color: var(--accent-text);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-.install-hint-close {
-  flex: 0 0 36px;
-  width: 36px;
-  height: 36px;
+/* Floating "Add to Home Screen" button on path pages (InstallButton.tsx, install.ts):
+   slides up while the reader scrolls up, away while they scroll down. */
+.install-fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  z-index: 90;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: transparent;
-  color: var(--muted);
-  font-size: 22px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  opacity: 0;
+  transform: translateY(96px);
+  pointer-events: none;
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
-.install-hint-close:active {
-  background: var(--press);
+.install-fab.shown {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+.install-fab:active {
+  transform: scale(0.94);
+}
+.install-inline {
+  vertical-align: -3px;
+  font-size: 20px;
+  color: var(--accent);
+}
+.dialog-actions button.cta {
+  border: 0;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
 .blog-wrap {
   max-width: 640px;

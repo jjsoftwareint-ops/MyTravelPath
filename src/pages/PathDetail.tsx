@@ -8,6 +8,7 @@ import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
 import FollowTipDialog from "../components/FollowTipDialog";
 import ImagePopup, { type PopupPage } from "../components/ImagePopup";
+import InstallButton from "../components/InstallButton";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
@@ -454,6 +455,7 @@ export default function PathDetail() {
         <MapOverlay src={embed} title={`${path.name} map`} onClose={closeMap} />
       )}
       {popup && <ImagePopup {...popup} onClose={closePopup} />}
+      <InstallButton />
     </Layout>
   );
 }

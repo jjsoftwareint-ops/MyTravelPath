@@ -3,13 +3,11 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App'
-import { countVisit } from './install'
 import { initNewPosts } from './newPosts'
 import { normalizePath } from './seo'
 
-// Per-browser memory for the return-visit features (new-post badge, home-screen hint).
+// Per-browser memory for the new-post badge.
 initNewPosts()
-countVisit()
 
 const root = document.getElementById('root')!
 const app = (

@@ -4,7 +4,6 @@ import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
 import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
-import InstallHint from './InstallHint'
 
 type Props = {
   title: string
@@ -68,7 +67,6 @@ export default function Layout({ title, titleImage, subtitle, backTo, icon, acti
         {actions}
       </header>
       <main className="content">{children}</main>
-      <InstallHint />
       {/* Same footer on every page so the policy pages are one tap away anywhere. */}
       <footer className="footer">
         <Link to="/about">About</Link>
