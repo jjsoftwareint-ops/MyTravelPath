@@ -9,7 +9,7 @@ const dist = join(root, 'dist')
 const ssr = join(root, 'dist-ssr')
 const SITE = 'https://koreatravelpath.com'
 
-const { render, routes } = await import(pathToFileURL(join(ssr, 'entry-server.js')).href)
+const { render, routes, llmsText } = await import(pathToFileURL(join(ssr, 'entry-server.js')).href)
 const template = readFileSync(join(dist, 'index.html'), 'utf8')
 if (!template.includes('<!--app-head-->') || !template.includes('<div id="root"><!--app-html--></div>')) {
   throw new Error('dist/index.html lost its <!--app-head--> / <!--app-html--> placeholders')
@@ -56,6 +56,8 @@ const sitemap =
   list.filter((r) => r.inSitemap).map(({ path, lastmod }) => `  <url><loc>${SITE}${path}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n') +
   '\n</urlset>\n'
 writeFileSync(join(dist, 'sitemap.xml'), sitemap)
+// Plain-text site index for AI assistants (llmstxt.org), built from src/data.
+writeFileSync(join(dist, 'llms.txt'), llmsText())
 
 rmSync(ssr, { recursive: true, force: true })
-console.log(`prerendered ${list.length} routes + 404.html + sitemap.xml`)
+console.log(`prerendered ${list.length} routes + 404.html + sitemap.xml + llms.txt`)
