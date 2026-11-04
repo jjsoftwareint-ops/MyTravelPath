@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Analytics from './components/Analytics'
+import PullToRefresh from './components/PullToRefresh'
 import ScrollToTop from './components/ScrollToTop'
 import About from './pages/About'
 import Blog from './pages/Blog'
@@ -19,6 +20,7 @@ export default function App() {
     <>
       <Analytics />
       <ScrollToTop />
+      <PullToRefresh />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

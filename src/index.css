@@ -1403,6 +1403,41 @@ button.cta {
 .install-fab:active {
   transform: scale(0.94);
 }
+/* Pull-to-refresh circle, home-screen app only (PullToRefresh.tsx): drops in from under the
+   header as the reader pulls, turns blue once letting go will reload. */
+.ptr {
+  position: fixed;
+  top: calc(var(--header-h) - 44px);
+  left: 50%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 22px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transform: translate(-50%, 0);
+  pointer-events: none;
+}
+.ptr.ready {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+.ptr.spinning svg {
+  animation: ptr-spin 0.7s linear infinite;
+}
+@keyframes ptr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .install-inline {
   vertical-align: -3px;
   font-size: 20px;

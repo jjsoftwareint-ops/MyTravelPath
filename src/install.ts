@@ -32,7 +32,8 @@ export function hideInstallHint() {
   listeners.forEach((fn) => fn())
 }
 
-function isStandalone(): boolean {
+/** True when the site runs as the home-screen app (no browser bar, so no reload button). */
+export function isStandalone(): boolean {
   return (
     window.matchMedia('(display-mode: standalone)').matches ||
     (navigator as Navigator & { standalone?: boolean }).standalone === true
