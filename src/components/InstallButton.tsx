@@ -3,7 +3,7 @@ import { IoShareOutline } from 'react-icons/io5'
 import { MdAddToHomeScreen, MdMoreVert } from 'react-icons/md'
 import { hideInstallHint, promptInstall, useInstallHint } from '../install'
 
-// Round floating button on path pages: slides in while the reader scrolls up, out while they
+// Round floating button on path and blog pages: slides in while the reader scrolls up, out while they
 // scroll down. Android with Chrome's install sheet: one tap installs. Otherwise a small dialog
 // says where the browser's own "Add to Home Screen" is.
 export default function InstallButton() {

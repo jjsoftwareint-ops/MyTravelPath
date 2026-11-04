@@ -3,6 +3,7 @@ import { Navigate, useLocation, useParams } from 'react-router-dom'
 import Link from '../components/Link'
 import AdSlot from '../components/AdSlot'
 import ImagePopup, { type PopupPage } from '../components/ImagePopup'
+import InstallButton from '../components/InstallButton'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import RichText from '../components/RichText'
@@ -227,6 +228,7 @@ export default function BlogPost() {
         <p className="emoji-credit">Emoji: OpenMoji (CC BY-SA 4.0)</p>
       </section>
       {popup && <ImagePopup {...popup} onClose={closePopup} />}
+      <InstallButton />
     </Layout>
   )
 }

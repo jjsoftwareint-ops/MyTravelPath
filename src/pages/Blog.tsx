@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import InstallButton from '../components/InstallButton'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import { blogUpdated } from '../data/blog'
@@ -27,6 +28,7 @@ export default function Blog() {
         <PostList />
         <p className="emoji-credit">Emoji: OpenMoji (CC BY-SA 4.0)</p>
       </div>
+      <InstallButton />
     </Layout>
   )
 }
