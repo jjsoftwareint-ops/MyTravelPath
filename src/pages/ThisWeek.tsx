@@ -4,7 +4,7 @@ import Link from '../components/Link'
 import RichText from '../components/RichText'
 import ShareLink from '../components/ShareLink'
 import { cities } from '../data/travel'
-import { thisWeek, type WeekEvent } from '../data/thisWeek'
+import { liveWeek, thisWeek, todayInSeoul, type WeekEvent } from '../data/thisWeek'
 import { useHydrated } from '../hooks'
 import { formatDate } from '../dates'
 import { usePageMeta } from '../seo'
@@ -58,7 +58,8 @@ function EventCard({ e }: { e: WeekEvent }) {
 // Weekly events page: this week and next, a few things that run all through, and a heads-up.
 // Refreshed by hand every week (src/data/thisWeek.ts, .claude/skills/thisweek/SKILL.md).
 // /this-week/?city=busan shows one city's events (the calendar on each home-page city card links there).
-// The filter is applied after hydration only, so the pre-rendered page always shows everything.
+// The city filter and the "finished events drop out" rule (each card's `ends`) are applied after hydration
+// only, so the pre-rendered page always shows everything.
 export default function ThisWeek() {
   usePageMeta()
   const hydrated = useHydrated()
@@ -68,11 +69,12 @@ export default function ThisWeek() {
   const city = hydrated ? filterCities.find((c) => c.id === wanted) : undefined
   const keep = (e: WeekEvent) => !city || e.cityId === city.id
 
-  const weeks = thisWeek.weeks
+  const live = liveWeek(hydrated ? todayInSeoul() : undefined)
+  const weeks = live.weeks
     .map((w) => ({ ...w, events: w.events.filter(keep) }))
     .filter((w) => w.events.length > 0)
-  const ongoing = thisWeek.ongoing.filter(keep)
-  const comingUp = thisWeek.comingUp.filter((c) => !city || !c.cityId || c.cityId === city.id)
+  const ongoing = live.ongoing.filter(keep)
+  const comingUp = live.comingUp.filter((c) => !city || !c.cityId || c.cityId === city.id)
 
   const heading = `Events in ${city ? city.name : 'Korea'}`
 

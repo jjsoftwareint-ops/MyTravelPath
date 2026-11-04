@@ -10,8 +10,9 @@ import NewPosts from "../components/NewPosts";
 import VisitorCount from "../components/VisitorCount";
 import WeekCard from "../components/WeekCard";
 import { cities, hasMap } from "../data/travel";
-import { eventCount } from "../data/thisWeek";
+import { eventCount, todayInSeoul } from "../data/thisWeek";
 import { FaCalendarDays } from "react-icons/fa6";
+import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
 // The expanded city lives in the URL (/:cityId) so that coming back from a
@@ -20,6 +21,10 @@ export default function Home() {
   const { cityId } = useParams();
   usePageMeta();
   const [mapOpen, setMapOpen] = useState(false);
+  // Event counts on the city cards: finished events drop out by date once hydrated.
+  const hydrated = useHydrated();
+  const today = hydrated ? todayInSeoul() : undefined;
+  const events = (cityId: string) => eventCount(cityId, today);
 
   useEffect(() => {
     if (!mapOpen) return;
@@ -82,16 +87,16 @@ export default function Home() {
                   to={`/this-week/?city=${city.id}`}
                   className="city-events"
                   aria-label={
-                    eventCount(city.id) > 0
-                      ? `Events in ${city.name}: ${eventCount(city.id)}`
+                    events(city.id) > 0
+                      ? `Events in ${city.name}: ${events(city.id)}`
                       : `Events in ${city.name}`
                   }
                   title={`Events in ${city.name}`}
                 >
                   <FaCalendarDays aria-hidden="true" />
-                  {eventCount(city.id) > 0 && (
+                  {events(city.id) > 0 && (
                     <span className="city-events-count" aria-hidden="true">
-                      {eventCount(city.id)}
+                      {events(city.id)}
                     </span>
                   )}
                 </Link>

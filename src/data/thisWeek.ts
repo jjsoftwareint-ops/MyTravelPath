@@ -4,6 +4,7 @@
 
 export type WeekEvent = {
   id: string // lowercase-hyphen, unique on the page
+  ends: string // YYYY-MM-DD, the last day a visitor can still go (inclusive). After it the card disappears by itself.
   title: string
   city: string // pill on the card: Seoul, Busan, Jeju, ...
   cityId?: string // city card on the home page that shows this event (id in travel.ts); none = only on /this-week/
@@ -19,26 +20,47 @@ export type WeekEvent = {
 
 export type Week = {
   range: string // "Nov 3rd(Tue) ~ 8th(Sun)"; across a month end "Nov 30th(Mon) ~ Dec 6th(Sun)"
+  ends: string // YYYY-MM-DD, the week's Sunday. After it the heading goes and its still-running events move to "All through".
   events: WeekEvent[]
 }
 
 export type ThisWeek = {
   updated: string // YYYY-MM-DD, the day the page was last refreshed (shown as Updated, and the sitemap lastmod)
-  headline: string // id of the event the home-page card names; the one most readers should not miss
+  headline?: string // optional: id of the event the home-page card names while it is still on. Normally omitted: the first event still running is named.
   weeks: Week[] // this week first, then next week
   ongoing: WeekEvent[] // runs through both weeks
-  comingUp: { when: string; text: string; cityId?: string }[] // dated heads-ups just after the period; no cityId = nationwide, shown for every city
+  comingUp: { when: string; ends: string; text: string; cityId?: string }[] // dated heads-ups just after the period; no cityId = nationwide, shown for every city; `ends` = last day to show it
 }
 
 export const thisWeek: ThisWeek = {
   updated: '2026-11-03',
-  headline: 'busan-fireworks-festival',
   weeks: [
     {
       range: 'Nov 3rd(Tue) ~ 8th(Sun)',
+      ends: '2026-11-08',
       events: [
         {
+          id: 'busan-fireworks-festival',
+          ends: '2026-11-07',
+          title: 'Busan Fireworks Festival',
+          city: 'Busan',
+          cityId: 'busan',
+          when: 'Sat 7 Nov · show 19:00 to 20:00',
+          where: 'Gwangalli Beach, over the Gwangan Bridge',
+          price: 'Free on the beach, reserved seats ₩70,000 to ₩100,000',
+          text: 'The big one: a one-hour fireworks and laser show over the lit bridge.',
+          todo: [
+            'Come in the afternoon: events on the beach start at 14:00, and entry to the paid seats opens at 15:00 and **closes at 18:00**.',
+            'From 19:00: a guest fireworks show from China (15 minutes), Busan\'s own multi-fireworks show (30 minutes), then a 5-minute finale.',
+            'Watch from the free beach, or from a reserved seat: R with table and chair ₩100,000, S with chair ₩70,000. Seats are sold in advance.',
+          ],
+          tip: '🚇 **Gwangan Station** (line 2). Afterwards the station is crushed, so walk on to the next one.',
+          href: { label: 'Seat tickets ↗', url: 'https://nol.yanolja.com/ticket/products/26009342' },
+          routes: [{ cityId: 'busan', pathId: 'villages-and-hotspots', text: 'Gwangalli night walk and Busan highlights' }],
+        },
+        {
           id: 'autumn-colours-now',
+          ends: '2026-11-15',
           title: 'Autumn colours are at their best',
           city: 'Seoul',
           cityId: 'seoul',
@@ -58,6 +80,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'icnx-incheon',
+          ends: '2026-11-04',
           title: 'ICNX media and content conference',
           city: 'Incheon',
           cityId: 'incheon',
@@ -74,6 +97,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'nowon-moonlight-walk',
+          ends: '2026-11-08',
           title: 'Nowon Moonlight Walk',
           city: 'Seoul',
           cityId: 'seoul',
@@ -92,6 +116,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'jeju-olle-walking-festival',
+          ends: '2026-11-07',
           title: 'Jeju Olle Walking Festival',
           city: 'Jeju',
           cityId: 'jeju',
@@ -108,6 +133,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'seoul-plaza-evening-market',
+          ends: '2026-11-06',
           title: 'Seoul Plaza Evening Market',
           city: 'Seoul',
           cityId: 'seoul',
@@ -124,6 +150,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'shinsegae-christmas-facade',
+          ends: '2026-12-25',
           title: 'Shinsegae Christmas media facade',
           city: 'Seoul',
           cityId: 'seoul',
@@ -137,31 +164,15 @@ export const thisWeek: ThisWeek = {
           ],
           tip: '🚇 **Hoehyeon Station** (line 4).',
         },
-        {
-          id: 'busan-fireworks-festival',
-          title: 'Busan Fireworks Festival',
-          city: 'Busan',
-          cityId: 'busan',
-          when: 'Sat 7 Nov · show 19:00 to 20:00',
-          where: 'Gwangalli Beach, over the Gwangan Bridge',
-          price: 'Free on the beach, reserved seats ₩70,000 to ₩100,000',
-          text: 'The big one: a one-hour fireworks and laser show over the lit bridge.',
-          todo: [
-            'Come in the afternoon: events on the beach start at 14:00, and entry to the paid seats opens at 15:00 and **closes at 18:00**.',
-            'From 19:00: a guest fireworks show from China (15 minutes), Busan\'s own multi-fireworks show (30 minutes), then a 5-minute finale.',
-            'Watch from the free beach, or from a reserved seat: R with table and chair ₩100,000, S with chair ₩70,000. Seats are sold in advance.',
-          ],
-          tip: '🚇 **Gwangan Station** (line 2). Afterwards the station is crushed, so walk on to the next one.',
-          href: { label: 'Seat tickets ↗', url: 'https://nol.yanolja.com/ticket/products/26009342' },
-          routes: [{ cityId: 'busan', pathId: 'villages-and-hotspots', text: 'Gwangalli night walk and Busan highlights' }],
-        },
       ],
     },
     {
       range: 'Nov 9th(Mon) ~ 15th(Sun)',
+      ends: '2026-11-15',
       events: [
         {
           id: 'seoul-cafe-show',
+          ends: '2026-11-14',
           title: 'Seoul Cafe Show',
           city: 'Seoul',
           cityId: 'seoul',
@@ -178,6 +189,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'jeju-biennale-last-days',
+          ends: '2026-11-15',
           title: 'Jeju Biennale: last days',
           city: 'Jeju',
           cityId: 'jeju',
@@ -194,6 +206,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'gwangju-biennale-last-days',
+          ends: '2026-11-15',
           title: 'Gwangju Biennale: last days',
           city: 'Gwangju',
           when: 'Until Sun 15 Nov',
@@ -212,6 +225,7 @@ export const thisWeek: ThisWeek = {
   ongoing: [
     {
       id: 'namsan-night-festival',
+      ends: '2026-11-14',
       title: 'Namsan Night Festival',
       city: 'Seoul',
       cityId: 'seoul',
@@ -229,6 +243,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'seoul-autumn-festa',
+      ends: '2026-11-29',
       title: 'Seoul Autumn Festa',
       city: 'Seoul',
       cityId: 'seoul',
@@ -244,6 +259,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'gwangalli-drone-show',
+      ends: '2027-06-30',
       title: 'Gwangalli drone show, every Saturday',
       city: 'Busan',
       cityId: 'busan',
@@ -260,6 +276,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'hwadam-forest-autumn',
+      ends: '2026-11-15',
       title: 'Hwadam Forest autumn season',
       city: 'Gyeonggi-do',
       cityId: 'gyeonggi-do',
@@ -277,6 +294,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'unjeong-light-garden',
+      ends: '2026-12-31',
       title: 'Unjeong Lake Park light garden',
       city: 'Gyeonggi-do',
       cityId: 'gyeonggi-do',
@@ -293,27 +311,61 @@ export const thisWeek: ThisWeek = {
   comingUp: [
     {
       when: 'Thu 19 Nov',
+      ends: '2026-11-19',
       text: '**CSAT, the national university exam.** Extra subway trains run in the morning, many offices start at 10:00, and flights pause during the English listening test. Plan around the morning rush.',
     },
     {
       when: 'From Fri 11 Dec',
+      ends: '2026-12-10',
       cityId: 'seoul',
       text: 'The **Seoul Lantern Festival** lights the Cheonggyecheon stream every evening until 31 Jan.',
     },
   ],
 }
 
-/** The event the home-page card names. */
-export const weekHeadline = () => allEvents().find((e) => e.id === thisWeek.headline)
+// ── Finished events drop out by themselves ──────────────────────────────────────────────
+// Every helper takes `today` (YYYY-MM-DD in Seoul). Without it they return the whole file, which is what the
+// pre-rendered HTML and the first client render show; pages pass todayInSeoul() once hydrated (useHydrated),
+// so the visitor's own date decides what is still on. New events still need the weekly refresh.
 
-/** Every event on the page, ongoing ones included. */
-export const allEvents = () => [...thisWeek.weeks.flatMap((w) => w.events), ...thisWeek.ongoing]
+/** Today's date in Seoul as YYYY-MM-DD. Call it only after hydration. */
+export const todayInSeoul = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Seoul' })
 
-/** Number of events on the page, for the count on the home-page card. */
-export const weekCount = () => allEvents().length
+const stillOn = (ends: string, today?: string) => !today || ends >= today
 
-/** How many events the page lists for one city card on the home page. */
-export const eventCount = (cityId: string) => allEvents().filter((e) => e.cityId === cityId).length
+/** The page as a visitor sees it on `today`: finished events gone, a past week's still-running events moved to
+ *  "All through", finished heads-ups gone. */
+export function liveWeek(today?: string) {
+  const weeks: Week[] = []
+  const rolled: WeekEvent[] = []
+  for (const w of thisWeek.weeks) {
+    const events = w.events.filter((e) => stillOn(e.ends, today))
+    if (!events.length) continue
+    if (stillOn(w.ends, today)) weeks.push({ ...w, events })
+    else rolled.push(...events)
+  }
+  const ongoing = [...rolled, ...thisWeek.ongoing.filter((e) => stillOn(e.ends, today))]
+  const comingUp = thisWeek.comingUp.filter((c) => stillOn(c.ends, today))
+  return { weeks, ongoing, comingUp }
+}
 
-/** City ids that have at least one event, in the order the filter chips show them. */
-export const eventCityIds = () => [...new Set(allEvents().map((e) => e.cityId).filter((id): id is string => !!id))]
+/** Every event still on, dated weeks first, then ongoing. */
+export const allEvents = (today?: string) => {
+  const v = liveWeek(today)
+  return [...v.weeks.flatMap((w) => w.events), ...v.ongoing]
+}
+
+/** The event the home-page card names: the chosen `headline` while it is still on, otherwise the first event still on. */
+export const weekHeadline = (today?: string) => {
+  const all = allEvents(today)
+  return (thisWeek.headline && all.find((e) => e.id === thisWeek.headline)) || all[0]
+}
+
+/** Number of events still on, for the count on the home-page card. */
+export const weekCount = (today?: string) => allEvents(today).length
+
+/** How many events still on the page belong to one city card on the home page. */
+export const eventCount = (cityId: string, today?: string) => allEvents(today).filter((e) => e.cityId === cityId).length
+
+/** City ids that have at least one event still on, in the order the filter chips show them. */
+export const eventCityIds = (today?: string) => [...new Set(allEvents(today).map((e) => e.cityId).filter((id): id is string => !!id))]
