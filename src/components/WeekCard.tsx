@@ -11,7 +11,9 @@ export default function WeekCard() {
     <Link to="/this-week/" className="new-posts week-card">
       <FaCalendarDays className="new-posts-icon" aria-hidden="true" />
       <span className="new-posts-text">
-        <span className="new-posts-label">Events this week · {thisWeek.weeks[0].range}</span>
+        <span className="new-posts-label">
+          Events this week · <span className="as-written">{thisWeek.weeks[0].range}</span>
+        </span>
         <strong>
           {first.title}, {first.when.split(' · ')[0]}
         </strong>

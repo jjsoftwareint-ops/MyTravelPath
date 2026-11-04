@@ -18,7 +18,7 @@ export type WeekEvent = {
 }
 
 export type Week = {
-  range: string // "Tue 3 to Sun 8 Nov"
+  range: string // "Nov 3rd(Tue) ~ 8th(Sun)"; across a month end "Nov 30th(Mon) ~ Dec 6th(Sun)"
   events: WeekEvent[]
 }
 
@@ -35,7 +35,7 @@ export const thisWeek: ThisWeek = {
   headline: 'busan-fireworks-festival',
   weeks: [
     {
-      range: 'Tue 3 to Sun 8 Nov',
+      range: 'Nov 3rd(Tue) ~ 8th(Sun)',
       events: [
         {
           id: 'autumn-colours-now',
@@ -158,7 +158,7 @@ export const thisWeek: ThisWeek = {
       ],
     },
     {
-      range: 'Mon 9 to Sun 15 Nov',
+      range: 'Nov 9th(Mon) ~ 15th(Sun)',
       events: [
         {
           id: 'seoul-cafe-show',

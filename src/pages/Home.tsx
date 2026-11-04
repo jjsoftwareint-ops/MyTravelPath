@@ -37,11 +37,12 @@ export default function Home() {
       icon={<BrandMark />}
       showBlog
     >
-      <div className="notice">
-        <GrAnnounce className="notice-icon announce" aria-hidden="true" />
-        <ul className="notice-list">
-          <li>Restaurant, café and event information is regularly updated.</li>
-        </ul>
+      {/* Same container as the Events this week card below, but plain text: nothing to open. */}
+      <div className="new-posts static">
+        <GrAnnounce className="new-posts-icon" aria-hidden="true" />
+        <span className="new-posts-text">
+          Restaurant, café and event information is regularly updated.
+        </span>
       </div>
 
       <WeekCard />
