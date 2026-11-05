@@ -2268,7 +2268,7 @@ export const cities: City[] = [
     id: 'theme',
     name: 'Theme',
     intro: [
-      "Three collections that cross the country instead of staying in one city: **K-Drama shooting spots**, **Abroad in Korea**, the foreign-style villages and districts, and the **BTS Army Tour** of music-video, show and hometown places.",
+      "Four collections that cross the country instead of staying in one city: **K-Drama shooting spots**, **Abroad in Korea**, the foreign-style villages and districts, the **BTS Army Tour** of music-video, show and hometown places, and **Seoul & Gyeonggi Cafes**.",
     ],
     theme: true,
     image: 'theme.jpg',
@@ -2483,6 +2483,14 @@ export const cities: City[] = [
             "🔗 Gyeongbokgung is on our Hanok Villages walk, Gamcheon on the Busan Culture Villages path, and Daejanggeum Park and Heyri are on the K-Drama map.",
           ],
         },
+      },
+      {
+        id: 'seoul-gyeonggi-cafes',
+        name: 'Seoul & Gyeonggi Cafes',
+        updated: '2026-11-05',
+        image: 'seoul-gyeonggi-cafes.jpg',
+        imageWhole: true,
+        mapUrl: 'REPLACE_ME',
       },
     ],
   },
