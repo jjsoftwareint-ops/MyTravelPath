@@ -365,9 +365,9 @@ export const cities: City[] = [
         name: 'Cherry Blossom walk',
         seoTitle: 'Seoul cherry blossom walks: 4 routes for April',
         seoDescription:
-          'Four cherry blossom walks in Seoul for early April: Dorimcheon and Anyangcheon, Yeouido Yunjung-ro, Seokchon Lake and more. Free map with blossom pins.',
+          'Four cherry blossom walks in Seoul for early April: Dorimcheon and Anyangcheon, Yeouido Yunjung-ro, Seokchon Lake and more. Free map with blossom, food and café pins.',
         duration: '2–3h each',
-        updated: '2026-10-31',
+        updated: '2026-11-05',
         whyVisit: [
           "Ten days in early April when Seoul turns pink, and these are the four walks locals use, not the one everyone queues for.",
           "**The blossom tunnel the locals walk**, along the Anyangcheon stream from Sindorim to Gocheok Bridge, and Yeouido's 1,800 trees for the one time you want the crowd.",
@@ -413,6 +413,7 @@ export const cities: City[] = [
           tips: [
             "⏰ Go early morning or after dark. Yunjung-ro and Seokchon Lake are lit at night and **far less crowded before 9 am**.",
             "📍 Dorimcheon and Anyangcheon are the least busy; bring a picnic, there are few shops on the embankment.",
+            "🍜 Food on the way: Namsan's pork-cutlet street, with [[101beonji Namsan Donkatsu|서울 101번지남산돈까스]], is just below the library end, and Songridan-gil beside Seokchon Lake is packed with restaurants and cafés. On Yunjung-ro, [[Gangbyeon Seojae|서울 국회 강변서재]] is a book café with a river view, {red:closed on Sundays}.",
             "🔗 From Namsan Library, Myeongdong Station is 15 min downhill, and the Haebangchon walk on this site ends nearby if you want an evening extension.",
             "🌸 Timing varies by a week or two each year; check the national blossom forecast published in March before fixing a date.",
           ],
@@ -687,9 +688,9 @@ export const cities: City[] = [
         name: 'Indoors Trip',
         seoTitle: 'Seoul rainy day: indoor places on one map',
         seoDescription:
-          'What to do in Seoul when it rains or freezes: a botanic-park greenhouse, malls, museums, the Han River Bus and a jjimjilbang. Cafés checked, map included.',
+          'What to do in Seoul when it rains or freezes: a botanic-park greenhouse, malls, museums, the Han River Bus and a jjimjilbang. Cafés and restaurants checked, map included.',
         duration: 'Full day',
-        updated: '2026-10-31',
+        updated: '2026-11-05',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
         whyVisit: [
           "A rainy day in Seoul with **a greenhouse in the middle of the city, eight big museums and a sauna in the woods** on the same map.",
@@ -743,6 +744,7 @@ export const cities: City[] = [
             "🎟️ The permanent exhibitions at the National Museum of Korea, the War Memorial of Korea, the National Folk Museum, the Seoul Museum of History and the National Palace Museum are free. Leeum and MMCA Seoul charge by exhibition, so check Naver Map before you go.",
             "⏰ Late nights: on Wednesday and Saturday the National Museum of Korea, the National Palace Museum, MMCA Seoul and the Contemporary History museum stay open until 21:00, and the Folk Museum until 20:00 on Wednesday. The Seoul Museum of History is open until 21:00 on most days but closes at 18:00 on Thursday. All from Naver Map, 24 October 2026.",
             "🍜 Bogyeong Sujebi has a wait at weekday lunch, and the Tardema Bakery Magoknaru branch is mostly takeaway.",
+            "🍲 Lunch between museums: near Gyeongbokgung, [[Tosokchon|서울 토속촌삼계탕]] for ginseng chicken soup or [[Gwanghwamun Mijin|서울 광화문미진]] for cold buckwheat noodles, both with long lunch queues. At the National Museum of Korea, [[Gyeongcheonsa-tap Dure|서울 국립중앙박물관 경천사탑 두레]] serves Korean set meals inside the building.",
             "🚤 The Han River Bus cost ₩3,000 one way at the time of writing, and the city has proposed higher weekend fares from next year. Its timetable has changed several times, so use the operator's current schedule, not an old one.",
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Forest Herbal Land is open from 06:30 to 22:00 every day (Naver Map, 24 October 2026), but a 2025 write-up gives 08:00 to 21:00 for its charcoal kilns, so check before you go. Write-ups from 2025 list about ₩16,000 to ₩17,000 for the charcoal kilns and ₩10,000 to ₩11,000 for the bath alone; prices change, so confirm them and what to bring on its Naver Map page.",
             "📍 Seonungak is a hanok café at the foot of Bukhansan in Ui-dong, far from Magok. It is a good wet-day stop after the Bukhansan Dulle-gil walk on this site, which starts in Ui-dong too. Naver lists it as {red:closed on Sundays}, and autumn-leaf season brings queues.",
