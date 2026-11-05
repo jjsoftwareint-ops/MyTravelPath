@@ -38,6 +38,75 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-06-0547',
+    title: 'Is Daiso skincare in Korea actually good?',
+    description:
+      'Is Daiso skincare in Korea any good? Some of it. How to spot the trusted K-beauty brands that make Daiso-only lines, and where to shop them.',
+    teaser: "Some of it. Here's how to tell.",
+    icon: 'lipstick',
+    date: '2026-11-06',
+    updated: '2026-11-06',
+    keywords: ['KoreaTravel', 'KBeauty', 'Daiso', 'KoreanSkincare', 'SeoulShopping', 'Myeongdong'],
+    body: [
+      {
+        type: 'p',
+        text: "Back home, a one-euro shop is where you buy batteries and birthday candles. Not face cream. In Korea, people happily buy skincare at **Daiso** (다이소), and nobody finds it strange.",
+      },
+      {
+        type: 'p',
+        text: "So, is it actually any good? Honest answer: some of it. Some of it is just cheap.",
+      },
+      {
+        type: 'img',
+        src: 'daiso-gunja.jpg',
+        alt: 'A Daiso shop front in Seoul with a red logo and a red and white striped awning',
+        caption: 'A Daiso branch by Gunja Station, Seoul.',
+        href: 'https://commons.wikimedia.org/wiki/File:Daiso_Gunja-yeok_branch_20180914_104416.jpg',
+        credit: { author: 'LERK', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'lotion_bottle', text: 'Look for names you know' },
+      {
+        type: 'p',
+        text: "Here's the trick. Every so often a brand Korea already trusts makes a little line just for Daiso, and those are the ones worth a look.",
+      },
+      {
+        type: 'p',
+        text: "VT started the craze with [Reedle Shot](https://www.google.com/search?tbm=isch&q=%EB%8B%A4%EC%9D%B4%EC%86%8C%20%EB%A6%AC%EB%93%A4%EC%83%B7), the ampoule sticks that make your skin tingle. VT said the Daiso version keeps **the same key ingredient** as its full-size bottle, just smaller and mixed a bit differently. People went from branch to branch hunting for it for months.",
+      },
+      {
+        type: 'p',
+        text: "Since then the shelf keeps surprising us: **Mamonde** from Amorepacific, **AHC**, **LG H&H**, **Tony Moly**, **Nature Republic**, Aekyung's **Luna** make-up, even the make-up artist **Jung Saem Mool**. Who is there changes, so half the fun is seeing who's new.",
+      },
+      {
+        type: 'p',
+        text: "And the no-name jars? A Daiso official told reporters that most of its cosmetics come from big Korean labs like **Kolmar Korea** and **Cosmax**. We'd still treat a mystery jar like a blind date. Could be lovely. Could be a waste of an evening.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'shopping_bags', text: 'Before you fill the basket' },
+      {
+        type: 'list',
+        items: [
+          'The biggest Daiso is by **Myeongdong Station**: 12 floors, tax refund on site and staff who speak several languages. The queue for the lift is part of the experience.',
+          '**Hongdae** has another big one near Hongik University Station, handy if you stay on that side of town.',
+          'Almost nothing costs more than 5,000 won, so bring your passport for the tax refund once your basket adds up. [Our Olive Young post](https://koreatravelpath.com/blog/2026-11-01-2013/) explains how it works.',
+          "The famous ones sell out. Not on the shelf? Try the next branch; about 1,600 Daiso shops have a beauty corner.",
+          'Patch-test anything tingly first if your skin is fussy.',
+        ],
+      },
+      { type: 'space' },
+      {
+        type: 'verdict',
+        text: "**Our verdict:** go for the names you know, flip the box over to read the label, and leave the mystery jars for another day. A nice way to try a K-beauty trend before you buy the full bottle.",
+      },
+      {
+        type: 'p',
+        text: 'Which brand would make you stop at the Daiso shelf? Tell us on the Contact page.',
+      },
+    ],
+  },
+  {
     id: '2026-11-05-1817',
     title: 'Why Seoul\'s plain alleys look prettier than its palaces',
     description:
@@ -2082,9 +2151,14 @@ export const posts: Post[] = [
       },
       { type: 'h', icon: 'musical_note', text: 'Hear her' },
       {
+        type: 'video',
+        id: 'Zbo7UY8dxh8',
+        title: 'Song So-hee, Not a Dream (live)',
+        caption: 'Not a Dream, live. A clip of this song reportedly passed 13 million views before it was even released; it came out properly in March 2025. Video: Song So-hee on YouTube.',
+      },
+      {
         type: 'list',
         items: [
-          '[Not a Dream](https://youtu.be/Zbo7UY8dxh8): a live clip of this song, before it was even released, reportedly passed 13 million views. It came out properly in March 2025.',
           '[함바칼레](https://youtu.be/YENUe7tTa9k) (Hamba Kahle): the title song of her EP Re:5, which she performed at a big indoor festival this year.',
           '[설화](https://youtu.be/2Cvdk4DzjI0) (seolhwa): her fresh take on the folk song Miryang Arirang, from 2019.',
         ],
