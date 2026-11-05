@@ -38,6 +38,88 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-05-1817',
+    title: 'Why Seoul\'s plain alleys look prettier than its palaces',
+    description:
+      'Why plain Seoul alleys of red brick, wires and chili-pepper pots charm visitors more than the palaces, and where to see them before they go.',
+    teaser: 'Nobody sells tickets for the best view in Seoul.',
+    icon: 'houses',
+    date: '2026-11-05',
+    updated: '2026-11-05',
+    keywords: ['KoreaTravel', 'Seoul', 'SeoulAlleys', 'Haebangchon', 'HuamDong', 'RedBrick'],
+    body: [
+      {
+        type: 'p',
+        text: 'Visitors keep saying it, and we agree: the most Korean thing in Seoul is not a palace. It\'s a plain uphill **골목** (golmok), an alley, with red brick houses, a tangle of wires and a scooter parked by a door.',
+      },
+      {
+        type: 'p',
+        text: 'Koreans walk past these alleys every day without looking up. That\'s the charm. Nobody built them for you.',
+      },
+      {
+        type: 'img',
+        src: 'alleys-haebangchon-uphill.jpg',
+        alt: 'A narrow uphill lane between red brick and white houses, with utility poles, a web of overhead wires and blue street signs under a bright sky',
+        caption: 'An ordinary uphill lane in Haebangchon. Try counting the wires.',
+        href: 'https://commons.wikimedia.org/wiki/File:Haebangchon_itaewon_alley.jpg',
+        credit: { author: 'Sgroey', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'Red brick, flat roofs', icon: 'brick' },
+      {
+        type: 'p',
+        text: 'Europe has red brick too, but not with flat roofs on top. Here the roof is flat, and it gets used: laundry, a chair for the evening, a row of pots.',
+      },
+      {
+        type: 'img',
+        src: 'alleys-huam-dong-rooftops.jpg',
+        alt: 'A hillside of low red brick houses with flat rooftops, laundry and potted plants, stretching to apartment blocks in the haze',
+        caption: 'Red brick houses stacked up the slope in Huam-dong, below Namsan.',
+        href: 'https://commons.wikimedia.org/wiki/File:Huam-Dong,_Seoul,_South_Korea.jpg',
+        credit: { author: 'Doug Sun Beams', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0' },
+      },
+      {
+        type: 'p',
+        text: 'Look down, too. Chili peppers and lettuce grow in old [styrofoam boxes](https://www.google.com/search?tbm=isch&q=%EC%8A%A4%ED%8B%B0%EB%A1%9C%ED%8F%BC%20%ED%85%83%EB%B0%AD%20%EA%B3%A8%EB%AA%A9) and red [고무대야](https://www.google.com/search?tbm=isch&q=%EA%B3%A0%EB%AC%B4%EB%8C%80%EC%95%BC%20%ED%85%83%EB%B0%AD) (gomu daeya), rubber basins. Round mirrors hang at blind corners so cars and grandmas see each other coming.',
+      },
+      {
+        type: 'p',
+        text: 'At night the alleys stay lit, which surprises visitors from cities where back streets feel risky. One night photo of a plain alley got more than 400,000 likes.',
+      },
+      {
+        type: 'p',
+        text: 'The alley is a K-drama star, too. **Reply 1988** is set in one lane in Ssangmun-dong, and its sweetest night has no couple in it: Deok-sun\'s dad surprises her with a birthday cake of her own.',
+      },
+      {
+        type: 'video',
+        id: 'm9dyMTm-NHk',
+        title: 'Reply 1988, Deok-sun\'s birthday cake from her dad',
+        caption: 'Deok-sun\'s dad and a cake of her own. Video: Reply 1988 (tvN), uploaded by Mez\'s Fav on YouTube.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Go before they\'re gone', icon: 'person_walking' },
+      {
+        type: 'p',
+        text: 'Here\'s the bittersweet part. Many of these hills are waiting for **redevelopment**, and when it comes, the brick houses make way for apartment towers. Each one takes its rooftop garden with it.',
+      },
+      {
+        type: 'p',
+        text: 'Real families live here, so keep your voice low and your camera away from windows. Our favourite hill is **해방촌** (Haebangchon), with **후암동** (Huam-dong) right next door.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'haebangchon-evening',
+        text: 'Our Haebangchon evening walk: the 108 Stairs, the market alleys and rooftop-level views over Yongsan.',
+      },
+      {
+        type: 'verdict',
+        text: 'Skip one palace and give an hour to a plain alley. It\'s the most Korean view in Seoul, and it\'s free.',
+      },
+    ],
+  },
+  {
     id: '2026-11-05-0437',
     title: 'KPop Demon Hunters in Seoul: the places are real, the stadium is not',
     description:
