@@ -1,3 +1,4 @@
+import { IoBookOutline } from 'react-icons/io5'
 import Link from './Link'
 import { postsByMonth } from '../data/blog'
 import { formatMonth } from '../dates'
@@ -22,7 +23,9 @@ export default function PostList({ currentId }: { currentId?: string }) {
                   <strong>{p.title}</strong>
                   <span>{p.teaser}</span>
                   <span className="post-list-tags">{p.keywords.map((k) => `#${k}`).join(' ')}</span>
-                  {p.id === lastRead && p.id !== currentId && <em className="pill">📖 Continue reading</em>}
+                  {p.id === lastRead && p.id !== currentId && <em className="pill">
+                      <IoBookOutline aria-hidden="true" /> Continue reading
+                    </em>}
                   {fresh.includes(p) && p.id !== currentId && <em className="pill new">New</em>}
                 </Link>
               </li>
