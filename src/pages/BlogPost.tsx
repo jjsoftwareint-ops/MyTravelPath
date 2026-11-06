@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState, type MouseEvent } from 'react'
 import { Navigate, useLocation, useParams } from 'react-router-dom'
 import Link from '../components/Link'
 import AdSlot from '../components/AdSlot'
@@ -10,8 +10,21 @@ import RichText from '../components/RichText'
 import ShareLink from '../components/ShareLink'
 import { findPost, neighbours, type Block } from '../data/blog'
 import { formatDate } from '../dates'
+import { framedSrc, siteName } from '../framing'
 import { setLastRead } from '../lastRead'
 import { usePageMeta } from '../seo'
+
+// A photo's source and licence links open in the site's popup, like text links (RichText);
+// a modified click, or a site that refuses frames (framing.ts), still opens a new tab.
+function popupClick(href: string, onLink: (page: PopupPage) => void) {
+  return (e: MouseEvent) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return
+    const src = framedSrc(href)
+    if (!src) return
+    e.preventDefault()
+    onLink({ query: siteName(href), src, href })
+  }
+}
 
 function renderBlock(
   b: Block,
@@ -105,16 +118,21 @@ function renderBlock(
     case 'img':
       return (
         <figure key={i} className="post-figure">
-          <a href={b.href} target="_blank" rel="noopener noreferrer">
+          <a href={b.href} target="_blank" rel="noopener noreferrer" onClick={popupClick(b.href, onLink)}>
             <img src={`${import.meta.env.BASE_URL}blog/${b.src}`} alt={b.alt} loading="lazy" decoding="async" />
           </a>
           <figcaption>
             {b.caption} Photo:{' '}
-            <a href={b.href} target="_blank" rel="noopener noreferrer">
+            <a href={b.href} target="_blank" rel="noopener noreferrer" onClick={popupClick(b.href, onLink)}>
               {b.credit.author}
             </a>
             {', '}
-            <a href={b.credit.licenseUrl} target="_blank" rel="noopener noreferrer">
+            <a
+              href={b.credit.licenseUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={popupClick(b.credit.licenseUrl, onLink)}
+            >
               {b.credit.license}
             </a>
             {', via Wikimedia Commons.'}

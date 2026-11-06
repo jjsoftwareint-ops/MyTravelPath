@@ -38,6 +38,82 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-06-1815',
+    title: 'Puppy kindergarten in Korea: an entrance exam, a school bus and a class president',
+    description:
+      'Korean puppy kindergartens test new pupils on "sit" and "wait", send a bus in the morning, mail a daily report home and now elect class presidents.',
+    teaser: 'Sit, wait, then run for class president.',
+    icon: 'dog_face',
+    date: '2026-11-06',
+    updated: '2026-11-06',
+    keywords: ['KoreaTravel', 'PuppyKindergarten', 'KoreanDogs', 'PuppySchool', 'Jindo', 'ILiveAlone', 'KoreanCulture'],
+    body: [
+      {
+        type: 'p',
+        text: 'In Korea, a lot of puppies go to school. Not a weekend obedience class: a proper **강아지 유치원** (gangaji yuchiwon), puppy kindergarten, with a teacher, a school bus and a note home every day.',
+      },
+      {
+        type: 'p',
+        text: 'And to get in, you take an exam.',
+      },
+      {
+        type: 'img',
+        src: 'dogschool-jindo-puppy.jpg',
+        alt: 'A fluffy cream-coloured Jindo puppy lying on a blanket, looking straight at the camera with its tongue out',
+        caption: 'A 진돗개 (Jindotgae) puppy, Korea\'s own breed. Future applicant, nervous about "wait".',
+        href: 'https://commons.wikimedia.org/wiki/File:Jindo_puppy.jpg',
+        credit: { author: 'beethoven_e', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'The entrance exam', icon: 'memo' },
+      {
+        type: 'p',
+        text: 'Teachers check whether a puppy stays calm without its owner, gets along with other puppies and can do **"sit"** and **"wait"**. A puppy that bites or panics can be turned away.',
+      },
+      {
+        type: 'p',
+        text: 'Pass, and the day looks very familiar. A bus collects the pupils in the morning. Owners get an [알림장](https://www.google.com/search?tbm=isch&q=%EA%B0%95%EC%95%84%EC%A7%80%20%EC%9C%A0%EC%B9%98%EC%9B%90%20%EC%95%8C%EB%A6%BC%EC%9E%A5) (allimjang), a daily note with photos: what they ate, who they played with and how the toilet went. Some schools hold sports days and a midterm-style review twice a year.',
+      },
+      {
+        type: 'p',
+        text: 'And then there is nap time: a whole class asleep in a row, each puppy on its own mat under its own little blanket.',
+      },
+      {
+        type: 'video',
+        id: 'yrQIlFhhjsM',
+        title: 'Puppies enjoy nap time in the dog kindergarten, SBS TV Animal Farm',
+        caption: 'Nap time at a puppy kindergarten. Video: SBS TV Animal Farm on YouTube.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Vote for me, woof', icon: 'ballot_box_with_ballot' },
+      {
+        type: 'p',
+        text: 'This year, puppy kindergartens started electing class presidents. Candidates get [campaign posters](https://www.google.com/search?tbm=isch&q=%EA%B0%95%EC%95%84%EC%A7%80%20%EC%9C%A0%EC%B9%98%EC%9B%90%20%EB%B0%98%EC%9E%A5%20%EC%84%A0%EA%B1%B0%20%ED%8F%AC%EC%8A%A4%ED%84%B0) promising more playtime and better snacks. One school wants home-training videos before a puppy may stand. And the voting? At some schools, the puppies crowd around the candidate they like.',
+      },
+      {
+        type: 'p',
+        text: 'It went national in May, when the cartoonist Kian84\'s puppy won on the TV show **I Live Alone**. We have seen worse campaigns.',
+      },
+      {
+        type: 'img',
+        src: 'dogschool-donggyeongi-puppies.jpg',
+        alt: 'Two puppies standing on grass, one brindle and one white, both with their tongues out',
+        caption: 'Two 동경이 (Donggyeongi) puppies, a short-tailed Korean breed. Clearly running on a joint ticket.',
+        href: 'https://commons.wikimedia.org/wiki/File:Two_Puppy_Donggyeongi.jpg',
+        credit: { author: 'Korea Heritage Service', license: 'KOGL Type 1', licenseUrl: 'https://www.kogl.or.kr/info/licenseType1.do' },
+      },
+      {
+        type: 'p',
+        text: 'Why all this? Most Korean owners call their pet family, and on one big shopping site, pet strollers now outsell baby strollers.',
+      },
+      {
+        type: 'verdict',
+        text: 'A daily photo report on your puppy\'s friends and lunch is very hard to argue with. We would fail the "wait" part ourselves.',
+      },
+    ],
+  },
+  {
     id: '2026-11-06-0547',
     title: 'Is Daiso skincare in Korea actually good?',
     description:
