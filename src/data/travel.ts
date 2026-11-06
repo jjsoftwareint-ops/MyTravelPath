@@ -2561,7 +2561,7 @@ export const cities: City[] = [
       },
       {
         id: 'seoul-gyeonggi-cafes',
-        name: 'Seoul & Gyeonggi Cafes',
+        name: 'Cafes Around Me',
         seoTitle: 'Seoul & Gyeonggi cafés: 71 cafés on one map',
         seoDescription:
           'Garden and bakery cafés, river and lake views, hanok tea houses and unusual concept cafés in Seoul and Gyeonggi: 71 places on one map, grouped by type.',
