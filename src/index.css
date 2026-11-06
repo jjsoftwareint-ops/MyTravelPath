@@ -871,6 +871,29 @@ a:focus-visible {
   background: none;
   cursor: pointer;
 }
+/* Instagram and Threads links under the Korea map, just above the footer (home page) */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 32px 0 0;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+.social-links svg {
+  width: 20px;
+  height: 20px;
+}
 .korea-map {
   display: block;
   width: 100%;
