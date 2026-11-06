@@ -1112,6 +1112,13 @@ button.cta {
   margin: 0;
   color: var(--text);
 }
+/* A category heading in a grouped place list (cafés): the places under it are plain bullets */
+.guide .place-group h4 {
+  margin: 14px 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
 .guide ol,
 .guide ul {
   margin: 0;

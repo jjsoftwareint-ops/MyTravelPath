@@ -85,6 +85,10 @@ All allow free use; the credit is given in every case.
 - Inwang Mountain Trail path banner: *Seoul Fortress Wall, Inwangsan.3*, Rtflakfizer,
   CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Seoul_Fortress_Wall,_Inwangsan.3.jpg
+- Seoul & Gyeonggi Cafes path banner: *Gyedong-gil street with climbing plants at golden hour in Seoul South Korea*, Basile Morin, CC BY-SA 4.0.
+  https://commons.wikimedia.org/wiki/File:Gyedong-gil_street_with_climbing_plants_at_golden_hour_in_Seoul_South_Korea.jpg
+- Seoul City Wall Trail path banner: *Heunginjimun Gate, Seoul, 1869 (3)*, Richard Mortel, CC BY 2.0.
+  https://commons.wikimedia.org/wiki/File:Heunginjimun_Gate,_Seoul,_1869_(3)_(41116328381).jpg
 - Jeju card photo: *Jeju Olle Route 8* (Jusangjeolli basalt columns), Jeju Olle
   Foundation, CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_8.jpg

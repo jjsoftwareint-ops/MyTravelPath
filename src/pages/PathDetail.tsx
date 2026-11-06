@@ -131,7 +131,7 @@ export default function PathDetail() {
   const chips = [
     hasMapBlock && { id: "path-map", label: "Map", unfold: undefined },
     path.story && { id: "history", label: "History", unfold: () => setHistoryOpen(true) },
-    path.guide?.route && { id: "locations", label: "Locations", unfold: undefined },
+    (path.guide?.route || path.guide?.groups) && { id: "locations", label: "Locations", unfold: undefined },
     path.guide?.tips && { id: "tips", label: "Good to know", unfold: undefined },
   ].filter(Boolean) as { id: string; label: string; unfold?: () => void }[];
   // YouTube live stream: under the map by default, above it when the path asks for it.
@@ -369,7 +369,27 @@ export default function PathDetail() {
                 );
               })}
             </div>
-            {!path.guide.route && noticesBlock}
+            {!path.guide.route && !path.guide.groups && noticesBlock}
+            {path.guide.groups && (
+              <>
+                <h3 id="locations">
+                  <Emoji name="round_pushpin" size={20} /> The Locations
+                </h3>
+                {noticesBlock}
+                {path.guide.groups.map((group) => (
+                  <section className="place-group" key={group.title}>
+                    <h4>{group.title}</h4>
+                    <ul>
+                      {group.places.map((place) => (
+                        <li key={place}>
+                          <GuideLine text={place} onPlace={setPlaceQuery} onLink={setPopup} />
+                        </li>
+                      ))}
+                    </ul>
+                  </section>
+                ))}
+              </>
+            )}
             {path.guide.route && (
               <>
                 <h3 id="locations">
