@@ -1,4 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react'
+import { useLocation } from 'react-router-dom'
 import Link from './Link'
 import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
@@ -24,7 +25,10 @@ type Props = {
   children: ReactNode
 }
 
-export default function Layout({ title, titleImage, subtitle, backTo, icon, actions, hideSaved, noSaved, showBlog, children }: Props) {
+export default function Layout({ title, titleImage, subtitle, backTo: backToProp, icon, actions, hideSaved, noSaved, showBlog, children }: Props) {
+  // Opened from a link inside a blog post? The back button returns to that post (the link passes its URL in state.from).
+  const from = (useLocation().state as { from?: string } | null)?.from
+  const backTo = backToProp !== undefined && from?.startsWith('/blog/') ? from : backToProp
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {

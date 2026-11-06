@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { useLocation } from "react-router-dom";
 import { imageSearchUrl, type PopupPage } from "./ImagePopup";
 import Link from "./Link";
 import { framedSrc, internalPath, siteName } from "../framing";
@@ -41,6 +42,9 @@ export default function RichText({
   onPlace?: (query: string) => void;
   onLink?: (page: PopupPage) => void;
 }) {
+  // A link to another page of the site from inside a blog post remembers the post, so that page's back button returns here.
+  const pathname = useLocation().pathname;
+  const fromPost = pathname.startsWith("/blog/") ? { from: pathname } : undefined;
   const parts = text.split(TOKEN);
   return (
     <>
@@ -87,7 +91,7 @@ export default function RichText({
           const inApp = internalPath(link[2]);
           if (inApp) {
             return (
-              <Link key={i} className="link" to={inApp}>
+              <Link key={i} className="link" to={inApp} state={fromPost}>
                 {link[1]}
               </Link>
             );
