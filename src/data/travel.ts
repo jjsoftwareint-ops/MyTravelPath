@@ -2560,9 +2560,9 @@ export const cities: City[] = [
         },
       },
       {
-        id: 'cafes-around-me',
-        name: 'Cafes Around Me',
-        seoTitle: 'Cafes Around Me: 71 Seoul & Gyeonggi cafés',
+        id: 'cafe-around-me',
+        name: 'Café Around Me',
+        seoTitle: 'Café Around Me: 71 Seoul & Gyeonggi cafés',
         seoDescription:
           'Find a café near you in Seoul and Gyeonggi: garden and bakery cafés, view cafés, hanok tea houses and concept cafés. 71 places on one map, grouped by type.',
         whyVisit: [
@@ -2574,7 +2574,7 @@ export const cities: City[] = [
         imageCredit: 'Photo: Basile Morin · CC BY-SA 4.0',
         imageWhole: true,
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=12NGrIoK07LvKpZU6pyil0M5NChjmhYc',
-        keywords: ['CafesAroundMe', 'CafesNearMe', 'Seoul', 'SeoulCafes', 'GyeonggiCafes', 'CafeHopping', 'BakeryCafe', 'HanokCafe', 'ViewCafe', 'KoreaCafe', 'KoreaTravel'],
+        keywords: ['CafeAroundMe', 'CafesNearMe', 'Seoul', 'SeoulCafes', 'GyeonggiCafes', 'CafeHopping', 'BakeryCafe', 'HanokCafe', 'ViewCafe', 'KoreaCafe', 'KoreaTravel'],
         guide: {
           intro: [
             "☕ **Make it a café day in one area**: the Seoul cafés sit close together in the old city, while the Gyeonggi ones are spread out and deserve a day of their own.",
