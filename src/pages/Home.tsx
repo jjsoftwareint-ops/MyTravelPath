@@ -7,12 +7,12 @@ import Layout from "../components/Layout";
 import RichText from "../components/RichText";
 import Tags from "../components/Tags";
 import NewPosts from "../components/NewPosts";
+import SocialLinks from "../components/SocialLinks";
 import VisitorCount from "../components/VisitorCount";
 import WeekCard from "../components/WeekCard";
 import { cities, hasMap } from "../data/travel";
 import { eventCount, todayInSeoul } from "../data/thisWeek";
-import { FaCalendarDays, FaInstagram, FaThreads } from "react-icons/fa6";
-import { INSTAGRAM_URL, THREADS_URL } from "./Contact";
+import { FaCalendarDays } from "react-icons/fa6";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
@@ -167,14 +167,7 @@ export default function Home() {
         />
       </button>
 
-      <nav className="social-links" aria-label="Follow My Travel Path">
-        <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
-          <FaInstagram aria-hidden="true" /> Instagram
-        </a>
-        <a href={THREADS_URL} target="_blank" rel="noreferrer">
-          <FaThreads aria-hidden="true" /> Threads
-        </a>
-      </nav>
+      <SocialLinks />
 
       {mapOpen && (
         <div

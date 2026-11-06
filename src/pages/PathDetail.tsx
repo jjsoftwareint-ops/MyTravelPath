@@ -13,6 +13,7 @@ import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
 import ShareLink from "../components/ShareLink";
+import SocialLinks from "../components/SocialLinks";
 import Tags from "../components/Tags";
 import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { formatDate } from "../dates";
@@ -467,6 +468,7 @@ export default function PathDetail() {
             )}
           </section>
         )}
+        <SocialLinks />
           </div>
         )}
       </div>
