@@ -38,6 +38,55 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-07-0709',
+    title: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026",
+    description:
+      "Shinsegae's Myeong-dong store turns its outer wall into a Christmas screen from 6 November. What is on it, where to stand, and the video.",
+    teaser: 'A bear, a balloon boat and a whole building.',
+    icon: 'christmas_tree',
+    date: '2026-11-07',
+    updated: '2026-11-07',
+    keywords: ['KoreaTravel', 'Christmas', 'ShinsegaeSquare', 'Myeongdong', 'MediaFacade', 'SeoulChristmas', 'ChristmasInSeoul'],
+    body: [
+      {
+        type: 'p',
+        text: 'The first big Christmas light show of the season is here. The **Shinsegae** main store in Myeong-dong turns its whole outer wall into a Christmas screen in the evenings, and it is free to watch.',
+      },
+      {
+        type: 'video',
+        id: 'hUwDfLQEa38',
+        title: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026",
+        caption: 'The 2026 Christmas film on the Shinsegae wall. Video: Seoul Walking Day on YouTube.',
+      },
+      { type: 'h', text: 'What is on the wall', icon: 'christmas_tree' },
+      {
+        type: 'p',
+        text: 'A bear puts a Christmas wish letter on a **balloon boat**, travels along with it and helps finish the Christmas tree.',
+      },
+      {
+        type: 'p',
+        text: 'It is a little story, not just flashing lights, and that is why we like it as the first stop of the season.',
+      },
+      { type: 'h', text: 'Where to stand', icon: 'round_pushpin' },
+      {
+        type: 'p',
+        text: 'The viewing point is the plaza in front of the store, known as the **한국은행 분수대** (Hanguk Eunhaeng bunsudae), the Bank of Korea fountain. Take **Hoehyeon Station** (Line 4).',
+      },
+      {
+        type: 'p',
+        text: '**Last season the show ran from 17:00 to midnight.** This year\'s hours were not announced yet, so check on the day.',
+      },
+      {
+        type: 'p',
+        text: 'More on this week in Korea on our [events page](https://koreatravelpath.com/this-week/).',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: free, easy to reach and a lovely first Christmas stop. Dress warmly.',
+      },
+    ],
+  },
+  {
     id: '2026-11-06-2323',
     title: 'My pick for you: Mr. Sunshine on Netflix',
     description:
