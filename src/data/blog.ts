@@ -38,6 +38,61 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-06-2323',
+    title: 'My pick for you: Mr. Sunshine on Netflix',
+    description:
+      'My pick for you: Mr. Sunshine, a Korean drama about the fight to keep a country, from the writer of Goblin. With the official Netflix trailer.',
+    teaser: 'A big story from the last days of old Korea.',
+    icon: 'clapper_board',
+    date: '2026-11-06',
+    updated: '2026-11-06',
+    keywords: ['MrSunshine', 'KDrama', 'Nonsan', 'Netflix', 'KoreanDrama', 'LeeByungHun', 'KimTaeRi', 'HistoricalDrama', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: 'My pick for you this weekend is **Mr. Sunshine**, on Netflix. It is about people who fought to keep their country in the last days of old Korea, and it is one of the dramas I would send to a friend first.',
+      },
+      {
+        type: 'video',
+        id: 'rPJSo4fhtRU',
+        title: 'Mr. Sunshine | Official Trailer [HD] | Netflix',
+        caption: 'The official Netflix trailer. Video: Netflix on YouTube.',
+      },
+      { type: 'h', text: 'What it is about', icon: 'fire' },
+      {
+        type: 'p',
+        text: 'Eugene is born into slavery, escapes to America and comes back as a US Marine officer. Ae-shin is a noblewoman who secretly fights as a **sniper**. Both are pulled into the fight to keep Korea free.',
+      },
+      {
+        type: 'p',
+        text: 'It comes from Kim Eun-sook, the writer of **Goblin**, with Lee Byung-hun and Kim Tae-ri in the lead roles. Twenty-four episodes, so start it on a weekend.',
+      },
+      {
+        type: 'p',
+        text: '**Be warned, it is not light viewing. It is about a country losing its freedom, and it is sad. Keep tissues close.**',
+      },
+      { type: 'h', text: 'Then visit the set', icon: 'classical_building' },
+      {
+        type: 'p',
+        text: 'You can stand where it was filmed. **Sunshine Studio** in Nonsan is the main open set, with the **Glory Hotel** from the story.',
+      },
+      {
+        type: 'p',
+        text: 'Our K-drama map pins it, plus two more places where Mr. Sunshine was shot.',
+      },
+      {
+        type: 'route',
+        cityId: 'theme',
+        pathId: 'k-drama-shooting-spots',
+        text: 'See the Mr. Sunshine set on our K-drama shooting spots map',
+      },
+      {
+        type: 'verdict',
+        text: 'My verdict: a big story with a big heart. Bring tissues, and press play on a free weekend.',
+      },
+    ],
+  },
+  {
     id: '2026-11-06-1815',
     title: 'Puppy kindergarten in Korea: an entrance exam, a school bus and a class president',
     description:
