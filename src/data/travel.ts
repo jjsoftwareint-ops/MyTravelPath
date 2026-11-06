@@ -2560,7 +2560,7 @@ export const cities: City[] = [
         },
       },
       {
-        id: 'seoul-gyeonggi-cafes',
+        id: 'cafes-around-me',
         name: 'Cafes Around Me',
         seoTitle: 'Seoul & Gyeonggi cafés: 71 cafés on one map',
         seoDescription:
