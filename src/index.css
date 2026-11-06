@@ -871,6 +871,34 @@ a:focus-visible {
   background: none;
   cursor: pointer;
 }
+/* "More walks like this" at the end of a path page */
+.more-walks {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+.more-walks h2 {
+  margin: 0;
+  padding: 16px 16px 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.more-walks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.more-walks li {
+  border-top: 1px solid var(--border);
+}
+.more-walks .card-desc {
+  display: block;
+  margin: 2px 0 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
 /* Instagram and Threads links under the Korea map, just above the footer (home page) */
 .social-links {
   display: flex;

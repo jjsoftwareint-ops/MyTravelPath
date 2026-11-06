@@ -12,6 +12,7 @@ import InstallButton from "../components/InstallButton";
 import RichText from "../components/RichText";
 import Layout from "../components/Layout";
 import MapOverlay from "../components/MapOverlay";
+import MoreWalks from "../components/MoreWalks";
 import ShareLink from "../components/ShareLink";
 import SocialLinks from "../components/SocialLinks";
 import Tags from "../components/Tags";
@@ -468,6 +469,7 @@ export default function PathDetail() {
             )}
           </section>
         )}
+        <MoreWalks cityId={city.id} pathId={path.id} />
         <SocialLinks />
           </div>
         )}
