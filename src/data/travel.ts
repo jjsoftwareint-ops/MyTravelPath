@@ -2473,7 +2473,7 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 KTX from **Yongsan Station** to **Jeonju Station**, 34,400 won (fare as of July 2026). From the station, take a taxi or a city bus to the hanok village.",
-            "🚆 The slow, scenic way: the **S-Train**, a Korail tourist train, runs from Seoul to Yeosu and stops at **Jeonju**. It is much slower than the KTX and has a tea room with a traditional tea ceremony. Book it on Korail's theme train pages and check the timetable first.",
+            "🚆 The slow, scenic way: the **S-Train**, a Korail tourist train, runs from Seoul to Yeosu and stops at **Jeonju**. It is much slower than the KTX and has a tea room with a traditional tea ceremony. Book it on Korail's theme train pages and check the timetable first; more in [our tourist train guide](https://koreatravelpath.com/blog/2026-11-07-2106/).",
             "📸 For the best view over the tiled roofs, go to the café pinned at the village entrance. Trees hide most of the view at Omokdae.",
             "🍜 Eat along the way: the pink pins on the map are the restaurants from the video, with their hours and closing days.",
             "✨ Rent a hanbok for the lanes; it suits the shrine, the cathedral and the stone walls.",

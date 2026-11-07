@@ -1,5 +1,5 @@
-import { useEffect, useRef, type ReactNode } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import Link from './Link'
 import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
@@ -29,6 +29,18 @@ export default function Layout({ title, titleImage, subtitle, backTo: backToProp
   // Opened from a link inside a blog post? The back button returns to that post (the link passes its URL in state.from).
   const from = (useLocation().state as { from?: string } | null)?.from
   const backTo = backToProp !== undefined && from?.startsWith('/blog/') ? from : backToProp
+  // Back respects the visitor's own history: if they came here from another page of this site in this tab, go back
+  // to exactly that page (a blog post opened from a path page returns to the path page). Only with no in-app history
+  // (a shared link, a new tab, a search result) does it fall back to `backTo`, the blog list or the parent page.
+  // React Router keeps its position in history.state.idx: 0 on the first page of the visit, higher after in-app moves.
+  const navigate = useNavigate()
+  const onBack = (e: MouseEvent<HTMLAnchorElement>) => {
+    const idx = (window.history.state as { idx?: number } | null)?.idx
+    if (typeof idx === 'number' && idx > 0) {
+      e.preventDefault()
+      navigate(-1)
+    }
+  }
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.
   const headerRef = useRef<HTMLElement>(null)
   useEffect(() => {
@@ -47,7 +59,7 @@ export default function Layout({ title, titleImage, subtitle, backTo: backToProp
         ref={headerRef}
       >
         {backTo !== undefined ? (
-          <Link to={backTo} className="back" aria-label="Back">
+          <Link to={backTo} className="back" aria-label="Back" onClick={onBack}>
             ‹
           </Link>
         ) : icon ? (
