@@ -844,7 +844,7 @@ export const cities: City[] = [
         seoDescription:
           'Four cherry blossom walks in Busan for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil and more. Free map with blossom pins.',
         duration: '1.5–3h each',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         whyVisit: [
           "Busan blossoms a week before Seoul, in the last week of March, so this is where to be at the end of the month.",
           "**A 1 km tunnel of 40-year-old trees between apartment blocks**, a winding cherry road with the sea below it, and a levee above fields of yellow canola.",
@@ -897,7 +897,7 @@ export const cities: City[] = [
         seoDescription:
           'A 9.5 km Busan coast walk in three parts: Dongbaek Island, Haeundae Beach, the Blueline Park cliffs, Daritdol skywalk and Songjeong Beach. Free map.',
         duration: 'Half day',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         image: 'haeundae.jpg',
         imageCredit: 'Photo: VN.NguyenDucDuy · CC BY-SA 4.0',
         liveCam: {
@@ -954,7 +954,7 @@ export const cities: City[] = [
         seoDescription:
           "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, Gamcheon and Huinnyeoul villages, Nampo-dong markets, Haedong Yonggungsa, Beomeosa, the Dongbaek Island night views and the Songdo cloud bridge.",
         duration: '2h walk',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
         whyVisit: [
           "A long beach with **a bridge lit in colour across the whole bay**, chicken and beer on the sand, and a fish market where you buy dinner downstairs and eat it on the steps.",
@@ -1028,7 +1028,7 @@ export const cities: City[] = [
         seoDescription:
           'Busan under a roof: museums at Yeongdo, Gijang and Dongnae, Busan Tower and X the Sky, Centum and Gwangalli spas, a character café and the Blueline beach train.',
         duration: 'Full day',
-        updated: '2026-11-01',
+        updated: '2026-11-07',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
         whyVisit: [
           "A rainy day in Busan with **a jjimjilbang on the beach, a bank turned history museum and Korea's tallest observation deck** all under a roof.",
