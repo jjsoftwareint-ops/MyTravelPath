@@ -38,6 +38,200 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-07-2106',
+    title: 'Tourist trains: a heated floor, a wood stove and a tea ceremony',
+    description:
+      'Korea has trains you ride for the ride: one with heated-floor rooms, one with a wood stove, one with a tea ceremony. Which still run and how to book.',
+    teaser: 'Take your shoes off, this train has a heated floor.',
+    icon: 'hot_springs',
+    date: '2026-11-07',
+    updated: '2026-11-07',
+    keywords: ['KoreaTravel', 'KoreaTrain', 'GoldTrain', 'VTrain', 'STrain', 'Ondol', 'Korail', 'ScenicTrain'],
+    body: [
+      {
+        type: 'p',
+        text: 'Some Korean trains are not about arriving. They are slow, a little silly, and popular enough to sell out in minutes on a weekend.',
+      },
+      {
+        type: 'img',
+        src: 'tourtrain-gold-train-viaduct.jpg',
+        alt: 'A yellow diesel locomotive pulling the long West Sea Gold Train along a concrete viaduct, hills behind it',
+        caption: 'The West Sea Gold Train on its opening run in 2015.',
+        href: 'https://commons.wikimedia.org/wiki/File:West_Gold_Train_11_(16237733390).jpg',
+        credit: { author: 'Korea.net (Republic of Korea)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'The one with a heated floor', icon: 'house_with_garden' },
+      {
+        type: 'p',
+        text: 'The [서해금빛열차](https://www.google.com/search?tbm=isch&q=%EC%84%9C%ED%95%B4%EA%B8%88%EB%B9%9B%EC%97%B4%EC%B0%A8) (Seohae-geumbit-yeolcha), the West Sea Gold Train, runs from Yongsan to Iksan along the west coast (see the [route map](https://www.google.com/search?tbm=isch&q=%EC%84%9C%ED%95%B4%EA%B8%88%EB%B9%9B%EC%97%B4%EC%B0%A8%20%EB%85%B8%EC%84%A0%EB%8F%84)). Its best car has [온돌마루실](https://www.google.com/search?tbm=isch&q=%EC%84%9C%ED%95%B4%EA%B8%88%EB%B9%9B%EC%97%B4%EC%B0%A8%20%EC%98%A8%EB%8F%8C%EB%A7%88%EB%A3%A8%EC%8B%A4) (ondol-maru-sil): nine private rooms with a **온돌** (ondol), heated floor, where you take your shoes off and sit on the floor.',
+      },
+      {
+        type: 'p',
+        text: 'Each room takes three to six people and costs an extra ₩30,000 to ₩40,000, depending on the source. The café car has a [foot bath](https://www.google.com/search?tbm=isch&q=%EC%84%9C%ED%95%B4%EA%B8%88%EB%B9%9B%EC%97%B4%EC%B0%A8%20%EC%A1%B1%EC%9A%95%EC%B9%B4%ED%8E%98), but reports differ on whether it is open now. The train runs only a few days a week.',
+      },
+      {
+        type: 'img',
+        src: 'tourtrain-gold-train-ondol-room.jpg',
+        alt: 'Two floor chairs with backrests in front of a wooden lattice screen, beside a window',
+        caption: 'Floor seats in a Gold Train room. Shoes off.',
+        href: 'https://commons.wikimedia.org/wiki/File:West_Gold_Train_07.jpg',
+        credit: { author: 'Korea.net (Republic of Korea)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      {
+        type: 'img',
+        src: 'tourtrain-gold-train-corridor.jpg',
+        alt: 'A narrow train corridor with a stepping-stone path on the floor and wooden room partitions on one side',
+        caption: 'The hanok-style corridor inside the train.',
+        href: 'https://commons.wikimedia.org/wiki/File:West_Gold_Train_28_(15802633964).jpg',
+        credit: { author: 'Korea.net (Republic of Korea)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      { type: 'space' },
+      { type: 'h', text: 'The slow, scenic ones', icon: 'mountain' },
+      {
+        type: 'list',
+        items: [
+          '[V-Train](https://www.google.com/search?tbm=isch&q=V-Train%20Korail%20Buncheon%20Cheoram): three retro cars with a charcoal stove and big windows. It rolls through the mountain gorges between Cheoram (in Taebaek, Gangwon) and Buncheon (in Bonghwa, North Gyeongsang) in about 1 hour 10 minutes. See the [route map](https://www.google.com/search?tbm=isch&q=%EB%B0%B1%EB%91%90%EB%8C%80%EA%B0%84%ED%98%91%EA%B3%A1%EC%97%B4%EC%B0%A8%20%EB%85%B8%EC%84%A0%EB%8F%84) and [inside the train](https://www.google.com/search?tbm=isch&q=%EB%B0%B1%EB%91%90%EB%8C%80%EA%B0%84%ED%98%91%EA%B3%A1%EC%97%B4%EC%B0%A8%20%EB%82%B4%EB%B6%80). One guide says there is no air-conditioning and no toilet on board.',
+          '[S-Train](https://www.google.com/search?tbm=isch&q=S-Train%20Korail%20Namdo%20Sea%20train): **two routes**. One goes from Seoul to Yeosu on the Jeolla Line, through **Jeonju**, Namwon and Suncheon. The other runs along the south coast from Busan on the Gyeongjeon Line. Both are slow, with a turtle painted on the nose and a tea room where a traditional tea ceremony is held ([see inside](https://www.google.com/search?tbm=isch&q=%EB%82%A8%EB%8F%84%ED%95%B4%EC%96%91%EC%97%B4%EC%B0%A8%20%EB%82%B4%EB%B6%80%20%EB%8B%A4%EB%8F%84)). See the [route map](https://www.google.com/search?tbm=isch&q=%EB%82%A8%EB%8F%84%ED%95%B4%EC%96%91%EC%97%B4%EC%B0%A8%20%EB%85%B8%EC%84%A0%EB%8F%84).',
+          '[DMZ Train](https://www.google.com/search?tbm=isch&q=DMZ%20%ED%8F%89%ED%99%94%EC%9D%B4%EC%9D%8C%EC%97%B4%EC%B0%A8%20%EB%8F%84%EB%9D%BC%EC%82%B0): Seoul Station to Dorasan, only as part of an organised tour, on the second and fourth Friday of the month, reports say. It restarted in April 2026. See the [route map](https://www.google.com/search?tbm=isch&q=DMZ%20%ED%8F%89%ED%99%94%EC%9D%B4%EC%9D%8C%EC%97%B4%EC%B0%A8%20%EB%85%B8%EC%84%A0%EB%8F%84%20%EC%84%9C%EC%9A%B8%EC%97%AD%20%EB%8F%84%EB%9D%BC%EC%82%B0%EC%97%AD). [Check the dates and book](https://www.korailtravel.com/web/submain/subTrain.asp).',
+        ],
+      },
+      {
+        type: 'img',
+        src: 'tourtrain-v-train.jpg',
+        alt: 'The white and red front of the V-Train locomotive, number 4460, at a mountain station',
+        caption: 'The V-Train locomotive at a mountain station.',
+        href: 'https://commons.wikimedia.org/wiki/File:Front_of_V-train.JPG',
+        credit: { author: 'acrofan', license: 'CC BY-SA 3.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/' },
+      },
+      {
+        type: 'img',
+        src: 'tourtrain-s-train.jpg',
+        alt: 'A blue locomotive with a painted turtle-dragon face and waves on its nose, waiting at a platform',
+        caption: 'The S-Train locomotive, with its painted turtle nose.',
+        href: 'https://commons.wikimedia.org/wiki/File:S-TRAIN.JPG',
+        credit: { author: '인생살이', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/' },
+      },
+      {
+        type: 'route',
+        cityId: 'gyeongju-jeonju',
+        pathId: 'jeonju',
+        text: 'Getting off at Jeonju? Our Jeonju map has the hanok lanes, the royal shrine and the lotus pond',
+      },
+      {
+        type: 'p',
+        text: 'The O-Train, a mountain loop that older guides still list, stopped running in 2020.',
+      },
+      { type: 'space' },
+      {
+        type: 'verdict',
+        text: 'Korail lists them all under **테마열차** (tema-yeolcha), theme trains, with a page for each. Book early: one guide says they sell out within minutes on weekends and often skip Mondays or Tuesdays, so confirm the timetable before you book a hotel. Our pick: the Gold Train with a friend, for the floor.',
+      },
+    ],
+  },
+  {
+    id: '2026-11-07-1245',
+    title: 'KTX, SRT or ITX? Which Korean train you actually need',
+    description:
+      'SRT merged into KTX on 1 September 2026. Which Korean train is which, which Seoul station to use, which seat to pick and how to book.',
+    teaser: 'Three train names, one of them already gone.',
+    icon: 'train',
+    date: '2026-11-07',
+    updated: '2026-11-07',
+    keywords: ['KoreaTravel', 'KTX', 'SRT', 'ITX', 'KoreaTrain', 'Korail', 'SeoulToBusan', 'KoreaTransport'],
+    body: [
+      {
+        type: 'p',
+        text: 'Korean trains are easy to ride and strangely hard to name. KTX, SRT, ITX. And the guide you read last year is probably out of date.',
+      },
+      {
+        type: 'p',
+        text: 'Here is the short version.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'SRT is gone', icon: 'train' },
+      {
+        type: 'p',
+        text: 'Since 1 September, every high-speed train is **KTX**, booked in one app, **Korail+**. Fares fell about 10%. If a guide says "download the SRT app", skip it.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Which name is which', icon: 'railway_car' },
+      {
+        type: 'table',
+        head: ['Name', 'What it is'],
+        rows: [
+          ['KTX', 'The fast one. Seoul to Busan in a little over 2 hours. The old SRT trains count as KTX now.'],
+          ['ITX-Saemaeul, Mugunghwa', 'Slower and cheaper, with many stops. Reports say Seoul to Busan takes four to five hours. Fine for short hops, not for long ones.'],
+        ],
+      },
+      {
+        type: 'p',
+        text: 'A KTX-Eum or KTX-Sancheon is just a newer KTX model. Same ticket, same ticket window.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Pick the right station', icon: 'ticket' },
+      {
+        type: 'p',
+        text: 'Seoul has more than one high-speed station, and your destination decides which one:',
+      },
+      {
+        type: 'list',
+        items: [
+          '**Seoul Station:** Busan, Daegu, Gyeongju, Ulsan',
+          '**Yongsan:** Jeonju, Gwangju, Mokpo, Yeosu',
+          '**Suseo:** Busan and the southeast, Gwangju. Handy if you sleep in Gangnam or Jamsil.',
+          '**Cheongnyangni:** Gangneung, Andong',
+        ],
+      },
+      {
+        type: 'p',
+        text: 'Check the departure station on the booking screen before you pay. Two stations can serve the same city, and it is the mistake we would hate for you to make.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Which seat to pick', icon: 'ticket' },
+      {
+        type: 'p',
+        text: 'Most KTX trains have two classes: **standard** and a roomier one. The older KTX and the KTX-Sancheon call it **first class**, [특실](https://www.google.com/search?tbm=isch&q=KTX%20%ED%8A%B9%EC%8B%A4) (teuk-sil). The newer KTX-Eum and KTX-Cheongryong call it **superior**, [우등실](https://www.google.com/search?tbm=isch&q=KTX%20%EC%9A%B0%EB%93%B1%EC%8B%A4) (udeung-sil).',
+      },
+      {
+        type: 'p',
+        text: 'The roomier seats are wider with more legroom, and first class has just one seat on one side of the aisle. On a two-hour ride we would stay in standard. It pays off if you are tall, or travelling on a packed holiday weekend.',
+      },
+      {
+        type: 'p',
+        text: 'Travelling with friends or family? Look for the table seats, [가족석](https://www.google.com/search?tbm=isch&q=KTX%20%EA%B0%80%EC%A1%B1%EC%84%9D) (gajok-seok): four seats around a table, two facing forward and two backwards. Pick them on the seat map.',
+      },
+      {
+        type: 'p',
+        text: 'Some seats on older trains face backwards, and some rows face each other across a table. Your ticket shows the direction, so pick a forward-facing seat on the seat map if backwards makes you queasy.',
+      },
+      {
+        type: 'p',
+        text: 'If the reserved seats are sold out, Korail often sells a **standing ticket**. It is a fine fallback for a short hop and a miserable one for the whole way to Busan. Big suitcases go in the racks at the ends of each carriage, and those fill fast, so board early.',
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Booking as a foreigner', icon: 'mobile_phone' },
+      {
+        type: 'p',
+        text: 'Korail\'s **English website** takes overseas cards and needs no Korean phone number, only a name, an email and a password. The Korail+ app can be fussier with foreign cards, so if a payment fails, switch to the website.',
+      },
+      {
+        type: 'p',
+        text: 'Tickets go on sale at **7:00 AM, two months before** the day, and weekends and holidays sell out. Type your name exactly as it is in your passport.',
+      },
+      {
+        type: 'p',
+        text: 'One trap in Gyeongju: the KTX stops at Gyeongju Station, outside the old town. Bus 700 into town takes roughly 40 to 55 minutes for about ₩1,500, and a taxi about 20.',
+      },
+      {
+        type: 'verdict',
+        text: 'Seoul to Busan: KTX from Seoul Station, or from Suseo if you sleep in Gangnam. Around ₩54,000 each way. Jeonju: KTX from Yongsan. Book on the English website, two months ahead, and stay in standard unless you are tall.',
+      },
+    ],
+  },
+  {
     id: '2026-11-07-0709',
     title: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026",
     description:

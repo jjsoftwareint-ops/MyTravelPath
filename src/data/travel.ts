@@ -1730,8 +1730,8 @@ export const cities: City[] = [
         tags: [{ icon: 'dmz', label: 'DMZ' }, { icon: 'art', label: 'Art village' }],
         image: 'paju.jpg',
         imageCredit: 'Photo: 한국문화관광연구원 · CC0',
-        updated: '2026-10-31',
-        keywords: ['Paju', 'Gyeonggi', 'DayTripFromSeoul', 'DMZ', 'Imjingak', 'HeyriArtVillage', 'PajuBookCity', 'GamaksanSuspensionBridge', 'MajangLake', 'PajuPremiumOutlets', 'KoreaTravel'],
+        updated: '2026-11-07',
+        keywords: ['Paju', 'Gyeonggi', 'DayTripFromSeoul', 'DMZ', 'DMZTrain', 'Imjingak', 'HeyriArtVillage', 'PajuBookCity', 'GamaksanSuspensionBridge', 'MajangLake', 'PajuPremiumOutlets', 'KoreaTravel'],
         whyVisit: [
           "**A gondola over the Imjin River, a walk down into the 3rd Tunnel, and a window straight into Kaesong.** All of it is an hour from Seoul.",
           "The same town has an art village in a wetland and a city built by publishers, with a library of 20,000 donated books.",
@@ -1752,6 +1752,14 @@ export const cities: City[] = [
             body: "The tour to the **3rd Tunnel** and **Dora Observatory** leaves from the Imjingak ticket office, Tue–Sun **09:00–14:30**, {red:closed Mondays} and on weekday public holidays. Foreign visitors need the **original passport**. Walking into the tunnel ₩9,200, with the monorail ₩12,200. No foreign concessions, no photos on the course.",
             since: "Checked 30 October 2026.",
             source: 'Paju city DMZ site (dmz.paju.go.kr) and Naver Map, checked 30 October 2026.',
+          },
+          {
+            icon: '🚆',
+            title: 'DMZ Peace Link train: Seoul Station to Dorasan, twice a month',
+            at: "Imjingak",
+            body: "Korail's **DMZ Peace Link** train runs again since 24 April 2026: Seoul Station to **Dorasan Station**, on the **second and fourth Friday** of the month, leaving about **08:45**. It is sold only as a tour package with a coach, entry fees and a guide, about **₩39,600**, and you cannot board it on your own. Bring photo ID, and a **passport** if you are a foreign visitor. [Dates and booking](https://www.korailtravel.com/web/submain/subTrain.asp).",
+            since: "Checked 7 November 2026.",
+            source: 'Asia Business Daily and Korean press, April 2026; departure time and fare from one travel guide. The Korail booking page could not be read, so confirm dates and the fare there.',
           },
           {
             icon: '🚧',
@@ -2434,7 +2442,7 @@ export const cities: City[] = [
         image: 'jeonju-hanok.jpg',
         imageCredit: 'Photo: Bernard Gagnon · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1zc7KUSCpGvEQi2Hw_kpZhcghjkFOzGk',
-        keywords: ['Jeonju', 'JeonjuHanokVillage', 'Gyeonggijeon', 'JeondongCathedral', 'Omokdae', 'DeokjinPark', 'Hanbok', 'KongnamulGukbap', 'KoreaTravel'],
+        keywords: ['Jeonju', 'STrain', 'JeonjuHanokVillage', 'Gyeonggijeon', 'JeondongCathedral', 'Omokdae', 'DeokjinPark', 'Hanbok', 'KongnamulGukbap', 'KoreaTravel'],
         guide: {
           intro: [
             "🏯 Give the hanok village a whole day on foot: the shrine and the cathedral in the morning, the lanes and Omokdae hill after lunch, the mural village as the light goes. I would **stay into the evening**, when the lanterns come on over the lanes.",
@@ -2465,6 +2473,7 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 KTX from **Yongsan Station** to **Jeonju Station**, 34,400 won (fare as of July 2026). From the station, take a taxi or a city bus to the hanok village.",
+            "🚆 The slow, scenic way: the **S-Train**, a Korail tourist train, runs from Seoul to Yeosu and stops at **Jeonju**. It is much slower than the KTX and has a tea room with a traditional tea ceremony. Book it on Korail's theme train pages and check the timetable first.",
             "📸 For the best view over the tiled roofs, go to the café pinned at the village entrance. Trees hide most of the view at Omokdae.",
             "🍜 Eat along the way: the pink pins on the map are the restaurants from the video, with their hours and closing days.",
             "✨ Rent a hanbok for the lanes; it suits the shrine, the cathedral and the stone walls.",
