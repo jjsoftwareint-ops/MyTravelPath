@@ -51,14 +51,25 @@ export default function Layout({ title, titleImage, subtitle, backTo: backToProp
             ‹
           </Link>
         ) : icon ? (
-          icon
+          // The brand mark reloads the home page (a plain <a>, not the router Link, so the browser really reloads).
+          // The wordmark beside it carries the same link with its accessible name, so this one is hidden from readers.
+          titleImage ? (
+            <a href={import.meta.env.BASE_URL} className="brand-link" aria-hidden="true" tabIndex={-1}>
+              {icon}
+            </a>
+          ) : (
+            icon
+          )
         ) : (
           <span className="back placeholder" />
         )}
         <div className="header-text">
           {titleImage ? (
             <h1 className="wordmark">
-              <img src={`${import.meta.env.BASE_URL}${titleImage}`} alt={title} width={800} height={266} />
+              {/* Tapping the wordmark reloads the home page: a full page load, so filters and scroll start fresh. */}
+              <a href={import.meta.env.BASE_URL} className="brand-link">
+                <img src={`${import.meta.env.BASE_URL}${titleImage}`} alt={title} width={800} height={266} />
+              </a>
             </h1>
           ) : (
             <h1>{title}</h1>
