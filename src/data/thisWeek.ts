@@ -33,7 +33,7 @@ export type ThisWeek = {
 }
 
 export const thisWeek: ThisWeek = {
-  updated: '2026-11-03',
+  updated: '2026-11-07',
   weeks: [
     {
       range: 'Nov 3rd(Tue) ~ 8th(Sun)',
@@ -65,17 +65,19 @@ export const thisWeek: ThisWeek = {
           city: 'Seoul',
           cityId: 'seoul',
           when: 'Now to about mid-November',
-          where: 'Ginkgo streets in Seoul and Suwon, mountains further south',
+          where: 'Ginkgo streets in Seoul, Suwon and Jeonju, mountains further south',
           price: 'Free',
           text: 'Ginkgo and maple turn together in Seoul this week and next. Forecasts differ by about a week, so go soon.',
           todo: [
             'Walk the ginkgo avenue of **Garosu-gil** in Sinsa in the late afternoon, when the yellow leaves are at their best.',
             'In Suwon, walk **Hwaseong Haenggung** palace and look for silver grass and yellow ginkgo along the pond.',
             '**Naejangsan** National Park, in North Jeolla, peaks around 4 to 10 Nov.',
+            'In Jeonju, see the 400-year-old ginkgo trees of **Jeonju Hyanggyo** turn gold; the school is {red:closed on Mondays}.',
           ],
           routes: [
             { cityId: 'seoul', pathId: 'gangnam-night-streets', text: 'Garosu-gil and Gangnam at night' },
             { cityId: 'gyeonggi-do', pathId: 'hwaseong', text: 'Suwon with Hwaseong Fortress' },
+            { cityId: 'gyeongju-jeonju', pathId: 'jeonju', text: 'Jeonju Hanok Village and Hyanggyo' },
           ],
         },
         {

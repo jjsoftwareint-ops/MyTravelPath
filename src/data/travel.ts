@@ -90,10 +90,10 @@ export const cities: City[] = [
         seoDescription:
           "Walk Seoul's city wall on Naksan at sunset, pass Ihwa mural village and Dongdaemun gate, then follow the lit Cheonggyecheon stream. Map and tips.",
         duration: '3h',
-        updated: '2026-11-03',
+        updated: '2026-11-07',
         tags: [{ icon: 'sunset', label: 'Evening walk' }, { icon: 'moon', label: 'Night walk' }],
         whyVisit: [
-          "Naksan Park has **the most beautiful sunset and night view in Seoul**, and you watch the sunset from a café: Cafe Nakta sits on the lip of the old quarry, San 1-1 by the wall, with the whole of the old city below.",
+          "Naksan Park has **the most beautiful sunset and night view in Seoul**, and you watch the sunset from a café on the lip of the old quarry or by the wall, with the whole of the old city below.",
           "Then **the night walk along the 600-year-old wall**, with Jongno, the Bukhansan ridge and Namsan Tower lit up beneath you, for free. The hill is only 125 m, so you don't have to earn it.",
           "A mural village through a secret gate, a gate standing alone in the traffic, and the lit stream through the old city to finish.",
         ],
@@ -136,7 +136,7 @@ export const cities: City[] = [
         keywords: ['Seoul', 'NightWalk', 'Naksan', 'SeoulCityWall', 'Cheonggyecheon', 'Dongdaemun', 'NaksanCafe', 'SunsetView', 'KoreaTravel'],
         guide: {
           intro: [
-            "🌙 **Watch the sunset from a view café first**, Cafe Nakta at the old quarry or San 1-1 by the wall on the {blue:blue path}, and come onto the wall once the lights are on. The viewpoints and the night walk along the wall are what comes after, and the wall carries you downhill to Dongdaemun without you having to think about it.",
+            "🌙 **Watch the sunset from a view café first**, at the old quarry or by the wall on the {blue:blue path}, and come onto the wall once the lights are on. The viewpoints and the night walk along the wall are what comes after, and the wall carries you downhill to Dongdaemun without you having to think about it.",
             "From Dongdaemun it's the lit stream all the way west to Cheonggye Plaza. 5.6 km, almost all downhill or flat, about three hours if you dawdle, which you will.",
             "The {red:red path} is the direct way down; the {blue:blue path} winds through alleys of old houses and hilltop cafés. Mix them however you like.",
           ],
@@ -145,7 +145,7 @@ export const cities: City[] = [
             "[[Naksan Park|서울 낙산공원]], ten minutes uphill from Hyehwa Station exit 2: the central plaza and a small exhibition hall on the wall's history. Naksan is named for its camel-back shape, the palace's 'left blue dragon' hill.",
             "[[First View Plaza|서울 낙산공원 전망대]]: the panorama west over Jongno, Bukhansan and N Seoul Tower, at its best once the city lights are on.",
             "[[Ihwa Mural Village|서울 이화벽화마을]], through the first secret gate in the wall: a hillside settlement from just after the Korean War, painted by a 2006 art project. Some of the best-known murals were removed after residents tired of the crowds, and people still live on these stairs, so keep quiet.",
-            "The {blue:blue} loop's hilltop cafés, where people watch the sunset before the wall: Deoham186, a hidden café and pottery workshop; Cafe Nakta at the old quarry viewpoint, looking straight onto the cliff face; the Reading Cat book café by the secret gate; Odeoksae, walled in like a small fortress near the angel-wings mural. The Ihwa-dong Village Museum and the Seoul City Wall Museum are on the way down.",
+            "The {blue:blue} loop's hilltop cafés, where people watch the sunset before the wall: a hidden café with a pottery workshop, one at the old quarry viewpoint looking straight onto the cliff face, a book café by the secret gate, and one walled in like a small fortress near the angel-wings mural. The Ihwa-dong Village Museum and the Seoul City Wall Museum are on the way down.",
             "[[Dongdaemun gate|서울 흥인지문]], standing alone in the middle of the junction: rebuilt in 1869, its flanking walls pulled down in 1907. Dongdaemun Design Plaza is a short detour south.",
             "[[Cheonggyecheon Stream|서울 청계천]], down the stairs at Cheonggyecheon Fashion Plaza: the Jeon Tae-il bridge, Gwangjang Market overhead at Saebyeok-dari, and the Sewoon arcade sky deck.",
             "The last stretch of the stream: a 192 m ceramic mural of King Jeongjo's procession, Gwangtonggyo, the oldest stone bridge on the stream, and the candle fountain at Cheonggye Plaza, minutes from Gwanghwamun and City Hall stations.",
@@ -154,7 +154,7 @@ export const cities: City[] = [
             "🚇 Getting there: Hyehwa Station (line 4), exit 2, then through the Daehangno theatre quarter and up Naksan-gil. Hansungdae-ipgu Station (line 4), exit 4, is the alternate start straight onto the city-wall trail.",
             "🔦 The wall path is steps and slopes with dark patches between the lit sections; a phone torch helps. The stream walkway is flat and lit.",
             "📍 The stream walkway closes after heavy rain. Toilets at the Naksan central plaza.",
-            "☕ The blue loop (Deoham186, Terre-tre, Chang Chan, Cafe Nakta, Donut Jeongsu, Gaeppul, the Reading Cat cafe, San 1-1 and Odeoksae) is a steep, stepped side trip through residential lanes, not part of the direct route down to Dongdaemun.",
+            "☕ The blue loop of hilltop cafés is a steep, stepped side trip through residential lanes, not part of the direct route down to Dongdaemun.",
           ],
         },
       },
@@ -165,7 +165,7 @@ export const cities: City[] = [
         seoDescription:
           'A 2.4 km evening walk in Haebangchon, Seoul: the 108 Stairs, Sinheung Market alleys, Sowol-ro rooftop views and the city wall. Free map and tips.',
         duration: '2h',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         tags: [{ icon: 'sunset', label: 'Evening walk' }],
         image: 'haebangchon.jpg',
         imageCredit: 'Photo: Lee Jeong Woo / Korea MCST · CC BY-SA 4.0',
@@ -217,7 +217,7 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 Getting there: village bus Yongsan 02 to its last stop, the Huam-dong terminus, where the walk starts.",
-            "🍜 Dinner in the market: Pad Ka Pao for Thai on the second floor, Haebangchon Dak for herbal roast chicken, H5NG for neon American-Chinese. Mersin Kebab's tantuni and Haebang Wang Gopchang are a minute away. Haebang Park's rooftop café is where to wait out a queue and catch the sunset.",
+            "🍜 Dinner in the market: Thai on the second floor, herbal roast chicken and neon American-Chinese, with kebabs and gopchang a minute away; the pink pins on the map have the places. A rooftop café by the market is where to wait out a queue and catch the sunset.",
             "👟 The lanes are steep and some stairs are unlit; wear proper shoes. The village bus shares the narrow road, so step aside when it comes.",
             "📍 The lit wall path continues up Namsan from Baekbeom Square.",
           ],
@@ -229,7 +229,7 @@ export const cities: City[] = [
         seoTitle: 'Hanok Village walk, Seoul: Bukchon, Ikseon-dong',
         seoDescription: 'A 5.1 km hanok village walk in Seoul: Bukchon, Ikseon-dong and Insadong on a free map, with Namsangol Hanok Village, local food, toilets and visiting hours.',
         duration: '2h',
-        updated: '2026-11-01',
+        updated: '2026-11-07',
         tags: [{ icon: 'village', label: 'Traditional' }],
         whyVisit: [
           "Three hanok quarters in one 5 km walk, laid out in 1394 and **still lived in**: tiled roofs stepping down a hill with Namsan Mountain behind them.",
@@ -288,7 +288,7 @@ export const cities: City[] = [
             "📍 Two quiet extras if you have time: the Cecil Maru rooftop in Jeong-dong, a free view over the Anglican cathedral, and the Cheong Wa Dae Sarangchae in Seochon for maps and a sit-down ({red:closed Tuesdays}).",
             "📍 Hanbok rental shops cluster around Anguk; wearers enter the royal palaces free.",
             "🏡 Namsangol is free; check its closing day and the show schedule at Seoul Namsan Gugakdang on hanokmaeul.or.kr before you go.",
-            "🍜 Pil-dong, beside Namsangol, is the food district: Pildong Myeonok for Pyongyang naengmyeon, Pildong Hambak for hamburger steak, Dongdae Dakhanmari for chicken stew, and cafés like Sector Coffee and Hebe Coffee. Korea House near Chungmuro Station serves royal-style meals and tea.",
+            "🍜 Pil-dong, beside Namsangol, is the food district: Pyongyang naengmyeon, hamburger steak, chicken stew and good cafés, all on the map as pink pins.",
             "🛍️ Shopping around Anguk and Insadong? Bring your passport for the tourist tax refund. The Olive Young at Anguk adds hanbok experiences; see [our Olive Young guide](https://koreatravelpath.com/blog/2026-11-01-2013/).",
           ],
         },
@@ -300,7 +300,7 @@ export const cities: City[] = [
         seoDescription:
           'Climb Inwangsan along the Seoul fortress wall for views over Gyeongbokgung and the whole city. Free map with the route, pins and tips.',
         duration: '2.5h',
-        updated: '2026-11-02',
+        updated: '2026-11-07',
         tags: [
           { icon: 'hiker', label: 'Hiking' },
           { icon: 'sunset', label: 'Evening walk' },
@@ -356,7 +356,7 @@ export const cities: City[] = [
             "🔦 Start **about two hours before sunset** to reach Beombawi as the lights come on, and carry a torch for the way down. Avoid rain and ice: the granite gets slippery.",
             "🚇 Getting there: Gyeongbokgung Station (line 3), exit 1. A taxi to the Tiger Statue saves the first 20 min on the road.",
             "💧 Nothing is sold between the CU and Choso Bookshop; take two bottles of water each.",
-            "🍜 Dinner in Seochon at the end: Seochon Gyedanjip for seasonal seafood, Naejadong Dakgalbi, Kimjin Moksam pork belly or Mokpo Sebal Nakji octopus.",
+            "🍜 Dinner in Seochon at the end: seasonal seafood, dakgalbi, pork belly or spicy octopus. The pink pins on the map have the places.",
             "✂️ Shorter option: climb only to Beombawi and come back the same way, about 1.5 hours.",
           ],
         },
@@ -368,7 +368,7 @@ export const cities: City[] = [
         seoDescription:
           'Walk the Seoul City Wall from Heunginjimun (Dongdaemun) past Gwanghuimun to Jangchung, then over Namsan to Baekbeom Square. Map, stamp point and tips.',
         duration: '3h',
-        updated: '2026-11-06',
+        updated: '2026-11-07',
         tags: [{ icon: 'hiker', label: 'Wall walk' }],
         image: 'hanyang-dosung-gil.jpg',
         imageCredit: 'Photo: Richard Mortel · CC BY 2.0',
@@ -427,8 +427,8 @@ export const cities: City[] = [
           tips: [
             "🚇 Start at **Dongdaemun Station** (Lines 1 and 4), exit 6 or 7, and finish near Hoehyeon Station (Line 4).",
             "✂️ Shorter option: stop at Jangchung Gymnasium after about an hour and take the Namsan half another day.",
-            "🍜 Noodles near the start at Irwol-ui Jemyeonso or Choi Ramen; tonkatsu on Namsan at Buheong Donkatsu by the tower, or at No. 23 Namsan Donkatsu near the end.",
-            "☕ Coffee stops: Jeong Geurida and Pier Coffee Gwanghuimun on the first half, Coffee Jip at Jangchung, Central Yunit by the National Theater on Namsan.",
+            "🍜 Eat noodles near the start, or tonkatsu on Namsan by the tower or near the end; the pink pins on the map have the places.",
+            "☕ Coffee stops are pinned on the first half, at Jangchung and by the National Theater on Namsan.",
             "🔗 More of the same wall on this site: the Naksan night walk and the Inwangsan hike.",
           ],
         },
@@ -440,7 +440,7 @@ export const cities: City[] = [
         seoDescription:
           'Four cherry blossom walks in Seoul for early April: Dorimcheon and Anyangcheon, Yeouido Yunjung-ro, Seokchon Lake and more. Free map with blossom, food and café pins.',
         duration: '2–3h each',
-        updated: '2026-11-05',
+        updated: '2026-11-07',
         whyVisit: [
           "Ten days in early April when Seoul turns pink, and these are the four walks locals use, not the one everyone queues for.",
           "**The blossom tunnel the locals walk**, along the Anyangcheon stream from Sindorim to Gocheok Bridge, and Yeouido's 1,800 trees for the one time you want the crowd.",
@@ -486,7 +486,7 @@ export const cities: City[] = [
           tips: [
             "⏰ Go early morning or after dark. Yunjung-ro and Seokchon Lake are lit at night and **far less crowded before 9 am**.",
             "📍 Dorimcheon and Anyangcheon are the least busy; bring a picnic, there are few shops on the embankment.",
-            "🍜 Food on the way: Namsan's pork-cutlet street, with [[101beonji Namsan Donkatsu|서울 101번지남산돈까스]], is just below the library end, and Songridan-gil beside Seokchon Lake is packed with restaurants and cafés. On Yunjung-ro, [[Gangbyeon Seojae|서울 국회 강변서재]] is a book café with a river view, {red:closed on Sundays}.",
+            "🍜 Food on the way: Namsan's pork-cutlet street is just below the library end, and Songridan-gil beside Seokchon Lake is packed with restaurants and cafés. On Yunjung-ro there is a book café with a river view, {red:closed on Sundays}.",
             "🔗 From Namsan Library, Myeongdong Station is 15 min downhill, and the Haebangchon walk on this site ends nearby if you want an evening extension.",
             "🌸 Timing varies by a week or two each year; check the national blossom forecast published in March before fixing a date.",
           ],
@@ -643,7 +643,7 @@ export const cities: City[] = [
         seoDescription:
           "A 2.8 km walk through Seongsu, Seoul's warehouse district: pop-up lanes, concept stores, bakeries and brunch, ending at the Seoul Forest cafés.",
         duration: '3h',
-        updated: '2026-11-01',
+        updated: '2026-11-07',
         tags: [{ icon: 'hot', label: 'Hot place' }],
         image: 'seongsu.jpg',
         imageCredit: 'Photo: CartoonChess · CC BY-SA 4.0',
@@ -680,7 +680,7 @@ export const cities: City[] = [
             "[[Seongsu Station|서울 성수역]] (line 2) exit 3, the start: Daelim Changgo Gallery, the 1970s factory warehouse that started the café boom, with the Musinsa store in the brick building next to it.",
             "[[Yeonmujang-gil|서울 성수동 연무장길]], the main street: Point of View at number 18, three floors of stationery and objects; Ader Error's concept space; and the queues for the salt-bread and ciabatta bakeries.",
             "[[Yeonmujang 5-gil|서울 성수동 연무장5길]], the pop-up lane: Dior, Lush's pop-up theatre, Frika and the changing food and brand events. Atelier-gil's small workshops and showrooms sit in the lanes beside it.",
-            "[[The Seoulsup-gil café street|서울 성수 서울숲길 카페거리]]: Low Coffee Stand, Poset and the first Blue Bottle in Korea in its old garage, with Seoul Forest at the end: lawns, deer, the pond boardwalk and the river path. Reverse the whole list if you start here.",
+            "[[The Seoulsup-gil café street|서울 성수 서울숲길 카페거리]]: café after café in old garages and houses, with Seoul Forest at the end: lawns, deer, the pond boardwalk and the river path. Reverse the whole list if you start here.",
           ],
           tips: [
             "⏰ **Weekday late morning** is the calm time. Weekend afternoons mean queues of an hour or more at the famous bakeries and pop-ups; ask for the day's wait on the Naver Map page.",
@@ -763,7 +763,7 @@ export const cities: City[] = [
         seoDescription:
           'What to do in Seoul when it rains or freezes: a botanic-park greenhouse, malls, museums, the Han River Bus and a jjimjilbang. Cafés and restaurants checked, map included.',
         duration: 'Full day',
-        updated: '2026-11-05',
+        updated: '2026-11-07',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
         whyVisit: [
           "A rainy day in Seoul with **a greenhouse in the middle of the city, eight big museums and a sauna in the woods** on the same map.",
@@ -781,7 +781,7 @@ export const cities: City[] = [
           {
             icon: '🚫',
             title: 'Closed on Mondays',
-            body: "{red:Closed every Monday}: Seoul Botanic Park's greenhouse and theme gardens (the open parkland stays open), the War Memorial of Korea and Leeum Museum of Art. The Seoul Museum of History, LG Arts Center Seoul and its Café La Copella usually {red:close on Mondays} too. Plan these for Tuesday to Sunday. Check other museums on Naver Map: the National Palace Museum showed as {red:closed on Monday} 26 October, and its closing day may have changed. Public holidays can change the closing day.",
+            body: "{red:Closed every Monday}: Seoul Botanic Park's greenhouse and theme gardens (the open parkland stays open), the War Memorial of Korea and Leeum Museum of Art. The Seoul Museum of History and LG Arts Center Seoul usually {red:close on Mondays} too. Plan these for Tuesday to Sunday. Check other museums on Naver Map: the National Palace Museum showed as {red:closed on Monday} 26 October, and its closing day may have changed. Public holidays can change the closing day.",
             since: "Checked 24 October 2026.",
             source: 'Opening hours as listed on Naver Map, checked 24 October 2026; the Botanic Park closure also matches its official site. Public holidays can change the closing day.',
           },
@@ -805,9 +805,8 @@ export const cities: City[] = [
           ],
           route: [
             "[[Seoul Botanic Park|서울식물원]], Magoknaru Station exit 3 or 4: the big greenhouse keeps the park green all year, even in winter.",
-            "[[LG Arts Center Seoul|LG아트센터 서울]], a performing arts venue designed by Tadao Ando, with Café La Copella on the 2nd floor and a terrace view back over the park.",
+            "[[LG Arts Center Seoul|LG아트센터 서울]], a performing arts venue designed by Tadao Ando, with a café on the 2nd floor and a terrace view back over the park.",
             "[[One Grove Magok|서울 마곡 원그로브]] and COEX Magok, two indoor complexes with restaurants and shops under one roof; COEX Magok has most of its restaurants on the lower floors.",
-            "Lunch or coffee in Magok: Bogyeong Sujebi for hand-pulled dough soup, Cafe Gongmyeong Magok Chaekppang for a café with a book lounge, or salt bread from Tardema Bakery Magoknaru.",
             "[[Han River Bus|서울 한강버스]] from Magok pier to Yeouido pier: the boat gives you Seoul's night view from the river. Check the current timetable before you plan the evening around it.",
             "The museums. In the south, the National Museum of Korea, the War Memorial of Korea and Leeum Museum of Art. Five more cluster around Gyeongbokgung and Gwanghwamun: MMCA Seoul, the National Folk Museum of Korea, the Seoul Museum of History, the National Palace Museum of Korea and the National Museum of Korean Contemporary History.",
             "[[Forest Herbal Land|서울 숲속한방랜드]] (숲속한방랜드) at Bongwonsa-gil 75-7 in Seodaemun-gu, near Sinchon: a traditional Korean sauna, a jjimjilbang, set in the woods. It heats its kilns with charcoal. Open daily 06:30–22:00. The warmest way to end a cold day.",
@@ -816,8 +815,8 @@ export const cities: City[] = [
             "🚇 Getting there: Magoknaru Station (exits 3 or 4) for Seoul Botanic Park and the Magok cluster, or Yangcheon Hyanggyo Station exit 8 for the other side of the park. Ichon Station is right next to the National Museum of Korea.",
             "🎟️ The permanent exhibitions at the National Museum of Korea, the War Memorial of Korea, the National Folk Museum, the Seoul Museum of History and the National Palace Museum are free. Leeum and MMCA Seoul charge by exhibition, so check Naver Map before you go.",
             "⏰ Late nights: on Wednesday and Saturday the National Museum of Korea, the National Palace Museum, MMCA Seoul and the Contemporary History museum stay open until 21:00, and the Folk Museum until 20:00 on Wednesday. The Seoul Museum of History is open until 21:00 on most days but closes at 18:00 on Thursday. All from Naver Map, 24 October 2026.",
-            "🍜 Bogyeong Sujebi has a wait at weekday lunch, and the Tardema Bakery Magoknaru branch is mostly takeaway.",
-            "🍲 Lunch between museums: near Gyeongbokgung, [[Tosokchon|서울 토속촌삼계탕]] for ginseng chicken soup or [[Gwanghwamun Mijin|서울 광화문미진]] for cold buckwheat noodles, both with long lunch queues. At the National Museum of Korea, [[Gyeongcheonsa-tap Dure|서울 국립중앙박물관 경천사탑 두레]] serves Korean set meals inside the building.",
+            "🍜 Lunch in Magok: the pink pins near the park are hand-pulled dough soup, a book café and a salt-bread bakery.",
+            "🍲 Lunch between museums: ginseng chicken soup and cold buckwheat noodles near Gyeongbokgung, both with long lunch queues, or Korean set meals inside the National Museum of Korea. The pink pins have the places.",
             "🚤 The Han River Bus cost ₩3,000 one way at the time of writing, and the city has proposed higher weekend fares from next year. Its timetable has changed several times, so use the operator's current schedule, not an old one.",
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Forest Herbal Land is open from 06:30 to 22:00 every day (Naver Map, 24 October 2026), but a 2025 write-up gives 08:00 to 21:00 for its charcoal kilns, so check before you go. Write-ups from 2025 list about ₩16,000 to ₩17,000 for the charcoal kilns and ₩10,000 to ₩11,000 for the bath alone; prices change, so confirm them and what to bring on its Naver Map page.",
             "📍 Seonungak is a hanok café at the foot of Bukhansan in Ui-dong, far from Magok. It is a good wet-day stop after the Bukhansan Dulle-gil walk on this site, which starts in Ui-dong too. Naver lists it as {red:closed on Sundays}, and autumn-leaf season brings queues.",
@@ -1001,19 +1000,19 @@ export const cities: City[] = [
             "[[Nampo-dong|부산 남포동]], line 1 to Jagalchi: the fish market hall and quay stalls, then the arcades of Gukje and Kkangtong markets. Gukje grew from a street market after liberation, and in the Korean War refugees sold US army supplies there; Kkangtong, 'tin can', is named for them.",
             "[[BIFF Square|부산 BIFF 광장]], made when the film festival began in 1996 and now the home of the hotteok carts, and the escalators up Yongdusan Park to Busan Tower. The park was re-made after a great fire in 1954.",
             "[[Busan Chinatown|부산 차이나타운]], in front of Busan Station: Korean sources trace it to 1884, when a Qing consulate opened in Choryang and merchants settled around it; part of it became Texas Street after the war.",
-            "Also at Busan Station and Choryang: Anmok Busan Station for pork gukbap (rice soup), and Ochoryang, a tea house and small gallery in a wooden Japanese-style house built in 1925, five minutes from Choryang Station exits 7 and 9.",
+            "Also at Choryang: Ochoryang, a tea house and small gallery in a wooden Japanese-style house built in 1925, five minutes from Choryang Station exits 7 and 9.",
             "[[Huinnyeoul Culture Village|부산 흰여울문화마을]], bus 7, 71 or 508 from Nampo-dong: 'white rapids' is named for the foam where streams from Bongnae Mountain meet the sea, and the white houses and murals on the cliff lane are from the 2010s revival.",
             "[[Gamcheon Culture Village|부산 감천문화마을]], bus 1-1, 2 or 2-2 from Toseong Station exit 6: pastel houses stacked down a steep valley, painted by a public art project that began in 2009. Buy the stamp map at the information centre and follow the fish signs.",
             "[[Haedong Yonggungsa|부산 해동용궁사]], bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974.",
             "[[Dongbaek Island|부산 동백섬]], Haeundae Station exit 3 or 5: a boardwalk loop around the camellia-covered headland, past the mermaid statue to Nurimaru APEC House on the southern tip, built for the 2005 APEC summit and shaped like a traditional pavilion.",
-            "Two more stops sit away from the rest: Anmok Seomyeon, the same pork gukbap house in Seomyeon, and the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above).",
+            "One more stop sits away from the rest: the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above).",
             "Further afield, five more places for a day with a car or a longer metro ride: **Beomeosa**, one of Korea's great mountain temples, founded in 678 on the slopes of Geumjeongsan, with a stone-pillared gate and pagoda that are both national Treasures; the Songdo cloud bridge; the cliff shrine at Seokbulsa; and Orangdae and Jukseong church in Gijang.",
           ],
           tips: [
             "⏰ The drone show is on **Saturday night**, at 20:00 or 19:00 by season, with the bridge lights on the hour after it. Weeknights are calmer and the fish market cheaper. Dongbaek Island and The Bay 101 are their own after-dark stop, any night.",
             "🚇 Gwangan Station (line 2) for the walk; Jagalchi and Nampo stations (line 1) for the markets; Toseong Station (line 1) for the Gamcheon bus; Haeundae Station (line 2) for the Yonggungsa bus and for Dongbaek Island.",
             "🍜 The fish-market system: buy downstairs, then a table fee upstairs covers side dishes and soup; take-away to the park is free. At BIFF Square the seed hotteok queue moves fast.",
-            "🍲 Pork gukbap is Busan's classic bowl, and Anmok has two branches: near Busan Station (open from 11:00 on weekdays, 10:00 at weekends) and in Seomyeon (from 10:00 on weekdays, 09:00 at weekends). Hours as listed on Naver Map on 25 October 2026.",
+            "🍲 Pork gukbap (rice soup) is Busan's classic bowl: the pink pins near Busan Station and in Seomyeon are one well-known gukbap house.",
             "🔗 Korea's oldest China Town is in Incheon, an hour from Seoul, with its own walk on this site.",
             "👟 Gwangalli and Nampo-dong are flat. Gamcheon and Huinnyeoul are stairs and slopes; Yonggungsa is 108 steps each way.",
             "🔗 The Haeundae Coastal Path on this site is two stops away from Gwangalli and makes the next morning.",
@@ -1071,7 +1070,7 @@ export const cities: City[] = [
           route: [
             "Museums: Busan Museum in Nam-gu's UN Peace Park, Bokcheon Museum over an excavated Gaya-era tomb cluster in Dongnae, the National Maritime Museum of Korea and the free Busan Modern & Contemporary History Museum in a 1929 former bank building, the Busan Fishing Village Folk Museum by the Nakdong estuary, the hands-on Busan National Science Museum out in Gijang, and Memory Treasure Island, a paid 1970s–90s nostalgia collection near Gukje Market.",
             "Spas, saunas & water parks: Centum Spa Land, a big jjimjilbang inside Shinsegae Centum City department store; Club D Oasis Spa & Waterpark in the LCT tower at Haeundae; Hotel Aquapalace's jjimjilbang right on Gwangalli beach with an infinity pool facing the bridge; and Heosimcheong, one of Busan's oldest hot-spring bathhouses at Dongnae, with a craft-beer taproom downstairs.",
-            "Cafés, characters & culture: F1963, a 1963 wire-rope factory turned bookstore-café, brewery and gallery complex; Hello Kitty Apple Cafe in Centum City; and 4233 Mind Center, a calming light-and-sound exhibition space near Gwangalli.",
+            "Cafés, characters & culture: F1963, a 1963 wire-rope factory turned bookstore-café, brewery and gallery complex; a character café in Centum City; and 4233 Mind Center, a calming light-and-sound exhibition space near Gwangalli.",
             "Towers & scenic train: Busan Tower's 1973 indoor observation deck over Yongdusan Park and the harbour; Busan X the Sky, Korea's tallest observation deck on floors 98–100 of LCT Landmark Tower; and the Haeundae Blueline beach train from Mipo, a sheltered, sit-down way to see the coast between Haeundae and Songjeong.",
           ],
           tips: [
@@ -1360,7 +1359,7 @@ export const cities: City[] = [
         seoDescription:
           "Korea's oldest China Town, 2 minutes from Incheon Station: the lantern street, Songwol-dong Fairy Tale Village, the Japanese-style street and murals.",
         duration: '2–3h',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         tags: [{ icon: 'village', label: 'Old town' }],
         image: 'chinatown.jpg',
         imageCredit: 'Photo: Mobius6 · CC BY-SA 4.0',
@@ -1413,7 +1412,7 @@ export const cities: City[] = [
           tips: [
             "⏰ Weekends are crowded. A weekday late morning is calmer, and **the lanterns look best after dark**.",
             "🚇 Getting there: Line 1 or the Suin-Bundang line to Incheon Station, about one hour from Seoul Station. The gate is straight across the plaza.",
-            "🍜 Food: Gonghwachun and Yeongyeong (home of white jajangmyeon) draw queues at lunch, so eat early or late. For snacks on the move try the clay-oven buns at Simnihyang, hollow gonggalppang bread and the Macau egg tarts at Tart King.",
+            "🍜 The famous jajangmyeon houses draw queues at lunch, so eat early or late. For snacks on the move try clay-oven buns, hollow gonggalppang bread and Macau egg tarts; the pink pins have the places.",
             "👟 The main street and the mural streets are steep; the Fairy Tale Village and the Japanese street are flat. Allow two to three hours including a meal.",
             "🌅 Make it a full day: China Town in the afternoon, then Wolmido for the sunset. The Wolmi Sea Train starts beside Incheon Station (bus 45 also passes here), and the Wolmido Sunset walk on this site has the monorail stops, a 5 km loop and sunset cafés.",
             "🍜 Sinpo Market is ten minutes past the Japanese street.",
@@ -1489,7 +1488,7 @@ export const cities: City[] = [
         seoDescription:
           'Wolmido island at sunset: reach it from Incheon Station, ride the Sea Train, walk the 5 km loop and stop at sunset cafés and the hilltop observatory.',
         duration: '3h',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         tags: [{ icon: 'sunset', label: 'Evening walk' }],
         whyVisit: [
           "An island at the end of Incheon's harbour that **faces straight west into the open sea**, so the sun sets in front of you.",
@@ -1539,9 +1538,8 @@ export const cities: City[] = [
           ],
           route: [
             "[[Incheon Station|인천역]] (line 1 or the Suin-Bundang line), the start, with Wolmi Sea Station, stop 1 of the Wolmi Sea Train and its ticket office, 200 m away. Buses 2, 10, 23 and 45 go from the station too.",
-            "[[Storage Incheon|스토리지 인천 카페]], the sunset café nearest the station, with big windows facing the West Sea. Its last order was 19:00, so it suits the way back.",
             "[[Wolmi Park Station|인천 월미공원역]], stop 2, 60 m from Wolmi Park's main gate. Ride the monorail this far if you would rather skip the approach walk.",
-            "[[Wolmi Culture Street|인천 월미문화의거리]], the island's seafront strip of snack stalls and claw machines, where the sunset cafés are: Wolmido Remi, Me Too Coffee and Artos Hope Party. Time your coffee for the hour before sunset.",
+            "[[Wolmi Culture Street|인천 월미문화의거리]], the island's seafront strip of snack stalls and claw machines, where the sunset cafés are. Time your coffee for the hour before sunset.",
             "[[The Korea Emigration Museum|인천 한국이민사박물관]] and Museum Station, stop 4, at the island's south-western end, with a public toilet at the stop.",
             "[[Wolmi Observatory|인천 월미전망대]], a three-storey hilltop tower with views of Incheon Port, the West Sea and Incheon Bridge, and a café inside. About 30 minutes on foot, or less by the park's shuttle.",
             "[[Wolmi Traditional Garden|인천 월미공원 전통정원]] and the park's main gate, where the loop closes; Wolmi Park Station is 60 m away for the second half of your round ticket, or take a bus.",
@@ -1550,7 +1548,7 @@ export const cities: City[] = [
             "🚇 Getting there: line 1 or the Suin-Bundang line to Incheon Station, about an hour from Seoul Station. The monorail's first stop is beside the station.",
             "🚌 The bus works all day and on Mondays. Incheon city lists buses 2, 10, 23 and 45; bus 45 passes the Fairy Tale Village and China Town on its way, so it suits the China Town walk on this site too.",
             "🎟️ The monorail ticket is a round ticket: one ride out and one more the same day. Ride out to stop 3 or 4, walk the island, and use the second ride from Wolmi Park Station. Stop 3, Wolmi Culture Street Station, is about 350 m from the path.",
-            "⏰ Café hours differ, so check them against the sunset. Last orders were 19:00 at Storage Incheon, 21:30 at Wolmido Remi and Me Too Coffee, and 20:00 at Artos Hope Party.",
+            "⏰ Café hours differ, so check them against the sunset: last orders run from 19:00 to 21:30.",
             "👟 Mostly paved. The loop climbs to about 40 m over the hill, and takes about 81 minutes without stops according to Naver Map.",
             "🔗 The sunset trip can follow the China Town walk on this site. Both start at Incheon Station: China Town takes two to three hours, so start it around lunch, then come back to the station for the monorail or bus 45 and reach Wolmido in time for the golden hour.",
           ],
@@ -1563,7 +1561,7 @@ export const cities: City[] = [
         seoDescription:
           "Incheon's big island in a day: a hanok-style church, an old temple, coastal forts and a textile town, with cafés and restaurants pinned on a free map.",
         duration: 'Full day',
-        updated: '2026-11-01',
+        updated: '2026-11-07',
         tags: [{ icon: 'village', label: 'Island day trip' }],
         whyVisit: [
           "An island that **ruled Korea for forty years while the Mongols waited on the far shore**, one bus ride from Seoul.",
@@ -1588,7 +1586,7 @@ export const cities: City[] = [
           {
             icon: '🚫',
             title: 'Closed days to plan around',
-            body: "{red:Closed Mondays}: Sochang Experience Hall, Geummundo and Metaforest. {red:Closed Wednesdays}: Toga, Café Frans and the Ryu Distillery café (Ryu also {red:closed Thursdays}). Geummundo closes at 14:30, so go at lunch.",
+            body: "Sochang Experience Hall is {red:closed on Mondays}. Several restaurants and cafés on the map are {red:closed on Mondays, Wednesdays or Thursdays}, and one shuts at 14:30, so read the hours on each pin.",
             since: "Checked 26 October 2026.",
             source: 'Opening hours on Naver Map, checked 26 October 2026.',
           },
@@ -1614,8 +1612,8 @@ export const cities: City[] = [
           ],
           tips: [
             "🚌 Getting there: bus 3000 from Sinchon runs to the Ganghwa bus terminal, about 90 minutes to over two hours depending on traffic and on which site you read. Sites also give different Sinchon exits, so check the stop on the day. Taxis are the easy way on from the terminal; travel sites report 15 to 20 minutes to Jeondeungsa.",
-            "🍜 Five restaurants worth the detour: Kkomak Hansang (cockle bibimbap), Manisan Sanchae (a mountain-herb set meal), Geummundo (turnip tangsuyuk, lunch only), Toga (fresh tofu and shrimp stew) and Ssambap-ine (wrap-your-own ssambap). Naver shows no hours for Kkomak Hansang this week, so phone 032-937-2868 first.",
-            "☕ Eight cafés, from the retro Joyang Textile factory to Metaforest and Café Irim in Gilsang-myeon and Café Talkrapy on the south coast. Hours and closed days differ, so check before you drive out.",
+            "🍜 The pink pins are five restaurants worth the detour: cockle bibimbap, a mountain-herb set meal, turnip tangsuyuk (lunch only), fresh tofu and shrimp stew, and wrap-your-own ssambap.",
+            "☕ Eight cafés are pinned, from the retro Joyang Textile factory to the south coast. Hours and closed days differ, so check them before you set off.",
             "🎟️ Travel sites disagree on whether Jeondeungsa charges an entrance fee (free, or about ₩3,000), so keep a little cash for the gate.",
             "📍 Bomunsa sits on Seokmodo island off the west coast. Treat it as a separate trip and check the way across before you go.",
             "🔗 Another Incheon day on this site: the Incheon China Town and Wolmido Sunset walks.",
@@ -1643,7 +1641,7 @@ export const cities: City[] = [
         tags: [{ icon: 'village', label: 'Island day trip' }, { icon: 'railbike', label: 'Rail bike' }, { icon: 'hiking', label: 'Trekking' }],
         image: 'gapyeong.jpg',
         imageCredit: 'Photo: Katsujiro Maekawa · CC0',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         keywords: ['Gapyeong', 'Gyeonggi', 'DayTripFromSeoul', 'NamiIsland', 'NamiIslandFerry', 'PetiteFrance', 'MorningCalmArboretum', 'JatForest', 'JaraIsland', 'RailPark', 'CheongpyeongLake', 'ViewCafe', 'JadeGarden', 'BukhanRiver', 'GangchonTrail', 'KoreaTravel'],
         whyVisit: [
           "A lake valley an hour east of Seoul with **a French village, an Italian one and a pine-nut forest** on the same shore.",
@@ -1693,7 +1691,7 @@ export const cities: City[] = [
             icon: '☕',
             title: 'The view cafés close early',
             at: "view cafés",
-            body: "**La Cuna** 10:00–18:00. **Cafe The Wave** 11:00–18:00 (to 19:00 at weekends). **Corydalis** 09:00–20:00 (to 21:00 Fri and Sat). **Jajam 157** 10:00–19:00 (09:30–20:00 at weekends and holidays). Plan the café stop before dusk.",
+            body: "The view cafés open between **09:00 and 11:00** and close between **18:00 and 20:00**, an hour or so later at weekends. Plan the café stop before dusk.",
             since: "Checked 28 October 2026.",
             source: 'Naver Map, checked 28 October 2026.',
           },
@@ -1707,7 +1705,7 @@ export const cities: City[] = [
           route: [
             "[[Morning Calm Arboretum|가평 아침고요수목원]] and the Jat Scent Blue Forest: a garden and a pine-nut forest in the hills of Sangmyeon, a short drive apart. Pair them by car.",
             "[[Petite France|가평 쁘띠프랑스]] and the Italian Village (Pinocchio and Da Vinci): two themed villages a few minutes apart on the lakeside road.",
-            "[[The Cheongpyeong Lake view cafés|가평 청평호 뷰 카페]]: Corydalis, La Cuna, The Wave and Jajam 157, all voted for their views on Naver.",
+            "[[The Cheongpyeong Lake view cafés|가평 청평호 뷰 카페]]: four cafés, all voted for their views on Naver.",
             "[[Jara Island|가평 자라섬]] and Gapyeong Rail Park: an island in the Bukhan River and rail bikes on an old railway line, both near Gapyeong town.",
             "[[Nami Island|가평 남이섬]] and Jade Garden, both just across the border in Chuncheon: Nami Island is a five-minute ferry from the Gapyeong wharf, and its tree-lined main avenue is where Winter Sonata (2002) was filmed, the drama that started Korea's first wave of drama tourism.",
             "The river trail, Gapyeong Station to Gangchon Station, 16.7 km along the Bukhan River and the old Gyeongchun railway: Gyeonggang Bridge, Chunseong Bridge, Baegyang-ri and its old station, and the old Gangchon Station, about five hours.",
@@ -1826,7 +1824,7 @@ export const cities: City[] = [
         seoDescription:
           'Walk the 5.6 km Hwaseong Fortress wall in Suwon, with its four gates and view points, plus Haenggung-dong lanes. Public toilets, Suwon fried chicken and cafés: 45 pins on the map.',
         duration: '3h',
-        updated: '2026-11-02',
+        updated: '2026-11-07',
         tags: [{ icon: 'village', label: 'Old town' }],
         whyVisit: [
           "A **UNESCO fortress you can walk right round in three hours**: 5.7 km of wall, four gates, and a hilltop command post with a night view over Suwon.",
@@ -1875,7 +1873,7 @@ export const cities: City[] = [
             "🎬 Drama fans: Wolhwawon (월화원), the Chinese garden 3 km south-east, is free and open until 22:00, and it is on our K-Drama map.",
             "🛍️ The Starfield Suwon library (별마당도서관) is about 2 km west of the wall inside the mall, so it works as a rainy-day stop. Naver lists no separate hours for it.",
             "🏘️ The Korean Folk Village is in Yongin, about 10 km south-east, and needs a trip of its own. Naver lists it open 10:00–19:00 Monday to Thursday and until 22:00 Friday to Sunday.",
-            "🍗 Eat near Paldalmun: the fried-chicken street (통닭거리) has Namun Tongdak and Jinmi Tongdak, both on TV many times, and Suwon's signature wang-galbi chicken. The café lanes around the palace in Haenggung-dong are the other stop. The restaurants and cafés on the map are picked by Naver review count and TV credits.",
+            "🍗 Eat near Paldalmun: the fried-chicken street (통닭거리) has chicken houses that have been on TV many times, and Suwon's signature wang-galbi chicken. The café lanes around the palace in Haenggung-dong are the other stop. The restaurants and cafés on the map are picked by Naver review count and TV credits.",
             "👟 The wall climbs Paldalsan to Seojangdae, so wear shoes with grip. Allow three hours for the loop and more for the palace.",
           ],
         },
@@ -1956,7 +1954,7 @@ export const cities: City[] = [
         tags: [{ icon: 'hiking', label: 'Trekking' }, { icon: 'railbike', label: 'Rail bike' }],
         image: 'gimyujeong-railbike.jpg',
         imageCredit: 'Photo: Gage Skidmore · CC BY-SA 4.0',
-        updated: '2026-10-31',
+        updated: '2026-11-07',
         keywords: ['Chuncheon', 'Gangwon', 'DayTripFromSeoul', 'LegolandKorea', 'UiamLake', 'SoyanggangSkywalk', 'GimYujeongRailBike', 'Dakgalbi', 'KoreaTravel'],
         whyVisit: [
           "A lake city an hour from Seoul by train, with **a cable car across the water and Korea's longest glass-floor skywalk**.",
@@ -2001,14 +1999,14 @@ export const cities: City[] = [
             "[[Soyanggang Dam|춘천 소양강댐]] and the Soyang Lake cruise: Korea's largest dam by reservoir volume, nicknamed the country's own fjord, with a cruise boat across Soyang Lake to its remoter temples and villages. Finished in 1973 as Korea's largest rock-fill dam.",
             "[[Soyanggang Skywalk|춘천 소양강 스카이워크]]: Korea's longest glass-floor skywalk, out over the Soyang River beside the Maiden statue.",
             "[[The Uiam Lake circuit|춘천 의암호 둘레길]] (의암호 둘레길), a 28 km lakeside loop built more for cyclists than for one walk: Yungrim Land, the Literature Park, the Animation Museum, Songam Sports Town, Gongjicheon and the Ethiopia Korean War Memorial.",
-            "Restaurants and cafés: charcoal dakgalbi at Todam, the potato-bread bakery Gamjabat and the lakeside cafés along Baksa-ro. Downtown, the Myeongdong Dakgalbi Alley is a whole street of dakgalbi restaurants side by side.",
+            "Restaurants and cafés: charcoal dakgalbi and a potato-bread bakery by the lake, and the lakeside cafés along Baksa-ro. Downtown, the Myeongdong Dakgalbi Alley is a whole street of dakgalbi restaurants side by side.",
           ],
           tips: [
             "🚆 Getting there: the ITX-Cheongchun runs from Yongsan to Chuncheon Station in about 1h10; the stops here are spread around the lake, so a car or taxi between them is easier than the bus.",
             "🚲 The Uiam Lake circuit is built for cyclists, not one walk: rent a bike near the Skywalk or the cable car station, or just walk the short stretch between the two.",
             "🎟️ Book the rail bike before you go (box above); a free shuttle bus brings riders back from the old Gangchon station to Gimyujeong.",
-            "🍗 Dakgalbi country: Todam Charcoal Dakgalbi and Top Place Dining by the lake, or head downtown to the Myeongdong Dakgalbi Alley for a whole street of it.",
-            "🥔 Gamjabat's potato bread (감자빵) is the Chuncheon bakery everyone photographs; go early, it sells out.",
+            "🍗 Dakgalbi country: the charcoal dakgalbi places pinned by the lake, or head downtown to the Myeongdong Dakgalbi Alley for a whole street of it.",
+            "🥔 The potato bread (감자빵) from the pinned bakery is the one everyone photographs; go early, it sells out.",
             "🔗 The old Gangchon station here is the same end point as our Gapyeong river trail from Gapyeong Station — the two maps meet.",
           ],
         },
@@ -2216,6 +2214,9 @@ export const cities: City[] = [
   {
     id: 'gyeongju-jeonju',
     name: 'Gyeongju & Jeonju',
+    seoTitle: 'Gyeongju & Jeonju walks: Silla tombs, hanok lanes',
+    seoDescription:
+      'Free walking maps of Gyeongju and Jeonju: Silla tombs and Wolji pond at night, Jeonju Hanok Village, Gyeonggijeon, Deokjin Park and cherry blossom spots.',
     intro: [
       "Two of Korea's most traditional cities. **Gyeongju** was the capital of the Silla kingdom for nearly a thousand years, with royal tombs between the houses and a **UNESCO World Heritage** historic centre. **Jeonju** is the home of bibimbap and a UNESCO City of Gastronomy, with one of Korea's largest hanok villages.",
       "Gyeongju's centre is flat and walkable, with **Bulguksa temple** on the hills to the east. Jeonju is for walking the hanok lanes in hanbok and eating at **Nambu Market**.",
@@ -2464,9 +2465,8 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 KTX from **Yongsan Station** to **Jeonju Station**, 34,400 won (fare as of July 2026). From the station, take a taxi or a city bus to the hanok village.",
-            "📸 The best view of the village roofs is from Hanokdang, the café on the 2nd floor of the Lahan Hotel at the village entrance. Trees hide most of it at Omokdae.",
-            "🍜 Have breakfast at Waengi, the bean-sprout soup place that opens at 07:00. Pungnyeon Jegwa is the bakery behind the Jeonju choco pie.",
-            "🍲 For dinner, Jamae Galbi Jeongol does mul-galbi, pork ribs in a spicy broth; join the queue remotely with the Tabling app. It is {red:closed on Tuesdays}.",
+            "📸 For the best view over the tiled roofs, go to the café pinned at the village entrance. Trees hide most of the view at Omokdae.",
+            "🍜 Eat along the way: the pink pins on the map are the restaurants from the video, with their hours and closing days.",
             "✨ Rent a hanbok for the lanes; it suits the shrine, the cathedral and the stone walls.",
             "🌸 Come in early April for the cherry blossom; at the zoo it opens a little later than in the city.",
             "🔗 Gyeongju, the old Silla capital, has its own two-day walk on this site and pairs well with Jeonju.",
