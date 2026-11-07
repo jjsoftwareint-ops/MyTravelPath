@@ -253,7 +253,7 @@ export const thisWeek: ThisWeek = {
       text: 'The city\'s performing-arts festival: 38 festivals and 478 performances in total.',
       todo: [
         'Pick a show by date on the official program page.',
-        'Ask for help at the information centre on the 1st floor of the Daehangno Center, open until 29 Nov and **{red:closed on Mondays}**.',
+        'Ask for help at the information centre on the 1st floor of the Daehangno Center, open until 29 Nov and {red:closed on Mondays}.',
       ],
       href: { label: 'Program ↗', url: 'https://english.visitseoul.net/events/2026SeoulAutumnFesta/ENPjm3hw1' },
     },
