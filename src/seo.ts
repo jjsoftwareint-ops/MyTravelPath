@@ -40,6 +40,12 @@ const STATIC: Record<string, { title: string; description: string; updated: stri
       "Festivals, fireworks, drone and light shows in Korea this week and next, with dates, prices and the nearest station. Refreshed every week.",
     updated: thisWeek.updated,
   },
+  poster: {
+    title: "포스터",
+    description:
+      "게스트하우스, 호스텔, 카페에서 무료로 붙일 수 있는 My Korea Path 포스터입니다. 미리보기를 확인하고 인쇄용 원본 파일을 내려받으세요.",
+    updated: "2026-11-08",
+  },
   about: {
     title: "About",
     description:

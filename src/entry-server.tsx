@@ -74,7 +74,10 @@ export function render(url: string) {
   return { html, head: renderHeadTags(meta), path: meta.path }
 }
 
+// Pre-rendered and reachable, but not offered to search engines (a download page for hosts, linked from e-mails).
+const UNLISTED = new Set(['/poster/'])
+
 export const routes = () => {
   const thin = placeholderPaths()
-  return allRoutes().map(({ path, updated }) => ({ path, lastmod: updated, inSitemap: !thin.has(path) }))
+  return allRoutes().map(({ path, updated }) => ({ path, lastmod: updated, inSitemap: !thin.has(path) && !UNLISTED.has(path) }))
 }

@@ -1039,6 +1039,28 @@ a:focus-visible {
   color: var(--text-soft);
 }
 
+/* ── Poster download page: compact preview, then the button ─ */
+.prose[lang="ko"] {
+  word-break: keep-all; /* break Korean lines between words, not inside them */
+}
+.poster-preview {
+  width: min(100%, 260px);
+  margin: 4px auto 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+.poster-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.poster-meta {
+  margin: 8px 0 0;
+  text-align: center;
+  font-size: 13px;
+}
+
 /* ── Contact form ────────────────────────────────────────── */
 .form {
   display: flex;
