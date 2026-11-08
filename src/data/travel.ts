@@ -150,7 +150,7 @@ export const cities: City[] = [
             "[[Ihwa Mural Village|서울 이화벽화마을]], through the first secret gate in the wall: a hillside settlement from just after the Korean War, painted by a 2006 art project. Some of the best-known murals were removed after residents tired of the crowds, and people still live on these stairs, so keep quiet.",
             "The {blue:blue} loop's hilltop cafés, where people watch the sunset before the wall: a hidden café with a pottery workshop, one at the old quarry viewpoint looking straight onto the cliff face, a book café by the secret gate, and one walled in like a small fortress near the angel-wings mural. The Ihwa-dong Village Museum and the Seoul City Wall Museum are on the way down.",
             "[[Dongdaemun gate|서울 흥인지문]], standing alone in the middle of the junction: rebuilt in 1869, its flanking walls pulled down in 1907. Dongdaemun Design Plaza is a short detour south.",
-            "[[Cheonggyecheon Stream|서울 청계천]], down the stairs at Cheonggyecheon Fashion Plaza: the Jeon Tae-il bridge, Gwangjang Market overhead at Saebyeok-dari, and the Sewoon arcade sky deck.",
+            "[[Cheonggyecheon Stream|서울 청계천]], down the stairs at Cheonggyecheon Fashion Plaza: the Jeon Tae-il bridge and the Sewoon arcade sky deck.",
             "The last stretch of the stream: a 192 m ceramic mural of King Jeongjo's procession, Gwangtonggyo, the oldest stone bridge on the stream, and the candle fountain at Cheonggye Plaza, minutes from Gwanghwamun and City Hall stations.",
           ],
           tips: [
@@ -295,7 +295,7 @@ export const cities: City[] = [
             "🎟️ Cheong Wa Dae needs a **free online reservation, made in advance**; without one, start at Gyeongbokgung's east gate instead.",
             "🚇 Getting there: Anguk Station (line 3) sits in the middle of the walk.",
             "📍 Bukchon is a residential area with posted quiet hours. Stay on the marked lanes and keep voices down, especially around Gahoe-dong.",
-            "🍜 Eat little and often: cafés in Samcheong-dong, Ikseon-dong grills, Insadong tea houses. Gwangjang Market is a short hop from the end.",
+            "🍜 Eat little and often: cafés in Samcheong-dong, Ikseon-dong grills, Insadong tea houses.",
             "📍 With an hour to spare, add Changdeokgung, the palace to pick if you see only one, or the café lane of Seosulla-gil along the Jongmyo wall.",
             "📍 Two quiet extras if you have time: the Cecil Maru rooftop in Jeong-dong, a free view over the Anglican cathedral, and the Cheong Wa Dae Sarangchae in Seochon for maps and a sit-down ({red:closed Tuesdays}).",
             "📍 Hanbok rental shops cluster around Anguk; wearers enter the royal palaces free.",

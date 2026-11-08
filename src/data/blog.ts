@@ -1139,7 +1139,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'Go early, and keep a plan B. The shop also does personal colour tests, and the Anguk and Gwangjang Market shops add hanbok experiences.',
+        text: 'Go early, and keep a plan B. The shop also does personal colour tests, and the Anguk shop adds hanbok experiences.',
       },
       {
         type: 'route',
