@@ -76,6 +76,9 @@ export const cities: City[] = [
   {
     id: 'seoul',
     name: 'Seoul',
+    seoTitle: 'Seoul walking trails: hanok lanes to Myeong-dong',
+    seoDescription:
+      'Free Seoul walking maps: Bukchon hanok lanes, the city wall, Seoullo 7017 to Myeong-dong, Hongdae, Seongsu, Gangnam nights, hikes and rainy-day spots.',
     intro: [
       "**Korea's capital** for more than 600 years, since the Joseon dynasty made it its seat in 1394. About 9 million people live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
       "The **Han River** splits it in two: palaces, hanok lanes and the old fortress wall on the north bank, towers and Gangnam on the south. Four inner mountains, **Bugaksan, Inwangsan, Naksan and Namsan**, ring the old city, and the subway reaches almost everywhere.",
@@ -839,6 +842,80 @@ export const cities: City[] = [
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Forest Herbal Land is open from 06:30 to 22:00 every day (Naver Map, 24 October 2026), but a 2025 write-up gives 08:00 to 21:00 for its charcoal kilns, so check before you go. Write-ups from 2025 list about ₩16,000 to ₩17,000 for the charcoal kilns and ₩10,000 to ₩11,000 for the bath alone; prices change, so confirm them and what to bring on its Naver Map page.",
             "📍 Seonungak is a hanok café at the foot of Bukhansan in Ui-dong, far from Magok. It is a good wet-day stop after the Bukhansan Dulle-gil walk on this site, which starts in Ui-dong too. Naver lists it as {red:closed on Sundays}, and autumn-leaf season brings queues.",
             "🔗 MMCA Seoul is a short walk from the Samcheong-dong end of the Hanok Villages walk on this site, so the two pair well on a dry morning and a wet afternoon.",
+          ],
+        },
+      },
+      {
+        id: 'seoul-station-myeongdong',
+        name: 'Seoul Station - Myeong-dong',
+        seoTitle: 'Seoul Station to Myeong-dong: Seoullo 7017 walk',
+        seoDescription:
+          'Walk from Seoul Station to Myeong-dong: the 1925 station hall, Docking Seoul urban art, the Seoullo 7017 sky garden, the Shinsegae media facade and Myeong-dong streets.',
+        duration: '2–3h',
+        updated: '2026-11-08',
+        tags: [{ icon: 'hot', label: 'Hot place' }, { icon: 'art', label: 'Urban art' }],
+        whyVisit: [
+          "Most visitors only change trains at Seoul Station, and walk straight past **a garden on an old highway overpass**, high above the traffic.",
+          "Right beside it, a 100-year-old station hall now holds exhibitions, and an old spiral car-park ramp has become **an urban art space**.",
+          "Walk on into Myeong-dong as the lights come on: the shopping lanes, the street-food stalls and **a department store whose whole front turns into a screen**.",
+        ],
+        story: {
+          title: 'A highway turned garden',
+          text: [
+            "The **Seoul Station overpass** opened to cars in 1970, carrying traffic over the railway for 45 years. It was closed to cars in December 2015 and reopened in May 2017 as **Seoullo 7017**, a 1,024 m walkway 17 m above the ground; the name joins the years 1970 and 2017.",
+            "The red-brick station below it was finished in 1925. Listed as **Historic Site No. 284**, it was restored and opened in August 2011 as Culture Station Seoul 284, named after that number.",
+          ],
+        },
+        notices: [
+          {
+            icon: '⏰',
+            at: 'Culture Station Seoul 284',
+            title: 'Culture Station Seoul 284: closed on Mondays',
+            body: "Open **10:00 to 18:00**, last entry 30 minutes before closing, and {red:closed every Monday}. It also {red:closes between exhibitions}: Naver showed it closed from Sunday 8 to Wednesday 11 November 2026, so check before you go.",
+            since: 'Checked 8 November 2026.',
+            source: 'Opening hours on Naver Map, checked 8 November 2026. One blog lists 11:00–19:00; the hours follow each exhibition.',
+          },
+          {
+            icon: '⏰',
+            at: 'Docking Seoul',
+            title: 'Docking Seoul: closed on Mondays',
+            body: "Open **11:00 to 20:00**, Tuesday to Sunday, and {red:closed on Mondays and public holidays}. Admission is free.",
+            since: 'Checked 8 November 2026.',
+            source: 'Seoul Metropolitan Government (mediahub.seoul.go.kr) and The Soul of Seoul, checked 8 November 2026.',
+          },
+          {
+            icon: '✨',
+            at: 'Shinsegae media facade',
+            title: 'Shinsegae Christmas media facade, until 31 January',
+            body: "The Christmas film on the front of Shinsegae's main building plays **every day from 17:00 to midnight**, from 6 November 2026 to **31 January 2027**.",
+            since: 'Checked 8 November 2026.',
+            source: 'Yonhap report on the 2026 Christmas facade (via koreancenter.or.kr) and the store listing on Naver Map, checked 8 November 2026.',
+          },
+        ],
+        image: 'seoul-station.jpg',
+        imageCredit: 'Photo: Christian Bolz · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1OEa76lOL1owBx7trLyUgRYGhZ-Sdrtc',
+        keywords: ['Seoul', 'SeoulStation', 'Seoullo7017', 'CultureStationSeoul284', 'DockingSeoul', 'Myeongdong', 'MyeongdongStreetFood', 'ShinsegaeMediaFacade', 'MyeongdongCathedral', 'HiddenGemSeoul', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌿 I'd start at Seoul Station in the afternoon: the old station hall, the art in the car-park ramp, then up onto Seoullo and along the deck to the east end. **Come down at Hoehyeon as it gets dark**, and you reach the Shinsegae screen and Myeong-dong's street stalls just as they light up.",
+            "It's about 3 km, flat apart from the climb onto the deck, and two or three hours with time inside. You can walk it the other way too, and nobody will mind if Myeong-dong takes the whole evening.",
+          ],
+          route: [
+            "[[Culture Station Seoul 284|문화역서울284]], the red-brick station of 1925 beside Seoul Station, now an exhibition hall. The dome and the old waiting hall are worth the visit on their own.",
+            "[[Docking Seoul|도킹서울]], public art inside the old spiral parking ramp at the north end of the station, opened in 2022 after twenty years closed. Walk in from the Seoullo deck or from the Lotte Mart rooftop.",
+            "[[Seoullo 7017|서울로7017]], the garden on the old station overpass: planters, small trees and benches along the whole deck, with the trains and the traffic underneath. The west end runs to Malli-dong Plaza, the east end comes down at Hoehyeon.",
+            "[[Shinsegae media facade|신세계백화점 본점]], seen from the Bank of Korea corner, about ten minutes on foot from Hoehyeon: the front of the department store becomes one big screen after dark.",
+            "[[Myeong-dong|명동거리]], the grid of shopping lanes between Euljiro 1-ga and Myeong-dong stations: cosmetics and fashion shops all day, street-food stalls along the main lanes from late afternoon.",
+            "[[Myeongdong Cathedral|명동대성당]] on the hill at the east edge of Myeong-dong, the Gothic-revival cathedral completed in 1898.",
+          ],
+          tips: [
+            "🚇 Start at **Seoul Station** (Lines 1 and 4) and finish at **Myeong-dong** (Line 4) or **Euljiro 1-ga** (Line 2).",
+            "⏰ Seoullo is open 24 hours, so you can walk the deck after dark when it is lit.",
+            "🛗 Lifts link the deck to the street at both ends and by Seoul Station, so it works with a stroller or a suitcase.",
+            "🍜 Eat in Myeong-dong from late afternoon, when the street-food stalls set up along the main lanes.",
+            "🛍️ Shopping in Myeong-dong? Bring your passport for the tourist tax refund; many shops refund it at the till. [Our Olive Young guide](https://koreatravelpath.com/blog/2026-11-01-2013/) has the rules.",
+            "🔗 Namsan rises right behind Hoehyeon: the [Seoul cherry blossom walk](https://koreatravelpath.com/seoul/cherry-blossom-walk/) on this site climbs it in spring.",
           ],
         },
       },

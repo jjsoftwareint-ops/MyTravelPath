@@ -38,6 +38,70 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-08-1956',
+    title: 'Things to do near Seoul Station before your train',
+    description:
+      'Two hours at Seoul Station? Walk the garden on an old overpass, see art in a spiral car-park ramp and the old station hall, then stroll into Myeong-dong.',
+    teaser: 'Your train can wait. There is a garden on top of the road.',
+    icon: 'train',
+    date: '2026-11-08',
+    updated: '2026-11-08',
+    keywords: ['KoreaTravel', 'SeoulStation', 'Seoullo7017', 'CultureStationSeoul284', 'DockingSeoul', 'SeoulLayover', 'ThingsToDoInSeoul'],
+    body: [
+      {
+        type: 'p',
+        text: 'Most of us only ever see Seoul Station from the platform, coffee in one hand and a suitcase in the other. Next time, leave two hours before your train. The few streets around it hold three things almost every tourist walks straight past.',
+      },
+      {
+        type: 'img',
+        src: 'seoullo-night.jpg',
+        alt: 'The Seoullo 7017 walkway lit in blue at night, with planters and small trees, between office towers',
+        caption: 'Seoullo 7017 after dark.',
+        href: 'https://commons.wikimedia.org/wiki/File:Night_View_in_Seoullo_7017_01.jpg',
+        credit: { author: '분당선M', license: 'CC BY-SA 3.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', text: 'A garden on top of a road', icon: 'herb' },
+      {
+        type: 'p',
+        text: 'Right outside the station, an old car overpass has become [서울로7017](https://www.google.com/search?tbm=isch&q=%EC%84%9C%EC%9A%B8%EB%A1%9C7017) (Seoullo 7017), a garden walkway about **17 m above the traffic**. It runs for around a kilometre, with planters, small trees and benches the whole way, and buses and trains rolling underneath you.',
+      },
+      {
+        type: 'p',
+        text: "If you've walked New York's High Line, you'll get the idea, only this one starts at a train station. It's open 24 hours, and we like it best after dark, when the deck lights up. Lifts link it to the street, so the suitcase is no excuse.",
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Art in a car-park ramp', icon: 'performing_arts' },
+      {
+        type: 'p',
+        text: 'Below the deck stands [문화역서울284](https://www.google.com/search?tbm=isch&q=%EB%AC%B8%ED%99%94%EC%97%AD%EC%84%9C%EC%9A%B8284) (Munhwayeok Seoul 284), the old red-brick station with the green dome. It is an exhibition hall now, and the old waiting hall alone is worth the detour. {red:It is closed on Mondays} and between shows.',
+      },
+      {
+        type: 'img',
+        src: 'culture-station-seoul-284.jpg',
+        alt: 'The old Seoul Station building, red brick with a green dome, seen across a wide road',
+        caption: 'The old station, now Culture Station Seoul 284.',
+        href: 'https://commons.wikimedia.org/wiki/File:Culture_Station_Seoul_284_(_2014_08_05_).jpg',
+        credit: { author: 'HaulS', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      {
+        type: 'p',
+        text: 'Then the odd one: [Docking Seoul](https://www.google.com/search?tbm=isch&q=%EB%8F%84%ED%82%B9%EC%84%9C%EC%9A%B8) (도킹서울, doking seoul), the old spiral parking ramp at the north end of the station, now filled with **public art**. You walk in from the Seoullo deck or from the Lotte Mart rooftop. Entry is free, and it is {red:closed on Mondays} too.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our pick for a layover: Seoullo at sunset, the art ramp, then on foot into Myeong-dong for street food and the [Shinsegae light show](https://koreatravelpath.com/blog/2026-11-07-0709/).',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'seoul-station-myeongdong',
+        text: 'Our Seoul Station to Myeong-dong map has every stop, the lifts and the toilets',
+      },
+    ],
+  },
+  {
     id: '2026-11-07-2106',
     title: 'Tourist trains: a heated floor, a wood stove and a tea ceremony',
     description:

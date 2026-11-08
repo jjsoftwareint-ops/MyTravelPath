@@ -33,7 +33,7 @@ export type ThisWeek = {
 }
 
 export const thisWeek: ThisWeek = {
-  updated: '2026-11-07',
+  updated: '2026-11-08',
   weeks: [
     {
       range: 'Nov 3rd(Tue) ~ 8th(Sun)',
@@ -152,19 +152,21 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'shinsegae-christmas-facade',
-          ends: '2026-12-25',
+          ends: '2027-01-31',
           title: 'Shinsegae Christmas media facade',
           city: 'Seoul',
           cityId: 'seoul',
-          when: 'From Fri 6 Nov · evenings',
+          when: 'Daily · 17:00 to midnight, until 31 Jan',
           where: 'Shinsegae Main Store, Myeongdong',
           price: 'Free',
           text: 'The department store turns its whole outer wall into a Christmas screen, the first big Christmas light show of the season.',
           todo: [
             'Watch the Christmas film play on the building: a bear carries wishes on a balloon and finishes the Christmas tree.',
-            'Show hours are not announced yet. Last season it ran from 17:00 to midnight.',
+            'It plays every day from 17:00 to midnight; watch it from the corner by the Bank of Korea.',
+            'Make an evening of it: walk Seoullo 7017 from Seoul Station first and arrive as it gets dark.',
           ],
           tip: '🚇 **Hoehyeon Station** (line 4).',
+          routes: [{ cityId: 'seoul', pathId: 'seoul-station-myeongdong', text: 'Seoul Station to Myeong-dong walk' }],
         },
       ],
     },
