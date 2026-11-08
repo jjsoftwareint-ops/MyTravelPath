@@ -1,7 +1,6 @@
 import { useCallback, useState } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { FaBus } from "react-icons/fa6";
-import { ImInfo } from "react-icons/im";
 import { IoFootstepsSharp } from "react-icons/io5";
 import { Navigate, useLocation, useParams } from "react-router-dom";
 import { BookmarkToggle } from "../components/BookmarkButton";
@@ -20,7 +19,7 @@ import { findCity, findPath, hasMap, mapEmbedUrl } from "../data/travel";
 import { formatDate } from "../dates";
 import { useFollowTipHidden } from "../followTip";
 import { emojiFile, splitLeadingEmoji } from "../emoji";
-import { browserUrl, isIOS, isPhone, NAVER_MAP_STORE } from "../platform";
+import { browserUrl, isIOS } from "../platform";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
