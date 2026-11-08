@@ -653,14 +653,14 @@ export const cities: City[] = [
         name: 'Seongsu Popup Street + Forest',
         seoTitle: 'Seongsu-dong pop-up walk to Seoul Forest',
         seoDescription:
-          "A 2.8 km walk through Seongsu, Seoul's warehouse district: pop-up lanes, concept stores, bakeries and brunch, ending at the Seoul Forest cafés.",
+          "A 2.8 km walk through Seongsu, Seoul's warehouse district: pop-up lanes, concept stores, the handmade shoe street and bakeries, ending at Seoul Forest.",
         duration: '3h',
-        updated: '2026-11-07',
+        updated: '2026-11-08',
         tags: [{ icon: 'hot', label: 'Hot place' }],
         image: 'seongsu.jpg',
         imageCredit: 'Photo: CartoonChess · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1Xs1Bkx0p_e4CAlyFgUrz6PFnX9L8DGo',
-        keywords: ['Seoul', 'Seongsu', 'SeongsuDong', 'PopUpStore', 'Bakery', 'CafeHopping', 'DaelimChanggo', 'SeoulForest', 'KoreaTravel'],
+        keywords: ['Seoul', 'Seongsu', 'SeongsuDong', 'PopUpStore', 'HandmadeShoes', 'CafeHopping', 'DaelimChanggo', 'SeoulForest', 'KoreaTravel'],
         whyVisit: [
           "Seoul's old shoe-factory district, where **the brick warehouses kept their machinery and became the city's busiest streets**.",
           "Pop-ups from Dior to Lush, three floors of stationery and **salt bread that sells out by afternoon**.",
@@ -682,6 +682,14 @@ export const cities: City[] = [
             since: "Checked October 2026.",
             source: 'General pattern for Seongsu pop-ups; exact dates change. Checked October 2026.',
           },
+          {
+            icon: '⏰',
+            title: 'Shoe street hours',
+            at: 'Seongsu Handmade Shoe Street',
+            body: "The shoemakers' co-op stores open **10:00–19:00** and the shoe exhibition hall **10:00–17:30**, all {red:closed on Sundays}.",
+            since: 'Checked 8 November 2026.',
+            source: 'Naver Map pages 2073914693 (co-op A, Achasan-ro 105), 2009792981 (co-op B, Achasan-ro 61), 1979368751 (성수수제화희망플랫폼, Achasan-ro 53), read 2026-11-08.',
+          },
         ],
         guide: {
           intro: [
@@ -693,10 +701,11 @@ export const cities: City[] = [
             "[[Yeonmujang-gil|서울 성수동 연무장길]], the main street: Point of View at number 18, three floors of stationery and objects; Ader Error's concept space; and the queues for the salt-bread and ciabatta bakeries.",
             "[[Yeonmujang 5-gil|서울 성수동 연무장5길]], the pop-up lane: Dior, Lush's pop-up theatre, Frika and the changing food and brand events. Atelier-gil's small workshops and showrooms sit in the lanes beside it.",
             "[[The Seoulsup-gil café street|서울 성수 서울숲길 카페거리]]: café after café in old garages and houses, with Seoul Forest at the end: lawns, deer, the pond boardwalk and the river path. Reverse the whole list if you start here.",
+            "[[Seongsu Handmade Shoe Street|서울 성수동수제화거리]], a side trip from Seongsu Station, under the elevated line 2 as far as Ttukseom Station: small workshops that still make shoes by hand, two shoemakers' co-op stores for made-to-measure pairs, and an exhibition hall on Seongsu shoemaking.",
           ],
           tips: [
             "⏰ **Weekday late morning** is the calm time. Weekend afternoons mean queues of an hour or more at the famous bakeries and pop-ups; ask for the day's wait on the Naver Map page.",
-            "🚇 Getting there: Seongsu Station on line 2, exit 3, or Seoul Forest Station on the Bundang line at the park end. Both stations have toilets.",
+            "🚇 Getting there: Seongsu Station on line 2, exit 3, or Seoul Forest Station on the Bundang line at the park end. Both stations have toilets. Ttukseom Station (line 2) is at the far end of the shoe street.",
             "🍞 Salt bread and ciabatta sell out by late afternoon at the most popular shops.",
             "👟 Flat and fully on pavement. The lanes are one-way for cars, so watch for scooters and delivery vans.",
             "🗺️ Atelier-gil is marked approximately: it is a local name for the workshop lanes between Yeonmujang 5-gil and Seoul Forest.",
