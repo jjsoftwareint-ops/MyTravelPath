@@ -89,21 +89,31 @@ export default function PathDetail() {
   // History: a few lines show, the rest unfolds. A short history needs no fold.
   const foldHistory = (path.story?.text.join(" ").length ?? 0) > 260;
   // Jump links at the top; each target is also reachable by scrolling.
-  const jump = (id: string, unfold?: () => void) => (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    unfold?.();
-    requestAnimationFrame(() =>
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" }),
-    );
-  };
+  const jump =
+    (id: string, unfold?: () => void) =>
+    (e: { preventDefault: () => void }) => {
+      e.preventDefault();
+      unfold?.();
+      requestAnimationFrame(() =>
+        document
+          .getElementById(id)
+          ?.scrollIntoView({ behavior: "smooth", block: "start" }),
+      );
+    };
   // A notice is one line (icon + headline) that opens on tap: a TL;DR first (user, 2026-11-02). The full text stays
   // in the page whether or not it is open.
   const noticeItem = (n: NonNullable<typeof path.notices>[number]) => (
-    <li key={n.title} className={urgent(n) ? "notice-card urgent" : "notice-card"}>
+    <li
+      key={n.title}
+      className={urgent(n) ? "notice-card urgent" : "notice-card"}
+    >
       <details>
         <summary>
           <span className="notice-card-icon" aria-hidden="true">
-            <Emoji name={emojiFile(n.icon ?? "ℹ️") ?? "information"} size={20} />
+            <Emoji
+              name={emojiFile(n.icon ?? "ℹ️") ?? "information"}
+              size={20}
+            />
           </span>
           <strong className="notice-card-title">{n.title}</strong>
         </summary>
@@ -119,7 +129,8 @@ export default function PathDetail() {
   // Information boxes: the general ones sit right under "The Locations" title; a box tied to one place (its `at` phrase is
   // in that location's line) sits under that location. A page without a route list shows them all in one block.
   const route = path.guide?.route ?? [];
-  const placeOf = (n: { at?: string }) => (n.at ? route.findIndex((step) => step.includes(n.at as string)) : -1);
+  const placeOf = (n: { at?: string }) =>
+    n.at ? route.findIndex((step) => step.includes(n.at as string)) : -1;
   const overallNotices = notices.filter((n) => placeOf(n) < 0);
   const noticeList = (list: typeof notices) =>
     list.length > 0 && (
@@ -128,13 +139,26 @@ export default function PathDetail() {
       </ul>
     );
   const noticesBlock = noticeList(overallNotices);
-  const noticesAt = (i: number) => noticeList(notices.filter((n) => placeOf(n) === i));
+  const noticesAt = (i: number) =>
+    noticeList(notices.filter((n) => placeOf(n) === i));
   const hasMapBlock = Boolean(embed || path.screenshot);
   const chips = [
     hasMapBlock && { id: "path-map", label: "Map", unfold: undefined },
-    path.story && { id: "history", label: "History", unfold: () => setHistoryOpen(true) },
-    (path.guide?.route || path.guide?.groups) && { id: "locations", label: "Locations", unfold: undefined },
-    path.guide?.tips && { id: "tips", label: "Good to know", unfold: undefined },
+    path.story && {
+      id: "history",
+      label: "History",
+      unfold: () => setHistoryOpen(true),
+    },
+    (path.guide?.route || path.guide?.groups) && {
+      id: "locations",
+      label: "Locations",
+      unfold: undefined,
+    },
+    path.guide?.tips && {
+      id: "tips",
+      label: "Good to know",
+      unfold: undefined,
+    },
   ].filter(Boolean) as { id: string; label: string; unfold?: () => void }[];
   // YouTube live stream: under the map by default, above it when the path asks for it.
   const liveCam = path.liveCam && (
@@ -196,8 +220,8 @@ export default function PathDetail() {
           {path.whyVisit && (
             <section className="path-why" aria-labelledby="why-visit-title">
               <h2 id="why-visit-title">
-                  <Emoji name="star" size={20} /> What makes it worth a visit
-                </h2>
+                <Emoji name="star" size={20} /> What makes it worth a visit
+              </h2>
               {path.whyVisit.map((text) => (
                 <p key={text}>
                   <GuideLine text={text} />
@@ -255,29 +279,6 @@ export default function PathDetail() {
 
           {!path.liveCam?.above && liveCam}
 
-          <div className="notice">
-            <ImInfo className="notice-icon" aria-hidden="true" />
-            <ul className="notice-list">
-              <li className="warn">
-                <b className="naver">Naver Map</b> is more accurate to get to
-                destinations. Each location has the link.
-                {hydrated && isPhone() && (
-                  <>
-                    {" "}
-                    <a
-                      className="link"
-                      href={NAVER_MAP_STORE[isIOS() ? "ios" : "android"]}
-                    >
-                      {isIOS()
-                        ? "Get it on the App Store ↗"
-                        : "Get it on Google Play ↗"}
-                    </a>
-                  </>
-                )}
-              </li>
-            </ul>
-          </div>
-
           {ready ? (
             <>
               {hydrated && isIOS() ? (
@@ -293,7 +294,10 @@ export default function PathDetail() {
                       className="cta"
                     >
                       To follow the path
-                      <IoFootstepsSharp className="cta-icon" aria-hidden="true" />
+                      <IoFootstepsSharp
+                        className="cta-icon"
+                        aria-hidden="true"
+                      />
                     </a>
                   ) : (
                     <button
@@ -302,7 +306,10 @@ export default function PathDetail() {
                       onClick={() => setTipOpen(true)}
                     >
                       To follow the path
-                      <IoFootstepsSharp className="cta-icon" aria-hidden="true" />
+                      <IoFootstepsSharp
+                        className="cta-icon"
+                        aria-hidden="true"
+                      />
                     </button>
                   )}
                   {embed ? (
@@ -348,129 +355,142 @@ export default function PathDetail() {
 
         {(path.story || path.guide) && (
           <div className="path-side">
-        {path.guide && (
-          <section className="guide" aria-labelledby="guide-title">
-            <h2 id="guide-title">
-              <Emoji name="sparkles" size={26} /> About this walk
-            </h2>
-            <div className="talk-bubbles">
-              {path.guide.intro.map((text, i) => {
-                // The avatar is the line's own leading emoji (a wave for a coast, a surfer for a surf town,
-                // a train for a rail bike), moved out of the text; the first bubble falls back to a walker.
-                const { icon, rest } = splitLeadingEmoji(text);
-                const avatar = icon ?? (i === 0 ? "person_walking" : undefined);
-                return (
-                  <div className="talk-bubble-row" key={text}>
-                    <span className="talk-avatar" aria-hidden="true">
-                      {avatar && <Emoji name={avatar} size={26} />}
-                    </span>
-                    <p className="talk-bubble">
-                      <RichText text={rest} onLink={setPopup} />
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-            {!path.guide.route && !path.guide.groups && noticesBlock}
-            {path.guide.groups && (
-              <>
-                <h3 id="locations">
-                  <Emoji name="round_pushpin" size={20} /> The Locations
-                </h3>
-                {noticesBlock}
-                {path.guide.groups.map((group) => (
-                  <section className="place-group" key={group.title}>
-                    <h4>{group.title}</h4>
+            {path.guide && (
+              <section className="guide" aria-labelledby="guide-title">
+                <h2 id="guide-title">
+                  <Emoji name="sparkles" size={26} /> About this walk
+                </h2>
+                <div className="talk-bubbles">
+                  {path.guide.intro.map((text, i) => {
+                    // The avatar is the line's own leading emoji (a wave for a coast, a surfer for a surf town,
+                    // a train for a rail bike), moved out of the text; the first bubble falls back to a walker.
+                    const { icon, rest } = splitLeadingEmoji(text);
+                    const avatar =
+                      icon ?? (i === 0 ? "person_walking" : undefined);
+                    return (
+                      <div className="talk-bubble-row" key={text}>
+                        <span className="talk-avatar" aria-hidden="true">
+                          {avatar && <Emoji name={avatar} size={26} />}
+                        </span>
+                        <p className="talk-bubble">
+                          <RichText text={rest} onLink={setPopup} />
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+                {!path.guide.route && !path.guide.groups && noticesBlock}
+                {path.guide.groups && (
+                  <>
+                    <h3 id="locations">
+                      <Emoji name="round_pushpin" size={20} /> The Locations
+                    </h3>
+                    {noticesBlock}
+                    {path.guide.groups.map((group) => (
+                      <section className="place-group" key={group.title}>
+                        <h4>{group.title}</h4>
+                        <ul>
+                          {group.places.map((place) => (
+                            <li key={place}>
+                              <GuideLine
+                                text={place}
+                                onPlace={setPlaceQuery}
+                                onLink={setPopup}
+                              />
+                            </li>
+                          ))}
+                        </ul>
+                      </section>
+                    ))}
+                  </>
+                )}
+                {path.guide.route && (
+                  <>
+                    <h3 id="locations">
+                      <Emoji name="round_pushpin" size={20} /> The Locations
+                    </h3>
+                    {noticesBlock}
+                    <ol id="locations-list">
+                      {path.guide.route.map((step, i) => (
+                        <li key={step}>
+                          <GuideLine
+                            text={step}
+                            city={
+                              city.theme
+                                ? undefined
+                                : city.name.replace(/-do$/, "")
+                            }
+                            onPlace={setPlaceQuery}
+                            onLink={setPopup}
+                          />
+                          {noticesAt(i)}
+                        </li>
+                      ))}
+                    </ol>
+                  </>
+                )}
+                {path.guide.tips && (
+                  <>
+                    <h3 id="tips">
+                      <Emoji name="light_bulb" size={20} /> Good to know
+                    </h3>
                     <ul>
-                      {group.places.map((place) => (
-                        <li key={place}>
-                          <GuideLine text={place} onPlace={setPlaceQuery} onLink={setPopup} />
+                      {path.guide.tips.map((tip) => (
+                        <li key={tip}>
+                          <GuideLine text={tip} />
                         </li>
                       ))}
                     </ul>
-                  </section>
-                ))}
-              </>
+                  </>
+                )}
+                {path.keywords && (
+                  <ul className="hashtags" aria-label="Tags">
+                    {path.keywords.map((k) => (
+                      <li key={k}>#{k}</li>
+                    ))}
+                  </ul>
+                )}
+                {path.imageCredit && (
+                  <p className="photo-credit">{path.imageCredit}</p>
+                )}
+              </section>
             )}
-            {path.guide.route && (
-              <>
-                <h3 id="locations">
-                  <Emoji name="round_pushpin" size={20} /> The Locations
-                </h3>
-                {noticesBlock}
-                <ol id="locations-list">
-                  {path.guide.route.map((step, i) => (
-                    <li key={step}>
-                      <GuideLine
-                        text={step}
-                        city={city.theme ? undefined : city.name.replace(/-do$/, "")}
-                        onPlace={setPlaceQuery}
-                        onLink={setPopup}
-                      />
-                      {noticesAt(i)}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            )}
-            {path.guide.tips && (
-              <>
-                <h3 id="tips">
-                  <Emoji name="light_bulb" size={20} /> Good to know
-                </h3>
-                <ul>
-                  {path.guide.tips.map((tip) => (
-                    <li key={tip}>
-                      <GuideLine text={tip} />
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {path.keywords && (
-              <ul className="hashtags" aria-label="Tags">
-                {path.keywords.map((k) => (
-                  <li key={k}>#{k}</li>
-                ))}
-              </ul>
-            )}
-            {path.imageCredit && (
-              <p className="photo-credit">{path.imageCredit}</p>
-            )}
-          </section>
-        )}
 
-        {path.story && (
-          <section className="path-story" id="history" aria-labelledby="history-title">
-            <h2 id="history-title">
-              <Emoji name="classical_building" size={20} /> History
-            </h2>
-            <h3>{path.story.title}</h3>
-            <div
-              id="history-text"
-              className={foldHistory && !historyOpen ? "fold" : undefined}
-            >
-              {path.story.text.map((text) => (
-                <p key={text}>
-                  <GuideLine text={text} />
-                </p>
-              ))}
-            </div>
-            {foldHistory && (
-              <button
-                type="button"
-                className="show-all"
-                aria-expanded={historyOpen}
-                aria-controls="history-text"
-                onClick={() => setHistoryOpen((o) => !o)}
+            {path.story && (
+              <section
+                className="path-story"
+                id="history"
+                aria-labelledby="history-title"
               >
-                {historyOpen ? "Show less" : "Read more"}
-              </button>
+                <h2 id="history-title">
+                  <Emoji name="classical_building" size={20} /> History
+                </h2>
+                <h3>{path.story.title}</h3>
+                <div
+                  id="history-text"
+                  className={foldHistory && !historyOpen ? "fold" : undefined}
+                >
+                  {path.story.text.map((text) => (
+                    <p key={text}>
+                      <GuideLine text={text} />
+                    </p>
+                  ))}
+                </div>
+                {foldHistory && (
+                  <button
+                    type="button"
+                    className="show-all"
+                    aria-expanded={historyOpen}
+                    aria-controls="history-text"
+                    onClick={() => setHistoryOpen((o) => !o)}
+                  >
+                    {historyOpen ? "Show less" : "Read more"}
+                  </button>
+                )}
+              </section>
             )}
-          </section>
-        )}
-        <MoreWalks cityId={city.id} pathId={path.id} />
-        <SocialLinks />
+            <MoreWalks cityId={city.id} pathId={path.id} />
+            <SocialLinks />
           </div>
         )}
       </div>
