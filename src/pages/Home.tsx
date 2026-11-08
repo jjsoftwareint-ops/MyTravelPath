@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { GrAnnounce } from "react-icons/gr";
-import { useParams } from "react-router-dom";
-import Link from "../components/Link";
+import { useNavigate, useParams } from "react-router-dom";
+import Link, { withSlash } from "../components/Link";
 import BrandMark from "../components/BrandMark";
 import Layout from "../components/Layout";
 import RichText from "../components/RichText";
@@ -16,10 +16,45 @@ import { FaCalendarDays } from "react-icons/fa6";
 import { useHydrated } from "../hooks";
 import { usePageMeta } from "../seo";
 
-// The expanded city lives in the URL (/:cityId) so that coming back from a
-// path's detail page lands on the list with that city still open.
+// The city opened last lives in the URL (/:cityId), so its page has its own address and coming back from a
+// path's detail page lands on the list with that city still open. Several cards can be open at once: the
+// others are kept in this tab's sessionStorage, so they stay open too when the visitor comes back.
+const OPEN_KEY = "openCities";
+
 export default function Home() {
   const { cityId } = useParams();
+  const navigate = useNavigate();
+  const [extra, setExtra] = useState<string[]>([]);
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(OPEN_KEY) || "[]");
+      if (Array.isArray(saved)) setExtra(saved.filter((id) => cities.some((c) => c.id === id)));
+    } catch {
+      /* storage blocked: only the URL city opens */
+    }
+  }, []);
+  const saveExtra = (ids: string[]) => {
+    setExtra(ids);
+    try {
+      sessionStorage.setItem(OPEN_KEY, JSON.stringify(ids));
+    } catch {
+      /* ignore */
+    }
+  };
+  // Opening a card keeps the others open; closing one closes only that one.
+  const toggle = (e: MouseEvent, id: string) => {
+    e.preventDefault();
+    if (id === cityId) {
+      navigate("/", { replace: true });
+      return;
+    }
+    if (extra.includes(id)) {
+      saveExtra(extra.filter((x) => x !== id));
+      return;
+    }
+    saveExtra(cityId ? [...extra.filter((x) => x !== cityId && x !== id), cityId] : extra);
+    navigate(withSlash(`/${id}`), { replace: true });
+  };
   usePageMeta();
   const [mapOpen, setMapOpen] = useState(false);
   // Event counts on the city cards: finished events drop out by date once hydrated.
@@ -59,7 +94,7 @@ export default function Home() {
 
       <ul className="list">
         {cities.map((city) => {
-          const open = city.id === cityId;
+          const open = city.id === cityId || extra.includes(city.id);
           return (
             <li
               key={city.id}
@@ -69,6 +104,7 @@ export default function Home() {
                 <Link
                   to={open ? "/" : `/${city.id}`}
                   replace
+                  onClick={(e) => toggle(e, city.id)}
                   className="card group-head"
                   tabIndex={-1}
                   aria-hidden="true"
@@ -106,6 +142,7 @@ export default function Home() {
               <Link
                 to={open ? "/" : `/${city.id}`}
                 replace
+                onClick={(e) => toggle(e, city.id)}
                 className="group-row"
                 aria-expanded={open}
               >
