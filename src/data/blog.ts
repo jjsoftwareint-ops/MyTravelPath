@@ -39,7 +39,7 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: '2026-11-08-1956',
-    title: 'Things to do near Seoul Station before your train',
+    title: 'Hidden gems near Seoul Station',
     description:
       'Two hours at Seoul Station? Walk the garden on an old overpass, see art in a spiral car-park ramp and the old station hall, then stroll into Myeong-dong.',
     teaser: 'Your train can wait. There is a garden on top of the road.',
