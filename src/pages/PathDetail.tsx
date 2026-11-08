@@ -159,11 +159,11 @@ export default function PathDetail() {
       unfold: undefined,
     },
   ].filter(Boolean) as { id: string; label: string; unfold?: () => void }[];
-  // YouTube live stream: under the map by default, above it when the path asks for it.
+  // YouTube live stream: under the map by default, above it when the path asks for it. Live cams always start muted.
   const liveCam = path.liveCam && (
     <figure className="live-cam">
       <iframe
-        src={`https://www.youtube-nocookie.com/embed/${path.liveCam.videoId}`}
+        src={`https://www.youtube-nocookie.com/embed/${path.liveCam.videoId}?mute=1`}
         title={`${path.name} live cam`}
         loading="lazy"
         referrerPolicy="strict-origin-when-cross-origin"

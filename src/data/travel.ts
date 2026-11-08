@@ -55,7 +55,7 @@ export type TravelPath = {
   imageWhole?: boolean // show the banner uncropped at its own ratio (a supplied photo), not as the slim band
   screenshot?: string // file in ./assets: a map screenshot shown under the map, for where Google Maps is inaccurate
   screenshotCaption?: string // one line under the screenshot, naming the source
-  liveCam?: { videoId: string; caption: string; above?: boolean } // YouTube live stream, embedded under the map (above it with above: true)
+  liveCam?: { videoId: string; caption: string; above?: boolean } // YouTube live stream, embedded under the map (above it with above: true); always starts muted
   mapUrl: string
 }
 
@@ -229,7 +229,7 @@ export const cities: City[] = [
         seoTitle: 'Hanok Village walk, Seoul: Bukchon, Ikseon-dong',
         seoDescription: 'A 5.1 km hanok village walk in Seoul: Bukchon, Ikseon-dong and Insadong on a free map, with Namsangol Hanok Village, local food, toilets and visiting hours.',
         duration: '2h',
-        updated: '2026-11-07',
+        updated: '2026-11-08',
         tags: [{ icon: 'village', label: 'Traditional' }],
         whyVisit: [
           "Three hanok quarters in one 5 km walk, laid out in 1394 and **still lived in**: tiled roofs stepping down a hill with Namsan Mountain behind them.",
@@ -253,6 +253,14 @@ export const cities: City[] = [
             source: 'Jongno-gu special management area, enforced since March 2025. Checked October 2026.',
           },
           {
+            icon: '🏡',
+            at: "Baekinje House",
+            title: "Baekinje House, a free hanok mansion in Bukchon",
+            body: "**Free**, open **Tuesday to Sunday 09:00–18:00** (last entry 17:30). {red:Closed on Mondays} (open if Monday is a public holiday) and on 1 January. Bukchon-ro 7-gil 16, next to Jeongdok Library; about 8–10 minutes on foot from Anguk Station exit 2.",
+            since: "Checked 8 November 2026.",
+            source: 'Naver Map and Seoul city museum pages, checked 8 November 2026. The 17:30 last entry comes from one blog and the museum listing; no separate winter hours were found, so confirm on 02-724-0200 if you plan a late visit.',
+          },
+          {
             icon: '💂',
             title: 'Gyeongbokgung Royal Guard Changing Ceremony, 2027 timetable',
             at: "Cheong Wa Dae",
@@ -264,7 +272,7 @@ export const cities: City[] = [
         image: 'bukchon.jpg',
         imageCredit: 'Photo: Bgag · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=14TBNrDcRMm9lNuEBH3QZbcEAg_mnuNU',
-        keywords: ['Seoul', 'Bukchon', 'HanokVillage', 'Ikseondong', 'Insadong', 'Namsangol', 'Pildong', 'Jongno', 'Hanbok', 'SeoulPalaces', 'KoreaTravel'],
+        keywords: ['Seoul', 'Bukchon', 'BaekinjeHouse', 'HanokVillage', 'Ikseondong', 'Insadong', 'Namsangol', 'Pildong', 'Jongno', 'Hanbok', 'SeoulPalaces', 'KoreaTravel'],
         guide: {
           intro: [
             "🏯 This is the walk I give friends on their first day in Seoul. Start at Gyeongbokgung's east gate and climb into Bukchon while it's still quiet. Then drift east through the 1920s hanok of Ikseon-dong to Insadong and the spiral ramp at Ssamziegil.",
@@ -274,6 +282,7 @@ export const cities: City[] = [
             "[[Cheong Wa Dae|서울 청와대]], the former presidential Blue House, if you have booked a visit; otherwise start at Gyeongbokgung's east gate.",
             "[[Samcheong-dong|서울 삼청동]]: the cafés and galleries around Jeongdok Library.",
             "[[Bukchon Hanok Village|서울 북촌한옥마을]]: the Gahoe-dong 31 alley and the viewpoint on Bukchon-ro 12-gil, roofs in the foreground and Namsan behind. Morning is quietest.",
+            "[[Baekinje House|서울 백인제가옥]], a 1913 hanok mansion with a courtyard, a men's quarters and a garden, a short walk from the Gahoe-dong alley, next to Jeongdok Library. Free; {red:closed on Mondays}.",
             "[[Ikseon-dong|서울 익선동]]: a 1920s block of tiny hanok built for ordinary families, now cafés and grills shoulder to shoulder. The grill alley behind the main lane is where to eat.",
             "[[Jongno 3-ga|서울 종로3가 포장마차 거리]], where one lane fills with pojangmacha street-food tents after dark, and Tapgol Park.",
             "[[Insadong-gil|서울 인사동길]], from its south end to the top: galleries, tea houses and craft shops, ending at Ssamziegil, the spiral-ramp craft mall. Anguk Station is 250 m north.",
@@ -763,7 +772,7 @@ export const cities: City[] = [
         seoDescription:
           'What to do in Seoul when it rains or freezes: a botanic-park greenhouse, malls, museums, the Han River Bus and a jjimjilbang. Cafés and restaurants checked, map included.',
         duration: 'Full day',
-        updated: '2026-11-07',
+        updated: '2026-11-08',
         tags: [{ icon: 'rainy', label: 'Rainy day' }],
         whyVisit: [
           "A rainy day in Seoul with **a greenhouse in the middle of the city, eight big museums and a sauna in the woods** on the same map.",
@@ -793,11 +802,19 @@ export const cities: City[] = [
             since: "Checked October 2026.",
             source: "Seoul Botanic Park's official site lists the winter hours and fees. Checked October 2026; summer hours are from the Naver Map listing.",
           },
+          {
+            icon: '🪑',
+            at: "Korea Furniture Museum",
+            title: "Korea Furniture Museum: book a guided tour first",
+            body: "Entry is **by reservation only, on a guided tour**: phone **02-745-0181** before you go (the number is in Korean on Naver). Admission is **₩35,000**, paid at the door about 10 minutes before the tour starts. {red:Closed on Sundays}. Older write-ups also list Monday and public holidays as closed and a lower fee of ₩20,000, and the museum has reopened recently, so confirm the days, tour times and price when you book.",
+            since: "Checked 8 November 2026.",
+            source: "Naver Map: fee, closed Sundays, reservation only. The pay-at-the-door detail comes from one visitor's blog of 29 October 2026; the Monday closure and ₩20,000 fee from older guides. Tour times were not confirmed.",
+          },
         ],
         image: 'indoors.jpg',
         imageCredit: 'Photo: Korea.net / KOCIS · CC BY-SA 2.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1qs8hKu4Ep0rtcsLwrVbQ79y1s2egkXs',
-        keywords: ['Seoul', 'RainyDayInSeoul', 'WinterInSeoul', 'SeoulMuseums', 'SeoulBotanicPark', 'Magok', 'HanRiverBus', 'Jjimjilbang', 'KoreaTravel'],
+        keywords: ['Seoul', 'RainyDayInSeoul', 'WinterInSeoul', 'SeoulMuseums', 'KoreaFurnitureMuseum', 'SeoulBotanicPark', 'Magok', 'HanRiverBus', 'Jjimjilbang', 'KoreaTravel'],
         guide: {
           intro: [
             "☔ Let the weather pick for you. The Magok half-day is the greenhouse, two malls and the arts centre, then the river boat to Yeouido. The other half of the map is the museums around Yongsan and Gwanghwamun, two or three hours each.",
@@ -809,6 +826,7 @@ export const cities: City[] = [
             "[[One Grove Magok|서울 마곡 원그로브]] and COEX Magok, two indoor complexes with restaurants and shops under one roof; COEX Magok has most of its restaurants on the lower floors.",
             "[[Han River Bus|서울 한강버스]] from Magok pier to Yeouido pier: the boat gives you Seoul's night view from the river. Check the current timetable before you plan the evening around it.",
             "The museums. In the south, the National Museum of Korea, the War Memorial of Korea and Leeum Museum of Art. Five more cluster around Gyeongbokgung and Gwanghwamun: MMCA Seoul, the National Folk Museum of Korea, the Seoul Museum of History, the National Palace Museum of Korea and the National Museum of Korean Contemporary History.",
+            "[[Korea Furniture Museum|서울 한국가구박물관]] at Daesagwan-ro 121 in Seongbuk-gu, far from Magok: a private museum of traditional Korean wooden furniture in a group of hanok buildings with a garden. **Guided tour only, booked in advance**; Naver lists it {red:closed on Sundays}.",
             "[[Forest Herbal Land|서울 숲속한방랜드]] (숲속한방랜드) at Bongwonsa-gil 75-7 in Seodaemun-gu, near Sinchon: a traditional Korean sauna, a jjimjilbang, set in the woods. It heats its kilns with charcoal. Open daily 06:30–22:00. The warmest way to end a cold day.",
           ],
           tips: [
