@@ -194,6 +194,7 @@ export default function BlogPost() {
     <Layout
       title="Blog"
       subtitle="Stories about Korea"
+      blogTheme
       backTo="/blog/"
       noSaved
       actions={<ShareLink compact title={post.title} text={`${post.title} – on the My Travel Path blog`} />}

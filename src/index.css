@@ -2347,3 +2347,80 @@ button.cta {
 .event-todo li {
   margin: 0 0 3px;
 }
+
+/* ── Blog reading themes (src/blogTheme.ts) ───────────────────
+   Set as <html data-blog-theme="…"> only while a blog page is open, so they never reach other pages.
+   Each set recolours the page tokens and the post's paper. Low contrast on purpose: soft text on a
+   tinted ground, nothing pure white or pure black. Placed last so they win over the dark-mode rules. */
+:root[data-blog-theme="paper"] {
+  --bg: #f4f5f7; --card: #ffffff; --text: #111827; --text-soft: #374151; --muted: #6b7280;
+  --accent: #2563eb; --accent-text: #ffffff; --border: #e5e7eb; --pill: #eff6ff; --press: #e9ebef; --danger: #dc2626;
+  color-scheme: light;
+}
+:root[data-blog-theme="paper"] .post { --paper: #fffaf1; --paper-line: #efe3cf; --accent: #c2410c; --pill: #fdebd9; color: #2b2118; }
+:root[data-blog-theme="sepia"] {
+  --bg: #ede0c8; --card: #f6ecd9; --text: #4b3a2a; --text-soft: #5b4636; --muted: #8a7356;
+  --accent: #9a4f1f; --accent-text: #fbf5ea; --border: #dccaa8; --pill: #ead7b5; --press: #e6d6b8; --danger: #b3261e;
+  color-scheme: light;
+}
+:root[data-blog-theme="sepia"] .post { --paper: #f4e9d4; --paper-line: #e0cfae; --accent: #9a4f1f; --pill: #ead7b5; color: #4b3a2a; }
+:root[data-blog-theme="sage"] {
+  --bg: #dfe7dc; --card: #edf2ea; --text: #2c3a2e; --text-soft: #3d4c3f; --muted: #6b7d6d;
+  --accent: #3f7357; --accent-text: #f3f7f1; --border: #cfdcc9; --pill: #d9e6d6; --press: #dde7d9; --danger: #b3261e;
+  color-scheme: light;
+}
+:root[data-blog-theme="sage"] .post { --paper: #eef3eb; --paper-line: #d3dfcd; --accent: #3f7357; --pill: #d9e6d6; color: #2c3a2e; }
+:root[data-blog-theme="dusk"] {
+  --bg: #1d1915; --card: #26211c; --text: #e6d9c6; --text-soft: #d4c6b1; --muted: #a8987f;
+  --accent: #e3a364; --accent-text: #1d1915; --border: #3b3229; --pill: #3b2e21; --press: #322a22; --danger: #f28b82;
+  color-scheme: dark;
+}
+:root[data-blog-theme="dusk"] .post { --paper: #2a241e; --paper-line: #3b3229; --accent: #e3a364; --pill: #3b2e21; color: #e6d9c6; }
+:root[data-blog-theme="night"] {
+  --bg: #17191c; --card: #1f2226; --text: #cfd3d8; --text-soft: #b8bdc4; --muted: #8b9199;
+  --accent: #8fb3d9; --accent-text: #17191c; --border: #2e3238; --pill: #263240; --press: #282c31; --danger: #f28b82;
+  color-scheme: dark;
+}
+:root[data-blog-theme="night"] .post { --paper: #202327; --paper-line: #2e3238; --accent: #8fb3d9; --pill: #263240; color: #cfd3d8; }
+
+/* Theme menu under the palette button */
+.blog-theme { position: relative; flex: 0 0 40px; }
+.blog-theme-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 30;
+  min-width: 156px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  display: grid;
+  gap: 2px;
+}
+.blog-theme-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+}
+.blog-theme-item:active { background: var(--press); }
+.blog-theme-item.on { background: var(--pill); font-weight: 600; }
+.blog-theme-item:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.blog-theme-swatch {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}

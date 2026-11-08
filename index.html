@@ -30,6 +30,9 @@
       try {
         var t = localStorage.getItem('theme');
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+        // Blog reading theme (src/blogTheme.ts), only on /blog/ addresses.
+        var b = localStorage.getItem('blogTheme');
+        if (location.pathname.indexOf('/blog') === 0 && /^(paper|sepia|sage|dusk|night)$/.test(b || '')) document.documentElement.dataset.blogTheme = b;
       } catch (e) {}
     </script>
   </head>

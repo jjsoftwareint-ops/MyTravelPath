@@ -17,6 +17,7 @@ export default function Blog() {
     <Layout
       title="Blog"
       subtitle="Stories about Korea"
+      blogTheme
       backTo="/"
       noSaved
       actions={<ShareLink compact title="My Travel Path Blog" text="Stories about Korea, on My Travel Path" />}

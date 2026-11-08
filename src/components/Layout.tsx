@@ -5,6 +5,7 @@ import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
 import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
+import BlogThemePicker from './BlogThemePicker'
 
 type Props = {
   title: string
@@ -22,10 +23,12 @@ type Props = {
   noSaved?: boolean
   /** Blog button left of the Saved paths icon; the main page only. */
   showBlog?: boolean
+  /** Blog pages: a reading-theme palette replaces the light/dark toggle. */
+  blogTheme?: boolean
   children: ReactNode
 }
 
-export default function Layout({ title, titleImage, subtitle, backTo: backToProp, icon, actions, hideSaved, noSaved, showBlog, children }: Props) {
+export default function Layout({ title, titleImage, subtitle, backTo: backToProp, icon, actions, hideSaved, noSaved, showBlog, blogTheme, children }: Props) {
   // Opened from a link inside a blog post? The back button returns to that post (the link passes its URL in state.from).
   const from = (useLocation().state as { from?: string } | null)?.from
   const backTo = backToProp !== undefined && from?.startsWith('/blog/') ? from : backToProp
@@ -90,7 +93,7 @@ export default function Layout({ title, titleImage, subtitle, backTo: backToProp
         </div>
         {showBlog && <BlogLink />}
         {!noSaved && <BookmarkLink />}
-        <ThemeToggle />
+        {blogTheme ? <BlogThemePicker /> : <ThemeToggle />}
         {actions}
       </header>
       <main className="content">{children}</main>
