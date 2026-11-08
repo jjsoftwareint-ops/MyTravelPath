@@ -38,6 +38,80 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-08-2329',
+    title: 'Our Blues: the Jeju drama that walks with you',
+    description:
+      'We kept thinking of the Netflix drama Our Blues on the Jeju Olle trail. Why this bittersweet, warm Jeju story stays with you after the last episode.',
+    teaser: 'Some shows you finish. This one came along on the trail.',
+    icon: 'blue_heart',
+    date: '2026-11-08',
+    updated: '2026-11-08',
+    keywords: ['OurBlues', 'KDrama', 'Netflix', 'Jeju', 'JejuOlle', 'LeeByungHun', 'HanJiMin', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: 'Somewhere on the Jeju Olle trail, with the sea on one side and black stone walls on the other, we started thinking about **Our Blues** (우리들의 블루스, urideurui beulluseu) again.',
+      },
+      {
+        type: 'p',
+        text: "It's a Netflix series set in a small fishing village on Jeju. There's no single hero. Every few episodes belong to someone new: a fishmonger, a beginner haenyeo diver, a man selling groceries from his truck, an old woman at the five-day market.",
+      },
+      { type: 'video', id: '1C7Nph5gFxQ', title: 'Our Blues | Official Trailer | Netflix', caption: 'The official trailer, from Netflix K-Content.' },
+      { type: 'space' },
+      { type: 'h', text: 'Bitter and warm at once', icon: 'pot_of_food' },
+      {
+        type: 'p',
+        text: "We found the feeling hard to put into words. Nothing gets solved neatly. People are tired, stubborn, in debt, still angry at their parents. Then someone puts a bowl of food in front of someone else without a word, and it's warm again.",
+      },
+      {
+        type: 'p',
+        text: "Korean has a word close to it: **짠하다** (jjanhada). It's the ache you feel for someone you love when life is being hard on them. We felt it in almost every episode.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'p',
+        text: "The story that stayed with us longest is a son, played by **Lee Byung-hun**, who has blamed his mother all his life. We won't spoil it. Just keep tissues near you for the last episodes, and maybe a pot of [된장찌개](https://www.google.com/search?tbm=isch&q=%EB%90%9C%EC%9E%A5%EC%B0%8C%EA%B0%9C) (doenjang jjigae), soybean paste stew.",
+      },
+      {
+        type: 'p',
+        text: "Young-hee, the twin sister with Down syndrome, is played by **Jung Eun-hye**, a real painter with Down syndrome. Her scenes are the gentlest in the whole show.",
+      },
+      {
+        type: 'p',
+        text: "The show ends on a simple line: we weren't born to be unhappy, **we were born to be happy**.",
+      },
+      { type: 'space' },
+      { type: 'h', text: 'The women of the sea', icon: 'water_wave' },
+      {
+        type: 'p',
+        text: "The show also let us into the life of the [해녀](https://www.google.com/search?tbm=isch&q=%EC%A0%9C%EC%A3%BC%20%ED%95%B4%EB%85%80) (haenyeo), Jeju's women divers. They dive for sea urchin, shellfish and seaweed with **no oxygen tank**, one held breath at a time.",
+      },
+      {
+        type: 'p',
+        text: "Han Ji-min plays a beginner, a \"baby haenyeo\" at the bottom of the ranks, and Go Doo-shim one of the best divers in the village. The younger one calls the older women 삼춘 (samchun), Jeju's word for an elder neighbour. We loved watching the beginner find her place among them.",
+      },
+      {
+        type: 'p',
+        text: "Listen for the **숨비소리** (sumbisori) when a diver comes up: a long whistle as she lets out the breath she held below. Their way of life is on the **UNESCO** list of intangible heritage, and after the show we understood why.",
+      },
+      { type: 'space' },
+      { type: 'h', text: 'Watch it, then walk it', icon: 'hiking_boot' },
+      {
+        type: 'p',
+        text: "That's why it came back to us on the trail. In the show, Jeju is where people work hard, gossip at the market and still stop to look at the sea in the evening. Walking the Olle, you see that island, not only the holiday one.",
+      },
+      {
+        type: 'p',
+        text: "The drama's market scenes are said to borrow the look of **Seogwipo Maeil Olle Market**, where Olle route 6 ends.",
+      },
+      {
+        type: 'verdict',
+        text: "Watch it slowly, one person's story at a time. It's bittersweet, it's warm, and afterwards you'll want to walk Jeju with someone you love.",
+      },
+      { type: 'route', cityId: 'jeju', pathId: 'jeju-olle-trail', text: 'Jeju Olle Trail 5-6-7: cliffs, camellias and the Seogwipo market at the end of route 6' },
+    ],
+  },
+  {
     id: '2026-11-08-1956',
     title: 'Hidden gems near Seoul Station',
     description:
