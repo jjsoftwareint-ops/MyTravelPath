@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState, type MouseEvent } from 'react'
 import { Navigate, useLocation, useParams } from 'react-router-dom'
 import Link from '../components/Link'
 import AdSlot from '../components/AdSlot'
+import { PostBookmarkToggle } from '../components/BookmarkButton'
 import ImagePopup, { type PopupPage } from '../components/ImagePopup'
 import InstallButton from '../components/InstallButton'
 import Layout from '../components/Layout'
@@ -196,14 +197,16 @@ export default function BlogPost() {
       subtitle="Stories about Korea"
       blogTheme
       backTo="/blog/"
-      noSaved
       actions={<ShareLink compact title={post.title} text={`${post.title} – on the My Travel Path blog`} />}
     >
       <article className="card post">
         <header className="post-head">
-          <time className="updated post-updated" dateTime={post.updated}>
-            Updated {formatDate(post.updated)}
-          </time>
+          <div className="post-head-row">
+            <time className="updated post-updated" dateTime={post.updated}>
+              Updated {formatDate(post.updated)}
+            </time>
+            <PostBookmarkToggle postId={post.id} />
+          </div>
           <h1>
             {post.title}{' '}
             <img className="title-emoji" src={`${import.meta.env.BASE_URL}emoji/${post.icon}.png`} alt="" width="32" height="32" />

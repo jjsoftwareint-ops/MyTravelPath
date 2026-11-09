@@ -17,11 +17,11 @@ type Props = {
   icon?: ReactNode
   /** Extra header buttons shown right of the theme toggle, e.g. the share button on a path page. */
   actions?: ReactNode
-  /** Hide the Saved paths link on phones, where the header is short of space (a path page has its own save button). */
+  /** Hide the Saved link on phones, where the header is short of space (a path page has its own save button). */
   hideSaved?: boolean
-  /** Leave the Saved paths link out entirely, on every screen size (the blog pages). */
+  /** Leave the Saved link out entirely, on every screen size (the events page). */
   noSaved?: boolean
-  /** Blog button left of the Saved paths icon; the main page only. */
+  /** Blog button left of the Saved icon; the main page only. */
   showBlog?: boolean
   /** Blog pages: a reading-theme palette replaces the light/dark toggle. */
   blogTheme?: boolean

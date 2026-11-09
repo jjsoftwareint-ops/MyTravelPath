@@ -1378,6 +1378,46 @@ button.cta {
   outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
+/* The same toggle as a "Save" pill beside a blog post's date, in the post's reading theme */
+.post-head-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.bookmark-toggle.inline {
+  position: static;
+  flex: none;
+  width: auto;
+  height: 34px;
+  gap: 6px;
+  padding: 0 14px 0 10px;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--accent);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+}
+.bookmark-toggle.inline svg {
+  width: 18px;
+  height: 18px;
+}
+.bookmark-toggle.inline[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+.saved-heading {
+  margin: 20px 4px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.saved-heading:first-child {
+  margin-top: 4px;
+}
 
 /* ── Blog (diary) ────────────────────────────────────────── */
 .blog-button svg {

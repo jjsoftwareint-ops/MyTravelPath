@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react'
 
-// Saved paths live only in this browser (localStorage), as "cityId/pathId" keys.
+// Saved paths and blog posts live only in this browser (localStorage), as "cityId/pathId" and
+// "blog/postId" keys (no city has the id "blog": /blog/ is the diary).
 // Same store pattern as theme.ts: the server and the first client render see an empty list,
 // so the pre-rendered HTML always matches.
 const KEY = 'bookmarks'
@@ -40,6 +41,8 @@ function subscribe(fn: () => void) {
 export const useBookmarks = () => useSyncExternalStore(subscribe, read, () => NONE)
 
 export const bookmarkKey = (cityId: string, pathId: string) => `${cityId}/${pathId}`
+
+export const postBookmarkKey = (postId: string) => `blog/${postId}`
 
 export function toggleBookmark(key: string) {
   const list = read()
