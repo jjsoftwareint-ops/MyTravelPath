@@ -76,7 +76,6 @@ export const thisWeek: ThisWeek = {
             'In Jeonju, see the 400-year-old ginkgo trees of **Jeonju Hyanggyo** turn gold; the school is {red:closed on Mondays}.',
           ],
           routes: [
-            { cityId: 'seoul', pathId: 'gangnam-night-streets', text: 'Garosu-gil and Gangnam at night' },
             { cityId: 'gyeonggi-do', pathId: 'hwaseong', text: 'Suwon with Hwaseong Fortress' },
             { cityId: 'gyeongju-jeonju', pathId: 'jeonju', text: 'Jeonju Hanok Village and Hyanggyo' },
           ],

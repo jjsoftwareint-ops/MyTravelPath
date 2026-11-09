@@ -716,14 +716,14 @@ export const cities: City[] = [
       {
         id: 'gangnam-night-streets',
         name: 'Gangnam Night and Rainbow Bridge',
-        seoTitle: 'Gangnam night walks: Garosu-gil and Banpo',
+        seoTitle: 'Gangnam night walks: back streets and Banpo',
         seoDescription:
-          'Gangnam after dark: back streets near the station, Garosu-gil in Sinsa-dong, the Banpo Bridge fountain and Sevit Island, plus Starfield Library by day.',
+          'Gangnam after dark: back streets near the station, the Banpo Bridge rainbow fountain and Sevit Island, K-Star Road in Apgujeong and Starfield Library by day.',
         duration: '2h',
-        updated: '2026-11-01',
+        updated: '2026-11-09',
         whyVisit: [
           "This is the Gangnam the song is about. Towers and screens line the main road, and behind them **a dense grid of grills, bars and karaoke rooms** fills the moment work ends.",
-          "Ginkgo-lined Garosu-gil at five, dinner in the back streets, then **a bridge that becomes a rainbow fountain at eight**.",
+          "K-Star Road in the afternoon, dinner in the back streets, then **a bridge that becomes a rainbow fountain at eight**.",
           "Wander it in any order, cross under the road, and see which side you prefer.",
         ],
         story: {
@@ -751,10 +751,10 @@ export const cities: City[] = [
           above: true,
         },
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1VIazL8nrcXwzKDjTxKyxrbKGaNR9NYg',
-        keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'Garosugil', 'KStarRoad', 'Apgujeong', 'BanpoBridge', 'MoonlightRainbowFountain', 'SevitIsland', 'StarfieldLibrary', 'Bongeunsa', 'KoreaTravel'],
+        keywords: ['Seoul', 'Gangnam', 'GangnamStation', 'SeoulNightlife', 'KStarRoad', 'Apgujeong', 'BanpoBridge', 'MoonlightRainbowFountain', 'SevitIsland', 'StarfieldLibrary', 'Bongeunsa', 'KoreaTravel'],
         guide: {
           intro: [
-            "🌃 Here's the evening I'd make of it: the ginkgo avenue in Sinsa-dong at five, one stop on the Sinbundang line to Gangnam for dinner, then on to Banpo in time for the **fountain show**.",
+            "🌃 Here's the evening I'd make of it: K-Star Road in Apgujeong in the afternoon, dinner in the back streets behind Gangnam Station, then on to Banpo in time for the **fountain show**.",
             "Behind the station there's no route to follow, so just wander the three back streets in whatever order you like and see which side you prefer. Two hours covers it with a meal.",
           ],
           route: [
@@ -764,16 +764,15 @@ export const cities: City[] = [
             "Exit 11 and CGV Gangnam, on the site of the old Dong-A Theatre.",
             "For daytime: Starfield Library in COEX mall and Bongeunsa temple opposite it, both at Samseong Station, two stops east on line 2.",
             "[[K-Star Road|서울 강남 케이스타로드]], Galleria West to Cheongdam crossing: Gangnam-gu's walking route past the Gangnam-dol photo house, the Rodeo street, a figure museum and the Dosan Park end, with the K-pop agency streets at Cheongdam. A good daytime walk before the night streets. Gangnam-gu's own [K-Star Road guidebook (English PDF, large file)](https://www.gangnam.go.kr/etc/k_star_road_en/Gangnam_KSTARROAD_Guidebook%28EN%29.pdf) has the full zone-by-zone list.",
-            "[[Garosu-gil|서울 가로수길]], from Sinsa Station exit 8: the avenue of ginkgo trees with flagship stores on the street and quieter boutiques in the side lanes. Best in the late afternoon, yellow in early November.",
             "[[Banpo Bridge Moonlight Rainbow Fountain and Sevit Island|서울 반포대교 달빛무지개분수 세빛섬]], 15 minutes from Express Bus Terminal Station exit 8-1: watch the 19:30 or 20:00 show from the lawn, then walk over to the lit floating islands for the close-up view.",
           ],
           tips: [
             "🚇 Getting there: Gangnam Station, line 2 and the Sinbundang line. Exits 10 and 11 are on the west side; the station passage crosses under the road.",
-            "🌉 Make an evening of it: Garosu-gil at 17:00, the Sinbundang line one stop from Sinsa to Gangnam for dinner in the back streets, then line 9 or a taxi to Banpo Hangang Park for the 20:30 or 21:00 fountain show.",
+            "🌉 Make an evening of it: dinner in the back streets at Gangnam, then line 9 or a taxi to Banpo Hangang Park for the 20:30 or 21:00 fountain show.",
             "⏰ Restaurants serve until late and many bars go on past midnight. Line 2 runs until about midnight; the taxi ranks get long after that.",
             "⏰ Weeknights are busy from 7 pm with office workers; weekend crowds are younger and later.",
             "⏰ Starfield Library and Bongeunsa are free and best in the morning, before the evening walk.",
-            "🛍️ Shopping along Garosu-gil? Bring your passport for the tourist tax refund; many shops refund it at the till for visitors. [Our Olive Young guide](https://koreatravelpath.com/blog/2026-11-01-2013/) has the rules.",
+            "🛍️ Shopping in Gangnam? Bring your passport for the tourist tax refund; many shops refund it at the till for visitors. [Our Olive Young guide](https://koreatravelpath.com/blog/2026-11-01-2013/) has the rules.",
           ],
         },
       },
