@@ -38,6 +38,98 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-09-2255',
+    title: "Korean convenience store food in 2026: what's hot, and how to eat it there",
+    description:
+      "The Korean convenience store snacks everyone is buying in 2026, from roasted sweet potatoes to K-pop bread, and how locals cook ramen and eat right in the store.",
+    teaser: 'A sweet potato, a K-pop bread and a ramen machine.',
+    icon: 'convenience_store',
+    date: '2026-11-09',
+    updated: '2026-11-09',
+    keywords: ['KoreaTravel', 'KoreanConvenienceStore', 'KoreanSnacks', 'CU', 'GS25', 'HangangRamen', 'BananaMilk'],
+    body: [
+      {
+        type: 'p',
+        text: "Back home, the corner shop is where you grab milk on the way home. In Korea, the **편의점 (pyeonuijeom)**, convenience store, is a sightseeing stop. Between July and September, foreign shoppers spent about **two-thirds more** at the two biggest chains, CU and GS25, than a year before.",
+      },
+      {
+        type: 'img',
+        src: 'cvs-banana-milk.jpg',
+        alt: 'Little jar-shaped bottles of Korean banana, strawberry and melon flavoured milk in a row',
+        caption: 'Binggrae banana milk, the chubby jar every visitor buys at least once.',
+        href: 'https://commons.wikimedia.org/wiki/File:Binggrae_Banana_Flavored_Milk_04_(15723530512).jpg',
+        credit: {
+          author: 'Korea.net / KOCIS',
+          license: 'CC BY-SA 2.0',
+          licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0',
+        },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'bread', text: 'On the shelf right now' },
+      {
+        type: 'dishes',
+        items: [
+          {
+            icon: 'roasted_sweet_potato',
+            text: "[군고구마](https://www.google.com/search?tbm=isch&q=%ED%8E%B8%EC%9D%98%EC%A0%90%20%EA%B5%B0%EA%B3%A0%EA%B5%AC%EB%A7%88) (gun-goguma), a roasted sweet potato from the little oven by the till. At CU it now outsells the steamed bun **three to one**, and foreign shoppers bought more than twice as many as last year.",
+          },
+          {
+            icon: 'bread',
+            text: "[리센느 빵](https://www.google.com/search?tbm=isch&q=CU%20%EB%A6%AC%EC%84%BC%EB%8A%90%20%EB%B9%B5) (Rescene ppang) at CU: each bun hides one of 27 **photo cards** of the K-pop group RESCENE. More than two million sold, and fans trade the rare cards.",
+          },
+          {
+            icon: 'books',
+            text: "[민음사 빵](https://www.google.com/search?tbm=isch&q=GS25%20%EB%AF%BC%EC%9D%8C%EC%82%AC%20%EB%B9%B5) (Minumsa ppang) at GS25 came wrapped like a classic novel with a **bookmark** inside. It sold out to the very end and is already gone. Sniff.",
+          },
+          {
+            icon: 'cookie',
+            text: "[두쫀쿠](https://www.google.com/search?tbm=isch&q=%EB%91%90%EC%AB%80%EC%BF%A0) (dujjonku), the Dubai chewy cookie, is still in tourists' baskets at both chains.",
+          },
+          {
+            icon: 'chocolate_bar',
+            text: "7-Eleven's [생초코파이 가토오쇼콜라](https://www.google.com/search?tbm=isch&q=%EC%84%B8%EB%B8%90%EC%9D%BC%EB%A0%88%EB%B8%90%20%EC%83%9D%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4%20%EA%B0%80%ED%86%A0%EC%98%A4%EC%87%BC%EC%BD%9C%EB%9D%BC) (saeng chocopie gateau au chocolat), a chilled choco pie from Japan, here for this season only.",
+          },
+        ],
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'steaming_bowl', text: 'Cook it there, eat it there' },
+      {
+        type: 'p',
+        text: "Here's the part that surprises visitors: nobody has to leave. There's a **hot-water tap**, a microwave and a counter by the window, and Koreans eat dinner there without a second thought.",
+      },
+      {
+        type: 'p',
+        text: "Many stores, especially along the Han River, have a [라면 조리기](https://www.google.com/search?tbm=isch&q=%ED%8E%B8%EC%9D%98%EC%A0%90%20%EB%9D%BC%EB%A9%B4%20%EC%A1%B0%EB%A6%AC%EA%B8%B0) (ramyeon jorigi), a ramen machine. Buy a packet, put the noodles in the store's paper bowl, press the button, and it boils them for you. That's **한강라면 (Hangang ramyeon)**, the K-drama picnic. CU's ramen library in Hongdae stocks 255 kinds, and foreigners buy most of them.",
+      },
+      {
+        type: 'p',
+        text: "Then there are the combos. [마크정식](https://www.google.com/search?tbm=isch&q=%EB%A7%88%ED%81%AC%EC%A0%95%EC%8B%9D) (Mark jeongsik) mixes cup tteokbokki with spaghetti cup noodles, a sausage and cheese, invented by a fan of GOT7's Mark. [뚱바 커피](https://www.google.com/search?tbm=isch&q=%EB%9A%B1%EB%B0%94%20%EC%BB%A4%ED%94%BC) (ttungba keopi) is banana milk poured over a pouch of hazelnut coffee in a cup of ice.",
+      },
+      {
+        type: 'img',
+        src: 'cvs-roasted-sweet-potatoes.jpg',
+        alt: 'Roasted sweet potatoes piled on hot stones in a metal tray',
+        caption: 'Sweet potatoes roasting on hot stones, Daegu.',
+        href: 'https://commons.wikimedia.org/wiki/File:Roasted_Sweet_Potatoes_in_South_Korea.jpg',
+        credit: {
+          author: 'Brücke-Osteuropa',
+          license: 'CC0',
+          licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/deed.en',
+        },
+      },
+      { type: 'space' },
+      {
+        type: 'verdict',
+        text: "**Our verdict:** skip a restaurant once. Grab a hot sweet potato, a banana milk and a machine ramen, and eat at the window like a local.",
+      },
+      {
+        type: 'p',
+        text: 'What would go in your basket first?',
+      },
+    ],
+  },
+  {
     id: '2026-11-08-2329',
     title: 'Our Blues: the Jeju drama that walks with you',
     description:
