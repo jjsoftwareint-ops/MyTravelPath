@@ -26,6 +26,19 @@ export type PageMeta = {
   jsonLd: object;
 };
 
+// A blog post's link preview: its first photo, else the header image of the first walk it
+// links to, else the site's default card (Bukchon rooftops).
+function postImage(post: NonNullable<ReturnType<typeof findPost>>): string {
+  const first = post.body.find((b) => b.type === "img" || b.type === "photo");
+  if (first) return `${SITE_URL}/blog/${first.src}`;
+  for (const b of post.body) {
+    if (b.type !== "route") continue;
+    const path = findPath(b.cityId, b.pathId);
+    if (path?.image) return `${SITE_URL}/${path.image}`;
+  }
+  return DEFAULT_IMAGE;
+}
+
 // Static pages: title, description and the date their text last changed.
 const STATIC: Record<string, { title: string; description: string; updated: string }> = {
   blog: {
@@ -142,7 +155,7 @@ export function pageMeta(pathname: string): PageMeta {
   if (a === "blog" && b) {
     const post = findPost(b);
     if (post) {
-      const image = DEFAULT_IMAGE;
+      const image = postImage(post);
       return {
         path,
         title: `${post.title} | ${SITE_NAME} Blog`,
