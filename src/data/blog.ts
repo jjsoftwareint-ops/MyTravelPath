@@ -39,10 +39,10 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: '2026-11-10-0420',
-    title: 'What to do near Incheon Airport the day before your flight',
+    title: 'A whale on the ceiling: Media and Art by Incheon Airport',
     description:
-      "Spend your last day in Korea by Incheon Airport: Inspire's whale on an LED ceiling, Paradise City's art and spa, and free shuttles from the arrivals floor.",
-    teaser: 'A whale on the ceiling, a short shuttle from your gate.',
+      "Two resorts beside Incheon Airport: Inspire's whale on a giant LED ceiling, Paradise City's art, spa and indoor funfair, and free shuttles from arrivals.",
+    teaser: 'And a gold pumpkin in the lobby next door.',
     icon: 'airplane',
     date: '2026-11-10',
     updated: '2026-11-10',
@@ -50,7 +50,7 @@ export const posts: Post[] = [
     body: [
       {
         type: 'p',
-        text: "The last day of a Korea trip usually goes like this: drag the suitcase across Seoul, squeeze onto the airport train, worry about the time. We like a softer ending. Move to the airport island, **영종도 (Yeongjong-do)**, the day before. It has two big resorts, and both run **free shuttles** from the arrivals floor.",
+        text: "Most visitors only see the airport island, **영종도 (Yeongjong-do)**, from the plane window. Right beside the runways sit two big resorts with a whale on the ceiling, a spa and an indoor funfair, and both run **free shuttles** from the arrivals floor.",
       },
       { type: 'space' },
       { type: 'h', icon: 'spouting_whale', text: 'Inspire: a whale on the ceiling' },
@@ -121,7 +121,7 @@ export const posts: Post[] = [
       },
       {
         type: 'verdict',
-        text: 'Our plan: check in by the airport, the whale after dinner, a slow breakfast, then the free shuttle to your flight. No suitcase on the subway at rush hour.',
+        text: 'Our pick: Inspire for the whale and the screens, Paradise City for the art and a long soak. Both are a free bus ride from Terminal 1, so you can easily do the two in one day.',
       },
       {
         type: 'route',
@@ -131,7 +131,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: 'So, your last night in Korea: under the whale, or in the spa?',
+        text: 'So, which one is yours: the whale, or the spa?',
       },
     ],
   },
