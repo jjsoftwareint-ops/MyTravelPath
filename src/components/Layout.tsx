@@ -5,6 +5,7 @@ import { dashboardUrl } from './Analytics'
 import BlogLink from './BlogLink'
 import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
+import { stepsBackSkipping } from '../historyTrail'
 import BlogThemePicker from './BlogThemePicker'
 
 type Props = {
@@ -13,6 +14,8 @@ type Props = {
   titleImage?: string
   subtitle?: string
   backTo?: string
+  /** Pages the back button steps past (children of this page, e.g. blog posts for the blog list). */
+  backSkip?: (path: string) => boolean
   /** Element shown in place of the back button, e.g. the brand mark on the home screen. */
   icon?: ReactNode
   /** Extra header buttons shown right of the theme toggle, e.g. the share button on a path page. */
@@ -28,7 +31,7 @@ type Props = {
   children: ReactNode
 }
 
-export default function Layout({ title, titleImage, subtitle, backTo: backToProp, icon, actions, hideSaved, noSaved, showBlog, blogTheme, children }: Props) {
+export default function Layout({ title, titleImage, subtitle, backTo: backToProp, backSkip, icon, actions, hideSaved, noSaved, showBlog, blogTheme, children }: Props) {
   // Opened from a link inside a blog post? The back button returns to that post (the link passes its URL in state.from).
   const from = (useLocation().state as { from?: string } | null)?.from
   const backTo = backToProp !== undefined && from?.startsWith('/blog/') ? from : backToProp
@@ -36,12 +39,22 @@ export default function Layout({ title, titleImage, subtitle, backTo: backToProp
   // to exactly that page (a blog post opened from a path page returns to the path page). Only with no in-app history
   // (a shared link, a new tab, a search result) does it fall back to `backTo`, the blog list or the parent page.
   // React Router keeps its position in history.state.idx: 0 on the first page of the visit, higher after in-app moves.
+  // `backSkip` names pages that are children, not parents: the blog list passes "any blog page", so after
+  // reading several posts its back button steps past all of them to the page before the blog (a path page,
+  // home). With no such page in this tab's history it goes to `backTo`.
   const navigate = useNavigate()
   const onBack = (e: MouseEvent<HTMLAnchorElement>) => {
     const idx = (window.history.state as { idx?: number } | null)?.idx
-    if (typeof idx === 'number' && idx > 0) {
+    if (typeof idx !== 'number' || idx <= 0) return
+    if (!backSkip) {
       e.preventDefault()
       navigate(-1)
+      return
+    }
+    const steps = stepsBackSkipping(backSkip)
+    if (steps !== null) {
+      e.preventDefault()
+      navigate(steps)
     }
   }
   // Publish the header's height as --header-h so sticky rows in the list sit right under it.

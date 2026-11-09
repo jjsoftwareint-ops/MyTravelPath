@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Analytics from './components/Analytics'
 import PullToRefresh from './components/PullToRefresh'
 import ScrollToTop from './components/ScrollToTop'
+import { HistoryTrail } from './historyTrail'
 import About from './pages/About'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
@@ -21,6 +22,7 @@ export default function App() {
     <>
       <Analytics />
       <ScrollToTop />
+      <HistoryTrail />
       <PullToRefresh />
       <Routes>
         <Route path="/" element={<Home />} />

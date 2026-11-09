@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
     "prerender": "node scripts/prerender.mjs",
     "lint": "oxlint",
+    "test:back": "node scripts/test-back-button.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
