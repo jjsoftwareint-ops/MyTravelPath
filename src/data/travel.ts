@@ -1449,6 +1449,9 @@ export const cities: City[] = [
   {
     id: 'incheon',
     name: 'Incheon',
+    seoTitle: 'Incheon walks: China Town, Wolmido, Yeongjongdo',
+    seoDescription:
+      "Day trips from Seoul with free maps: Incheon China Town, the Wolmido sunset, Gyeyangsan by night, Ganghwa-do and the beaches of Yeongjongdo by the airport.",
     intro: [
       "Korea's third-largest city, on the west coast next to Seoul, and the home of **Incheon International Airport**, which is why it is most visitors' first stop. The subway and the airport railway link it to Seoul.",
       "Its port opened to foreign ships in 1883, which left Korea's first **China Town** and old harbour streets. The city also covers islands such as **Ganghwa-do**, **Wolmido** and the airport island of Yeongjong.",
@@ -1721,6 +1724,73 @@ export const cities: City[] = [
             "🎟️ Travel sites disagree on whether Jeondeungsa charges an entrance fee (free, or about ₩3,000), so keep a little cash for the gate.",
             "📍 Bomunsa sits on Seokmodo island off the west coast. Treat it as a separate trip and check the way across before you go.",
             "🔗 Another Incheon day on this site: the Incheon China Town and Wolmido Sunset walks.",
+          ],
+        },
+      },
+      {
+        id: 'yeongjongdo',
+        name: 'Yeongjongdo: beaches, sunsets and resorts',
+        seoTitle: 'Yeongjongdo day trip: beaches, sunset, Inspire',
+        seoDescription:
+          "Incheon's airport island in a day: Inspire's LED street and pink whale, Eurwangni Beach, the sea path to Seonnyeobawi at sunset and the free shuttle stops.",
+        duration: 'Full day',
+        updated: '2026-11-09',
+        tags: [{ icon: 'sunset', label: 'Island day trip' }],
+        image: 'yeongjongdo.jpg',
+        imageCredit: 'Photo: INSPIRE Entertainment Resort (Aurora)',
+        whyVisit: [
+          "The airport island, where wide sandy beaches face west and **the sun sets straight into the sea**.",
+          "Start under the LED sky of Aurora street at Inspire, where **a pink whale swims across the ceiling**.",
+          "Then walk the new sea deck from Eurwangni Beach to Fairy Rock, and watch planes land from a nest-shaped tower.",
+          "Free resort shuttles leave from the arrivals floor, so it fits your first day in Korea or your last.",
+        ],
+        story: {
+          title: 'From swallow island to airport island',
+          text: [
+            "The island was first called **Jayeondo**, the island of purple swallows. In 1653 the Joseon navy moved its Yeongjong post here from Namyang on the mainland, and the post's name slowly replaced the old one.",
+            "In 1875 the Japanese warship **Unyo** attacked the fort here, a clash that led to the treaty that opened Korea's ports the next year. Much later the tide flats between Yeongjong and Yongyu islands were filled in, and **Incheon International Airport** opened on them in 2001.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚌',
+            title: 'Free shuttle to Inspire',
+            at: 'Inspire',
+            body: "From the arrivals floor of **Terminal 1, stop 3C**: weekdays at **:15**, weekends and holidays at **:15 and :45**. From **Terminal 2, stop 8A**: weekdays at **:50**, weekends and holidays at **:20 and :50**. The bus fills fast, so queue 10 minutes early.",
+            since: 'Checked 9 November 2026.',
+            source: "Yeongjongdo travel guide, June 2026; Inspire's own site did not load. An October 2026 guide puts the T1 stop at 2C, beside 3C, with a purple Inspire sign.",
+          },
+          {
+            icon: '🚌',
+            title: 'Free shuttle to Paradise City',
+            at: 'Paradise City',
+            body: "A loop bus via the Hyatt hotel. From **Terminal 1, stop 3C** at **:10, :30 and :50**, 05:10–23:10. From **Terminal 2, stop 4A** once an hour at **:30**, 05:30–23:30.",
+            since: 'Checked 9 November 2026.',
+            source: 'Paradise City website, location page, checked 9 November 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1mM5fBduyXmEPahPlqjvTdofGBW5vEso',
+        keywords: ['Incheon', 'Yeongjongdo', 'DayTripFromSeoul', 'EurwangniBeach', 'Seonnyeobawi', 'InspireResort', 'ParadiseCity', 'IncheonAirport', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌅 Go to Inspire in the late morning for the Aurora show, then cross to the west coast. Walk from Eurwangni Beach to Fairy Rock and **be on the sand an hour before sunset**.",
+            "The island is big, so the stops are bus or taxi hops, not one walk. Yedanpo on the north coast is a quiet extra if you still have the afternoon.",
+          ],
+          route: [
+            "[[Inspire Entertainment Resort|인천 인스파이어 오로라 거리]]: Aurora is a 150 m street whose ceiling and walls are LED screens. The 'Under the Blue Land' show plays on the hour and at half past, and the pink whale ends it. Rotunda's kinetic media art moves at :15 and :45. Show times can change: check the [Aurora schedule](https://www.inspireresorts.com/en/entertainment/attraction-venue/aurora) and the [Rotunda schedule](https://www.inspireresorts.com/en/entertainment/attraction-venue/rotunda) on Inspire's site.",
+            "[[Paradise City|인천 파라다이스시티]], beside the airport: an art-filled resort hotel with the Cimer spa and an indoor water park.",
+            "[[Eurwangni Beach|인천 을왕리해수욕장]], the island's best-known beach, a crescent of fine sand. The coastal path to Seonnyeobawi starts at its south end.",
+            "[[The coastal path to Seonnyeobawi|인천 을왕리 해안데크길]], about 2.5 km along the shore. Its 590 m sea deck was finished in September 2026, stays walkable at high tide and is lit after dark.",
+            "[[Seonnyeobawi Rock|인천 선녀바위]], 'fairy rock', said to look like a woman praying. People make a wish in front of it, and it is the island's classic sunset photo.",
+            "[[Yongyu Sky Observatory|인천 용유하늘전망대]], a nest-shaped tower with a spiral stair. From the top you see Muuido, small islands and planes landing at the airport.",
+            "[[Yedanpo Pier|인천 예단포선착장]], a small fishing harbour on the north coast. The Yedanpo Dulle-gil starts here: about 1.2 km of forest path over the hill, with sea views and a pavilion at the top.",
+          ],
+          tips: [
+            "🚇 Getting there: Airport Railroad from **Seoul Station** to **Incheon Airport Terminal 1**, ₩4,750 by transport card (2026 guides). Buses **302** and **306** run from Terminal 1 to Eurwangni Beach.",
+            "🚕 Take a taxi to Yedanpo: it is on the far side of the island from the beaches.",
+            "🍜 Eat along the way: the pink pins are a forest café, two sea-view cafés on Masian Beach and a pork ssambap restaurant that has run for about 30 years. Eurwangni is known for grilled clams.",
+            "✈️ Flying out in the evening? Finish at Inspire or Paradise City, a short free shuttle ride from the terminals.",
+            "🔗 Another Incheon sunset on this site: the Wolmido Sunset walk, with China Town beside it.",
           ],
         },
       },
