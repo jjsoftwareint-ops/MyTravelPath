@@ -136,7 +136,7 @@ function renderBlock(
             >
               {b.credit.license}
             </a>
-            {', via Wikimedia Commons.'}
+            {`, via ${b.credit.via ?? 'Wikimedia Commons'}.`}
           </figcaption>
         </figure>
       )

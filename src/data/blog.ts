@@ -17,7 +17,7 @@ export type Block =
       caption: string
       /** Source page of the photo; the image links to it. */
       href: string
-      credit: { author: string; license: string; licenseUrl: string }
+      credit: { author: string; license: string; licenseUrl: string; via?: string } // via: where the file came from (default Wikimedia Commons)
     }
   | { type: 'photo'; src: string; alt: string; caption: string } // our own photo (file in assets/blog/), shown whole, no outside credit
   | { type: 'video'; id: string; title: string; caption: string } // YouTube player; id = the part after youtu.be/ (no ?si= tracking)
@@ -37,6 +37,104 @@ export type Post = {
 }
 
 export const posts: Post[] = [
+  {
+    id: '2026-11-10-0420',
+    title: 'What to do near Incheon Airport the day before your flight',
+    description:
+      "Spend your last day in Korea by Incheon Airport: Inspire's whale on an LED ceiling, Paradise City's art and spa, and free shuttles from the arrivals floor.",
+    teaser: 'A whale on the ceiling, a short shuttle from your gate.',
+    icon: 'airplane',
+    date: '2026-11-10',
+    updated: '2026-11-10',
+    keywords: ['KoreaTravel', 'IncheonAirport', 'InspireResort', 'AuroraShow', 'ParadiseCity', 'Cimer', 'Yeongjongdo'],
+    body: [
+      {
+        type: 'p',
+        text: "The last day of a Korea trip usually goes like this: drag the suitcase across Seoul, squeeze onto the airport train, worry about the time. We like a softer ending. Move to the airport island, **영종도 (Yeongjong-do)**, the day before. It has two big resorts, and both run **free shuttles** from the arrivals floor.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'spouting_whale', text: 'Inspire: a whale on the ceiling' },
+      {
+        type: 'p',
+        text: "**Inspire** puts a hotel, a mall, an indoor water park and a concert arena under one roof. Its main street, **Aurora**, is 150 m long and 25 m high, and its ceiling and walls are one giant LED screen.",
+      },
+      {
+        type: 'img',
+        src: 'resort-inspire-aurora.jpg',
+        alt: 'Visitors looking up at a huge LED ceiling and walls glowing pink and purple with a giant winged creature',
+        caption: 'Aurora street at Inspire, during one of its shows.',
+        href: 'https://heypop.kr/n/103063',
+        credit: {
+          author: 'INSPIRE Entertainment Resort',
+          license: 'press photo',
+          licenseUrl: 'https://www.inspireresorts.com/en/entertainment/attraction-venue/aurora',
+          via: 'HEYPOP',
+        },
+      },
+      {
+        type: 'p',
+        text: "A three-minute show plays through the day, and it is free. In **Under the Blue Land**, a humpback whale swims right over your head, and yes, everyone films it. Round the corner, the **Rotunda** chandelier of 156 LED panels starts moving at quarter past and quarter to.",
+      },
+      {
+        type: 'video',
+        id: 'UTb4Mk1BAV8',
+        title: 'Inspire resort whale show, full version',
+        caption: 'The whole whale show, filmed by a visitor on the YouTube channel 편식어른이 (Pyeonsik Eoreuni).',
+      },
+      {
+        type: 'p',
+        text: 'Show times change with the seasons, so check the [Aurora schedule](https://www.inspireresorts.com/en/entertainment/attraction-venue/aurora) before you go.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', icon: 'hot_springs', text: 'Paradise City: art and a spa' },
+      {
+        type: 'p',
+        text: "A few minutes from Terminal 1, **Paradise City** is the pick for art lovers. Thousands of artworks hang around the resort, and a gold **Yayoi Kusama** pumpkin, 2.5 m tall, sits in the hotel lobby.",
+      },
+      {
+        type: 'img',
+        src: 'resort-paradise-pumpkin.jpg',
+        alt: 'A large gold pumpkin sculpture covered in black dots in a round marble hotel lobby',
+        caption: "Yayoi Kusama's pumpkin in the Paradise City lobby.",
+        href: 'https://m.place.naver.com/place/304210835/photo',
+        credit: { author: 'Paradise City', license: 'press photo', licenseUrl: 'https://www.p-city.com/', via: 'Naver Map' },
+      },
+      {
+        type: 'p',
+        text: "Then there is **씨메르 (Ssimereu)**, Cimer, an art spa that plays with Korea's **찜질방 (jjimjilbang)** bathhouse culture, with pools under a glass roof. Across the plaza, **Wonderbox** is an indoor funfair themed on the night, teacups included.",
+      },
+      {
+        type: 'img',
+        src: 'resort-paradise-cimer.jpg',
+        alt: 'An indoor pool with white loungers under a glass roof, lined by white arched balconies',
+        caption: 'The glass-roofed pool at Cimer.',
+        href: 'https://m.place.naver.com/place/1776546877/photo',
+        credit: { author: 'Paradise City', license: 'press photo', licenseUrl: 'https://www.p-city.com/', via: 'Naver Map' },
+      },
+      {
+        type: 'img',
+        src: 'resort-paradise-wonderbox.jpg',
+        alt: 'Giant teacup rides under a striped red, yellow and purple tent ceiling with lights',
+        caption: 'The teacups at Wonderbox.',
+        href: 'https://m.place.naver.com/place/1176188623/photo',
+        credit: { author: 'Paradise City', license: 'press photo', licenseUrl: 'https://www.p-city.com/', via: 'Naver Map' },
+      },
+      {
+        type: 'verdict',
+        text: 'Our plan: check in by the airport, the whale after dinner, a slow breakfast, then the free shuttle to your flight. No suitcase on the subway at rush hour.',
+      },
+      {
+        type: 'route',
+        cityId: 'incheon',
+        pathId: 'yeongjongdo',
+        text: 'The shuttle stops, the beaches and the sunset spots are on our Yeongjongdo map.',
+      },
+      {
+        type: 'p',
+        text: 'So, your last night in Korea: under the whale, or in the spa?',
+      },
+    ],
+  },
   {
     id: '2026-11-09-2255',
     title: "Korean convenience store food in 2026: what's hot, and how to eat it there",
