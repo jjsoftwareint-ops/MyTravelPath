@@ -92,6 +92,10 @@ export const posts: Post[] = [
         text: "A few minutes from Terminal 1, **Paradise City** is the pick for art lovers. Thousands of artworks hang around the resort, and a gold **Yayoi Kusama** pumpkin, 2.5 m tall, sits in the hotel lobby.",
       },
       {
+        type: 'p',
+        text: "Getting there is half the fun: besides the free shuttle bus, the airport's **maglev train** now runs as a free tourist ride from Terminal 1 and stops at Paradise City station. It floats on magnets and runs Tuesday to Sunday, 10:00 to 17:00.",
+      },
+      {
         type: 'img',
         src: 'resort-paradise-pumpkin.jpg',
         alt: 'A large gold pumpkin sculpture covered in black dots in a round marble hotel lobby',

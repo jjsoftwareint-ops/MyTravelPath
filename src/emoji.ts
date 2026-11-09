@@ -17,6 +17,8 @@ export const EMOJI_FILES: Record<string, string> = {
   "🚌️": "bus",
   "🚕": "taxi",
   "🚕️": "taxi",
+  "🚝": "monorail",
+  "🚝️": "monorail",
   "✂": "scissors",
   "✂️": "scissors",
   "🎟": "admission_tickets",

@@ -1742,7 +1742,7 @@ export const cities: City[] = [
           "The airport island, where wide sandy beaches face west and **the sun sets straight into the sea**.",
           "Start under the LED sky of Aurora street at Inspire, where **a pink whale swims across the ceiling**.",
           "Then walk the new sea deck from Eurwangni Beach to Fairy Rock, and watch planes land from a nest-shaped tower.",
-          "Free resort shuttles leave from the arrivals floor, so it fits your first day in Korea or your last.",
+          "Free resort shuttles and **a free maglev train** leave from the airport, so it fits your first day in Korea or your last.",
         ],
         story: {
           title: 'From swallow island to airport island',
@@ -1768,6 +1768,14 @@ export const cities: City[] = [
             since: 'Checked 9 November 2026.',
             source: 'Paradise City website, location page, checked 9 November 2026.',
           },
+          {
+            icon: '🚝',
+            title: 'Free maglev train from Terminal 1',
+            at: 'Yongyu Sky Observatory',
+            body: "The airport's maglev runs as a free tourist train from the **Terminal 1** Transportation Center to **Yongyu**, six stops, with **Paradise City** on the way. **Tuesday to Sunday, 10:00–17:00**, about every 35 minutes; {red:closed on Mondays}. Terminal 2 has no maglev.",
+            since: 'Checked 9 November 2026.',
+            source: "Kyunghyang Shinmun and Incheon city news, October 2025 (restart on 17 October 2025 as a free tourist train); Paradise City location page (closed Mondays, Seollal and Chuseok). An April 2026 report confirms it still runs.",
+          },
         ],
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1mM5fBduyXmEPahPlqjvTdofGBW5vEso',
         keywords: ['Incheon', 'Yeongjongdo', 'DayTripFromSeoul', 'EurwangniBeach', 'Seonnyeobawi', 'InspireResort', 'ParadiseCity', 'IncheonAirport', 'KoreaTravel'],
@@ -1778,11 +1786,11 @@ export const cities: City[] = [
           ],
           route: [
             "[[Inspire Entertainment Resort|인천 인스파이어 오로라 거리]]: Aurora is a 150 m street whose ceiling and walls are LED screens. The 'Under the Blue Land' show plays on the hour and at half past, and the pink whale ends it. Rotunda's kinetic media art moves at :15 and :45. Show times can change: check the [Aurora schedule](https://www.inspireresorts.com/en/entertainment/attraction-venue/aurora) and the [Rotunda schedule](https://www.inspireresorts.com/en/entertainment/attraction-venue/rotunda) on Inspire's site.",
-            "[[Paradise City|인천 파라다이스시티]], beside the airport: an art-filled resort hotel with the Cimer spa and an indoor water park.",
+            "[[Paradise City|인천 파라다이스시티]], beside the airport: an art-filled resort hotel with the Cimer spa and an indoor water park. The free maglev train stops at Paradise City station, a short walk away.",
             "[[Eurwangni Beach|인천 을왕리해수욕장]], the island's best-known beach, a crescent of fine sand. The coastal path to Seonnyeobawi starts at its south end.",
             "[[The coastal path to Seonnyeobawi|인천 을왕리 해안데크길]], about 2.5 km along the shore. Its 590 m sea deck was finished in September 2026, stays walkable at high tide and is lit after dark.",
             "[[Seonnyeobawi Rock|인천 선녀바위]], 'fairy rock', said to look like a woman praying. People make a wish in front of it, and it is the island's classic sunset photo.",
-            "[[Yongyu Sky Observatory|인천 용유하늘전망대]], a nest-shaped tower with a spiral stair. From the top you see Muuido, small islands and planes landing at the airport.",
+            "[[Yongyu Sky Observatory|인천 용유하늘전망대]], a nest-shaped tower with a spiral stair. From the top you see Muuido, small islands and planes landing at the airport. Yongyu, the last stop of the free maglev, is about 150 m away.",
             "[[Yedanpo Pier|인천 예단포선착장]], a small fishing harbour on the north coast. The Yedanpo Dulle-gil starts here: about 1.2 km of forest path over the hill, with sea views and a pavilion at the top.",
           ],
           tips: [
