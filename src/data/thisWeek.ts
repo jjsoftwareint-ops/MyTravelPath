@@ -16,6 +16,7 @@ export type WeekEvent = {
   tip?: string // 🚇 getting there: stations (bold) only, no car advice
   href?: { label: string; url: string } // one official link, https only
   routes?: { cityId: string; pathId: string; text: string }[] // walking route pages on this site
+  posts?: { id: string; text: string }[] // blog posts on this site about the same topic (id in blog.ts)
 }
 
 export type Week = {
@@ -79,6 +80,7 @@ export const thisWeek: ThisWeek = {
             { cityId: 'gyeonggi-do', pathId: 'hwaseong', text: 'Suwon with Hwaseong Fortress' },
             { cityId: 'gyeongju-jeonju', pathId: 'jeonju', text: 'Jeonju Hanok Village and Hyanggyo' },
           ],
+          posts: [{ id: 'danpung-nori-korea-goes-to-the-mountains', text: 'Danpung-nori: the week Korea goes to the mountains' }],
         },
         {
           id: 'icnx-incheon',
@@ -182,14 +184,20 @@ export const thisWeek: ThisWeek = {
           cityId: 'seoul',
           when: 'Fri 13 Nov 10:00 to 18:00 · Sat 14 Nov 10:00 to 16:00',
           where: 'COEX, Gangnam',
-          price: 'Day ticket, early-bird price was about ₩15,000',
-          text: 'Korea\'s biggest coffee and café fair. **Open to everyone on Fri 13 and Sat 14 Nov**, the first two days are for trade visitors only.',
+          price: '₩25,000 for one day at the door, less if you book online first',
+          text: 'Korea\'s biggest coffee and café fair, filling all four halls of COEX. **Open to everyone on Fri 13 and Sat 14 Nov**, the first two days are for trade visitors only.',
           todo: [
-            'Walk the booths of café brands from around the world to see new coffee, dessert and café trends.',
+            'Walk the booths of café brands from around the world to see new coffee, tea, dessert and bakery trends.',
             'The Seoul Coffee Festival runs at Starfield Library, in the same mall.',
             'Last entry is half an hour before closing, and Saturday closes early.',
           ],
           tip: '🚇 **Samseong Station** (line 2), COEX is a few minutes underground.',
+          href: { label: 'Official visitor guide ↗', url: 'https://eng.cafeshow.com/eng/visitor/visitor_guide.asp' },
+          routes: [
+            { cityId: 'theme', pathId: 'cafe-around-me', text: 'Café Around Me map' },
+            { cityId: 'seoul', pathId: 'gangnam-night-streets', text: 'Gangnam walk, with Starfield Library' },
+          ],
+          posts: [{ id: '2026-11-03-0119', text: 'Why do Koreans drink iced coffee in the snow?' }],
         },
         {
           id: 'jeju-biennale-last-days',
@@ -244,6 +252,7 @@ export const thisWeek: ThisWeek = {
       ],
       tip: '🚇 **Hoehyeon Station** (line 4).',
       href: { label: 'Official page ↗', url: 'https://english.visitseoul.net/events/2026Namsan-Night-Festival/ENP3rjagy' },
+      routes: [{ cityId: 'seoul', pathId: 'hanyang-dosung-gil-3-4', text: 'City Wall Trail over Namsan' }],
     },
     {
       id: 'seoul-autumn-festa',
@@ -277,6 +286,7 @@ export const thisWeek: ThisWeek = {
       ],
       tip: '🚇 **Gwangan Station** (line 2).',
       href: { label: 'Official page ↗', url: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=194990' },
+      routes: [{ cityId: 'busan', pathId: 'villages-and-hotspots', text: 'Gwangalli night walk and Busan highlights' }],
     },
     {
       id: 'hwadam-forest-autumn',
@@ -295,6 +305,7 @@ export const thisWeek: ThisWeek = {
         '{red:Possibly closed on Mondays}, so plan another day.',
       ],
       tip: '🚇 **Gonjiam Station** (Gyeonggang line), then a taxi. A garden shuttle runs in peak season.',
+      href: { label: 'Official site, online tickets ↗', url: 'https://www.hwadamsup.com' },
     },
     {
       id: 'unjeong-light-garden',
@@ -310,6 +321,7 @@ export const thisWeek: ThisWeek = {
         'Walk around the lake after dark, when the light garden is lit with the street lamps.',
         'The fireworks show was on opening night, 31 Oct, so expect lights, not fireworks.',
       ],
+      href: { label: 'Event page ↗', url: 'https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=36374' },
     },
   ],
   comingUp: [

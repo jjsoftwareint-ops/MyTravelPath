@@ -37,7 +37,7 @@ function EventCard({ e }: { e: WeekEvent }) {
           <RichText text={e.tip} />
         </p>
       )}
-      {(e.href || e.routes) && (
+      {(e.href || e.routes || e.posts) && (
         <p className="event-links">
           {e.href && (
             <a className="link" href={e.href.url} target="_blank" rel="noopener noreferrer">
@@ -47,6 +47,11 @@ function EventCard({ e }: { e: WeekEvent }) {
           {e.routes?.map((r) => (
             <Link key={r.pathId} className="link" to={`/${r.cityId}/${r.pathId}`}>
               {r.text} ›
+            </Link>
+          ))}
+          {e.posts?.map((p) => (
+            <Link key={p.id} className="link" to={`/blog/${p.id}/`}>
+              📝 {p.text} ›
             </Link>
           ))}
         </p>
