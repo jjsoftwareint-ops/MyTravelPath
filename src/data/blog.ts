@@ -72,6 +72,12 @@ export const posts: Post[] = [
         type: 'p',
         text: "This matters more than you'd think. Koreans are either **팥붕 (pat-bung)**, team red bean, or **슈붕 (syu-bung)**, team custard, and they will ask you. We're red bean, and we'll hear no arguments.",
       },
+      {
+        type: 'photo',
+        src: 'bungeoppang-stall.jpg',
+        alt: 'A steaming street stall with fish bread on a rack and a handwritten sign: custard cream or red bean',
+        caption: 'Our photo: the big choice, handwritten in three languages.',
+      },
       { type: 'space' },
       { type: 'h', icon: 'money_bag', text: 'One fish, ₩1,000' },
       {
