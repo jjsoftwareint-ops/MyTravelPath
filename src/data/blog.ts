@@ -38,6 +38,79 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-11-0011',
+    title: 'Bungeoppang season: Korean fish bread, from ₩1,000 to Dubai pistachio',
+    description:
+      "Korea's winter fish bread is back on the street. What bungeoppang is, red bean or custard, why it costs ₩1,000 now, and the Dubai pistachio version.",
+    teaser: 'Red bean or custard? Choose carefully.',
+    icon: 'fish',
+    date: '2026-11-11',
+    updated: '2026-11-11',
+    keywords: ['Bungeoppang', 'KoreanStreetFood', 'FishBread', 'DubaiChocolate', 'KoreanWinter', 'SeoulFood', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "The first cold week in Korea smells of hot batter. Little carts appear on street corners, and the fish are back: **붕어빵 (bungeoppang)**, fish bread.",
+      },
+      {
+        type: 'img',
+        src: 'bungeoppang-rack.jpg',
+        alt: 'Rows of golden fish-shaped bungeoppang cooling on a rack at a street stall',
+        caption: 'Fresh off the iron, crisp at the edges.',
+        href: 'https://commons.wikimedia.org/wiki/File:%ED%95%9C%EA%B5%AD%EA%B8%B0%ED%96%89_%EA%B9%80%EC%9E%A5_%EC%9D%8C%EC%8B%9D_%EB%B6%95%EC%96%B4%EB%B9%B5.jpg',
+        credit: {
+          author: 'EBS (Korea Educational Broadcasting System)',
+          license: 'CC BY 4.0',
+          licenseUrl: 'https://creativecommons.org/licenses/by/4.0',
+        },
+      },
+      {
+        type: 'p',
+        text: "It's a fish-shaped waffle, thin and crisp outside, hot and soft inside. No fish involved, we promise. The classic filling is sweet red bean paste, and the other one is custard.",
+      },
+      {
+        type: 'p',
+        text: "This matters more than you'd think. Koreans are either **팥붕 (pat-bung)**, team red bean, or **슈붕 (syu-bung)**, team custard, and they will ask you. We're red bean, and we'll hear no arguments.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'money_bag', text: 'One fish, ₩1,000' },
+      {
+        type: 'p',
+        text: "Fish bread used to be the cheapest treat on the street, three for ₩1,000. This season most Seoul stalls ask **₩1,000 for one**, and about ₩1,500 around Gangnam and Hongdae. Red beans have nearly doubled in price in three years, and the gas and paper bags cost more too.",
+      },
+      {
+        type: 'p',
+        text: "The carts are getting rarer, so living near one is a flex. Koreans call it a **붕세권 (bung-segwon)**, a fish-bread neighbourhood. To find a cart, locals use the app **가슴속 3천원 (gaseumsok samcheonwon)**, '3,000 won in your heart', the cash you keep in your coat for exactly this.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'img',
+        src: 'bungeoppang-pair.jpg',
+        alt: 'Two bungeoppang fish breads on a paper sheet',
+        caption: 'Two fish, one each. Or two for you.',
+        href: 'https://commons.wikimedia.org/wiki/File:Boong_o_bbang.jpg',
+        credit: {
+          author: 'Penny Richards',
+          license: 'CC BY-SA 4.0',
+          licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0',
+        },
+      },
+      { type: 'h', icon: 'fish', text: 'Then it went to Dubai' },
+      {
+        type: 'p',
+        text: "Last winter Korea was crazy about **Dubai chocolate**, and the fish didn't escape. The [두바이 붕어빵](https://www.google.com/search?tbm=isch&q=%EB%91%90%EB%B0%94%EC%9D%B4%20%EB%B6%95%EC%96%B4%EB%B9%B5) (dubai bungeoppang) swapped the beans for pistachio cream and crunchy kadaif pastry.",
+      },
+      {
+        type: 'p',
+        text: "It cost about ₩5,000, five times a plain one, and up to ₩12,000 in some Gangnam cafés. Many shops made only a few dozen a day, and people still queued. If you spot one this winter, try it once. Then go back to the ₩1,000 one.",
+      },
+      {
+        type: 'verdict',
+        text: "Buy it hot, from a cart, and eat it right there on the pavement. Carry some cash, start with red bean, and decide for yourself: head first or tail first? (That's the other debate.)",
+      },
+    ],
+  },
+  {
     id: '2026-11-10-0420',
     title: 'A whale on the ceiling: Media and Art by Incheon Airport',
     description:
