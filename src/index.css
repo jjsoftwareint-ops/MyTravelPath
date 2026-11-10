@@ -1504,6 +1504,95 @@ button.cta {
   font-size: 24px;
   color: var(--muted);
 }
+/* Main page: "Latest from the blog", a sideways-scrolling row of photo cards (LatestPosts.tsx).
+   Cards are narrower than the screen so the next one peeks in and shows the row scrolls. */
+.latest-posts {
+  margin: 0 0 14px;
+}
+.latest-posts-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 2px 8px;
+}
+.latest-posts-head h2 {
+  margin: 0;
+}
+.latest-posts-all {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.latest-posts-row {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0 0 4px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.latest-posts-row::-webkit-scrollbar {
+  display: none;
+}
+.latest-posts-row li {
+  flex: 0 0 72%;
+  max-width: 260px;
+  scroll-snap-align: start;
+}
+.latest-post {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--text);
+  text-decoration: none;
+}
+.latest-post:active {
+  background: var(--press);
+}
+.latest-post-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: var(--pill);
+}
+.latest-post-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.latest-post-image img.latest-post-emoji {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+.latest-post-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px 12px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+.latest-post-body strong {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.latest-post-body span {
+  font-size: 13px;
+  color: var(--muted);
+}
 /* Floating "Add to Home Screen" button on path pages (InstallButton.tsx, install.ts):
    slides up while the reader scrolls up, away while they scroll down. */
 .install-fab {

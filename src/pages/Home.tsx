@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import RichText from "../components/RichText";
 import Tags from "../components/Tags";
 import NewPosts from "../components/NewPosts";
+import LatestPosts from "../components/LatestPosts";
 import SocialLinks from "../components/SocialLinks";
 import VisitorCount from "../components/VisitorCount";
 import WeekCard from "../components/WeekCard";
@@ -89,6 +90,8 @@ export default function Home() {
       <WeekCard />
 
       <NewPosts />
+
+      <LatestPosts />
 
       <VisitorCount />
 
