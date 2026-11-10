@@ -128,27 +128,6 @@ export const thisWeek: ThisWeek = {
       ends: '2026-11-22',
       events: [
         {
-          id: 'pohang-light-festival',
-          photoQuery: '포항국제불빛축제 불꽃',
-          ends: '2026-11-21',
-          title: 'Pohang International Fireworks Festival',
-          city: 'Pohang',
-          when: 'Thu 19 to Sat 21 Nov · main fireworks Sat 21 Nov, evening',
-          where: 'Yeongildae Beach and Songdo Pier, Pohang',
-          price: 'Free',
-          text: 'One of Korea\'s big **fireworks festivals**, moved from summer to November this year. The city expects more than 150,000 people.',
-          todo: [
-            'Thu 19 Nov at Songdo Pier: the opening, a media facade lighting and a citizens\' fireworks show.',
-            'Fri 20 Nov: an Asian DJ festival and a night carnival.',
-            'Sat 21 Nov at **Yeongildae Beach**: fireworks by teams from France and Japan, then a Korean finale.',
-            'The start time is not out yet: check the festival page that week. Food stalls run all three days.',
-          ],
-          tip: '🚄 KTX to **Pohang Station**, then a taxi; arrive early on Saturday.',
-          href: { label: 'Festival page (Korean) ↗', url: 'https://festival.phcf.or.kr' },
-          routes: [{ cityId: 'gyeongju-jeonju', pathId: 'gyeongju', text: 'Gyeongju, the old Silla capital next door' }],
-          posts: [{ id: '2026-11-04-1852', text: 'Busan fireworks: skip the seat, bring the chicken' }],
-        },
-        {
           id: 'lotte-christmas-market',
           photoQuery: '롯데타운 크리스마스마켓 잠실',
           ends: '2027-01-03',

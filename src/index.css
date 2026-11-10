@@ -1468,10 +1468,6 @@ button.cta {
 .new-posts:active {
   background: var(--press);
 }
-/* A plain notice in the same box (home page): no link, so no press state. */
-.new-posts.static:active {
-  background: var(--card);
-}
 .new-posts-icon {
   flex: 0 0 auto;
   font-size: 22px;

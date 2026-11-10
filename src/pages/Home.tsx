@@ -1,5 +1,4 @@
 import { useEffect, useState, type MouseEvent } from "react";
-import { GrAnnounce } from "react-icons/gr";
 import { useNavigate, useParams } from "react-router-dom";
 import Link, { withSlash } from "../components/Link";
 import BrandMark from "../components/BrandMark";
@@ -79,14 +78,6 @@ export default function Home() {
       icon={<BrandMark />}
       showBlog
     >
-      {/* Same container as the Events this week card below, but plain text: nothing to open. */}
-      <div className="new-posts static">
-        <GrAnnounce className="new-posts-icon" aria-hidden="true" />
-        <span className="new-posts-text">
-          Restaurant, café and event information is regularly updated.
-        </span>
-      </div>
-
       <WeekCard />
 
       <NewPosts />
