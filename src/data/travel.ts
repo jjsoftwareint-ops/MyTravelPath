@@ -932,6 +932,9 @@ export const cities: City[] = [
   {
     id: 'busan',
     name: 'Busan',
+    seoTitle: 'Busan walking trails: Gwangalli, Gamcheon, Choryang',
+    seoDescription:
+      "Free Busan walking maps: Gwangalli at night, the Haeundae coast path, Gamcheon and Huinnyeoul villages, Choryang's 168 Steps, cherry blossoms, rainy days.",
     intro: [
       "**Korea's second city**, with about 3.3 million people, a big port on the south-east coast and a different feel from Seoul: hills running down to the sea, beaches in the middle of the city, and a stronger local accent.",
       "**Haeundae** is the famous beach, **Gamcheon** the hillside culture village, **Jagalchi** the fish market. The KTX high-speed train from Seoul takes about two and a half hours.",
@@ -1056,7 +1059,7 @@ export const cities: City[] = [
         seoDescription:
           "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, Gamcheon and Huinnyeoul villages, Nampo-dong markets, Haedong Yonggungsa, Beomeosa, the Dongbaek Island night views and the Songdo cloud bridge.",
         duration: '2h walk',
-        updated: '2026-11-07',
+        updated: '2026-11-10',
         tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
         whyVisit: [
           "A long beach with **a bridge lit in colour across the whole bay**, chicken and beer on the sand, and a fish market where you buy dinner downstairs and eat it on the steps.",
@@ -1103,7 +1106,6 @@ export const cities: City[] = [
             "[[Nampo-dong|부산 남포동]], line 1 to Jagalchi: the fish market hall and quay stalls, then the arcades of Gukje and Kkangtong markets. Gukje grew from a street market after liberation, and in the Korean War refugees sold US army supplies there; Kkangtong, 'tin can', is named for them.",
             "[[BIFF Square|부산 BIFF 광장]], made when the film festival began in 1996 and now the home of the hotteok carts, and the escalators up Yongdusan Park to Busan Tower. The park was re-made after a great fire in 1954.",
             "[[Busan Chinatown|부산 차이나타운]], in front of Busan Station: Korean sources trace it to 1884, when a Qing consulate opened in Choryang and merchants settled around it; part of it became Texas Street after the war.",
-            "Also at Choryang: Ochoryang, a tea house and small gallery in a wooden Japanese-style house built in 1925, five minutes from Choryang Station exits 7 and 9.",
             "[[Huinnyeoul Culture Village|부산 흰여울문화마을]], bus 7, 71 or 508 from Nampo-dong: 'white rapids' is named for the foam where streams from Bongnae Mountain meet the sea, and the white houses and murals on the cliff lane are from the 2010s revival.",
             "[[Gamcheon Culture Village|부산 감천문화마을]], bus 1-1, 2 or 2-2 from Toseong Station exit 6: pastel houses stacked down a steep valley, painted by a public art project that began in 2009. Buy the stamp map at the information centre and follow the fish signs.",
             "[[Haedong Yonggungsa|부산 해동용궁사]], bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974.",
@@ -1117,6 +1119,7 @@ export const cities: City[] = [
             "🍜 The fish-market system: buy downstairs, then a table fee upstairs covers side dishes and soup; take-away to the park is free. At BIFF Square the seed hotteok queue moves fast.",
             "🍲 Pork gukbap (rice soup) is Busan's classic bowl: the pink pins near Busan Station and in Seomyeon are one well-known gukbap house.",
             "🔗 Korea's oldest China Town is in Incheon, an hour from Seoul, with its own walk on this site.",
+            "🔗 Choryang, behind Busan Station, has its own walk on this site: the 168 Steps, Ibagu-gil and the old Japanese-era houses, O-Choryang among them.",
             "👟 Gwangalli and Nampo-dong are flat. Gamcheon and Huinnyeoul are stairs and slopes; Yonggungsa is 108 steps each way.",
             "🔗 The Haeundae Coastal Path on this site is two stops away from Gwangalli and makes the next morning.",
             "🚇 The further-afield places are not a walking day together: Beomeosa Station (line 1) for the temple, Songdo for the cloud bridge (bus from Nampo-dong), Mandeok Station (line 3) for Seokbulsa, and Orangdae and Jukseong in Gijang are easiest by car or taxi from Haeundae.",
@@ -1181,6 +1184,83 @@ export const cities: City[] = [
             "♨️ A jjimjilbang is the Korean bathhouse: separate bathing areas for men and women, then shared heated rooms where everyone wears the clothes provided. Check each place's current hours and prices on Naver before going, they change by season.",
             "🎟️ See the price notices above for what's free and what each paid spot costs; booking apps (NOL, Waug, Klook) are usually a bit cheaper than paying at the counter for the spas, towers and X the Sky.",
             "🔗 The Culture Villages and Hotspots walk on this site covers Busan Tower's Yongdusan Park escalators and the Gwangalli night walk in more detail; this page is the wet-weather backup for the same areas.",
+          ],
+        },
+      },
+      {
+        id: 'choryang',
+        name: 'Choryang: 168 Steps and old houses',
+        seoTitle: 'Choryang walk: 168 Steps and old Busan houses',
+        seoDescription:
+          "From Busan Station: the refugee-era 168 Steps and their elevator, Ibagu-gil, the 1927 Baekje Hospital and Japanese-era houses with tea rooms.",
+        duration: '4–5h',
+        updated: '2026-11-10',
+        tags: [{ icon: 'village', label: 'Old town' }],
+        image: 'choryang.jpg',
+        imageCredit: 'Photo: Sharon Hahn Darlin · CC BY 2.0',
+        whyVisit: [
+          "Climb the staircase the refugees built above Busan Station, and **the whole port opens up below you** at the top.",
+          "Ride the glass elevator back down, then step inside Japanese wooden houses from the 1920s and 40s, one with **a tatami tea room over its garden**.",
+          "Fruit mochi from the market, a 1970s tea house for the last cup, and every stop on foot from the station.",
+        ],
+        story: {
+          title: 'The hill above the port',
+          text: [
+            "When Busan became Korea's wartime capital in 1950, refugees built their homes on the steep slopes above the port, and the **168 Steps** were their road. Women carried water up from a well at the bottom; men ran down to the docks whenever a ship came in, looking for a day's work.",
+            "Below the hill, Choryang was already old. **Baekje Hospital**, Busan's first modern private hospital, opened opposite the station in 1927, and the Japanese-era wooden houses of O-Choryang (1925) and Sujeong (1943) survived the redevelopment around them. **Ibagu-gil**, 'story road' in Busan dialect, now links them all.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚫',
+            title: 'Go Wednesday to Saturday: closed days',
+            body: "Ibagu Gongjakso is {red:closed on Mondays}. O-Choryang is {red:closed on Mondays and Tuesdays}, open **10:30–15:30**. Munhwa Gonggam Sujeong is {red:closed on Sundays and Mondays}, open **10:00–17:00**, last entry 16:30. From Wednesday to Saturday everything is open.",
+            since: 'Checked 10 November 2026.',
+            source: 'Opening hours on Naver Map, checked 10 November 2026.',
+          },
+          {
+            icon: '📅',
+            title: 'Book O-Choryang ahead',
+            at: 'O-Choryang',
+            body: "O-Choryang takes visitors by **booking on Naver** (search 오초량 on Naver Map). The source video recommends booking, and found it closed for an exhibition change, so check the dates first.",
+            since: 'Checked 10 November 2026.',
+            source: "Naver Map booking page for O-Choryang; the YUNYOGI video description says booking is required.",
+          },
+          {
+            icon: '🎟️',
+            title: 'Munhwa Gonggam Sujeong tickets',
+            at: 'Munhwa Gonggam Sujeong',
+            body: "Entry **₩1,000**, or **₩3,000 with a drink** in the tea room; seniors ₩500. Ibagu Gongjakso is free, with an old school-uniform photo for ₩2,000.",
+            since: 'Checked 10 November 2026.',
+            source: 'Price lists on Naver Map, checked 10 November 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1v9iRjrJMQvxt5mz6PosunFFoq_XhH6I',
+        keywords: ['Busan', 'Choryang', '168Steps', 'IbaguGil', 'BusanStation', 'Sanbokdoro', 'BaekjeHospital', 'BusanDayTrip', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🪜 Leave Busan Station before lunch, eat at the foot of the 168 Steps, climb to the top, then ride the elevator down and give the afternoon to the old houses. **Go between Wednesday and Saturday**, when every house is open.",
+            "It is about 4 km on foot, steep at the start and flat after the elevator. If your legs still have it, the lookouts along Sanbok-doro and the Dakbatgol mural village are a hillside extra.",
+          ],
+          route: [
+            "[[Busan Station|부산역]] (KTX and metro line 1), the start: cross the big road towards the old Baekje Hospital and follow the Ibagu-gil signs uphill past Choryang Church.",
+            "[[The 168 Steps|부산 초량 168계단]], the steep staircase of the refugee years, with a wide view over the north port from the top. An inclined elevator, the Choryang 168 Steps Haneulgil, has run beside it since March 2025.",
+            "[[Kim Min-bu Observatory|부산 김민부전망대]], the viewing deck halfway up and the elevator's middle stop, where the port view opens up.",
+            "[[Ibagu Gongjakso|부산 이바구공작소]], the archive of the hillside village at the top, with old photos of the steps and an old school-uniform photo corner.",
+            "[[The former Baekje Hospital|부산 구 백제병원]], opposite Busan Station: built in 1927 as Busan's first modern private hospital and now registered heritage. It later served as a Chinese restaurant and a wedding hall, and a fire in 1972 took off its top floor.",
+            "[[Choryang Market|부산 초량전통시장]], a short walk along the main road, where the rice-cake shop pinned on the map makes fruit mochi; strawberry is the favourite.",
+            "[[O-Choryang|부산 오초량]], a two-storey Japanese wooden house from 1925 with a garden, now a culture space with exhibitions. Its foundation refused to sell it to the apartment redevelopment around it.",
+            "[[Munhwa Gonggam Sujeong|부산 문화공감수정]], a Japanese-style house from 1943 that was later a high-end restaurant and a film location. Have your tea in the tatami room over the garden.",
+            "The walk ends at a 1970s-style tea house near Busanjin Station, pinned on the map, where herbal tea simmers in the corner.",
+            "[[Yu Chi-hwan's Postbox|부산 유치환의 우체통]], up on Sanbok-doro: a lookout and gallery for the poet Yu Chi-hwan with a slow postbox, whose postcards are delivered a year later.",
+            "[[Geumsusa Temple|부산 금수사]], next to it on the hillside road, traced by its own history to a hermitage of the 1600s, and a refugee camp in the Korean War.",
+            "[[The Diorama of History observatory|부산 역사의 디오라마]] and [[Yeongju Haneulnun Observatory|부산 영주하늘눈전망대]], two lookouts further along Sanbok-doro in Yeongju-dong, on the way to [[Dakbatgol Mural Village|부산 닥밭골벽화마을]].",
+          ],
+          tips: [
+            "🚇 Getting there: KTX or metro line 1 to **Busan Station**; the walk ends near **Busanjin Station**, one stop north on line 1.",
+            "👟 The climb to the 168 Steps is steep. Take the elevator up instead if you prefer, and walk the gentle part down.",
+            "🍜 Eat along the way: the pink pins are the stops from the walk, a lunchbox restaurant and the rice-cake shop, plus ten of the best-rated places on Kakao Map near the station, from pork gukbap and milmyeon to Chinese dumplings.",
+            "🔗 Busan Chinatown and the culture villages of Gamcheon and Huinnyeoul are on the Culture Villages and Hotspots walk on this site.",
           ],
         },
       },
