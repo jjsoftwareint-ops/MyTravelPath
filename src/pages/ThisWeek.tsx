@@ -1,4 +1,7 @@
+import { useCallback, useState, type MouseEvent } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { IoCalendarOutline, IoImagesOutline, IoLocationOutline, IoTicketOutline } from 'react-icons/io5'
+import ImagePopup, { imageSearchUrl, type PopupPage } from '../components/ImagePopup'
 import Layout from '../components/Layout'
 import Link from '../components/Link'
 import RichText from '../components/RichText'
@@ -9,16 +12,52 @@ import { useHydrated } from '../hooks'
 import { formatDate } from '../dates'
 import { usePageMeta } from '../seo'
 
-function EventCard({ e }: { e: WeekEvent }) {
+/** Search words for the event's Google Images: the card's own Korean words, or its title and city. */
+const photoQuery = (e: WeekEvent) => e.photoQuery ?? `${e.title} ${e.city}`
+
+function EventCard({ e, onPhotos }: { e: WeekEvent; onPhotos: (query: string) => void }) {
+  // A plain tap opens the photos in the site's popup (like place names on path pages); a modified click
+  // (new tab, new window) keeps the link's normal behaviour.
+  const openPhotos = (ev: MouseEvent<HTMLAnchorElement>) => {
+    if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button !== 0) return
+    ev.preventDefault()
+    onPhotos(photoQuery(e))
+  }
   return (
     <li className="event">
+      {/* Gallery button, top right: Google Images of the event in the site's popup instead of a stored photo
+          (user, 2026-11-10: "google image link is better, I don't wanna waste storage", "use iframe page",
+          "gallery icon on the top-right of the event card"). */}
+      <a
+        className="event-photos"
+        href={imageSearchUrl(photoQuery(e))}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={openPhotos}
+        aria-label={`Photos of ${e.title}`}
+        title="Photos"
+      >
+        <IoImagesOutline aria-hidden="true" />
+      </a>
       <div className="event-head">
         <span className="pill tag">{e.city}</span>
         <h3>{e.title}</h3>
       </div>
-      <p className="event-when">{e.when}</p>
-      <p className="event-where">{e.where}</p>
-      <p className="event-price">{e.price}</p>
+      {/* Date, place and price as icon rows, so each line reads on its own (user, 2026-11-10: "readability is low"). */}
+      <ul className="event-meta">
+        <li className="event-when">
+          <IoCalendarOutline aria-hidden="true" />
+          <span>{e.when}</span>
+        </li>
+        <li>
+          <IoLocationOutline aria-hidden="true" />
+          <span>{e.where}</span>
+        </li>
+        <li>
+          <IoTicketOutline aria-hidden="true" />
+          <span>{e.price}</span>
+        </li>
+      </ul>
       <p className="event-text">
         <RichText text={e.text} />
       </p>
@@ -37,6 +76,7 @@ function EventCard({ e }: { e: WeekEvent }) {
           <RichText text={e.tip} />
         </p>
       )}
+      {/* One link per line. */}
       {(e.href || e.routes || e.posts) && (
         <p className="event-links">
           {e.href && (
@@ -46,7 +86,7 @@ function EventCard({ e }: { e: WeekEvent }) {
           )}
           {e.routes?.map((r) => (
             <Link key={r.pathId} className="link" to={`/${r.cityId}/${r.pathId}`}>
-              {r.text} ›
+              🗺️ {r.text} ›
             </Link>
           ))}
           {e.posts?.map((p) => (
@@ -68,6 +108,9 @@ function EventCard({ e }: { e: WeekEvent }) {
 export default function ThisWeek() {
   usePageMeta()
   const hydrated = useHydrated()
+  const [popup, setPopup] = useState<PopupPage | null>(null)
+  const closePopup = useCallback(() => setPopup(null), [])
+  const openPhotos = useCallback((query: string) => setPopup({ query }), [])
   const [params] = useSearchParams()
   const filterCities = cities.filter((c) => !c.theme)
   const wanted = params.get('city')
@@ -122,7 +165,7 @@ export default function ThisWeek() {
             </h2>
             <ul className="events">
               {w.events.map((e) => (
-                <EventCard key={e.id} e={e} />
+                <EventCard key={e.id} e={e} onPhotos={openPhotos} />
               ))}
             </ul>
           </section>
@@ -135,7 +178,7 @@ export default function ThisWeek() {
             </h2>
             <ul className="events">
               {ongoing.map((e) => (
-                <EventCard key={e.id} e={e} />
+                <EventCard key={e.id} e={e} onPhotos={openPhotos} />
               ))}
             </ul>
           </section>
@@ -161,6 +204,7 @@ export default function ThisWeek() {
 
         <p className="week-note">Dates and prices can change. Check the official page before you go.</p>
       </div>
+      {popup && <ImagePopup {...popup} onClose={closePopup} />}
     </Layout>
   )
 }

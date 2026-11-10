@@ -17,6 +17,7 @@ export type WeekEvent = {
   href?: { label: string; url: string } // one official link, https only
   routes?: { cityId: string; pathId: string; text: string }[] // walking route pages on this site
   posts?: { id: string; text: string }[] // blog posts on this site about the same topic (id in blog.ts)
+  photoQuery?: string // Google Images search words for the "See photos" link, in Korean (finds the real event); default title + city
 }
 
 export type Week = {
@@ -42,6 +43,7 @@ export const thisWeek: ThisWeek = {
       events: [
         {
           id: 'autumn-colours-now',
+          photoQuery: '서울 은행나무 단풍',
           ends: '2026-11-15',
           title: 'Autumn colours are at their best',
           city: 'Seoul',
@@ -51,7 +53,7 @@ export const thisWeek: ThisWeek = {
           price: 'Free',
           text: 'Ginkgo and maple are turning together in Seoul, and the forecasts put the peak by mid-November, so go this week.',
           todo: [
-            'Walk the ginkgo avenue of **Garosu-gil** in Sinsa in the late afternoon, when the yellow leaves are at their best.',
+            'Walk the ginkgo avenue of **Garosu-gil** in Sinsa in the late afternoon light.',
             'In Suwon, walk **Hwaseong Haenggung** palace and look for silver grass and yellow ginkgo along the pond.',
             'In Jeonju, see the 400-year-old ginkgo trees of **Jeonju Hyanggyo** turn gold; the school is {red:closed on Mondays}.',
           ],
@@ -63,6 +65,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'seoul-cafe-show',
+          photoQuery: '서울카페쇼 코엑스',
           ends: '2026-11-14',
           title: 'Seoul Cafe Show',
           city: 'Seoul',
@@ -70,7 +73,7 @@ export const thisWeek: ThisWeek = {
           when: 'Fri 13 Nov 10:00 to 18:00 · Sat 14 Nov 10:00 to 16:00',
           where: 'COEX, Gangnam',
           price: '₩25,000 for one day at the door, less if you book online first',
-          text: 'Korea\'s biggest coffee and café fair, filling all four halls of COEX. **Open to everyone on Fri 13 and Sat 14 Nov**, the first two days are for trade visitors only.',
+          text: 'Korea\'s biggest coffee and café fair, in all four halls of COEX. **Open to everyone on Fri 13 and Sat 14 Nov**; the first two days are trade only.',
           todo: [
             'Walk the booths of café brands from around the world to see new coffee, tea, dessert and bakery trends.',
             'The Seoul Coffee Festival runs at Starfield Library, in the same mall.',
@@ -86,6 +89,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'jeju-biennale-last-days',
+          photoQuery: '제주비엔날레 2026',
           ends: '2026-11-15',
           title: 'Jeju Biennale: last days',
           city: 'Jeju',
@@ -96,13 +100,14 @@ export const thisWeek: ThisWeek = {
           text: 'An art exhibition about how Jeju\'s own culture changed through contact with the outside world, in three parts: stone, exile and myth.',
           todo: [
             'Start at the **Jeju Museum of Art**, the main venue.',
-            'Walk on through the old town to the other spaces, among them the Gwandeokjeong pavilion and the Jeju Mok Gwana government compound.',
+            'Walk on through the old town to the other venues, like the Gwandeokjeong pavilion and Jeju Mok Gwana.',
             'See works by about 70 artists and teams from around 20 countries.',
           ],
           href: { label: 'Official page ↗', url: 'https://jejubiennale.org' },
         },
         {
           id: 'gwangju-biennale-last-days',
+          photoQuery: '광주비엔날레 2026',
           ends: '2026-11-15',
           title: 'Gwangju Biennale: last days',
           city: 'Gwangju',
@@ -124,6 +129,7 @@ export const thisWeek: ThisWeek = {
       events: [
         {
           id: 'pohang-light-festival',
+          photoQuery: '포항국제불빛축제 불꽃',
           ends: '2026-11-21',
           title: 'Pohang International Fireworks Festival',
           city: 'Pohang',
@@ -134,8 +140,8 @@ export const thisWeek: ThisWeek = {
           todo: [
             'Thu 19 Nov at Songdo Pier: the opening, a media facade lighting and a citizens\' fireworks show.',
             'Fri 20 Nov: an Asian DJ festival and a night carnival.',
-            'Sat 21 Nov at **Yeongildae Beach**: international fireworks by teams from France and Japan, then a Korean grand finale. The start time is not announced yet, so check the festival page that week.',
-            'Food stalls and local produce booths run on all three days.',
+            'Sat 21 Nov at **Yeongildae Beach**: fireworks by teams from France and Japan, then a Korean finale.',
+            'The start time is not out yet: check the festival page that week. Food stalls run all three days.',
           ],
           tip: '🚄 KTX to **Pohang Station**, then a taxi; arrive early on Saturday.',
           href: { label: 'Festival page (Korean) ↗', url: 'https://festival.phcf.or.kr' },
@@ -144,6 +150,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'lotte-christmas-market',
+          photoQuery: '롯데타운 크리스마스마켓 잠실',
           ends: '2027-01-03',
           title: 'Lotte Town Christmas Market',
           city: 'Seoul',
@@ -154,9 +161,9 @@ export const thisWeek: ThisWeek = {
           text: 'An outdoor Christmas market dressed as a **19th-century English winter street**, with red brick, arched windows and carols.',
           todo: [
             'See the Christmas trees, the carousel and a 17 m Victorian clock tower.',
-            'Browse the pop-up stalls of English and international Christmas goods, and eat fish and chips or rotisserie chicken.',
+            'Browse stalls of English and international Christmas goods; eat fish and chips or rotisserie chicken.',
             'Stay after dark for the nightly light and music show around Lotte World Mall.',
-            'Book first: November tickets are on sale now, December tickets open on 20 Nov, and weekend Fast Passes sell out fast.',
+            'Book first: November tickets are on sale, December ones from 20 Nov. Weekend Fast Passes sell out fast.',
           ],
           tip: '🚇 **Jamsil Station** (lines 2 and 8).',
           href: { label: 'Official page (Korean) ↗', url: 'https://www.lotteshopping.com/contents/christmas-market' },
@@ -165,6 +172,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'jeju-citrus-expo',
+          photoQuery: '제주감귤박람회',
           ends: '2026-11-23',
           title: 'Jeju Citrus Expo',
           city: 'Jeju',
@@ -175,7 +183,7 @@ export const thisWeek: ThisWeek = {
           text: 'Jeju\'s tangerine fair, held in the middle of the harvest season on the south side of the island.',
           todo: [
             'Walk the halls on citrus varieties and farming, then the market where growers sell their own tangerines.',
-            'Jump into **Gamgyul-wat**, a pool full of tangerines with lucky coins hidden in it (separate ticket, booked ahead).',
+            'Jump into **Gamgyul-wat**, a pool of tangerines with lucky coins hidden in it (separate ticket, book ahead).',
             'Come on the opening day, Thu 19 Nov, for the parade and stage shows.',
           ],
           href: { label: 'Official site ↗', url: 'https://www.jicexpo.com' },
@@ -183,6 +191,7 @@ export const thisWeek: ThisWeek = {
         },
         {
           id: 'g-star',
+          photoQuery: '지스타 벡스코',
           ends: '2026-11-22',
           title: 'G-STAR game show',
           city: 'Busan',
@@ -193,7 +202,7 @@ export const thisWeek: ThisWeek = {
           text: 'Korea\'s biggest **game show**, open to the public on all four days.',
           todo: [
             'Play new games at the booths, among them more than 100 indie studios.',
-            'Watch the **Overwatch Champions Series** Asia grand final in the BEXCO auditorium, Fri 20 to Sun 22 Nov.',
+            'Watch the **Overwatch Champions Series** Asia grand final at BEXCO, Fri 20 to Sun 22 Nov.',
             'Buy your ticket online before you go; it is valid on the day you choose.',
           ],
           tip: '🚇 **BEXCO Station** (line 2).',
@@ -206,6 +215,7 @@ export const thisWeek: ThisWeek = {
   ongoing: [
     {
       id: 'shinsegae-christmas-facade',
+      photoQuery: '신세계 본점 미디어파사드 크리스마스',
       ends: '2027-01-31',
       title: 'Shinsegae Christmas media facade',
       city: 'Seoul',
@@ -215,7 +225,7 @@ export const thisWeek: ThisWeek = {
       price: 'Free',
       text: 'The department store turns its whole outer wall into a Christmas screen, the first big Christmas light show of the season.',
       todo: [
-        'Watch the Christmas film play on the building: a bear carries wishes on a balloon and finishes the Christmas tree.',
+        'Watch the Christmas film on the building: a bear carries wishes on a balloon to finish the tree.',
         'It plays every day from 17:00 to midnight; watch it from the corner by the Bank of Korea.',
         'Make an evening of it: walk Seoullo 7017 from Seoul Station first and arrive as it gets dark.',
       ],
@@ -225,6 +235,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'gwangalli-drone-show',
+      photoQuery: '광안리 드론쇼',
       ends: '2027-06-30',
       title: 'Gwangalli drone show, every Saturday',
       city: 'Busan',
@@ -243,6 +254,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'namsan-night-festival',
+      photoQuery: '남산 나이트 페스티벌',
       ends: '2026-11-14',
       title: 'Namsan Night Festival',
       city: 'Seoul',
@@ -252,7 +264,7 @@ export const thisWeek: ThisWeek = {
       price: 'Book ahead, refundable deposit ₩5,000 per person (Campnic ₩10,000 per team)',
       text: 'Three small evening programs on Namsan, each capped per day, so reserve before you go.',
       todo: [
-        '**Autumn Foliage Walk** at Yejang Park: a night walk on forest paths with autumn colours and city views, 700 people a day.',
+        '**Autumn Foliage Walk** at Yejang Park: forest paths at night with autumn colours and city views, 700 people a day.',
         '**Palgak Club** near the tower: a silent club party with a night view of Seoul, 300 people a day.',
         '**Namsan Campnic** at Baekbeom Plaza: a picnic with music and movies, 100 teams a day, up to 4 people each.',
       ],
@@ -262,6 +274,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'hwadam-forest-autumn',
+      photoQuery: '화담숲 단풍 모노레일',
       ends: '2026-11-15',
       title: 'Hwadam Forest autumn season',
       city: 'Gyeonggi-do',
@@ -272,8 +285,8 @@ export const thisWeek: ThisWeek = {
       text: 'A hillside botanic garden with walking paths through autumn trees. In peak season entry is online only and sells out.',
       todo: [
         'Walk the garden paths through the autumn trees.',
-        'Ride the monorail over the 1.9 km section: about 5 minutes instead of about 40 minutes on foot. It is booked separately and sells out fast.',
-        'Book ahead: there are no tickets at the gate in peak season, and the booking site has no English page. Day tours from Seoul that include entry are the easy way.',
+        'Ride the monorail up the 1.9 km section: about 5 minutes instead of 40 on foot. Separate ticket, sells out fast.',
+        'Book ahead: no tickets at the gate in peak season, and the booking site is Korean only. A day tour from Seoul with entry is easier.',
         '{red:Possibly closed on Mondays}, so plan another day.',
       ],
       tip: '🚇 **Gonjiam Station** (Gyeonggang line), then a taxi. A garden shuttle runs in peak season.',
@@ -281,6 +294,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'unjeong-light-garden',
+      photoQuery: '운정호수공원 빛정원',
       ends: '2026-12-31',
       title: 'Unjeong Lake Park light garden',
       city: 'Gyeonggi-do',
@@ -297,6 +311,7 @@ export const thisWeek: ThisWeek = {
     },
     {
       id: 'seoul-autumn-festa',
+      photoQuery: '서울어텀페스타',
       ends: '2026-11-29',
       title: 'Seoul Autumn Festa',
       city: 'Seoul',
@@ -307,7 +322,7 @@ export const thisWeek: ThisWeek = {
       text: 'The city\'s performing-arts festival: 38 festivals and 478 performances in total.',
       todo: [
         'Pick a show by date on the official program page.',
-        'Ask for help at the information centre on the 1st floor of the Daehangno Center, open until 29 Nov and {red:closed on Mondays}.',
+        'Get help at the info centre, Daehangno Center 1st floor: open until 29 Nov, {red:closed on Mondays}.',
       ],
       href: { label: 'Program ↗', url: 'https://english.visitseoul.net/events/2026SeoulAutumnFesta/ENPjm3hw1' },
     },
@@ -316,7 +331,7 @@ export const thisWeek: ThisWeek = {
     {
       when: 'Thu 19 Nov',
       ends: '2026-11-19',
-      text: '**CSAT, the national university exam.** Extra subway trains run in the morning, many offices start at 10:00, and flights pause during the English listening test. Plan around the morning rush.',
+      text: '**CSAT, the national university exam.** Extra morning subway trains, many offices open at 10:00, and flights pause during the English listening test. Avoid the morning rush.',
     },
     {
       when: 'From Fri 11 Dec',

@@ -2326,6 +2326,7 @@ button.cta {
   list-style: none;
 }
 .event {
+  position: relative;
   padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -2351,17 +2352,38 @@ button.cta {
   font-size: 17px;
   line-height: 1.3;
 }
-.event-when {
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-soft);
+}
+.event-meta li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.event-meta svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  font-size: 16px;
+  color: var(--muted);
+}
+.event-meta .event-when {
+  font-size: 15px;
   font-weight: 700;
   color: var(--accent);
 }
-.event-where,
-.event-price {
-  color: var(--muted);
-  font-size: 14px;
+.event-meta .event-when svg {
+  color: var(--accent);
 }
 .event-text {
-  margin-top: 8px !important;
+  margin-top: 12px !important;
   color: var(--text-soft);
 }
 .event-tip {
@@ -2369,14 +2391,44 @@ button.cta {
   font-size: 14px;
   color: var(--text-soft);
 }
+/* Gallery button in the top right corner of an event card: opens Google Images in the site popup. */
+.event-photos {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--accent);
+  font-size: 20px;
+}
+.event-photos:active {
+  background: var(--press);
+}
+.event-head h3 {
+  padding-right: 44px; /* room for the gallery button */
+}
+/* Event page links: plain coloured text, no underline (user, 2026-11-10). */
+.event-links .link {
+  text-decoration: none;
+}
 .event-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px 16px;
-  margin-top: 8px !important;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
   font-size: 14px;
 }
 .events.coming .event-when {
+  font-weight: 700;
   color: var(--text);
 }
 .week-note {
@@ -2457,7 +2509,7 @@ button.cta {
 
 /* "What you do": the concrete things a visitor does at an event */
 .event-todo {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .event-todo-label {
   margin: 0 0 4px !important;
@@ -2471,10 +2523,11 @@ button.cta {
   margin: 0;
   padding: 0 0 0 18px;
   color: var(--text-soft);
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.5;
 }
 .event-todo li {
-  margin: 0 0 3px;
+  margin: 0 0 6px;
 }
 
 /* ── Blog reading themes (src/blogTheme.ts) ───────────────────
