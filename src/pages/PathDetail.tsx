@@ -3,6 +3,7 @@ import { FaInfoCircle } from "react-icons/fa";
 import { FaBus } from "react-icons/fa6";
 import { IoFootstepsSharp } from "react-icons/io5";
 import { Navigate, useLocation, useParams } from "react-router-dom";
+import BlogStories from "../components/BlogStories";
 import { BookmarkToggle } from "../components/BookmarkButton";
 import Emoji from "../components/Emoji";
 import FollowTipDialog from "../components/FollowTipDialog";
@@ -488,6 +489,7 @@ export default function PathDetail() {
                 )}
               </section>
             )}
+            <BlogStories cityId={city.id} pathId={path.id} />
             <MoreWalks cityId={city.id} pathId={path.id} />
             <SocialLinks />
           </div>

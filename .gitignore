@@ -32,3 +32,8 @@ __pycache__/
 
 # Claude Code skills: workflow notes, scripts and research methods, kept locally only
 .claude/skills/
+
+# The user's own photo originals (RAW, 1.4 GB+), converted with the raw-to-jpeg skill; never committed.
+# assets/ is Vite's publicDir, so anything committed here would be published with the site.
+assets/myPhotos/
+raw/
