@@ -38,6 +38,65 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-11-1728',
+    title: 'What to wear in Seoul in December',
+    description:
+      'Seoul in December is around 3 °C by day and below zero at night. What Koreans actually wear, the short or long puffer question, and the hot packs in every convenience store.',
+    teaser: 'Short puffer or long? Both, honestly.',
+    icon: 'coat',
+    date: '2026-11-11',
+    updated: '2026-11-11',
+    keywords: ['SeoulWinter', 'WhatToWear', 'KoreaInDecember', 'KoreanFashion', 'Padding', 'SeoulTravel', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: 'Pack for real cold. Seoul in December is around **3 °C in the afternoon and below zero at night**, and the wind between the buildings makes it feel colder. It is a dry cold, so the trick is layers, not one giant jacket.',
+      },
+      {
+        type: 'photo',
+        src: 'hongdae-winter-night.jpg',
+        alt: 'A crowded Hongdae street on a winter night, trees wrapped in white lights and people in padded coats',
+        caption: 'Our photo: Hongdae on a winter night. Count the padded coats.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'coat', text: 'The puffer question' },
+      {
+        type: 'p',
+        text: 'Every Korean owns a **패딩 (paeding)**, a padded down jacket. A few winters back the whole country wore the knee-length [롱패딩](https://www.google.com/search?tbm=isch&q=%EB%A1%B1%ED%8C%A8%EB%94%A9) (rong-paeding), and the streets looked like a parade of sleeping bags.',
+      },
+      {
+        type: 'p',
+        text: 'Now the short one, the **숏패딩 (syot-paeding)**, is the fashion pick, some cropped above the waist. But when a real cold snap arrives, the long ones come straight back out. Our advice: a warm short puffer for the city, and no shame in a long one on the coldest days. Nobody will look twice.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', icon: 'snowflake', text: 'What else to pack' },
+      {
+        type: 'dishes',
+        items: [
+          { icon: 'coat', text: 'Thin warm layers under the puffer: a thermal top and leggings. Subways, shops and cafés are heated, so you will be taking layers off all day.' },
+          { icon: 'scarf', text: 'A big scarf, and gloves that work on a phone screen. You will be checking the map with cold fingers.' },
+          { icon: 'hiking_boot', text: 'Shoes with grip. Seoul is hilly, and the old lanes of Bukchon and Naksan get icy.' },
+          { icon: 'fire', text: '[핫팩](https://www.google.com/search?tbm=isch&q=%ED%95%AB%ED%8C%A9) (hat-paek), hot packs: little heat pouches from any convenience store. When a cold snap hits, Korean stores sell several times more than usual. One in each pocket.' },
+          { icon: 'lotion_bottle', text: 'Hand cream and lip balm. The heated rooms dry everything out.' },
+        ],
+      },
+      {
+        type: 'p',
+        text: 'One more thing: Korean homes and hanok stays heat through the floor, the **온돌 (ondol)**. Take your shoes off, sit down, and the floor does the rest.',
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'hongdae-hot-places',
+        text: 'The street in our photo is on the Hongdae walk: the Red Road, the old railway park and Sinchon next door.',
+      },
+      {
+        type: 'verdict',
+        text: 'A short puffer, thin layers, shoes with grip and a hot pack in each pocket. Dress like that and a December night in Seoul is lovely, not painful.',
+      },
+    ],
+  },
+  {
     id: '2026-11-11-0011',
     title: 'Bungeoppang season: Korean fish bread, from ₩1,000 to Dubai pistachio',
     description:
