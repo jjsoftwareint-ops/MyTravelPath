@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { isAndroid, isIOS } from './platform'
 
-// "Add to Home Screen" offer (the floating button on path pages): phones only, in the browser only.
+// "Add to Home Screen" offer (the floating button on the home list, path and blog pages): phones only, in the browser only.
 // Hidden for good once the site runs from the home screen (standalone), once Android reports the
 // install, or once the visitor taps "I added it". iPhone browsers never report an install, so that
 // last tap is the only way to know there.

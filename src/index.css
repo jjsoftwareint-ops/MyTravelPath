@@ -1589,7 +1589,7 @@ button.cta {
   font-size: 13px;
   color: var(--muted);
 }
-/* Floating "Add to Home Screen" button on path pages (InstallButton.tsx, install.ts):
+/* Floating "Add to Home Screen" button on the home list, path and blog pages (InstallButton.tsx, install.ts):
    slides up while the reader scrolls up, away while they scroll down. */
 .install-fab {
   position: fixed;

@@ -10,6 +10,7 @@ import LatestPosts from "../components/LatestPosts";
 import SocialLinks from "../components/SocialLinks";
 import VisitorCount from "../components/VisitorCount";
 import WeekCard from "../components/WeekCard";
+import InstallButton from "../components/InstallButton";
 import { cities, hasMap } from "../data/travel";
 import { eventCount, todayInSeoul } from "../data/thisWeek";
 import { FaCalendarDays } from "react-icons/fa6";
@@ -216,6 +217,7 @@ export default function Home() {
           />
         </div>
       )}
+      <InstallButton />
     </Layout>
   );
 }
