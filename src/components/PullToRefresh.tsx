@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import { IoRefresh } from 'react-icons/io5'
 import { isStandalone } from '../install'
 
 // Pull-to-refresh, only in the home-screen app: it has no browser bar, so no reload button, and
 // iPhone gives home-screen apps no pull-to-refresh of its own. Pull down at the very top of a page
 // and let go past the mark to reload. Touches inside popups, dialogs and maps are ignored.
+// The spinner is the taegeuk from the flag (assets/taegeuk.svg, "Taegeuk.svg", public domain, Wikimedia Commons,
+// used unchanged). A thin red and blue line across the top of the screen grows from the middle while pulling and
+// runs like Google's loading bar once the reload starts.
 const TRIGGER = 70 // px the circle travels before letting go reloads
 const MAX = 96
 const IGNORE = '.image-popup-backdrop, .map-overlay, .map-fullscreen, .dialog-backdrop'
@@ -12,6 +14,7 @@ const IGNORE = '.image-popup-backdrop, .map-overlay, .map-fullscreen, .dialog-ba
 export default function PullToRefresh() {
   const [on, setOn] = useState(false)
   const circle = useRef<HTMLDivElement>(null)
+  const bar = useRef<HTMLDivElement>(null)
 
   useEffect(() => setOn(isStandalone()), [])
 
@@ -27,6 +30,12 @@ export default function PullToRefresh() {
       el.style.transform = `translate(-50%, ${px}px) rotate(${px * 4}deg)`
       el.style.opacity = String(Math.min(px / TRIGGER, 1))
       el.classList.toggle('ready', px >= TRIGGER)
+      const line = bar.current
+      if (line) {
+        line.style.transition = animate ? 'transform 0.2s ease, opacity 0.2s ease' : 'none'
+        line.style.transform = `scaleX(${Math.min(px / TRIGGER, 1)})`
+        line.style.opacity = px > 0 ? '1' : '0'
+      }
     }
     const start = (e: TouchEvent) => {
       if (busy || window.scrollY > 0 || e.touches.length !== 1) return
@@ -53,6 +62,7 @@ export default function PullToRefresh() {
         busy = true
         draw(TRIGGER, true)
         circle.current?.classList.add('spinning')
+        bar.current?.classList.add('loading')
         window.location.reload()
       } else {
         draw(0, true)
@@ -73,8 +83,14 @@ export default function PullToRefresh() {
 
   if (!on) return null
   return (
-    <div ref={circle} className="ptr" aria-hidden="true">
-      <IoRefresh />
-    </div>
+    <>
+      <div ref={bar} className="ptr-bar" aria-hidden="true">
+        <span />
+        <span />
+      </div>
+      <div ref={circle} className="ptr" aria-hidden="true">
+        <img src={`${import.meta.env.BASE_URL}taegeuk.svg`} alt="" width={28} height={28} />
+      </div>
+    </>
   )
 }

@@ -1622,8 +1622,10 @@ button.cta {
 .install-fab:active {
   transform: scale(0.94);
 }
-/* Pull-to-refresh circle, home-screen app only (PullToRefresh.tsx): drops in from under the
-   header as the reader pulls, turns blue once letting go will reload. */
+/* Pull-to-refresh, home-screen app only (PullToRefresh.tsx): the taegeuk drops in from under the header
+   as the reader pulls and grows a little once letting go will reload. A thin line in the flag's red and
+   blue runs across the top of the screen: it grows from the middle while pulling, then the two colours
+   chase each other along it, like Google's loading bar, until the page reloads. */
 .ptr {
   position: fixed;
   top: calc(var(--header-h) - 44px);
@@ -1636,25 +1638,71 @@ button.cta {
   justify-content: center;
   border: 1px solid var(--border);
   border-radius: 50%;
-  background: var(--card);
-  color: var(--muted);
-  font-size: 22px;
+  background: #fff; /* the flag's white, so the taegeuk reads the same in both themes */
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
   opacity: 0;
   transform: translate(-50%, 0);
   pointer-events: none;
 }
-.ptr.ready {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-text);
+.ptr img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.15s ease;
 }
-.ptr.spinning svg {
-  animation: ptr-spin 0.7s linear infinite;
+.ptr.ready img {
+  transform: scale(1.12);
+}
+.ptr.spinning img {
+  animation: ptr-spin 0.8s linear infinite;
 }
 @keyframes ptr-spin {
   to {
     transform: rotate(360deg);
+  }
+}
+.ptr-bar {
+  position: fixed;
+  top: env(safe-area-inset-top, 0px);
+  left: 0;
+  right: 0;
+  z-index: 4; /* over the sticky header */
+  height: 3px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #cd2e3a 0 50%, #0047a0 50% 100%);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  pointer-events: none;
+}
+.ptr-bar span {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+}
+.ptr-bar.loading {
+  background: rgba(0, 71, 160, 0.18);
+  transform: none !important;
+  opacity: 1 !important;
+}
+.ptr-bar.loading span {
+  display: block;
+  background: #cd2e3a;
+  animation: ptr-bar-run 1.3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+.ptr-bar.loading span + span {
+  background: #0047a0;
+  animation-delay: 0.65s;
+}
+@keyframes ptr-bar-run {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(230%);
   }
 }
 .install-inline {
