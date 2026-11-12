@@ -21,6 +21,7 @@ const NO_FRAME = new Set([
   'naver.me',
   'www.google.com', // Google search and Maps refuse; Google Images has its own popup (igu=1)
   'maps.app.goo.gl',
+  'royal.khs.go.kr', // Royal Palaces booking (X-Frame-Options SAMEORIGIN, checked 2026-11-12)
 ])
 
 const SITE = 'koreatravelpath.com'
