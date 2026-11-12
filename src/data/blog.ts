@@ -38,6 +38,93 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-12-1825',
+    title: 'Is a hanok stay worth the price?',
+    description:
+      'A night in a hanok often costs more than a hotel, and your bed is a quilt on the floor. What you get for the money, what a night costs in Jeonju and Seoul, and what to check before you book.',
+    teaser: 'You pay hotel money to sleep on the floor.',
+    icon: 'house_with_garden',
+    date: '2026-11-12',
+    updated: '2026-11-12',
+    keywords: ['HanokStay', 'Bukchon', 'Jeonju', 'Ondol', 'KoreaTravel', 'SeoulTravel'],
+    body: [
+      {
+        type: 'p',
+        text: 'A night in a **한옥 (hanok)**, a traditional Korean house, often costs more than a good hotel. Your bed is a pile of quilts on the floor and the doors are made of paper. We would still book one, once.',
+      },
+      {
+        type: 'img',
+        src: 'hanok-stay-room.jpg',
+        alt: 'A hanok guest room with a warm yellow floor, paper lattice windows, an old wooden chest and a stack of folded quilts',
+        caption: 'Your bed for the night: that pile of quilts in the middle.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village_20150119_08_(16321479002).jpg',
+        credit: { author: 'Korea.net / Korean Culture and Information Service (Jeon Han)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'sleeping_face', text: 'The warm floor' },
+      {
+        type: 'p',
+        text: 'You lay the bedding out yourself: a **요 (yo)**, a padded mat, and an **이불 (ibul)**, a thick quilt. Under it is the **온돌 (ondol)**, the heated floor, so on a cold night you lie down on warmth. It is the part everyone remembers, and the hardest thing to leave in the morning.',
+      },
+      {
+        type: 'p',
+        text: 'The doors are wooden frames covered in **한지 (hanji)**, mulberry paper. Morning light comes through it soft and early, so you wake up with the sun, like it or not.',
+      },
+      {
+        type: 'img',
+        src: 'hanok-stay-house.jpg',
+        alt: 'A small hanok guesthouse in Bukchon with carved wooden doors, a curved tiled roof and a stone lantern in the yard',
+        caption: 'A hanok stay in Bukchon, Seoul, seen from its little yard.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village_20150119_04_(16136482787).jpg',
+        credit: { author: 'Korea.net / Korean Culture and Information Service (Jeon Han)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      {
+        type: 'p',
+        text: 'Then comes the evening. In Bukchon the busiest lane closes to visitors at 17:00, and in Jeonju the day-trippers catch their buses home. The old lanes go quiet, and **you are still there**.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', icon: 'money_bag', text: 'The price, honestly' },
+      {
+        type: 'p',
+        text: 'A simple room in **Jeonju** can cost under ₩100,000 a night. The pretty ones, with a private bathroom and a small yard, are often ₩200,000 or more. In Seoul\'s **Bukchon**, a whole house can run to a few hundred dollars. If Seoul prices hurt, do it in Jeonju.',
+      },
+      {
+        type: 'dishes',
+        items: [
+          { icon: 'dollar_banknote', text: 'Book one night. You get the whole experience in one, and the second costs just as much.' },
+          { icon: 'bed', text: 'Bad back? Many hanok stays now have rooms with a real bed. Check the photos.' },
+          { icon: 'shower', text: 'Check the bathroom. Some older houses share one across the yard.' },
+          { icon: 'alarm_clock', text: 'Check-in is often at 4 pm and check-out at noon, so you get a slow morning.' },
+          { icon: 'pot_of_food', text: 'No snacks on the quilt. Some houses charge a cleaning fee for stains.' },
+        ],
+      },
+      {
+        type: 'img',
+        src: 'hanok-stay-roofs.jpg',
+        alt: 'Curved tiled hanok roofs in Bukchon with a snowy granite mountain behind',
+        caption: 'Bukchon\'s roofs in January, with Bukhansan behind.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village_20150119_06_(16321479692).jpg',
+        credit: { author: 'Korea.net / Korean Culture and Information Service (Jeon Han)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'hanok-villages',
+        text: 'Bukchon, Ikseon-dong and the lanes in between are on our Seoul hanok walk.',
+      },
+      {
+        type: 'route',
+        cityId: 'gyeongju-jeonju',
+        pathId: 'jeonju',
+        text: 'Staying in Jeonju instead? Pungnammun and the lit lanes after dark are on our Jeonju walk.',
+      },
+      {
+        type: 'verdict',
+        text: 'Worth it, for one night. You pay for a warm floor and a quiet evening in an old neighbourhood. If the price stings, pick Jeonju and a weekday.',
+      },
+    ],
+  },
+  {
     id: '2026-11-11-1728',
     title: 'What to wear in Seoul in December',
     description:
