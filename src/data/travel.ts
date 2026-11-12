@@ -14,7 +14,7 @@ export type Tag = string | { icon: TagIconName; label: string }
 export type PathGuide = {
   intro: string[] // one or two short paragraphs
   route?: string[] // the stages in walking order, one line each
-  groups?: { title: string; places: string[] }[] // a collection with no walking order (cafés): places under category headings, instead of `route`
+  groups?: { title: string; places: string[]; color?: string }[] // places under headings, instead of `route`: a collection with no walking order (cafés), or several walks on one map (palaces). `color` (RRGGBB, the map line's colour) numbers the places with circles in that colour, matching the numbered map pins; notices whose `at` is in the title sit under that heading
   tips?: string[] // getting there, food, best time, nearby
 }
 
@@ -76,9 +76,9 @@ export const cities: City[] = [
   {
     id: 'seoul',
     name: 'Seoul',
-    seoTitle: 'Seoul walking trails: hanok lanes to Myeong-dong',
+    seoTitle: 'Seoul walking trails: palaces, hanok lanes, hikes',
     seoDescription:
-      'Seoul walking maps: Bukchon hanok lanes, the city wall, Buam-dong and Palgakjeong, Seoullo 7017 to Myeong-dong, Hongdae, Seongsu, Gangnam nights and hikes.',
+      'Seoul walking maps: the five royal palaces, Bukchon hanok lanes, the city wall, Buam-dong, Seoullo 7017 to Myeong-dong, Hongdae, Seongsu, Gangnam and hikes.',
     intro: [
       "**Korea's capital** for more than 600 years, since the Joseon dynasty made it its seat in 1394. About 9 million people live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
       "The **Han River** splits it in two: palaces, hanok lanes and the old fortress wall on the north bank, towers and Gangnam on the south. Four inner mountains, **Bugaksan, Inwangsan, Naksan and Namsan**, ring the old city, and the subway reaches almost everywhere.",
@@ -302,6 +302,178 @@ export const cities: City[] = [
             "🏡 Namsangol is free; check its closing day and the show schedule at Seoul Namsan Gugakdang on hanokmaeul.or.kr before you go.",
             "🍜 Pil-dong, beside Namsangol, is the food district: Pyongyang naengmyeon, hamburger steak, chicken stew and good cafés, all on the map as pink pins.",
             "🛍️ Shopping around Anguk and Insadong? Bring your passport for the tourist tax refund. The Olive Young at Anguk adds hanbok experiences; see [our Olive Young guide](https://koreatravelpath.com/blog/2026-11-01-2013/).",
+          ],
+        },
+      },
+      {
+        id: 'seoul-palaces',
+        name: 'Royal Palaces',
+        seoTitle: 'Seoul palaces map: Gyeongbokgung route, guard times',
+        seoDescription:
+          'Walk Gyeongbokgung stop by stop on the official course, then Changdeokgung, Changgyeonggung, Deoksugung and Gyeonghuigung. Guard ceremony times, hours, night tours.',
+        duration: 'Full day',
+        updated: '2026-11-12',
+        tags: [{ icon: 'village', label: 'Traditional' }, { icon: 'moon', label: 'Night walk' }],
+        whyVisit: [
+          "Five royal palaces sit within walking distance of each other in the old city, and **a stroll through them in hanbok is the picture of a Seoul trip**.",
+          "Gyeongbokgung has **the guard ceremony at its gate** and a banquet pavilion floating on a pond. Changdeokgung hides **a royal garden in the woods**.",
+          "Deoksugung stays open until nine, so you can finish the day on **the stone-wall road under the lamps**.",
+        ],
+        story: {
+          title: 'Five palaces, one dynasty',
+          text: [
+            "**Gyeongbokgung** was the first palace of the Joseon dynasty, built when Seoul became the capital. It burned during the Japanese invasions of 1592, and for almost 300 years the kings lived in **Changdeokgung** and its neighbour **Changgyeonggung** instead.",
+            "Gyeongbokgung was rebuilt in the 1860s, then largely torn down under Japanese rule, and much of what you see today has been rebuilt since the 1990s. Changgyeonggung became a zoo and a botanical garden in that period, which is why it has a glass greenhouse. **Deoksugung** was the last palace, the home of Emperor Gojong.",
+          ],
+        },
+        notices: [
+          {
+            icon: '⏰',
+            title: 'Gyeongbokgung hours',
+            at: 'Gyeongbokgung',
+            body: "In November **09:00–17:00** (last entry 16:00); longer hours from spring to autumn. {red:Closed on Tuesdays}, except when Tuesday is a public holiday.",
+            since: 'Checked 12 November 2026.',
+            source: 'Royal Palaces office (royal.khs.go.kr), notice of 30 September 2026 on October–November hours. Checked 12 November 2026.',
+          },
+          {
+            icon: '🚧',
+            title: 'Changdeokgung: enter by the side gate',
+            at: 'Changdeokgung',
+            body: "The main gate, **Donhwamun**, is under repair until about October 2028. Enter by **Geumhomun**, the gate just to its left. Open **09:00–17:30** from November to January (last entry 16:30). {red:Closed on Mondays}.",
+            since: 'Checked 12 November 2026.',
+            source: 'YTN report of 9 November 2026 and Naver Map on the repair; Seoul city articles on hours and closing day. Checked 12 November 2026.',
+          },
+          {
+            icon: '🌳',
+            title: 'The Secret Garden needs a booking',
+            at: 'Changdeokgung',
+            body: "**Huwon**, the Secret Garden, is seen on a guided tour only, with its own ticket. Bookings open at **10:00, six days before** the date, on the Royal Palaces website, and tours fill fast in autumn.",
+            since: 'Checked 12 November 2026.',
+            source: 'Royal Palaces office booking page (royal.khs.go.kr). Checked 12 November 2026.',
+          },
+          {
+            icon: '🌙',
+            title: 'Changgyeonggung and Deoksugung are open in the evening',
+            at: 'Changgyeonggung',
+            body: "Both are open **09:00–21:00** (last entry 20:00). {red:Both are closed on Mondays.} Part of the path around Changgyeonggung's pond is {red:closed from 18:00} while its lights are repaired.",
+            since: 'Checked 12 November 2026.',
+            source: 'Seoul city articles on hours; Royal Palaces office notice of 27 February 2026 on the Chundangji path. Checked 12 November 2026.',
+          },
+          {
+            icon: '💂',
+            title: 'Royal Guard Changing Ceremonies',
+            body: "**Gyeongbokgung**: daily at **10:00 and 14:00** in front of Heungnyemun Gate, about 20 minutes, {red:not on Tuesdays}. **Deoksugung**: daily at **11:00 and 14:00** in front of Daehanmun Gate, {red:not on Mondays}. Both are cancelled in heavy rain and in extreme heat, as during the August 2026 heat wave.",
+            since: 'Checked 12 November 2026.',
+            source: 'Deoksugung times from several 2026 listings; Gyeongbokgung times from a 2026 guide and earlier years. Heat-wave stop reported August 2026. Checked 12 November 2026.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Tickets',
+            body: "Gyeongbokgung and Changdeokgung **₩3,000**, Changgyeonggung and Deoksugung **₩1,000**; the Secret Garden costs extra. Gyeonghuigung has no ticket. Visitors in hanbok, and foreigners aged 18 or under or 65 and over, go in without a ticket. Prices rise from **1 January 2027**.",
+            since: 'Checked 12 November 2026.',
+            source: 'News reports of May and August 2026 on prices and the 2027 rise. Checked 12 November 2026.',
+          },
+          {
+            icon: '📅',
+            title: 'No-ticket days',
+            body: "Until **15 November 2026** (Korea Grand Festival) all four ticketed palaces are open without a ticket, closing days excepted. Every **Wednesday** Deoksugung, Changdeokgung and Changgyeonggung need no ticket either; Gyeongbokgung does.",
+            since: 'Checked 12 November 2026.',
+            source: 'Royal Palaces office notices of 28 May and 30 September 2026, and the Changdeokgung booking page. Checked 12 November 2026.',
+          },
+          {
+            icon: '🏮',
+            title: 'Night tours: watch for spring dates',
+            body: "The **Starlight Tour** at Gyeongbokgung (a royal-style dinner and a lantern walk, ₩60,000) and the **Moonlight Tour** at Changdeokgung (₩30,000, with sessions for foreigners) run in spring and autumn. The autumn 2026 tours ended in October and sell out within minutes. Spring 2027 dates are not out yet; they were announced in March this year.",
+            since: 'Checked 12 November 2026.',
+            source: 'News of 20 March and 21 October 2026 and listings for the autumn 2026 tours. Checked 12 November 2026.',
+          },
+        ],
+        image: 'gyeongbokgung.jpg',
+        imageCredit: 'Photo: My Travel Path',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1BCeCux6BAs9DnU04SbO1WDkYhv-p83s',
+        keywords: ['Seoul', 'Gyeongbokgung', 'Changdeokgung', 'SecretGarden', 'Changgyeonggung', 'Deoksugung', 'Gyeonghuigung', 'GuardChangingCeremony', 'Hanbok', 'SeoulPalaces', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🏯 Give Gyeongbokgung the morning. Get in when it opens, **be at Heungnyemun Gate for the 10:00 guard ceremony**, then follow the numbers on the map to the pavilion on the lotus pond at the back. It takes two to three hours and comes out by the folk museum.",
+            "Changdeokgung and Changgyeonggung make an afternoon of their own, joined by a gate in the wall. Keep Deoksugung for the evening, when it is lit and open until nine, and walk the stone-wall road afterwards. Five palaces in one day is a lot; most people pick two.",
+          ],
+          groups: [
+            {
+              title: 'Gyeongbokgung',
+              color: 'F57C00',
+              places: [
+                "[[Gwanghwamun Gate|광화문]], the main gate, with the palace walls on either side.",
+                "[[Heungnyemun Gate|경복궁 흥례문]]: the square where the guard ceremony is held.",
+                "[[Geunjeongjeon|경복궁 근정전]], the throne hall, with the sun-and-moon screen behind the throne.",
+                "[[Sujeongjeon|경복궁 수정전]], built where King Sejong's scholars worked.",
+                "[[Gyeonghoeru|경복궁 경회루]], the banquet pavilion on its pond: **the best photo in the palace**.",
+                "[[Sajeongjeon|경복궁 사정전]], the king's office.",
+                "[[Gangnyeongjeon and Gyotaejeon|경복궁 교태전]], the king's and queen's quarters, and Amisan, the queen's terraced garden behind them.",
+                "[[Heunggyeonggak and Hamwonjeon|경복궁 함원전]], two smaller halls beside the queen's quarters.",
+                "[[Jagyeongjeon|경복궁 자경전]], the queen dowager's home, with flower-patterned walls.",
+                "[[Sojubang|경복궁 소주방]], the royal kitchens.",
+                "[[Donggung|경복궁 자선당]], the crown prince's quarters.",
+                "[[Heungbokjeon|경복궁 흥복전]], a large rebuilt hall in the middle of the palace.",
+                "[[Taewonjeon|경복궁 태원전]], a quiet compound in the far corner that few visitors reach.",
+                "[[Jibokjae|경복궁 집옥재]], King Gojong's library, built in a Chinese style.",
+                "[[Geoncheonggung|경복궁 건청궁]], King Gojong's private residence, where Empress Myeongseong was murdered in 1895.",
+                "[[Hyangwonjeong|경복궁 향원정]], the hexagonal pavilion on a lotus pond, with the mountain behind.",
+                "[[National Folk Museum|국립민속박물관]], the end of the course, with no ticket. Its exit leads to Samcheong-dong.",
+              ],
+            },
+            {
+              title: 'Changdeokgung and Changgyeonggung',
+              color: '7B1FA2',
+              places: [
+                "[[Geumhomun Gate|창덕궁 금호문]], the entrance while the main gate is under repair.",
+                "[[Injeongjeon|창덕궁 인정전]], the throne hall of the palace the kings lived in longest, a UNESCO World Heritage Site.",
+                "[[Seonjeongjeon|창덕궁 선정전]], the king's office, the only hall with a blue-tiled roof.",
+                "[[Huijeongdang|창덕궁 희정당]], the king's quarters, with a car porch from the 1920s.",
+                "[[Daejojeon|창덕궁 대조전]], the queen's quarters.",
+                "[[Nakseonjae|창덕궁 낙선재]], plain wooden houses where **the last of the royal family lived into the 1980s**.",
+                "[[Hamyangmun Gate|창경궁 함양문]], the gate into Changgyeonggung. The **Secret Garden** tours start next to it.",
+                "[[Tongmyeongjeon|창경궁 통명전]], the queen's hall, with a stone-lined pond.",
+                "[[Myeongjeongjeon|창경궁 명정전]], the oldest throne hall in the Seoul palaces.",
+                "[[Chundangji|창경궁 춘당지]], a big pond, best in autumn colour.",
+                "[[Daeonsil|창경궁 대온실]], **a white glass greenhouse from 1909**, full of plants.",
+              ],
+            },
+            {
+              title: 'Deoksugung and the stone-wall road',
+              color: 'F9A825',
+              places: [
+                "[[Daehanmun Gate|덕수궁 대한문]], across from City Hall, where the guard ceremony is held.",
+                "[[Junghwajeon|덕수궁 중화전]], the throne hall of Emperor Gojong's last palace.",
+                "[[Seokjojeon|덕수궁 석조전]], a stone palace in European style, now a museum.",
+                "[[Deoksugung Stone-wall Road|덕수궁 돌담길]], the walk along the palace wall, **lovely under the ginkgo trees**.",
+                "[[Jungmyeongjeon|덕수궁 중명전]], where the 1905 treaty was forced through.",
+                "[[Jeongdong-gil|정동길]], the tree-lined street of old churches and schools.",
+              ],
+            },
+            {
+              title: 'Gyeonghuigung',
+              color: 'DB4437',
+              places: [
+                "[[Heunghwamun Gate|경희궁 흥화문]], at the end of Jeongdong-gil. This palace has no ticket.",
+                "[[Sungjeongjeon|경희궁 숭정전]], the throne hall on its stone terraces, **with hardly any visitors**.",
+              ],
+            },
+            {
+              title: 'Viewpoints over the palaces',
+              places: [
+                "[[Cecil Maru|세실마루]], the rooftop of Jeongdong Theater Cecil: the Anglican cathedral close up and Deoksugung's wall. **09:00–21:00**, {red:closed on Mondays}.",
+                "[[Jeongdong Observatory|정동전망대]], 13th floor of the City Hall Seosomun building: **Deoksugung from above**. Mon–Thu 13:30–17:30, Fri 13:30–22:00, Sat 09:00–22:00, Sun 09:00–17:30; {red:closed on public holidays}.",
+                "[[City Hall Sky Observatory|서울시청 하늘전망대]], 9th floor of City Hall: Seoul Plaza and Deoksugung. Weekdays 07:30–18:00, {red:closed at weekends and on public holidays}.",
+                "[[Rooftop garden, National Museum of Korean Contemporary History|대한민국역사박물관]], 8th floor: **Gwanghwamun and Gyeongbokgung with the mountain behind**. 10:00–18:00, until 21:00 on Wednesdays and Saturdays.",
+              ],
+            },
+          ],
+          tips: [
+            "🚇 Getting there: **Gyeongbokgung Station** (line 3) exit 5 leads straight into the palace grounds. **Anguk Station** (line 3) exit 3 for Changdeokgung, **City Hall Station** (lines 1 and 2) exit 2 for Deoksugung.",
+            "⏰ Gyeongbokgung is quietest at opening time and on weekdays. Check the closing days before you go: {red:Gyeongbokgung closes on Tuesdays}, {red:the others on Mondays}.",
+            "👘 Hanbok rental shops are around Gyeongbokgung Station and Anguk; in hanbok you need no palace ticket.",
+            "👟 Gyeongbokgung's course is about 4 km on gravel and stone, so wear comfortable shoes.",
+            "🔗 The [Hanok Villages walk](https://koreatravelpath.com/seoul/hanok-villages/) starts at Gyeongbokgung's east gate: Bukchon and Insadong are a short walk from the palace exit.",
           ],
         },
       },

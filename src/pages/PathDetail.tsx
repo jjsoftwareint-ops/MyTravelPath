@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, type CSSProperties } from "react";
 import { FaInfoCircle } from "react-icons/fa";
 import { FaBus } from "react-icons/fa6";
 import { IoFootstepsSharp } from "react-icons/io5";
@@ -131,7 +131,13 @@ export default function PathDetail() {
   const route = path.guide?.route ?? [];
   const placeOf = (n: { at?: string }) =>
     n.at ? route.findIndex((step) => step.includes(n.at as string)) : -1;
-  const overallNotices = notices.filter((n) => placeOf(n) < 0);
+  // On a grouped page (several walks on one map) a box whose `at` phrase is in a group's title sits under that heading.
+  const groups = path.guide?.groups ?? [];
+  const groupOf = (n: { at?: string }) =>
+    n.at ? groups.findIndex((g) => g.title.includes(n.at as string)) : -1;
+  const overallNotices = notices.filter(
+    (n) => placeOf(n) < 0 && groupOf(n) < 0,
+  );
   const noticeList = (list: typeof notices) =>
     list.length > 0 && (
       <ul className="notices" aria-label="Important information">
@@ -141,6 +147,17 @@ export default function PathDetail() {
   const noticesBlock = noticeList(overallNotices);
   const noticesAt = (i: number) =>
     noticeList(notices.filter((n) => placeOf(n) === i));
+  const noticesInGroup = (g: number) =>
+    noticeList(notices.filter((n) => placeOf(n) < 0 && groupOf(n) === g));
+  // Number circles in the map line's colour; dark digits on a light colour (gold) so they stay readable.
+  const numberStyle = (hex: string) => {
+    const [r, g, b] = [0, 2, 4].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    const light = 0.299 * r + 0.587 * g + 0.114 * b > 160;
+    return {
+      "--num-bg": `#${hex}`,
+      "--num-fg": light ? "#1b1f27" : "#fff",
+    } as CSSProperties;
+  };
   const hasMapBlock = Boolean(embed || path.screenshot);
   const chips = [
     hasMapBlock && { id: "path-map", label: "Map", unfold: undefined },
@@ -386,22 +403,38 @@ export default function PathDetail() {
                       <Emoji name="round_pushpin" size={20} /> The Locations
                     </h3>
                     {noticesBlock}
-                    {path.guide.groups.map((group) => (
-                      <section className="place-group" key={group.title}>
-                        <h4>{group.title}</h4>
-                        <ul>
-                          {group.places.map((place) => (
-                            <li key={place}>
-                              <GuideLine
-                                text={place}
-                                onPlace={setPlaceQuery}
-                                onLink={setPopup}
-                              />
-                            </li>
-                          ))}
-                        </ul>
-                      </section>
-                    ))}
+                    {path.guide.groups.map((group, gi) => {
+                      const items = group.places.map((place) => (
+                        <li key={place}>
+                          <GuideLine
+                            text={place}
+                            city={
+                              group.color && !city.theme
+                                ? city.name.replace(/-do$/, "")
+                                : undefined
+                            }
+                            onPlace={setPlaceQuery}
+                            onLink={setPopup}
+                          />
+                        </li>
+                      ));
+                      return (
+                        <section className="place-group" key={group.title}>
+                          <h4>{group.title}</h4>
+                          {noticesInGroup(gi)}
+                          {group.color ? (
+                            <ol
+                              className="num-list"
+                              style={numberStyle(group.color)}
+                            >
+                              {items}
+                            </ol>
+                          ) : (
+                            <ul>{items}</ul>
+                          )}
+                        </section>
+                      );
+                    })}
                   </>
                 )}
                 {path.guide.route && (

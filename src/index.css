@@ -1196,6 +1196,33 @@ button.cta {
   margin: 0;
   color: var(--text);
 }
+/* A numbered group (several walks on one map, e.g. the palaces): circles in the map line's colour,
+   numbered like the map's pins, restarting in every group */
+.guide ol.num-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: stop;
+}
+.guide ol.num-list > li {
+  counter-increment: stop;
+  position: relative;
+  padding-left: 32px;
+}
+.guide ol.num-list > li::before {
+  content: counter(stop);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: var(--num-bg);
+  color: var(--num-fg);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
 /* A category heading in a grouped place list (cafés): the places under it are plain bullets */
 .guide .place-group h4 {
   margin: 14px 0 6px;
