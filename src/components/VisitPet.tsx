@@ -212,7 +212,7 @@ function Creature({
     setEating('run')
     requestAnimationFrame(() =>
       requestAnimationFrame(() => {
-        if (walker.current) walker.current.style.left = 'calc(100% - 40px)'
+        if (walker.current) walker.current.style.left = 'calc(100% - 50px)'
       }),
     )
     later(() => {
@@ -233,7 +233,7 @@ function Creature({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cmd])
 
-  const heartImg = heart && <img className="pet-heart" src={pic('heart')} alt="" width={12} height={12} />
+  const heartImg = heart && <img className="pet-heart" src={pic('heart')} alt="" width={14} height={14} />
 
   if (age <= HATCH_DAY) {
     // Egg days 1-4 grow from 70% to 100% and shake a little harder each day; day 5 hatches in place.
@@ -269,13 +269,13 @@ function Creature({
   ].filter(Boolean).join(' ')
   return (
     <>
-      {rest === 'asleep' && <img className={`pet-zzz slot-${slot}`} src={pic('zzz')} alt="" width={11} height={11} />}
+      {rest === 'asleep' && <img className={`pet-zzz slot-${slot}`} src={pic('zzz')} alt="" width={13} height={13} />}
       {snack && !rest && (
         <button type="button" className="pet-snack" onClick={eat} aria-label="Give the snack">
-          <img src={pic(`food-${snack}`)} alt="" width={14} height={14} />
+          <img src={pic(`food-${snack}`)} alt="" width={18} height={18} />
         </button>
       )}
-      {walking && mood.butterfly && slot === 0 && <img className="pet-butterfly" src={pic('butterfly')} alt="" width={12} height={12} />}
+      {walking && mood.butterfly && slot === 0 && <img className="pet-butterfly" src={pic('butterfly')} alt="" width={14} height={14} />}
       <div ref={walker} className={cls}>
         <button type="button" className={`pet-creature${reaction ? ' poke' : ''}`} onClick={rest ? wake : play} aria-label="Tap">
           {heartImg}

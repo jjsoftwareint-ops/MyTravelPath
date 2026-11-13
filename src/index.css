@@ -2684,7 +2684,7 @@ button.cta {
 .pet {
   position: relative;
   flex-shrink: 0;
-  height: 42px;
+  height: 54px;
   margin: 0 26px; /* 10 px narrower than the content on each side */
   overflow: hidden;
   --grass: #6cbf3c;
@@ -2732,16 +2732,16 @@ button.cta {
 .pet img {
   display: block;
 }
-/* Same box for every creature picture: 25 px tall, at most 28 px wide (a lying-down pose is wide). */
+/* Same box for every creature picture: 34 px tall, at most 38 px wide (a lying-down pose is wide). */
 .pet-pic {
   width: auto;
   height: auto;
-  max-width: 28px;
-  max-height: 25px;
+  max-width: 38px;
+  max-height: 34px;
 }
 .pet-pic.tall {
-  max-width: 34px;
-  max-height: 34px;
+  max-width: 46px;
+  max-height: 46px;
 }
 .pet-creature {
   position: relative;
@@ -2749,7 +2749,7 @@ button.cta {
 .pet-heart {
   position: absolute;
   left: 50%;
-  top: -6px;
+  top: -8px;
   animation: pet-heart 1.2s ease-out forwards;
 }
 .pet .poke .pet-pic {
@@ -2793,7 +2793,7 @@ button.cta {
 }
 .pet-butterfly {
   position: absolute;
-  top: 3px;
+  top: 6px;
   left: 8px;
   animation: pet-walk 22s linear infinite, pet-flutter 1.4s ease-in-out infinite;
 }
@@ -2845,8 +2845,8 @@ button.cta {
 }
 .pet-zzz {
   position: absolute;
-  left: 40px;
-  top: 4px;
+  left: 48px;
+  top: 6px;
   animation: pet-zzz 2.4s ease-in-out infinite;
 }
 
@@ -2879,8 +2879,8 @@ button.cta {
 }
 @keyframes pet-walk {
   0% { left: 8px; transform: scaleX(1); }
-  47% { left: calc(100% - 36px); transform: scaleX(1); }
-  50% { left: calc(100% - 36px); transform: scaleX(-1); }
+  47% { left: calc(100% - 46px); transform: scaleX(1); }
+  50% { left: calc(100% - 46px); transform: scaleX(-1); }
   97% { left: 8px; transform: scaleX(-1); }
   100% { left: 8px; transform: scaleX(1); }
 }
