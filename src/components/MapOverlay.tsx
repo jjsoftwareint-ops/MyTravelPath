@@ -25,9 +25,28 @@ export default function MapOverlay({
     document.body.style.overflow = "hidden";
     document.addEventListener("keydown", onKey);
     closeRef.current?.focus();
+    // The map has its own zoom, so the page must not zoom while it is open: a pinch should move the
+    // map, not blow up the whole overlay. Android honours the viewport limit; iOS Safari ignores
+    // user-scalable and is stopped by cancelling its pinch gesture instead. The CSS (.map-fullscreen
+    // touch-action) covers the rest. Everything is restored on close, so the page itself stays zoomable.
+    const viewport = document.querySelector<HTMLMetaElement>('meta[name="viewport"]');
+    const prevViewport = viewport?.getAttribute("content") ?? null;
+    if (viewport && prevViewport)
+      viewport.setAttribute("content", `${prevViewport}, maximum-scale=1, user-scalable=no`);
+    const noPinch = (e: Event) => e.preventDefault();
+    const noTwoFinger = (e: TouchEvent) => {
+      if (e.touches.length > 1) e.preventDefault();
+    };
+    document.addEventListener("gesturestart", noPinch);
+    document.addEventListener("gesturechange", noPinch);
+    document.addEventListener("touchmove", noTwoFinger, { passive: false });
     return () => {
       document.body.style.overflow = prevOverflow;
       document.removeEventListener("keydown", onKey);
+      if (viewport && prevViewport) viewport.setAttribute("content", prevViewport);
+      document.removeEventListener("gesturestart", noPinch);
+      document.removeEventListener("gesturechange", noPinch);
+      document.removeEventListener("touchmove", noTwoFinger);
     };
   }, [onClose]);
 

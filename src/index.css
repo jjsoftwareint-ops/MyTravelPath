@@ -2137,6 +2137,8 @@ button.cta {
   inset: 0;
   z-index: 200;
   background: var(--bg);
+  /* no browser pinch-zoom on the overlay: the map inside zooms itself (MapOverlay.tsx) */
+  touch-action: pan-x pan-y;
 }
 .map-fullscreen iframe {
   display: block;
