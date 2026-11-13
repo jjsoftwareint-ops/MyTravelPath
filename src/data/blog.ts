@@ -54,9 +54,9 @@ export const posts: Post[] = [
       },
       {
         type: 'video',
-        id: 'GxChUrrY4bc',
-        title: 'Meomuru, "Did you become the adult you dreamed of?", official upload',
-        caption: 'The song, uploaded by the artist. Video: Meomuru on YouTube.',
+        id: 'xC8qdrj3Pjk',
+        title: 'Meomuru, "Did you become the adult you dreamed of?", lyric video',
+        caption: 'The whole song, with the Korean lyrics on screen. Video: 태초의 고막 (taechoui gomak) on YouTube.',
       },
       { type: 'space' },
       { type: 'h', icon: 'microphone', text: 'So who is singing?' },
