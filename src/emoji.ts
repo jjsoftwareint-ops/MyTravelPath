@@ -41,6 +41,8 @@ export const EMOJI_FILES: Record<string, string> = {
   "🌊️": "water_wave",
   "🚆": "train",
   "🚆️": "train",
+  "🗺": "world_map",
+  "🗺️": "world_map",
   "⛰": "mountain",
   "⛰️": "mountain",
   "💧": "droplet",
