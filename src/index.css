@@ -223,7 +223,7 @@ a:focus-visible {
 
 /* ── Content ─────────────────────────────────────────────── */
 .content {
-  padding: 16px 16px 16px;
+  padding: 0 16px 16px; /* no top padding: the content sits right on the visit pet's grass */
 }
 
 .list {
@@ -1296,7 +1296,7 @@ button.cta {
     max-width: 210px;
   }
   .content {
-    padding: 24px 24px 20px;
+    padding: 0 24px 20px;
   }
   .content > .notice {
     margin-bottom: 18px;
@@ -2678,4 +2678,280 @@ button.cta {
   height: 22px;
   border-radius: 50%;
   border: 1px solid var(--border);
+}
+
+/* ── Visit pet (VisitPet.tsx): a tiny egg under the header (no ground line, user 2026-11-14); hatches on the 5th visit day ── */
+.pet {
+  position: relative;
+  flex-shrink: 0;
+  height: 42px;
+  margin: 0 26px; /* 10 px narrower than the content on each side */
+  overflow: hidden;
+  --grass: #6cbf3c;
+  --grass-light: #9ad65f;
+  --earth: #b07a46;
+  --earth-dark: #8a5a30;
+}
+:root:not([data-theme='light']) .pet {
+  --grass: #4e9a2e;
+  --grass-light: #6fbf46;
+  --earth: #7a5230;
+  --earth-dark: #5c3c22;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) .pet {
+    --grass: #6cbf3c;
+    --grass-light: #9ad65f;
+    --earth: #b07a46;
+    --earth-dark: #8a5a30;
+  }
+}
+/* The ground: a strip of grass with tufts along the top and earth below, like a platform game. */
+.pet::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  background:
+    repeating-linear-gradient(90deg, var(--grass-light) 0 3px, transparent 3px 7px) top / 100% 2px no-repeat,
+    linear-gradient(var(--grass) 0 4px, var(--earth) 4px 7px, var(--earth-dark) 7px);
+  border-radius: 2px 2px 0 0;
+  pointer-events: none;
+}
+.pet button {
+  display: block; /* no text baseline under the picture, so the feet touch the line */
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.pet img {
+  display: block;
+}
+/* Same box for every creature picture: 25 px tall, at most 28 px wide (a lying-down pose is wide). */
+.pet-pic {
+  width: auto;
+  height: auto;
+  max-width: 28px;
+  max-height: 25px;
+}
+.pet-pic.tall {
+  max-width: 34px;
+  max-height: 34px;
+}
+.pet-creature {
+  position: relative;
+}
+.pet-heart {
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  animation: pet-heart 1.2s ease-out forwards;
+}
+.pet .poke .pet-pic {
+  animation: pet-jump 0.7s ease-out;
+}
+
+/* Egg: grows a little each day and shakes gently, a bit more each day; day 5 bobs in its shell. */
+.pet-egg {
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  transform-origin: 50% 100%;
+  scale: var(--s, 1);
+}
+.pet-egg.shake-1 { animation: pet-shake 4s ease-in-out infinite; --tilt: 3deg; }
+.pet-egg.shake-2 { animation: pet-shake 3.4s ease-in-out infinite; --tilt: 4deg; }
+.pet-egg.shake-3 { animation: pet-shake 2.8s ease-in-out infinite; --tilt: 6deg; }
+.pet-egg.shake-4 { animation: pet-shake 2s ease-in-out infinite; --tilt: 9deg; }
+.pet-egg.shake-5 { animation: pet-bob 2.2s ease-in-out infinite; }
+
+/* The creature. Walking kinds cross the strip and turn at the ends (the pictures face right); the
+   others stay a little way in from the left and move in place. */
+.pet-walker {
+  position: absolute;
+  bottom: 6px;
+  left: 8px;
+}
+.pet-walker.walking {
+  animation: pet-walk 22s linear infinite;
+}
+.anim-hop.walking { animation-duration: 26s; }
+.anim-glide.walking { animation-duration: 30s; }
+.anim-walk.walking .pet-pic {
+  animation: pet-step 0.5s ease-in-out infinite;
+}
+.anim-hop.walking .pet-pic {
+  animation: pet-hop 0.9s ease-in-out infinite;
+}
+.anim-glide.walking .pet-pic {
+  animation: pet-bob 1.4s ease-in-out infinite;
+}
+.pet-butterfly {
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  animation: pet-walk 22s linear infinite, pet-flutter 1.4s ease-in-out infinite;
+}
+.pet-walker.still {
+  left: 36%;
+}
+/* The second creature (from day 100) keeps to the right half and walks out of step with the first. */
+.pet-walker.slot-1.still {
+  left: 64%;
+}
+.pet-walker.slot-1.walking {
+  animation-delay: -11s;
+}
+.pet-egg.slot-1 {
+  left: 62%;
+}
+.pet-zzz.slot-1 {
+  left: 72%;
+}
+.anim-swing .pet-pic {
+  transform-origin: 50% 0;
+  animation: pet-swing 2.6s ease-in-out infinite;
+}
+.anim-bob .pet-pic {
+  animation: pet-bob 2.2s ease-in-out infinite;
+}
+.anim-wiggle .pet-pic {
+  animation: pet-wiggle 1.6s ease-in-out infinite;
+}
+.anim-spin .pet-pic {
+  animation: pet-spin 7s linear infinite, pet-hover 3s ease-in-out infinite;
+}
+.anim-float .pet-pic {
+  animation: pet-float 3s ease-in-out infinite;
+}
+.anim-peek.still {
+  left: 2px;
+}
+.anim-peek .pet-pic {
+  animation: pet-peek 5s ease-in-out infinite;
+}
+
+/* Asleep or sad: by the left end, breathing; z's float up when asleep. */
+.pet-walker.resting {
+  left: 8px;
+}
+.pet-walker.resting .pet-pic {
+  animation: pet-breathe 3s ease-in-out infinite;
+}
+.pet-zzz {
+  position: absolute;
+  left: 40px;
+  top: 4px;
+  animation: pet-zzz 2.4s ease-in-out infinite;
+}
+
+/* Snack: waits at the right end; tapping it sends the creature running over, then it munches. */
+.pet-snack {
+  position: absolute;
+  right: 4px;
+  bottom: 8px;
+}
+.pet-snack img {
+  animation: pet-bob 1.6s ease-in-out infinite;
+}
+.pet-walker.eating-run {
+  transition: left 1.2s ease-in-out;
+}
+.pet-walker.eating-run .pet-pic {
+  animation: pet-step 0.4s ease-in-out infinite;
+}
+.pet-walker.eating-munch .pet-pic {
+  animation: pet-munch 0.5s ease-in-out infinite;
+}
+
+@keyframes pet-shake {
+  0%, 60%, 100% { rotate: 0deg; }
+  66% { rotate: calc(var(--tilt) * -1); }
+  72% { rotate: var(--tilt); }
+  78% { rotate: calc(var(--tilt) * -0.6); }
+  84% { rotate: calc(var(--tilt) * 0.4); }
+  90% { rotate: 0deg; }
+}
+@keyframes pet-walk {
+  0% { left: 8px; transform: scaleX(1); }
+  47% { left: calc(100% - 36px); transform: scaleX(1); }
+  50% { left: calc(100% - 36px); transform: scaleX(-1); }
+  97% { left: 8px; transform: scaleX(-1); }
+  100% { left: 8px; transform: scaleX(1); }
+}
+@keyframes pet-step {
+  0%, 100% { translate: 0 0; rotate: -3deg; }
+  50% { translate: 0 -1px; rotate: 3deg; }
+}
+@keyframes pet-hop {
+  0%, 100% { translate: 0 0; }
+  45% { translate: 0 -6px; }
+}
+@keyframes pet-bob {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -2px; }
+}
+@keyframes pet-swing {
+  0%, 100% { rotate: -14deg; }
+  50% { rotate: 14deg; }
+}
+@keyframes pet-spin {
+  from { rotate: 0deg; }
+  to { rotate: 360deg; }
+}
+@keyframes pet-hover {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -5px; }
+}
+@keyframes pet-float {
+  0%, 100% { translate: 0 0; rotate: -6deg; }
+  50% { translate: 0 -5px; rotate: 6deg; }
+}
+@keyframes pet-wiggle {
+  0%, 100% { rotate: -5deg; }
+  50% { rotate: 5deg; }
+}
+@keyframes pet-peek {
+  0%, 30%, 100% { translate: -7px 0; }
+  50%, 80% { translate: 0 0; }
+}
+@keyframes pet-jump {
+  0% { translate: 0 0; }
+  35% { translate: 0 -9px; }
+  70% { translate: 0 0; }
+  85% { translate: 0 -2px; }
+  100% { translate: 0 0; }
+}
+@keyframes pet-flutter {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 4px; }
+}
+@keyframes pet-heart {
+  0% { opacity: 0; translate: -50% 4px; scale: 0.6; }
+  30% { opacity: 1; }
+  100% { opacity: 0; translate: -50% -10px; scale: 1; }
+}
+@keyframes pet-zzz {
+  0% { opacity: 0; translate: 0 4px; scale: 0.7; }
+  30% { opacity: 1; }
+  100% { opacity: 0; translate: 6px -8px; scale: 1; }
+}
+@keyframes pet-breathe {
+  0%, 100% { scale: 1; }
+  50% { scale: 1.04; }
+}
+@keyframes pet-munch {
+  0%, 100% { rotate: 0deg; }
+  50% { rotate: 6deg; translate: 0 1px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pet *,
+  .pet * img {
+    animation: none !important;
+  }
 }

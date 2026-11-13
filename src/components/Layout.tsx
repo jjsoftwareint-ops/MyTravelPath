@@ -7,6 +7,7 @@ import { BookmarkLink } from './BookmarkButton'
 import ThemeToggle from './ThemeToggle'
 import { stepsBackSkipping } from '../historyTrail'
 import BlogThemePicker from './BlogThemePicker'
+import VisitPet from './VisitPet'
 
 type Props = {
   title: string
@@ -109,6 +110,8 @@ export default function Layout({ title, titleImage, subtitle, backTo: backToProp
         {blogTheme ? <BlogThemePicker /> : <ThemeToggle />}
         {actions}
       </header>
+      {/* The visit pet: an egg that grows on each day the visitor comes back (src/pet.ts). */}
+      <VisitPet />
       <main className="content">{children}</main>
       {/* Same footer on every page so the policy pages are one tap away anywhere. */}
       <footer className="footer">

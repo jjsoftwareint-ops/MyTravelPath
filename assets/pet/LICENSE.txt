@@ -1,0 +1,4 @@
+creature-1.png, creature-2.png (egg, hatching), baby-*.png and grown-*.png: the site owner's own artwork (made with
+ChatGPT, 2026-11-13), cut from four sprite sheets with the owner's permission, background removed, scaled only.
+butterfly.png, heart.png, zzz.png, food-*.png: Noto Emoji by Google, https://github.com/googlefonts/noto-emoji
+(tag v2.047, png/128), Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0
