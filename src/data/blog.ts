@@ -38,6 +38,57 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-14-0011',
+    title: 'The AI-sung song at No. 1 in Korea: "Did you become the adult you dreamed of?"',
+    description:
+      "A song with an AI voice just went to No. 1 on Melon, Korea's biggest music chart. What it's about, who made it, and why people in their 30s and 40s love it.",
+    teaser: 'The voice was made by AI, the words by a person.',
+    icon: 'musical_note',
+    date: '2026-11-14',
+    updated: '2026-11-14',
+    keywords: ['AIMusic', 'KoreanMusic', 'MelonChart', 'Meomuru', 'Suno', 'KoreanBallad', 'LifeInKorea'],
+    body: [
+      {
+        type: 'p',
+        text: "On Friday afternoon, 13 November, a song whose singer doesn't exist went to No. 1 on **Melon**, Korea's biggest music chart. It's called **꿈꾸던 어른이 되었나요? (kkumkkudeon eoreuni doeeonnayo)**, \"Did you become the adult you dreamed of?\", and it's the first song made with AI to top that chart.",
+      },
+      {
+        type: 'video',
+        id: 'GxChUrrY4bc',
+        title: 'Meomuru, "Did you become the adult you dreamed of?", official upload',
+        caption: 'The song, uploaded by the artist. Video: Meomuru on YouTube.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'microphone', text: 'So who is singing?' },
+      {
+        type: 'p',
+        text: 'Nobody, in the usual sense. The artist goes by **머무르 (meomureu)**, "to stay a while", and wrote the lyrics and steered the production. The voice was made with **Suno**, an AI music app, and AI helped with the melody too.',
+      },
+      {
+        type: 'p',
+        text: "It came out in June with no big launch and climbed slowly by word of mouth, until this week it passed the new K-pop idol songs.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'h', icon: 'sparkles', text: 'Why it hits at 35' },
+      {
+        type: 'p',
+        text: "It's a rock ballad about the grown-up you pictured as a kid and the one you actually turned into: busy, worried, a little worn out. Two thirds of its listeners on Melon are in their 30s and 40s.",
+      },
+      {
+        type: 'p',
+        text: "We get it. Most of the chart is idol pop for teenagers, and this one asks the question you ask yourself on a Sunday night before the work week.",
+      },
+      {
+        type: 'p',
+        text: "Could you tell the voice is AI? We doubt we could. Korean music apps don't mark AI songs, so many listeners only found out from the news. Some kept playing it anyway. Others say a machine has no business singing about growing up.",
+      },
+      {
+        type: 'p',
+        text: 'Real singers are joining in. The singer **Kwon In-ha** posted [a cover](https://youtu.be/WR0WOzeAA2E) on YouTube, so you can play the human version right after the AI one and pick your favourite.',
+      },
+    ],
+  },
+  {
     id: '2026-11-13-1755',
     title: 'Seoul Christmas markets 2026: the one with a four-hour queue, and three without',
     description:
