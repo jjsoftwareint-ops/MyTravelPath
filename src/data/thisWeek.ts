@@ -35,10 +35,10 @@ export type ThisWeek = {
 }
 
 export const thisWeek: ThisWeek = {
-  updated: '2026-11-10',
+  updated: '2026-11-13',
   weeks: [
     {
-      range: 'Nov 10th(Tue) ~ 15th(Sun)',
+      range: 'Nov 13th(Fri) ~ 15th(Sun)',
       ends: '2026-11-15',
       events: [
         {
@@ -105,22 +105,6 @@ export const thisWeek: ThisWeek = {
           ],
           href: { label: 'Official page ↗', url: 'https://jejubiennale.org' },
         },
-        {
-          id: 'gwangju-biennale-last-days',
-          photoQuery: '광주비엔날레 2026',
-          ends: '2026-11-15',
-          title: 'Gwangju Biennale: last days',
-          city: 'Gwangju',
-          when: 'Until Sun 15 Nov',
-          where: 'Gwangju Biennale Exhibition Hall',
-          price: 'Ticket prices on the official page',
-          text: 'The 16th edition is titled You Must Change Your Life and looks at change as a sudden break and as a daily practice.',
-          todo: [
-            'See film, sound installations and archive material by about 45 artists from 20 countries, among them Matthew Barney.',
-            'Look for the work that reworks a **Korean shamanic ritual**, made with metal donated by people of Gwangju and South Jeolla.',
-          ],
-          href: { label: 'Official page ↗', url: 'https://gwangjubiennale.org' },
-        },
       ],
     },
     {
@@ -147,7 +131,30 @@ export const thisWeek: ThisWeek = {
           tip: '🚇 **Jamsil Station** (lines 2 and 8).',
           href: { label: 'Official page (Korean) ↗', url: 'https://www.lotteshopping.com/contents/christmas-market' },
           routes: [{ cityId: 'seoul', pathId: 'cherry-blossom-walk', text: 'Seokchon Lake walk, right beside it' }],
-          posts: [{ id: '2026-11-07-0709', text: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026" }],
+          posts: [
+            { id: '2026-11-13-1755', text: 'Seoul Christmas markets 2026: the one with a four-hour queue, and three without' },
+            { id: '2026-11-07-0709', text: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026" },
+          ],
+        },
+        {
+          id: 'namsan-night-walk',
+          photoQuery: '반짝반짝 남산밤길',
+          ends: '2026-11-21',
+          title: 'Namsan night walk',
+          city: 'Seoul',
+          cityId: 'seoul',
+          when: 'Sat 21 Nov · 19:00 to 21:00',
+          where: 'From Namsangol Hanok Village up to the Palgakjeong pavilion on Namsan',
+          price: 'Free, first come first served',
+          text: 'A guided **evening walk up Namsan**, about 3 km in 90 minutes, from the hanok village to the pavilion below N Seoul Tower.',
+          todo: [
+            'Sign up on the spot from 18:00 at Cheonugak in Namsangol Hanok Village: 700 places, no booking.',
+            'Walk the Namsan park road past the Jamdubong photo point to the top, with the city lights below.',
+            'Everyone gets a glow bracelet and a small gift.',
+          ],
+          tip: '🚇 **Chungmuro Station** (lines 3 and 4) for Namsangol Hanok Village.',
+          href: { label: 'Seoul city page (Korean) ↗', url: 'https://mediahub.seoul.go.kr/archives/2019741' },
+          routes: [{ cityId: 'seoul', pathId: 'hanyang-dosung-gil-3-4', text: 'City Wall Trail over Namsan' }],
         },
         {
           id: 'jeju-citrus-expo',
@@ -210,7 +217,29 @@ export const thisWeek: ThisWeek = {
       ],
       tip: '🚇 **Hoehyeon Station** (line 4).',
       routes: [{ cityId: 'seoul', pathId: 'seoul-station-myeongdong', text: 'Seoul Station to Myeong-dong walk' }],
-      posts: [{ id: '2026-11-07-0709', text: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026" }],
+      posts: [
+        { id: '2026-11-07-0709', text: "It's Finally Here!!! Shinsegae Christmas Media Facade 2026" },
+        { id: '2026-11-13-1755', text: 'Seoul Christmas markets 2026: the one with a four-hour queue, and three without' },
+      ],
+    },
+    {
+      id: 'the-hyundai-christmas-village',
+      photoQuery: '더현대 서울 크리스마스 2026 뉴욕',
+      ends: '2026-12-31',
+      title: 'The Hyundai Seoul Christmas Village',
+      city: 'Seoul',
+      cityId: 'seoul',
+      when: 'Daily until 31 Dec',
+      where: 'The Hyundai Seoul, 5th floor, Yeouido',
+      price: 'Free, booking needed',
+      text: 'A **1980s New York street** built inside the department store: red-brick buildings, yellow taxis, a news stand and a chimney that puffs steam.',
+      todo: [
+        'Walk the street and the shops inside the red-brick buildings.',
+        '{red:Very hard to get in.} The first online booking round is full; without one, join the QR waiting list on floors 2 to 4.',
+        'Last year walk-ins waited three to four hours, so go only with time to spare.',
+      ],
+      tip: '🚇 **Yeouido Station** (lines 5 and 9).',
+      posts: [{ id: '2026-11-13-1755', text: 'Seoul Christmas markets 2026: the one with a four-hour queue, and three without' }],
     },
     {
       id: 'gwangalli-drone-show',
