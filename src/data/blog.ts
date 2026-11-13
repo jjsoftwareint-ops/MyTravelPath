@@ -38,6 +38,71 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-13-1755',
+    title: 'Seoul Christmas markets 2026: the one with a four-hour queue, and three without',
+    description:
+      "This December Seoul has a Victorian street in Jamsil, a 1980s New York inside a mall and a market in front of a palace. Which ones are worth your evening.",
+    teaser: 'One of them is a 1980s New York. Inside a mall.',
+    icon: 'christmas_tree',
+    date: '2026-11-13',
+    updated: '2026-11-13',
+    keywords: ['SeoulChristmas', 'ChristmasMarket', 'Gwanghwamun', 'LotteWorldTower', 'TheHyundaiSeoul', 'SeoulInDecember', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "This December, Seoul has a Victorian English street, a 1980s New York inside a department store and a whole Christmas market in front of a palace. One of them makes people queue for four hours. We'd rather spend those four hours on the other three.",
+      },
+      {
+        type: 'img',
+        src: 'seoul-christmas-gwanghwamun.jpg',
+        alt: 'Gwanghwamun Square at night from above, with a lit Christmas tree, market stalls and the palace gate at the end of the avenue',
+        caption: 'Gwanghwamun Square last December, market and tree in the middle, the palace gate at the end.',
+        href: 'https://commons.wikimedia.org/wiki/File:Nightview_of_the_Gwanghwamun_Square_2024.jpg',
+        credit: { author: 'Seoul Tourism Organization', license: 'KOGL Type 1', licenseUrl: 'https://www.kogl.or.kr/info/licenseType1.do' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'hourglass_not_done', text: 'The four-hour one' },
+      {
+        type: 'p',
+        text: "**The Hyundai Seoul** in Yeouido built [New York in the 1980s](https://www.google.com/search?tbm=isch&q=%EB%8D%94%ED%98%84%EB%8C%80%20%EC%84%9C%EC%9A%B8%20%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4%202026%20%EB%89%B4%EC%9A%95) on its fifth floor: thirteen red-brick buildings, yellow taxis, a news stand, and a chimney that really puffs steam. It's the Christmas all over Instagram right now.",
+      },
+      {
+        type: 'p',
+        text: "The catch? The online booking crashed on day one, and last year people without a booking waited three to four hours. So here's the inside, no queue needed:",
+      },
+      {
+        type: 'video',
+        id: 'FkPe4JIjecs',
+        title: 'A 4K walk through The Hyundai Seoul Christmas Village 2026',
+        caption: 'A walk through the 1980s New York street on the fifth floor, in 4K (video: The City TV on YouTube).',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'sparkles', text: "The three we'd actually do" },
+      {
+        type: 'p',
+        text: "🇬🇧 **Lotte Town Christmas Market**, Jamsil. A Victorian English street on the lawn under Korea's tallest tower: red brick, a clock tower, a carousel, carols, and a light show around the mall after dark. **19 November to 3 January**. You book online, and the weekend Fast Passes go first, so pick a weekday.",
+      },
+      {
+        type: 'p',
+        text: "🏯 **Gwanghwamun Market**. Stalls and a giant tree on the square, with the palace gate glowing at the end of the avenue. No ticket, you only pay for what you eat. It's part of the city's winter festival (**4 December to 31 January**); listings put the market itself at **11 December to 10 January**, but the city hasn't confirmed the days yet.",
+      },
+      {
+        type: 'p',
+        text: "🎬 **Shinsegae, Myeong-dong**. The whole front of the department store becomes a Christmas film every evening from 17:00 to midnight, until the end of January. We wrote about it [here](https://koreatravelpath.com/blog/2026-11-07-0709/).",
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'seoul-station-myeongdong',
+        text: 'Our walk from Seoul Station to the Myeong-dong lights',
+      },
+      {
+        type: 'verdict',
+        text: "Our perfect December night: Lotte in the afternoon, Gwanghwamun at dusk, Myeong-dong to finish. Three Christmases, one booking, no four-hour queue. And wear more than you think: Seoul goes below zero after dark.",
+      },
+    ],
+  },
+  {
     id: '2026-11-12-1825',
     title: 'Is a hanok stay worth the price?',
     description:
