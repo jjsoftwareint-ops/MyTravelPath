@@ -38,6 +38,68 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-14-1814',
+    title: 'Kimjang: the weekend Korea makes a whole winter of kimchi',
+    description:
+      "It's kimjang season. Across Korea, families salt cabbages and make a winter's worth of kimchi together. What it is, what you'll see, and where to try it.",
+    teaser: 'Pink rubber gloves, a mountain of cabbage, the whole family on the floor.',
+    icon: 'leafy_green',
+    date: '2026-11-14',
+    updated: '2026-11-14',
+    keywords: ['Kimjang', 'Kimchi', 'KoreanFood', 'KoreaInNovember', 'MuseumKimchikan', 'Insadong', 'KoreanCulture'],
+    body: [
+      {
+        type: 'p',
+        text: "If you're in Korea in late November and a market is stacked high with cabbages, it isn't a sale. It's **김장 (gimjang)**, kimjang, the weekend a family makes its whole winter of kimchi in one go.",
+      },
+      {
+        type: 'img',
+        src: 'kimjang-seoul-plaza.jpg',
+        alt: 'Seen from above, thousands of people in red aprons making kimchi at long yellow tables on Seoul Plaza',
+        caption: "Seoul's kimchi-making and sharing festival on Seoul Plaza: thousands of red aprons, one giant batch for neighbours in need.",
+        href: 'https://commons.wikimedia.org/wiki/File:Seoul_Kimchi_Making_Sharing_Festival_13_(15600628527).jpg',
+        credit: { author: 'Republic of Korea (Korea.net)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'gloves', text: 'What actually happens' },
+      {
+        type: 'p',
+        text: 'The cabbages are cut in half and salted overnight. Next day everyone sits on the floor around a plastic sheet in **pink rubber gloves** and rubs the red paste between every leaf: chilli powder, garlic, radish and [새우젓](https://www.google.com/search?tbm=isch&q=%EC%83%88%EC%9A%B0%EC%A0%93) (saeujeot), tiny salted shrimp.',
+      },
+      {
+        type: 'p',
+        text: 'The finished kimchi goes into jars or, in a lot of homes, a [김치냉장고](https://www.google.com/search?tbm=isch&q=%EA%B9%80%EC%B9%98%EB%83%89%EC%9E%A5%EA%B3%A0) (gimchi naengjanggo), a second fridge just for kimchi. UNESCO lists kimjang as intangible heritage, and we can see why. The point is that everyone turns up.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'img',
+        src: 'kimjang-pink-gloves.jpg',
+        alt: 'Hands in pink rubber gloves rubbing red chilli paste into halved cabbages on a plastic sheet',
+        caption: 'The pink gloves are part of the uniform.',
+        href: 'https://commons.wikimedia.org/wiki/File:%EA%B9%80%EC%B9%98_%EA%B9%80%EC%9E%A5_Making_kimchi_IMG_2919.jpg',
+        credit: { author: 'Anattadairy', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      {
+        type: 'p',
+        text: "This year the cabbages are cheaper than last year, but salted shrimp went up by more than 30%, so the shrimp is this season's big complaint.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'house_with_garden', text: 'Can you join in?' },
+      {
+        type: 'p',
+        text: "Families don't usually invite strangers, but you can make your own whole-cabbage kimchi at **Museum Kimchikan** in Insadong, the kimchi museum. Booking sites sell the class with museum entry for about ₩29,000, and you take your kimchi home. The museum is open 10:00–18:00, {red:closed on Mondays}.",
+      },
+      {
+        type: 'p',
+        text: 'Or just walk through a market this week. The cabbage stacks and the tubs of red paste are the season.',
+      },
+      {
+        type: 'verdict',
+        text: "If a Korean friend says they're doing kimjang this weekend, say yes. You'll go home with a box of kimchi and very red gloves.",
+      },
+    ],
+  },
+  {
     id: '2026-11-14-0011',
     title: 'The AI-sung song at No. 1 in Korea: "Did you become the adult you dreamed of?"',
     description:

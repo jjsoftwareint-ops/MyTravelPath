@@ -31,6 +31,10 @@ export type PageMeta = {
 function postImage(post: NonNullable<ReturnType<typeof findPost>>): string {
   const first = post.body.find((b) => b.type === "img" || b.type === "photo");
   if (first) return `${SITE_URL}/blog/${first.src}`;
+  // A post whose only picture is a video: its YouTube thumbnail beats the default hanok card.
+  for (const b of post.body) {
+    if (b.type === "video") return `https://i.ytimg.com/vi/${b.id}/hqdefault.jpg`;
+  }
   for (const b of post.body) {
     if (b.type !== "route") continue;
     const path = findPath(b.cityId, b.pathId);
