@@ -37,3 +37,7 @@ __pycache__/
 # assets/ is Vite's publicDir, so anything committed here would be published with the site.
 assets/myPhotos/
 raw/
+
+# Social-post photos (Threads needs a public URL, so a chain's photos are pushed with `git add -f`,
+# posted, then removed from the remote again with `git rm --cached`; the local copies stay).
+assets/sns/
