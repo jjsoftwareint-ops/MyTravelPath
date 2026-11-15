@@ -7,6 +7,7 @@ export const CONTACT_EMAIL = "jjsoftwareint@gmail.com";
 export const THREADS_HANDLE = "_mytravelpath";
 export const THREADS_URL = `https://www.threads.com/@${THREADS_HANDLE}`;
 export const INSTAGRAM_URL = "https://www.instagram.com/_mytravelpath/";
+export const FACEBOOK_URL = "https://www.facebook.com/p/Korea-Travel-Path-61596514884939/";
 
 // The site has no backend, so the form composes an e-mail in the visitor's
 // own mail app. Nothing typed here is sent to or stored by this site.

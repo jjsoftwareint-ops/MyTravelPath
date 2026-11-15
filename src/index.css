@@ -910,9 +910,10 @@ a:focus-visible {
   font-size: 13px;
   color: var(--muted);
 }
-/* Instagram and Threads links under the Korea map, just above the footer (home page) */
+/* Instagram, Threads and Facebook links under the Korea map, just above the footer (home page) */
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   margin: 32px 0 0;
@@ -932,6 +933,20 @@ a:focus-visible {
 .social-links svg {
   width: 20px;
   height: 20px;
+}
+@media (max-width: 420px) {
+  .social-links {
+    gap: 8px;
+  }
+  .social-links a {
+    gap: 6px;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+  .social-links svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 .korea-map {
   display: block;
