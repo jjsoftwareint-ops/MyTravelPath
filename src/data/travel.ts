@@ -3220,16 +3220,16 @@ export const cities: City[] = [
         name: 'Abroad in Korea',
         seoTitle: "Korea's German village, Petite France and more",
         seoDescription:
-          'Korean places that feel like somewhere else: European villages, Japanese colonial sites, China Towns and Central Asian districts. 22 places, plus a map of the Sinan chapel trail.',
-        updated: '2026-10-31',
+          'Korean places that feel like somewhere else: European villages, a Swiss theme park, an Alps ice festival, Japanese sites and China Towns. 24 places.',
+        updated: '2026-11-15',
         image: 'abroad.jpg',
         imageCredit: 'Photo: Choi2451 · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1Bbj7tkaIr9_-vF7Y9NRViJcr3pulbGQ',
-        keywords: ['Korea', 'ChinaTown', 'GermanVillage', 'PetiteFrance', 'Gapyeong', 'NijimoriStudio', 'Gunsan', 'Itaewon', 'Sinan', 'Seomtiago', 'ThemedVillages', 'KoreaTravel'],
+        keywords: ['Korea', 'ChinaTown', 'GermanVillage', 'PetiteFrance', 'Gapyeong', 'NijimoriStudio', 'Gunsan', 'Itaewon', 'Sinan', 'Seomtiago', 'ThemedVillages', 'SwissThemePark', 'AlpsVillage', 'Cheongyang', 'KoreaTravel'],
         whyVisit: [
           "**A change of scene without a flight.** German houses by the sea, a Greek-white resort, an Edo-period film village, a Mongolian lane in Seoul.",
           "**Twelve chapels on five islands joined by tidal causeways**, nicknamed Seomtiago after the Camino.",
-          "Twenty-two places in five groups across the country: pick one region.",
+          "Twenty-four places in five groups across the country: pick one region.",
         ],
         story: {
           title: 'Why Korea has a German village',
@@ -3247,16 +3247,26 @@ export const cities: City[] = [
             since: "Checked April 2026.",
             source: 'Korean press reports 2019 to 2023; ferry times from a travel blog citing the operator, April 2026. Confirm with Sinan County and the ferry operator before you go.',
           },
+          {
+            icon: '❄️',
+            title: 'Cheongyang Alps Village: a winter trip',
+            at: 'Cheongyang Alps Village',
+            body: "The ice fountains and sledding run only during the **Chilgapsan Ice Fountain Festival**: it ran **1 January to 22 February** in 2026, and the dates for this winter are not announced yet. Village open daily 09:00–18:00.",
+            since: 'Checked 15 November 2026.',
+            source: 'Naver place page (hours); 2026 dates from a travel guide. Confirm with Cheongyang County before you go.',
+          },
         ],
         guide: {
           intro: [
-            "🌍 **Pick one region at a time**: the two villages at Gapyeong an hour from Seoul, Paju's Provence and Heyri, Gunsan's Japanese houses, or the long-distance Europe down south, each a trip in itself.",
+            "🌍 **Pick one region at a time**: the three villages around Gapyeong an hour from Seoul, Paju's Provence and Heyri, Gunsan's Japanese houses, or the long-distance Europe down south, each a trip in itself.",
             "Some of these are theme villages built for visitors; others are neighbourhoods where people live, so ask before you photograph anyone. The Sinan chapel trail depends on the tide.",
           ],
           route: [
             "[[Gapyeong|가평]], about an hour from Seoul: Petite France and the Italian Village (Pinocchio and Da Vinci), a short walk apart.",
+            "[[Edelweiss Swiss Theme Park|가평 에델바이스 스위스]], a short drive south of them in Seorak-myeon: a hillside built as a small Swiss village, with cheese, chocolate and wine museums and a Santa village. The walk from the entrance to the ticket office is uphill.",
             "[[Paju|파주]], north-west of Seoul: Provence Village and the Heyri Art Village, a few minutes apart.",
             "The long-distance Europe: Namhae German Village, Oedo Botania by boat off Geoje, Asan's Mediterranean Village, Solbeach Samcheok, Jade Garden in Chuncheon, Damyang Meta Provence and Jeju's Swiss Village. Each is a trip of its own.",
+            "[[Cheongyang Alps Village|청양 알프스마을]], at the foot of Chilgapsan, the steep range called the Alps of Chungnam: every winter the village turns into the **Chilgapsan Ice Fountain Festival**, with ice fountains, snow sculptures, an igloo and sledding. Cheonjangho Lake and its suspension bridge are a short ride away.",
             "**Sinan 12 Apostles Pilgrimage Trail** (신안 12사도 순례길): twelve small chapels, each named for an apostle, on five islands in Jeungdo-myeon, joined by paths and tidal causeways. It is nicknamed Seomtiago after the Camino de Santiago.",
             "Getting to the Sinan chapels: drive to **Songgong Port** (about 25 minutes from Mokpo over the Aphae Bridge) and take the ferry. It calls at the **Soak**, **Sogijeom** and **Daegijeom** docks, in that order. Chapel 1 stands at the end of the Daegijeom pier.",
             "Japan in Korea: Hirotsu House and Dongguksa temple in Gunsan, and Nijimori Studio, an Edo-style film-set village in Dongducheon.",
