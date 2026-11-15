@@ -38,6 +38,72 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-15-1720',
+    title: 'Roasted sweet potatoes: the snack Korea cannot stop buying this month',
+    description:
+      'Roasted sweet potato (gun-goguma) is the snack of the Korean winter, and sales are jumping. What it tastes like, what Koreans eat it with, and where to find one.',
+    teaser: 'Chewy skin, a creamy middle and a bowl of cold radish water.',
+    icon: 'roasted_sweet_potato',
+    date: '2026-11-15',
+    updated: '2026-11-15',
+    keywords: ['GunGoguma', 'RoastedSweetPotato', 'KoreanStreetFood', 'KoreanWinter', 'KoreanFood', 'KoreaInNovember', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: 'Walk past a Korean convenience store this month and you may smell it before you see it: a hot, sugary, slightly burnt smell. That is **군고구마 (gun-goguma)**, a roasted sweet potato, and it is the snack of the cold season.',
+      },
+      {
+        type: 'p',
+        text: 'Seven-Eleven says its roasted sweet potato sales were up 248% in the two weeks to 3 November, compared with the month before. Its delivery sales were nine times last year\'s.',
+      },
+      {
+        type: 'img',
+        src: 'gungoguma-drum-oven.jpg',
+        alt: 'Sweet potatoes on a metal tray being pushed into a rusty drum roaster on a street',
+        caption: 'The classic street roaster: a drum with the potatoes inside.',
+        href: 'https://commons.wikimedia.org/wiki/File:Gungoguma_drum_can_(sweet_potato_roaster)_2.jpg',
+        credit: { author: '국립국어원 (National Institute of Korean Language)', license: 'CC BY-SA 2.0 KR', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/kr/' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'fire', text: 'Skin on, straight from the drum' },
+      {
+        type: 'p',
+        text: 'The potato is roasted whole over a fire, skin on, until the outside goes chewy and the inside turns soft, creamy and very sweet. You eat it hot, and you blow on it before the first bite.',
+      },
+      {
+        type: 'img',
+        src: 'gungoguma-cut-open.jpg',
+        alt: 'Roasted sweet potatoes cut open on a flowery plate, showing bright yellow flesh',
+        caption: 'Cut open: the bright yellow middle.',
+        href: 'https://commons.wikimedia.org/wiki/File:Gun-goguma_3.jpg',
+        credit: { author: '촉촉지구', license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/' },
+      },
+      {
+        type: 'p',
+        text: 'You will hear about two kinds. **밤고구마 (bam-goguma)**, the chestnut sweet potato, is drier and firmer. **호박고구마 (hobak-goguma)**, the pumpkin sweet potato, is yellow, moist and softer.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'p',
+        text: 'The classic partner is cold [동치미](https://www.google.com/search?tbm=isch&q=%EB%8F%99%EC%B9%98%EB%AF%B8) (dongchimi), radish-water kimchi. A hot sweet bite, then a sip of icy, sharp broth. We think it is the best snack pairing in Korea.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'convenience_store', text: 'Where to find one' },
+      {
+        type: 'p',
+        text: 'The old street carts are getting rarer. A cart costs about ₩300,000 to buy, and vendors say the margin is thin. So more people now buy from convenience stores and department stores, and the big convenience store chains all sell roasted sweet potatoes.',
+      },
+      {
+        type: 'p',
+        text: 'Look for the smoke first. A cart sold them for ₩2,000–3,000 in central Seoul in 2021, and sweet potatoes have got dearer since.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: cheap, warm and filling. Buy one on a cold evening and eat it outside, with cold fingers.',
+      },
+    ],
+  },
+  {
     id: '2026-11-14-1814',
     title: 'Kimjang: the weekend Korea makes a whole winter of kimchi',
     description:
