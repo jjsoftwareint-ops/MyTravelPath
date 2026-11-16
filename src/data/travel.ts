@@ -295,8 +295,8 @@ export const cities: City[] = [
       {
         id: 'hanok-villages',
         name: 'Hanok Villages',
-        seoTitle: 'Hanok Village walk, Seoul: Bukchon, Ikseon-dong',
-        seoDescription: 'A 5.1 km hanok village walk in Seoul: Bukchon, Ikseon-dong and Insadong on a free map, with Namsangol Hanok Village, local food, toilets and visiting hours.',
+        seoTitle: 'Hanok villages in Seoul: Bukchon hours and walking map',
+        seoDescription: 'Bukchon\'s busiest lane is open to visitors only 10:00–17:00. A 5.1 km walk through Seoul\'s hanok villages: Bukchon, Ikseon-dong, Insadong and Namsangol.',
         duration: '2h',
         updated: '2026-11-08',
         tags: [{ icon: 'village', label: 'Traditional' }],

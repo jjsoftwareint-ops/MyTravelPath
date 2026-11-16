@@ -3197,13 +3197,13 @@ export const posts: Post[] = [
   },
   {
     id: 'which-hanok-village-are-you',
-    title: 'Seoul has 4 hanok villages',
+    title: 'Which hanok village in Seoul? Bukchon, Ikseon-dong, Insadong or Namsangol',
     description:
-      'Bukchon, Ikseon-dong, Insadong and Namsangol all show off traditional hanok houses, but each has its own personality. Here is how to pick, and which one lets you step inside.',
+      'Bukchon, Ikseon-dong, Insadong or Namsangol? Each hanok village in Seoul has its own mood. How to pick, and the one where you can walk inside.',
     teaser: 'Which one is your best pick?',
     icon: 'house_with_garden',
     date: '2026-10-24',
-    updated: '2026-10-24',
+    updated: '2026-11-16',
     keywords: ['KoreaTravel', 'Hanok', 'Bukchon', 'Ikseondong', 'Insadong', 'Seoul'],
     body: [
       {
