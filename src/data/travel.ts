@@ -78,7 +78,7 @@ export const cities: City[] = [
     name: 'Seoul',
     seoTitle: 'Seoul walking trails: palaces, hanok lanes, hikes',
     seoDescription:
-      'Seoul walking maps: the five royal palaces, Bukchon hanok lanes, the city wall, Buam-dong, Seoullo 7017 to Myeong-dong, Hongdae, Seongsu, Gangnam and hikes.',
+      'Seoul walking maps: the five royal palaces, Bukchon hanok lanes, the city wall, Buam-dong, Myeong-dong, Hongdae, Euljiro at night, Seongsu, Gangnam and hikes.',
     intro: [
       "**Korea's capital** for more than 600 years, since the Joseon dynasty made it its seat in 1394. About 9 million people live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
       "The **Han River** splits it in two: palaces, hanok lanes and the old fortress wall on the north bank, towers and Gangnam on the south. Four inner mountains, **Bugaksan, Inwangsan, Naksan and Namsan**, ring the old city, and the subway reaches almost everywhere.",
@@ -223,6 +223,70 @@ export const cities: City[] = [
             "🍜 Dinner in the market: Thai on the second floor, herbal roast chicken and neon American-Chinese, with kebabs and gopchang a minute away; the pink pins on the map have the places. A rooftop café by the market is where to wait out a queue and catch the sunset.",
             "👟 The lanes are steep and some stairs are unlit; wear proper shoes. The village bus shares the narrow road, so step aside when it comes.",
             "📍 The lit wall path continues up Namsan from Baekbeom Square.",
+          ],
+        },
+      },
+      {
+        id: 'euljiro-after-dark',
+        name: 'Euljiro after dark',
+        seoTitle: 'Euljiro night walk: Hipjiro bars and Nogari Alley',
+        seoDescription:
+          'A 3.7 km evening walk in Euljiro, Seoul: the old lighting shops, a neon lane, the Hipjiro printing alleys and beer on plastic stools in Nogari Alley.',
+        duration: '2.5h',
+        updated: '2026-11-15',
+        tags: [{ icon: 'moon', label: 'Evening walk' }],
+        image: 'euljiro.jpg',
+        imageCredit: 'Photo: Seoul Tourism Organization · KOGL 1',
+        whyVisit: [
+          "By day Euljiro is **workshops, printers and lighting shops**. When the shutters come down, bars and cafés open up the stairs behind old iron doors, often with no sign at all.",
+          "On the way, the old **lighting shops** glow as it gets dark, and a narrow **neon lane** is the photo spot of the evening.",
+          "It ends with a cold beer on **plastic stools in Nogari Alley**, the most Seoul way to finish an evening.",
+          "Under four flat kilometres, two to three hours with a drink.",
+        ],
+        story: {
+          title: 'From workshops to Hipjiro',
+          text: [
+            "After the Korean War, building-supply trades settled along Euljiro, and the **lighting shops** followed in the 1960s. For decades this was the centre of Korea's lighting business, and about 200 shops are still here, many of them more than 30 years old.",
+            "Cheap imports and online shopping emptied many of the workshops. Young owners took the upper floors for the low rents, kept the old fronts, and the area got a nickname: **Hipjiro**, hip plus Euljiro.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🕕',
+            title: 'Start before the lighting shops close',
+            at: 'lighting shop street',
+            body: "The **lighting shops** close at **18:00–18:30** (Saturday 17:30) and are {red:closed on Sundays}. On a Sunday, start at the neon lane.",
+            since: 'Checked 15 November 2026.',
+            source: 'Naver Map (lighting shop hours), checked 15 November 2026. Hours differ by shop.',
+          },
+          {
+            icon: '🏗️',
+            title: 'Sewoon Plaza is coming down',
+            body: "Seoul plans to take down the **Sewoon Plaza** arcades and their raised walkway in stages from 2026 to make a park, so this walk stays at street level. Expect building work and fenced-off corners near the arcades.",
+            since: 'Checked 15 November 2026.',
+            source: 'Seoul Metropolitan Government fact briefing (Mediahub) and Dailian, 2025: park plan, first stage at Sampung Arcade targeted for the first half of 2026. Progress not confirmed.',
+          },
+        ],
+        mapUrl: '',
+        keywords: ['Seoul', 'Euljiro', 'Hipjiro', 'NogariAlley', 'EuljiroLighting', 'NightWalk', 'SeoulBars', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌆 Start at **Euljiro 4-ga** around half past five on a weekday or Saturday, while the lighting shops are still lit, then walk west into the alleys as it gets dark. You finish after Nogari Alley in the narrow alleys by exit 1 of Euljiro 3-ga Station.",
+            "It's 3.7 km and flat. Most bars and cafés are on the second to fourth floors: look up for the lights, and don't be shy about climbing an unmarked staircase.",
+          ],
+          route: [
+            "[[The lighting shop street|서울 을지로 조명거리]] on Changgyeonggung-ro and along Euljiro: shop fronts full of lamps, at their best at dusk.",
+            "[[Golbaengi Alley|서울 을지로 골뱅이골목]] on Supyo-ro: a short row of old pubs serving golbaengi, spicy sea snails with thin noodles.",
+            "[[The neon lane|서울 중구 수표로 48]] from Supyo-ro to the Hipjiro alley: a narrow passage lined with neon signs on both sides, the photo spot of the walk just after dark.",
+            "[[The Hipjiro alley|서울 을지로 힙지로 골목]] south of Euljiro 3-ga: the old printing alley, Korea's largest printing district, where many shops kept their old signs above new bars, cafés and galleries. It runs down Euljiro 12-gil and on towards Toegye-ro, where it gets quieter, with old eateries.",
+            "[[The Chungmuro side|서울 충무로 골목]], once the heart of Korean cinema: hidden cafés and restaurants in the back lanes.",
+            "[[Nogari Alley|서울 을지로 노가리골목]]: plastic stools fill the lane in the evening, with draft beer and nogari, small dried pollock grilled and dipped in sauce. The shop shutters here were painted as the **Euljiro Shutter Gallery**, which you see once the shops close.",
+            "[[The alleys by exit 1|서울 을지로3가역 1번출구]] to finish: very narrow lanes with soup houses over 50 years old and a café hidden at the end of a passage.",
+          ],
+          tips: [
+            "🚇 Start at **Euljiro 4-ga Station** (lines 2 and 5) and finish at **Euljiro 3-ga Station** (lines 2 and 3), one stop apart.",
+            "🍻 Food and drinks: the pink pins on the map are rated 4.0 or more on Kakao Map, from a chicken soup set served since 1968 to ox bone soup, tacos and craft beer.",
+            "💵 Bring some cash for Nogari Alley: several places there take no cards.",
           ],
         },
       },
@@ -3285,18 +3349,18 @@ export const cities: City[] = [
       {
         id: 'bts-army-tour',
         name: 'BTS Army Tour',
-        seoTitle: 'BTS filming locations in Korea: 34 places on one map',
+        seoTitle: 'BTS filming locations in Korea: 35 places on one map',
         seoDescription:
           'BTS pilgrimage map: the Spring Day station, the You Never Walk Alone bus stop, Butter beach, Daechwita, the Tonight Show palace stage, Yujeong Sikdang and the Busan and Daegu murals, with Naver links.',
-        updated: '2026-10-31',
+        updated: '2026-11-15',
         image: 'bts.jpg',
         imageCredit: 'Photo: Real SLOW TV · CC BY 3.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1iNNOEVkwLmYVLl9vaZSpOUs1iMUe1pc',
-        keywords: ['Korea', 'BTS', 'ARMY', 'BTSFilmingLocations', 'SpringDay', 'IryeongStation', 'Jumunjin', 'Butter', 'Daechwita', 'Gamcheon', 'KoreaTravel'],
+        keywords: ['Korea', 'BTS', 'ARMY', 'BTSFilmingLocations', 'SpringDay', 'IryeongStation', 'Jumunjin', 'Butter', 'Daechwita', 'LouisVuitton', 'Bucheon', 'Gamcheon', 'KoreaTravel'],
         whyVisit: [
           "**Stand where the video was shot.** The Spring Day platform is a working station, the Butter parasols are still up on the beach, and the trainee-days diner still grills pork.",
           "The palace stage from the Tonight Show, and the members painted on the walls of their hometown streets.",
-          "Thirty-four places across the country, and **every one is tied to a song, a show or a member**.",
+          "Thirty-five places across the country, and **every one is tied to a song, a show or a member**.",
         ],
         story: {
           title: 'The pilgrimage the label never planned',
@@ -3309,7 +3373,7 @@ export const cities: City[] = [
           {
             icon: '🎬',
             title: 'Which places are confirmed, and which are fan lore',
-            body: "The label does not confirm locations. Press-confirmed on this map: **Hyangho Beach, Maengbang Beach, Iryeong Station, Gyeongbokgung, World Cup Bridge, Sungnyemun, the Daegu and Busan murals**. Pins marked \"reported by fan tour lists\" (Achasan, the Oil Tank park, Nodeul Island, Euljiro, Ueumdo, Hwarang Hill and others) rest on fan research only.",
+            body: "The label does not confirm locations. Press-confirmed on this map: **Hyangho Beach, Maengbang Beach, Iryeong Station, Gyeongbokgung, World Cup Bridge, Sungnyemun, Bucheon Art Bunker B39, the Daegu and Busan murals**. Pins marked \"reported by fan tour lists\" (Achasan, the Oil Tank park, Nodeul Island, Euljiro, Ueumdo, Hwarang Hill and others) rest on fan research only.",
             since: "Checked 30 October 2026.",
             source: 'Checked against press reports, 30 October 2026.',
           },
@@ -3345,7 +3409,7 @@ export const cities: City[] = [
           route: [
             "Gangwon: the BTS bus stop at Hyangho Beach in Jumunjin (You Never Walk Alone cover; the Spring Day jacket was shot on the breakwater nearby), Maengbang Beach in Samcheok (Butter), Gimyujeong Station as the Chuncheon stop, and Phoenix Pyeongchang, where In the SOOP 2 was filmed and the house was opened to visitors in 2022.",
             "Seoul: Gyeongbokgung (IDOL in front of Geunjeongjeon and Mikrokosmos at Gyeonghoeru for the Tonight Show, September 2020), World Cup Bridge (Dynamite), Sungnyemun (Permission to Dance for Global Citizen Live, 2021), the National Museum (Dear Class of 2020), Yeouido Hangang Park (BTS Festa 2023), HYBE headquarters, and the trainee years in Nonhyeon-dong: Hakdong Park and Yujeong Sikdang.",
-            "Gyeonggi: Iryeong Station in Yangju (Spring Day), Seohuri Forest in Yangpyeong (2019 Season's Greetings), Yongin Daejanggeum Park (Daechwita, Agust D), Jichuk depot (Love Yourself: Her, view from outside) and Ueumdo in Hwaseong.",
+            "Gyeonggi: Iryeong Station in Yangju (Spring Day), Seohuri Forest in Yangpyeong (2019 Season's Greetings), Yongin Daejanggeum Park (Daechwita, Agust D), Jichuk depot (Love Yourself: Her, view from outside), Ueumdo in Hwaseong and [[Bucheon Art Bunker B39|부천아트벙커B39]], the old incinerator where BTS appeared in **Louis Vuitton's men's show** in July 2021, their first as the house's ambassadors.",
             "Chungcheong and Jeolla: Awon hanok in Wanju (2019 Summer Package), Jecheon airfield (Epilogue: Young Forever), the Saemangeum Seawall (Save ME), and RM's Damyang walk along the Metasequoia Road and Gwanbangjerim.",
             "Gyeongsang: Gamcheon Culture Village with the Jimin and Jungkook mural, Busan Citizens Park and its V road, the V mural street at Daeseong Elementary in Daegu and the Suga lanes by Myeongdeok Station, Gyeongju's Hwarang Hill and Cheomseongdae from RM's trip, and Gyeongjeong Port in Yeongdeok (HYYH prologue).",
           ],
