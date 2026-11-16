@@ -8,6 +8,7 @@ import InstallButton from '../components/InstallButton'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
 import RichText from '../components/RichText'
+import SajuToday from '../components/SajuToday'
 import ShareLink from '../components/ShareLink'
 import { findPost, neighbours, type Block } from '../data/blog'
 import { formatDate } from '../dates'
@@ -174,6 +175,8 @@ function renderBlock(
       )
     case 'ad':
       return <AdSlot key={i} slot={b.slot} />
+    case 'saju':
+      return <SajuToday key={i} />
   }
 }
 

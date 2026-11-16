@@ -23,6 +23,7 @@ export type Block =
   | { type: 'video'; id: string; title: string; caption: string } // YouTube player; id = the part after youtu.be/ (no ?si= tracking)
   | { type: 'route'; cityId: string; pathId: string; text: string } // link to a walking route page
   | { type: 'ad'; slot: 'inArticle' } // a manual AdSense slot, max two per post (see AdSlot.tsx)
+  | { type: 'saju' } // the for-fun "Your saju for today" box (components/SajuToday.tsx)
 
 export type Post = {
   id: string
@@ -37,6 +38,73 @@ export type Post = {
 }
 
 export const posts: Post[] = [
+  {
+    id: '2026-11-16-1634',
+    title: 'Saju cafés in Seoul: your future, read from the hour you were born',
+    description:
+      'Saju cafés in Hongdae and Jongno read your fortune from your birth date and hour. What a reading is like, the couples question, and the robot that draws your face.',
+    teaser: 'Bring your birth hour. And your crush\'s.',
+    icon: 'crystal_ball',
+    date: '2026-11-16',
+    updated: '2026-11-16',
+    keywords: ['Saju', 'SajuCafe', 'KoreanFortuneTelling', 'Hongdae', 'Jongno', 'SeoulCafe', 'KoreanCulture', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: 'Before a new job, a wedding or a new year, many Koreans go and have their **사주 (saju)** read. Saju means "four pillars": the year, month, day and hour you were born. A reader turns them into eight characters, your **팔자 (palja)**, and reads your life from those.',
+      },
+      {
+        type: 'p',
+        text: 'It is in everyday speech, too. When someone has an easy life, Koreans say **팔자 좋다 (palja jota)**: their eight characters are good. Surveys say about four in ten Korean adults have paid for a reading at least once.',
+      },
+      {
+        type: 'img',
+        src: 'saju-tents-night.jpg',
+        alt: 'A row of lit fortune-telling tents on a Seoul pavement at night, signs reading saju, gunghap and tarot',
+        caption: 'Street tents at night: 사주 (saju), 궁합 (gunghap) and 타로 (tarot) on every sign.',
+        href: 'https://www.flickr.com/photos/9190330@N06/6319787850',
+        credit: { author: 'theaucitron', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      { type: 'saju' },
+      { type: 'space' },
+      { type: 'h', icon: 'hot_beverage', text: 'Your future, with coffee' },
+      {
+        type: 'p',
+        text: 'The readings have moved into cafés. **Hongdae** has a whole [타로 거리](https://www.google.com/search?tbm=isch&q=%ED%99%8D%EB%8C%80%20%ED%83%80%EB%A1%9C%EA%B1%B0%EB%A6%AC) (taro geori), tarot street, lined with small saju and tarot cafés, and **Jongno** and Insadong have their own.',
+      },
+      {
+        type: 'img',
+        src: 'tarot-saju-cafe.jpg',
+        alt: 'People seated on stools inside a small glass-fronted tarot and saju café, seen from the street',
+        caption: 'A small tarot and saju café: you sit down, give your birth date and listen.',
+        href: 'https://www.flickr.com/photos/69047098@N00/4615098387',
+        credit: { author: 'Jessica Gardner', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: 'You give your birth date and, if you know it, the hour. A reading takes half an hour to an hour. Tarot is the cheaper choice; a saju reading costs more, often tens of thousands of won. Prices are not fixed anywhere, so ask before you sit down.',
+      },
+      {
+        type: 'p',
+        text: 'The favourite question is **궁합 (gunghap)**: how well two people match. Couples come in together, and some people check a blind date\'s birth date before they even meet. Look for an "English OK" sign on the door.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'robot', text: 'The robot will see you now' },
+      {
+        type: 'p',
+        text: 'The newest readers are machines. On Hongdae\'s tarot street, AI kiosks draw your cards and print the reading on a slip for about ₩3,000 to ₩5,000. Their owners say foreign visitors like them because there is no language to struggle with.',
+      },
+      {
+        type: 'p',
+        text: 'A café in Jongno goes further. An AI shaman reads your saju for ₩7,000 and prints you a lucky charm card. Then a [robot](https://www.google.com/search?tbm=isch&q=AI%20%EA%B4%80%EC%83%81%20%EB%A1%9C%EB%B4%87) looks you in the eye, reads your face, which Koreans call **관상 (gwansang)**, and draws your portrait while it talks, for ₩8,000. There is a queue at weekends.',
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: don\'t plan your life on it. But a reading with a friend, a printed charm and a robot portrait is a very Korean hour, and a better souvenir than another keyring.',
+      },
+    ],
+  },
   {
     id: '2026-11-15-1720',
     title: 'Roasted sweet potatoes: the snack Korea cannot stop buying this month',

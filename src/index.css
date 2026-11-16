@@ -2970,3 +2970,70 @@ button.cta {
     animation: none !important;
   }
 }
+
+/* "Your saju for today" box in the saju café post (SajuToday.tsx) */
+.post-body .saju-box {
+  margin: 8px 0 28px;
+  padding: 18px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  background: var(--pill);
+}
+.post-body .saju-box h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 6px;
+  font-size: 21px;
+}
+.post-body .saju-box p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.post-body .saju-hint,
+.post-body .saju-note {
+  color: var(--muted);
+  font-size: 14px !important;
+}
+.saju-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+.saju-form input {
+  flex: 1 1 160px;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--paper-line);
+  border-radius: 10px;
+  background: var(--paper);
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+}
+.saju-form button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.saju-form button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.post-body .saju-result {
+  margin: 4px 0 10px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--paper-line);
+}
+.post-body .saju-star {
+  font-size: 18px !important;
+  font-weight: 600;
+}
