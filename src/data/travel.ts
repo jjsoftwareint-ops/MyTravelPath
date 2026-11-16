@@ -1362,9 +1362,9 @@ export const cities: City[] = [
         name: 'Culture Villages and Hotspots',
         seoTitle: 'Busan culture villages and Gwangalli night walk',
         seoDescription:
-          "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, Gamcheon and Huinnyeoul villages, Nampo-dong markets, Haedong Yonggungsa, Beomeosa, the Dongbaek Island night views and the Songdo cloud bridge.",
+          "Busan's must-sees on one map: the Gwangalli night walk under the lit bridge, the Dadaepo sunset, Gamcheon and Huinnyeoul villages, Nampo-dong markets, Haedong Yonggungsa, Beomeosa, the Dongbaek Island night views and the Songdo cloud bridge.",
         duration: '2h walk',
-        updated: '2026-11-10',
+        updated: '2026-11-16',
         tags: [{ icon: 'moon', label: 'Night walk' }, { icon: 'hot', label: 'Hot place' }],
         whyVisit: [
           "A long beach with **a bridge lit in colour across the whole bay**, chicken and beer on the sand, and a fish market where you buy dinner downstairs and eat it on the steps.",
@@ -1381,7 +1381,7 @@ export const cities: City[] = [
         image: 'gamcheon.jpg',
         imageCredit: 'Photo: Basile Morin · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=11Nm3BTkYHgR9W5t2oMYbhGo-tN8Tg0k',
-        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'NightMarket', 'BusanChinatown', 'DongbaekIsland', 'NurimaruAPECHouse', 'TheBay101', 'Beomeosa', 'SongdoCloudBridge', 'Seokbulsa', 'Orangdae', 'JukseongChurch', 'KoreaTravel'],
+        keywords: ['Busan', 'Gwangalli', 'GwanganBridge', 'DroneShow', 'Jagalchi', 'BIFFSquare', 'GukjeMarket', 'Gamcheon', 'Huinnyeoul', 'Yonggungsa', 'Dadaepo', 'DadaepoSunset', 'NightMarket', 'BusanChinatown', 'DongbaekIsland', 'NurimaruAPECHouse', 'TheBay101', 'Beomeosa', 'SongdoCloudBridge', 'Seokbulsa', 'Orangdae', 'JukseongChurch', 'KoreaTravel'],
         notices: [
           {
             icon: '🌃',
@@ -1390,6 +1390,14 @@ export const cities: City[] = [
             body: "The night market at **Hwamyeong Eco Park** is seasonal. In 2026 it ran **10–14 June** and **26 September to 18 October**, Thursday to Saturday 17:00–22:00 and Sunday 16:00–21:00. {red:Both 2026 seasons are over} and no new dates are announced. Check [Visit Busan](https://www.visitbusan.net/v/7DND) or Instagram @starrynightbusan.",
             since: "Checked 25 October 2026.",
             source: 'Visit Busan event page and Busan city press releases. Checked 25 October 2026.',
+          },
+          {
+            icon: '⛲',
+            title: 'Dadaepo fountain show: 2026 season has ended',
+            at: 'Dadaepo',
+            body: "The **Dadaepo Fountain of Dreams** music-and-light show runs in season only. In 2026 it ran **24 April to 30 September**, Tuesday to Friday at 20:00, weekends and holidays at 20:00 and 21:00 (19:30 and 20:30 in September), {red:no shows on Mondays}. {red:The 2026 season is over}: it stopped in September this year because of building work, and 2027 dates are not announced yet. The sunset over the beach is there all year.",
+            since: 'Checked 16 November 2026.',
+            source: 'Busan city 2026 fountain schedule (busan.go.kr). Checked 16 November 2026.',
           },
           {
             icon: '🚁',
@@ -1415,12 +1423,13 @@ export const cities: City[] = [
             "[[Gamcheon Culture Village|부산 감천문화마을]], bus 1-1, 2 or 2-2 from Toseong Station exit 6: pastel houses stacked down a steep valley, painted by a public art project that began in 2009. Buy the stamp map at the information centre and follow the fish signs.",
             "[[Haedong Yonggungsa|부산 해동용궁사]], bus 181 from Haeundae Station, about 40 minutes: 108 steps down to the temple on the rocks. By its own history the temple dates to 1376, burned in the Imjin War, was rebuilt in the 1930s and took its present name in 1974.",
             "[[Dongbaek Island|부산 동백섬]], Haeundae Station exit 3 or 5: a boardwalk loop around the camellia-covered headland, past the mermaid statue to Nurimaru APEC House on the southern tip, built for the 2005 APEC summit and shaped like a traditional pavilion.",
+            "[[Dadaepo Beach|부산 다대포해수욕장]], Dadaepo Beach Station, the last stop of line 1: a wide, shallow beach facing west, Busan's **sunset beach**. At low tide the wet sand mirrors the sky. In season the Fountain of Dreams plays on the square after dark (see the notice above).",
             "One more stop sits away from the rest: the Starry Sea Busan Night Market at Hwamyeong Eco Park in the north, which only opens in season (see the notice above).",
             "Further afield, five more places for a day with a car or a longer metro ride: **Beomeosa**, one of Korea's great mountain temples, founded in 678 on the slopes of Geumjeongsan, with a stone-pillared gate and pagoda that are both national Treasures; the Songdo cloud bridge; the cliff shrine at Seokbulsa; and Orangdae and Jukseong church in Gijang.",
           ],
           tips: [
             "⏰ The drone show is on **Saturday night**, at 20:00 or 19:00 by season, with the bridge lights on the hour after it. Weeknights are calmer and the fish market cheaper. Dongbaek Island and The Bay 101 are their own after-dark stop, any night.",
-            "🚇 Gwangan Station (line 2) for the walk; Jagalchi and Nampo stations (line 1) for the markets; Toseong Station (line 1) for the Gamcheon bus; Haeundae Station (line 2) for the Yonggungsa bus and for Dongbaek Island.",
+            "🚇 Gwangan Station (line 2) for the walk; Jagalchi and Nampo stations (line 1) for the markets; Toseong Station (line 1) for the Gamcheon bus; Dadaepo Beach Station (line 1) for the sunset; Haeundae Station (line 2) for the Yonggungsa bus and for Dongbaek Island.",
             "🍜 The fish-market system: buy downstairs, then a table fee upstairs covers side dishes and soup; take-away to the park is free. At BIFF Square the seed hotteok queue moves fast.",
             "🍲 Pork gukbap (rice soup) is Busan's classic bowl: the pink pins near Busan Station and in Seomyeon are one well-known gukbap house.",
             "🔗 Korea's oldest China Town is in Incheon, an hour from Seoul, with its own walk on this site.",
