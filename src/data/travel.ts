@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car' | 'surf' | 'railbike' | 'dmz' | 'art'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car' | 'surf' | 'railbike' | 'dmz' | 'art' | 'lantern' | 'beer'
 export type Tag = string | { icon: TagIconName; label: string }
 
 // Longer text for the detail page: what the walk is, the stages in order and
@@ -231,10 +231,10 @@ export const cities: City[] = [
         name: 'Euljiro after dark',
         seoTitle: 'Euljiro night walk: Hipjiro bars and Nogari Alley',
         seoDescription:
-          'A 3.7 km evening walk in Euljiro, Seoul: the old lighting shops, a neon lane, the Hipjiro printing alleys and beer on plastic stools in Nogari Alley.',
+          'A 3.6 km evening walk in Euljiro, Seoul: the old lighting shops, a neon lane, the Hipjiro printing alleys and beer on plastic stools in Nogari Alley.',
         duration: '2.5h',
-        updated: '2026-11-15',
-        tags: [{ icon: 'moon', label: 'Evening walk' }],
+        updated: '2026-11-16',
+        tags: [{ icon: 'lantern', label: 'Night market' }, { icon: 'beer', label: 'Pub' }],
         image: 'euljiro.jpg',
         imageCredit: 'Photo: Seoul Tourism Organization · KOGL 1',
         whyVisit: [
@@ -267,12 +267,13 @@ export const cities: City[] = [
             source: 'Seoul Metropolitan Government fact briefing (Mediahub) and Dailian, 2025: park plan, first stage at Sampung Arcade targeted for the first half of 2026. Progress not confirmed.',
           },
         ],
-        mapUrl: '',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1xo2EGhtRX3otJwlRLIsNn3H85iOpR6U',
         keywords: ['Seoul', 'Euljiro', 'Hipjiro', 'NogariAlley', 'EuljiroLighting', 'NightWalk', 'SeoulBars', 'KoreaTravel'],
         guide: {
           intro: [
             "🌆 Start at **Euljiro 4-ga** around half past five on a weekday or Saturday, while the lighting shops are still lit, then walk west into the alleys as it gets dark. You finish after Nogari Alley in the narrow alleys by exit 1 of Euljiro 3-ga Station.",
-            "It's 3.7 km and flat. Most bars and cafés are on the second to fourth floors: look up for the lights, and don't be shy about climbing an unmarked staircase.",
+            "It's 3.6 km and flat. Most bars and cafés are on the second to fourth floors: look up for the lights, and don't be shy about climbing an unmarked staircase.",
+            "🔦 The line on the map is only our way through. Euljiro is a maze of tiny alleys, and the best finds are often one turn off it: a lit staircase, a sign with no name, a print shop still working late. **Wander into the alleys around the line** whenever one looks interesting; the map will bring you back.",
           ],
           route: [
             "[[The lighting shop street|서울 을지로 조명거리]] on Changgyeonggung-ro and along Euljiro: shop fronts full of lamps, at their best at dusk.",
@@ -285,6 +286,7 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 Start at **Euljiro 4-ga Station** (lines 2 and 5) and finish at **Euljiro 3-ga Station** (lines 2 and 3), one stop apart.",
+            "🥟 Hungry before you start? **Gwangjang Market** is a few minutes' walk north of Euljiro 4-ga.",
             "🍻 Food and drinks: the pink pins on the map are rated 4.0 or more on Kakao Map, from a chicken soup set served since 1968 to ox bone soup, tacos and craft beer.",
             "💵 Bring some cash for Nogari Alley: several places there take no cards.",
           ],

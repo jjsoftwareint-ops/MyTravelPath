@@ -361,6 +361,14 @@ a:focus-visible {
   background: light-dark(#ede9fe, #4c1d95);
   color: light-dark(#6d28d9, #ddd6fe);
 }
+.pill.tag-lantern {
+  background: light-dark(#e0e7ff, #312e81);
+  color: light-dark(#3730a3, #c7d2fe);
+}
+.pill.tag-beer {
+  background: light-dark(#fef9c3, #713f12);
+  color: light-dark(#a16207, #fef08a);
+}
 .tag-icon {
   width: 13px;
   height: 13px;

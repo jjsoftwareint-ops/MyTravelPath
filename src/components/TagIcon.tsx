@@ -1,6 +1,6 @@
 import { FaCar } from 'react-icons/fa'
-import { FaBicycle, FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
-import { GiBarbedWire, GiHiking, GiSunset, GiVillage } from 'react-icons/gi'
+import { FaBeerMugEmpty, FaBicycle, FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
+import { GiBarbedWire, GiHiking, GiPaperLantern, GiSunset, GiVillage } from 'react-icons/gi'
 import { LuFlower, LuPalette, LuUmbrella } from 'react-icons/lu'
 import { MdSurfing } from 'react-icons/md'
 import type { TagIconName } from '../data/travel'
@@ -35,5 +35,9 @@ export default function TagIcon({ name }: { name: TagIconName }) {
       return <GiBarbedWire className="tag-icon" aria-hidden="true" />
     case 'art':
       return <LuPalette className="tag-icon" aria-hidden="true" />
+    case 'lantern':
+      return <GiPaperLantern className="tag-icon" aria-hidden="true" />
+    case 'beer':
+      return <FaBeerMugEmpty className="tag-icon" aria-hidden="true" />
   }
 }
