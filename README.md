@@ -112,6 +112,9 @@ All allow free use; the credit is given in every case.
 - Cherry Blossom walk banners (Seoul and Busan): *Cherry Blossom in Yeouido Park - panoramio (1)*, Alexey
   Komarov, CC BY 3.0.
   https://commons.wikimedia.org/wiki/File:Cherry_Blossom_in_Yeouido_Park_-_panoramio_(1).jpg
+- Busan Coast and Fortress Trekking path banner: *Busan | Songdo Seaside Trail* (the walkways on the Songdo
+  cliffs), travel oriented, CC BY-SA 2.0, via Flickr.
+  https://www.flickr.com/photos/99958070@N02/14439879398
 - Abroad in Korea path banner: *German Village in Namhae* (photo by Choi2451), CC0.
   https://commons.wikimedia.org/wiki/File:View_of_German_Village_in_Namhae,_South_Korea.jpg
 - K-Drama shooting spots path banner: *Mungyeong Saejae Open Film Set* (photo by Choi2451), CC BY-SA 4.0.

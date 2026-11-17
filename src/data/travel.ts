@@ -1237,9 +1237,9 @@ export const cities: City[] = [
   {
     id: 'busan',
     name: 'Busan',
-    seoTitle: 'Busan walking trails: Gwangalli, Gamcheon, Choryang',
+    seoTitle: 'Busan walking trails: Gwangalli, Taejongdae, Gamcheon',
     seoDescription:
-      "Free Busan walking maps: Gwangalli at night, the Haeundae coast path, Gamcheon and Huinnyeoul villages, Choryang's 168 Steps, cherry blossoms, rainy days.",
+      "Free Busan walking maps: Gwangalli at night, the Haeundae, Igidae and Taejongdae coast paths, a fortress hike, Gamcheon village, Choryang and cherry blossoms.",
     intro: [
       "**Korea's second city**, with about 3.3 million people, a big port on the south-east coast and a different feel from Seoul: hills running down to the sea, beaches in the middle of the city, and a stronger local accent.",
       "**Haeundae** is the famous beach, **Gamcheon** the hillside culture village, **Jagalchi** the fish market. The KTX high-speed train from Seoul takes about two and a half hours.",
@@ -1354,6 +1354,121 @@ export const cities: City[] = [
             "🚇 Getting there: Haeundae Station (line 2), exit 3 or 5, 10 min to the beach. Dongbaek Island is to the right as you face the sea.",
             "👟 Flat throughout: the island loop is boardwalk, the Blueline path is paved.",
             "🌸 The Busan cherry blossom walk on this site covers the Dalmaji-gil hill above the same coast in blossom season.",
+          ],
+        },
+      },
+      {
+        id: 'coast-trekking',
+        name: 'Coast and Fortress Trekking',
+        seoTitle: 'Busan coastal trails: Igidae, Taejongdae, Songdo',
+        seoDescription:
+          'Four Busan walks on one map: the Igidae cliff path to Oryukdo Skywalk, Huinnyeoul to the Taejongdae lighthouse, the Songdo cloud bridge and the Geumjeongsanseong hike.',
+        duration: '1–4h each',
+        updated: '2026-11-16',
+        tags: [{ icon: 'hiking', label: 'Trekking' }],
+        image: 'busan-coast.jpg',
+        imageCredit: 'Photo: travel oriented · CC BY-SA 2.0',
+        whyVisit: [
+          "Cliff paths right on the sea, with **Gwangan Bridge and the Haeundae towers across the water** at Igidae and a glass skywalk over the waves at the end.",
+          "On Yeongdo the white houses of Huinnyeoul sit above the path, and Taejongdae ends at **a white lighthouse on the cliffs** with a wide rock shelf below it.",
+          "On a day away from the sea, walk **the old fortress wall along the ridge of Geumjeongsan**, then down stone steps to a great mountain temple.",
+        ],
+        story: {
+          title: 'Two women, a king and a fortress',
+          text: [
+            "**Igidae** means the terrace of two **gisaeng**, the trained entertainers of old Korea. A local record of 1850 mentions their graves here. The legend says that during the **Japanese invasions** of the 1590s, two gisaeng held a drunk Japanese general and jumped with him into the sea.",
+            "Most of **Geumjeongsanseong**, the wall on the mountain above the city, was built in the early 1700s, after the Japanese and Manchu invasions. It is **Korea's largest fortress**. Taejongdae, at the tip of Yeongdo, is named after **King Taejong Muyeol** of Silla, who by tradition rested at these cliffs.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚫',
+            title: 'Taejongdae: the Danubi road train is not running',
+            at: 'Taejongdae',
+            body: "The **Danubi road train** round Taejongdae {red:has not run since 3 July 2026}, after an accident. Free shuttle buses do the loop instead, **09:30–17:30**, {red:not on Mondays and Tuesdays}. Walking the 3.6 km loop road is free, every day.",
+            since: 'Checked 16 November 2026.',
+            source: 'Accident and suspension: Yonhap via Daum, 3 July 2026, and Busan Ilbo, 21 July 2026 (free shuttle, no restart date). Shuttle hours and closing days: Naver Map place 19729074 ("현재 다누비열차 운행 중단으로 무료 순환 셔틀버스 운행"). Checked 16 November 2026. The map pin still gives the old train fare.',
+          },
+          {
+            icon: '⏰',
+            title: 'Oryukdo Skywalk hours',
+            at: 'Igidae',
+            body: "Open every day **09:00–18:00**, to **19:00** from June to September, last entry 10 minutes before closing. Free. {red:Closed in rain and snow} and during repairs.",
+            since: 'Checked 16 November 2026.',
+            source: 'Naver Map place 33461396 (기본 09:00–18:00, 하절기 6/1–9/30 09:00–19:00, 눈·비·시설개보수 시 개방제한). Checked 16 November 2026.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Songdo Yonggung Cloud Bridge tickets and hours',
+            at: 'Songdo',
+            body: "Open every day **09:00–17:30**, last entry **17:00**. Entry **₩1,000**, free under 7. {red:Closed on 7 December 2026} and in bad weather. The Cloud Walkway at the beach is free, **06:00–23:00**.",
+            since: 'Checked 16 November 2026.',
+            source: 'Naver Map places 1202664243 (hours, ₩1,000 price list, irregular closure 12/07) and 38501595 (Cloud Walkway 06:00–23:00); whatmytrip lists the same ₩1,000 and free under 7. Checked 16 November 2026.',
+          },
+          {
+            icon: '⏰',
+            title: 'Beomeosa closes at 17:00',
+            at: 'Geumjeongsanseong',
+            body: "The temple at the end of the hike is open **08:00–17:00**, free. Leave the East Gate by early afternoon to walk through it before it closes.",
+            since: 'Checked 16 November 2026.',
+            source: 'Naver Map place 12104500 (매일 08:00–17:00). Checked 16 November 2026.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1fOLBedQqWSSIJmdLt8OvznzD_yQZibE',
+        keywords: ['Busan', 'BusanHiking', 'CoastalWalk', 'Igidae', 'OryukdoSkywalk', 'Taejongdae', 'Huinnyeoul', 'SongdoCloudBridge', 'Geumjeongsanseong', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌊 Four walks, each one a morning or an afternoon. Igidae is the easy pick if you sleep near Gwangalli or Haeundae, Yeongdo is the long day by the sea, Songdo takes an hour, and Geumjeongsan is the one for a mountain.",
+            "Yeongdo is about 9 km from Huinnyeoul round the Taejongdae loop, so **start before noon** and you still have time to sit on the rocks below the lighthouse. The coast paths are open every day, and the fortress hike begins from a bus stop high on the mountain.",
+          ],
+          groups: [
+            {
+              title: 'Igidae coastal path, 4.7 km',
+              places: [
+                "[[Dongsaengmal viewpoint|부산 이기대 동생말전망대]], the start, with Gwangan Bridge across the water. Bus 20, 22, 24, 27, 39 or 131 from Kyungsung Univ.–Pukyong Natl. Univ. Station (line 2) to the Igidae entrance stop.",
+                "[[Eoulmadang|부산 이기대어울마당]], flat rocks by the sea and the classic photo of the bridge and the Haeundae towers.",
+                "[[Oryukdo Haemaji Park|부산 오륙도해맞이공원]], the clifftop park at the end, facing the Oryukdo islets, with daffodils in March. Buses 24, 27 and 131 stop here.",
+                "[[Oryukdo Skywalk|부산 오륙도스카이워크]], a glass-floored walkway 35 m above the sea. Oryukdo means 'five or six islands'.",
+              ],
+            },
+            {
+              title: 'Yeongdo: Huinnyeoul to Taejongdae, 5.6 km and the 3.6 km loop',
+              places: [
+                "[[Huinnyeoul Culture Village|부산 흰여울문화마을]], the white houses on the cliff above the start. Bus 7, 71 or 508 from Nampo-dong, then the steps down to the sea path, Galmaetgil 4-1.",
+                "[[Huinnyeoul coastal tunnel|부산 흰여울해안터널]], the short tunnel where the arch frames the sea.",
+                "[[75 Plaza|부산 영도 75광장]], halfway along, a lookout over the ships at anchor off Yeongdo.",
+                "[[Gamji Beach|부산 감지해변]], a pebble beach just before the Taejongdae entrance.",
+                "[[Taejongdae|부산 태종대]], the start of the loop road through the woods. Bus 8, 30, 66 or 88 from Nampo Station, or 66, 88 or 101 from Busan Station, to the last stop.",
+                "[[Taejongdae observatory|부산 태종대전망대]] at the southern tip, where Japan's Tsushima island shows on a clear day.",
+                "[[Yeongdo Lighthouse|부산 영도등대]], down the steps from the loop road, with a small gallery inside.",
+                "[[Sinseon Rock|부산 태종대 신선바위]], the wide rock shelf below the lighthouse, 'the rock of the immortals'.",
+              ],
+            },
+            {
+              title: 'Songdo coastal path, 1.9 km',
+              places: [
+                "[[Songdo Beach|부산 송도해수욕장]], the start, opened in 1913 as Korea's first public beach. Bus 30 or 71 from Jagalchi Station (line 1).",
+                "[[Songdo Cloud Walkway|부산 송도구름산책로]], 365 m out over the sea to the turtle-island rock, with glass panels in the floor.",
+                "[[Songdo coastal path|부산 송도해안산책로]], along the cliffs south of the beach, open sea on one side and rock walls on the other.",
+                "[[Songdo Yonggung Cloud Bridge|부산 송도용궁구름다리]], the suspension bridge from Amnam Park to a small rock island, the end of the walk. Bus 30 or 71 back to Jagalchi from the Amnam Park stop.",
+              ],
+            },
+            {
+              title: 'Geumjeongsanseong fortress hike, 5.5 km',
+              places: [
+                "[[Geumjeongsanseong East Gate|부산 금정산성 동문]], the start. Bus 203 from Oncheonjang Station (line 1) to the East Gate stop, already about 380 m up.",
+                "[[Wonhyobong|부산 금정산 원효봉]], along the wall past the stone lookout towers, with Busan on one side and the mountains on the other.",
+                "[[Geumjeongsanseong North Gate|부산 금정산성 북문]]. The summit, Godangbong, is 1 km further up if you have the legs.",
+                "[[Beomeosa Temple|부산 범어사]], 1.5 km down stone steps: one of Korea's great mountain temples, founded in 678 by its own history, with a stone-pillared gate and a pagoda that are both national Treasures. Bus 90 goes down to Beomeosa Station (line 1).",
+              ],
+            },
+          ],
+          tips: [
+            "🚇 Getting there: **Kyungsung Univ.–Pukyong Natl. Univ. Station** (line 2) for Igidae, **Nampo Station** (line 1) for Yeongdo, **Jagalchi Station** (line 1) for Songdo, **Oncheonjang Station** (line 1) for the fortress. Then the bus on each start pin.",
+            "👟 Igidae has many stairs up and down; Yeongdo is long, with a steep loop road and steps to the lighthouse. Wear proper shoes for the fortress ridge.",
+            "📍 Stay back from the edge on Sinseon Rock and the Igidae rocks in wind and big waves.",
+            "📍 Geumjeongsan became a national park in 2026: keep to the signed trails, because many side paths are closed.",
+            "🔗 Huinnyeoul, Songdo and Beomeosa are also on the Culture Villages and Hotspots page on this site, with the Gwangalli night walk next to Igidae.",
           ],
         },
       },
