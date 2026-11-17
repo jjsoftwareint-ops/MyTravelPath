@@ -1,5 +1,5 @@
 import { FaCar } from 'react-icons/fa'
-import { FaBeerMugEmpty, FaBicycle, FaFire, FaMoon, FaPersonHiking } from 'react-icons/fa6'
+import { FaBeerMugEmpty, FaBicycle, FaCableCar, FaFire, FaMoon, FaPersonHiking, FaSnowflake } from 'react-icons/fa6'
 import { GiBarbedWire, GiHiking, GiPaperLantern, GiSunset, GiVillage } from 'react-icons/gi'
 import { LuFlower, LuPalette, LuUmbrella } from 'react-icons/lu'
 import { MdSurfing } from 'react-icons/md'
@@ -39,5 +39,9 @@ export default function TagIcon({ name }: { name: TagIconName }) {
       return <GiPaperLantern className="tag-icon" aria-hidden="true" />
     case 'beer':
       return <FaBeerMugEmpty className="tag-icon" aria-hidden="true" />
+    case 'snow':
+      return <FaSnowflake className="tag-icon" aria-hidden="true" />
+    case 'cablecar':
+      return <FaCableCar className="tag-icon" aria-hidden="true" />
   }
 }

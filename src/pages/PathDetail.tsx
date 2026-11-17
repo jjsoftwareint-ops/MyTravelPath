@@ -241,7 +241,7 @@ export default function PathDetail() {
               </h2>
               {path.whyVisit.map((text) => (
                 <p key={text}>
-                  <GuideLine text={text} />
+                  <GuideLine text={text} onPlace={setPlaceQuery} onLink={setPopup} />
                 </p>
               ))}
             </section>

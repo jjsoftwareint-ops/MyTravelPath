@@ -353,6 +353,14 @@ a:focus-visible {
   background: light-dark(#ecfccb, #365314);
   color: light-dark(#3f6212, #d9f99d);
 }
+.pill.tag-snow {
+  background: light-dark(#e0f2fe, #0c4a6e);
+  color: light-dark(#075985, #bae6fd);
+}
+.pill.tag-cablecar {
+  background: light-dark(#fee2e2, #7f1d1d);
+  color: light-dark(#991b1b, #fecaca);
+}
 .pill.tag-dmz {
   background: light-dark(#f1efd9, #3f3c1a);
   color: light-dark(#57532a, #e5e2b0);

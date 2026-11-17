@@ -1,6 +1,10 @@
 // Auto-generated map: raw emoji glyph (as typed in travel.ts) -> OpenMoji flat icon filename in assets/emoji/.
 // Both the bare and VS16 (\uFE0F) forms of each glyph are included so lookups do not need to normalise first.
 export const EMOJI_FILES: Record<string, string> = {
+  "❄": "snowflake",
+  "❄️": "snowflake",
+  "🧤": "gloves",
+  "🧤️": "gloves",
   "🍜": "steaming_bowl",
   "🍜️": "steaming_bowl",
   "🚇": "metro",

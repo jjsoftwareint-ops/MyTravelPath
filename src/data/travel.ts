@@ -6,7 +6,7 @@
 
 // Tags are shown as pills under the path title. A plain string can start
 // with an emoji; for a drawn icon use { icon, label } (see TagIcon.tsx).
-export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car' | 'surf' | 'railbike' | 'dmz' | 'art' | 'lantern' | 'beer'
+export type TagIconName = 'hiker' | 'moon' | 'village' | 'sunset' | 'blossom' | 'hiking' | 'hot' | 'rainy' | 'car' | 'surf' | 'railbike' | 'dmz' | 'art' | 'lantern' | 'beer' | 'snow' | 'cablecar'
 export type Tag = string | { icon: TagIconName; label: string }
 
 // Longer text for the detail page: what the walk is, the stages in order and
@@ -2702,9 +2702,9 @@ export const cities: City[] = [
   {
     id: 'gangwon-do',
     name: 'Gangwon-do',
-    seoTitle: 'Gangwon-do trips: Sokcho, Gangneung, Donghae, Chuncheon',
+    seoTitle: 'Gangwon-do trips: Sokcho, Gangneung, Seoraksan in snow',
     seoDescription:
-      "Free maps for Gangwon-do: Chuncheon's lake and rail bike, Gangneung, Sokcho and Seoraksan, Yangyang's surf beaches and Donghae's Mukho lighthouse lanes, with toilets and food pinned.",
+      "Free maps for Gangwon-do: winter snow walks and cable cars at Seoraksan, Balwangsan and the birch forest, Chuncheon's lake, Gangneung, Sokcho, Yangyang's surf beaches and Donghae's Mukho lanes.",
     intro: [
       "Korea's mountain and coast province, split by the Taebaek range into a quiet inland of valleys and ski resorts and an east coast of beach towns. **Chuncheon** and **Gangneung** are its best-known cities; **Pyeongchang** hosted the 2018 Winter Olympics.",
       "**Seoraksan**, the country's most dramatic national park, rises over **Sokcho**, and the coast road south from there strings together Gangneung's coffee street, Jeongdongjin's sunrise beach and Gangwon's cold-noodle and squid-ink towns, down to the lighthouse lanes of Mukho in **Donghae**, a direct KTX ride from Seoul.",
@@ -3052,6 +3052,145 @@ export const cities: City[] = [
           ],
         },
       },
+      {
+        id: 'winter-trekking',
+        name: 'Winter Trekking: Seoraksan, Balwangsan & the Birch Forest',
+        seoTitle: 'Gangwon winter: Seoraksan, Balwangsan, birch forest',
+        seoDescription:
+          'Easy snow walks and cable cars in Gangwon-do: Seoraksan, the Goblin fir forest at Odaesan, the Balwangsan skywalk, Wondae-ri birch forest, sheep farms and hot springs.',
+        duration: 'Day trips, 1–2 days',
+        updated: '2026-11-17',
+        tags: [{ icon: 'snow', label: 'Snow walks' }, { icon: 'cablecar', label: 'Cable cars' }],
+        image: 'gangwon-winter.jpg',
+        imageCredit: 'Photo: Sohyeon Bak · CC BY-SA 3.0',
+        whyVisit: [
+          "A five-minute cable car puts you on **snow-covered Seoraksan peaks with the East Sea behind them**, with no climbing at all.",
+          "In the Wondae-ri birch forest, hundreds of thousands of white trunks stand in white snow.",
+          "Walk **the snowy fir forest** at Odaesan from the drama [[Goblin|도깨비 월정사 전나무숲 공유 김고은]], where Kim Shin and Eun-tak confess their love.",
+          "At the top of Balwangsan the trees turn into frost sculptures, and the sheep farms below become rolling white hills.",
+          "End a cold day in an outdoor hot-spring pool, looking back at the mountains you were on that morning.",
+        ],
+        story: {
+          title: "How the highlands became Korea's winter playground",
+          text: [
+            "Daegwallyeong, the high pass between Seoul and the East Sea, is one of the coldest and snowiest corners of Korea. Its grassy hills became sheep and cattle ranches, and in 1975 **Korea's first ski resort** opened at Yongpyong, on the slopes of Balwangsan.",
+            "In 2018 the **Winter Olympics** came to Pyeongchang: the slalom races ran down Yongpyong and the ski jumpers flew at Alpensia. Over in Inje, foresters replaced pine trees lost to pests with birch, planting from the 1970s to the 1990s. That plantation is now the **Wondae-ri birch forest**.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚫',
+            title: 'Birch forest: closed Monday and Tuesday',
+            at: 'Wondae-ri',
+            body: "{red:The Wondae-ri birch forest is closed every Monday and Tuesday} (open when a public holiday falls on them). In winter it opens **09:00–17:00** and the last entry up the hill is **14:00**. {red:Closed every spring from 2 March to 30 April} for the fire season. Free.",
+            since: 'Checked 17 November 2026.',
+            source: 'VisitKorea (ktriptips 1818945): 3/2–4/30 closure, Mon/Tue closed, winter 09:00–17:00 last entry 14:00. Telltrip 2026 and Kukinews 29 April 2026 (reopened 1 May). Tel 033-463-0044.',
+          },
+          {
+            icon: '🚫',
+            title: 'Samyang Round Hill: no shuttle in winter',
+            at: 'Samyang Round Hill',
+            body: "{red:From November to April there is no shuttle bus} up Samyang Round Hill: visitors drive their own car to the top. Without a car, go with a day tour from Seoul. Open daily **09:00–17:30**, last tickets **16:30**.",
+            since: 'Checked 17 November 2026.',
+            source: 'Telltrip (white season Nov–Apr: own car to the summit instead of the shuttle); timeticket product 5515 and ktriptips 2640123 (09:00–17:30, last entry 16:30, Tel 033-335-5044). Fare not given on the page.',
+          },
+          {
+            icon: '⏰',
+            title: 'Cable cars stop in strong wind',
+            at: 'Seorak cable car',
+            body: "All three cable cars **stop in strong wind**, and the Seorak cable car changes its hours day by day. Check the operator's website the day before, and go up in the morning. The high Seoraksan trails close from **mid-November to mid-December** for the fire season, but the Biseondae valley path stayed open last year.",
+            since: 'Checked 17 November 2026.',
+            source: 'sorakcablecar.co.kr (about 5 min, round trip only); travel listings for Balwangsan and Samaksan (wind closures, hours disagree between resellers, so none given). Seoraksan closure: Kyunghyang 6 Nov 2025 (15 Nov–15 Dec, low trails incl. Biseondae open); 2026 notice not found yet.',
+          },
+          {
+            icon: '⏰',
+            title: 'Sheep farm ticket hours',
+            at: 'Daegwallyeong sheep farm',
+            body: "Daegwallyeong sheep farm sells tickets until **16:30** and closes at **17:30** (autumn 2026 hours; winter can close earlier). In deep winter the sheep stay mostly in the barn, where you can feed them hay.",
+            since: 'Checked 17 November 2026.',
+            source: 'travelmapjourney (citing the farm notice of 1 Oct 2026: tickets 09:00–16:30, close 17:30). Winter hours not published.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1v8LyfkuGPUybyTVpBP87SCxdX5QsPO4',
+        keywords: ['Gangwon', 'KoreaWinter', 'Seoraksan', 'Balwangsan', 'WondaeriBirchForest', 'DaegwallyeongSheepFarm', 'OdaesanFirForest', 'Pyeongchang', 'Goblin', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "❄️ Give each area a day: Seoraksan from Sokcho, the Pyeongchang highlands from the KTX, the birch forest from Inje, or Chuncheon as a short trip from Seoul. **Go up the mountains in the morning**, before the wind picks up and the cable car queues grow.",
+            "With four or five days you can do a loop. Start in Chuncheon, take the bus to Inje for the birch forest, spend two nights in Sokcho, then come back through Odaesan and Daegwallyeong and ride the KTX home from Jinbu. The walks are short and gentle, and the buses between towns take more of your time than the walking will.",
+          ],
+          groups: [
+            {
+              title: 'Seoraksan, Sokcho',
+              places: [
+                "[[Seoraksan Sogongwon|속초 설악산소공원 겨울]], the park entrance and last stop of city bus 7 and 7-1 from Sokcho. The cable car and the valley walk both start here.",
+                "[[Seorak cable car|속초 설악케이블카 겨울]], about five minutes up to 700 m, round-trip tickets only.",
+                "[[Gwongeumseong|속초 권금성 겨울]], bare rock above the upper station: snowy peaks on one side, the East Sea on the other. Named after a mountain fortress said to have stood here.",
+                "[[Sinheungsa|속초 신흥사 겨울]], the temple beside the valley path, with a great bronze Buddha.",
+                "[[Biseondae|속초 비선대 겨울]], about 3 km up a gentle valley path from the entrance: wide flat rocks and a pool under tall cliffs.",
+                "[[Seorak Waterpia|속초 설악워터피아 겨울]], a hot-spring water park with outdoor warm pools facing the Seoraksan ridges.",
+                "[[Cheoksan hot spring|속초 척산온천휴양촌 겨울]], an old-style hot-spring bathhouse between Sokcho and the park.",
+              ],
+            },
+            {
+              title: 'Balwangsan, Yongpyong and Alpensia',
+              places: [
+                "[[Balwangsan cable car|평창 발왕산 관광케이블카 겨울]], from Dragon Plaza at Mona Yongpyong, about 20 minutes up to the 1,458 m summit.",
+                "[[Balwangsan Ki Skywalk|평창 발왕산 기 스카이워크 겨울]], the glass-floored skywalk at the summit, with frost on the trees in winter and the Baekdudaegan ridges all around.",
+                "[[Mona Yongpyong ski slopes|평창 모나용평 스키장 겨울]], the ski slopes round the same base, with ski and snowboard rental.",
+                "[[Alpensia ski jump|평창 알펜시아 스키점프센터 겨울]], the 2018 Olympic ski jump, with a monorail and an elevator to a lookout at the top.",
+              ],
+            },
+            {
+              title: 'Wondae-ri birch forest, Inje',
+              places: [
+                "[[Birch forest info centre|인제 자작나무숲안내소 겨울]], the start. A wide forest road climbs about 3 km to the trees, around an hour, and another road comes back down. Taxi about 20 minutes from Inje bus terminal.",
+                "[[Whispering birch forest|인제 속삭이는자작나무숲 겨울]], about 690,000 birches on the hillside, with short trails and wooden decks among them.",
+              ],
+            },
+            {
+              title: 'Daegwallyeong ranches',
+              places: [
+                "[[Daegwallyeong sheep farm|평창 대관령양떼목장 겨울]], hills at about 850 m with a 1.2 km path round the fence and hay feeding in the barn. Taxi about 10 minutes from Hoenggye bus terminal.",
+                "[[Daegwallyeong Sky Ranch|평창 대관령 하늘목장 겨울]], wide ridges over 1,000 m with horses and sheep, and a tractor wagon up the hill (check whether it runs in winter).",
+                "[[Samyang Round Hill|평창 대관령 삼양라운드힐 겨울]], Korea's biggest ranch, with wind turbines along the snowy ridge.",
+                "[[Samyang Round Hill East Sea lookout|평창 삼양라운드힐 동해전망대 겨울]], the top of the ranch at about 1,140 m, looking out to the East Sea on clear days.",
+              ],
+            },
+            {
+              title: 'Odaesan: fir forest and Seonjae-gil',
+              places: [
+                "[[Woljeongsa Iljumun gate|평창 월정사 일주문 겨울]], the start. Bus from Jinbu bus terminal, or a taxi from Jinbu (Odaesan) KTX station.",
+                "[[Odaesan fir-forest path|평창 오대산월정사전나무숲길 겨울]], about 1 km of flat earth path under tall old firs, beside a stream. This is the snowy forest where Kim Shin and Eun-tak confess their love in the drama [[Goblin|도깨비 월정사 전나무숲 공유 김고은]].",
+                "[[Woljeongsa|평창 월정사 겨울]], the temple at the end of the fir path, with a nine-storey stone pagoda in the courtyard.",
+                "[[Seonjae-gil|평창 오대산선재길 겨울]], about 9 km up the valley to Sangwonsa beside a frozen stream. The bus runs up the same valley, so walk part and ride the rest.",
+                "[[Sangwonsa|평창 상원사 겨울]], the small temple at the top of the valley, home of the oldest bronze bell in Korea.",
+              ],
+            },
+            {
+              title: 'Chuncheon',
+              places: [
+                "[[Samaksan lake cable car|춘천 삼악산 호수케이블카 겨울]], about 3.6 km across Uiam Lake to a lookout deck on Samaksan, some cabins with a glass floor.",
+                "[[Nami Island|춘천 남이섬 겨울]], the river island with tall tree lanes, the snowy scenes of the drama Winter Sonata. Ferry from Gapyeong wharf.",
+              ],
+            },
+            {
+              title: 'Winter festivals',
+              places: [
+                "[[Pyeongchang Trout Festival|평창송어축제 겨울]], ice fishing and snow sledding on the frozen river in Jinbu, usually January to early February.",
+                "[[Daegwallyeong Snow Festival|대관령 눈꽃축제 겨울]], big snow sculptures in Hoenggye, usually in February.",
+              ],
+            },
+          ],
+          tips: [
+            "🚆 Getting there: KTX from **Seoul Station** or **Cheongnyangni** to **Jinbu (Odaesan)** for Pyeongchang, the ITX-Cheongchun from **Yongsan** or **Cheongnyangni** to **Chuncheon**, and express buses to **Sokcho** and **Inje**.",
+            "👟 Wear shoes with good grip, or bring light crampons. The valley paths and the Gwongeumseong rocks get icy.",
+            "🧤 Dress for the wind on the summits and the ranch hills: hat, gloves and a warm layer, even on a sunny day.",
+            "♨️ Save a hot spring for the end of the Seoraksan day.",
+            "🚕 Take a taxi between the ranches, Balwangsan and Alpensia; they are 10 to 20 minutes apart.",
+            "🔗 Nami Island has its own walk on the Gapyeong page, and the Sokcho and Gangneung maps on this site cover the coast.",
+          ],
+        },
+      },
     ],
   },
   {
@@ -3334,8 +3473,8 @@ export const cities: City[] = [
         name: 'K-Drama shooting spots',
         seoTitle: 'K-drama filming locations in Korea: 20 spots on a map',
         seoDescription:
-          'Where Korean dramas were filmed: Mr. Sunshine, The Glory, Goblin, Winter Sonata, Jumong and more. 20 sets and locations on one map, with the drama behind each place.',
-        updated: '2026-10-31',
+          'Where Korean dramas were filmed: Mr. Sunshine, The Glory, Goblin, Winter Sonata, Jumong and more. Over 20 sets and locations on one map, with the drama behind each place.',
+        updated: '2026-11-17',
         image: 'kdrama.jpg',
         imageCredit: 'Photo: Choi2451 · CC BY-SA 4.0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1EYhgxfPiltP6Ns7IbUJQiuwoBN6ha2U',
@@ -3396,6 +3535,7 @@ export const cities: City[] = [
             "[[Iksan Prison Set|익산 교도소 세트장]]: Korea's only set built as a prison, on the grounds of a closed branch school. Prison Playbook, Signal and The Penthouse are named in local press; counts of productions vary from about 28 to over 200.",
             "[[Nami Island|춘천 남이섬]], Chuncheon: a real riverside park, not a set, whose tree-lined main avenue was filmed for Winter Sonata (2002). The drama's popularity, especially in Japan, is widely credited with starting the island's run as a tourist destination; reached by ferry from Gapyeong.",
             "[[Goblin Breakwater|강릉 주문진 도깨비 방파제]], Jumunjin, Gangneung: the breakwater where Gong Yoo summons Kim Go-eun in Goblin (2016 to 2017). Gangneung's own tourism office promoted it as a filming-location spot in March 2026; it is free to walk out on, and busy with photographers at weekends.",
+            "[[Odaesan fir forest|평창 오대산월정사전나무숲길 겨울]], Pyeongchang: the snowy forest in Goblin where Kim Shin and Eun-tak confess their love. A flat path of about 1 km under tall old firs, from the gate to Woljeongsa temple. Our Gangwon winter page has the walk.",
           ],
           tips: [
             "🚗 Everything outside Seoul is easiest by car. Mr. Sunshine fans can chain Nonsan, Hapcheon and Hadong over two days.",

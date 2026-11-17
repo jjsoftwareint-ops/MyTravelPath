@@ -115,6 +115,8 @@ All allow free use; the credit is given in every case.
 - Busan Coast and Fortress Trekking path banner: *Busan | Songdo Seaside Trail* (the walkways on the Songdo
   cliffs), travel oriented, CC BY-SA 2.0, via Flickr.
   https://www.flickr.com/photos/99958070@N02/14439879398
+- Gangwon-do Winter Trekking path banner: *눈내린 설악산 풍경* (snow on the Seoraksan peaks), Sohyeon Bak,
+  CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:눈내린_설악산_풍경.jpg
 - Abroad in Korea path banner: *German Village in Namhae* (photo by Choi2451), CC0.
   https://commons.wikimedia.org/wiki/File:View_of_German_Village_in_Namhae,_South_Korea.jpg
 - K-Drama shooting spots path banner: *Mungyeong Saejae Open Film Set* (photo by Choi2451), CC BY-SA 4.0.
