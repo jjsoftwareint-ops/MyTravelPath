@@ -39,6 +39,70 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-17-1720',
+    title: 'What the first snow means in Korea: a date with no time and no place',
+    description:
+      'In Korea, couples promise to meet on the day of the first snow. Why it feels like first love, the nail-dye wish, a king\'s snow prank and the drama song.',
+    teaser: 'You call when the flakes come.',
+    icon: 'snowflake',
+    date: '2026-11-17',
+    updated: '2026-11-17',
+    keywords: ['FirstSnow', 'KoreanRomance', 'KoreanCulture', 'KDrama', 'Goblin', 'Chimaek', 'SeoulWinter', 'LifeInKorea'],
+    body: [
+      {
+        type: 'p',
+        text: 'In Korea you can make a date with no time and no place. **첫눈 오면 만나자 (cheonnun omyeon mannaja)**: "let\'s meet when the first snow falls." When the flakes come, you call, and you go.',
+      },
+      {
+        type: 'p',
+        text: 'The first snow is **첫눈 (cheonnun)**, and its 첫 (cheot) is the same "first" as in **첫사랑 (cheotsarang)**, first love. People say a first-snow promise has to be kept, and that whoever you are with when it falls is someone who matters.',
+      },
+      {
+        type: 'img',
+        src: 'first-snow-red-maple.jpg',
+        alt: 'Snowflakes falling on a red maple tree in front of dark pine trees',
+        caption: 'First snow on red maple leaves in Jongno, Seoul.',
+        href: 'https://commons.wikimedia.org/wiki/File:KOCIS_Korea_First_Snowfall_in_Seoul_24_(10922101805).jpg',
+        credit: { author: 'Korea.net / Korean Culture and Information Service (Jeon Han)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      {
+        type: 'p',
+        text: 'This year it came early. Seoul\'s official first snow fell on the morning of **8 November**, twelve days before the usual date. It counts as soon as the observer at the weather station in Jongno sees flakes, and this time the flakes didn\'t settle. Lots of people missed it. Our rule: if you didn\'t see it, your promise is still waiting.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'sparkles', text: 'A wish on your nails' },
+      {
+        type: 'p',
+        text: 'In summer, girls dye their nails orange-red with crushed [봉숭아](https://www.google.com/search?tbm=isch&q=%EB%B4%89%EC%88%AD%EC%95%84%20%EB%AC%BC%EB%93%A4%EC%9D%B4%EA%B8%B0) (bongsunga) petals, garden balsam. If the colour is still on your nails when the first snow falls, your first love comes true. Nails grow, so it\'s a close call every year.',
+      },
+      { type: 'ad', slot: 'inArticle' },
+      {
+        type: 'p',
+        text: 'Kings played with the first snow too. The Joseon royal records tell how the retired king **Taejong** packed fresh first snow into a parcel, called it medicine and had it sent to his older brother. It was an old game. If the snow parcel fooled you, you owed the sender a treat. If you caught the messenger first, the sender owed you one.',
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'poultry_leg', text: 'Chicken, beer and a love song' },
+      {
+        type: 'p',
+        text: 'Dramas made it even more romantic. In **My Love from the Star**, the heroine says snowy days call for [치맥](https://www.google.com/search?tbm=isch&q=%EC%B9%98%EB%A7%A5) (chimaek), chicken and beer, and fried-chicken orders jumped in China after the episode aired.',
+      },
+      {
+        type: 'p',
+        text: '**Goblin** gave Korea its first-snow song: Ailee\'s **첫눈처럼 너에게 가겠다 (cheonnuncheoreom neoege gagetda)**, "I will go to you like the first snow". Save it for the next time the forecast shows a snowflake.',
+      },
+      {
+        type: 'video',
+        id: '6rS7OUGXUik',
+        title: 'Ailee, "I will go to you like the first snow", Goblin OST, official audio',
+        caption: 'Official audio from the Goblin soundtrack. Video: STONE MUSIC on YouTube.',
+      },
+      {
+        type: 'p',
+        text: 'If real snow falls while you are in Seoul, take one photo and send it to someone. In Korea, they will know what you mean.',
+      },
+    ],
+  },
+  {
     id: '2026-11-16-1634',
     title: 'Saju cafés in Seoul: your future, read from the hour you were born',
     description:
