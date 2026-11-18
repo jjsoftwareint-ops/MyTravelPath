@@ -97,6 +97,13 @@ async function back() {
   await settle()
 }
 const where = () => evaluate('location.pathname')
+/** Scroll the page down, the way a reader does before tapping a link. */
+async function scrollDown() {
+  await evaluate('window.scrollTo(0, 1200)')
+  await sleep(300)
+}
+/** Where we are and whether the page is at the top: '/blog/ top' or '/ scrolled'. */
+const place = () => evaluate("location.pathname + (window.scrollY === 0 ? ' top' : ' scrolled')")
 
 const cases = [
   {
@@ -161,6 +168,25 @@ const cases = [
     ],
     expect: LINKED_PATH,
   },
+  {
+    // 2026-11-18: the blog list opened from a scrolled home page kept the home page's scroll position.
+    name: 'home scrolled → blog opens at the top',
+    run: async () => [await open('/'), await scrollDown(), await click('/blog/')],
+    measure: place,
+    expect: '/blog/ top',
+  },
+  {
+    name: 'home scrolled → blog → back returns home where the reader was',
+    run: async () => [await open('/'), await scrollDown(), await click('/blog/'), await back()],
+    measure: place,
+    expect: '/ scrolled',
+  },
+  {
+    name: 'blog list scrolled → post opens at the top',
+    run: async () => [await open('/blog/'), await scrollDown(), await click(POST_B)],
+    measure: place,
+    expect: POST_B + ' top',
+  },
 ]
 
 let failed = 0
@@ -168,7 +194,7 @@ for (const c of cases) {
   let got
   try {
     await c.run()
-    got = await where()
+    got = await (c.measure ?? where)()
   } catch (e) {
     got = `error: ${e.message}`
   }

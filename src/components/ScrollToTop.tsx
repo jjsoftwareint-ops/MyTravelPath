@@ -1,11 +1,16 @@
 import { useEffect, useRef } from 'react'
 import { useLocation, useNavigationType } from 'react-router-dom'
 
-// A path detail page (/city/path) always opens at the top. The list (/ and
-// /city) keeps its position: untouched when a city accordion toggles, restored
-// by the browser on back/forward, and restored by us when the visitor returns
-// through the header's back button (an in-app link, so the browser cannot).
-const isDetail = (pathname: string) => pathname.split('/').filter(Boolean).length === 2
+// Every page opens at the top, except the list (/ and /city): it keeps its
+// position when a city accordion toggles (the URL moves between / and /city),
+// is restored by the browser on back/forward, and is restored by us when the
+// visitor comes back through an in-app link (the header's back button), which
+// the browser cannot do.
+const PAGES = new Set(['about', 'contact', 'privacy', 'imprint', 'saved', 'this-week', 'poster', 'blog'])
+const isList = (pathname: string) => {
+  const parts = pathname.split('/').filter(Boolean)
+  return parts.length === 0 || (parts.length === 1 && !PAGES.has(parts[0]))
+}
 
 export default function ScrollToTop() {
   const { pathname } = useLocation()
@@ -16,11 +21,11 @@ export default function ScrollToTop() {
     const from = previous.current
     previous.current = pathname
     if (type === 'POP') return
-    if (isDetail(pathname)) {
-      if (!isDetail(from)) listScroll.current = window.scrollY
+    if (isList(pathname)) {
+      if (!isList(from)) window.scrollTo(0, listScroll.current)
+    } else {
+      if (isList(from)) listScroll.current = window.scrollY
       window.scrollTo(0, 0)
-    } else if (isDetail(from)) {
-      window.scrollTo(0, listScroll.current)
     }
   }, [pathname, type])
   return null
