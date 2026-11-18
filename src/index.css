@@ -2783,10 +2783,6 @@ button.cta {
   top: -8px;
   animation: pet-heart 1.2s ease-out forwards;
 }
-.pet .poke .pet-pic {
-  animation: pet-jump 0.7s ease-out;
-}
-
 /* Egg: grows a little each day and shakes gently, a bit more each day; day 5 bobs in its shell. */
 .pet-egg {
   position: absolute;
@@ -2865,6 +2861,15 @@ button.cta {
 }
 .anim-peek .pet-pic {
   animation: pet-peek 5s ease-in-out infinite;
+}
+/* A tap: the creature jumps where it stands. The walk (and the butterfly it chases) is paused for that
+   moment and goes on from the same spot; the jump rule sits after the mood rules so it wins over them. */
+.pet-walker.paused,
+.pet-butterfly.paused {
+  animation-play-state: paused;
+}
+.pet .poke .pet-pic {
+  animation: pet-jump 0.7s ease-out;
 }
 
 /* Asleep or sad: by the left end, breathing; z's float up when asleep. */

@@ -261,11 +261,15 @@ function Creature({
     : birthday && !baby ? 'eat-cake'
     : snack && stage.thinking ? stage.thinking
     : mood.pic
-  const free = !rest && !eating && !reaction && !(birthday && !baby) && !(snack && stage.thinking)
-  const walking = free && WALKING.includes(mood.anim)
+  // The mood is on unless something else is going on. A tap keeps the mood's place and walk: the walk
+  // is only paused for the reaction, so the creature jumps where it is instead of being moved
+  // (user, 2026-11-18).
+  const onMood = !rest && !eating && !(birthday && !baby) && !(snack && stage.thinking)
+  const walking = onMood && WALKING.includes(mood.anim)
+  const paused = walking && !!reaction
   const cls = [
-    'pet-walker', `slot-${slot}`, free ? `anim-${mood.anim}` : '', walking ? 'walking' : 'still', rest ? 'resting' : '',
-    eating ? `eating-${eating}` : '', !free && !rest && !eating ? 'anim-bob' : '',
+    'pet-walker', `slot-${slot}`, onMood ? `anim-${mood.anim}` : '', walking ? 'walking' : 'still', paused ? 'paused' : '',
+    rest ? 'resting' : '', eating ? `eating-${eating}` : '', !onMood && !rest && !eating ? 'anim-bob' : '',
   ].filter(Boolean).join(' ')
   return (
     <>
@@ -275,7 +279,9 @@ function Creature({
           <img src={pic(`food-${snack}`)} alt="" width={18} height={18} />
         </button>
       )}
-      {walking && mood.butterfly && slot === 0 && <img className="pet-butterfly" src={pic('butterfly')} alt="" width={14} height={14} />}
+      {walking && mood.butterfly && slot === 0 && (
+        <img className={`pet-butterfly${paused ? ' paused' : ''}`} src={pic('butterfly')} alt="" width={14} height={14} />
+      )}
       <div ref={walker} className={cls}>
         <button type="button" className={`pet-creature${reaction ? ' poke' : ''}`} onClick={rest ? wake : play} aria-label="Tap">
           {heartImg}
