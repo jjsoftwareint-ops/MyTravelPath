@@ -2718,37 +2718,41 @@ button.cta {
   height: 54px;
   margin: 0 26px; /* 10 px narrower than the content on each side */
   overflow: hidden;
-  --grass: #6cbf3c;
-  --grass-light: #9ad65f;
+  /* Snow ground (user, 2026-11-18, after autumn grass "looks weird"): white snow mounds on the earth. */
+  --grass: #d3dfeb;
+  --tuft-1: #ffffff;
+  --snow-edge: #a9bdd2;
   --earth: #b07a46;
   --earth-dark: #8a5a30;
 }
 :root:not([data-theme='light']) .pet {
-  --grass: #4e9a2e;
-  --grass-light: #6fbf46;
+  --grass: #cdd7e2;
+  --tuft-1: #eef2f7;
+  --snow-edge: #9fb1c4;
   --earth: #7a5230;
   --earth-dark: #5c3c22;
 }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme='dark']) .pet {
-    --grass: #6cbf3c;
-    --grass-light: #9ad65f;
+    --grass: #d3dfeb;
+    --tuft-1: #ffffff;
+    --snow-edge: #a9bdd2;
     --earth: #b07a46;
     --earth-dark: #8a5a30;
   }
 }
-/* The ground: a strip of grass with tufts along the top and earth below, like a platform game. */
+/* The ground: snow mounds along the top, a snow layer, then earth below, like a platform game. */
 .pet::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 8px;
+  height: 9px;
   background:
-    repeating-linear-gradient(90deg, var(--grass-light) 0 3px, transparent 3px 7px) top / 100% 2px no-repeat,
-    linear-gradient(var(--grass) 0 4px, var(--earth) 4px 7px, var(--earth-dark) 7px);
-  border-radius: 2px 2px 0 0;
+    radial-gradient(circle at 5px 5px, var(--tuft-1) 0 3.6px, transparent 4.1px) top left / 10px 5px repeat-x,
+    radial-gradient(circle at 5px 5px, var(--snow-edge) 0 4.6px, transparent 5.1px) top left / 10px 5px repeat-x,
+    linear-gradient(transparent 0 4px, var(--grass) 4px 6px, var(--earth) 6px 8px, var(--earth-dark) 8px);
   pointer-events: none;
 }
 .pet button {
@@ -2903,6 +2907,9 @@ button.cta {
 }
 .pet-walker.eating-munch .pet-pic {
   animation: pet-munch 0.5s ease-in-out infinite;
+}
+.pet-walker.eating-play .pet-pic {
+  animation: pet-bob 1.2s ease-in-out infinite;
 }
 
 @keyframes pet-shake {

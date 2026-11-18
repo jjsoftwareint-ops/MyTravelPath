@@ -1,33 +1,41 @@
 import { useEffect, useRef, useState } from 'react'
 import {
-  countVisit, countedVisit, markFed, HATCH_DAY, GROWN_DAY, SLEEPY_AFTER, SAD_AFTER, CRY_AFTER, FAMILY_DAY, BIRTHDAY_EVERY, type Visit,
+  countVisit, countedVisit, presents, wasUsed, markUsed, rewardNewPage, type Kind, HATCH_DAY, GROWN_DAY, SLEEPY_AFTER, SAD_AFTER, CRY_AFTER, FAMILY_DAY, BIRTHDAY_EVERY, type Visit,
 } from '../pet'
 
 // A tiny strip under the header on every page: an egg on a strip of grass. The egg shakes gently and
 // grows on each day the visitor comes back and hatches on day 5. Days 6 to 39 a baby lives there, from
 // day 40 the grown-up creature, each with its own motions: one per visit day (walking, swinging, chasing
 // a butterfly, peekaboo, a balloon, dancing, riding a leaf, reading, singing ...), in order the first time
-// round and in a daily shuffle after that. Like a pocket pet: once a day a snack appears (the baby stands
-// thinking about it; tap it and the creature runs over and eats it); after 3 days away it is asleep until
+// round and in a daily shuffle after that. Like a pocket pet: one present on the ground at a time (user, 2026-11-18:
+// "not only candy", "give twice snack at least. we can have many toys", "not two at the same time"): a snack while
+// fewer than two were eaten today, and once it is eaten (or after the second one) a new toy each time the site opens.
+// Rewards: a path page or blog post opened for the first time brings a fresh toy (exploring), and every 7th visit
+// day in a row a party popper comes first (tap it and the creature cheers); the baby stands thinking about it; tap it and the creature runs
+// over and eats it or plays with it in the matching pose (balloon, flower, book, crown ...); after 3 days away it is asleep until
 // tapped, the baby is sad after a week and crying after two; a tap gives a random happy reaction and a
 // heart, five quick taps make the baby cross for a second.
 // Life events: on day 100 a second egg appears beside the grown-up and lives the same story (hatch, baby,
 // grown), so from then two creatures share the grass; every 365th day is a birthday with cake all day.
 // No text (user, 2026-11-13); the state is in the aria-label only.
 // Pictures: the user's own artwork (ChatGPT, 2026-11-13), cut from four sheets with the user's OK into
-// assets/pet/ (originals in docs/pet/, local only). Butterfly, heart, zzz and the food icons on the ground:
+// assets/pet/ (originals in docs/pet/, local only). Butterfly, heart, zzz and the food and toy icons on the ground:
 // Noto Emoji by Google, Apache 2.0 (assets/pet/LICENSE.txt). Every picture fits the same small box.
-// Preview: ?pet=N (a visit day; add &away=4 or &fed=0), or ?pet=sim to watch the whole story on a loop.
+// Preview: ?pet=N (a visit day; add &away=4, &fed=0 or &streak=7), or ?pet=sim to watch the whole story on a loop.
 
 const pic = (name: string) => `${import.meta.env.BASE_URL}pet/${name}.png`
 
 // walk/hop/glide cross the strip and turn at the ends; the others stay put and move in place.
 type Anim = 'walk' | 'hop' | 'glide' | 'swing' | 'bob' | 'wiggle' | 'spin' | 'peek' | 'float'
 type Mood = { pic: string; anim: Anim; butterfly?: boolean }
+/** Today's present on the ground: the icon file and the creature picture shown while it eats or plays with it. */
+export type Gift = { icon: string; pic: string; toy: boolean; kind: Kind }
 type Stage = {
   name: 'baby' | 'grown'
   moods: Mood[]
   snacks: string[]
+  toys: { icon: string; pic: string }[] // toy icon on the ground → the pose that plays with it
+  party: string // the pose for the streak party popper
   taps: string[] // happy reactions to a tap, one picked at random
   sleeps: string[] // sleeping poses, by day
   sad?: string
@@ -74,6 +82,18 @@ const BABY: Stage = {
     { pic: 'yawn', anim: 'bob' },
   ],
   snacks: ['cookie', 'strawberry', 'icecream', 'milk', 'popcorn', 'watermelon', 'bubbletea', 'potato'],
+  toys: [
+    { icon: 'balloon', pic: 'balloon' },
+    { icon: 'tulip', pic: 'flower' },
+    { icon: 'book', pic: 'book' },
+    { icon: 'bubbles', pic: 'blowbubble' },
+    { icon: 'crown', pic: 'crown' },
+    { icon: 'sunglasses', pic: 'sunglasses' },
+    { icon: 'umbrella', pic: 'umbrella' },
+    { icon: 'chick', pic: 'chick' },
+    { icon: 'shell', pic: 'shell' },
+  ],
+  party: 'cheer',
   taps: ['claps', 'surprised', 'wink', 'shocked', 'embarrassed', 'happy', 'cheer', 'confused'],
   sleeps: ['sleep', 'sleep2', 'sleep3'],
   sad: 'sad',
@@ -109,6 +129,16 @@ const GROWN: Stage = {
     { pic: 'happy', anim: 'bob' },
   ],
   snacks: ['cookie', 'apple', 'popcorn', 'donut', 'icecream', 'cake', 'lollipop', 'bubbletea'],
+  toys: [
+    { icon: 'bouquet', pic: 'flowers' },
+    { icon: 'fallenleaf', pic: 'leafhat' },
+    { icon: 'shell', pic: 'shell' },
+    { icon: 'snail', pic: 'snail' },
+    { icon: 'bubbles', pic: 'bubble' },
+    { icon: 'rock', pic: 'rock' },
+    { icon: 'sparkles', pic: 'sparkle' },
+  ],
+  party: 'jumplaugh',
   taps: ['jump', 'happy', 'wave', 'jumplaugh'],
   sleeps: ['sleep', 'sleep2', 'sleep3', 'sleep4'],
 }
@@ -129,7 +159,7 @@ const SIM: Step[] = [
   { days: 6, hold: 4500 },
   { days: 7, hold: 4000 },
   { days: 8, fed: false, auto: 'eat', hold: 7000 },
-  { days: 9, hold: 4000 },
+  { days: 9, fed: false, auto: 'eat', hold: 7000 },
   { days: 10, away: 4, auto: 'wake', hold: 6000 },
   { days: 11, auto: 'tap', hold: 4000 },
   { days: 12, hold: 4000 },
@@ -153,21 +183,22 @@ type Cmd = { n: number; type: 'eat' | 'wake' | 'tap' } | null
 
 /** One creature: its own age in visit days (the second one starts at 1 on day 100), position slot 0 or 1. */
 function Creature({
-  age, slot, away, birthday, snack, onEaten, cmd,
+  age, slot, away, birthday, gifts, onEaten, cmd,
 }: {
   age: number
   slot: 0 | 1
   away: number
   birthday: boolean
-  /** Today's uneaten snack, if this creature is the one that gets it. */
-  snack: string | null
-  onEaten: () => void
+  /** The presents on the ground (snack and/or toy), if this creature is the one that gets them. */
+  gifts: Gift[]
+  onEaten: (g: Gift) => void
   /** A played-for-you action from the simulation (slot 0 only). */
   cmd: Cmd
 }) {
   const baby = age < GROWN_DAY
   const [rest, setRest] = useState<'asleep' | 'sad' | 'crying' | null>(null)
-  const [eating, setEating] = useState<'run' | 'munch' | null>(null)
+  const [eating, setEating] = useState<'run' | 'munch' | 'play' | null>(null)
+  const [current, setCurrent] = useState<Gift | null>(null)
   const [reaction, setReaction] = useState<string | null>(null)
   const [heart, setHeart] = useState(false)
   const walker = useRef<HTMLDivElement>(null)
@@ -204,10 +235,11 @@ function Creature({
     setRest(null)
     play()
   }
-  const eat = () => {
-    if (!snack || eating) return
+  const eat = (gift: Gift | undefined) => {
+    if (!gift || eating) return
+    setCurrent(gift)
     const el = walker.current
-    // Freeze where the walk left it, then run over to the snack, then munch.
+    // Freeze where the walk left it, then run over to the present, then munch or play.
     if (el) el.style.left = getComputedStyle(el).left
     setEating('run')
     requestAnimationFrame(() =>
@@ -216,18 +248,19 @@ function Creature({
       }),
     )
     later(() => {
-      setEating('munch')
-      onEaten()
+      setEating(gift.toy ? 'play' : 'munch')
+      onEaten(gift)
     }, 1300)
     later(showHeart, 2600)
     later(() => {
       setEating(null)
+      setCurrent(null)
       if (walker.current) walker.current.style.left = ''
     }, 4200)
   }
   useEffect(() => {
     if (!cmd || slot !== 0) return
-    if (cmd.type === 'eat') eat()
+    if (cmd.type === 'eat') eat(gifts[0])
     else if (cmd.type === 'wake') wake()
     else play()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -248,7 +281,6 @@ function Creature({
 
   const dayIndex = age - (baby ? HATCH_DAY + 1 : GROWN_DAY) + slot * 7
   const mood = stage.moods[dayIndex < stage.moods.length ? dayIndex : daily(age + slot, stage.moods.length)]
-  const snackNow = snack ?? ''
   const sleepPic = stage.sleeps[age % stage.sleeps.length]
   // Which picture right now, and how it moves.
   const shown =
@@ -256,15 +288,15 @@ function Creature({
     : rest === 'sad' ? stage.sad!
     : rest === 'asleep' ? sleepPic
     : eating === 'run' ? 'run'
-    : eating === 'munch' ? `eat-${snackNow}`
+    : (eating === 'munch' || eating === 'play') && current ? current.pic
     : reaction ? reaction
     : birthday && !baby ? 'eat-cake'
-    : snack && stage.thinking ? stage.thinking
+    : gifts.length && stage.thinking ? stage.thinking
     : mood.pic
   // The mood is on unless something else is going on. A tap keeps the mood's place and walk: the walk
   // is only paused for the reaction, so the creature jumps where it is instead of being moved
   // (user, 2026-11-18).
-  const onMood = !rest && !eating && !(birthday && !baby) && !(snack && stage.thinking)
+  const onMood = !rest && !eating && !(birthday && !baby) && !(gifts.length && stage.thinking)
   const walking = onMood && WALKING.includes(mood.anim)
   const paused = walking && !!reaction
   const cls = [
@@ -274,11 +306,12 @@ function Creature({
   return (
     <>
       {rest === 'asleep' && <img className={`pet-zzz slot-${slot}`} src={pic('zzz')} alt="" width={13} height={13} />}
-      {snack && !rest && (
-        <button type="button" className="pet-snack" onClick={eat} aria-label="Give the snack">
-          <img src={pic(`food-${snack}`)} alt="" width={18} height={18} />
-        </button>
-      )}
+      {!rest &&
+        gifts.map((g) => (
+          <button key={g.icon} type="button" className="pet-snack" onClick={() => eat(g)} aria-label={g.toy ? 'Give the toy' : 'Give the snack'}>
+            <img src={pic(g.icon)} alt="" width={18} height={18} />
+          </button>
+        ))}
       {walking && mood.butterfly && slot === 0 && (
         <img className={`pet-butterfly${paused ? ' paused' : ''}`} src={pic('butterfly')} alt="" width={14} height={14} />
       )}
@@ -296,7 +329,9 @@ export default function VisitPet() {
   // Same empty strip on the server and in the first client render; the visit fills in after mount.
   const [visit, setVisit] = useState<Visit | null>(() => countedVisit())
   const [sim, setSim] = useState<number | null>(null)
-  const [fed, setFed] = useState(true)
+  const [toyN, setToyN] = useState(0)
+  const [snackN, setSnackN] = useState<number | null>(null)
+  const [used, setUsed] = useState({ toy: true, snack: true, party: true })
   const [cmd, setCmd] = useState<Cmd>(null)
 
   useEffect(() => {
@@ -307,16 +342,31 @@ export default function VisitPet() {
       return
     }
     let v = countVisit()
-    if (p && /^\d{1,4}$/.test(p)) v = { days: Number(p), away: Number(q.get('away') ?? 0), fedToday: q.get('fed') !== '0' }
+    presents()
+    // Every page mounts its own strip, so a first look at a path page or blog post is caught here.
+    const page = window.location.pathname.replace(/\/+$/, '')
+    if (/^\/blog\/[^/]+$/.test(page) || (/^\/[^/]+\/[^/]+$/.test(page) && !page.startsWith('/blog/'))) rewardNewPage(page)
+    const pr = presents()
+    if (p && /^\d{1,4}$/.test(p)) {
+      v = { days: Number(p), away: Number(q.get('away') ?? 0), fedToday: q.get('fed') !== '0', streak: Number(q.get('streak') ?? 1) }
+      setToyN(v.days)
+      setSnackN(v.days)
+      setUsed({ toy: v.fedToday, snack: v.fedToday, party: (v.streak ?? 1) % 7 !== 0 })
+    } else {
+      setToyN(pr.toy)
+      setSnackN(pr.snack)
+      setUsed({ toy: wasUsed('toy'), snack: wasUsed('snack'), party: !pr.party || wasUsed('party') })
+    }
     setVisit(v)
-    setFed(v.fedToday)
   }, [])
 
   useEffect(() => {
     if (sim === null) return
     const st = SIM[sim]
     setVisit({ days: st.days, away: st.away ?? 0, fedToday: st.fed ?? true })
-    setFed(st.fed ?? true)
+    setUsed({ toy: st.fed ?? true, snack: st.fed ?? true, party: true })
+    setToyN(st.days)
+    setSnackN(st.days)
     setCmd(null)
     const t1 = window.setTimeout(() => st.auto && setCmd({ n: sim, type: st.auto }), 2000)
     const t2 = window.setTimeout(() => setSim((sim + 1) % SIM.length), st.hold)
@@ -332,22 +382,35 @@ export default function VisitPet() {
   const second = days >= FAMILY_DAY ? days - FAMILY_DAY + 1 : null
   const birthday = days > 0 && days % BIRTHDAY_EVERY === 0
   const stage = days < GROWN_DAY ? BABY : GROWN
-  const snack = !fed && days > HATCH_DAY && !birthday ? stage.snacks[days % stage.snacks.length] : null
-  const onEaten = () => {
-    setFed(true)
-    if (sim === null) markFed()
+  // After hatching, one present at a time: the streak party popper, the snack (until two are eaten today), then
+  // this opening's toy.
+  const gifts: Gift[] = []
+  if (days > HATCH_DAY && !birthday) {
+    if (!used.party) gifts.push({ icon: 'toy-party', pic: stage.party, toy: true, kind: 'party' })
+    if (!used.snack && snackN !== null) {
+      const food = stage.snacks[snackN % stage.snacks.length]
+      gifts.push({ icon: `food-${food}`, pic: `eat-${food}`, toy: false, kind: 'snack' })
+    }
+    if (!used.toy) {
+      const toy = stage.toys[toyN % stage.toys.length]
+      gifts.push({ icon: `toy-${toy.icon}`, pic: toy.pic, toy: true, kind: 'toy' })
+    }
+  }
+  const onEaten = (g: Gift) => {
+    setUsed((u) => ({ ...u, [g.kind]: true }))
+    if (sim === null) markUsed(g.kind)
   }
   const label =
     days < HATCH_DAY ? `An egg, visit ${days} of ${HATCH_DAY}.`
     : birthday ? 'Birthday today: cake!'
     : away >= SLEEPY_AFTER ? 'Your creature is resting. Tap it.'
-    : snack ? 'A snack is waiting. Tap it.'
+    : gifts.length ? 'A present is waiting. Tap it.'
     : second ? `Your two creatures, visit ${days}.`
     : `Your little creature, visit ${days}.`
   return (
     <div className="pet" role="img" aria-label={label}>
-      <Creature age={first} slot={0} away={away} birthday={birthday} snack={snack} onEaten={onEaten} cmd={cmd} />
-      {second !== null && <Creature age={second} slot={1} away={away} birthday={birthday} snack={null} onEaten={onEaten} cmd={null} />}
+      <Creature age={first} slot={0} away={away} birthday={birthday} gifts={gifts.slice(0, 1)} onEaten={onEaten} cmd={cmd} />
+      {second !== null && <Creature age={second} slot={1} away={away} birthday={birthday} gifts={[]} onEaten={onEaten} cmd={null} />}
     </div>
   )
 }
