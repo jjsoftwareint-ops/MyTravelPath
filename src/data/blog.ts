@@ -39,6 +39,78 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-18-1652',
+    title: 'Where to see snow in Korea without hiking up a mountain',
+    description:
+      'Snowy Seoraksan by cable car, frost trees on Balwangsan, a white birch forest and the Goblin fir path: easy places to see real snow in Korea by train and bus.',
+    teaser: 'The cable car does the climbing.',
+    icon: 'snowflake',
+    date: '2026-11-18',
+    updated: '2026-11-18',
+    keywords: ['KoreaWinter', 'SnowInKorea', 'Gangwon', 'Seoraksan', 'Balwangsan', 'WondaeriBirchForest', 'Goblin', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "Snow in Seoul is mostly a few wet flakes that are gone by lunch. For the deep kind that squeaks under your boots, you go east to **Gangwon-do**, the mountain province. Our bet for it is January and February.",
+      },
+      {
+        type: 'p',
+        text: "And you don't have to climb anything. Cable cars and flat forest paths do the work.",
+      },
+      {
+        type: 'img',
+        src: 'seoraksan-snow-valley.jpg',
+        alt: 'A wide riverbed of snow-covered boulders below rocky mountains under a blue sky',
+        caption: 'A snowed-in riverbed in Seoraksan National Park.',
+        href: 'https://www.flickr.com/photos/34922584@N00/279600012',
+        credit: { author: 'Fred Ojardias', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/', via: 'Flickr' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'mountain', text: 'Up by cable car' },
+      {
+        type: 'p',
+        text: "At **Seoraksan** a cable car takes about five minutes up to the bare rock of Gwongeumseong. Snowy peaks on one side, the **East Sea** on the other. It stops in strong wind, so go up in the morning.",
+      },
+      {
+        type: 'img',
+        src: 'seoraksan-snow-ridge-sea.jpg',
+        alt: 'Snow-covered Seoraksan ridges with towns and the sea in the distance',
+        caption: 'Seoraksan in snow, with Sokcho and the sea behind.',
+        href: 'https://www.flickr.com/photos/69135870@N00/4486324882',
+        credit: { author: 'mendhak', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "At **Balwangsan**, above the Olympic ski slopes of Pyeongchang, a longer ride of about 20 minutes takes you to the top, almost 1,500 m up. On cold mornings the trees there wear [상고대](https://www.google.com/search?tbm=isch&q=%EB%B0%9C%EC%99%95%EC%82%B0%20%EC%83%81%EA%B3%A0%EB%8C%80) (sanggodae). That isn't snow. Freezing fog sticks to every twig and turns the whole forest white, and it melts as soon as the sun reaches it. One more reason for the first cable car.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'evergreen_tree', text: 'Walks that stay flat' },
+      {
+        type: 'p',
+        text: "In Inje, the [Wondae-ri birch forest](https://www.google.com/search?tbm=isch&q=%EC%9D%B8%EC%A0%9C%20%EC%9B%90%EB%8C%80%EB%A6%AC%20%EC%9E%90%EC%9E%91%EB%82%98%EB%AC%B4%EC%88%B2%20%EA%B2%A8%EC%9A%B8) is about 690,000 white trunks standing in white snow. A wide forest road climbs to it in about an hour. {red:It is closed on Mondays and Tuesdays}, and in winter the last entry is at 2 pm.",
+      },
+      {
+        type: 'p',
+        text: "Near Jinbu (Odaesan) KTX station, the [fir path to Woljeongsa](https://www.google.com/search?tbm=isch&q=%EC%9B%94%EC%A0%95%EC%82%AC%20%EC%A0%84%EB%82%98%EB%AC%B4%EC%88%B2%EA%B8%B8%20%EB%88%88) temple is about 1 km of flat earth under tall old trees. It's where Kim Shin and Eun-tak confess their love in **Goblin**, and with snow on the branches it looks just like the drama.",
+      },
+      {
+        type: 'p',
+        text: "Then end the day in warm water. **Seorak Waterpia** in Sokcho has outdoor hot-spring pools facing the ridges you rode up that morning.",
+      },
+      {
+        type: 'route',
+        cityId: 'gangwon-do',
+        pathId: 'winter-trekking',
+        text: 'Our winter map: Seoraksan, Balwangsan, the birch forest and the Goblin fir path',
+      },
+      {
+        type: 'p',
+        text: 'Pack gloves and a warm hat. The hiking boots can stay at home.',
+      },
+    ],
+  },
+  {
     id: '2026-11-17-1720',
     title: 'What the first snow means in Korea: a date with no time and no place',
     description:
