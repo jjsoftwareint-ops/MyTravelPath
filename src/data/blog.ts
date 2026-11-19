@@ -39,6 +39,103 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-20-0617',
+    title: 'How to fold the jjimjilbang lamb towel (and why Koreans crack eggs on their heads)',
+    description:
+      'The sheep towel, the egg cracked on a friend’s forehead and the cold sikhye: the jjimjilbang you know from K-dramas, and how to fold the towel yourself.',
+    teaser: 'Lose at rock-paper-scissors, wear the egg.',
+    icon: 'ewe',
+    date: '2026-11-20',
+    updated: '2026-11-20',
+    keywords: ['Jjimjilbang', 'SheepTowel', 'Yangmeori', 'KoreanSauna', 'KDrama', 'Sikhye', 'KoreaWinter', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "If you've watched K-dramas, you've seen it: someone in a jjimjilbang T-shirt on a heated floor, a towel on their head shaped like two little sheep ears. That's the [양머리](https://www.google.com/search?tbm=isch&q=%EC%B0%9C%EC%A7%88%EB%B0%A9%20%EC%96%91%EB%A8%B8%EB%A6%AC) (yangmeori), the lamb towel, and it lives in the **찜질방 (jjimjilbang)**, the Korean bathhouse.",
+      },
+      {
+        type: 'img',
+        src: 'jjimjilbang-lamb-towel-dog.jpg',
+        alt: 'A small black and grey dog lying on a pink blanket with a white towel rolled into sheep ears on its head',
+        caption: 'The lamb towel suits everyone. Even Byeol.',
+        href: 'https://www.flickr.com/photos/59899594@N00/4285140922',
+        credit: { author: 'Seongbin Im', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "Nobody knows who folded the first one. The story goes that it took off after the drama **My Lovely Sam-soon**, and it never left the screen. It's a little silly, and it's perfect for a cold day.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'ewe', text: 'Fold your own' },
+      {
+        type: 'list',
+        items: [
+          'Take the small towel from the front desk and lay it flat.',
+          'Fold it lengthwise into three, so you have a long strip.',
+          'Roll both ends tightly in towards the middle, and stop when the gap is about as wide as your head.',
+          'Put the flat middle on top of your head. The two rolls sit over your ears like curls. Baa.',
+        ],
+      },
+      {
+        type: 'p',
+        text: "It isn't a rule, just fun, and it makes every photo better.",
+      },
+      {
+        type: 'img',
+        src: 'jjimjilbang-kiln-corridor.jpg',
+        alt: 'A long tiled corridor with arched doors to the hot kiln rooms and a painted mural on a curved stone wall',
+        caption: 'The hot kiln rooms of a jjimjilbang, each behind its own little arch.',
+        href: 'https://commons.wikimedia.org/wiki/File:2020-03-11_20.39.31_%EC%B0%9C%EC%A7%88%EB%B0%A9_%EB%B6%88%EA%B0%80%EB%A7%88.jpg',
+        credit: { author: 'Choikwangmo9', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'egg', text: 'Eggs, on your head' },
+      {
+        type: 'p',
+        text: "The snack is [맥반석 계란](https://www.google.com/search?tbm=isch&q=%EB%A7%A5%EB%B0%98%EC%84%9D%20%EA%B3%84%EB%9E%80) (maekbanseok gyeran), eggs baked slowly in the hot rooms until the shells turn brown. And here's the game: play rock-paper-scissors, and the loser gets an egg cracked on their forehead.",
+      },
+      {
+        type: 'img',
+        src: 'jjimjilbang-baked-eggs.jpg',
+        alt: 'Five brown baked eggs on a white plate, two of them peeled',
+        caption: 'Baked eggs: browner and firmer than boiled ones.',
+        href: 'https://commons.wikimedia.org/wiki/File:Maekbanseok_Gyeran_2.jpg',
+        credit: { author: '국립국어원 (National Institute of Korean Language)', license: 'CC BY-SA 2.0 KR', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en' },
+      },
+      {
+        type: 'p',
+        text: "A fair warning: these eggs are harder than boiled ones. Crack them only on friends who'll still be your friends afterwards.",
+      },
+      {
+        type: 'p',
+        text: "Wash it down with an ice-cold [식혜](https://www.google.com/search?tbm=isch&q=%EC%B0%9C%EC%A7%88%EB%B0%A9%20%EC%8B%9D%ED%98%9C) (sikhye), a sweet rice drink with soft grains of rice floating in it. Egg, sikhye, lamb towel: that's the whole set.",
+      },
+      {
+        type: 'img',
+        src: 'sikhye-cans.jpg',
+        alt: 'Two drink cans on a table, sikhye and sujeonggwa',
+        caption: 'Sikhye (left) and sujeonggwa, a cinnamon and ginger punch. Both come in cans too.',
+        href: 'https://commons.wikimedia.org/wiki/File:Korean_traditional_punches-01.jpg',
+        credit: { author: 'L. W. Yang', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/' },
+      },
+      {
+        type: 'p',
+        text: "Even BTS did the full set. Jimin and Jungkook spent a sauna day with Choo Sung-hoon, sikhye and all:",
+      },
+      {
+        type: 'video',
+        id: 'blxtdZKpq_U',
+        title: 'BTS Jungkook and Jimin at the sauna with Choo Sung-hoon',
+        caption: 'Choo Sung-hoon’s own channel.',
+      },
+      {
+        type: 'p',
+        text: "How the baths, the hot rooms and the old stone kilns work is in [our Korean sauna post](https://koreatravelpath.com/blog/korean-sauna-stone-oven-for-humans/). Bring a friend, and pick your egg partner carefully.",
+      },
+    ],
+  },
+  {
     id: '2026-11-19-1639',
     title: 'Korean strawberry season: where to eat them in Seongsu',
     description:
