@@ -39,6 +39,78 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-19-1639',
+    title: 'Korean strawberry season: where to eat them in Seongsu',
+    description:
+      'Korean strawberries ripen in winter. Where to eat them in Seongsu: a mugwort rice cake with a whole berry, a strawberry Dubai bagel and bakeries on our map.',
+    teaser: 'Here they ripen in the snow.',
+    icon: 'strawberry',
+    date: '2026-11-19',
+    updated: '2026-11-19',
+    keywords: ['KoreanStrawberry', 'StrawberrySeason', 'Seongsu', 'SeongsuCafe', 'SeoulBakery', 'Chapssaltteok', 'KoreaWinter', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "In Korea, strawberries are a winter fruit. They ripen in warm greenhouses from about December to April, so while Europe waits for June, Seoul eats them with snow outside. The big, soft, very sweet one you'll see everywhere is [설향](https://www.google.com/search?tbm=isch&q=%EC%84%A4%ED%96%A5%20%EB%94%B8%EA%B8%B0) (seolhyang).",
+      },
+      {
+        type: 'p',
+        text: "Once the berries are in, strawberry desserts pop up all over town, from towers of [딸기빙수](https://www.google.com/search?tbm=isch&q=%EB%94%B8%EA%B8%B0%EB%B9%99%EC%88%98) (ttalgi-bingsu), strawberry shaved ice, to strawberry cream sandwiches in the convenience stores. We'd spend that day in **Seongsu**, the old warehouse quarter, where the lanes on our map are full of bakeries.",
+      },
+      {
+        type: 'img',
+        src: 'seoul-strawberry-bingsu.jpg',
+        alt: 'A bowl of shaved ice piled with sliced strawberries, rice cakes and one whole strawberry on top',
+        caption: 'Ttalgi-bingsu, strawberry shaved ice, at a café in central Seoul.',
+        href: 'https://commons.wikimedia.org/wiki/File:Ttalgi-bingsu.jpg',
+        credit: { author: 'Wei-Te Wong', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'strawberry', text: 'Where the berries go' },
+      {
+        type: 'p',
+        text: "**Hanjeongseon** on Yeonmujang-gil makes [찹쌀떡](https://www.google.com/search?tbm=isch&q=%ED%95%9C%EC%A0%95%EC%84%A0%20%EC%B0%B9%EC%8C%80%EB%96%A1) (chapssal-tteok), soft rice-cake balls with fruit inside. Our pick is the [쑥 생딸기](https://www.google.com/search?tbm=isch&q=%ED%95%9C%EC%A0%95%EC%84%A0%20%EC%91%A5%20%EC%83%9D%EB%94%B8%EA%B8%B0) (ssuk saeng-ttalgi): a whole fresh strawberry in green mugwort dough. You taste the herb first, then the juice, and the berry is too big for one bite. The flavours change with the fruit.",
+      },
+      {
+        type: 'p',
+        text: "**Hearts Bakery** fills a bagel with fresh strawberries, strawberry cream and pistachio cream with crunchy kadaif, the [딸기 두바이 베이글](https://www.google.com/search?tbm=isch&q=%ED%95%98%EC%B8%A0%EB%B2%A0%EC%9D%B4%EC%BB%A4%EB%A6%AC%20%EB%94%B8%EA%B8%B0%EB%91%90%EB%B0%94%EC%9D%B4%EB%B2%A0%EC%9D%B4%EA%B8%80) (ttalgi dubai beigeul). It is very sweet. Share it.",
+      },
+      {
+        type: 'p',
+        text: "At **Etre Bake House** people queue for the salt bread and financiers. Have them with a strawberry latte.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'croissant', text: 'Bread in between' },
+      {
+        type: 'p',
+        text: "**Onion** is a bakery café in an old factory building, raw concrete walls and all. The bread everyone carries out is the [팡도르](https://www.google.com/search?tbm=isch&q=%EC%96%B4%EB%8B%88%EC%96%B8%20%ED%8C%A1%EB%8F%84%EB%A5%B4) (pangdoreu), a tall golden loaf under a snowfall of powdered sugar. There's a queue at weekends.",
+      },
+      {
+        type: 'img',
+        src: 'seongsu-onion-pastry-counter.jpg',
+        alt: 'Trays of croissants, pain au chocolat and sugar-dusted breads on a steel bakery counter',
+        caption: 'The bread counter at Onion in Seongsu, in December.',
+        href: 'https://www.flickr.com/photos/73479994@N00/52929818829',
+        credit: { author: 'lazy fri13th', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "For brunch, **Friends & Yard** puts fresh strawberries and ricotta in its salad while the berries are in season.",
+      },
+      {
+        type: 'route',
+        cityId: 'seoul',
+        pathId: 'seongsu-dong',
+        text: 'Our Seongsu map, with every bakery and café as a pin',
+      },
+      {
+        type: 'p',
+        text: 'Go on a weekday morning, before the lanes fill up. Then walk it all off under the bare trees of Seoul Forest.',
+      },
+    ],
+  },
+  {
     id: '2026-11-18-1652',
     title: 'Where to see snow in Korea without hiking up a mountain',
     description:
