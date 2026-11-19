@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import {
-  countVisit, countedVisit, presents, wasUsed, markUsed, rewardNewPage, type Kind, HATCH_DAY, GROWN_DAY, SLEEPY_AFTER, SAD_AFTER, CRY_AFTER, FAMILY_DAY, BIRTHDAY_EVERY, type Visit,
+  countVisit, countedVisit, presents, wasUsed, markUsed, rewardNewPage, presentTaken, type Kind, HATCH_DAY, GROWN_DAY, SLEEPY_AFTER, SAD_AFTER, CRY_AFTER, FAMILY_DAY, BIRTHDAY_EVERY, type Visit,
 } from '../pet'
 
 // A tiny strip under the header on every page: an egg on a strip of grass. The egg shakes gently and
@@ -332,6 +332,8 @@ export default function VisitPet() {
   const [toyN, setToyN] = useState(0)
   const [snackN, setSnackN] = useState<number | null>(null)
   const [used, setUsed] = useState({ toy: true, snack: true, party: true })
+  /** One present per session: after the first is used, the rest wait for the next opening of the site. */
+  const [taken, setTaken] = useState(false)
   const [cmd, setCmd] = useState<Cmd>(null)
 
   useEffect(() => {
@@ -356,6 +358,7 @@ export default function VisitPet() {
       setToyN(pr.toy)
       setSnackN(pr.snack)
       setUsed({ toy: wasUsed('toy'), snack: wasUsed('snack'), party: !pr.party || wasUsed('party') })
+      setTaken(presentTaken())
     }
     setVisit(v)
   }, [])
@@ -365,6 +368,7 @@ export default function VisitPet() {
     const st = SIM[sim]
     setVisit({ days: st.days, away: st.away ?? 0, fedToday: st.fed ?? true })
     setUsed({ toy: st.fed ?? true, snack: st.fed ?? true, party: true })
+    setTaken(false)
     setToyN(st.days)
     setSnackN(st.days)
     setCmd(null)
@@ -382,10 +386,10 @@ export default function VisitPet() {
   const second = days >= FAMILY_DAY ? days - FAMILY_DAY + 1 : null
   const birthday = days > 0 && days % BIRTHDAY_EVERY === 0
   const stage = days < GROWN_DAY ? BABY : GROWN
-  // After hatching, one present at a time: the streak party popper, the snack (until two are eaten today), then
-  // this opening's toy.
+  // After hatching, one present per session: the streak party popper, else a snack (until two are eaten today),
+  // else this opening's toy. The next one waits for the next time the site is opened.
   const gifts: Gift[] = []
-  if (days > HATCH_DAY && !birthday) {
+  if (days > HATCH_DAY && !birthday && !taken) {
     if (!used.party) gifts.push({ icon: 'toy-party', pic: stage.party, toy: true, kind: 'party' })
     if (!used.snack && snackN !== null) {
       const food = stage.snacks[snackN % stage.snacks.length]
@@ -398,6 +402,7 @@ export default function VisitPet() {
   }
   const onEaten = (g: Gift) => {
     setUsed((u) => ({ ...u, [g.kind]: true }))
+    setTaken(true)
     if (sim === null) markUsed(g.kind)
   }
   const label =

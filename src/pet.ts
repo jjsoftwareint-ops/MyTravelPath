@@ -92,9 +92,13 @@ export type Kind = 'toy' | 'snack' | 'party'
 export type Presents = { toy: number; snack: number | null; party: boolean }
 let presentsNow: Presents | null = null
 const usedNow = { toy: false, snack: false, party: false }
+/** One present per session (user, 2026-11-19: "second one should be for the another session"): once the creature has
+ * played with or eaten something, nothing more appears until the site is opened again. */
+let presentTakenNow = false
 
 /** This page load's presents: a new toy each time the site is opened (the same one while the visitor moves
- * between pages in the app), and a snack until two have been eaten today. Numbers pick the item in turn. */
+ * between pages in the app), and a snack until two have been eaten today. Numbers pick the item in turn. Only one
+ * of them is given per session (presentTaken). */
 export function presents(): Presents {
   if (presentsNow) return presentsNow
   const s = read()
@@ -107,17 +111,20 @@ export function presents(): Presents {
   return presentsNow
 }
 
-/** The exploring reward: a path page or blog post opened for the first time brings a fresh toy (user, 2026-11-18:
- * reward ideas). Returns true when the page is new. Remembers the last 400 pages. */
+/** Remembers path pages and blog posts opened (the last 400). It used to bring a fresh toy at once, but a second
+ * present in the same session was too much (user, 2026-11-19), so the new page only counts towards the list now.
+ * Returns true when the page is new. */
 export function rewardNewPage(page: string): boolean {
   const s = read()
   const seen = Array.isArray(s.seen) ? s.seen : []
   if (seen.includes(page)) return false
-  const toy = Number(s.gifts) || 0
-  write({ ...s, seen: [...seen, page].slice(-400), gifts: toy + 1 })
-  if (presentsNow) presentsNow = { ...presentsNow, toy }
-  usedNow.toy = false
+  write({ ...s, seen: [...seen, page].slice(-400) })
   return true
+}
+
+/** A present was already played with or eaten in this session. */
+export function presentTaken(): boolean {
+  return presentTakenNow
 }
 
 /** This page load's toy, snack or party popper was already played with or eaten. */
@@ -128,6 +135,7 @@ export function wasUsed(kind: Kind): boolean {
 /** The creature played with the toy, ate the snack or opened the party popper. */
 export function markUsed(kind: Kind) {
   usedNow[kind] = true
+  presentTakenNow = true
   const s = read()
   const t = dayKey(new Date())
   if (kind === 'party') write({ ...s, partyDay: t })
