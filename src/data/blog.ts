@@ -39,6 +39,86 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-20-1713',
+    title: 'Garden of Morning Calm lights: worth the trip from Seoul without a car?',
+    description:
+      'The Garden of Morning Calm lighting festival runs from 4 December to 14 March. What you see, the ticket price, and the train and bus there and back from Seoul.',
+    teaser: 'The last bus leaves before the garden closes.',
+    icon: 'sparkles',
+    date: '2026-11-20',
+    updated: '2026-11-20',
+    keywords: ['GardenOfMorningCalm', 'LightingFestival', 'Gapyeong', 'KoreaWinter', 'WinterLights', 'DayTripFromSeoul', 'NamiIsland', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "Every winter the **Garden of Morning Calm**, 아침고요수목원 (Achim Goyo Sumogwon), wraps its trees, hedges and whole hillsides in lights. This is the photo of Korean winter you've probably seen already. It's in a mountain valley in Gapyeong, about two hours east of central Seoul by train and bus.",
+      },
+      {
+        type: 'img',
+        src: 'morning-calm-lights-pond.jpg',
+        alt: 'A frozen pond at night, ringed by trees and shrubs covered in pink, blue and yellow lights',
+        caption: 'The Garden of Morning Calm after dark in winter.',
+        href: 'https://www.flickr.com/photos/99958070@N02/9464279614/',
+        credit: { author: 'travel oriented', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "The lights are called **오색별빛정원전** (osaek byeolbit jeongwonjeon), the garden of five-coloured starlight. They're on from **4 December to 14 March**.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'sparkles', text: 'Is it worth the trip?' },
+      {
+        type: 'p',
+        text: "We say yes, on one condition: make it the end of a Gapyeong day. Two hours each way is a lot for one evening walk. With Nami Island in the afternoon and the garden at dusk, it's a full day out.",
+      },
+      {
+        type: 'p',
+        text: 'Get there before sunset. You see the garden in daylight first, then the lights come on at dusk and the valley goes blue and purple around you.',
+      },
+      {
+        type: 'img',
+        src: 'morning-calm-lights-purple-tree.jpg',
+        alt: 'A bare tree at night with every branch covered in small purple and white lights',
+        caption: 'Every branch gets its own string of lights.',
+        href: 'https://www.flickr.com/photos/99958070@N02/9464278812/',
+        credit: { author: 'travel oriented', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "A ticket is **₩11,000** for adults and you buy it at the gate. There is no booking, so nothing sells out. Dress warmer than you would in Seoul: it's a valley in the hills and you're outside the whole time.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'bus', text: 'Without a car' },
+      {
+        type: 'list',
+        items: [
+          '🚆 ITX-Cheongchun train from **Yongsan** or **Cheongnyangni** to **Cheongpyeong Station**. The Gyeongchun subway line stops there too.',
+          '🚌 City bus **30-6** from the station to the garden, which is the last stop. A taxi takes about 20 minutes.',
+          '⏰ During the lights the garden is open 10:00 to 21:00, and until 23:00 on Saturdays. Last entry is an hour before closing.',
+          '{red:The last bus back leaves the garden at 20:00}, on Saturdays too. After that you need a taxi.',
+        ],
+      },
+      {
+        type: 'p',
+        text: "There is also the Gapyeong city tour bus, ₩8,000 for a day pass, {red:not running on Wednesdays}. It's handy for getting between the sights, but its last bus leaves the garden at 18:25 in December and January, about an hour after dark. We'd ride it there and take the 30-6 back.",
+      },
+      {
+        type: 'img',
+        src: 'morning-calm-lights-hill.jpg',
+        alt: 'A snowy garden slope at night with trees and bushes lit in blue, green, yellow and purple',
+        caption: 'The lights climb the slope behind the garden.',
+        href: 'https://www.flickr.com/photos/99958070@N02/9464279522/',
+        credit: { author: 'travel oriented', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: worth it as the last stop of a Gapyeong day. Go on a weekday, arrive around four, and check the bus times at the stop before you walk in.',
+      },
+      { type: 'route', cityId: 'gyeonggi-do', pathId: 'gapyeong', text: 'Gapyeong day trip: Nami Island, the gardens and the lake cafés' },
+    ],
+  },
+  {
     id: '2026-11-20-0617',
     title: 'How to fold the jjimjilbang lamb towel (and why Koreans crack eggs on their heads)',
     description:
