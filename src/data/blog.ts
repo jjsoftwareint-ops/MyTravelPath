@@ -40,7 +40,7 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: '2026-11-21-1750',
-    title: 'Camellias in Korea: why the red ones fall whole, and when to see them on Jeju',
+    title: "Camellias on Jeju: Korea's winter flower",
     description:
       'Camellias flower in Korea all winter: pink ones from November, red ones until spring. What the flower means, and where to see them on Jeju.',
     teaser: 'The flower that blooms three times.',
