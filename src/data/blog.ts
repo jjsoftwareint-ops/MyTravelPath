@@ -39,6 +39,88 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-21-1750',
+    title: 'Camellias in Korea: why the red ones fall whole, and when to see them on Jeju',
+    description:
+      'Camellias flower in Korea all winter: pink ones from November, red ones until spring. What the flower means, and where to see them on Jeju.',
+    teaser: 'The flower that blooms three times.',
+    icon: 'love_letter',
+    date: '2026-11-21',
+    updated: '2026-11-21',
+    keywords: ['Camellia', 'Dongbaek', 'Jeju', 'CamelliaHill', 'KoreaWinter', 'WinterFlowers', 'WhenTheCamelliaBlooms', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "Korea's winter flower is the camellia, **dongbaekkkot** (동백꽃). It opens when almost nothing else does, red against dark green leaves, sometimes with snow on them.",
+      },
+      {
+        type: 'photo',
+        src: 'camellia-field.jpg',
+        alt: 'A path between camellia trees covered in red flowers, black stone walls on the left, fallen petals on the ground and a mountain behind',
+        caption: 'Camellias in full flower along a stone-walled path on Jeju.',
+      },
+      {
+        type: 'p',
+        text: "The red one has a habit we love. It doesn't drop its petals one by one. **The whole flower falls**, still perfect, and lies on the path like someone put it there. Koreans say a camellia **blooms three times**: on the tree, on the ground, and in your heart.",
+      },
+      {
+        type: 'img',
+        src: 'camellia-fallen.jpg',
+        alt: 'A whole red camellia flower lying on a grey stone path, with two more fallen flowers behind it',
+        caption: 'A red camellia falls in one piece.',
+        href: 'https://commons.wikimedia.org/wiki/File:Fallen_common_camellia_flower.jpg',
+        credit: { author: 'Kjoonlee', license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "Its flower meaning is **\"I love you more than anyone\"**. If the name sounds familiar, you may know the K-drama [When the Camellia Blooms](https://www.google.com/search?tbm=isch&q=%EB%8F%99%EB%B0%B1%EA%BD%83%20%ED%95%84%20%EB%AC%B4%EB%A0%B5) (동백꽃 필 무렵). The heroine is called Dong-baek, and her bar is called Camellia.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'snowflake', text: 'Pink first, red later' },
+      {
+        type: 'p',
+        text: "There are two kinds. The pink **aegi-dongbaek** (애기동백), \"baby camellia\", opens first, from **November to January**, and drops its petals one at a time. The native red **dongbaek** (동백) comes later and stays through winter into early spring. That's the one that falls whole, and by February the ground under the old trees turns red.",
+      },
+      {
+        type: 'img',
+        src: 'camellia-pink.jpg',
+        alt: 'A pink camellia flower with a yellow centre in front of dark leaves, more pink flowers behind',
+        caption: 'Pink camellias at Camellia Hill, Jeju, photographed on 12 November.',
+        href: 'https://www.flickr.com/photos/59899594@N00/5253866724/',
+        credit: { author: 'golbenge', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'round_pushpin', text: 'Where we would go on Jeju' },
+      {
+        type: 'list',
+        items: [
+          "🏞️ [Camellia Hill](https://www.google.com/search?tbm=isch&q=%EC%B9%B4%EB%A9%9C%EB%A6%AC%EC%95%84%ED%9E%90%20%EB%8F%99%EB%B0%B1) (카멜리아힐): about **6,000 trees of 500 kinds**, so something is always in flower. Its camellia festival began on 20 November.",
+          "🌳 [Wimi dongbaek grove](https://www.google.com/search?tbm=isch&q=%EC%9C%84%EB%AF%B8%20%EB%8F%99%EB%B0%B1%EB%82%98%EB%AC%B4%EA%B5%B0%EB%9D%BD) (위미 동백나무군락): a village woman, Hyun Maeng-chun, saved for years to buy bare land and planted camellia seeds there as a wall against the sea wind. More than 500 of her trees still stand.",
+          "🌿 [Dongbaek Forest](https://www.google.com/search?tbm=isch&q=%EB%8F%99%EB%B0%B1%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8) (동백포레스트): round, clipped pink trees, best from late December into January. Go in the morning.",
+          "🌊 In Busan, **Dongbaek Island** at Haeundae is named after the flower. Its camellias start in December and peak in mid-January.",
+        ],
+      },
+      {
+        type: 'img',
+        src: 'camellia-red.jpg',
+        alt: 'A camellia bush with glossy dark leaves, two red flowers and a bud',
+        caption: 'Red camellias opening at Camellia Hill.',
+        href: 'https://www.flickr.com/photos/59899594@N00/5253866948/',
+        credit: { author: 'golbenge', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "One more thing we didn't know: for centuries Koreans pressed the seeds into **dongbaek-gireum** (동백기름), camellia oil, and combed it through their hair.",
+      },
+      {
+        type: 'verdict',
+        text: "Our verdict: on Jeju before January, you'll see the pink ones. For the red carpet under the old trees, go in February.",
+      },
+      { type: 'route', cityId: 'jeju', pathId: 'hallasan-winter-trekking', text: 'Hallasan in winter: snow trails, the 1100 Highland and the camellia gardens on one map' },
+    ],
+  },
+  {
     id: '2026-11-20-1713',
     title: 'Garden of Morning Calm lights: worth the trip from Seoul without a car?',
     description:
