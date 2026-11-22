@@ -40,9 +40,9 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: '2026-11-22-1755',
-    title: 'Reply 1988: is it worth watching? A trip back to old Seoul',
+    title: 'Reply 1988: the Netflix K-drama that brings the old days back',
     description:
-      'Reply 1988 on Netflix shows Seoul before the tower blocks: coal briquettes by the gate, side dishes passed next door and mums on the alley bench.',
+      'Our Netflix pick for old Korea: Reply 1988. Coal briquettes by the gate, side dishes passed next door and mums chatting on the alley bench.',
     teaser: 'Before the apartments, there was the alley.',
     icon: 'houses',
     date: '2026-11-22',
