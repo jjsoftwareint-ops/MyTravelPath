@@ -39,6 +39,71 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-22-1755',
+    title: 'Reply 1988: is it worth watching? A trip back to old Seoul',
+    description:
+      'Reply 1988 on Netflix shows Seoul before the tower blocks: coal briquettes by the gate, side dishes passed next door and mums on the alley bench.',
+    teaser: 'Before the apartments, there was the alley.',
+    icon: 'houses',
+    date: '2026-11-22',
+    updated: '2026-11-22',
+    keywords: ['Reply1988', 'Kdrama', 'KdramaOnNetflix', 'OldSeoul', 'Korea1980s', 'Ssangmundong', 'Hyeri', 'ParkBogum', 'KdramaRecommendation', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "If a Korean friend tells you to watch just one drama, there's a good chance it's **Reply 1988**, **응답하라 1988** (eungdap-hara 1988). Koreans shorten it to **응팔** (eung-pal).",
+      },
+      {
+        type: 'img',
+        src: 'old-seoul-street-1988.jpg',
+        alt: 'A Seoul shopping street in 1988: a green boxy car parked in front of small shops with hand-painted signs and piles of bags on the pavement',
+        caption: 'A Seoul shopping street in February 1988, the year the drama is set.',
+        href: 'https://commons.wikimedia.org/wiki/File:Korea_-_Seoul_-_John_TDY_-_February_1988_2.jpg',
+        credit: { author: 'Barbara Ann Spengler', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "Most of Seoul now lives in tall apartment blocks. This drama goes back to before that: five families in one small alley in **Ssangmun-dong**, in the north of the city, gates open, everyone in everyone's business. Nobody fights a villain. The director has said the alley itself is the heart of the story.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'houses', text: 'Things Seoul has almost lost' },
+      {
+        type: 'list',
+        items: [
+          "🔥 **Coal briquettes**, [연탄](https://www.google.com/search?tbm=isch&q=%EC%97%B0%ED%83%84%20%EA%B3%A8%EB%AA%A9) (yeontan): round grey blocks full of holes that heated the house. The burnt-out ones piled up white beside the gate.",
+          "🍲 **Side dishes next door**: whoever made too much sent a bowl to the neighbours, and the bowl never came back empty.",
+          "🪑 **The alley bench**, **평상** (pyeongsang): a low wooden platform where the mums sat in the evening, trimming vegetables and talking about their husbands and their in-laws.",
+          "📻 **Late-night radio**: teenagers in their rooms with **별이 빛나는 밤에** (byeori binnaneun bame), \"On a Starry Night\", the music show hosted by the singer Lee Moon-sae.",
+        ],
+      },
+      {
+        type: 'video',
+        id: 'c-EMf3JdxUA',
+        title: 'Reply 1988 | Trailer with English subtitles',
+        caption: 'The trailer with English subtitles, from Viu Philippines.',
+      },
+      {
+        type: 'p',
+        text: "It's slow for two episodes. Then it's 2 am and you're crying because a dad bought a birthday cake.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'clapper_board', text: 'Before you press play' },
+      {
+        type: 'list',
+        items: [
+          "📺 It's on **Netflix** in many countries: 20 episodes of about an hour and a half each.",
+          "🤫 It hides who Deok-sun (played by **Hyeri**) marries until the very last episode, and Korea split into two camps over it. Don't google it.",
+          "📍 The alley was mostly a set. **Ssangmun Station** (line 4) is real, though, and the small lanes behind exit 2 still have that low, cosy feel.",
+        ],
+      },
+      {
+        type: 'verdict',
+        text: "Our verdict: watch it for the alley, not the plot. It's the closest you'll get to old Seoul without a time machine.",
+      },
+    ],
+  },
+  {
     id: '2026-11-21-1750',
     title: "Camellias on Jeju: Korea's winter flower",
     description:
