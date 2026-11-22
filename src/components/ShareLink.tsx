@@ -17,7 +17,9 @@ export default function ShareLink({ title, text, compact = false }: { title: str
     const message = text ?? `${title} – a free walking route on My Travel Path`;
     if (navigator.share) {
       try {
-        await navigator.share({ title, text: message, url });
+        // Some apps glue text and url together with no separator, so the text ends
+        // in a space; apps that put the url on its own line just ignore it.
+        await navigator.share({ title, text: `${message} `, url });
         return;
       } catch {
         /* user cancelled the sheet */
