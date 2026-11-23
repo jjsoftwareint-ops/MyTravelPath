@@ -39,6 +39,70 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-23-1651',
+    title: 'Jeju Olle trail in winter: which route to walk',
+    description:
+      'Walking the Jeju Olle trail in winter? Take the south coast routes, warmer and less windy, past ripe tangerines. Plus ferries, the 5 pm rule and safety calls.',
+    teaser: 'The island has two winters.',
+    icon: 'tangerine',
+    date: '2026-11-23',
+    updated: '2026-11-23',
+    keywords: ['JejuOlle', 'JejuOlleTrail', 'OlleTrail', 'Jeju', 'Seogwipo', 'Tangerine', 'KoreaWinter', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "Jeju has two winters. The cold **northwest wind** comes in from Siberia and hits the north side first, where Jeju City and the airport are. Hallasan stands in its way, so the south coast around **Seogwipo** stays a couple of degrees warmer, and Jeju City gets strong wind on about five times as many days.",
+      },
+      {
+        type: 'img',
+        src: 'olle-winter-tangerines.jpg',
+        alt: 'A field of tangerine trees full of ripe orange fruit, a small farm shed and tall dark trees behind under a grey sky',
+        caption: 'A tangerine orchard on Olle route 7, Seogwipo.',
+        href: 'https://commons.wikimedia.org/wiki/File:Jejuolle-route-07(4).jpg',
+        credit: { author: 'Jeju Olle Foundation', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "So if you're walking the **Olle trail** (제주올레, Jeju Olle) between December and February, walk the south.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'tangerine', text: 'South coast, orange trees' },
+      {
+        type: 'p',
+        text: "Routes **5, 6 and 7** follow the Seogwipo coast. From mid-November to the end of December the orchards beside the path hang heavy with **gamgyul** (감귤), Jeju's tangerines, behind low black stone walls. Picking farms stay open into January.",
+      },
+      {
+        type: 'p',
+        text: "Route 6 is the gentle one and ends at the market in town. Route 7 is the cliff route, and route 5 passes the old camellia grove at Wimi. We'd happily walk all three in a row.",
+      },
+      {
+        type: 'img',
+        src: 'olle-winter-route5.jpg',
+        alt: 'A paved path through a tunnel of dark green trees, two benches on the left and the blue sea at the end',
+        caption: 'Olle route 5, where the path opens onto the sea.',
+        href: 'https://commons.wikimedia.org/wiki/File:Jejuolle-route-05(5).jpg',
+        credit: { author: 'Jeju Olle Foundation', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'route', cityId: 'jeju', pathId: 'jeju-olle-trail', text: 'Olle routes 5, 6 and 7 on one map, one colour per route, with the stamp boxes' },
+      { type: 'space' },
+      { type: 'h', icon: 'ferry', text: 'Keep a spare day' },
+      {
+        type: 'list',
+        items: [
+          "⛴️ Udo, Gapado and Chuja-do are Olle routes too, but their **ferries stop in high wind**, and winter has plenty of it. The last boat back from Udo goes around 17:00 from November to February.",
+          "🌬️ Route 17 on the north coast ends near the airport. Save it for a calm day.",
+          "⏰ The Olle office asks walkers to **finish by 5 pm in winter** (6 pm in summer). Start in the morning.",
+          "📞 Walking alone? Tell the **Jeju Olle call centre** your route before you set off, and they'll ring you every hour to check you're fine (weekdays 08:00 to 18:30, weekends 09:00 to 18:00).",
+        ],
+      },
+      {
+        type: 'verdict',
+        text: 'Our verdict: a winter Olle is a south-coast Olle. Tangerines on one side, the sea on the other, and back before the light goes.',
+      },
+    ],
+  },
+  {
     id: '2026-11-22-1755',
     title: 'Reply 1988: the Netflix K-drama that brings the old days back',
     description:
@@ -2697,7 +2761,7 @@ export const posts: Post[] = [
   },
   {
     id: '2026-10-30-0845',
-    title: "Nami Island isn't really a country. Try telling the gift shop that.",
+    title: 'Is Nami Island a country? Its passport, money and flag explained',
     description:
       "In 2006 a tourist island east of Seoul declared \"cultural independence\" from South Korea. It still issues its own passports and currency today, flag and all.",
     teaser: 'It has its own flag, its own money, and a passport you can actually buy.',
