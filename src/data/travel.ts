@@ -2736,17 +2736,18 @@ export const cities: City[] = [
       {
         id: 'hwaseong',
         name: 'Suwon with Hwaseong Fortress',
-        seoTitle: 'Suwon Hwaseong Fortress walk: 5.6 km loop',
+        seoTitle: 'Suwon Hwaseong Fortress walk and Lovely Runner spots',
         seoDescription:
-          'Walk the 5.6 km Hwaseong Fortress wall in Suwon, with its four gates and view points, plus Haenggung-dong lanes. Public toilets, Suwon fried chicken and cafés: 45 pins on the map.',
+          'Walk the 5.6 km Hwaseong Fortress wall in Suwon, then find the Lovely Runner filming spots: Sol\'s house, the blue gate, Hwahongmun. 51 pins on the map.',
         duration: '3h',
-        updated: '2026-11-07',
+        updated: '2026-11-23',
         tags: [{ icon: 'village', label: 'Old town' }],
         whyVisit: [
           "A **UNESCO fortress you can walk right round in three hours**: 5.7 km of wall, four gates, and a hilltop command post with a night view over Suwon.",
           "A king built it in two years for the father he could not save, and after the war the whole thing was rebuilt from the original construction record.",
           "Inside the wall is a palace of 576 rooms, and in late autumn **silver grass and yellow ginkgo along the pond**.",
           "An hour from Seoul on Line 1, and the loop ends where it starts.",
+          "The lanes of Haenggung-dong are where **Lovely Runner** was filmed: Sol's house, Sun-jae's blue gate and the bridge where he confesses.",
         ],
         story: {
           title: 'A fortress built for a father',
@@ -2768,7 +2769,7 @@ export const cities: City[] = [
         image: 'suwon.jpg',
         imageCredit: 'Photo: 김병모 · CC0',
         mapUrl: 'https://www.google.com/maps/d/viewer?mid=1PMZUkDSkLVi-b-z9Igps2p3zW54rNzQ',
-        keywords: ['Suwon', 'Gyeonggi', 'HwaseongFortress', 'HwaseongHaenggung', 'Haenggungdong', 'Banghwasuryujeong', 'Seojangdae', 'SuwonChicken', 'HaenggungdongCafe', 'DayTripFromSeoul', 'KoreaTravel'],
+        keywords: ['Suwon', 'Gyeonggi', 'HwaseongFortress', 'HwaseongHaenggung', 'Haenggungdong', 'Banghwasuryujeong', 'Seojangdae', 'SuwonChicken', 'HaenggungdongCafe', 'LovelyRunner', 'LovelyRunnerFilmingLocation', 'DayTripFromSeoul', 'KoreaTravel'],
         guide: {
           intro: [
             "🏯 Start at Janganmun, the north gate, walk the wall west and up Paldalsan to Seojangdae, down to Paldalmun, and back along the east wall to the pavilion at Banghwasuryujeong, where you began.",
@@ -2786,6 +2787,7 @@ export const cities: City[] = [
           ],
           tips: [
             "🚇 Getting there: Line 1 to Suwon Station, then a taxi or local bus to Paldalmun or Janganmun. Check the bus number on the day.",
+            "🎬 **Lovely Runner** (선재 업고 튀어) was filmed here. [[Sol's house and Sun-jae's blue gate|수원 행궁동 선재 업고 튀어 솔이네 집]] face each other in one small lane: Sol's is a café now, but **people live behind the blue gate**, so take your photos quietly from the lane. Sun-jae confesses on the footbridge just below [[Hwahongmun|수원 화홍문]], teaches Sol to ride a bike by the pond under Banghwasuryujeong, and they walk to school along the wall. All six spots are on the map.",
             "🎬 Drama fans: Wolhwawon (월화원), the Chinese garden 3 km south-east, is free and open until 22:00, and it is on our K-Drama map.",
             "🛍️ The Starfield Suwon library (별마당도서관) is about 2 km west of the wall inside the mall, so it works as a rainy-day stop. Naver lists no separate hours for it.",
             "🏘️ The Korean Folk Village is in Yongin, about 10 km south-east, and needs a trip of its own. Naver lists it open 10:00–19:00 Monday to Thursday and until 22:00 Friday to Sunday.",
