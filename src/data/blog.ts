@@ -39,6 +39,70 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-24-1702',
+    title: 'Lovely Runner filming locations: the blue gate, the bridge and the pond',
+    description:
+      "Where Lovely Runner was filmed: Sol's house and the blue gate in Suwon, the confession at Hwahongmun, the bike ride by the pond and a stream in Seoul.",
+    teaser: 'A family still lives behind the blue gate.',
+    icon: 'umbrella_with_rain_drops',
+    date: '2026-11-24',
+    updated: '2026-11-24',
+    keywords: ['LovelyRunner', 'LovelyRunnerFilmingLocations', 'KDrama', 'Suwon', 'Hwaseong', 'Haenggungdong', 'ByeonWooSeok', 'KoreaTravel'],
+    body: [
+      {
+        type: 'p',
+        text: "In **Lovely Runner** (선재 업고 튀어, Seonjae eopgo twieo), Sol goes back in time to save Sun-jae, the singer she loves, and lands in the year they were both nineteen. Most of those school-days scenes were filmed in one old corner of **Suwon**, an hour from Seoul, and you can walk all of them in an afternoon.",
+      },
+      {
+        type: 'img',
+        src: 'lovely-runner-yongyeon-night.jpg',
+        alt: 'A lit pavilion on a small hill above a dark pond at night, the fortress wall glowing on the left and a gate on the right, all reflected in the water',
+        caption: 'Banghwasuryujeong above Yongyeon pond at night, where Sun-jae and Sol ride a bike together. Hwahongmun is on the right.',
+        href: 'https://commons.wikimedia.org/wiki/File:Hwahongmun_(68475987).jpeg',
+        credit: { author: 'Eunghyo Lee', license: 'CC BY 3.0', licenseUrl: 'https://creativecommons.org/licenses/by/3.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'video', id: '5kk0dYa8Ccc', title: 'Lovely Runner official trailer', caption: 'The official trailer, from CJ ENM.' },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'umbrella_with_rain_drops', text: 'Two houses, one lane' },
+      {
+        type: 'p',
+        text: "In the lanes of **Haenggung-dong** (행궁동), Sol's house and Sun-jae's house face each other across one narrow alley. Sol's is a café now. Across the lane is the **blue gate** where the two of them share a yellow umbrella in the rain.",
+      },
+      {
+        type: 'p',
+        text: "A family really lives behind that gate. Fans take one photo from the lane and move on quietly, and we'd ask you to do the same.",
+      },
+      {
+        type: 'p',
+        text: "The painted walls where Sol pins Sun-jae to the wall on the way to school are five minutes away, in the mural village.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'blue_heart', text: 'The gate, and a stream in Seoul' },
+      {
+        type: 'p',
+        text: "Ten minutes on is **Hwahongmun** (화홍문), the water gate in the old fortress wall where Sun-jae finally confesses. Right beside it, a pavilion looks down on a small pond, and at night it glows just like it does on screen.",
+      },
+      {
+        type: 'img',
+        src: 'lovely-runner-hwahongmun.jpg',
+        alt: 'A stone bridge with seven arches and a pavilion on top, water falling over steps below it and a fountain in the stream',
+        caption: 'Hwahongmun, the fortress water gate where Sun-jae confesses.',
+        href: 'https://commons.wikimedia.org/wiki/File:Hwahongmun_20240929_004.jpg',
+        credit: { author: 'Mobius6', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "The scene where it all begins is in Seoul. Sol slips while reaching for Sun-jae's watch in [Seongbukcheon](https://www.google.com/search?tbm=isch&q=%EC%84%B1%EB%B6%81%EC%B2%9C%20%EC%84%A0%EC%9E%AC%20%EC%97%85%EA%B3%A0%20%ED%8A%80%EC%96%B4) (성북천), a small stream five minutes from Sungshin Women's University Station on line 4. It's a calm neighbourhood stream, far quieter than Cheonggyecheon.",
+      },
+      { type: 'route', cityId: 'gyeonggi-do', pathId: 'hwaseong', text: 'All six Suwon filming spots on our fortress walk map' },
+      {
+        type: 'verdict',
+        text: 'Our verdict: go to Suwon on a weekday afternoon, walk the wall, and stay until the lights come on at the pond.',
+      },
+    ],
+  },
+  {
     id: '2026-11-23-1651',
     title: 'Jeju Olle trail in winter: which route to walk',
     description:
