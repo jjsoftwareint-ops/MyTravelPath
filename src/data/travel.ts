@@ -3612,6 +3612,108 @@ export const cities: City[] = [
     ],
   },
   {
+    id: 'chungcheong',
+    name: 'Chungcheong',
+    seoTitle: 'Chungcheong day trips by train: Asan hot springs',
+    seoDescription:
+      'Car-free day trips to Chungcheong: the Onyang hot springs and spa resorts of Asan, with Oeam Folk Village, Hyeonchungsa and the ginkgo tree road.',
+    intro: [
+      "The farm and hill country just south of Gyeonggi, split into North and South Chungcheong, with **Daejeon** as its big city.",
+      "**Asan** is hot-spring country at the end of subway Line 1, close to Pyeongtaek and Cheonan and about an hour and a half from Seoul by train.",
+    ],
+    image: 'chungcheong.jpg',
+    imageCredit: 'Photo: indytrucks · CC BY 2.0',
+    paths: [
+      {
+        id: 'asan',
+        name: 'Asan: Onyang hot springs and Oeam Folk Village',
+        seoTitle: 'Asan hot springs day trip: Onyang, Spavis and Spa Dogo',
+        seoDescription:
+          'A car-free hot-spring day in Asan: the Onyang royal spa town, Spavis and Paradise Spa Dogo, with Oeam Folk Village, Hyeonchungsa and the ginkgo road.',
+        duration: '1 day',
+        updated: '2026-11-24',
+        tags: ['♨️ Hot springs', { icon: 'village', label: 'Traditional' }],
+        whyVisit: [
+          "Onyang is the town where Joseon kings came to bathe, and you can soak in **the same hot-spring water** a few steps from the station.",
+          "Spavis and Spa Dogo are hot-spring resorts with indoor and outdoor pools, good for **a whole warm day in winter**.",
+          "Oeam Folk Village adds thatched roofs and long stone walls, and families still live in the old houses.",
+        ],
+        story: {
+          title: 'A royal spa and a clan village',
+          text: [
+            "Onyang's hot springs drew the **Joseon kings**. King Sejong had a bathing palace built here, later kings came back to it, and the Onyang Tourist Hotel now stands on its site, with the palace's stone monuments in its garden.",
+            "Oeam has been the home of the **Yi family of Yean** for about 500 years, and the whole village is protected as **national heritage**. Most accounts say its name comes from Oeam, the pen name of Yi Gan, a scholar of the family.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🚫',
+            title: 'Onyang Tourist Hotel hot spring: closed on Tuesdays',
+            at: 'Onyang Tourist Hotel hot spring',
+            body: "The public bath is open **06:00 to 20:00**, last entry 19:00, and {red:closed on Tuesdays}. Adults pay **12,000 won**.",
+            since: 'Checked 24 November 2026.',
+            source: 'Hours of the 온천탕, last entry, the Tuesday closing and the fee list on Naver Map (place 13491853), 24 November 2026.',
+          },
+          {
+            icon: '🎟️',
+            title: 'Oeam Folk Village: 2,000 won, open until 17:00 in winter',
+            at: 'Oeam Folk Village',
+            body: "Adults pay **2,000 won**, children 1,000 won. Open **09:00 to 17:00** in winter and **09:00 to 18:00** in summer. {red:On Mondays the folk museum and some buildings are closed}.",
+            since: 'Checked 24 November 2026.',
+            source: 'Fees, winter and summer hours and the Monday note on Naver Map (place 1643631213), 24 November 2026.',
+          },
+          {
+            icon: '🚫',
+            title: 'Hyeonchungsa: free, closed on Mondays',
+            at: 'Hyeonchungsa',
+            body: "Entry is free. Open **09:00 to 18:00** from March to October (last entry 17:00) and **09:00 to 17:00** from November to February (last entry 16:00). {red:Closed on Mondays}, unless the Monday is a public holiday.",
+            since: 'Checked 24 November 2026.',
+            source: 'Seasonal hours, last entry, the Monday closing and the holiday rule on Naver Map (place 11620936), 24 November 2026.',
+          },
+          {
+            icon: '🚫',
+            title: 'Onyang Folk Museum: closed on Mondays',
+            at: 'Onyang Folk Museum',
+            body: "Open **10:00 to 17:30**, last entry 16:30, and {red:closed on Mondays}. Adults pay **8,000 won**.",
+            since: 'Checked 24 November 2026.',
+            source: 'Hours, last entry, the Monday closing and the fee list on Naver Map (place 11785194), 24 November 2026.',
+          },
+        ],
+        image: 'asan-oeam.jpg',
+        imageCredit: 'Photo: indytrucks · CC BY 2.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=16spvGL-c8HdZuzxBqtEUTasiFSzl2tc',
+        keywords: ['Asan', 'HotSpring', 'OnyangHotSpring', 'AsanSpavis', 'ParadiseSpaDogo', 'DayTripFromSeoul', 'OeamFolkVillage', 'Hyeonchungsa', 'GinkgoTreeRoad', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "♨️ **Pick your bath first.** Spavis and Spa Dogo are resorts you stay in all day, while the old hotel bath by the station takes an hour or two and leaves time for the sights.",
+            "With the hotel bath, I would take the morning bus to Oeam while its lanes are quiet, or go to Hyeonchungsa and the ginkgo road, and keep the hot water for the end of the day, right before the train home.",
+          ],
+          route: [
+            "[[Onyang Tourist Hotel hot spring|온양관광호텔 대온천탕]]: the public hot-spring bath on the site of the kings' bathing palace, five minutes from the station. Sincheon-tang nearby is an old local bathhouse.",
+            "[[Asan Spavis|아산 스파비스]]: a hot-spring water park with indoor and outdoor pools, north of the city, by bus or taxi.",
+            "[[Paradise Spa Dogo|파라다이스 스파도고]]: a hot-spring spa resort to the west, closest to Dogo Oncheon Station on the Janghang line.",
+            "[[Onyang Oncheon Traditional Market|온양온천전통시장]]: the town market right beside the station.",
+            "[[Oeam Folk Village|아산 외암민속마을]]: bus 100 or 101 from the stop in front of Onyangoncheon Station, about 30 minutes. Thatched and tiled houses behind more than 5 km of stone walls; the houses are homes, so look in from the gates.",
+            "[[Geonjae Old House|아산 건재고택]]: the best-known house in the village, with an old garden and big trees.",
+            "[[Maengssi Haengdan|아산 맹씨행단]]: about 3 km from Oeam, by taxi. One of the oldest family houses in Korea, home of General Choe Yeong and later of the scholar-minister Maeng Sa-seong, with two old ginkgo trees in the yard.",
+            "[[Hyeonchungsa|아산 현충사]]: the shrine to Admiral Yi Sun-sin, the commander whose statue stands in Gwanghwamun, with his family home and a memorial museum in a large garden.",
+            "[[Gokgyocheon Ginkgo Tree Road|현충사 곡교천 은행나무길]]: a car-free road under two rows of ginkgo trees beside the stream, golden from late October to early November.",
+            "[[Sinjeong Lake|아산 신정호]]: a lake park with a lakeside walk and gardens, about 3 km from Onyangoncheon Station.",
+            "[[Onyang Folk Museum|온양민속박물관]]: one of the largest folk museums in Korea, on everyday life, crafts and farming, with old houses in the garden.",
+            "[[Gongseri Catholic Church|아산 공세리성당]]: buses 601, 610 or 614 from the station. A red-brick church on a hill among very old trees, often called the most beautiful church in Korea; its museum is {red:closed on Mondays}.",
+          ],
+          tips: [
+            "🚇 From Seoul: Mugunghwa or ITX train from **Yongsan Station** to **Onyangoncheon Station** (7,000 won by Mugunghwa, about 10,000 won by ITX), or subway **Line 1** to the same station, which is slower.",
+            "⏰ Buses to Oeam come every 20 to 40 minutes, so look up the next one on Naver Map and take a taxi when the wait is long.",
+            "🚌 The Asan city tour bus (4,000 won) leaves from exit 1 of the station and stops at Oeam, Hyeonchungsa and Sinjeong Lake on some weekdays; ask at the tourist information centre whether it runs that day.",
+            "🔗 If a folk village is what you want most, the Korean Folk Village in Yongin is much closer to Seoul and pairs with the [Suwon Hwaseong walk](https://koreatravelpath.com/gyeonggi-do/hwaseong/).",
+            "🌳 Come in late October or early November to see the ginkgo road and the trees at Maengssi Haengdan turn gold.",
+          ],
+        },
+      },
+    ],
+  },
+  {
     id: 'theme',
     name: 'Theme',
     intro: [

@@ -95,6 +95,10 @@ All allow free use; the credit is given in every case.
 - Jeju Olle Trail path banner: *Jeju Olle Route 1-1 03*, Jeju Olle Foundation,
   CC BY-SA 4.0.
   https://commons.wikimedia.org/wiki/File:Jeju_Olle_Route_1-1_03.jpg
+- Chungcheong card photo: *Oeam Folk Village, 2006 (4)*, indytrucks, CC BY 2.0.
+  https://commons.wikimedia.org/wiki/File:Oeam_Folk_Village,_2006_(4).jpg
+- Asan path banner: *Oeam Folk Village, 2006 (1)*, indytrucks, CC BY 2.0.
+  https://commons.wikimedia.org/wiki/File:Oeam_Folk_Village,_2006_(1).jpg
 - Incheon card photo: *Incheon Grand Bridge*, Cameron Henderson, public domain.
   https://commons.wikimedia.org/wiki/File:Incheon_Grand_Bridge.jpg
 - Suwon with Hwaseong Fortress path banner: *방화수류정 Banghwa Suryu Pavilion, Hwaseong Fortress*, 김병모, CC0,
