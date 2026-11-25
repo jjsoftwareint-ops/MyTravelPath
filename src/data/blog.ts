@@ -39,6 +39,82 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-25-2027',
+    title: "Korea's first sunrise of the year: what it means and where to watch it",
+    description:
+      "Why Koreans get up in the dark on 1 January to watch the first sunrise, what they wish for, and where to see it without a car: Seoul, Jeongdongjin, Busan, Jeju.",
+    teaser: 'The real New Year party starts at 7:30 in the morning.',
+    icon: 'sunrise',
+    date: '2026-11-25',
+    updated: '2026-11-25',
+    keywords: ['FirstSunrise', 'Haedoji', 'KoreanNewYear', 'NewYearInKorea', 'Jeongdongjin', 'Haeundae', 'SeongsanIlchulbong', 'KoreaInWinter', 'KoreaTravel'],
+    body: [
+      {
+        type: 'img',
+        src: 'first-sunrise-busan-crowd.jpg',
+        alt: 'A dark crowd on a beach facing the sea as a red sun rises over the horizon',
+        caption: "New Year's morning on a Busan beach: thousands of people, all facing the same way.",
+        href: 'https://commons.wikimedia.org/wiki/File:Busan_New_Year_Festival.jpg',
+        credit: { author: 'Busan Metropolitan City', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "In most of Europe, New Year's Day starts with a late breakfast. In Korea, people get up in the dark, climb a hill or stand on a frozen beach, and wait in silence for the sun.",
+      },
+      {
+        type: 'p',
+        text: "This is **해돋이** (haedoji), the first sunrise of the year. Going out to greet it is called **해맞이** (haemaji), and for many people it's as much a part of New Year as the midnight countdown.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'sunrise', text: 'Why the first sunrise' },
+      {
+        type: 'p',
+        text: "You make a **wish** (소원, sowon) as the sun comes up over the edge. Festivals hand out paper slips to write it on, and plenty of people go as a couple or with family.",
+      },
+      {
+        type: 'p',
+        text: "Then everyone goes home for a bowl of [떡국](https://www.google.com/search?tbm=isch&q=%EB%96%A1%EA%B5%AD) (tteokguk), rice cake soup. The old saying goes that you only turn a year older once you've eaten it, which is a good reason to eat slowly.",
+      },
+      {
+        type: 'img',
+        src: 'first-sunrise-seoul-han-river.jpg',
+        alt: 'People in winter coats on a bridge over the Han River, holding up phones toward a low orange sun beside a tall tower',
+        caption: 'The first sunrise of 2023 over the Han River, seen from Seongsu-dong in Seoul.',
+        href: 'https://commons.wikimedia.org/wiki/File:2023_sunrise_09_(52599232104).jpg',
+        credit: { author: 'Korean Culture and Information Service (Kim Sunjoo)', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'train', text: 'Where to watch it without a car' },
+      {
+        type: 'list',
+        items: [
+          "**Seoul**: the sun rose at 7:47 last year. Hills like **Achasan** (아차산) and **Haneul Park** (하늘공원, Haneul Gongwon) had free district festivals last year with music and wishes, and a Han River bridge works too.",
+          "**Jeongdongjin** (정동진), Gangneung: a little station right on the beach, about two hours from Seoul by KTX. The sun came up around 7:39 last year, a few minutes before Seoul.",
+          "**Haeundae** (해운대), Busan: the biggest crowd. News reports expected more than 100,000 people on the beach last year.",
+          "**Seongsan Ilchulbong** (성산일출봉), Jeju: the 'sunrise peak'. Last year's festival ran from 31 December into New Year's morning, and the places for the summit sunrise filled up early.",
+        ],
+      },
+      {
+        type: 'img',
+        src: 'first-sunrise-seongsan-ilchulbong.jpg',
+        alt: 'The flat-topped crater of Seongsan Ilchulbong in silhouette against an orange morning sky, with calm water in front',
+        caption: 'Seongsan Ilchulbong on Jeju at sunrise.',
+        href: 'https://commons.wikimedia.org/wiki/File:Sunrise_with_Seongsan_Ilchulbong.jpg',
+        credit: { author: 'Sukkim1996', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'route', cityId: 'gangwon-do', pathId: 'gangneung', text: "Jeongdongjin's sunrise station and 30 more Gangneung places on our map" },
+      {
+        type: 'p',
+        text: "Dress for minus ten: New Year's mornings here can be that cold. Get there an hour early, bring something hot to drink, and book an east-coast train for 31 December as soon as you can. This year's sunrise times should be close to last year's.",
+      },
+      {
+        type: 'verdict',
+        text: "Our verdict: if you're in Korea on 1 January, set an alarm for once. A Seoul hill is enough, but the sea is better.",
+      },
+    ],
+  },
+  {
     id: '2026-11-24-1702',
     title: 'Lovely Runner filming locations: the blue gate, the bridge and the pond',
     description:
