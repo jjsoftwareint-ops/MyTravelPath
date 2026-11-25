@@ -39,6 +39,81 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-25-2051',
+    title: 'Why Koreans eat red bean porridge on the winter solstice (dongji)',
+    description:
+      'What dongji, the winter solstice, means in Korea: red porridge that keeps bad spirits away, a rice ball for every year of your age, and free bowls in Seoul.',
+    teaser: 'On the longest night, the ghosts hate red.',
+    icon: 'steaming_bowl',
+    date: '2026-11-25',
+    updated: '2026-11-25',
+    keywords: ['Dongji', 'WinterSolstice', 'Patjuk', 'RedBeanPorridge', 'KoreanFood', 'KoreanCulture', 'SeoulInDecember', 'Unhyeongung', 'KoreaTravel'],
+    body: [
+      {
+        type: 'img',
+        src: 'dongji-patjuk-bowl.jpg',
+        alt: 'A bowl of thick dark red bean porridge with white rice balls in it, on a straw mat',
+        caption: 'Patjuk with its chewy rice balls, the dish of the longest night.',
+        href: 'https://commons.wikimedia.org/wiki/File:Patjuk.jpg',
+        credit: { author: 'wizdata', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "On 22 December this year, Korea has its longest night. The day is called **동지** (dongji), the winter solstice, and it has its own food: **팥죽** (patjuk), a thick, dark red porridge of red beans and rice.",
+      },
+      {
+        type: 'p',
+        text: "Its old name is **작은 설** (jageun seol), the little New Year. From here on the days get longer again, so people treated it as the moment the year turns.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'ghost', text: 'Red against the dark' },
+      {
+        type: 'p',
+        text: "The longest night was when bad spirits were strongest, and they were believed to **hate the colour red**. So families cooked a big pot, offered a bowl to their ancestors and splashed porridge around the house to keep bad luck out.",
+      },
+      {
+        type: 'p',
+        text: "Floating in it are **새알심** (saealsim), chewy rice balls named after bird eggs. Some families give everyone as many as their age, and the saying goes that you only turn a year older once you've had your dongji porridge. New Year's rice cake soup says the same thing, so Korea gives you two chances.",
+      },
+      {
+        type: 'p',
+        text: "Last year was a **애동지** (aedongji), a 'baby dongji', because the day fell early in the lunar month. Porridge then was thought to be bad luck for children, so people made red bean rice cake, [팥시루떡](https://www.google.com/search?tbm=isch&q=%ED%8C%A5%EC%8B%9C%EB%A3%A8%EB%96%A1) (pat-sirutteok), instead. This year it falls mid-month, so the porridge is back.",
+      },
+      {
+        type: 'img',
+        src: 'dongji-patjuk-pot.jpg',
+        alt: 'A big metal pot full of red bean porridge with a ladle, small bowls stacked beside it',
+        caption: 'A big pot of patjuk, ladled out bowl by bowl.',
+        href: 'https://commons.wikimedia.org/wiki/File:Korean_red_bean_porridge-Patjuk-01.jpg',
+        credit: { author: 'taylorandayumi', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'red_paper_lantern', text: 'Free bowls in Seoul' },
+      {
+        type: 'p',
+        text: "You don't need a Korean grandmother to try it. Seoul's heritage sites mark the day, and last year all of these were free:",
+      },
+      {
+        type: 'list',
+        items: [
+          "**Unhyeongung** (운현궁), a royal house near Anguk Station: on dongji itself, **400 bowls of porridge** from 11:30 until they ran out, plus traditional games and a 2026 calendar poster.",
+          "**National Folk Museum** (국립민속박물관, Gungnip Minsok Bangmulgwan) inside Gyeongbokgung: a dongji ceremony anyone could bow at, a mask dance and talisman stamps. In porridge years it has handed out up to 1,000 bowls.",
+          "**Namsangol Hanok Village** (남산골한옥마을, Namsangol Hanok Maeul): a Saturday before the day, with talisman making, red bean tea, rice cakes and free desk calendars.",
+        ],
+      },
+      {
+        type: 'p',
+        text: "The calendars are a dongji custom too: the royal observatory used to hand out next year's almanac on this day. The 2026 programmes aren't out yet, so check the venues on Naver Map in mid-December. Any other winter day, porridge shops sell the sweeter [단팥죽](https://www.google.com/search?tbm=isch&q=%EB%8B%A8%ED%8C%A5%EC%A3%BD) (danpatjuk).",
+      },
+      { type: 'route', cityId: 'seoul', pathId: 'seoul-palaces', text: 'The National Folk Museum and the royal palaces around it, on our map' },
+      {
+        type: 'verdict',
+        text: 'Our verdict: one hot bowl on 22 December, eaten outside in the cold, beats any Christmas cookie. Count your rice balls before you start.',
+      },
+    ],
+  },
+  {
     id: '2026-11-25-2027',
     title: "Korea's first sunrise of the year: what it means and where to watch it",
     description:
