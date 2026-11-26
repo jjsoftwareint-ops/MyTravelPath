@@ -39,6 +39,85 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-26-1750',
+    title: "Christmas in Korea is a couples' holiday: what that means for your trip",
+    description:
+      "In Korea, Christmas Eve is a date night, not a family dinner. Why couples took the holiday, the cake everyone pre-orders, and what it means for your trip.",
+    teaser: 'Families already have two holidays of their own.',
+    icon: 'christmas_tree',
+    date: '2026-11-26',
+    updated: '2026-11-26',
+    keywords: ['ChristmasInKorea', 'KoreanChristmas', 'ChristmasEve', 'CoupleCulture', 'ChristmasCake', 'SeoulInDecember', 'KoreanCulture', 'KoreaTravel'],
+    body: [
+      {
+        type: 'img',
+        src: 'christmas-cheonggyecheon-lights.jpg',
+        alt: 'Christmas light figures and snowflakes glowing over the Cheonggyecheon stream at night, people walking along the bank',
+        caption: 'Christmas lights over the Cheonggyecheon stream in Seoul, a classic Christmas Eve walk.',
+        href: 'https://commons.wikimedia.org/wiki/File:Christmas_Festival_at_Cheonggyecheon.jpg',
+        credit: { author: 'Christian Bolz', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "In Europe, Christmas is the big family dinner. In Korea, **크리스마스 이브** (keuriseumaseu ibeu), Christmas Eve, is **a date night**, as big as Valentine's Day.",
+      },
+      {
+        type: 'p',
+        text: "Couples book a good dinner weeks ahead, swap presents and walk under the lights. Single friends joke that Christmas is meant to be spent with Kevin, the boy from Home Alone.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'love_letter', text: 'Why couples got it' },
+      {
+        type: 'p',
+        text: "Most Koreans aren't Christian. More than six in ten say they have no religion at all, so the day was never mainly about church.",
+      },
+      {
+        type: 'p',
+        text: "Families already have two long holidays of their own, **설날** (Seollal) and **추석** (Chuseok), three days each around one big table. Christmas is a single day off, the 25th.",
+      },
+      {
+        type: 'p',
+        text: "There's an old reason too. For decades Korea had a night curfew, and Christmas Eve was one of the few nights it was lifted. You can guess who made the most of it. It also falls at the end of the year, when school is out and the big exams are over.",
+      },
+      {
+        type: 'img',
+        src: 'christmas-cake-korea.jpg',
+        alt: 'A round Korean Christmas cake with white icing, a small fir tree, presents and a teddy bear in a Santa hat on top',
+        caption: 'A Korean Christmas cake: soft sponge, cream and a little scene on top.',
+        href: 'https://commons.wikimedia.org/wiki/File:Korea_Christmas_cake_(5287864641).jpg',
+        credit: { author: 'Sungmin Yun', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'shortcake', text: 'The cake, and your trip' },
+      {
+        type: 'p',
+        text: "The one thing everybody buys is a **크리스마스 케이크** (keuriseumaseu keikeu), a Christmas cake, often soft sponge with cream and strawberries. Bakeries and cafés take pre-orders weeks ahead, and the famous hotel cakes sell out even at up to ₩400,000.",
+      },
+      {
+        type: 'p',
+        text: "For a visitor that means two things. If you want a nice dinner on the 24th, **book it now**: popular restaurants fill up weeks ahead, and hotels can charge twice as much for that one night.",
+      },
+      {
+        type: 'p',
+        text: "And the lights are worth seeing even if you came alone. The trees outside **Myeongdong Cathedral** and the Cheonggyecheon stream are among the places Seoul usually lights up for December. Our [Christmas markets post](https://koreatravelpath.com/blog/2026-11-13-1755/) has this year's markets.",
+      },
+      {
+        type: 'img',
+        src: 'christmas-myeongdong-cathedral-trees.jpg',
+        alt: 'A row of lit Christmas trees with coloured baubles along a red-brick wall at night',
+        caption: 'The Christmas trees outside Myeongdong Cathedral after dark.',
+        href: 'https://commons.wikimedia.org/wiki/File:Christmas_trees_of_Myeongdong_Cathedral_20231223.jpg',
+        credit: { author: 'Nat4Eben', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'route', cityId: 'seoul', pathId: 'seoul-station-myeongdong', text: 'Myeong-dong and its cathedral, on our evening walk from Seoul Station' },
+      {
+        type: 'verdict',
+        text: "Our verdict: in Seoul on 24 December with someone you like, you're doing Christmas the Korean way. On your own, the cake tastes just as good from the box on your hotel bed.",
+      },
+    ],
+  },
+  {
     id: '2026-11-25-2051',
     title: 'Why Koreans eat red bean porridge on the winter solstice (dongji)',
     description:
@@ -643,13 +722,13 @@ export const posts: Post[] = [
   },
   {
     id: '2026-11-19-1639',
-    title: 'Korean strawberry season: where to eat them in Seongsu',
+    title: 'Strawberry season in Korea: when it is, where to eat them',
     description:
-      'Korean strawberries ripen in winter. Where to eat them in Seongsu: a mugwort rice cake with a whole berry, a strawberry Dubai bagel and bakeries on our map.',
+      'Strawberry season in Korea runs from about December to April, in winter. Where to eat them in Seongsu, Seoul: rice cakes, bagels and bakeries on our map.',
     teaser: 'Here they ripen in the snow.',
     icon: 'strawberry',
     date: '2026-11-19',
-    updated: '2026-11-19',
+    updated: '2026-11-26',
     keywords: ['KoreanStrawberry', 'StrawberrySeason', 'Seongsu', 'SeongsuCafe', 'SeoulBakery', 'Chapssaltteok', 'KoreaWinter', 'KoreaTravel'],
     body: [
       {
