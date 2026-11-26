@@ -1242,7 +1242,7 @@ export const cities: City[] = [
     name: 'Busan',
     seoTitle: 'Busan walking trails: Gwangalli, Taejongdae, Gamcheon',
     seoDescription:
-      "Free Busan walking maps: Gwangalli at night, the Haeundae, Igidae and Taejongdae coast paths, a fortress hike, Gamcheon village, Choryang and cherry blossoms.",
+      "Busan walking maps: Gwangalli at night, the Haeundae and Taejongdae coast paths, Gamcheon, Choryang, cherry blossoms and a Jinhae day trip.",
     intro: [
       "**Korea's second city**, with about 3.3 million people, a big port on the south-east coast and a different feel from Seoul: hills running down to the sea, beaches in the middle of the city, and a stronger local accent.",
       "**Haeundae** is the famous beach, **Gamcheon** the hillside culture village, **Jagalchi** the fish market. The KTX high-speed train from Seoul takes about two and a half hours.",
@@ -1257,7 +1257,7 @@ export const cities: City[] = [
         seoDescription:
           'Four cherry blossom walks in Busan for late March: the Oncheoncheon stream, Namcheon-dong to Gwangalli, Dalmaji-gil and more. Free map with blossom pins.',
         duration: '1.5–3h each',
-        updated: '2026-11-07',
+        updated: '2026-11-26',
         whyVisit: [
           "Busan blossoms a week before Seoul, in the last week of March, so this is where to be at the end of the month.",
           "**A 1 km tunnel of 40-year-old trees between apartment blocks**, a winding cherry road with the sea below it, and a levee above fields of yellow canola.",
@@ -1300,6 +1300,7 @@ export const cities: City[] = [
             "🍜 On Dalmaji-gil the Blueline Park beach train and sky capsules run between Mipo and Cheongsapo if you want to ride one way. Cheongsapo does grilled clams.",
             "✈️ Samnak is 15 min from Gimhae Airport on the light rail, a good first or last stop of a trip.",
             "🍜 The Oncheoncheon festival weekend brings food stalls to the Citizens Park, and Dongnae's hot springs are a short walk from the start.",
+            "🔗 Jinhae's cherry blossom festival is about an hour away by bus: the Jinhae day trip is on this site.",
           ],
         },
       },
@@ -1693,6 +1694,86 @@ export const cities: City[] = [
             "👟 The climb to the 168 Steps is steep. Take the elevator up instead if you prefer, and walk the gentle part down.",
             "🍜 Eat along the way: the pink pins are the stops from the walk, a lunchbox restaurant and the rice-cake shop, plus ten of the best-rated places on Kakao Map near the station, from pork gukbap and milmyeon to Chinese dumplings.",
             "🔗 Busan Chinatown and the culture villages of Gamcheon and Huinnyeoul are on the Culture Villages and Hotspots walk on this site.",
+          ],
+        },
+      },
+      {
+        id: 'jinhae',
+        name: 'Jinhae cherry blossoms and Udo: a day trip from Busan',
+        seoTitle: 'Jinhae cherry blossoms: a day trip from Busan, with Udo',
+        seoDescription:
+          "Jinhae Gunhangje from Busan: the Yeojwacheon stream, Gyeonghwa Station and Jehwangsan Park in blossom, plus Marine Park and the footbridge to Udo all year.",
+        duration: '1 day',
+        updated: '2026-11-26',
+        tags: [
+          { icon: 'blossom', label: 'Cherry blossom' },
+          { icon: 'village', label: 'Island day trip' },
+        ],
+        image: 'jinhae.jpg',
+        imageCredit: 'Photo: Sam Ng · CC BY-SA 2.0',
+        whyVisit: [
+          "Every spring a whole town turns pink for **Korea's most famous cherry blossom festival**, with the trees leaning over the Yeojwacheon stream from both banks.",
+          "Stand on the old railway at Gyeonghwa Station, where **the blossoms meet over the tracks**.",
+          "Out of season the seaside half still works: a lookout high over Jinhae Bay, then **a footbridge to a tiny island village**.",
+        ],
+        story: {
+          title: 'A navy town drawn on paper',
+          text: [
+            "Jinhae was laid out from scratch in the 1910s as a naval port under Japanese rule, **Korea's first planned town**, which is why its streets meet at round rotaries. The Korean Navy is still here, with its academy and its bases.",
+            "The festival began in 1952 as a memorial for **Admiral Yi Sun-sin**, Korea's great naval hero, when his statue went up at a rotary in the town centre. Its name, Gunhangje, means naval port festival, though most people now come for the trees.",
+          ],
+        },
+        notices: [
+          {
+            icon: '🌸',
+            title: 'Festival dates: late March to early April',
+            body: "The Jinhae Gunhangje ran **27 March – 5 April in 2026**, ten days set by the blossom. The 2027 dates come out in early spring: check them before you book. The seaside half is open all year.",
+            since: 'Checked 26 November 2026.',
+            source: 'News reports on the 64th Jinhae Gunhangje (Seoul Shinmun, Hankyung, March 2026).',
+          },
+          {
+            icon: '🚫',
+            title: 'Closed on Mondays',
+            body: "Marine Park, the Solar Tower and the Jehwangsan monorail are open **09:00–18:00** and {red:closed on Mondays} (on Tuesday when Monday is a public holiday). Last Marine Park tickets at **17:00**; the last monorail goes up at **17:40**.",
+            since: 'Checked 26 November 2026.',
+            source: 'Opening hours on Naver Map, checked 26 November 2026.',
+          },
+          {
+            icon: '📅',
+            title: 'The Naval Academy opens for the festival only',
+            at: 'Korea Naval Academy',
+            body: "The academy grounds and museum open to visitors **during the festival** only, and reports say a visit is **booked ahead**. Check the festival programme in March.",
+            since: 'Checked 26 November 2026.',
+            source: 'Festival guides for 2026; not yet confirmed on an official page.',
+          },
+        ],
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1kgohiE0Ls8ESzNY2lPvHNZcwO40QOMI',
+        keywords: ['Busan', 'Jinhae', 'CherryBlossom', 'JinhaeGunhangje', 'Yeojwacheon', 'GyeonghwaStation', 'Changwon', 'BusanDayTrip', 'KoreaTravel'],
+        guide: {
+          intro: [
+            "🌸 In blossom week, **give Jinhae the whole day**. I'd climb Jehwangsan first for the view over the pink town, then walk the Yeojwacheon stream up to the Eco Park pond, about 3 km in all.",
+            "After that, a short taxi or bus ride takes you to Gyeonghwa Station for the trees over the tracks. Any other time of year, the seaside half is the trip: Marine Park, the Solar Tower and the footbridge to Udo, about 2.4 km on foot.",
+          ],
+          route: [
+            "[[Jinhae Intercity Bus Terminal|진해시외버스터미널]], where the buses from Busan arrive and the walk starts.",
+            "[[Jungwon Rotary|진해 중원로터리]], the roundabout at the heart of the old town, one of the rotaries the planned streets were laid out around.",
+            "[[Jehwangsan Park|진해 제황산공원]], the hill in the middle of town: 365 steps up, or the little monorail beside them.",
+            "[[Jinhae Tower|진해탑]] on the top, with the whole town and the sea below.",
+            "[[Yeojwacheon Romance Bridge|진해 여좌천 로망스다리]], the little bridge from the K-drama Romance and the most photographed spot on the stream.",
+            "[[Yeojwacheon stream|진해 여좌천]], cherry trees leaning over the water from both banks, lit in the evening during the festival.",
+            "[[Jinhae Naesumyeon Eco Park|진해내수면환경생태공원]], the end of the walk: a pond ringed by cherry trees, with a wooden path over the water.",
+            "[[Gyeonghwa Station Park|진해 경화역공원]], about 3 km east by taxi or bus: an old railway station where the trees meet over the tracks.",
+            "[[Korea Naval Academy|진해 해군사관학교]], open to visitors during the festival only.",
+            "[[Jinhae Marine Park|진해해양공원]], on Eumji island: city bus 303 or 306 from the Namwon Rotary stop near the terminal to Haeyang Gongwon Ipgu, then about 10 minutes on foot over Eumji Bridge. A marine life theme park, a navy ship to board and the ZipTrack zip line.",
+            "[[Solar Tower|진해해양공원 솔라타워]], 136 m tall and covered in solar panels, with a lookout on floors 27 and 28 over Jinhae Bay, its islands and the Geoga Bridge.",
+            "[[Udo|진해 우도]], a tiny island village joined to the park by a footbridge since 2013, so there is no ferry: you walk over and round its shore.",
+          ],
+          tips: [
+            "🚇 Getting there: intercity bus from **Busan Seobu Terminal (Sasang)** to **Jinhae Intercity Bus Terminal**, about an hour, roughly ₩6,000–7,000.",
+            "⏰ In festival week the town is packed, at weekends most of all. Set off from Busan early, or go on a weekday.",
+            "🍜 Eat along the way: the pink pins are top-rated places on Kakao Map, from mulhoe (cold raw-fish soup) and pork gukbap to ramen, Thai and Italian.",
+            "✂️ Short on time in spring? Do Jehwangsan, the stream and Gyeonghwa Station, and keep Marine Park and Udo for another season.",
+            "🔗 Busan's own cherry walks are on the Cherry Blossom walk page for Busan on this site.",
           ],
         },
       },
