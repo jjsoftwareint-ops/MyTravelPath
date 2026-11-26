@@ -40,14 +40,14 @@ export type Post = {
 export const posts: Post[] = [
   {
     id: '2026-11-26-1750',
-    title: "Christmas in Korea is a couples' holiday: what that means for your trip",
+    title: "Christmas in Korea is a couples' holiday: where Seoul lights up for it",
     description:
-      "In Korea, Christmas Eve is a date night, not a family dinner. Why couples took the holiday, the cake everyone pre-orders, and what it means for your trip.",
+      "In Korea, Christmas Eve is a date night, not a family dinner. Why couples took it, and the lights they walk under, from Cheonggyecheon to a lit garden.",
     teaser: 'Families already have two holidays of their own.',
     icon: 'christmas_tree',
     date: '2026-11-26',
     updated: '2026-11-26',
-    keywords: ['ChristmasInKorea', 'KoreanChristmas', 'ChristmasEve', 'CoupleCulture', 'ChristmasCake', 'SeoulInDecember', 'KoreanCulture', 'KoreaTravel'],
+    keywords: ['ChristmasInKorea', 'KoreanChristmas', 'ChristmasEve', 'ChristmasDate', 'SeoulLights', 'Cheonggyecheon', 'SeoulInDecember', 'KoreaTravel'],
     body: [
       {
         type: 'img',
@@ -63,44 +63,70 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: "Couples book a good dinner weeks ahead, swap presents and walk under the lights. Single friends joke that Christmas is meant to be spent with Kevin, the boy from Home Alone.",
+        text: "On the 24th the streets under the lights fill with couples holding hands, and single friends joke that Christmas is meant to be spent with Kevin, the boy from Home Alone.",
       },
       { type: 'ad', slot: 'inArticle' },
       { type: 'space' },
       { type: 'h', icon: 'love_letter', text: 'Why couples got it' },
       {
         type: 'p',
-        text: "Most Koreans aren't Christian. More than six in ten say they have no religion at all, so the day was never mainly about church.",
+        text: "Most Koreans aren't Christian, and families already have two long holidays of their own, **설날** (Seollal) and **추석** (Chuseok), three days each around one big table. Christmas is a single day off.",
       },
       {
         type: 'p',
-        text: "Families already have two long holidays of their own, **설날** (Seollal) and **추석** (Chuseok), three days each around one big table. Christmas is a single day off, the 25th.",
+        text: "There's an old reason too. For decades Korea had a night curfew, and Christmas Eve was one of the few nights it was lifted. You can guess who made the most of it.",
       },
+      { type: 'space' },
+      { type: 'h', icon: 'purple_heart', text: 'How the night goes' },
       {
         type: 'p',
-        text: "There's an old reason too. For decades Korea had a night curfew, and Christmas Eve was one of the few nights it was lifted. You can guess who made the most of it. It also falls at the end of the year, when school is out and the big exams are over.",
+        text: "Dinner is booked weeks ahead, but most of the evening is a walk under the lights, and in December the lights are everywhere:",
+      },
+      {
+        type: 'list',
+        items: [
+          "**The stream.** Last winter the [서울빛초롱축제](https://www.google.com/search?tbm=isch&q=%EC%84%9C%EC%9A%B8%EB%B9%9B%EC%B4%88%EB%A1%B1%EC%B6%95%EC%A0%9C%20%EC%B2%AD%EA%B3%84%EC%B2%9C) (Seoul Bitchorong Chukje), the Seoul Lantern Festival, filled Cheonggyecheon with light sculptures every evening from 6 to 10 pm, from mid-December into January, with a Christmas market and a carousel on Gwanghwamun Square next door.",
+          "**Myeong-dong.** The whole front of a department store plays a Christmas film, and the lit trees outside **Myeongdong Cathedral** are five minutes away.",
+          "**A garden of lights.** Out in Gapyeong, the **Garden of Morning Calm** wraps its trees and whole hillsides in coloured lights from 4 December to 14 March. Couples go for the afternoon and stay until dark.",
+        ],
       },
       {
         type: 'img',
-        src: 'christmas-cake-korea.jpg',
-        alt: 'A round Korean Christmas cake with white icing, a small fir tree, presents and a teddy bear in a Santa hat on top',
-        caption: 'A Korean Christmas cake: soft sponge, cream and a little scene on top.',
-        href: 'https://commons.wikimedia.org/wiki/File:Korea_Christmas_cake_(5287864641).jpg',
-        credit: { author: 'Sungmin Yun', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Wikimedia Commons' },
+        src: 'seoul-lantern-festival-cheonggyecheon.jpg',
+        alt: 'Glowing lantern figures in red, orange and green robes standing in a row along the Cheonggyecheon stream at night, reflected in the water',
+        caption: 'Lantern figures on the Cheonggyecheon stream at the Seoul Lantern Festival.',
+        href: 'https://www.flickr.com/photos/99958070@N02/10610606963',
+        credit: { author: 'travel oriented', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "This year's festival dates aren't out yet, so check them in early December.",
+      },
+      {
+        type: 'img',
+        src: 'morning-calm-lights-hearts.jpg',
+        alt: 'A big tree covered in white and purple lights at night, with heart-shaped light arches in front of it',
+        caption: 'Light hearts at the Garden of Morning Calm, the one date spot outside Seoul.',
+        href: 'https://www.flickr.com/photos/99958070@N02/9461499691',
+        credit: { author: 'travel oriented', license: 'CC BY-SA 2.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.0/', via: 'Flickr' },
+      },
+      {
+        type: 'p',
+        text: "Our [Garden of Morning Calm post](https://koreatravelpath.com/blog/2026-11-20-1713/) has the bus and the hours, the [Christmas markets post](https://koreatravelpath.com/blog/2026-11-13-1755/) the markets, and the Myeong-dong film has [its own post](https://koreatravelpath.com/blog/2026-11-07-0709/).",
+      },
+      {
+        type: 'img',
+        src: 'christmas-gwanghwamun-square-night.jpg',
+        alt: 'Gwanghwamun Square from above at blue hour in December, the statue of Admiral Yi, lit market stalls and the palace gate with mountains behind',
+        caption: 'Gwanghwamun Square in December, lit up from the Admiral Yi statue to the palace gate.',
+        href: 'https://commons.wikimedia.org/wiki/File:Nightview_of_the_Gwanghwamun_Square_2024.jpg',
+        credit: { author: 'Seoul Tourism Organization', license: 'KOGL Type 1', licenseUrl: 'https://www.kogl.or.kr/info/licenseType1.do', via: 'Wikimedia Commons' },
       },
       { type: 'space' },
-      { type: 'h', icon: 'shortcake', text: 'The cake, and your trip' },
+      { type: 'h', icon: 'snowflake', text: 'If you visit at Christmas' },
       {
         type: 'p',
-        text: "The one thing everybody buys is a **크리스마스 케이크** (keuriseumaseu keikeu), a Christmas cake, often soft sponge with cream and strawberries. Bakeries and cafés take pre-orders weeks ahead, and the famous hotel cakes sell out even at up to ₩400,000.",
-      },
-      {
-        type: 'p',
-        text: "For a visitor that means two things. If you want a nice dinner on the 24th, **book it now**: popular restaurants fill up weeks ahead, and hotels can charge twice as much for that one night.",
-      },
-      {
-        type: 'p',
-        text: "And the lights are worth seeing even if you came alone. The trees outside **Myeongdong Cathedral** and the Cheonggyecheon stream are among the places Seoul usually lights up for December. Our [Christmas markets post](https://koreatravelpath.com/blog/2026-11-13-1755/) has this year's markets.",
+        text: "On the 24th itself every lit street is full of couples, which is half the fun. If you'd rather see the lights in peace, **go on a weekday before Christmas**, and on the day, start early in the evening.",
       },
       {
         type: 'img',
@@ -110,10 +136,10 @@ export const posts: Post[] = [
         href: 'https://commons.wikimedia.org/wiki/File:Christmas_trees_of_Myeongdong_Cathedral_20231223.jpg',
         credit: { author: 'Nat4Eben', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
       },
-      { type: 'route', cityId: 'seoul', pathId: 'seoul-station-myeongdong', text: 'Myeong-dong and its cathedral, on our evening walk from Seoul Station' },
+      { type: 'route', cityId: 'seoul', pathId: 'seoul-station-myeongdong', text: 'Myeong-dong, the department store film and the cathedral, on our evening walk' },
       {
         type: 'verdict',
-        text: "Our verdict: in Seoul on 24 December with someone you like, you're doing Christmas the Korean way. On your own, the cake tastes just as good from the box on your hotel bed.",
+        text: "Our verdict: in Seoul on 24 December with someone you like, you're doing Christmas the Korean way. On your own, the lights on the stream are just as pretty, and the restaurants are easier the next day.",
       },
     ],
   },
