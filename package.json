@@ -9,7 +9,10 @@
     "prerender": "node scripts/prerender.mjs",
     "lint": "oxlint",
     "test:back": "node scripts/test-back-button.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "replies": "python3 .claude/skills/social/replybot/replybot.py watch --send",
+    "replies:once": "python3 .claude/skills/social/replybot/replybot.py run --send",
+    "replies:log": "python3 .claude/skills/social/replybot/replybot.py log 10"
   },
   "dependencies": {
     "react": "^19.2.8",
