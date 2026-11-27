@@ -39,6 +39,77 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-27-1652',
+    title: "Why Seoul rings a bell 33 times on New Year's Eve",
+    description:
+      "At midnight on New Year's Eve, Seoul rings the Bosingak bell 33 times. Where the number comes from, who rings it, and how to be there.",
+    teaser: 'Europe has fireworks at midnight. Seoul has a bell.',
+    icon: 'bell',
+    date: '2026-11-27',
+    updated: '2026-11-27',
+    keywords: ['NewYearInKorea', 'Bosingak', 'SeoulNewYear', 'NewYearsEve', 'Jongno', 'KoreanCulture', 'SeoulInDecember', 'KoreaTravel'],
+    body: [
+      {
+        type: 'img',
+        src: 'bosingak-pav.jpg',
+        alt: 'Bosingak, a two-storey wooden bell pavilion with red pillars and a tiled roof, between office towers in Jongno, Seoul',
+        caption: 'Bosingak in Jongno, the bell pavilion in the middle of Seoul.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bosingak_Bell_Pavilion,_Seoul_(1)_(26259311707).jpg',
+        credit: { author: 'Richard Mortel', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "At midnight in Europe the sky fills with fireworks. In Seoul, a crowd counts down in the street outside **보신각** (Bosingak), a bell pavilion in Jongno, and then a bell rings, slowly, 33 times.",
+      },
+      {
+        type: 'p',
+        text: "Koreans call it **제야의 종** (jeya-ui jong), the New Year's Eve bell, and it goes out live on TV across the country.",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'bell', text: 'Why 33' },
+      {
+        type: 'p',
+        text: "The number is older than the party. In the Joseon dynasty Seoul was a walled city, and **a bell told the gates when to open and close**: 28 strikes at night to shut them, 33 at dawn to open them again.",
+      },
+      {
+        type: 'p',
+        text: "The 33 comes from **Buddhism**, from its 33 heavens, as a wish for a peaceful country. Since 1953 Seoul has borrowed the dawn count to open the new year.",
+      },
+      {
+        type: 'img',
+        src: 'bosingak-bell.jpg',
+        alt: 'The old bronze Bosingak bell, dark and weathered, on display in a museum hall',
+        caption: 'The old Bosingak bell, cast in the 1400s, now in the National Museum of Korea.',
+        href: 'https://commons.wikimedia.org/wiki/File:Bosingak_Bell,_Joseon_Dynasty,_1468_(17846650145).jpg',
+        credit: { author: 'Gary Todd', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "The bell you hear is a newer one. The old bell, more than 500 years old, now rests in the **National Museum of Korea**, where you can see it any day.",
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'alarm_clock', text: 'Being there' },
+      {
+        type: 'p',
+        text: "The ringers are about a dozen ordinary people the city picks each year from public nominations. Last time they included a bus driver who had saved his passengers.",
+      },
+      {
+        type: 'p',
+        text: "Last year the roads around Bosingak closed from 6 pm, and the last subways and buses ran later than usual. In other years trains have skipped Jonggak Station that night, so plan to walk the last bit. Come well before 11 pm and wear everything you own.",
+      },
+      {
+        type: 'p',
+        text: "Gwanghwamun Square, a short walk away, holds its own countdown show with light art on the buildings, if the crowd at the bell is too much.",
+      },
+      {
+        type: 'verdict',
+        text: "We love that Seoul's midnight is a sound you feel in your chest. Stand close for the 33rd strike, then follow the crowd somewhere warm.",
+      },
+      { type: 'route', cityId: 'seoul', pathId: 'naksan-cheonggyecheon', text: 'Our night walk along the city wall and Cheonggyecheon ends a few streets from Bosingak' },
+    ],
+  },
+  {
     id: '2026-11-26-1750',
     title: "Christmas in Korea is a couples' holiday: where Seoul lights up for it",
     description:
@@ -46,7 +117,7 @@ export const posts: Post[] = [
     teaser: 'Families already have two holidays of their own.',
     icon: 'christmas_tree',
     date: '2026-11-26',
-    updated: '2026-11-26',
+    updated: '2026-11-27',
     keywords: ['ChristmasInKorea', 'KoreanChristmas', 'ChristmasEve', 'ChristmasDate', 'SeoulLights', 'Cheonggyecheon', 'SeoulInDecember', 'KoreaTravel'],
     body: [
       {
@@ -85,7 +156,7 @@ export const posts: Post[] = [
       {
         type: 'list',
         items: [
-          "**The stream.** Last winter the [서울빛초롱축제](https://www.google.com/search?tbm=isch&q=%EC%84%9C%EC%9A%B8%EB%B9%9B%EC%B4%88%EB%A1%B1%EC%B6%95%EC%A0%9C%20%EC%B2%AD%EA%B3%84%EC%B2%9C) (Seoul Bitchorong Chukje), the Seoul Lantern Festival, filled Cheonggyecheon with light sculptures every evening from 6 to 10 pm, from mid-December into January, with a Christmas market and a carousel on Gwanghwamun Square next door.",
+          "**The stream.** The [서울빛초롱축제](https://www.google.com/search?tbm=isch&q=%EC%84%9C%EC%9A%B8%EB%B9%9B%EC%B4%88%EB%A1%B1%EC%B6%95%EC%A0%9C%20%EC%B2%AD%EA%B3%84%EC%B2%9C) (Seoul Bitchorong Chukje), the Seoul Lantern Festival, fills Cheonggyecheon with light sculptures every evening from 6 to 11 pm. This winter it runs from 11 December to 31 January. Last winter there was also a Christmas market and a carousel on Gwanghwamun Square next door.",
           "**Myeong-dong.** The whole front of a department store plays a Christmas film, and the lit trees outside **Myeongdong Cathedral** are five minutes away.",
           "**A garden of lights.** Out in Gapyeong, the **Garden of Morning Calm** wraps its trees and whole hillsides in coloured lights from 4 December to 14 March. Couples go for the afternoon and stay until dark.",
         ],
@@ -100,7 +171,7 @@ export const posts: Post[] = [
       },
       {
         type: 'p',
-        text: "This year's festival dates aren't out yet, so check them in early December.",
+        text: "The lanterns stretch from Cheonggye Plaza down to Samil Bridge, so you can walk the whole stream in one evening.",
       },
       {
         type: 'img',
