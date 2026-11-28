@@ -1237,9 +1237,9 @@ export const cities: City[] = [
       {
         id: 'seoul-with-kids',
         name: 'Seoul with kids: KPop Demon Hunters trip',
-        seoTitle: 'Seoul with kids: KPop Demon Hunters trip',
+        seoTitle: 'KPop Demon Hunters filming locations in Seoul, with kids',
         seoDescription:
-          'A family map of Seoul: the real KPop Demon Hunters places (Bukchon, the Naksan wall, Ttukseom Hangang Park, N Seoul Tower) with kids’ museums, a zoo, aquariums and Lotte World nearby.',
+          'The real KPop Demon Hunters filming locations in Seoul on one map: N Seoul Tower, Bukchon, the Naksan wall and COEX, with Lotte World for kids.',
         duration: '2 days',
         updated: '2026-11-28',
         tags: ['👨‍👩‍👧 With kids', '🎬 KPop Demon Hunters'],
