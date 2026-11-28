@@ -78,7 +78,7 @@ export const cities: City[] = [
     name: 'Seoul',
     seoTitle: 'Seoul walking trails: palaces, hanok lanes, hikes',
     seoDescription:
-      'Seoul walking maps: the five royal palaces, Bukchon hanok lanes, the city wall, Buam-dong, Myeong-dong, Hongdae, Euljiro at night, Seongsu, Gangnam and hikes.',
+      'Seoul walking maps: royal palaces, Bukchon hanok lanes, the city wall, Myeong-dong, Hongdae, Euljiro at night, Seongsu, Gangnam, hikes and a KPop Demon Hunters trip with kids.',
     intro: [
       "**Korea's capital** for more than 600 years, since the Joseon dynasty made it its seat in 1394. About 9 million people live in the city itself, and the Seoul area with Gyeonggi and Incheon holds around half the country.",
       "The **Han River** splits it in two: palaces, hanok lanes and the old fortress wall on the north bank, towers and Gangnam on the south. Four inner mountains, **Bugaksan, Inwangsan, Naksan and Namsan**, ring the old city, and the subway reaches almost everywhere.",
@@ -233,10 +233,9 @@ export const cities: City[] = [
         seoDescription:
           'A 3.6 km evening walk in Euljiro, Seoul: the old lighting shops, a neon lane, the Hipjiro printing alleys and beer on plastic stools in Nogari Alley.',
         duration: '2.5h',
-        updated: '2026-11-16',
+        updated: '2026-11-28',
         tags: [{ icon: 'lantern', label: 'Night market' }, { icon: 'beer', label: 'Pub' }],
         image: 'euljiro.jpg',
-        imageCredit: 'Photo: Seoul Tourism Organization · KOGL 1',
         whyVisit: [
           "By day Euljiro is **workshops, printers and lighting shops**. When the shutters come down, bars and cafés open up the stairs behind old iron doors, often with no sign at all.",
           "On the way, the old **lighting shops** glow as it gets dark, and a narrow **neon lane** is the photo spot of the evening.",
@@ -1232,6 +1231,129 @@ export const cities: City[] = [
             "🍜 Eat along the way: the food pins on the map are the cafés and a lunch spot by Gyeongbokgung Station, for before you take the bus up.",
             "👟 The climb to Mokseokwon and the steps down to Samcheonggak are steep, so wear proper shoes and carry water for the Skyway stretch.",
             "🔗 The Inwang Mountain Trail on this site climbs the ridge you look at from Mokseokwon.",
+          ],
+        },
+      },
+      {
+        id: 'seoul-with-kids',
+        name: 'Seoul with kids: a KPop Demon Hunters trip',
+        seoTitle: 'Seoul with kids: a KPop Demon Hunters trip',
+        seoDescription:
+          'A family map of Seoul: the real KPop Demon Hunters places (Bukchon, the Naksan wall, Ttukseom Hangang Park, N Seoul Tower) with kids’ museums, a zoo, aquariums and Lotte World nearby.',
+        duration: '2 days',
+        updated: '2026-11-27',
+        tags: ['👨‍👩‍👧 With kids', '🎬 KPop Demon Hunters'],
+        image: 'seoul-with-kids.jpg',
+        imageCredit: 'Photo: kallerna · CC BY-SA 4.0',
+        mapUrl: 'https://www.google.com/maps/d/viewer?mid=1WpjMyFocFzBor6G2cIZTAzXddO4bg1w',
+        keywords: ['Seoul', 'SeoulWithKids', 'KPopDemonHunters', 'HUNTRX', 'FamilyTravel', 'Bukchon', 'NaksanPark', 'LotteWorld', 'HiKRGround', 'KoreaTravel'],
+        whyVisit: [
+          "Kids who know every song can **stand where HUNTR/X and the Saja Boys sang**: the Bukchon rooftops, the lit city wall at Naksan, the Han River under the subway bridge and N Seoul Tower.",
+          "Every film place has a kids' stop close by, with **a zoo, two aquariums and a hands-on science museum** among them.",
+          "At HiKR Ground they can **film their own K-pop music video**, and it costs nothing.",
+          "And Lotte World is right next to the tower that inspired the HUNTR/X building.",
+        ],
+        story: {
+          title: "Where the film's Seoul comes from",
+          text: [
+            "The film's Seoul is drawn from real streets. Its art director called it **a fine balance between making it accurate and adding our own stylization**, so you will recognise the places, a little brighter than life.",
+            "Derpy the tiger and Sussie the magpie come from **magpie-and-tiger folk paintings** (hojakdo, 호작도). After the film came out, the National Museum of Korea's magpie-tiger badge sold out again and again.",
+            "One building is made up on purpose. By the art director's own account, the team could not get the rights to Lotte World Tower, so the HUNTR/X tower is **a taller, fictional cousin** of it.",
+          ],
+        },
+        notices: [
+          {
+            icon: '⏰',
+            title: 'Gyeongbokgung: closed on Tuesdays',
+            at: 'Gyeongbokgung',
+            body: "**09:00–17:00** from November to February, {red:closed on Tuesdays}. Entry is free if you wear hanbok.",
+            since: 'Checked 30 October 2026.',
+            source: 'Official palace site and Naver Map, checked 30 October 2026 (same notice as the BTS page).',
+          },
+          {
+            icon: '🏘️',
+            title: 'Bukchon-ro 11-gil: visitors 10:00 to 17:00',
+            at: 'Bukchon',
+            body: "The lane with the rooftop view is open to visitors **10:00–17:00** only. People live here, so keep the voices low.",
+            since: 'Checked 27 November 2026.',
+            source: 'Seoul city (news.seoul.go.kr): restricted 17:00–10:00, fines since 1 March 2025; no separate Sunday rule found. Checked 27 November 2026.',
+          },
+          {
+            icon: '🚧',
+            title: 'The Olympic Stadium is a building site',
+            at: 'HUNTR/X',
+            body: "{red:Under renovation} into a baseball ground. Naver lists the reopening for **March 2027**, so you can only look at it from outside.",
+            since: 'Checked 27 November 2026.',
+            source: 'Naver Map place name "(2027년03월예정)"; news reports: remodelling to end of December 2026, baseball from 2027. Checked 27 November 2026.',
+          },
+          {
+            icon: '🎤',
+            title: 'HiKR Ground: free, play floors closed on Mondays',
+            at: 'More places',
+            body: "**Free**, **10:00–20:00**. The music-video and dance floors (2 to 4) are {red:closed on Mondays}.",
+            since: 'Checked 27 November 2026.',
+            source: 'Seoul Danurim / Seoul Mediahub 2026: 1F & 5F daily 10–20, 2F–4F Tue–Sun 10–20; an older guide says 19:00. Checked 27 November 2026.',
+          },
+          {
+            icon: '🛷',
+            title: "The sledding hill's dates are not out yet",
+            at: 'HUNTR/X',
+            body: "Last winter the Ttukseom sledding hill ran **31 December to 18 February**, 10:00–17:00, ₩6,000. This winter's dates have not been announced yet.",
+            since: 'Checked 27 November 2026.',
+            source: 'Hangang Park office notice for 2025–26 (31 Dec–18 Feb, 10–17, ₩6,000); 2026–27 not announced as of 27 November 2026.',
+          },
+        ],
+        guide: {
+          intro: [
+            "🎬 **One area a day is plenty with kids.** Day one is the palace, Bukchon and the Naksan wall. Day two is Ttukseom Hangang Park, COEX and Lotte World.",
+            "At each film place, tap its name below to see the scene, then hand the phone to the kids and let them find the same view. Expect some singing.",
+          ],
+          groups: [
+            {
+              title: 'Rumi and Jinu: Gyeongbokgung, Bukchon and the Naksan wall',
+              places: [
+                "[[Gyeongbokgung|케이팝 데몬 헌터스 경복궁]], where Jinu's family is moved onto the palace grounds in his backstory. Kids love the changing of the guard at the main gate, at 10:00 and 14:00.",
+                "[[Bukchon Hanok Village|케이팝 데몬 헌터스 북촌 한옥 지붕]], where Rumi and Jinu first meet in a hanok alley and sing \"Free\" above the tiled roofs.",
+                "[[Naksan Park|케이팝 데몬 헌터스 낙산공원 성곽]], the night walk on the city wall where Jinu first opens up. From Hyehwa Station exit 2 it is about 15 minutes uphill through Ihwa Mural Village, and the wall is lit after dark.",
+                "[[National Children's Science Museum|국립어린이과학관]], near Hyehwa: kids turn a handle and a giant machine sends balls rolling, play with water power and meet a big dinosaur.",
+              ],
+            },
+            {
+              title: 'HUNTR/X: Ttukseom Hangang Park, COEX and Lotte World Tower',
+              places: [
+                "[[Ttukseom Hangang Park|케이팝 데몬 헌터스 청담대교 지하철]], right under Jayang Station on Line 7. Kids sit by the river and watch the trains cross Cheongdam Bridge, the same trains HUNTR/X fight demons on in \"Takedown\". The station above is the film's \"Seomyuwonji\", and in winter the park has a sledding hill.",
+                "[[Seoul Children's Grand Park|서울어린이대공원]], two stops up Line 7: tigers and elephants without leaving the city, play areas and a kids' café, and the park itself is free. Seoul Sangsang Nara inside it is three floors of play.",
+                "[[COEX|케이팝 데몬 헌터스 코엑스 전광판 골든]], where HUNTR/X's \"Golden\" video is revealed on the big K-POP Square screen. In the same building, the aquarium has glowing jellyfish, sharks and rays, and the Starfield Library has its giant bookshelves.",
+                "[[Seoul Olympic Stadium|케이팝 데몬 헌터스 올림픽주경기장]], the opening concert and skydive. Look from Sports Complex Station; it is still a building site.",
+                "[[Lotte World Tower|케이팝 데몬 헌터스 롯데월드타워]], the tower that inspired the HUNTR/X building. Below it, the aquarium has a huge tank with sharks, rays and belugas. Next door is Lotte World, a theme park mostly indoors so the weather doesn't matter, with a toddler play area and parades.",
+              ],
+            },
+            {
+              title: 'Saja Boys: N Seoul Tower',
+              places: [
+                "[[Namsan Cable Car|남산케이블카]], the quick way up, and a ride kids remember.",
+                "[[N Seoul Tower|케이팝 데몬 헌터스 남산타워]], the final showdown. The stadium under the tower is made up; the tower and the view over all of Seoul are real.",
+              ],
+            },
+            {
+              title: 'More places kids love',
+              places: [
+                "[[HiKR Ground|하이커 그라운드]], by the Cheonggyecheon stream near Gwanghwamun, a tourist centre built for visitors from abroad. Kids film their own K-pop music video and dance in themed rooms.",
+                "[[National Museum of Korea|국립중앙박물관]], for the magpie-and-tiger paintings behind Derpy and Sussie and the tiger badges in the shop (ask before you queue).",
+                "[[Seodaemun Museum of Natural History|서대문자연사박물관]], with huge dinosaurs and lifelike animals.",
+                "[[National Aviation Museum of Korea|국립항공박물관]], next to Gimpo Airport: real planes up close, and a rooftop where you watch them take off.",
+                "[[Seoul Botanic Park|서울식물원]], in Magok: a big greenhouse kept warm all year, so it works on a cold or rainy day.",
+                "[[Yongsan Children's Garden|용산어린이정원]], big lawns for a picnic blanket, playgrounds and a trampoline.",
+              ],
+            },
+          ],
+          tips: [
+            "🚇 Getting there: **Gyeongbokgung Station** (Line 3) for the palace, **Hyehwa Station** (Line 4) for Naksan, **Jayang Station** (Line 7) for Ttukseom Hangang Park, **Children's Grand Park Station** (Line 7), **Samseong Station** (Line 2) for COEX and **Jamsil Station** (Lines 2 and 8) for Lotte World.",
+            "🍜 HUNTR/X eat ramyeon before their show, so do the same: the convenience stores in Ttukseom Hangang Park cook instant ramyeon, and you can watch the Line 7 trains cross the bridge while you eat.",
+            "⏰ Bukchon before 17:00, Naksan after dark: the order of day one follows those two.",
+            "👟 The walk up to Naksan Park is uphill all the way, so plan a rest at the top.",
+            "🗺️ The map has more kids' places by area: Seoul Forest, the Seoul Children's Museum, Leeum, SOMA, and the 63 Building.",
+            "🔗 The Hanok Villages page walks all of Bukchon, and the Naksan and Cheonggyecheon page follows the wall down to the stream.",
           ],
         },
       },

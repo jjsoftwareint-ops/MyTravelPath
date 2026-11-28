@@ -39,6 +39,84 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    id: '2026-11-28-1730',
+    title: 'Korean age: why a bowl of rice cake soup makes you a year older',
+    description:
+      'Why Koreans ask your age, how Korean age worked, what changed in 2023, and tteokguk, the New Year rice cake soup that adds a year.',
+    teaser: "In Korea you don't turn a year older on your birthday. You eat it.",
+    icon: 'steaming_bowl',
+    date: '2026-11-28',
+    updated: '2026-11-28',
+    keywords: ['KoreanAge', 'Tteokguk', 'KoreanNewYear', 'Seollal', 'KoreanCulture', 'KoreanFood', 'NewYearInKorea', 'KoreaTravel'],
+    body: [
+      {
+        type: 'img',
+        src: 'tteokguk-bowl.jpg',
+        alt: 'A white bowl of tteokguk, rice cake soup, topped with strips of egg and roasted seaweed',
+        caption: 'Tteokguk, rice cake soup, the bowl Koreans eat on New Year’s morning.',
+        href: 'https://commons.wikimedia.org/wiki/File:Tteokguk_2.jpg',
+        credit: { author: '최광모', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', via: 'Wikimedia Commons' },
+      },
+      {
+        type: 'p',
+        text: "Meet a Korean friend of a friend, and one question usually comes early: **how old are you?** It isn't nosy. The answer decides how you two will talk, and who gets to be **언니** (eonni), big sister.",
+      },
+      {
+        type: 'p',
+        text: "There's an older, cuter way to ask: **떡국 몇 그릇 먹었어요?** (tteokguk myeot geureut meogeosseoyo?), how many bowls of tteokguk have you eaten?",
+      },
+      { type: 'ad', slot: 'inArticle' },
+      { type: 'space' },
+      { type: 'h', icon: 'steaming_bowl', text: 'One bowl, one year' },
+      {
+        type: 'p',
+        text: "**떡국** (tteokguk) is a light soup of sliced white rice cakes, usually in beef broth, with egg and seaweed on top. Families eat it on the morning of **Seollal** (설날), the Lunar New Year, and many on 1 January too.",
+      },
+      {
+        type: 'p',
+        text: "The old saying goes that **you only turn a year older once you've eaten it**. A Joseon scholar even gave it a nickname: **첨세병** (cheomsebyeong), the cake that adds a year.",
+      },
+      {
+        type: 'list',
+        items: [
+          'The long white rice cake the slices come from stands for a long life.',
+          'The oval slices look like old coins, a wish for money.',
+          'The white colour is a clean start to the year.',
+        ],
+      },
+      {
+        type: 'img',
+        src: 'tteokguk-slices.jpg',
+        alt: 'A bowl of tteokguk with white oval rice cake slices, egg strips and fish in a pale broth',
+        caption: 'The white ovals are the rice cake, cut from one long stick.',
+        href: 'https://commons.wikimedia.org/wiki/File:Tteokguk_(rice_cake_soup)_02.jpg',
+        credit: { author: 'EBS', license: 'CC BY 4.0', licenseUrl: 'https://creativecommons.org/licenses/by/4.0/', via: 'Wikimedia Commons' },
+      },
+      { type: 'space' },
+      { type: 'h', icon: 'calendar', text: 'So how old are you?' },
+      {
+        type: 'p',
+        text: "Under the old **Korean age**, you were 1 on the day you were born, and everyone got a year older together on 1 January. A baby born on 31 December turned 2 the next morning.",
+      },
+      {
+        type: 'p',
+        text: "In June 2023 the law switched to international age, **만 나이** (man nai), the one you know from home. Daily life hasn't fully followed. Plenty of people still count by the year they were born, and some rules do too: you can buy alcohol from 1 January of the year you turn 19.",
+      },
+      {
+        type: 'p',
+        text: "So when someone asks, the easiest answer is your birth year. Koreans ask it that way all the time: **몇 년생이에요?** (myeot nyeonsaeng-ieyo?), what year were you born?",
+      },
+      {
+        type: 'p',
+        text: "You don't have to wait for New Year to try the soup. Many Korean restaurants serve it all year, often with dumplings as **떡만둣국** (tteok-mandu-guk).",
+      },
+      {
+        type: 'verdict',
+        text: "We like that a birthday is yours but getting older is something Korea does together. Seollal next year falls on 7 February. Eat your bowl that morning, and you've earned your year the old way.",
+      },
+    ],
+  },
+  {
     id: '2026-11-27-1652',
     title: "Why Seoul rings a bell 33 times on New Year's Eve",
     description:
