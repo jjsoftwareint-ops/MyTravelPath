@@ -1236,12 +1236,12 @@ export const cities: City[] = [
       },
       {
         id: 'seoul-with-kids',
-        name: 'Seoul with kids: a KPop Demon Hunters trip',
-        seoTitle: 'Seoul with kids: a KPop Demon Hunters trip',
+        name: 'Seoul with kids: KPop Demon Hunters trip',
+        seoTitle: 'Seoul with kids: KPop Demon Hunters trip',
         seoDescription:
           'A family map of Seoul: the real KPop Demon Hunters places (Bukchon, the Naksan wall, Ttukseom Hangang Park, N Seoul Tower) with kids’ museums, a zoo, aquariums and Lotte World nearby.',
         duration: '2 days',
-        updated: '2026-11-27',
+        updated: '2026-11-28',
         tags: ['👨‍👩‍👧 With kids', '🎬 KPop Demon Hunters'],
         image: 'seoul-with-kids.jpg',
         imageCredit: 'Photo: kallerna · CC BY-SA 4.0',
